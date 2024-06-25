@@ -22,9 +22,9 @@ function displayEventDetails() {
 
     if (details) {
         document.getElementById('c').innerHTML = synthCollects(details.c, week);
-        document.getElementById('e_cit').textContent = `e.cit: ${details.e.cit}`;
+        document.getElementById('e_cit').textContent = `The Epistle. ${details.e.cit}`;
         document.getElementById('e_txt').innerHTML = makeP(details.e.txt);
-        document.getElementById('g_cit').textContent = `g.cit: ${details.g.cit}`;
+        document.getElementById('g_cit').textContent = `The Gospel. ${details.g.cit}`;
         document.getElementById('g_txt').innerHTML = makeP(details.g.txt);
     } else {
         document.getElementById('c').innerHTML = '';
