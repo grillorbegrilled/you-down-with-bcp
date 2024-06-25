@@ -288,6 +288,6 @@ function getBlackletterDay() {
 
 //Commemoration collects
 
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
     displayEventDetails();
-};
+});
