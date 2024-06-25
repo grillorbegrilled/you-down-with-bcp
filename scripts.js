@@ -12,29 +12,6 @@ function makeP(text){
     return "<p>" + text + "</p>";
 }
 
-function displayEventDetails() {
-    const now = new Date();
-    
-    const week = getWeek(now);
-    const liturgicalDay = getLiturgicalDate(now);
-    
-    const details = window.eventData[synthDate(week, liturgicalDay, now.getDay())];
-
-    if (details) {
-        document.getElementById('c').innerHTML = synthCollects(details.c, week);
-        document.getElementById('e_cit').textContent = `The Epistle. ${details.e.cit}`;
-        document.getElementById('e_txt').innerHTML = makeP(details.e.txt);
-        document.getElementById('g_cit').textContent = `The Gospel. ${details.g.cit}`;
-        document.getElementById('g_txt').innerHTML = makeP(details.g.txt);
-    } else {
-        document.getElementById('c').innerHTML = '';
-        document.getElementById('e_cit').textContent = '';
-        document.getElementById('e_txt').innerHTML = '';
-        document.getElementById('g_cit').textContent = '';
-        document.getElementById('g_txt').innerHTML = '';
-    }
-}
-
 function synthDate(week, day, dayOfWeek) {
     if (week === "Palm" || week === "HW-Mon" || week === "HW-Tue" || week === "HW-Wed" || week === "HW-Thu" || week === "GF" || week === "EE"
         || week === "EasterMon" || week === "EasterTue"
@@ -287,6 +264,29 @@ function getBlackletterDay() {
 }
 
 //Commemoration collects
+
+function displayEventDetails() {
+    const now = new Date();
+    
+    const week = getWeek(now);
+    const liturgicalDay = getLiturgicalDate(now);
+    
+    const details = window.eventData[synthDate(week, liturgicalDay, now.getDay())];
+
+    if (details) {
+        document.getElementById('c').innerHTML = synthCollects(details.c, week);
+        document.getElementById('e_cit').textContent = `The Epistle. ${details.e.cit}`;
+        document.getElementById('e_txt').innerHTML = makeP(details.e.txt);
+        document.getElementById('g_cit').textContent = `The Gospel. ${details.g.cit}`;
+        document.getElementById('g_txt').innerHTML = makeP(details.g.txt);
+    } else {
+        document.getElementById('c').innerHTML = '';
+        document.getElementById('e_cit').textContent = '';
+        document.getElementById('e_txt').innerHTML = '';
+        document.getElementById('g_cit').textContent = '';
+        document.getElementById('g_txt').innerHTML = '';
+    }
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     displayEventDetails();
