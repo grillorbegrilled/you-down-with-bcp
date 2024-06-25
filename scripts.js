@@ -289,5 +289,12 @@ function displayEventDetails() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    fetch('1662_CEG.json')
+    .then(response => response.json())
+    .then(data => {
+        window.eventData = data;
+    })
+    .catch(error => console.error('Error loading JSON data:', error));
+
     displayEventDetails();
 });
