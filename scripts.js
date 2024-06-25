@@ -18,7 +18,7 @@ function displayEventDetails() {
     const week = getWeek(now);
     const liturgicalDay = getLiturgicalDate(now);
     
-    const details = window.eventData[synthDate(week, liturgicalDay, now.GetDay())];
+    const details = window.eventData[synthDate(week, liturgicalDay, now.getDay())];
 
     if (details) {
         document.getElementById('c').innerHTML = synthCollects(details.c, week);
