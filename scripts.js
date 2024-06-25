@@ -16,7 +16,7 @@ function displayEventDetails() {
     const now = new Date();
     
     const week = getWeek(now);
-    const liturgicalDay = getLiturgicalDay(now);
+    const liturgicalDay = getLiturgicalDate(now);
     
     const details = window.eventData[synthDate(week, liturgicalDay, now.GetDay())];
 
