@@ -48,7 +48,7 @@ function synthDate(week, day, dayOfWeek) {
 }
 
 function synthCollects(cotd, week) {
-    const collectP = makeP(text);
+    const collectP = makeP(cotd);
     
     //TODO commemoration
     
