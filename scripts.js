@@ -287,3 +287,7 @@ function getBlackletterDay() {
 }
 
 //Commemoration collects
+
+window.onload = function() {
+    displayEventDetails();
+};
