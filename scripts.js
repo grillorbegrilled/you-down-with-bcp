@@ -1,11 +1,3 @@
-fetch('1662_CEG.json')
-    .then(response => response.json())
-    .then(data => {
-        window.eventData = data;
-    })
-    .catch(error => console.error('Error loading JSON data:', error));
-
-
 function makeP(text){
     if (text == "" || !text) return "";
     
@@ -293,8 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(response => response.json())
     .then(data => {
         window.eventData = data;
+        displayEventDetails();
     })
     .catch(error => console.error('Error loading JSON data:', error));
-
-    displayEventDetails();
 });
