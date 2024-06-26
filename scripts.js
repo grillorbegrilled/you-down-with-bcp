@@ -1,7 +1,44 @@
-function makeP(text){
-    if (text == "" || !text) return "";
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('1662_CEG.json')
+    .then(response => response.json())
+    .then(data => {
+        window.eventData = data;
+        displayEventDetails();
+    })
+    .catch(error => console.error('Error loading JSON data:', error));
+});
+
+function displayEventDetails() {
+    const now = new Date();
     
-    return "<p>" + text + "</p>";
+    const week = getWeek(now);
+    const liturgicalDay = getLiturgicalDate(now);
+    
+    const details = window.eventData[synthDate(week, liturgicalDay, now.getDay())];
+
+    if (details) {
+        document.getElementById('c').innerHTML = synthCollects(details.c, week);
+        document.getElementById('e_cit').textContent = `The Epistle. ${details.e.cit}`;
+        document.getElementById('e_txt').innerHTML = makeP(details.e.txt);
+        document.getElementById('g_cit').textContent = `The Gospel. ${details.g.cit}`;
+        document.getElementById('g_txt').innerHTML = makeP(details.g.txt);
+    } else {
+        document.getElementById('c').innerHTML = '';
+        document.getElementById('e_cit').textContent = '';
+        document.getElementById('e_txt').innerHTML = '';
+        document.getElementById('g_cit').textContent = '';
+        document.getElementById('g_txt').innerHTML = '';
+    }
+}
+
+function synthCollects(cotd, week) {
+    const collectP = makeP(cotd);
+    
+    //TODO commemoration
+    
+    const seasonal = getSeasonalCollect(week);
+    
+    return collectP + "" + seasonal;
 }
 
 function synthDate(week, day, dayOfWeek) {
@@ -14,16 +51,6 @@ function synthDate(week, day, dayOfWeek) {
         return week;
     
     return day;
-}
-
-function synthCollects(cotd, week) {
-    const collectP = makeP(cotd);
-    
-    //TODO commemoration
-    
-    const seasonal = getSeasonalCollect(week);
-    
-    return collectP + "" + seasonal;
 }
 
 function getWeek(now) {
@@ -257,35 +284,8 @@ function getBlackletterDay() {
 
 //Commemoration collects
 
-function displayEventDetails() {
-    const now = new Date();
+function makeP(text){
+    if (text == "" || !text) return "";
     
-    const week = getWeek(now);
-    const liturgicalDay = getLiturgicalDate(now);
-    
-    const details = window.eventData[synthDate(week, liturgicalDay, now.getDay())];
-
-    if (details) {
-        document.getElementById('c').innerHTML = synthCollects(details.c, week);
-        document.getElementById('e_cit').textContent = `The Epistle. ${details.e.cit}`;
-        document.getElementById('e_txt').innerHTML = makeP(details.e.txt);
-        document.getElementById('g_cit').textContent = `The Gospel. ${details.g.cit}`;
-        document.getElementById('g_txt').innerHTML = makeP(details.g.txt);
-    } else {
-        document.getElementById('c').innerHTML = '';
-        document.getElementById('e_cit').textContent = '';
-        document.getElementById('e_txt').innerHTML = '';
-        document.getElementById('g_cit').textContent = '';
-        document.getElementById('g_txt').innerHTML = '';
-    }
+    return "<p>" + text + "</p>";
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('1662_CEG.json')
-    .then(response => response.json())
-    .then(data => {
-        window.eventData = data;
-        displayEventDetails();
-    })
-    .catch(error => console.error('Error loading JSON data:', error));
-});
