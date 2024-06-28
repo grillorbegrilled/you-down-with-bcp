@@ -15,9 +15,11 @@ function displayEventDetails() {
     const now = new Date();
     
     const week = getWeek(now);
-    const liturgicalDay = getLiturgicalDate(now);
+    const feast = getLiturgicalDate(now);
+    const liturgicalDay = synthDate(week, feast, now.getDay());
     
-    const details = window.eventData[synthDate(week, liturgicalDay, now.getDay())];
+    const details = window.eventData[liturgicalDay];
+    const hymn = window.hymns[liturgicalDay];
 
     if (details) {
         document.getElementById('c').innerHTML = synthCollects(details.c, week);
@@ -31,6 +33,12 @@ function displayEventDetails() {
         document.getElementById('e_txt').innerHTML = '';
         document.getElementById('g_cit').textContent = '';
         document.getElementById('g_txt').innerHTML = '';
+    }
+
+    if (hymn) {
+        document.getElementById('hymn').innerHTML = makeP(hymn);
+    } else {
+        document.getElementById('hymn').innerHTML = '';
     }
 }
 
