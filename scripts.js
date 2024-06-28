@@ -45,7 +45,7 @@ function displayEventDetails() {
     }
 
     if (dayName) {
-        document.getElementById('nameOfTheDay').textContent = `$(dayName)`;
+        document.getElementById('nameOfTheDay').textContent = `${dayName}`;
     } else {
         document.getElementById('nameOfTheDay').textContent = '';
     }
