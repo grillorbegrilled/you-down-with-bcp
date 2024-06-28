@@ -1,11 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     Promise.all([
         fetch('1662_CEG.json').then(response => response.json()),
-        fetch('hymnSuggestions.json').then(response => response.json())
+        fetch('hymnSuggestions.json').then(response => response.json()),
+        fetch('dayNames.json').then(response => response.json())
     ])
-    .then(([data1, data2]) => {
+    .then(([data1, data2, data3]) => {
         window.eventData = data1;
         window.hymns = data2;
+        window.dayNames = data3;
         displayEventDetails();
     })
     .catch(error => console.error('Error loading JSON data:', error));
@@ -17,7 +19,8 @@ function displayEventDetails() {
     const week = getWeek(now);
     const feast = getLiturgicalDate(now);
     const liturgicalDay = synthDate(week, feast, now.getDay());
-    
+
+    const dayName = window.dayNames[liturgicalDay];
     const details = window.eventData[liturgicalDay];
     const hymn = window.hymns[liturgicalDay];
 
@@ -39,6 +42,12 @@ function displayEventDetails() {
         document.getElementById('hymn').innerHTML = makeP(hymn);
     } else {
         document.getElementById('hymn').innerHTML = '';
+    }
+
+    if (dayName) {
+        document.getElementById('dayName').textContent = `$(dayName)`;
+    } else {
+        document.getElementById('dayName').textContent = '';
     }
 }
 
