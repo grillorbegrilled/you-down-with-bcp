@@ -45,9 +45,9 @@ function displayEventDetails() {
     }
 
     if (dayName) {
-        document.getElementById('dayName').textContent = `$(dayName)`;
+        document.getElementById('nameOfTheDay').textContent = `$(dayName)`;
     } else {
-        document.getElementById('dayName').textContent = '';
+        document.getElementById('nameOfTheDay').textContent = '';
     }
 }
 
