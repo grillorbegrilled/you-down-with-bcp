@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('1662_CEG.json')
-    .then(response => response.json())
-    .then(data => {
-        window.eventData = data;
+    Promise.all([
+        fetch('1662_CEG.json').then(response => response.json()),
+        fetch('hymnSuggestions.json').then(response => response.json())
+    ])
+    .then(([data1, data2]) => {
+        window.eventData = data1;
+        window.hymns = data2;
         displayEventDetails();
     })
     .catch(error => console.error('Error loading JSON data:', error));
