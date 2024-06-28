@@ -23,9 +23,13 @@ function displayEventDetails() {
     const dayName = window.dayNames[liturgicalDay];
     const details = window.eventData[liturgicalDay];
     const hymn = window.hymns[liturgicalDay];
+    const collect = synthCollects(details.c, week);
 
     if (details) {
-        document.getElementById('c').innerHTML = synthCollects(details.c, week);
+        if (collect.includes("</p><p>"))
+            document.getElementById('c_h').textContent = "The Collects.";
+        
+        document.getElementById('c').innerHTML = collect;
         document.getElementById('e_cit').textContent = `${details.e.cit}`;
         document.getElementById('e_txt').innerHTML = makeP(details.e.txt);
         document.getElementById('g_cit').textContent = `${details.g.cit}`;
