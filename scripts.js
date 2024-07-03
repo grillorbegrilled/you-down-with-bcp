@@ -1,11 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     Promise.all([
-        fetch('1662_CEG.json').then(response => response.json()),
         fetch('hymnSuggestions.json').then(response => response.json()),
         fetch('dayNames.json').then(response => response.json())
     ])
     .then(([data1, data2, data3]) => {
-        window.eventData = data1;
         window.hymns = data2;
         window.dayNames = data3;
         displayEventDetails();
@@ -21,7 +19,7 @@ function displayEventDetails() {
     const liturgicalDay = synthDate(week, feast, now.getDay());
 
     const dayName = window.dayNames[liturgicalDay];
-    const details = window.eventData[liturgicalDay];
+    const details = (getPropers())[liturgicalDay];
     const hymn = window.hymns[liturgicalDay];
     const collect = synthCollects(details.c, week);
 
