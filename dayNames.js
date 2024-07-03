@@ -1,4 +1,8 @@
-{
+function getDayName(liturgicalDate) {
+    return dayNames[liturgicalDate];
+}
+
+const dayNames = {
     "A1": "Advent Sunday",
     "A2": "The Second Sunday In Advent",
     "A3": "The Third Sunday In Advent",
@@ -90,4 +94,4 @@
     "SimonAndJude": "SS. Simon and Jude",
     "AllSaints": "All Saints' Day",
     "ThanksgivingDay": "Thanksgiving Day"
-}
+};
