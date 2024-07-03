@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch('hymnSuggestions.json').then(response => response.json()),
         fetch('dayNames.json').then(response => response.json())
     ])
-    .then(([data1, data2, data3]) => {
-        window.hymns = data2;
-        window.dayNames = data3;
+    .then(([data1, data2]) => {
+        window.hymns = data1;
+        window.dayNames = data2;
         displayEventDetails();
     })
     .catch(error => console.error('Error loading JSON data:', error));
