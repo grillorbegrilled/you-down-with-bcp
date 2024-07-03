@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     Promise.all([
-        fetch('dayNames.json').then(response => response.json())
     ])
-    .then(([data1]) => {
-        window.dayNames = data1;
+    .then() => {
         displayEventDetails();
     })
     .catch(error => console.error('Error loading JSON data:', error));
@@ -16,7 +14,7 @@ function displayEventDetails() {
     const feast = getLiturgicalDate(now);
     const liturgicalDay = synthDate(week, feast, now.getDay());
 
-    const dayName = window.dayNames[liturgicalDay];
+    const dayName = getDayName(liturgicalDay);
     const details = getProper(liturgicalDay);
     const hymn = getHymns(liturgicalDay);
     const collect = synthCollects(details.c, week);
