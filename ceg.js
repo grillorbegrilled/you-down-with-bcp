@@ -1,4 +1,8 @@
-const propers = {
+function getPropers() {
+    return Object.assign({}, propers1662, nationalDaysUS);
+}
+
+const propers1662 = {
     "A1": {
         "e": {
             "cit": "Romans 13:8-14",
@@ -1008,3 +1012,5 @@ const nationalDaysUS = {
         }
     }
 };
+
+window.getPropers = getPropers;
