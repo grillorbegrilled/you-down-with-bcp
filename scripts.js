@@ -1,11 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
-    Promise.all([
-    ])
-    .then() => {
-        displayEventDetails();
-    })
-    .catch(error => console.error('Error loading JSON data:', error));
-});
+window.onload = function() {
+    displayEventDetails();
+}
 
 function displayEventDetails() {
     const now = new Date();
