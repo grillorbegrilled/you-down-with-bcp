@@ -1,5 +1,11 @@
-function getPropers() {
-    return Object.assign({}, propers1662, nationalDaysUS);
+function getProper(liturgicalDay) {
+    var result = propers1662[liturgicalDay];
+    
+    if (!result) { 
+        result = nationalDaysUS[liturgicalDay];
+    }
+
+    return result;
 }
 
 const propers1662 = {
