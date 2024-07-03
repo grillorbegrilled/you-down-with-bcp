@@ -19,7 +19,7 @@ function displayEventDetails() {
     const liturgicalDay = synthDate(week, feast, now.getDay());
 
     const dayName = window.dayNames[liturgicalDay];
-    const details = (getPropers())[liturgicalDay];
+    const details = getProper(liturgicalDay);
     const hymn = window.hymns[liturgicalDay];
     const collect = synthCollects(details.c, week);
 
