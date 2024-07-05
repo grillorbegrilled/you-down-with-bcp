@@ -242,6 +242,7 @@ function getLiturgicalDate(now) {
         if (day === 24) return "JohnBaptist";
         if (day === 29) return "Peter";
     } else if (month === 6) { //jul
+        if (day === 4) return "IndependenceDay";
         if (day === 25) return "James";
     } else if (month === 7) { //aug
         if (day === 24) return "Bartholomew";
