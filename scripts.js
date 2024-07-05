@@ -66,6 +66,37 @@ function synthDate(week, day, dayOfWeek) {
     
     return day;
 }
+//fasts, vigils, days of abstinence
+
+//days of fasting or abstinence
+//Lent
+//ember days (W,F,S after Whitsun, L1, 9/14, 12/13)
+//rogation days
+//Fridays except Xmas
+
+/*A Table of the Vigils, Fasts, and Days of Abstinence,
+To be Observed in the Year.
+The
+Evens
+or Vigils
+before 	{ 	The Nativity of our Lord.
+The Purification of the Blessed Virgin Mary.
+The Annunciation of the Blessed Virgin.
+Easter Day.
+Ascension Day.
+Pentecost.
+St. Matthias.
+St. John Baptist.
+St. Peter.
+St. James.
+St. Bartholomew.
+St. Matthew.
+St. Simon and St. Jude.
+St. Andrew.
+St. Thomas.
+All Saints.
+Note, that if any of these Feast-Days fall upon a Monday, then the Vigil or Fast-Day shall be kept upon the Saturday, and not upon the Sunday next before it.
+*/
 
 function getWeek(now) {
     //This is just the day of the week stuff. Specific dates, even Christmastide, are in getLiturgicalDay().
