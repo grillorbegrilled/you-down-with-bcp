@@ -16,7 +16,20 @@ function getMorn(day) {
     case "A3":
     case "A4":
     case "JohnBaptist":
-      return "";
+      return `BLESSED be the Lord God of Israel : for he hath visited and redeemed his people;<br>
+        And hath raised up a mighty salvation for us : in the house of his servant David;<br>
+        As he spake by the mouth of his holy Prophets : which have been since the world began;<br>
+        That we should be saved from our enemies : and from the hand of all that hate us.<br>
+        To perform the mercy promised to our forefathers : and to remember his holy Covenant;<br>
+        To perform the oath which he sware to our forefather Abraham : that he would give us;<br>
+        That we being delivered out of the hand of our enemies : might serve him without fear;<br>
+        In holiness and righteousness before him : all the days of our life.<br>
+        And thou, Child, shalt be called the Prophet of the Highest : for thou shalt go before the face of the Lord to prepare his ways;<br>
+        To give knowledge of salvation unto his people : for the remission of their sins,<br>
+        Through the tender mercy of our God : whereby the day-spring from on high hath visited us;<br>
+        To give light to them that sit in darkness, and in the shadow of death : and to guide our feet into the way of peace.</p>
+        <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
+        As it was in the beginning, is now, and ever shall be : world without end. Amen.`;
       break;
     case "AW":
     case "L1":
@@ -31,34 +44,62 @@ function getMorn(day) {
     case "HW-Thu":
     case "GF":
     case "EE":
-      return "";
+      return `Blessed art thou, O Lord God of our fathers:* praised and exalted above all for ever.<br>
+        Blessed art thou for the Name of thy Majesty:* praised and exalted above all for ever.<br>
+        Blessed art thou in the temple of thy holiness:* praised and exalted above all for ever.<br>
+        Blessed art thou that beholdest the depths, and dwellest between the Cherubim: * praised and exalted above all for ever.<br>
+        Blessed art thou on the glorious throne of thy kingdom: * praised and exalted above all for ever.<br>
+        Blessed art thou in the firmament of heaven: * praised and exalted above all for ever.</p>
+        <p>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>
+        As it was in the beginning, is now, and ever shall be, * world without end. Amen.`;
       break;
     case "Easter":
     case "EasterMon":
     case "EasterTue":
-      return "";
+      return `CHRIST our passover is sacrificed for us : therefore let us keep the feast;<br>
+        Not with the old leaven, nor with the leaven of malice and wickedness : but with the unleavened bread of sincerity and truth. 1 Cor. v. 7<br>
+        Christ being raised from the dead dieth no more : death hath no more dominion over him.<br>
+        For in that he died, he died unto sin once : but in that he liveth, he liveth unto God.<br>
+        Likewise reckon ye also yourselves to be dead indeed unto sin : but alive unto God through Jesus Christ our Lord. Rom. vi. 9<br>
+        Christ is risen from the dead : and become the first-fruits of them that slept.<br>
+        For since by man came death : by man came also the resurrection of the dead.<br>
+        For as in Adam all die : even so in Christ shall all be made alive. 1 Cor. xv. 20.</p>
+        <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
+        As it was in the beginning, is now, and ever shall be : world without end. Amen.`;
       break;
     case "ThanksgivingDay":
-      return "";
+      return `O PRAISE the Lord, for it is a good thing to sing praises unto our God; * yea, a joyful and pleasant thing it is to be thankful.<br>
+        The Lord doth build up Jerusalem, * and gather together the outcasts of Israel.<br>
+        He healeth those that are broken in heart, * and giveth medicine to heal their sickness.<br>
+        O sing unto the Lord with thanksgiving; * sing praises upon the harp unto our God:<br>
+        Who covereth the heaven with clouds, and prepareth rain for the earth; * and maketh the grass to grow upon the mountains, and herb for the use of men;<br>
+        Who giveth fodder unto the cattle, * and feedeth the young ravens that call upon him.<br>
+        Praise the Lord, O Jerusalem; * praise thy God, O Sion.<br>
+        For he hath made fast the bars of thy gates, * and hath blessed thy children within thee.<br>
+        He maketh peace in thy borders, * and filleth thee with the flour of wheat.</p>
+        <p>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>
+        As it was in the beginning, is now, and ever shall be, * world without end. Amen.`;
       break;
     default:
       return `O BE joyful in the Lord, all ye lands : serve the Lord with gladness, and come before his presence with a song.<br>
         Be ye sure that the Lord he is God; it is he that hath made us, and not we ourselves : we are his people, and the sheep of his pasture.<br>
         O go your way into his gates with thanksgiving, and into his courts with praise : be thankful unto him, and speak good of his Name.<br>
         For the Lord is gracious, his mercy is everlasting : and his truth endureth from generation to generation.</p>
-        <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>As it was in the beginning, is now, and ever shall be : world without end. Amen.`;
+        <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
+        As it was in the beginning, is now, and ever shall be : world without end. Amen.`;
   }
 }
 
 function getEve() {
   return `MY soul doth magnify the Lord : and my spirit hath rejoiced in God my Saviour.<br>
-  For he hath regarded : the lowliness of his handmaiden.<br>
-  For behold, from henceforth : all generations shall call me blessed.<br>
-  For he that is mighty hath magnified me : and holy is his Name.<br>
-  And his mercy is on them that fear him : throughout all generations.<br>
-  He hath showed strength with his arm : he hath scattered the proud in the imagination of their hearts.<br>
-  He hath put down the mighty from their seat : and hath exalted the humble and meek.<br>
-  He hath filled the hungry with good things : and the rich he hath sent empty away.<br>
-  He remembering his mercy hath holpen his servant Israel : as he promised to our forefathers, Abraham and his seed, for ever.</p>
-  <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>As it was in the beginning, is now, and ever shall be : world without end. Amen.`;
+    For he hath regarded : the lowliness of his handmaiden.<br>
+    For behold, from henceforth : all generations shall call me blessed.<br>
+    For he that is mighty hath magnified me : and holy is his Name.<br>
+    And his mercy is on them that fear him : throughout all generations.<br>
+    He hath showed strength with his arm : he hath scattered the proud in the imagination of their hearts.<br>
+    He hath put down the mighty from their seat : and hath exalted the humble and meek.<br>
+    He hath filled the hungry with good things : and the rich he hath sent empty away.<br>
+    He remembering his mercy hath holpen his servant Israel : as he promised to our forefathers, Abraham and his seed, for ever.</p>
+    <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
+    As it was in the beginning, is now, and ever shall be : world without end. Amen.`;
 }
