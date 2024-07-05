@@ -200,7 +200,7 @@ function isFast(now) {
         return true;
 
     //rogation days (MTW after Ea5)
-    if (liturgicalNow === "Ea5" && (day === 1 || day === 2 || day === 3)
+    if (liturgicalNow === "Ea5" && (day === 1 || day === 2 || day === 3))
         return true;
 
     return false;
