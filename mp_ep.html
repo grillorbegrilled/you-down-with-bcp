@@ -8,12 +8,14 @@
       const liturgicalDay = synthDate(getWeek(now), getLiturgicalDate(now), now.getDay());
 
       if (now.getHours() < 12) {
+          document.getElementById('canticle').innerHTML = makeP(getMorn(liturgicalDay));
           document.getElementById('collect').textContent = "O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings may be ordered by thy governance, to do always that is righteous in thy sight; through Jesus Christ our Lord. Amen.";
       } else {
-          document.getElementById('collect').textContent = "O GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
+        document.getElementById('canticle').innerHTML = makeP(getEve(liturgicalDay));  
+        document.getElementById('collect').textContent = "O GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
       }
 
-      document.getElementById('canticle').innerHTML = makeP(getCanticle(liturgicalDay));
+      
     </script>
   </head>
   <body>
@@ -30,7 +32,7 @@
             The power, and the glory,<br>
             For ever and ever. Amen.</p>
 
-    <div id="canticle"></div>
+    <div id='canticle'></div>
 
     <p>I BELIEVE in God the Father Almighty,<br>
       Maker of heaven and earth :</p>
@@ -51,7 +53,7 @@
       The Resurrection of the body, <br>
       And the Life everlasting. Amen.</p>
 
-    <p id="collect"></p>
+    <p id='collect'></p>
 
     <p>THE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>
   </body>
