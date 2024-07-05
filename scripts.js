@@ -66,35 +66,157 @@ function synthDate(week, day, dayOfWeek) {
     
     return day;
 }
-//fasts, vigils, days of abstinence
+
+function isFast(now) {
+    const day = now.getDay();
+    const month = now.getMonth();
+    const date = now.getDate();
+    
+    if (day === 0 || //never on sunday
+        month === 11 && date === 25) //never on Christmas
+        return false;
+
+    if(day === 5 && getLiturgicalDate(now) === "") //always on Friday
+        return true;
+
+    //vigils
+    if (month === 0 && date === 31 && day === 6) //vigil of candlemas, transferred to saturday
+        return true;
+    
+    if(month === 1) { //feb
+        if(day != 6) { 
+            if (date === 1 || date === 23)
+                return true;
+        } else {
+            if (date === 22)
+                return true;
+        }
+    }
+    if(month === 2) { //mar
+        if(day != 6) { 
+            if (date === 24)
+                return true;
+        } else {
+            if (date === 23)
+                return true;
+        }
+    }
+    //no vigils in April or May
+    if(month === 5) { //jun
+        if(day != 6) { 
+            if (date === 23 || date === 28)
+                return true;
+        } else {
+            if (date === 22 || date === 27)
+                return true;
+        }
+    }
+    if(month === 6) { //jul
+        if(day != 6) { 
+            if (date === 24)
+                return true;
+        } else {
+            if (date === 23)
+                return true;
+        }
+    }
+    if(month === 7) { //aug
+        if(day != 6) { 
+            if (date === 23)
+                return true;
+        } else {
+            if (date === 22)
+                return true;
+        }
+    }
+    if(month === 8) { //sep
+        if(day != 6) { 
+            if (date === 20)
+                return true;
+        } else {
+            if (date === 19)
+                return true;
+        }
+    }
+    if(month === 9) { //oct
+        if(day != 6) { 
+            if (date === 27 || date === 31)
+                return true;
+        } else {
+            if (date === 26 || date === 30)
+                return true;
+        }
+    }
+    if(month === 10) { //nov
+        if(day != 6) { 
+            if (date === 29)
+                return true;
+        } else {
+            if (date === 28)
+                return true;
+        }
+    }
+    if(month === 11) { //dec
+        if(day != 6) { 
+            if (date === 20 || date === 24)
+                return true;
+        } else {
+            if (date === 19 || date === 23)
+                return true;
+        }
+    }
+
+    const liturgicalNow = synthDate(getWeek(now), getLiturgicalDay(now), day);
+
+    switch (liturgicalNow) {
+        case "AW":
+        case "L1":
+        case "L2":
+        case "L3":
+        case "L4":
+        case "L5":
+        case "Palm":
+        case "HW-Mon":
+        case "HW-Tue":
+        case "HW-Wed":
+        case "HW-Thu":
+        case "GF":
+        case "EE":
+            return true;
+            break;
+    }
+    
+    //Pentecost vigil
+    if (liturgicalNow === "Asc1" && day === 6)
+        return true;
+
+    //Ember days
+    //Lent ember days are already fasts
+    if (liturgicalNow === "Whitsun" && (day === 3 || day === 5 || day === 6) || //Whitsun
+        month === 8 && date >= 15 && date <= 24 && (day === 3 || day === 5 || day === 6) || //September... is this accurate?
+        month === 11 && date >= 14 && date <= 23 && (day === 3 || day === 5 || day === 6)) //December... is THIS accurate?
+        return true;
+
+    //rogation days (MTW after Ea5)
+    if (liturgicalNow === "Ea5" && (day === 1 || day === 2 || day === 3)
+        return true;
+
+    return false;
+}
+
+function getTomorrow(today) {
+    var result = new Date(today);
+    result.setDate(result.getDate() + 1);
+    return result;
+}
 
 //days of fasting or abstinence
 //Lent
-//ember days (W,F,S after Whitsun, L1, 9/14, 12/13)
-//rogation days
-//Fridays except Xmas
+
 
 /*A Table of the Vigils, Fasts, and Days of Abstinence,
 To be Observed in the Year.
-The
-Evens
-or Vigils
-before 	{ 	The Nativity of our Lord.
-The Purification of the Blessed Virgin Mary.
-The Annunciation of the Blessed Virgin.
-Easter Day.
-Ascension Day.
-Pentecost.
-St. Matthias.
-St. John Baptist.
-St. Peter.
-St. James.
-St. Bartholomew.
-St. Matthew.
-St. Simon and St. Jude.
-St. Andrew.
-St. Thomas.
-All Saints.
+
 Note, that if any of these Feast-Days fall upon a Monday, then the Vigil or Fast-Day shall be kept upon the Saturday, and not upon the Sunday next before it.
 */
 
