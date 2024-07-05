@@ -1,7 +1,3 @@
-window.onload = function() {
-    displayEventDetails();
-}
-
 function displayEventDetails() {
     const now = new Date();
     
