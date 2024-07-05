@@ -14,6 +14,8 @@ function displayEventDetails() {
     const hymn = getHymns(liturgicalDay);
     const collect = synthCollects(details.c, week);
 
+    document.getElementById('cant').innerHTML = makeP(getCanticle(liturgicalDay);
+    
     if (details) {
         if (collect.includes("</p><p>"))
             document.getElementById('c_h').textContent = "The Collects.";
