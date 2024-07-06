@@ -8,7 +8,12 @@ body {
     padding: 0;
 }
 
-pre, code {
-    font-family: 'Fixedsys', monospace;
-    color: white;
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 16px; /* Adjust to match the size of your <p> elements */
+    font-weight: normal; /* Make the font weight normal */
+    text-transform: uppercase; /* Transform text to uppercase */
 }
