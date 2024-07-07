@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="ceg.js"></script>
+    <script src="hymns.js"></script>
+    <script src="dayNames.js"></script>
+    <script src="canticles.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        window.onload = function() {
+            displayEventDetails();
+        }
+    </script>
+</head>
+<body>
+    <div id="canticle"></div>
+    <h1 id="nameOfTheDay"></h1>
+    <div class="container">
+        <p>ALMIGHTY God, unto whom all hearts be open, all desires known, and from whom no secrets are hid; Cleanse the thoughts of our hearts by the inspiration of thy Holy Spirit, that we may perfectly love thee, and worthily magnify thy holy Name; through Christ our Lord. Amen.</p>
+        <div id="eventDetails">
+            <!--<h2 id="c_h">The Collect.</h2>-->
+            <p id="c"></p>
+            <!--<h2>The Epistle.</h2>-->
+            <p id="e_cit"></p>
+            <div id="e_txt"></div>
+            <!--<h2>The Gospel.</h2>-->
+            <p id="g_cit"></p>
+            <div id="g_txt"></div>
+        </div>
+        <!--<h2>The Lord's Prayer.</h2>-->
+        <p>OUR Father, which art in heaven,<br>
+            Hallowed be thy Name.<br>
+            Thy kingdom come.<br>
+            Thy will be done, in earth as it is in heaven.<br>
+            Give us this day our daily bread.<br>
+            And forgive us our trespasses,<br>
+            As we forgive them that trespass against us.<br>
+            And lead us not into temptation;<br>
+            But deliver us from evil:<br>
+            For thine is the kingdom,<br>
+            The power, and the glory,<br>
+            For ever and ever. Amen.</p>
+        <!--<h2>A Hymn.</h2>-->
+        <div id="hymn"></div>
+    </div>
+</body>
+</html>
