@@ -579,7 +579,7 @@ const propers1662 = {
         }
     },
     "T6": {
-        "c": "O GOD, who hast prepared for them that love thee such good things as pass man's understanding; Pour into our hearts such love toward thee, that wee, loving thee above all things, may obtain thy promises, which exceed all that we can desire; through Jesus Christ our Lord. Amen.",
+        "c": "O GOD, who hast prepared for them that love thee such good things as pass man's understanding; Pour into our hearts such love toward thee, that we, loving thee above all things, may obtain thy promises, which exceed all that we can desire; through Jesus Christ our Lord. Amen.",
         "e": {
             "cit": "Romans 6:3-11",
             "txt": "KNOW ye not, that so many of us as were baptized into Jesus Christ were baptized into his death? Therefore we are buried with him by baptism into death: that like as Christ was raised up from the dead by the glory of the Father, even so we also should walk in newness of life. For if we have been planted together in the likeness of his death, we shall be also in the likeness of his resurrection: Knowing this, that our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin. For he that is dead is freed from sin. Now if we be dead with Christ, we believe that we shall also live with him: Knowing that Christ being raised from the dead dieth no more; death hath no more dominion over him. For in that he died, he died unto sin once: but in that he liveth, he liveth unto God. Likewise reckon ye also yourselves to be dead indeed unto sin, but alive unto God through Jesus Christ our Lord."
