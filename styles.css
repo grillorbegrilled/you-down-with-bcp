@@ -1,8 +1,13 @@
 /* styles.css */
+:root {
+    --color1:white;
+    --color2:green
+}
+
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 body {
     background-color: black;
-    color: green;
+    color: --color1;
     font-family: 'VT323', monospace;
     margin: 0;
     padding: 0;
@@ -13,6 +18,8 @@ p {
 }
 
 h1 {
+    background-color: --color1;
+    color: --color2;
     font-size: 16px; /* Adjust to match the size of your <p> elements */
     font-weight: normal; /* Make the font weight normal */
     text-transform: uppercase; /* Transform text to uppercase */
