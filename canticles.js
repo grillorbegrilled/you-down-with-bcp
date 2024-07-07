@@ -72,7 +72,7 @@ function getMorn(day) {
     case "JohnEvangelist":
     case "Innocents":
     case "Whitsun":
-    case "WhitMon":
+    case "Whitmon":
     case "WhitTue":
       return `WE praise thee, O God : we acknowledge thee to be the Lord.<br>
     All the earth doth worship thee : the Father everlasting.<br>
