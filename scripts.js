@@ -9,8 +9,6 @@ function displayEventDetails() {
     const details = getProper(liturgicalDay);
     const hymn = getHymns(liturgicalDay);
     const collect = synthCollects(details.c, week);
-      
-        const liturgicalDay = synthDate(getWeek(now), getLiturgicalDate(now), now.getDay());
   
         if (now.getHours() < 12) {
             document.getElementById('canticle').innerHTML = makeP(getMorn(liturgicalDay));
