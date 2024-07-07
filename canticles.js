@@ -103,6 +103,7 @@ function getMorn(day) {
     O Lord, have mercy upon us : have mercy upon us.<br>
     O Lord, let thy mercy lighten upon us : as our trust is in thee.<br>
     O Lord, in thee have I trusted : let me never be confounded.`;
+      break;
     case "ThanksgivingDay":
       return `O PRAISE the Lord, for it is a good thing to sing praises unto our God; * yea, a joyful and pleasant thing it is to be thankful.<br>
         The Lord doth build up Jerusalem, * and gather together the outcasts of Israel.<br>
