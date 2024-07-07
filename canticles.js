@@ -67,6 +67,42 @@ function getMorn(day) {
         <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
         As it was in the beginning, is now, and ever shall be : world without end. Amen.`;
       break;
+    case "Xmas":
+    case "Stephen":
+    case "JohnEvangelist":
+    case "Innocents":
+    case "Whitsun":
+    case "WhitMon":
+    case "WhitTue":
+      return `WE praise thee, O God : we acknowledge thee to be the Lord.<br>
+    All the earth doth worship thee : the Father everlasting.<br>
+    To thee all Angels cry aloud : the Heavens, and all the Powers therein.<br>
+    To thee Cherubin and Seraphin : continually do cry,<br>
+    Holy, Holy, Holy : Lord God of Sabaoth;<br>
+    Heaven and earth are full of the Majesty : of thy glory.<br>
+    The glorious company of the Apostles : praise thee.<br>
+    The goodly fellowship of the Prophets : praise thee.<br>
+    The noble army of Martyrs : praise thee.<br>
+    The holy Church throughout all the world : doth acknowledge thee;<br>
+    The Father : of an infinite Majesty;<br>
+    Thine honourable, true : and only Son;<br>
+    Also the Holy Ghost : the Comforter.</p>
+    <p>Thou art the King of Glory : O Christ.<br>
+    Thou art the everlasting Son : of the Father.<br>
+    When thou tookest upon thee to deliver man : thou didst not abhor the Virgin's womb.<br>
+    When thou hadst overcome the sharpness of death : thou didst open the Kingdom of Heaven to all believers.<br>
+    Thou sittest at the right hand of God : in the glory of the Father.<br>
+    We believe that thou shalt come : to be our Judge.<br>
+    We therefore pray thee, help thy servants : whom thou hast redeemed with thy precious blood.<br>
+    Make them to be numbered with thy Saints : in glory everlasting.</p>
+    <p>O Lord, save thy people : and bless thine heritage.<br>
+    Govern them : and lift them up for ever.<br>
+    Day by day : we magnify thee;<br>
+    And we worship thy Name : ever world without end.<br>
+    Vouchsafe, O Lord : to keep us this day without sin.<br>
+    O Lord, have mercy upon us : have mercy upon us.<br>
+    O Lord, let thy mercy lighten upon us : as our trust is in thee.<br>
+    O Lord, in thee have I trusted : let me never be confounded.`;
     case "ThanksgivingDay":
       return `O PRAISE the Lord, for it is a good thing to sing praises unto our God; * yea, a joyful and pleasant thing it is to be thankful.<br>
         The Lord doth build up Jerusalem, * and gather together the outcasts of Israel.<br>
