@@ -97,10 +97,6 @@ function getSeasonalCollect(week) {
     }
 }
 
-function getBlackletterDay() {
-    //TODO
-}
-
 //Commemoration collects
 
 function makeP(text){
