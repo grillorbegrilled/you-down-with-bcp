@@ -51,7 +51,7 @@ function displayEventDetails() {
         document.getElementById('nameOfTheDay').textContent = '';
     }
 
-    const litany = getLitany();
+    const litany = getLitany(liturgicalDay, now.getMonth(), now.getDate (), now.getDay());
     if (litany) {
         document.getElementById('office').setAttribute("hidden", true);
         document.getElementById('litany').setAttribute("hidden", false);
