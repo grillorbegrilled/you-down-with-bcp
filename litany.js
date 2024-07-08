@@ -1,7 +1,8 @@
-function getLitany(liturgicalDay, weekday) {
-    if (liturgicalDay === "AW" && weekday === 3 ||
-        liturgicalDay === "GF" ||
-        liturgicalDay === "Ea5" && (weekday === 1 || weekday === 2 || weekday === 3))
+function getLitany(lit, month, date, day) {
+    if (isEmberDay(week, month, date, day) ||
+       isRogationDay(week, day) ||
+       lit === "GF" ||
+       lit === "AW" && day === 3)
         //ember days
         return `<P>O GOD the Father, Creator of heaven and earth; <B><BR>
             Have mercy upon us. </B><BR>
