@@ -1,9 +1,9 @@
 function getLitany(lit, month, date, day) {
-    if (isEmberDay(week, month, date, day) ||
-       isRogationDay(week, day) ||
-       lit === "GF" ||
-       lit === "AW" && day === 3)
-        //ember days
+    if (isEmberDay(week, month, date, day) || //ember days
+       isRogationDay(week, day) || //rogation days
+       lit === "GF" || //good friday
+       lit === "AW" && (day === 3 || day === 5) || //ash wednesday, friday thereafter
+       (lit === "L2" || lit === "L3" || lit === "L4" || lit === "L5") && day === 5) //other fridays in lent
         return `<P>O GOD the Father, Creator of heaven and earth; <B><BR>
             Have mercy upon us. </B><BR>
         O God the Son, Redeemer of the world; <B><BR>
