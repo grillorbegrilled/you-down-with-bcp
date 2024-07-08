@@ -1,21 +1,40 @@
 var r = document.querySelector(':root');
 
 function setColors(uno, due, tre) {
-    r.style.setProperty('--color1', 'lightblue');
-    r.style.setProperty('--color2', 'lightblue');
-    r.style.setProperty('--color3', 'lightblue');
+    r.style.setProperty('--color1', 'lightblue'); //body text
+    r.style.setProperty('--color2', 'lightblue'); //h1 text
+    r.style.setProperty('--color3', 'lightblue'); //h1 background
 }
 
-function colorsByDay(day) {
-    switch (day) {
+function colorsByDay(lit, month, date) {
+    switch (lit) {
+            //Blue for Advent and St. John Baptist
+        case "A1":
+        case "A2":
+        case "A3":
+        case "A4":
+        case "JohnBaptist":
+        case "LXX":
+        case "LX":
+        case "L":
+            setColors("white", "white", "darkblue");
+            break;
+            //Red and Green (body text white?) for Christmas
+            //Blue again for pre-lent
+            //Lenten White for Lent
+            //Maroon for Passiontide
+            //White for Easter, St. John Evangelist
+            //Red for Whitsun and martyrs
+            //Green from Trinity to Petermas, Yellow from Petermas to Michaelmas, Orange from Michaelmas to SNBA
+            //Pink on Annunciation Day
+            //Sky blue on Michaelmas
+            //Rainbow on All Saints?
+        default:
+            setColors("white", "black", "white");
     }
 }
 
 /*
-"A1": [""],
-    "A2": [""],
-    "A3": [""],
-    "A4": [""],
     "Xmas": [""],
     "Stephen": [""],
     "JohnEvangelist": [""],
