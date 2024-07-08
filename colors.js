@@ -1,4 +1,15 @@
+var r = document.querySelector(':root');
 
+function setColors(uno, due, tre) {
+    r.style.setProperty('--color1', 'lightblue');
+    r.style.setProperty('--color2', 'lightblue');
+    r.style.setProperty('--color3', 'lightblue');
+}
+
+function colorsByDay(day) {
+    switch (day) {
+    }
+}
 
 /*
 "A1": [""],
