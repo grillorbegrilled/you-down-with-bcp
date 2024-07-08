@@ -51,8 +51,12 @@ function displayEventDetails() {
         document.getElementById('nameOfTheDay').textContent = '';
     }
 
-    // document.getElementById('office').setAttribute("hidden", true);
-    // document.getElementById('litany').setAttribute("hidden", false);
+    const litany = getLitany();
+    if (litany) {
+        document.getElementById('office').setAttribute("hidden", true);
+        document.getElementById('litany').setAttribute("hidden", false);
+        document.getElementById('litany').innerHTML = litany;
+    }
 }
 
 function synthCollects(cotd, week) {
