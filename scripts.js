@@ -49,6 +49,9 @@ function displayEventDetails() {
     } else {
         document.getElementById('nameOfTheDay').textContent = '';
     }
+
+    // document.getElementById('office').setAttribute("hidden", true);
+    // document.getElementById('litany').setAttribute("hidden", false);
 }
 
 function synthCollects(cotd, week) {
