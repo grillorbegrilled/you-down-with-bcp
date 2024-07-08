@@ -19,16 +19,47 @@ function colorsByDay(lit, month, date) {
         case "L":
             setColors("white", "white", "darkblue");
             break;
-            //Red and Green (body text white?) for Christmas
-            //Blue again for pre-lent
-            //Lenten White for Lent
-            //Maroon for Passiontide
-            //White for Easter, St. John Evangelist
+        case "Xmas":
+        case "Stephen":
+        case "JohnEvangelist":
+        case "Innocents":
+        case "X1":
+        case "Circ":
+            setColors("red", "white", "green");
+            break;
+        case "AW":
+        case "L1":
+        case "L2":
+        case "L3":
+        case "L4":
+            setColors("gray", "black", "gray");
+            break;
+        case "L5":
+        case "Palm":
+        case "HW-Mon":
+        case "HW-Tue":
+        case "HW-Wed":
+        case "HW-Thu":
+        case "GF":
+        case "EE":
+            setColors("maroon", "black", "maroon");
+            break;
+            //White for Easter
             //Red for Whitsun and martyrs
-            //Green from Trinity to Petermas, Yellow from Petermas to Michaelmas, Orange from Michaelmas to SNBA
+        case "Whitsun":
+        case "Whitmon":
+        case "WhitTue":
+            setColors("red", "gold", "red");
+            break;
             //Pink on Annunciation Day
             //Sky blue on Michaelmas
             //Rainbow on All Saints?
+        case "E1":
+        case "E2":
+        case "E3":
+        case "E4":
+        case "E5":
+        case "E6":        
         case "T1":
         case "T2":
         case "T3":
@@ -57,7 +88,7 @@ function colorsByDay(lit, month, date) {
             if (month === 5 && date > 24 || month === 6 || month === 7 || month === 8 && date < 29)
                 setColors("gold", "black", "gold");
             else if (month === 8 && date > 29 || month >= 9)
-                setColors("orange", "black", "orange");
+                setColors("darkorange", "black", "darkorange");
             else
                 setColors("green", "black", "green");
             break;
@@ -67,22 +98,7 @@ function colorsByDay(lit, month, date) {
 }
 
 /*
-    "Xmas": [""],
-    "Stephen": [""],
-    "JohnEvangelist": [""],
-    "Innocents": [""],
-    "X1": [""],
-    "Circ": [""],
     "Epiphany": [""],
-    "E1": [""],
-    "E2": [""],
-    "E3": [""],
-    "E4": [""],
-    "E5": [""],
-    "E6": [""],
-    "LXX": [""],
-    "LX": [""],
-    "L": [""],
     "AW": [""],
     "L1": [""],
     "L2": [""],
@@ -110,31 +126,6 @@ function colorsByDay(lit, month, date) {
     "Whitmon": [""],
     "WhitTue": [""],
     "Trinity": [""],
-    "T1": [""],
-    "T2": [""],
-    "T3": [""],
-    "T4": [""],
-    "T5": [""],
-    "T6": [""],
-    "T7": [""],
-    "T8": [""],
-    "T9": [""],
-    "T10": [""],
-    "T11": [""],
-    "T12": [""],
-    "T13": [""],
-    "T14": [""],
-    "T15": [""],
-    "T16": [""],
-    "T17": [""],
-    "T18": [""],
-    "T19": [""],
-    "T20": [""],
-    "T21": [""],
-    "T22": [""],
-    "T23": [""],
-    "T24": [""],
-    "SNBA": [""],
     "Andrew": [""],
     "Thomas": [""],
     "Paul": [""],
