@@ -4,7 +4,8 @@ function getLitany(lit, month, date, day) {
        lit === "GF" || //good friday
        lit === "AW" && (day === 3 || day === 5) || //ash wednesday, friday thereafter
        (lit === "L2" || lit === "L3" || lit === "L4" || lit === "L5") && day === 5) //other fridays in lent
-        return `<P>O GOD the Father, Creator of heaven and earth; <B><BR>
+        return `<H1>The Litany</H1>
+        <P>O GOD the Father, Creator of heaven and earth; <B><BR>
             Have mercy upon us. </B><BR>
         O God the Son, Redeemer of the world; <B><BR>
             Have mercy upon us. </B><BR>
