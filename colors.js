@@ -29,6 +29,38 @@ function colorsByDay(lit, month, date) {
             //Pink on Annunciation Day
             //Sky blue on Michaelmas
             //Rainbow on All Saints?
+        case "T1":
+        case "T2":
+        case "T3":
+        case "T4":
+        case "T5":
+        case "T6":
+        case "T7":
+        case "T8":
+        case "T9":
+        case "T10":
+        case "T11":
+        case "T12":
+        case "T13":
+        case "T14":
+        case "T15":
+        case "T16":
+        case "T17":
+        case "T18":
+        case "T19":
+        case "T20":
+        case "T21":
+        case "T22":
+        case "T23":
+        case "T24":
+        case "SNBA":
+            if (month === 5 && date > 24 || month === 6 || month === 7 || month === 8 && date < 29)
+                setColors("gold", "black", "gold");
+            else if (month === 8 && date > 29 || month >= 9)
+                setColors("orange", "black", "orange");
+            else
+                setColors("green", "black", "green");
+            break;
         default:
             setColors("white", "black", "white");
     }
