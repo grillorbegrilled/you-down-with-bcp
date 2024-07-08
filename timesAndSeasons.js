@@ -109,7 +109,7 @@ function isFast(now) {
         }
     }
 
-    const liturgicalNow = synthDate(getWeek(now), getLiturgicalDay(now), day);
+    const liturgicalNow = synthDate(getWeek(now), getLiturgicalDate(now), day);
 
     switch (liturgicalNow) {
         case "AW":
@@ -133,25 +133,29 @@ function isFast(now) {
     if (liturgicalNow === "Asc1" && day === 6)
         return true;
 
-    //Ember days
-    //Lent ember days are already fasts
-    if (liturgicalNow === "Whitsun" && (day === 3 || day === 5 || day === 6) || //Whitsun
-        month === 8 && date >= 15 && date <= 24 && (day === 3 || day === 5 || day === 6) || //September... is this accurate?
-        month === 11 && date >= 14 && date <= 23 && (day === 3 || day === 5 || day === 6)) //December... is THIS accurate?
+    if (isEmberDay(liturgicalNow, month, date, day))
         return true;
 
-    //rogation days (MTW after Ea5)
-    if (liturgicalNow === "Ea5" && (day === 1 || day === 2 || day === 3))
+    if (isRogationDay(liturgicalNow, day))
         return true;
 
     return false;
 }
 
 function isEmberDay(lit, month, date, day) {
-  if (liturgicalNow === "Whitsun" && (day === 3 || day === 5 || day === 6) || //Whitsun
+  if ((lit === "L1" || lit === "Whitsun") && (day === 3 || day === 5 || day === 6) || //Whitsun
         month === 8 && date >= 15 && date <= 24 && (day === 3 || day === 5 || day === 6) || //September... is this accurate?
         month === 11 && date >= 14 && date <= 23 && (day === 3 || day === 5 || day === 6)) //December... is THIS accurate?
         return true;
+
+    return false;
+}
+
+function isRogationDay(lit, day) {
+    if (lit === "Ea5" && day > 0)
+        return true;
+
+    return false;
 }
 
 function getTomorrow(today) {
