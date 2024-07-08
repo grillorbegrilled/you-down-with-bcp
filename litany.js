@@ -1,12 +1,9 @@
-<html>
-
-<HEAD>
-    <TITLE>Litany</TITLE>
-</HEAD>
-
-<BODY>
-    <P><BR>
-        O GOD the Father, Creator of heaven and earth; <B><BR>
+function getLitany(liturgicalDay, weekday) {
+    if (liturgicalDay === "AW" && weekday === 3 ||
+        liturgicalDay === "GF" ||
+        liturgicalDay === "Ea5" && (weekday === 1 || weekday === 2 || weekday === 3))
+        //ember days
+        return `<P>O GOD the Father, Creator of heaven and earth; <B><BR>
             Have mercy upon us. </B><BR>
         O God the Son, Redeemer of the world; <B><BR>
             Have mercy upon us. </B><BR>
@@ -141,7 +138,7 @@
         in all our troubles we may put our whole trust and confidence
         in thy mercy, and evermore serve thee in holiness and pureness
         of living, to thy honour and glory; through our only Mediator
-        and Advocate, Jesus Christ our Lord. Amen.</p>
-</body>
+        and Advocate, Jesus Christ our Lord. Amen.</p>`;
 
-</html>
+return "":
+}
