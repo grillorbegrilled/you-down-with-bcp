@@ -26,3 +26,11 @@ h1 {
     font-weight: normal; /* Make the font weight normal */
     text-transform: uppercase; /* Transform text to uppercase */
 }
+
+h2 {
+    border-color: var(--color2);
+    color: var(--color2);
+    font-size: 16px; /* Adjust to match the size of your <p> elements */
+    font-weight: normal; /* Make the font weight normal */
+    text-transform: uppercase; /* Transform text to uppercase */
+}
