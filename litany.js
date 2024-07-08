@@ -141,5 +141,5 @@ function getLitany(lit, month, date, day) {
         of living, to thy honour and glory; through our only Mediator
         and Advocate, Jesus Christ our Lord. Amen.</p>`;
 
-return "":
+return "";
 }
