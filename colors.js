@@ -1,9 +1,9 @@
 var r = document.querySelector(':root');
 
 function setColors(uno, due, tre) {
-    r.style.setProperty('--color1', 'lightblue'); //body text
-    r.style.setProperty('--color2', 'lightblue'); //h1 text
-    r.style.setProperty('--color3', 'lightblue'); //h1 background
+    r.style.setProperty('--color1', uno); //body text
+    r.style.setProperty('--color2', due); //h1 text
+    r.style.setProperty('--color3', tre); //h1 background
 }
 
 function colorsByDay(lit, month, date) {
