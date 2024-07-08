@@ -28,11 +28,11 @@ h1 {
 }
 
 h2 {
-    border-color: var(--color3);
     color: var(--color3);
     font-size: 16px; /* Adjust to match the size of your <p> elements */
     font-weight: normal; /* Make the font weight normal */
     text-transform: uppercase; /* Transform text to uppercase */
     margin: 0;
     padding: 0;
+    border: 1px solid var(--color3);
 }
