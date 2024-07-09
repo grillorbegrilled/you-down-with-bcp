@@ -365,4 +365,16 @@ function getLiturgicalDate(now) {
 
 function getBlackletterDay() {
     //TODO
+    //January: 8 Lucian PM, 13 Hilary BpC, 18 Prisca VM, 20 Fabian BpM 21 Agnes VM 22 Vincent M
+    //february: 5 agatha vm 14 valentine b
+    //march: 1 david abp 2 chad b 7 perpetua m 12 gregory mb 18 king edward 21 benedict a
+    //april 3 richard b 4 ambrose b 19 alphege abp 23 george m
+    //may 3 invent cross 6 john ante port lat 19 dunstan abp 26 augustine abp 27 bede p
+    //june 1 nicomede m 5 boniface b 11 barnabas ap 17 alban m 20 trans king edward
+    //july 2 visitation 4 trans s martin 15 swithun b 20 margaret vm 22 mary magdalen 26 anne
+    //august 1 lammas 6 transfiguration 7 holy name 10 lawrence m 28 augustine b 29 beh john baptist
+    //september 1 giles a 7 enurchus b 8 nat bvm 14 roodmas 17 lambert b 26 cyprian abp 30 jerome
+    //october 1 remigius b 6 faith vm 9 denis b 13 trans k edw 17 etheldreda v 25 crispin m
+    //november 2 allsouls 6 leonard c 11 martin b 13 britius b 15 machutus b 17 hugh b 20 king edmund 22 cecilia vm 23 clement b 25 catherine vm
+    //december 6 nicholas b 8 conc bvm 13 lucy vm 16 o sapientia 31 silvester b
 }
