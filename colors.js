@@ -6,6 +6,10 @@ function setColors(uno, due, tre) {
     r.style.setProperty('--color3', tre); //h1 background
 }
 
+//basic colors
+//white     gray    red     yellow  lime    aqua    blue    fuchsia
+//silver    black   maroon  olive   green   teal    navy    purple
+
 function colorsByDay(lit, month, date) {
     switch (lit) {
             //Blue for Advent and St. John Baptist
@@ -29,7 +33,7 @@ function colorsByDay(lit, month, date) {
             break;
         case "Candlemas":
         case "Annunciation":
-            setColors("lightpink", "black", "lightpink"); //not one of the ANSI terminal colors. Big deal, wanna fight about it?
+            setColors("pink", "black", "pink"); //not one of the ANSI terminal colors. Big deal, wanna fight about it?
             break;
         case "AW":
         case "L1":
@@ -83,9 +87,8 @@ function colorsByDay(lit, month, date) {
         case "SimonAndJude":
             setColors("red", "black", "red");
             break;
-            //Pink on Annunciation Day
         case "Michael":
-            setColors("royalblue", "black", "royalblue");
+            setColors("royalblue", "black", "royalblue"); //not a basic color. So what?
             break;
         case "E1":
         case "E2":
@@ -121,7 +124,7 @@ function colorsByDay(lit, month, date) {
             if (month === 5 && date > 24 || month === 6 || month === 7 || month === 8 && date < 29)
                 setColors("gold", "black", "gold");
             else if (month === 8 && date > 29 || month >= 9)
-                setColors("darkorange", "black", "darkorange"); //not ANSI terminal color. Sue me.
+                setColors("orangered", "black", "orangered"); //not ANSI terminal color. Sue me.
             else
                 setColors("green", "black", "green");
             break;
