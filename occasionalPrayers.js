@@ -7,6 +7,11 @@ const generalThanksgiving = `ALMIGHTY God, Father of all mercies, we thine unwor
   and by walking before thee in holiness and righteousness all our days; 
   through Jesus Christ our Lord, to whom with thee and the Holy Ghost be all honour and glory, world without end. Amen.`;
 
+const getEuchDevos(weekday) {
+  if (weekday === 0 || weekday === 6)
+    return "<h2>The Prayer of Humble Access</h2>" + humbleAccess + "<h2>The Postcommunion Prayers</h2>" + postcommunions;
+}
+
 const humbleAccess = `<p>WE do not presume to come to this thy Table, O merciful Lord, trusting in our own righteousness, but in thy manifold and great mercies.<br>
   We are not worthy so much as to gather up the crumbs under thy Table.<br>
   But thou art the same Lord, whose property is always to have mercy:<br>
