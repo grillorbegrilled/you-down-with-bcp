@@ -17,7 +17,7 @@ function colorsByDay(lit, month, date) {
         case "LXX":
         case "LX":
         case "L":
-            setColors("white", "white", "darkblue");
+            setColors("white", "black", "blue");
             break;
         case "Xmas":
         case "Stephen":
@@ -26,6 +26,10 @@ function colorsByDay(lit, month, date) {
         case "X1":
         case "Circ":
             setColors("red", "white", "green");
+            break;
+        case "Candlemas":
+        case "Annunciation":
+            setColors("lightpink", "black", "lightpink"); //not one of the ANSI terminal colors. Big deal, wanna fight about it?
             break;
         case "AW":
         case "L1":
@@ -44,16 +48,45 @@ function colorsByDay(lit, month, date) {
         case "EE":
             setColors("maroon", "black", "maroon");
             break;
-            //White for Easter
-            //Red for Whitsun and martyrs
+        case "Epiphany":
+        case "Easter":
+        case "EasterMon":
+        case "EasterTue":
+        case "Ea1":
+        case "Ea2":
+        case "Ea3":
+        case "Ea4":
+        case "Ea5":
+        case "Ascension":
+        case "Asc1":
+        case "Trinity":
+        case "AllSaints":
+        case "ThanksgivingDay":
+            setColors("white", "black", "white");
+            break;
         case "Whitsun":
         case "Whitmon":
         case "WhitTue":
-            setColors("red", "gold", "red");
+        case "Andrew":
+        case "Thomas":
+        case "Paul":
+        case "Matthias":
+        case "Mark":
+        case "PhilipAndJames":
+        case "Barnabas":
+        case "Peter":
+        case "James":
+        case "Bartholomew":
+        case "Matthew":
+        case "Michael":
+        case "Luke":
+        case "SimonAndJude":
+            setColors("red", "black", "red");
             break;
             //Pink on Annunciation Day
-            //Sky blue on Michaelmas
-            //Rainbow on All Saints?
+        case "Michael":
+            setColors("royalblue", "black", "royalblue");
+            break;
         case "E1":
         case "E2":
         case "E3":
@@ -88,7 +121,7 @@ function colorsByDay(lit, month, date) {
             if (month === 5 && date > 24 || month === 6 || month === 7 || month === 8 && date < 29)
                 setColors("gold", "black", "gold");
             else if (month === 8 && date > 29 || month >= 9)
-                setColors("darkorange", "black", "darkorange");
+                setColors("darkorange", "black", "darkorange"); //not ANSI terminal color. Sue me.
             else
                 setColors("green", "black", "green");
             break;
@@ -96,53 +129,3 @@ function colorsByDay(lit, month, date) {
             setColors("white", "black", "white");
     }
 }
-
-/*
-    "Epiphany": [""],
-    "AW": [""],
-    "L1": [""],
-    "L2": [""],
-    "L3": [""],
-    "L4": [""],
-    "L5": [""],
-    "Palm": [""],
-    "HW-Mon": [""],
-    "HW-Tue": [""],
-    "HW-Wed": [""],
-    "HW-Thu": [""],
-    "GF": [""],
-    "EE": [""],
-    "Easter": [""],
-    "EasterMon": [""],
-    "EasterTue": [""],
-    "Ea1": [""],
-    "Ea2": [""],
-    "Ea3": [""],
-    "Ea4": [""],
-    "Ea5": [""],
-    "Ascension": [""],
-    "Asc1": [""],
-    "Whitsun": [""],
-    "Whitmon": [""],
-    "WhitTue": [""],
-    "Trinity": [""],
-    "Andrew": [""],
-    "Thomas": [""],
-    "Paul": [""],
-    "Candlemas": [""],
-    "Matthias": [""],
-    "Annunciation": [""],
-    "Mark": [""],
-    "PhilipAndJames": [""],
-    "Barnabas": [""],
-    "JohnBaptist": [""],
-    "Peter": [""],
-    "James": [""],
-    "Bartholomew": [""],
-    "Matthew": [""],
-    "Michael": [""],
-    "Luke": [""],
-    "SimonAndJude": [""],
-    "AllSaints": [""],
-    "ThanksgivingDay": [""]
-*/
