@@ -65,6 +65,12 @@ function displayEventDetails() {
         document.getElementById('litany').setAttribute("hidden", false);
         document.getElementById('litany').innerHTML = litany;
     }
+
+    const penitentialOffice = getPenitentialOffice(liturgicalDay, date, day);
+    if (penitentialOffice) {
+        document.getElementById('penitentialOffice').setAttribute("hidden", false);
+        document.getElementById('penitentialOffice').innerHTML = litany;
+    }
 }
 
 function synthCollects(cotd, week) {
