@@ -13,11 +13,10 @@ function displayEventDetails() {
     if (now.getHours() < 12) {
         document.getElementById('canticle').innerHTML = makeP(getMorn(liturgicalDay));
         document.getElementById('collect').textContent = "O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings may be ordered by thy governance, to do always that is righteous in thy sight; through Jesus Christ our Lord. Amen.";
-        if (liturgicalDay === 'Whitsun' || liturgicalDay === 'Whitmon' || liturgicalDay === 'WhitTue' || liturgicalDay === 'Xmas' || liturgicalDay === 'Stephen' || liturgicalDay === 'JohnEvangelist' || liturgicalDay === 'Innocents') {
+        if (liturgicalDay === 'Whitsun' || liturgicalDay === 'Whitmon' || liturgicalDay === 'WhitTue' || liturgicalDay === 'Xmas' || liturgicalDay === 'Stephen' || liturgicalDay === 'JohnEvangelist' || liturgicalDay === 'Innocents')
           document.getElementById('creed').innerHTML = "";
-        }
     } else {
-        document.getElementById('officeName').textContent = "EVENING PRAYER";
+      document.getElementById('officeName').textContent = "EVENING PRAYER";
       document.getElementById('canticle').innerHTML = makeP(getEve(liturgicalDay));  
       document.getElementById('collect').textContent = "O GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
     }
@@ -47,17 +46,15 @@ function displayEventDetails() {
         document.getElementById('g_txt').innerHTML = '';
     }
 
-    if (hymn) {
+    if (hymn)
         document.getElementById('hymn').innerHTML = makeP(hymn);
-    } else {
+    else
         document.getElementById('hymn').innerHTML = '';
-    }
 
-    if (dayName) {
+    if (dayName)
         document.getElementById('nameOfTheDay').textContent = `${dayName}`;
-    } else {
+    else
         document.getElementById('nameOfTheDay').textContent = '';
-    }
 
     const litany = getLitany(liturgicalDay, month, date, day);
     if (litany) {
