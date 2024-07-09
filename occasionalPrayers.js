@@ -9,7 +9,7 @@ const generalThanksgiving = `ALMIGHTY God, Father of all mercies, we thine unwor
 
 const getEuchDevos(weekday) {
   if (weekday === 0 || weekday === 6)
-    return "<h2>The Prayer of Humble Access</h2>" + humbleAccess + "<h2>The Postcommunion Prayers</h2>" + postcommunions;
+    return "<h2>The Prayer of Humble Access</h2>" + humbleAccess + "<h2>The Postcommunion</h2>" + postcommunion;
 }
 
 const humbleAccess = `<p>WE do not presume to come to this thy Table, O merciful Lord, trusting in our own righteousness, but in thy manifold and great mercies.<br>
@@ -19,17 +19,7 @@ const humbleAccess = `<p>WE do not presume to come to this thy Table, O merciful
   that our sinful bodies may be made clean by his body, and our souls washed through his most precious blood,<br>
   and that we may evermore dwell in him, and he in us. Amen.</p>`;
 
-const postcommunions = `<p>O LORD and heavenly Father, we thy humble servants entirely desire thy fatherly goodness mercifully to accept this our sacrifice of praise and thanksgiving;
-  most humbly beseeching thee to grant, that by the merits and death of thy Son Jesus Christ, and through faith in his blood, we and all thy whole Church may obtain remission of our sins, and all other benefits of his passion.<br>
-  
-  And here we offer and present unto thee, O Lord, ourselves, our souls and bodies, to be a reasonable, holy, and lively sacrifice unto thee;
-  humbly beseeching thee, that all we, who are partakers of this holy Communion, may be fulfilled with thy grace and heavenly benediction.<br>
-  
-  And although we be unworthy, through our manifold sins, to offer unto thee any sacrifice, yet we beseech thee to accept this our bounden duty and service;
-  not weighing our merits, but pardoning our offences, through Jesus Christ our Lord;
-  by whom, and with whom, in the unity of the Holy Ghost, all honour and glory be unto thee, O Father Almighty, world without end. Amen.</p>
-
-<p>ALMIGHTY and everliving God, we most heartily thank thee, for that thou dost vouchsafe to feed us, who have duly received these holy mysteries, with the spiritual food of the most precious Body and Blood of thy Son our Saviour Jesus Christ;<br>
+const postcommunion = `<p>ALMIGHTY and everliving God, we most heartily thank thee, for that thou dost vouchsafe to feed us, who have duly received these holy mysteries, with the spiritual food of the most precious Body and Blood of thy Son our Saviour Jesus Christ;<br>
   and dost assure us thereby of thy favour and goodness towards us; and that we are very members incorporate in the mystical body of thy Son, which is the blessed company of all faithful people;<br>
   and are also heirs through hope of thy everlasting kingdom, by the merits of the most precious death and passion of thy dear Son.<br>
   And we most humbly beseech thee, O heavenly Father, so to assist us with thy grace, that we may continue in that holy fellowship, and do all such good works as thou hast prepared for us to walk in;<br>
