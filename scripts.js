@@ -65,8 +65,10 @@ function displayEventDetails() {
         document.getElementById('litany').style.display = "none";
 
     const penitentialOffice = getPenitentialOffice(liturgicalDay, date, day);
-    if (penitentialOffice)
-        document.getElementById('penitentialOffice').innerHTML = litany;
+    if (penitentialOffice) {
+        document.getElementById('office').style.display = "none";
+        document.getElementById('penitentialOffice').innerHTML = penitentialOffice;
+    }
     else
         document.getElementById('penitentialOffice').style.display = "none";
 }
