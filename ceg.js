@@ -1022,3 +1022,28 @@ const nationalDaysUS = {
         }
     }
 };
+
+const otherSaints = {
+    "Patrick": {
+        "c": "O ALMIGHTY God, who in thy providence didst choose thy servant Patrick to be the apostle of the Irish people, that he might bring those who were wandering in darkness and error to the true light and knowledge of thee; Grant us so to walk in that light, that we may come at last to the light of everlasting life; through the merits of Jesus Christ thy Son our Lord. Amen.",
+        "e": {
+            "cit": "Revelation 22:1-5",
+            "txt": "HE shewed me a pure river of water of life, clear as crystal, proceeding out of the throne of God and of the Lamb. In the midst of the street of it, and on either side of the river, was there the tree of life, which bare twelve manner of fruits, and yielded her fruit every month: and the leaves of the tree were for the healing of the nations. And there shall be no more curse: but the throne of God and of the Lamb shall be in it; and his servants shall serve him: And they shall see his face; and his name shall be in their foreheads. And there shall be no night there; and they need no candle, neither light of the sun; for the Lord God giveth them light: and they shall reign for ever and ever."
+        },
+        "g": {
+            "cit": "Matthew 10:16-23",
+            "txt": "JESUS said, Behold, I send you forth as sheep in the midst of wolves: be ye therefore wise as serpents, and harmless as doves. But beware of men: for they will deliver you up to the councils, and they will scourge you in their synagogues; And ye shall be brought before governors and kings for my sake, for a testimony against them and the Gentiles. But when they deliver you up, take no thought how or what ye shall speak: for it shall be given you in that same hour what ye shall speak. For it is not ye that speak, but the Spirit of your Father which speaketh in you. And the brother shall deliver up the brother to death, and the father the child: and the children shall rise up against their parents, and cause them to be put to death. And ye shall be hated of all men for my name's sake: but he that endureth to the end shall be saved. But when they persecute you in this city, flee ye into another: for verily I say unto you, Ye shall not have gone over the cities of Israel, till the Son of man be come."
+        }
+    },
+    "SuperWesleyBros": {
+        "c": "O GOD, who didst inspire thy servants John and Charles Wesley with burning zeal for the sanctification of souls and didst endow them with eloquence in speech and song: Kindle such fervor in thy church, we beseech thee, that those whose faith has cooled may be warmed, and those who have not known thy Christ may turn to him and be saved; who liveth and reigneth with thee and the Holy Ghost, one God, now and for ever. Amen.",
+        "e": {
+            "cit": "Ephesians 5:15-20",
+            "txt": ""
+        },
+        "g": {
+            "cit": "", //Matthew 11.25-end; or 24.42-46; John 10.11-16; or 15.9-17; or 21.15-17 US: Luke 9:1-6
+            "txt": ""
+        }
+    }
+};
