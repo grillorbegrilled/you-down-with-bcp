@@ -1058,3 +1058,17 @@ const otherSaints = {
         }
     }
 };
+
+const specialOccasions = {
+    "WeddingAnniversary": {
+        "c": "O GOD, who hast so consecrated the covenant of marriage that in it is represented the spiritual unity between Christ and his Church: Send thy blessing upon us as we begin another year, that we may so love, honor, and cherish each other in faithfulness and patience, in wisdom and true godliness, that our home may be a haven of blessing and peace; through Jesus Christ our Lord. Amen.";,
+        "e": {
+            "cit": "Colossians 3:12-17",
+            "txt": "PUT on, as the elect of God, holy and beloved, bowels of mercies, kindness, humbleness of mind, meekness, longsuffering; forbearing one another, and forgiving one another, if any man have a quarrel against any: even as Christ forgave you, so also do ye. And above all these things put on charity, which is the bond of perfectness. And let the peace of God rule in your hearts, to the which also ye are called in one body; and be ye thankful. Let the word of Christ dwell in you richly in all wisdom; teaching and admonishing one another in psalms and hymns and spiritual songs, singing with grace in your hearts to the Lord. And whatsoever ye do in word or deed, do all in the name of the Lord Jesus, giving thanks to God and the Father by him."
+        },
+        "g": {
+            "cit": "Matthew 19:4-6",
+            "txt": "JESUS said unto them, Have ye not read, that he which made them at the beginning made them male and female, and said, For this cause shall a man leave father and mother, and shall cleave to his wife: and they twain shall be one flesh? Wherefore they are no more twain, but one flesh. What therefore God hath joined together, let not man put asunder."
+        }
+    }
+};
