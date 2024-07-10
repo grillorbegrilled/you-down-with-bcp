@@ -27,7 +27,9 @@ function displayEventDetails() {
     colorsByDay(liturgicalDay, month, date);
 
     if (day === 3 || day === 5)
-        document.getElementById('pfac').setAttribute("hidden", false);
+        document.getElementById('pfac').style.display = "initial";
+    else
+        document.getElementById('pfac').style.display = "none";
     
     if (details) {
         if (collect.includes("</p><p>"))
@@ -58,16 +60,17 @@ function displayEventDetails() {
 
     const litany = getLitany(liturgicalDay, month, date, day);
     if (litany) {
-        document.getElementById('office').setAttribute("hidden", true);
-        document.getElementById('litany').setAttribute("hidden", false);
+        document.getElementById('office').style.display = "none";
         document.getElementById('litany').innerHTML = litany;
     }
+    else
+        document.getElementById('litany').style.display = "none";
 
     const penitentialOffice = getPenitentialOffice(liturgicalDay, date, day);
-    if (penitentialOffice) {
-        document.getElementById('penitentialOffice').setAttribute("hidden", false);
+    if (penitentialOffice)
         document.getElementById('penitentialOffice').innerHTML = litany;
-    }
+    else
+        document.getElementById('penitentialOffice').style.display = "none";
 }
 
 function synthCollects(cotd, week) {
