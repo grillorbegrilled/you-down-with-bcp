@@ -1045,5 +1045,16 @@ const otherSaints = {
             "cit": "", //Matthew 11.25-end; or 24.42-46; John 10.11-16; or 15.9-17; or 21.15-17 US: Luke 9:1-6
             "txt": ""
         }
+    },
+    "ElizabethII": {
+        "c": "",
+        "e": {
+            "cit": "", //Proverbs 31.10-12,20,26-end; 1 Corinthians 12.13–13.3;;; 1 Timothy 2.1-6
+            "txt": ""
+        },
+        "g": {
+            "cit": "", //Matthew 25.34-end;;; Mark 10.42-45; Luke 14.27-33
+            "txt": ""
+        }
     }
 };
