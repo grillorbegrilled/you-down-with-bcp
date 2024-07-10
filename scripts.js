@@ -26,9 +26,7 @@ function displayEventDetails() {
     const day = now.getDay();
     colorsByDay(liturgicalDay, month, date);
 
-    if (day === 3 || day === 5)
-        document.getElementById('pfac').style.display = "initial";
-    else
+    if (day !== 3 && day !== 5)
         document.getElementById('pfac').style.display = "none";
     
     if (details) {
