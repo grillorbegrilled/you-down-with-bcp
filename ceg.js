@@ -1061,7 +1061,7 @@ const otherSaints = {
     }
 };
 
-const specialOccasions = {
+/*const specialOccasions = {
     "WeddingAnniversary": {
         "c": "O GOD, who hast so consecrated the covenant of marriage that in it is represented the spiritual unity between Christ and his Church: Send thy blessing upon us as we begin another year, that we may so love, honor, and cherish each other in faithfulness and patience, in wisdom and true godliness, that our home may be a haven of blessing and peace; through Jesus Christ our Lord. Amen.";,
         "e": {
@@ -1073,4 +1073,4 @@ const specialOccasions = {
             "txt": "JESUS said unto them, Have ye not read, that he which made them at the beginning made them male and female, and said, For this cause shall a man leave father and mother, and shall cleave to his wife: and they twain shall be one flesh? Wherefore they are no more twain, but one flesh. What therefore God hath joined together, let not man put asunder."
         }
     }
-};
+};*/
