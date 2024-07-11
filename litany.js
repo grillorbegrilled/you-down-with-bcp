@@ -88,10 +88,10 @@ function getLitany(lit, month, date, day) {
             <B>Lord, have mercy upon us.</B>
     </P>
 
-    <p>OUR Father, which art in heaven,<br>
+    <p>OUR Father, who art in heaven,<br>
             Hallowed be thy Name.<br>
             Thy kingdom come.<br>
-            Thy will be done, in earth as it is in heaven.<br>
+            Thy will be done, on earth as it is in heaven.<br>
             Give us this day our daily bread.<br>
             And forgive us our trespasses,<br>
             As we forgive them that trespass against us.<br>
