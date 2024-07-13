@@ -80,15 +80,10 @@ function getMorn(day) {
     To thee Cherubin and Seraphin : continually do cry,<br>
     Holy, Holy, Holy : Lord God of Sabaoth;<br>
     Heaven and earth are full of the Majesty : of thy glory.<br>
-    The glorious company of the Apostles : praise thee.<br>
-    The goodly fellowship of the Prophets : praise thee.<br>
-    The noble army of Martyrs : praise thee.<br>
-    The holy Church throughout all the world : doth acknowledge thee;<br>
-    The Father : of an infinite Majesty;<br>
-    Thine honourable, true : and only Son;<br>
-    Also the Holy Ghost : the Comforter.</p>
-    <p>Thou art the King of Glory : O Christ.<br>
-    Thou art the everlasting Son : of the Father.<br>
+    The glorious company of the Apostles praise thee : the goodly fellowship of the Prophets praise thee.<br>
+    The noble army of Martyrs praise thee : the holy Church throughout all the world doth acknowledge thee; the Father of an infinite Majesty;<br>
+    Thine honourable, true and only Son : also the Holy Ghost the Comforter.</p>
+    <p>Thou art the King of Glory, O Christ : thou art the everlasting Son of the Father.<br>
     When thou tookest upon thee to deliver man : thou didst not abhor the Virgin's womb.<br>
     When thou hadst overcome the sharpness of death : thou didst open the Kingdom of Heaven to all believers.<br>
     Thou sittest at the right hand of God : in the glory of the Father.<br>
