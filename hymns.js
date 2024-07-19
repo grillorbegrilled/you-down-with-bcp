@@ -79,7 +79,24 @@ const hymns = {
             at thy feet its treasure store;<br>
             take my self, and I will be<br>
             ever, only, all for thee.`],
-    "T8": [""],
+    "T8": [`Blessèd are the sons of God,<br>
+            They are bought with Christ’s own blood;<br>
+            They are ransomed from the grave,<br>
+            Life eternal they shall have:<br>
+            With them numbered may we be<br>
+            Here and in eternity!</p>
+        <p>They are justified by grace,<br>
+            They enjoy the Savior’s peace;<br>
+            All their sins are washed away,<br>
+            They shall stand in God’s great Day;<br>
+            With them numbered may we be<br>
+            Here and in eternity!</p>
+        <p>They are lights upon the earth,<br>
+            Children of a heav'nly birth;<br>
+            One with God, with Jesus one;<br>
+            Glory is in them begun:<br>
+            With them numbered may we be<br>
+            Here and in eternity!`],
     "T9": [""],
     "T10": [""],
     "T11": [""],
