@@ -28,6 +28,7 @@ function displayEventDetails() {
     const date = now.getDate();
     const day = now.getDay();
     colorsByDay(liturgicalDay, month, date);
+    setBorderImage(now);
 
     if (day !== 3 && day !== 5)
         document.getElementById('pfac').style.display = "none";
