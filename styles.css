@@ -37,3 +37,9 @@ h2 {
     border: 1px solid var(--color3);
     line-height: 20px;
 }
+
+.tiled-border {
+    height: 64px;
+    background-image: url('thickerborder.png');
+    background-repeat: repeat;
+}
