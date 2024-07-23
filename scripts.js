@@ -9,6 +9,9 @@ function displayEventDetails() {
     const details = getProper(liturgicalDay);
     const hymn = getHymns(liturgicalDay);
     const collect = synthCollects(details.c, week);
+
+    if (!isFast(now))
+        document.getElementById('fastDayLabel').style.display = "none";
   
     if (now.getHours() < 10) {
         document.getElementById('canticle').innerHTML = makeP(getMorn(liturgicalDay));
