@@ -16,20 +16,20 @@ body {
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
 h1 {
     background-color: var(--color3);
     color: var(--color2);
-    font-size: 16px; /* Adjust to match the size of your <p> elements */
+    font-size: 20px; /* Adjust to match the size of your <p> elements */
     font-weight: normal; /* Make the font weight normal */
     text-transform: uppercase; /* Transform text to uppercase */
 }
 
 h2 {
     color: var(--color3);
-    font-size: 16px; /* Adjust to match the size of your <p> elements */
+    font-size: 20px; /* Adjust to match the size of your <p> elements */
     font-weight: normal; /* Make the font weight normal */
     text-transform: uppercase; /* Transform text to uppercase */
     margin: 0;
