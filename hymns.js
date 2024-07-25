@@ -143,10 +143,10 @@ const hymns = {
     "James": [`Lord, who shall sit beside thee,<br>
             Enthroned on either hand,<br>
             when clouds no longer hide thee,<br>
-            'mid all thy faithful band?</p>
+            mid all thy faithful band?</p>
         <p>Who drinks the cup of sorrow<br>
             thy Father gave to thee<br>
-            'neath shows of the morrow<br>
+            neath shows of the morrow<br>
             in dark Gethsemane;</p>
         <p>Who on thy passion thinking<br>
             can find in loss a gain,<br>
