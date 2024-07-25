@@ -125,7 +125,26 @@ const hymns = {
     "Barnabas": [""],
     "JohnBaptist": [""],
     "Peter": [""],
-    "James": [""],
+    "James": [`Lord, who shall sit beside thee,<br>
+Enthroned on either hand,<br>
+when clouds no longer hide thee,<br>
+'mid all thy faithful band?</p>
+        <p>Who drinks the cup of sorrow<br>
+thy Father gave to thee<br>
+'neath shows of the morrow<br>
+in dark Gethsemane;</p>
+        <p>Who on thy passion thinking<br>
+can find in loss a gain,<br>
+and dare to meet unshrinking<br>
+thy baptism of pain.</p>
+        <p>O Jesus, form within us<br>
+thy likeness clear and true;<br>
+by thine example win us<br>
+to suffer or to do.</p>
+        <p>This law itself fulfilleth,<br>
+Christlike to Christ is nigh,<br>
+and, where the Father willeth,<br>
+shall sit with Christ on high.`],
     "Bartholomew": [""],
     "Matthew": [""],
     "Michael": [""],
