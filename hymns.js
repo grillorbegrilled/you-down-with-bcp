@@ -97,7 +97,22 @@ const hymns = {
             Glory is in them begun:<br>
             With them numbered may we be<br>
             Here and in eternity!`],
-    "T9": [""],
+    "T9": [`A charge to keep I have,<br>
+            A God to glorify,<br>
+            A never-dying soul to save,<br>
+            And fit it for the sky;</p>
+        <p>From youth to hoary age,<br>
+            My calling to fulfil;<br>
+            O may it all my pow'rs engage<br>
+            To do my Master's will.</p>
+        <p>Arm me with jealous care,<br>
+            As in Thy sight to live;<br>
+            And oh, Thy servant, Lord, prepare<br>
+            A strict account to give.</p>
+        <p>Help me to watch and pray,<br>
+            And on Thyself rely;<br>
+            And let me ne'er thy trust betray,<br>
+            But press to realms on high.`],
     "T10": [""],
     "T11": [""],
     "T12": [""],
@@ -126,25 +141,25 @@ const hymns = {
     "JohnBaptist": [""],
     "Peter": [""],
     "James": [`Lord, who shall sit beside thee,<br>
-Enthroned on either hand,<br>
-when clouds no longer hide thee,<br>
-'mid all thy faithful band?</p>
+            Enthroned on either hand,<br>
+            when clouds no longer hide thee,<br>
+            'mid all thy faithful band?</p>
         <p>Who drinks the cup of sorrow<br>
-thy Father gave to thee<br>
-'neath shows of the morrow<br>
-in dark Gethsemane;</p>
+            thy Father gave to thee<br>
+            'neath shows of the morrow<br>
+            in dark Gethsemane;</p>
         <p>Who on thy passion thinking<br>
-can find in loss a gain,<br>
-and dare to meet unshrinking<br>
-thy baptism of pain.</p>
+            can find in loss a gain,<br>
+            and dare to meet unshrinking<br>
+            thy baptism of pain.</p>
         <p>O Jesus, form within us<br>
-thy likeness clear and true;<br>
-by thine example win us<br>
-to suffer or to do.</p>
+            thy likeness clear and true;<br>
+            by thine example win us<br>
+            to suffer or to do.</p>
         <p>This law itself fulfilleth,<br>
-Christlike to Christ is nigh,<br>
-and, where the Father willeth,<br>
-shall sit with Christ on high.`],
+            Christlike to Christ is nigh,<br>
+            and, where the Father willeth,<br>
+            shall sit with Christ on high.`],
     "Bartholomew": [""],
     "Matthew": [""],
     "Michael": [""],
