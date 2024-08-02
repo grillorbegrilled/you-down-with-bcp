@@ -28,8 +28,8 @@ function getPenitentialOffice(lit, date, weekday) {
       LORD made heaven and earth, the sea, and all that in them is,
       and rested the seventh day: wherefore the LORD blessed the seventh
       day, and hallowed it.</H5>-->
-        <b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>
-      Honour thy father and thy mother.<br>
+        <b>Lord, have mercy upon us, and incline our hearts to keep this law.</b></p>
+      <p>Honour thy father and thy mother.<br>
       <!--<H5>that thy days may be long in the land which the LORD thy
       God giveth thee.</H5>-->
         <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
@@ -61,14 +61,14 @@ function getPenitentialOffice(lit, date, weekday) {
       For I acknowledge my faults : and my sin is ever before me.<BR>
       Against thee only have I sinned, and done this evil in thy sight : that thou mightest be justified in thy saying, and clear when thou art judged.<BR>
       Behold, I was shapen in wickedness : and in sin hath my mother conceived me.<BR>
-      But lo, thou requirest truth in the inward parts: and shalt make me to understand wisdom secretly.<BR>
+      But lo, thou requirest truth in the inward parts : and shalt make me to understand wisdom secretly.<BR>
       Thou shalt purge me with hyssop, and I shall be clean : thou shalt wash me, and I shall be whiter than snow.<BR>
       Thou shalt make me hear of joy and gladness: that the bones which thou hast broken may rejoice.<BR>
       Turn thy face away from my sins : and put out all my misdeeds.<BR>
       Make me a clean heart, O God : and renew a right spirit within me.<BR>
       Cast me not away from thy presence : and take not thy holy Spirit from me.<BR>
       O give me the comfort of thy help again : and stablish me with thy free Spirit.<BR>
-      Then shall I teach thy ways unto the wicked: and sinners shall be converted unto thee.<BR>
+      Then shall I teach thy ways unto the wicked : and sinners shall be converted unto thee.<BR>
       Deliver me from blood-guiltiness, O God, thou that art the God of my health : and my tongue shall sing of thy righteousness.<BR>
       Thou shalt open my lips, O Lord : and my mouth shall shew thy praise.<BR>
       For thou desirest no sacrifice, else would I give it thee : but thou delightest not in burnt-offering.<BR>
