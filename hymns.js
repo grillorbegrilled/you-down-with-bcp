@@ -113,7 +113,24 @@ const hymns = {
             And on Thyself rely;<br>
             And let me ne'er thy trust betray,<br>
             But press to realms on high.`],
-    "T10": [""],
+    "T10": [`Forward through the ages, in unbroken line,<br>
+        move the faithful spirits, at the call divine;<br>
+        gifts in different measure, hearts of one accord,<br>
+        manifold the service, one the sure reward.</p>
+        <p>Forward through the ages, in unbroken line<br>
+        move the faithful spirits at the call divine.</p>
+        <p>Wider grows the kingdom, reign of love and light;<br>
+        for it we must labor, till our faith is sight.<br>
+        prophets have proclaimed it, martyrs testified.<br>
+        poets sung its glory, heroes for it died.</p>
+        <p>Forward through the ages, in unbroken line<br>
+        move the faithful spirits at the call divine.</p>
+        <p>Not alone we conquer, not alone we fall;<br>
+        in each loss or triumph lose or triumph all.<br>
+        bound by God's far purpose in one living whole,<br>
+        move we on together to the shining goal.</p>
+        <p>Forward through the ages, in unbroken line<br>
+        move the faithful spirits at the call divine.</p>`],
     "T11": [""],
     "T12": [""],
     "T13": [""],
