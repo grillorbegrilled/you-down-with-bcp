@@ -632,11 +632,11 @@ const propers1662 = {
     "T10": {
         "c": "LET thy merciful ears, O Lord, be open to the prayers of thy humble servants; and that they may obtain their petitions make them to ask such things as shall please thee; through Jesus Christ our Lord. Amen.",
         "e": {
-            "cit": "1 Corinthians 12:1",
+            "cit": "1 Corinthians 12:1-11",
             "txt": "CONCERNING spiritual gifts, brethren, I would not have you ignorant. Ye know that ye were Gentiles, carried away unto these dumb idols, even as ye were led. Wherefore I give you to understand, that no man speaking by the Spirit of God calleth Jesus accursed: and that no man can say that Jesus is the Lord, but by the Holy Ghost. Now there are diversities of gifts, but the same Spirit. And there are differences of administrations, but the same Lord. And there are diversities of operations, but it is the same God which worketh all in all. But the manifestation of the Spirit is given to every man to profit withal. For to one is given by the Spirit the word of wisdom; to another the word of knowledge by the same Spirit; To another faith by the same Spirit; to another the gifts of healing by the same Spirit; To another the working of miracles; to another prophecy; to another discerning of spirits; to another divers kinds of tongues; to another the interpretation of tongues: But all these worketh that one and the selfsame Spirit, dividing to every man severally as he will."
         },
         "g": {
-            "cit": "Luke 19:41",
+            "cit": "Luke 19:41-47a",
             "txt": "AND when he was come near, he beheld the city, and wept over it, Saying, If thou hadst known, even thou, at least in this thy day, the things which belong unto thy peace! but now they are hid from thine eyes. For the days shall come upon thee, that thine enemies shall cast a trench about thee, and compass thee round, and keep thee in on every side, And shall lay thee even with the ground, and thy children within thee; and they shall not leave in thee one stone upon another; because thou knewest not the time of thy visitation. And he went into the temple, and began to cast out them that sold therein, and them that bought; Saying unto them, It is written, My house is the house of prayer: but ye have made it a den of thieves. And he taught daily in the temple."
         }
     },
