@@ -77,6 +77,27 @@ function getPenitentialOffice(lit, date, weekday) {
     <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<BR>
       As it was in the beginning, is now, and ever shall be : world without end. Amen.
     </P>
+
+    <p><b>ALMIGHTY God, Father of our Lord Jesus Christ,<BR>
+    Maker of all things, judge of all men;<BR>
+    We acknowledge and bewail our manifold sins and wickedness,<BR>
+    Which we, from time to time, most grievously have committed,<BR>
+    By thought, word, and deed,<BR>
+    Against thy Divine Majesty,<BR>
+    Provoking most justly thy wrath and indignation against us.<BR>
+    We do earnestly repent, <BR>
+    And are heartily sorry for these our misdoings; <BR>
+    The remembrance of them is grievous unto us; <BR>
+    The burden of them is intolerable. <BR>
+    Have mercy upon us, <BR>
+    Have mercy upon us, most merciful Father; <BR>
+    For thy Son our Lord Jesus Christ's sake, <BR>
+    Forgive us all that is past; <BR>
+    And grant that we may ever hereafter <BR>
+    Serve and please thee <BR>
+    In newness of life, <BR>
+    To the honour and glory of thy Name; <BR>
+    Through Jesus Christ our Lord. Amen.</b></p>
     
     <p>Let us pray.<BR>
       O LORD, we beseech thee, mercifully hear our prayers, and spare
@@ -111,6 +132,13 @@ function getPenitentialOffice(lit, date, weekday) {
 
     <p>Hear also what Saint John saith.<br>
       If any man sin, we have an Advocate with the Father, Jesus Christ the righteous; and he is the propitiation for our sins. 1 St. John 2.1</p>
+
+<p>BLESSED is he whose unrighteousness is forgiven : and whose sin is covered.<BR>
+Blessed is the man unto whom the Lord imputeth no sin : and in whose spirit there is no guile.<BR>
+I said, I will confess my sins unto the Lord : and so thou forgavest the wickedness of my sin.</p>
+    <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<BR>
+      As it was in the beginning, is now, and ever shall be : world without end. Amen.
+    </P>
     
     <p>THE Lord bless us, and keep us. The Lord make his face to shine upon us, and be gracious unto us. The Lord lift up his countenance upon us, and give us peace, both now and evermore. Amen.</p>`;
   }
