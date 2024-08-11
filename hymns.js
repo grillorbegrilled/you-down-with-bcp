@@ -114,24 +114,43 @@ const hymns = {
             And let me ne'er thy trust betray,<br>
             But press to realms on high.`],
     "T10": [`Forward through the ages, in unbroken line,<br>
-        move the faithful spirits, at the call divine;<br>
-        gifts in different measure, hearts of one accord,<br>
-        manifold the service, one the sure reward.</p>
+            move the faithful spirits, at the call divine;<br>
+            gifts in different measure, hearts of one accord,<br>
+            manifold the service, one the sure reward.</p>
         <p>Forward through the ages, in unbroken line<br>
-        move the faithful spirits at the call divine.</p>
+            move the faithful spirits at the call divine.</p>
         <p>Wider grows the kingdom, reign of love and light;<br>
-        for it we must labor, till our faith is sight.<br>
-        prophets have proclaimed it, martyrs testified.<br>
-        poets sung its glory, heroes for it died.</p>
+            for it we must labor, till our faith is sight.<br>
+            prophets have proclaimed it, martyrs testified.<br>
+            poets sung its glory, heroes for it died.</p>
         <p>Forward through the ages, in unbroken line<br>
-        move the faithful spirits at the call divine.</p>
+            move the faithful spirits at the call divine.</p>
         <p>Not alone we conquer, not alone we fall;<br>
-        in each loss or triumph lose or triumph all.<br>
-        bound by God's far purpose in one living whole,<br>
-        move we on together to the shining goal.</p>
+            in each loss or triumph lose or triumph all.<br>
+            bound by God's far purpose in one living whole,<br>
+            move we on together to the shining goal.</p>
         <p>Forward through the ages, in unbroken line<br>
-        move the faithful spirits at the call divine.</p>`],
-    "T11": [""],
+            move the faithful spirits at the call divine.</p>`],
+    "T11": [`With broken heart and contrite sigh,<br>
+            a trembling sinner, Lord, I cry;<br>
+            thy pard'ning grace is rich and free:<br>
+            O God, merciful to me.</p>
+        <p>I smite upon my troubled breast,<br>
+            with deep and conscious guilt oppressed,<br>
+            Christ and his cross my only plea:<br>
+            O God, merciful to me.</p>
+        <p>Far off I stand with tearful eyes,<br>
+            nor dare uplift them to the skies;<br>
+            but thou dost all my anguish see:<br>
+            O God, merciful to me.</p>
+        <p>Nor alms, nor deeds that I have done,<br>
+            can for a single sin atone;<br>
+            to Calvary alone I flee:<br>
+            O God, merciful to me.</p>
+        <p>And when, redeemed from sin and hell,<br>
+            with all the ransomed throng I dwell,<br>
+            my raptured song shall ever be,<br>
+            God has been merciful to me.`],
     "T12": [""],
     "T13": [""],
     "T14": [""],
