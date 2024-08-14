@@ -134,19 +134,19 @@ const hymns = {
     "T11": [`With broken heart and contrite sigh,<br>
             a trembling sinner, Lord, I cry;<br>
             thy pard'ning grace is rich and free:<br>
-            O God, merciful to me.</p>
+            O God, be merciful to me.</p>
         <p>I smite upon my troubled breast,<br>
             with deep and conscious guilt oppressed,<br>
             Christ and his cross my only plea:<br>
-            O God, merciful to me.</p>
+            O God, be merciful to me.</p>
         <p>Far off I stand with tearful eyes,<br>
             nor dare uplift them to the skies;<br>
             but thou dost all my anguish see:<br>
-            O God, merciful to me.</p>
+            O God, be merciful to me.</p>
         <p>Nor alms, nor deeds that I have done,<br>
             can for a single sin atone;<br>
             to Calvary alone I flee:<br>
-            O God, merciful to me.</p>
+            O God, be merciful to me.</p>
         <p>And when, redeemed from sin and hell,<br>
             with all the ransomed throng I dwell,<br>
             my raptured song shall ever be,<br>
