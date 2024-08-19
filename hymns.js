@@ -151,7 +151,30 @@ const hymns = {
             with all the ransomed throng I dwell,<br>
             my raptured song shall ever be,<br>
             God has been merciful to me.`],
-    "T12": [""],
+    "T12": [`Through the love of God, our Savior, <br>
+            all will be well;<br>
+            free and changeless is his favor, <br>
+            all will be well;<br>
+            precious is the blood that healed us, <br>
+            perfect is the grace that sealed us,<br>
+            strong the hand stretched out to shield us, <br>
+            all will be well.</p>
+        <p>Though we pass through tribulation, <br>
+            all will be well;<br>
+            ours is such a full salvation, <br>
+            all will be well.<br>
+            happy when in God confiding, <br>
+            fruitful if in Christ abiding,<br>
+            holy through the Spirit's guiding, <br>
+            all will be well.</p>
+        <p>We expect a bright tomorrow; <br>
+            all will be well;<br>
+            faith can sing through days of sorrow, <br>
+            all will be well;<br>
+            on our Father's love relying, <br>
+            Jesus every need supplying<br>
+            in our living, in our dying, <br>
+            all will be well.`],
     "T13": [""],
     "T14": [""],
     "T15": [""],
