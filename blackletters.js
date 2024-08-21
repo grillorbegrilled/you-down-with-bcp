@@ -3,7 +3,7 @@ function getBlackletter(month, date) {
     case 0: //January: 8 Lucian PM, 13 Hilary BpC, 18 Prisca VM, 20 Fabian BpM 21 Agnes VM 22 Vincent M
       switch (date) {
         case 8: return "Lucian";
-        case 13: return "Hilary";
+        case 13: return createBlackletter("St. Hilary of Poitiers", commonBishop("Hilary"));
         case 18: return "Prisca";
         case 20: return "Fabian";
         case 21: return "Agnes";
@@ -15,7 +15,8 @@ function getBlackletter(month, date) {
       }
     case 2: //march: 1 david abp 2 chad b 7 perpetua m 12 gregory mb 18 king edward 21 benedict a
       switch (date) {
-        case 17: return "March, St. Patrick's Day";
+        case 17: return createBlackletter("St. Patrick",
+                                          "O ALMIGHTY God, who in thy providence didst choose thy servant Patrick to be the apostle of the Irish people, that he might bring those who were wandering in darkness and error to the true light and knowledge of thee; Grant us so to walk in that light, that we may come at last to the light of everlasting life; through the merits of Jesus Christ thy Son our Lord. Amen.");
       }
     case 3: //april 3 richard b 4 ambrose b 19 alphege abp 23 george m
       switch (date) {
@@ -50,9 +51,20 @@ function getBlackletter(month, date) {
   return "";
 }
 
-function createBlackletter(name, collectName, femPronouns = false) {
+//function createBlackletter(name, collectName, type = "", femPronouns = false) {
+function createBlackletter(name, collect) {
     return {
         name: name,
-        collect: synthBlackletterCollect()
+        collect: collect
     };
 }
+
+const commonMartyr = (name) => `ALMIGHTY God, by whose grace and power thy holy Martyr ${name} triumphed over suffering, and despised death; Grant, we beseech thee, that enduring hardness, and waxing valiant in fight, we may with the noble army of martyrs receive the crown of everlasting life; through Jesus Christ our Lord. Amen.`;
+const commonDoctor = (name) => `O GOD, who hast enlightened thy Church by the teaching of thy servant ${name}; Enrich it evermore, we beseech thee, with thy heavenly grace, and raise up faithful witnesses, who by their life and doctrine may set forth to all men the truth of thy salvation; through Jesus Christ our Lord. Amen.`;
+const commonBishop = (name) => `O GOD, the light of the faithful, and shepherd of souls, who didst set blessed ${name} to be a bishop in the Church, that he might feed thy sheep by his word and guide them by his example; Grant us, we pray thee, to keep the faith which he taught, and to follow in his footsteps; through Jesus Christ our Lord. Amen.`;
+const commonMonastic = (name) => `O GOD, by whose grace thy blessed servant ${name}, enkindled with the fire of thy love, became a burning and a shining light in thy Church; Grant that we may be inflamed with the same spirit of discipline and love, and ever walk before thee as children of light; through Jesus Christ our Lord. Amen.`;
+const commonMatron = (name) => `O GOD, who hast built up thy Church through the divers gifts and graces of thy saints; we give thee humble thanks for the example of holy women, and especially this day for thy servant ${name}, and we beseech thee to maintain among us the shelter of a mother’s love and the protection of a mother’s prayer, in the grace of thy Son, Jesus Christ our Lord. Amen.`;
+const commonPriest = (name) => `O GOD, our heavenly Father, who didst raise up thy faithful servant ${name}, to be a shepherd in thy Church and to feed thy flock: Give abundantly to all pastors the gifts of thy Holy Spirit, that they may minister in thy household as true servants of Christ and stewards of thy divine mysteries; through the same Jesus Christ our Lord. Amen.`;
+const commonMissionary = (name, people) => `ALMIGHTY and everlasting God, we thank thee for thy servant ${name}, whom thou didst call to preach the Gospel to the ${people}. Raise up, we beseech thee, in this and every land evangelists and heralds of thy kingdom, that thy Church may proclaim the unsearchable riches of our Savior Jesus Christ. Amen.`;
+const commonConfessor = (name) => `O ALMIGHTY God, who hast called us to faith in thee, and hast compassed us about with so great a cloud of witnesses; Grant that we, encouraged by the good examples of thy Saints, and especially of thy servant Saint ${name}, may persevere in running the race that is set before us, until at length, through thy mercy, we, with them, attain to thine eternal joy; through him who is the author and finisher of our faith, thy Son Jesus Christ our Lord. Amen.`;
+//const commonFoo = (name) => ``;
