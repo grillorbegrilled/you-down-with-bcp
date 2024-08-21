@@ -1,4 +1,4 @@
-function getBlackletterCollect(month, date) {
+function getBlackletter(month, date) {
   switch (month) {
     case 0: //January: 8 Lucian PM, 13 Hilary BpC, 18 Prisca VM, 20 Fabian BpM 21 Agnes VM 22 Vincent M
       switch (date) {
@@ -48,4 +48,11 @@ function getBlackletterCollect(month, date) {
   }
 
   return "";
+}
+
+function createBlackletter(name, collectName, femPronouns = false) {
+    return {
+        name: name,
+        collect: synthBlackletterCollect()
+    };
 }
