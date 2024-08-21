@@ -33,8 +33,11 @@ function displayEventDetails() {
     colorsByDay(liturgicalDay, month, date);
     setBorderImage(now);
 
-    if (day !== 3 && day !== 5)
+    if (day !== 3 && day !== 5) //All Conditions on W & F
         document.getElementById('pfac').style.display = "none";
+
+    if (day !== 0 && day !== 4) //General Thanksgiving on Su & Th
+        document.getElementById('genThanks').style.display = "none";
     
     if (details) {
         if (collect.includes("</p><p>"))
