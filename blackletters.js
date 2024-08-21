@@ -2,7 +2,12 @@ function getBlackletterCollect(month, date) {
   switch (month) {
     case 0: //January: 8 Lucian PM, 13 Hilary BpC, 18 Prisca VM, 20 Fabian BpM 21 Agnes VM 22 Vincent M
       switch (date) {
-        case 1: return "January, New Year's Day";
+        case 8: return "Lucian";
+        case 13: return "Hilary";
+        case 18: return "Prisca";
+        case 20: return "Fabian";
+        case 21: return "Agnes";
+        case 22: return "Vincent";
       }
     case 1: //february: 5 agatha vm 14 valentine b
       switch (date) {
