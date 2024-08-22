@@ -20,7 +20,7 @@ function getBlackletter(month, date) {
         case 2: return createBlackletter("St. Chad", commonBishop("Chad"));
         case 7: return createBlackletter("SS. Perpetua and Felicity", "ALMIGHTY God, by whose grace and power thy holy Martyrs Perpetua and Felicity triumphed over suffering, and despised death; Grant, we beseech thee, that enduring hardness, and waxing valiant in fight, we may with the noble army of martyrs receive the crown of everlasting life; through Jesus Christ our Lord. Amen.");
         case 12: return createBlackletter("St. Gregory the Great", commonBishop("Gregory"));
-        case 17: return createBlackletter("St. Patrick",
+        case 17: return createBlackletter("St. Patrick, Apostle of Ireland",
                                           "O ALMIGHTY God, who in thy providence didst choose thy servant Patrick to be the apostle of the Irish people, that he might bring those who were wandering in darkness and error to the true light and knowledge of thee; Grant us so to walk in that light, that we may come at last to the light of everlasting life; through the merits of Jesus Christ thy Son our Lord. Amen.");
         //case 18: return createBlackletter("St. Edward the Martyr", commonMartyr("Edward"));
         case 21: return createBlackletter("St. Benedict", commonMonastic("Benedict"));
@@ -40,17 +40,15 @@ function getBlackletter(month, date) {
         case 5: return "May, Cinco de Mayo";
           //john ante port lat 6
         case 19: return createBlackletter("St. Dunstan", commonBishop("Dunstan"));
-        case 26: return createBlackletter("St. Augustine of Canterbury", commonBishop("Augustine"));
+        case 26: return createBlackletter("St. Augustine of Canterbury, Apostle to the English", commonMissionary("Augustine", "English people"));
         case 27: return createBlackletter("St. Bede", commonPriest("Bede"));
       }
     case 5: //june
       switch (date) {
-          //1 nicomede m 5 boniface b 11 barnabas ap 17 alban m 20 trans king edward
           case 1: return createBlackletter("St. Nicomedes", commonMartyr("Nicomedes"));
           case 5: return createBlackletter("St. Boniface, Apostle to the Germans", commonMissionary("Boniface", "German people"));
-          case 11: return createBlackletter("St. Barnabas", common(""));
-          case 17: return createBlackletter("St. Alban", common(""));
-          case 20: return createBlackletter("Translation of St. Edward the Confessor", common(""));
+          case 17: return createBlackletter("St. Alban", commonMartyr("Alban"));
+          //case 20: return createBlackletter("Translation of St. Edward the Confessor", common(""));
       }
     case 6: //july 2 visitation 4 trans s martin 15 swithun b 20 margaret vm 22 mary magdalen 26 anne
       switch (date) {
