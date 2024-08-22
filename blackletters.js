@@ -52,10 +52,26 @@ function getBlackletter(month, date) {
       }
     case 6: //july 2 visitation 4 trans s martin 15 swithun b 20 margaret vm 22 mary magdalen 26 anne
       switch (date) {
-        case 4: return "July, Independence Day";
+        //2 visitation
+        //2 trans st martin
+        case 15: return createBlackletter("St. Swithun", commonBishop("Swithun"));
+        case 20: return createBlackletter("St. Margaret of Antioch", commonMartyr("Margaret"));
+        //22 mary magdalen
+        //26 anne
       }
-    case 7: return "August, Regular day in August"; //august 1 lammas 6 transfiguration 7 holy name 10 lawrence m 28 augustine b 29 beh john baptist
-    case 8: return "September, Regular day in September"; //september 1 giles a 7 enurchus b 8 nat bvm 14 roodmas 17 lambert b 26 cyprian abp 30 jerome
+    case 7: //august 1 lammas 6 transfiguration 7 holy name 10 lawrence m 28 augustine b 29 beh john baptist
+      switch (date) {
+        //1 lammas
+        //6 transfiguration
+        //7 holy name
+        case 10: return createBlackletter("St. Lawrence", commonMartyr("Lawrence"));
+        case 28: return createBlackletter("St. Augustine of Hippo", commonBishop("Augustine"));
+        //29 beh john baptist
+      }
+    case 8: //september 1 giles a 7 enurchus b 8 nat bvm 14 roodmas 17 lambert b 26 cyprian abp 30 jerome
+      switch (date) {
+        case 8: return createBlackletter("Elizabeth II, Queen of the United Kingdom", commonRuler("Elizabeth", true));
+      }
     case 9: //october 1 remigius b 6 faith vm 9 denis b 13 trans k edw 17 etheldreda v 25 crispin m
       switch (date) {
         case 31: return "October, Halloween";
@@ -90,4 +106,5 @@ const commonMatron = (name) => `O GOD, who hast built up thy Church through the 
 const commonPriest = (name) => `O GOD, our heavenly Father, who didst raise up thy faithful servant ${name}, to be a shepherd in thy Church and to feed thy flock: Give abundantly to all pastors the gifts of thy Holy Spirit, that they may minister in thy household as true servants of Christ and stewards of thy divine mysteries; through the same Jesus Christ our Lord. Amen.`;
 const commonMissionary = (name, people) => `ALMIGHTY and everlasting God, we thank thee for thy servant ${name}, whom thou didst call to preach the Gospel to the ${people}. Raise up, we beseech thee, in this and every land evangelists and heralds of thy kingdom, that thy Church may proclaim the unsearchable riches of our Savior Jesus Christ. Amen.`;
 const commonConfessor = (name) => `O ALMIGHTY God, who hast called us to faith in thee, and hast compassed us about with so great a cloud of witnesses; Grant that we, encouraged by the good examples of thy Saints, and especially of thy servant Saint ${name}, may persevere in running the race that is set before us, until at length, through thy mercy, we, with them, attain to thine eternal joy; through him who is the author and finisher of our faith, thy Son Jesus Christ our Lord. Amen.`;
+const commonRuler = (name, useFemPronouns = false) => `SOVEREIGN God, who didst call thy faithful servant ${name} to be a ruler among ${useFemPronouns ? "her" : "his"} people and gave ${useFemPronouns ? "her" : "him"} grace to be their servant: help us, following our Saviour Christ in the path of humble service, to see his kingdom set forward on earth, and with ${useFemPronouns ? "her" : "him"} to enjoy its fulness in heaven; through the same Jesus Christ our Lord. Amen.`;
 //const commonFoo = (name) => ``;
