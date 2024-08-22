@@ -2,28 +2,33 @@ function getBlackletter(month, date) {
   switch (month) {
     case 0: //January: 8 Lucian PM, 13 Hilary BpC, 18 Prisca VM, 20 Fabian BpM 21 Agnes VM 22 Vincent M
       switch (date) {
-        case 8: return createBlackLetter("St. Lucian of Beauvais", commonMartyr("Lucian"));
+        case 8: return createBlackletter("St. Lucian of Beauvais", commonMartyr("Lucian"));
         case 13: return createBlackletter("St. Hilary of Poitiers", commonBishop("Hilary"));
-        case 18: return createBlackLetter("St. Prisca", commonMartyr("Prisca"));
-        case 20: return createBlackLetter("St. Fabian", commonMartyr("Fabian"));
-        case 21: return createBlackLetter("St. Agnes", commonMartyr("Agnes"));
-        case 22: return createBlackLetter("St. Vincent of Saragossa", commonMartyr("Vincent"));
+        case 18: return createBlackletter("St. Prisca", commonMartyr("Prisca"));
+        case 20: return createBlackletter("St. Fabian", commonMartyr("Fabian"));
+        case 21: return createBlackletter("St. Agnes", commonMartyr("Agnes"));
+        case 22: return createBlackletter("St. Vincent of Saragossa", commonMartyr("Vincent"));
       }
     case 1: //february: 5 agatha vm 14 valentine b
       switch (date) {
-        case 5: return createBlackLetter("St. Agatha", commonMartyr("Agatha"));
-        case 14: return createBlackLetter("St. Valentine", "ALMIGHTY and everlasting God, who didst enkindle the flame of thy love in the heart of thy holy martyr Valentine: Grant unto us, thy humble servants, a like faith and power of love, that we who rejoice in his triumph may profit by his example; through Jesus Christ our Lord. Amen.");
+        case 5: return createBlackletter("St. Agatha", commonMartyr("Agatha"));
+        case 14: return createBlackletter("St. Valentine", "ALMIGHTY and everlasting God, who didst enkindle the flame of thy love in the heart of thy holy martyr Valentine: Grant unto us, thy humble servants, a like faith and power of love, that we who rejoice in his triumph may profit by his example; through Jesus Christ our Lord. Amen.");
       }
-    case 2: //march: 1 david abp 2 chad b 7 perpetua m 12 gregory mb 18 king edward 21 benedict a
+    case 2: //march: 1 david abp 2 chad b 7 perpetua m 12 gregory b 18 king edward 21 benedict a
       switch (date) {
-        case 1: return createBlackLetter("St. David, Bishop of Menevia", commonBishop("David"));
-        case 2: return createBlackLetter("St. Chad, Bishop of Northumbria", commonBishop("Chad"));
+        case 1: return createBlackletter("St. David", commonBishop("David"));
+        case 2: return createBlackletter("St. Chad", commonBishop("Chad"));
+        case 7: return createBlackletter("SS. Perpetua and Felicity", "ALMIGHTY God, by whose grace and power thy holy Martyrs Perpetua and Felicity triumphed over suffering, and despised death; Grant, we beseech thee, that enduring hardness, and waxing valiant in fight, we may with the noble army of martyrs receive the crown of everlasting life; through Jesus Christ our Lord. Amen.");
+        case 12: return createBlackletter("St. Gregory the Great", commonBishop("Gregory"));
         case 17: return createBlackletter("St. Patrick",
                                           "O ALMIGHTY God, who in thy providence didst choose thy servant Patrick to be the apostle of the Irish people, that he might bring those who were wandering in darkness and error to the true light and knowledge of thee; Grant us so to walk in that light, that we may come at last to the light of everlasting life; through the merits of Jesus Christ thy Son our Lord. Amen.");
+        //case 18: return createBlackletter("St. Edward the Martyr", commonMartyr("Edward"));
+        case 21: return createBlackletter("St. Benedict", commonMonastic("Benedict"));
       }
     case 3: //april 3 richard b 4 ambrose b 19 alphege abp 23 george m
       switch (date) {
-        case 1: return "April, April Fool's Day";
+        //case 1: return "April, April Fool's Day";
+        case 3: return createBlackletter("St. Richard", commonBishop("Richard"));
       }
     case 4: //may 3 invent cross 6 john ante port lat 19 dunstan abp 26 augustine abp 27 bede p
       switch (date) {
