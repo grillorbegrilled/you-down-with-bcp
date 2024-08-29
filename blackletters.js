@@ -65,7 +65,7 @@ function getBlackletter(month, date) {
         //6 transfiguration
         //7 holy name
         case 10: return createBlackletter("St. Lawrence", commonMartyr("Lawrence"));
-        case 28: return createBlackletter("St. Augustine of Hippo", commonBishop("Augustine"));
+        case 28: return createBlackletter("St. Augustine of Hippo", commonDoctor("Augustine"));
         //29 beh john baptist
       }
     case 8: //september 1 giles a 7 enurchus b 8 nat bvm 14 roodmas 17 lambert b 26 cyprian abp 30 jerome
