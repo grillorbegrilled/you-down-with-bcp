@@ -175,7 +175,46 @@ const hymns = {
             Jesus every need supplying<br>
             in our living, in our dying, <br>
             all will be well.`],
-    "T13": [""],
+    "T13": [`Lord of Glory, who hast bought us<br>
+with Thy lifeblood as the price,<br>
+Never grudging for the lost ones<br>
+that tremendous sacrifice;<br>
+And with that hast freely given<br>
+blessings countless as the sand,<br>
+To the unthankful and the evil<br>
+with Thine own unsparing hand.</p>
+        <p>Grant us hearts, dear Lord, to yield Thee<br>
+gladly, freely, of Thine own.<br>
+With the sunshine of Thy goodness<br>
+melt our thankless hearts of stone.<br>
+Till our cold and selfish natures,<br>
+warmed by Thee, at length believe<br>
+That more happy and more blessed <br>
+’tis to give than to receive.</p>
+        <p>Wondrous honor hast Thou given<br>
+to our humblest charity.<br>
+In Thine own mysterious sentence,<br>
+"Ye have done it unto Me."<br>
+Can it be, O gracious Master,<br>
+Thou dost deign for alms to sue,<br>
+Saying by Thy poor and needy,<br>
+"Give as I have given you?"</p>
+        <p>Yes: the sorrow and the suffering,<br>
+which on every hand we see,<br>
+Channels are for tithes and offerings<br>
+due by solemn right to Thee;<br>
+Right of which we may not rob Thee,<br>
+debt we may not choose but pay,<br>
+Lest that face of love and pity<br>
+turn from us another day.</p>
+        <p>Lord of Glory, who hast bought us<br>
+with Thy lifeblood as the price,<br>
+Never grudging for the lost ones<br>
+that tremendous sacrifice;<br>
+Give us faith, to trust Thee boldly;<br>
+hope, to stay our souls on Thee;<br>
+But O, best of all Thy graces,<br>
+give us Thine own charity.`],
     "T14": [""],
     "T15": [""],
     "T16": [""],
