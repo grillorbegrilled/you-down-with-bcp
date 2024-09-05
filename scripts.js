@@ -19,7 +19,7 @@ function displayEventDetails() {
         if (liturgicalDay === 'Whitsun' || liturgicalDay === 'Whitmon' || liturgicalDay === 'WhitTue' || liturgicalDay === 'Xmas' || liturgicalDay === 'Stephen' || liturgicalDay === 'JohnEvangelist' || liturgicalDay === 'Innocents')
           document.getElementById('creed').innerHTML = "";
     } else if (now.getHours() >= 15) {
-      document.getElementById('officeName').textContent = "EVENING PRAYER";
+      document.getElementById('officeName').textContent = "Evening Prayer";
       document.getElementById('canticle').innerHTML = makeP(getEve(liturgicalDay));  
       document.getElementById('collect').textContent = "O GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
     } else document.getElementById('office').style.display = "none";
