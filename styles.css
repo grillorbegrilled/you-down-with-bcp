@@ -2,7 +2,7 @@
     font-size: 100%;
 }
 
-html, body {
+body {
     /*background-color: AntiqueWhite;*/
     color: black;
     font-family: Garamond, Georgia, serif;
@@ -20,7 +20,7 @@ html, body {
 .bookmark {
     vertical-align: top;
     float: right;
-    margin-top: 0px;
+    margin-top: -20px;
     margin-left: 20px;
     margin-right: 10px;
     margin-bottom: 20px;
