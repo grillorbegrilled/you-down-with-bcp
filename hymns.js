@@ -239,7 +239,22 @@ shall far outpass the power of human telling;<br>
 for none can guess its grace,<br>
 till Love create a place<br>
 wherein the Holy Spirit makes a dwelling.`],
-    "T15": [""],
+    "T15": [`O God of Jacob, by whose hand<br>
+Thy people still are fed;<br>
+Who, through this weary pilgrimage,<br>
+Hast all our fathers led!</p>
+        </p> To Thee our humble vows we raise,<br>
+To Thee address our prayer;<br>
+And in Thy kind and faithful breast<br>
+Deposit all our care.</p>
+        <p>Through each perplexing path of life<br>
+Our wandering footsteps guide;<br>
+Give us each day our daily bread,<br>
+And raiment fit provide.</p>
+        <p>O spread Thy covering wings around,<br>
+Till all our wanderings cease,<br>
+And at our Father's loved abode<br>
+Our souls arrive in peace!`],
     "T16": [""],
     "T17": [""],
     "T18": [""],
