@@ -30,7 +30,8 @@ function displayEventDetails() {
     const month = now.getMonth();
     const date = now.getDate();
     const day = now.getDay();
-    colorsByDay(liturgicalDay, month, date);
+    document.getElementById('bookmark').src = $"images/bookmarks/{getBookmarkColor(liturgicalDay, month, date)}.gif";
+    
     setBorderImage(now);
 
     if (day !== 3 && day !== 5) //All Conditions on W & F
