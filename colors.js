@@ -1,18 +1,17 @@
 var r = document.querySelector(':root');
 
-function setColors(uno, due, tre) {
-    r.style.setProperty('--color1', uno); //body text
-    r.style.setProperty('--color2', due); //h1 text
-    r.style.setProperty('--color3', tre); //h1 background
-}
+//function setColors(uno, due, tre) {
+//    r.style.setProperty('--color1', uno); //body text
+//    r.style.setProperty('--color2', due); //h1 text
+//    r.style.setProperty('--color3', tre); //h1 background
+//}
 
 //basic colors
 //white     gray    red     yellow  lime    aqua    blue    fuchsia
 //silver    black   maroon  olive   green   teal    navy    purple
 
-function colorsByDay(lit, month, date) {
+function getBookmarkColor(lit, month, date) {
     switch (lit) {
-            //Blue for Advent and St. John Baptist
         case "A1":
         case "A2":
         case "A3":
@@ -21,7 +20,7 @@ function colorsByDay(lit, month, date) {
         case "LXX":
         case "LX":
         case "L":
-            setColors("white", "black", "blue");
+            return "midnite";
             break;
         case "Xmas":
         case "Stephen":
@@ -29,18 +28,18 @@ function colorsByDay(lit, month, date) {
         case "Innocents":
         case "X1":
         case "Circ":
-            setColors("red", "white", "green");
+            return "white_damask";
             break;
         case "Candlemas":
         case "Annunciation":
-            setColors("pink", "black", "pink"); //not one of the ANSI terminal colors. Big deal, wanna fight about it?
+            return "white_damask"; //pink or Marian blue
             break;
         case "AW":
         case "L1":
         case "L2":
         case "L3":
         case "L4":
-            setColors("gray", "black", "gray");
+            return "purple";
             break;
         case "L5":
         case "Palm":
@@ -50,7 +49,7 @@ function colorsByDay(lit, month, date) {
         case "HW-Thu":
         case "GF":
         case "EE":
-            setColors("maroon", "black", "maroon");
+            return "purple";
             break;
         case "Epiphany":
         case "Easter":
@@ -66,7 +65,7 @@ function colorsByDay(lit, month, date) {
         case "Trinity":
         case "AllSaints":
         case "ThanksgivingDay":
-            setColors("white", "black", "white");
+            return "white_damask";
             break;
         case "Whitsun":
         case "Whitmon":
@@ -85,10 +84,10 @@ function colorsByDay(lit, month, date) {
         case "Michael":
         case "Luke":
         case "SimonAndJude":
-            setColors("red", "black", "red");
+            return "red";
             break;
         case "Michael":
-            setColors("royalblue", "black", "royalblue"); //not a basic color. So what?
+            return "white_damask"; //blue?
             break;
         case "E1":
         case "E2":
@@ -122,13 +121,13 @@ function colorsByDay(lit, month, date) {
         case "T24":
         case "SNBA":
             if (month === 5 && date > 24 || month === 6 || month === 7 || month === 8 && date < 29)
-                setColors("gold", "black", "gold");
+                return "olive";
             else if (month === 8 && date > 29 || month >= 9)
-                setColors("orangered", "black", "orangered"); //not ANSI terminal color. Sue me.
+                return "olive";
             else
-                setColors("green", "black", "green");
+                return "olive";
             break;
         default:
-            setColors("white", "black", "white");
+            return "olive";
     }
 }
