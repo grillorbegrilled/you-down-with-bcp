@@ -30,7 +30,7 @@ function displayEventDetails() {
     const month = now.getMonth();
     const date = now.getDate();
     const day = now.getDay();
-    document.getElementById('bookmark').src = $"images/bookmarks/{getBookmarkColor(liturgicalDay, month, date)}.gif";
+    document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, month, date) + ".gif";
     
     setBorderImage(now);
 
