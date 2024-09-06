@@ -2,7 +2,7 @@ function getPenitentialOffice(lit, date, weekday) {
   if (lit === "AW" && weekday === 3 || //Ash Wednesday
       lit === "GF" || //Good Friday
       date < 8 && weekday === 5) {//first Friday of each month
-    return `<H1>A PENITENTIAL OFFICE</H1>
+    return `<H1>A Penitential Office</H1>
     <P>GOD spake these words, and said:<BR>
       I am the Lord thy God; Thou shalt have none other gods but me.<br>
         <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
