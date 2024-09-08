@@ -251,8 +251,8 @@ Deposit all our care.</p>
 Our wandering footsteps guide;<br>
 Give us each day our daily bread,<br>
 And raiment fit provide.</p>
-        <p>O spread Thy covering wings around,<br>
-Till all our wanderings cease,<br>
+        <p>O spread Thy cov'ring wings around,<br>
+Till all our wand'rings cease,<br>
 And at our Father's loved abode<br>
 Our souls arrive in peace!`],
     "T16": [""],
