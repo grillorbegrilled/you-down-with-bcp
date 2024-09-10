@@ -34,7 +34,7 @@ function createPages(content, pageWidth, pageHeight) {
     words.forEach(word => {
         tempDiv.innerHTML += word + " ";
         if (tempDiv.scrollHeight > pageHeight) {
-            pages += `<div class="page"><div class="page-content">${pageContent}</div></div>`;
+            pages += `<div class="page"><div class="page-content">${pageContent.trim()}</div></div>`;
             pageContent = word + " ";
             tempDiv.innerHTML = word + " ";
         } else {
@@ -42,7 +42,8 @@ function createPages(content, pageWidth, pageHeight) {
         }
     });
 
-    pages += `<div class="page"><div class="page-content">${pageContent}</div></div>`;
+    pages += `<div class="page"><div class="page-content">${pageContent.trim()}</div></div>`;
     document.body.removeChild(tempDiv);
-    return pages;
+    return pag
+        es;
 }
