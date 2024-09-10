@@ -98,20 +98,152 @@
             Hallowed be thy Name.<br>
             Thy kingdom come.<br>
             Thy will be done, on earth as it is in heaven.<br>
-            Give us this day our daily bread.<br>
-            And forgive us our trespasses,<br>
-            As we forgive them that trespass against us.<br>
-            And lead us not into temptation;<br>
-            But deliver us from evil:<br>
-            For thine is the kingdom,<br>
-            The power, and the glory,<br>
-            For ever and ever. Amen.<br>
-        </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Down With BCP?</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script> <!-- Include Turn.js -->
+    <script src="ceg.js"></script>
+    <script src="hymns.js"></script>
+    <script src="dayNames.js"></script>
+    <script src="canticles.js"></script>
+    <script src="litany.js"></script>
+    <script src="penitentialOffice.js"></script>
+    <script src="timesAndSeasons.js"></script>
+    <script src="colors.js"></script>
+    <script src="marginalia.js"></script>
+    <script src="scripts.js"></script>
 
-    <div id="spiritualCommunion">
-        <p>O LORD and heavenly Father, we thy humble servants entirely desire thy fatherly goodness mercifully to accept this our sacrifice of praise and thanksgiving; most humbly beseeching thee to grant, that by the merits and death of thy Son Jesus Christ, and through faith in his blood, we and all thy whole Church may obtain remission of our sins, and all other benefits of his passion.</p>
-        <p>And here we offer and present unto thee, O Lord, ourselves, our souls and bodies, to be a reasonable, holy, and lively sacrifice unto thee; humbly beseeching thee that we may be fulfilled with thy grace and heavenly benediction.</p>
-        <p>And although we be unworthy, through our manifold sins, to offer unto thee any sacrifice, yet we beseech thee to accept this our bounden duty and service; not weighing our merits, but pardoning our offences, through Jesus Christ our Lord; by whom, and with whom, in the unity of the Holy Ghost, all honour and glory be unto thee, O Father Almighty, world without end. Amen.</p>
+    <style>
+        #flipbook {
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+        }
+
+        .page {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <script>
+        window.onload = function() {
+            // Gather all the content dynamically
+            const content = document.body.innerHTML;
+            
+            // Clear the body and setup the flipbook container
+            document.body.innerHTML = `<div id="flipbook"></div>`;
+            
+            // Function to split content into pages based on height and always start new pages on h1
+            function paginateContent(content) {
+                const pageHeight = 300;  // Example page height
+                const flipbook = document.getElementById('flipbook');
+
+                // Create a temporary container to measure content height
+                const tempContainer = document.createElement('div');
+                tempContainer.style.width = '400px';  // Example width
+                tempContainer.style.position = 'absolute';
+                tempContainer.style.visibility = 'hidden';
+                tempContainer.innerHTML = content;
+                document.body.appendChild(tempContainer);
+
+                let currentPageContent = '';
+                let currentHeight = 0;
+                const pages = [];
+
+                // Split the content based on height and h1 elements
+                Array.from(tempContainer.childNodes).forEach((node) => {
+                    // Clone the node for measuring
+                    const clonedNode = node.cloneNode(true);
+
+                    // Check if the node is an h1 element, and force a new page if it is
+                    if (clonedNode.tagName === 'H1' && currentPageContent) {
+                        // If there is already content, push it as a new page before starting a new page for the h1
+                        pages.push(currentPageContent);
+                        currentPageContent = clonedNode.outerHTML;
+                        currentHeight = clonedNode.offsetHeight;
+                    } else {
+                        // Append to current page and measure the height
+                        tempContainer.innerHTML = currentPageContent + clonedNode.outerHTML;
+                        const newHeight = tempContainer.offsetHeight;
+
+                        if (newHeight > pageHeight) {
+                            // If adding this node exceeds the page height, start a new page
+                            pages.push(currentPageContent);
+                            currentPageContent = clonedNode.outerHTML;
+                            currentHeight = clonedNode.offsetHeight;
+                        } else {
+                            // Add the node to the current page
+                            currentPageContent += clonedNode.outerHTML;
+                            currentHeight = newHeight;
+                        }
+                    }
+                });
+
+                // Add any remaining content as the last page
+                if (currentPageContent) {
+                    pages.push(currentPageContent);
+                }
+
+                // Clean up temporary container
+                document.body.removeChild(tempContainer);
+
+                // Return the split pages
+                return pages;
+            }
+
+            // Split the content into pages
+            const pages = paginateContent(content);
+
+            // Add each page to the flipbook
+            pages.forEach((pageContent, index) => {
+                const pageDiv = document.createElement('div');
+                pageDiv.className = 'page';
+                pageDiv.innerHTML = pageContent;
+                document.getElementById('flipbook').appendChild(pageDiv);
+            });
+
+            // Initialize Turn.js for flipbook effect
+            $('#flipbook').turn({
+                width: 400,
+                height: 300,
+                autoCenter: true
+            });
+        }
+    </script>
+</head>
+<body>
+    <img id="bookmark" class="bookmark">
+    <p id="fastDayLabel" style="color: red;">Fast.</p>
+    <div id="office">
+        <h1 id="officeName">Morning Prayer</h1>
+         <p>OUR Father, who art in heaven,...</p>
+        <div id='canticle'></div>
+    </div>
+    <div id='creed'>
+        <p>I BELIEVE in God the Father Almighty,...</p>
+    </div>
+    <p id='collect'></p>
+    <div id='pfac'>
+        <h2>A Prayer for All Conditions of Men</h2>
+        <p>O GOD, the Creator and Preserver of all mankind,...</p>
+    </div>
+    <div id='genThanks'>
+        <h2>A General Thanksgiving</h2>
+        <p>ALMIGHTY God, Father of all mercies,...</p>
+    </div>
+    <p>THE grace of our Lord Jesus Christ,...</p>
+</body>
+</html>
+
+d; by whom, and with whom, in the unity of the Holy Ghost, all honour and glory be unto thee, O Father Almighty, world without end. Amen.</p>
     </div>
         <h2>A Hymn</h2>
         <div id="hymn"></div>
