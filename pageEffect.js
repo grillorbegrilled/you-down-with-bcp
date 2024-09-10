@@ -44,6 +44,5 @@ function createPages(content, pageWidth, pageHeight) {
 
     pages += `<div class="page"><div class="page-content">${pageContent.trim()}</div></div>`;
     document.body.removeChild(tempDiv);
-    return pag
-        es;
+    return pages;
 }
