@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,39 +6,71 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .wrapper {
+            width: 80%;
+            max-width: 800px;
+            height: 90%;
+            margin: auto;
+            background-color: white;
+        }
+
+        .aspect-inner {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .flipbook {
+            width: 100%;
+            height: 100%;
+        }
+
+        .flipbook img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
-	<script src="jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
     <script src="turn.min.js"></script>
 </head>
 <body>
-	<div class="wrapper">
-	  <div class="aspect">
-	    <div class="aspect-inner">
-	      <div class="flipbook" id="flipbook">
-	        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/01.jpg" draggable="false" alt="" /></div>
-	        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg" draggable="false" alt="" /></div>
-	        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg" draggable="false" alt="" /></div>
-	        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg" draggable="false" alt="" /></div>
-	        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg" draggable="false" alt="" /></div>
-	        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/06.jpg" draggable="false" alt="" /></div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
+    <div class="wrapper">
+        <div class="aspect">
+            <div class="aspect-inner">
+                <div class="flipbook" id="flipbook">
+                    <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/01.jpg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/06.jpg" draggable="false" alt="" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<script type="text/javascript">
-		var flipbookEL = document.getElementById('flipbook');
-	
-		window.addEventListener('resize', function (e) {
-			flipbookEL.style.width = '';
-		  flipbookEL.style.height = '';
-		  $(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
-		});
-	
-		$(flipbookEL).turn({
-		    autoCenter: true
-		});
-	</script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#flipbook').turn({
+                width: $('#flipbook').parent().width(),
+                height: $('#flipbook').parent().height(),
+                autoCenter: true
+            });
+
+            $(window).on('resize', function () {
+                $('#flipbook').turn('size', $('#flipbook').parent().width(), $('#flipbook').parent().height());
+            });
+        });
+    </script>
 </body>
 </html>
