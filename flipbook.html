@@ -12,20 +12,6 @@
     </style>
 	<script src="jquery.min.js"></script>
     <script src="turn.min.js"></script>
-	<script type="text/javascript">
-	var flipbookEL = document.getElementById('flipbook');
-
-window.addEventListener('resize', function (e) {
-	flipbookEL.style.width = '';
-  flipbookEL.style.height = '';
-  $(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
-});
-
-$(flipbookEL).turn({
-    autoCenter: true
-});
-
-</script>
 </head>
 <body>
 <div class="wrapper">
@@ -43,5 +29,20 @@ $(flipbookEL).turn({
     </div>
   </div>
 </div>
+
+	<script type="text/javascript">
+	var flipbookEL = document.getElementById('flipbook');
+
+window.addEventListener('resize', function (e) {
+	flipbookEL.style.width = '';
+  flipbookEL.style.height = '';
+  $(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
+});
+
+$(flipbookEL).turn({
+    autoCenter: true
+});
+
+</script>
 </body>
 </html>
