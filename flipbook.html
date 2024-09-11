@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipbook</title>
-    <link rel="stylesheet" href="path/to/turn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.css">
     <style>
         body, html {
             margin: 0;
@@ -40,17 +40,25 @@
 
                 container.children().each(function() {
                     const element = $(this);
-                    if (element.is('h1') && currentPage.children().length > 0) {
-                        currentPage = $('<div class="page"></div>');
-                        flipbook.append(currentPage);
-                    }
                     currentPage.append(element.clone());
-                    if (currentPage.height() > flipbook.height()) {
-                        const overflow = currentPage.children().last();
-                        overflow.remove();
+
+                    // Check if the current page overflows
+                    if (currentPage[0].scrollHeight > currentPage.height()) {
+                        // Remove the last element that caused the overflow
+                        const overflowElement = currentPage.children().last();
+                        overflowElement.remove();
+
+                        // Create a new page and add the overflow element to it
                         currentPage = $('<div class="page"></div>');
                         flipbook.append(currentPage);
-                        currentPage.append(overflow);
+                        currentPage.append(overflowElement);
+                    }
+
+                    // Break before <h1> elements
+                    if (element.is('h1') && currentPage.children().length > 1) {
+                        currentPage = $('<div class="page"></div>');
+                        flipbook.append(currentPage);
+                        currentPage.append(element.clone());
                     }
                 });
 
