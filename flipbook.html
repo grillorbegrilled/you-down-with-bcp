@@ -22,17 +22,24 @@
             height: 100%;
             overflow: hidden;
         }
+        iframe {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div id="flipbook"></div>
+    <iframe id="content-frame" src="index.html"></iframe>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
     <script>
         $(document).ready(function() {
-            // Fetch the content of index.html
-            $.get('index.html', function(data) {
+            $('#content-frame').on('load', function() {
+                const iframe = document.getElementById('content-frame');
+                const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+                const data = iframeDocument.body.innerHTML;
+
                 const flipbook = $('#flipbook');
                 const container = $('<div></div>').html(data);
                 let currentPage = $('<div class="page"></div>');
