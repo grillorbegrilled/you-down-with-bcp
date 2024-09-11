@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipbook</title>
+    <link rel="stylesheet" href="path/to/turn.css">
     <style>
         body, html {
             margin: 0;
@@ -13,143 +13,40 @@
             height: 100%;
             overflow: hidden;
         }
-        .flipbook {
+        #flipbook {
             width: 100%;
             height: 100%;
         }
         .page {
             width: 100%;
             height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            padding: 20px;
-            box-sizing: border-box;
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.css">
 </head>
 <body>
-    <div class="flipbook">
-<div class="page"><body>
-<img class="bookmark" id="bookmark"/>
-<p id="fastDayLabel" style="color: red;">Fast.</p>
-<div id="office">
-<h1 id="officeName">Morning Prayer</h1>
-<p>OUR Father, who art in heaven,<br/>
-            Hallowed be thy Name.<br/>
-            Thy kingdom come.<br/>
-            Thy will be done, on earth as it is in heaven.<br/>
-            Give us this day our daily bread.<br/>
-            And forgive us our trespasses,<br/>
-            As we forgive them that trespass against us.<br/>
-            And lead us not into temptation;<br/>
-            But deliver us from evil:<br/>
-            For thine is the kingdom,<br/>
-            The power, and the glory,<br/>
-            For ever and ever. Amen.
-        </p>
-<div id="canticle"></div>
-<div id="creed">
-<p>I BELIEVE in God the Father Almighty,<br/>
-              Maker of heaven and earth :</p>
-<p>And in Jesus Christ his only Son our Lord:<br/>
-              Who was conceived by the Holy Ghost,<br/>
-              Born of the Virgin Mary:<br/>
-              Suffered under Pontius Pilate,<br/>
-              Was crucified, dead, and buried:<br/>
-              He descended into hell; <br/>
-              The third day he rose again from the dead: <br/>
-              He ascended into heaven, <br/>
-              And sitteth on the right hand of God the Father Almighty: <br/>
-              From thence he shall come to judge the quick and the dead.</p>
-<p>I believe in the Holy Ghost: <br/>
-              The holy Catholick Church; <br/>
-              The Communion of Saints: <br/>
-              The Forgiveness of sins: <br/>
-              The Resurrection of the body, <br/>
-              And the Life everlasting. Amen.</p>
-</div>
-<p id="collect"></p>
-<div id="pfac">
-<h2>A Prayer for All Conditions of Men</h2>
-<p>O GOD, the Creator and Preserver of all mankind, we humbly beseech thee for all sorts and conditions of men: that thou wouldest be pleased to make thy ways known unto them, thy saving health unto all nations. More especially, we pray for the good estate of the Catholick Church; that it may be so guided and governed by thy good Spirit, that all who profess and call themselves Christians may be led into the way of truth, and hold the faith in unity of spirit, in the bond of peace, and in righteousness of life. Finally, we commend to thy fatherly goodness all those, who are any ways afflicted, or distressed, in mind, body, or estate; <i>[especially ________,]</i> that it may please thee to comfort and relieve them, according to their several necessities, giving them patience under their sufferings, and a happy issue out of all their afflictions. And this we beg for Jesus Christ his sake. Amen.</p>
-</div>
-<div id="genThanks">
-<h2>A General Thanksgiving</h2>
-<p>ALMIGHTY God, Father of all mercies, we thine unworthy servants do give thee most humble and hearty thanks for all thy goodness and loving-kindness to us, and to all men; <i>[particularly ________.]</i> We bless thee for our creation, preservation, and all the blessings of this life; but above all, for thine inestimable love in the redemption of the world by our Lord Jesus Christ; for the means of grace, and for the hope of glory. And, we beseech thee, give us that due sense of all thy mercies, that our hearts may be unfeignedly thankful, and that we shew forth thy praise, not only with our lips, but in our lives; by giving up ourselves to thy service, and by walking before thee in holiness and righteousness all our days; through Jesus Christ our Lord, to whom with thee and the Holy Ghost be all honour and glory, world without end. Amen.</p>
-</div>
-<p>THE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>
-</div>
-<div id="litany"></div>
-<div id="penitentialOffice"></div>
-<div id="occasionalPrayers"></div>
-<div class="tiled-border"></div>
-<h1 id="nameOfTheDay"></h1>
-<p>ALMIGHTY God, unto whom all hearts be open, all desires known, and from whom no secrets are hid; Cleanse the thoughts of our hearts by the inspiration of thy Holy Spirit, that we may perfectly love thee, and worthily magnify thy holy Name; through Christ our Lord. Amen.</p>
-<div id="eventDetails">
-<h2 id="c_h">The Collect</h2>
-<p id="c"></p>
-<h2 id="e_cit"></h2>
-<div id="e_txt"></div>
-<h2 id="g_cit"></h2>
-<div id="g_txt"></div>
-</div>
-<!--<h2>The Lord's Prayer.</h2>-->
-<p>OUR Father, who art in heaven,<br/>
-            Hallowed be thy Name.<br/>
-            Thy kingdom come.<br/>
-            Thy will be done, on earth as it is in heaven.<br/>
-            Give us this day our daily bread.<br/>
-            And forgive us our trespasses,<br/>
-            As we forgive them that trespass against us.<br/>
-            And lead us not into temptation;<br/>
-            But deliver us from evil:<br/>
-            For thine is the kingdom,<br/>
-            The power, and the glory,<br/>
-            For ever and ever. Amen.<br/>
-</p>
-<div id="spiritualCommunion">
-<p>O LORD and heavenly Father, we thy humble servants entirely desire thy fatherly goodness mercifully to accept this our sacrifice of praise and thanksgiving; most humbly beseeching thee to grant, that by the merits and death of thy Son Jesus Christ, and through faith in his blood, we and all thy whole Church may obtain remission of our sins, and all other benefits of his passion.</p>
-<p>And here we offer and present unto thee, O Lord, ourselves, our souls and bodies, to be a reasonable, holy, and lively sacrifice unto thee; humbly beseeching thee that we may be fulfilled with thy grace and heavenly benediction.</p>
-<p>And although we be unworthy, through our manifold sins, to offer unto thee any sacrifice, yet we beseech thee to accept this our bounden duty and service; not weighing our merits, but pardoning our offences, through Jesus Christ our Lord; by whom, and with whom, in the unity of the Holy Ghost, all honour and glory be unto thee, O Father Almighty, world without end. Amen.</p>
-</div>
-<h2>A Hymn</h2>
-<div id="hymn"></div>
-<div id="compline">
-<h1>Night Prayer</h1>
-<p>ALMIGHTY and most merciful Father;<br/>
-            We have erred, and strayed from thy ways like lost sheep.<br/>
-            We have followed too much the devices and desires of our own hearts.<br/>
-            We have offended against thy holy laws.<br/>
-            We have left undone those things which we ought to have done;<br/>
-            And we have done those things which we ought not to have done;<br/>
-            And there is no health in us.<br/>
-            But thou, O Lord, have mercy upon us, miserable offenders.<br/>
-            Spare thou them, O God, who confess their faults.<br/>
-            Restore thou them that are penitent;<br/>
-            According to thy promises declared unto mankind in Christ Jesu our Lord.<br/>
-            And grant, O most merciful Father, for his sake;<br/>
-            That we may hereafter live a godly, righteous, and sober life,<br/>
-            To the glory of thy holy Name. Amen.</p>
-<p>LORD, now lettest thou thy servant depart in peace : according to thy word.<br/>
-   For mine eyes have seen thy salvation : which thou hast prepared : before the face of all people;<br/>
-   To be a light to lighten the Gentiles : and to be the glory of thy people Israel.</p>
-<p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br/>
-    Answer. As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>
-<p> LIGHTEN our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.</p>
-</div>
-</body></div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+    <div id="flipbook"></div>
+
+    <script src="path/to/jquery.min.js"></script>
+    <script src="path/to/turn.min.js"></script>
     <script>
         $(document).ready(function() {
-            $(".flipbook").turn({
-                width: "100%",
-                height: "100%",
-                autoCenter: true
+            // Fetch the content of index.html
+            $.get('index.html', function(data) {
+                // Split the content into pages
+                const pages = data.split('<div class="page-break"></div>');
+                const flipbook = $('#flipbook');
+
+                // Add each page to the flipbook
+                pages.forEach((pageContent, index) => {
+                    flipbook.append(`<div class="page">${pageContent}</div>`);
+                });
+
+                // Initialize the flipbook
+                flipbook.turn({
+                    width: '100%',
+                    height: '100%',
+                    autoCenter: true
+                });
             });
         });
     </script>
