@@ -21,6 +21,7 @@
             height: 90%;
             margin: auto;
             background-color: white;
+            position: relative;
         }
 
         .aspect-inner {
@@ -38,6 +39,31 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        /* Clickable areas for page turn */
+        .clickable-area {
+            position: absolute;
+            top: 0;
+            width: 20%;
+            height: 100%;
+            background-color: rgba(255, 255, 0, 0.2); /* Yellow highlight */
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        /* Left and right clickable areas */
+        .clickable-left {
+            left: 0;
+        }
+
+        .clickable-right {
+            right: 0;
+        }
+
+        /* On hover, increase visibility */
+        .clickable-area:hover {
+            background-color: rgba(255, 255, 0, 0.4); /* Darker highlight on hover */
         }
     </style>
     <script src="jquery.min.js"></script>
@@ -57,6 +83,10 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Highlight clickable areas for turning pages -->
+        <div class="clickable-area clickable-left"></div>
+        <div class="clickable-area clickable-right"></div>
     </div>
 
     <script type="text/javascript">
@@ -69,6 +99,15 @@
 
             $(window).on('resize', function () {
                 $('#flipbook').turn('size', $('#flipbook').parent().width(), $('#flipbook').parent().height());
+            });
+
+            // Add functionality to clickable areas for page turn
+            $('.clickable-left').on('click', function () {
+                $('#flipbook').turn('previous');
+            });
+
+            $('.clickable-right').on('click', function () {
+                $('#flipbook').turn('next');
             });
         });
     </script>
