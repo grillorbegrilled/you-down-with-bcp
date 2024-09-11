@@ -3,78 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipbook</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.css">
+    <title>Flipbook with turn.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.css">
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
+        body {
+            font-family: Arial, sans-serif;
         }
         #flipbook {
             width: 100%;
-            height: 100%;
+            height: 100vh;
         }
         .page {
             width: 100%;
             height: 100%;
-            overflow: hidden;
-        }
-        iframe {
-            display: none;
+            padding: 20px;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
-    <div id="flipbook"></div>
-    <iframe id="content-frame" src="index.html"></iframe>
+    <div id="flipbook">
+        <div class="page"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        <div class="page"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        <!-- Add more pages as needed -->
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#content-frame').on('load', function() {
-                const iframe = document.getElementById('content-frame');
-                const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-                const data = iframeDocument.body.innerHTML;
-
-                const flipbook = $('#flipbook');
-                const container = $('<div></div>').html(data);
-                let currentPage = $('<div class="page"></div>');
-                flipbook.append(currentPage);
-
-                container.children().each(function() {
-                    const element = $(this);
-                    currentPage.append(element.clone());
-
-                    // Check if the current page overflows
-                    if (currentPage[0].scrollHeight > currentPage.height()) {
-                        // Remove the last element that caused the overflow
-                        const overflowElement = currentPage.children().last();
-                        overflowElement.remove();
-
-                        // Create a new page and add the overflow element to it
-                        currentPage = $('<div class="page"></div>');
-                        flipbook.append(currentPage);
-                        currentPage.append(overflowElement);
-                    }
-
-                    // Break before <h1> elements
-                    if (element.is('h1') && currentPage.children().length > 1) {
-                        currentPage = $('<div class="page"></div>');
-                        flipbook.append(currentPage);
-                        currentPage.append(element.clone());
-                    }
-                });
-
-                // Initialize the flipbook
-                flipbook.turn({
-                    width: '100%',
-                    height: '100%',
-                    autoCenter: true
-                });
+            $("#flipbook").turn({
+                width: '100%',
+                height: '100%',
+                autoCenter: true
             });
         });
     </script>
