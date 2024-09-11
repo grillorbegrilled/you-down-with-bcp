@@ -93,7 +93,8 @@
             $('#flipbook').turn({
                 width: $('#flipbook').parent().width(),
                 height: $('#flipbook').parent().height(),
-                autoCenter: true
+                autoCenter: true,
+                display: 'single' // Display only one page at a time
             });
 
             $(window).on('resize', function () {
