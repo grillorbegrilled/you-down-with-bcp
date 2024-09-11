@@ -9,25 +9,24 @@
         body {
             font-family: Arial, sans-serif;
         }
-        #flipbook {
-            width: 100%;
-            height: 100vh;
-        }
-        .page {
-            width: 100%;
-            height: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-        }
     </style>
 </head>
 <body>
-    <div id="flipbook">
-	<div class="page"> Page 1 </div>
-	<div class="page"> Page 2 </div>
-	<div class="page"> Page 3 </div>
-	<div class="page"> Page 4 </div>
+<div class="wrapper">
+  <div class="aspect">
+    <div class="aspect-inner">
+      <div class="flipbook" id="flipbook">
+        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/01.jpg" draggable="false" alt="" /></div>
+        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg" draggable="false" alt="" /></div>
+        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg" draggable="false" alt="" /></div>
+        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg" draggable="false" alt="" /></div>
+        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg" draggable="false" alt="" /></div>
+        <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/06.jpg" draggable="false" alt="" /></div>
+      </div>
+    </div>
+  </div>
 </div>
+	
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
 <script type="text/javascript">
