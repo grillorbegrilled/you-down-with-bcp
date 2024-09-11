@@ -20,25 +20,38 @@
         .page {
             width: 100%;
             height: 100%;
+            overflow: hidden;
         }
     </style>
 </head>
 <body>
     <div id="flipbook"></div>
 
-    <script src="path/to/jquery.min.js"></script>
-    <script src="path/to/turn.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
     <script>
         $(document).ready(function() {
             // Fetch the content of index.html
             $.get('index.html', function(data) {
-                // Split the content into pages
-                const pages = data.split('<div class="page-break"></div>');
                 const flipbook = $('#flipbook');
+                const container = $('<div></div>').html(data);
+                let currentPage = $('<div class="page"></div>');
+                flipbook.append(currentPage);
 
-                // Add each page to the flipbook
-                pages.forEach((pageContent, index) => {
-                    flipbook.append(`<div class="page">${pageContent}</div>`);
+                container.children().each(function() {
+                    const element = $(this);
+                    if (element.is('h1') && currentPage.children().length > 0) {
+                        currentPage = $('<div class="page"></div>');
+                        flipbook.append(currentPage);
+                    }
+                    currentPage.append(element.clone());
+                    if (currentPage.height() > flipbook.height()) {
+                        const overflow = currentPage.children().last();
+                        overflow.remove();
+                        currentPage = $('<div class="page"></div>');
+                        flipbook.append(currentPage);
+                        currentPage.append(overflow);
+                    }
                 });
 
                 // Initialize the flipbook
