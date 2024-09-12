@@ -62,10 +62,6 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Highlight clickable areas for turning pages -->
-        <div class="clickable-area clickable-left"></div>
-        <div class="clickable-area clickable-right"></div>
     </div>
 
     <script type="text/javascript">
@@ -79,15 +75,6 @@
 
             $(window).on('resize', function () {
                 $('#flipbook').turn('size', $('#flipbook').parent().width(), $('#flipbook').parent().height());
-            });
-
-            // Add functionality to clickable areas for page turn
-            $('.clickable-left').on('click', function () {
-                $('#flipbook').turn('previous');
-            });
-
-            $('.clickable-right').on('click', function () {
-                $('#flipbook').turn('next');
             });
         });
     </script>
