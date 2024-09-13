@@ -49,18 +49,24 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: end;
     background: white;
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0 0; /* Remove right padding */
     width: 25px;
     margin: 10px 10px 10px 0;
 }
 
 .tab {
     border: none;
-    padding: 10px, 0, 10px, 10px;
+    padding: 0; /* Remove all padding */
     cursor: pointer;
     width: 100%;
+    margin-bottom: 20px; /* Add vertical space between buttons */
+}
+
+.tab img {
+    display: block;
+    width: 100%;
+    height: auto; /* Ensure the image fits the button */
 }
 
 .tab.active {
