@@ -51,9 +51,8 @@ body, html {
     justify-content: flex-start;
     align-items: flex-end;
     background: white;
-    padding: 0 0 0 20px; /* Remove right padding */
+    padding: 20px 0 0 20px; /* Remove right padding */
     width: 25px;
-    margin: 10px 10px 10px 0;
 }
 
 .tab {
