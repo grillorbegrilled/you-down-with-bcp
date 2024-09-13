@@ -42,6 +42,7 @@ body, html {
     align-items: center;
     background: #333;
     padding: 10px;
+    width: 100px;
 }
 
 .tab {
