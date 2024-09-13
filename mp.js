@@ -10,8 +10,7 @@ function get office(now) {
     else if (officeType === 2) result += "<h1>Evening Prayer</h1>";
     else if (officeType === 3) result += '<h1>Night Prayer</h1><p>ALMIGHTY and most merciful Father.</p>';
     
-    if (officeType > 0) result += `<p>OUR Father.</p>
-    <img id='officeMarginalium' class='leftMarg'>`;
+    if (officeType > 0) result += "<p>OUR Father.</p><img id='officeMarginalium' class='leftMarg' src='" + getOfficeMargin(now) + "'>";
 
     if (officeType === 1) result += result += makeP(getMorn(liturgicalDay));
     else if (officeType === 2) result += makeP(getEve(liturgicalDay));
