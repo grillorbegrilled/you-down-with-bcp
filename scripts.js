@@ -31,7 +31,7 @@ function displayEventDetails() {
     const day = now.getDay();
     document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, month, date) + ".gif";
     
-    setBorderImage(now);
+    document.getElementById("officeMarginalium").src = getOfficeMargin(now);
 
     if (day !== 3 && day !== 5) //All Conditions on W & F
         document.getElementById('pfac').style.display = "none";
