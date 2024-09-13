@@ -16,6 +16,7 @@ body, html {
     overflow: hidden;
     color: black;
     font-family: "Garamond", Garamond, Georgia, serif;
+    font-weight: normal;
     font-feature-settings: "liga" 1, "dlig" 1, "calt" 1, "ss01" 1;
     font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
