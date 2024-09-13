@@ -11,7 +11,7 @@ function setBorderImage(now) {
 
 function getOfficeMargin(now) {
   //if (now.getMonth() >= 8 && now.getMonth() < 11) { //September-November for now
-    document.getElementById('officeMarginalium').backgroundImage = 'url("images/marginalia/apples1.png")';
+    return "images/marginalia/apples1.png";
   //}
 }
 
