@@ -1,4 +1,4 @@
-function get office(now) {
+function get office(now, liturgicalDay) {
     var result = "";
     var officeType = 0;
 
