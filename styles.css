@@ -57,7 +57,7 @@ body, html {
 }
 
 .tab {
-    background: background: rgba(0,0,0,0.01);
+    background: background: rgba(0,0,0,0);
     border: none;
     padding: 0;
     cursor: pointer;
@@ -65,7 +65,7 @@ body, html {
 }
 
 .tab.active {
-    background: #666;
+    background: rgba(0,0,0,0.01);
 }
 
 .content {
