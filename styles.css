@@ -2,13 +2,20 @@
     font-size: 100%;
 }
 
+@font-face {
+  font-family: 'Garamond';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/57225/EBGaramond12-Regular.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     overflow: hidden;
     color: black;
-    font-family: "EB Garamond", Garamond, Georgia, serif;
+    font-family: "Garamond", Garamond, Georgia, serif;
     font-feature-settings: "liga" 1, "dlig" 1, "calt" 1, "ss01" 1;
     font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
