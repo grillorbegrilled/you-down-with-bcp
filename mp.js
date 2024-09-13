@@ -1,4 +1,5 @@
 function get office(now) {
+    var result = "";
 
 if (now.getHours() < 10) {
         document.getElementById('canticle').innerHTML = makeP(getMorn(liturgicalDay));
