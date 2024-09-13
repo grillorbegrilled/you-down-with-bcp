@@ -109,6 +109,16 @@ body, html {
     display: block;
 }
 
+.textWithMarg {
+            display: flex;
+            align-items: flex-start;
+        }
+        .textWithMarg img {
+            max-width: 33.33%;
+            height: auto;
+            margin-right: 10px;
+        }
+
 h1 { 
     font-family: 'UnifrakturMaguntia', Garamond, Georgia, serif;
     font-size: 2rem; 
