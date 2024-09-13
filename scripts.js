@@ -82,7 +82,7 @@ function displayEventDetails() {
     else
         document.getElementById('penitentialOffice').style.display = "none";
 
-    document.getElementById('spiritualCommunion').style.display = "none";
+    //document.getElementById('spiritualCommunion').style.display = "none";
 }
 
 function synthCollects(cotd, week) {
