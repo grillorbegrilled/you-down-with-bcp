@@ -59,7 +59,7 @@ body, html {
 .tab {
     background: background: rgba(0,0,0,0);
     border: none;
-    padding: 0;
+    padding: 10px, 0;
     cursor: pointer;
     width: 100%;
 }
