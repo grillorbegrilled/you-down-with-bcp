@@ -1,24 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morning Prayer</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="timesAndSeasons.js"></script>
-    <script src="canticles.js"></script>
-    <script src="marginalia.js"></script>
-    <script src="scripts.js"></script>
-    <script>
-        window.onload = function() {
-            displayEventDetails();
-        }
-    </script>
-</head>
-<body>
-    <img id="bookmark" class="bookmark">
-    <p id="fastDayLabel" style="color: red;">Fast.</p>
-    <div id="office">
+function get office(now) {
+
+if (now.getHours() < 10) {
+        document.getElementById('canticle').innerHTML = makeP(getMorn(liturgicalDay));
+        document.getElementById('collect').textContent = "O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings may be ordered by thy governance, to do always that is righteous in thy sight; through Jesus Christ our Lord. Amen.";
+        if (liturgicalDay === 'Whitsun' || liturgicalDay === 'Whitmon' || liturgicalDay === 'WhitTue' || liturgicalDay === 'Xmas' || liturgicalDay === 'Stephen' || liturgicalDay === 'JohnEvangelist' || liturgicalDay === 'Innocents')
+          document.getElementById('creed').innerHTML = "";
+    } else if (now.getHours() >= 15) {
+      document.getElementById('officeName').textContent = "Evening Prayer";
+      document.getElementById('canticle').innerHTML = makeP(getEve(liturgicalDay));  
+      document.getElementById('collect').textContent = "O GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
+    } else if (now.getHours() < 21) {
+        document.getElementById('compline').style.display = "none";
+    }else document.getElementById('office').style.display = "none";
+
+    const month = now.getMonth();
+    const date = now.getDate();
+    const day = now.getDay();
+    document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, month, date) + ".gif";
+    
+    document.getElementById("officeMarginalium").src = getOfficeMargin(now);
+
+    if (day !== 3 && day !== 5) //All Conditions on W & F
+        document.getElementById('pfac').style.display = "none";
+
+    if (day !== 0 && day !== 4) //General Thanksgiving on Su & Th
+        document.getElementById('genThanks').style.display = "none";
+
         <h1 id="officeName">Morning Prayer</h1>
          <p>OUR Father.</p>
         <div id='canticle'></div>
@@ -41,5 +48,4 @@
             
         <p>THE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>
     </div>
-</body>
-</html>
+}
