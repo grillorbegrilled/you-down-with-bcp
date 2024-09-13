@@ -97,8 +97,9 @@ body, html {
 
 h1 { 
     font-family: 'UnifrakturMaguntia', Garamond, Georgia, serif;
-    font-size: 1.32rem; 
+    font-size: 2rem; 
     text-align: center;
+    font-weight: normal;
 }
 h2 { 
     font-size: 1.15rem;
