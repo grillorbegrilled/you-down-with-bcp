@@ -1,19 +1,38 @@
 function get office(now) {
     var result = "";
+    var officeType = 0;
+
+    if (now.getHours() >= 5 && now.getHours() < 10) officeType = 1;
+    else if (now.getHours() >= 15 && now.getHours() < 21) officeType = 2;
+    else if (now.getHours() >= 21 && now.getHours() < 5) officeType = 3;
+
+    if (officeType === 1) result += "<h1>Morning Prayer</h1>";
+    else if (officeType === 2) result += "<h1>Evening Prayer</h1>";
+    else if (officeType === 3) result += '<h1>Night Prayer</h1><p>ALMIGHTY and most merciful Father.</p>';
+    
+    if (officeType > 0) result += `<p>OUR Father.</p>
+    <img id='officeMarginalium' class='leftMarg'>`;
+
+    if (officeType === 1) result += result += makeP(getMorn(liturgicalDay));
+    else if (officeType === 2) result += makeP(getEve(liturgicalDay));
+    else if (officeType === 3) result += `<p>LORD, now lettest thou thy servant depart in peace : according to thy word.<br>
+    For mine eyes have seen thy salvation : which thou hast prepared : before the face of all people;<br>
+    To be a light to lighten the Gentiles : and to be the glory of thy people Israel.</p>
+    <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
+    Answer. As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
+
+    
 
 if (now.getHours() < 10) {
-        document.getElementById('canticle').innerHTML = makeP(getMorn(liturgicalDay));
         document.getElementById('collect').textContent = "O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings may be ordered by thy governance, to do always that is righteous in thy sight; through Jesus Christ our Lord. Amen.";
         if (liturgicalDay === 'Whitsun' || liturgicalDay === 'Whitmon' || liturgicalDay === 'WhitTue' || liturgicalDay === 'Xmas' || liturgicalDay === 'Stephen' || liturgicalDay === 'JohnEvangelist' || liturgicalDay === 'Innocents')
           document.getElementById('creed').innerHTML = "";
     } else if (now.getHours() >= 15) {
-      document.getElementById('officeName').textContent = "Evening Prayer";
-      document.getElementById('canticle').innerHTML = makeP(getEve(liturgicalDay));  
       document.getElementById('collect').textContent = "O GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
     } else if (now.getHours() < 21) {
         document.getElementById('compline').style.display = "none";
     }else document.getElementById('office').style.display = "none";
-
+    
     const month = now.getMonth();
     const date = now.getDate();
     const day = now.getDay();
@@ -27,8 +46,8 @@ if (now.getHours() < 10) {
     if (day !== 0 && day !== 4) //General Thanksgiving on Su & Th
         document.getElementById('genThanks').style.display = "none";
 
-        <h1 id="officeName">Morning Prayer</h1>
-         <p>OUR Father.</p>
+    
+         
         <div id='canticle'></div>
     
         <div id='creed'>
