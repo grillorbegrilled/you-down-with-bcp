@@ -22,9 +22,12 @@
     </script>
 </head>
 <body>
-    <img id="bookmark" class="bookmark">
+    <div class="background"></div>
     <p id="fastDayLabel" style="color: red;">Fast.</p>
-    <div id="office">
+    <div class="card">
+        <div class="content">
+            <div class="tab-content" id="tab-0">
+                <div id="office>
         <h1 id="officeName">Morning Prayer</h1>
          <p>OUR Father, who art in heaven,<br>
             Hallowed be thy Name.<br>
@@ -76,13 +79,15 @@
             
         <p>THE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>
     </div>
-
-    <div id="litany"></div>
+                <div id="litany"></div>
     <div id="penitentialOffice"></div>
     <div id="occasionalPrayers"></div>
+            </div>
+
     
-    <div class="tiled-border"></div>
     
+    <div class="tab-content active" id="tab-1">
+    <img id="bookmark" class="bookmark">
     <h1 id="nameOfTheDay"></h1>
         <p>ALMIGHTY God, unto whom all hearts be open, all desires known, and from whom no secrets are hid; Cleanse the thoughts of our hearts by the inspiration of thy Holy Spirit, that we may perfectly love thee, and worthily magnify thy holy Name; through Christ our Lord. Amen.</p>
         <div id="eventDetails">
@@ -113,10 +118,19 @@
         <p>And here we offer and present unto thee, O Lord, ourselves, our souls and bodies, to be a reasonable, holy, and lively sacrifice unto thee; humbly beseeching thee that we may be fulfilled with thy grace and heavenly benediction.</p>
         <p>And although we be unworthy, through our manifold sins, to offer unto thee any sacrifice, yet we beseech thee to accept this our bounden duty and service; not weighing our merits, but pardoning our offences, through Jesus Christ our Lord; by whom, and with whom, in the unity of the Holy Ghost, all honour and glory be unto thee, O Father Almighty, world without end. Amen.</p>
     </div>
+    </div>
+    <div class="tab-content" id="tab-2">
         <h2>A Hymn</h2>
         <div id="hymn"></div>
+    </div>
 
-    <div id="compline">
+        <div class="tabs">
+            <button class="tab" onclick="showTab(0)">Office</button>
+            <button class="tab active" onclick="showTab(1)">Collect</button>
+            <button class="tab" onclick="showTab(2)">Hymn</button>
+        </div>
+
+    <!--<div id="compline">
         <h1>Night Prayer</h1>
         <p>ALMIGHTY and most merciful Father;<br>
             We have erred, and strayed from thy ways like lost sheep.<br>
@@ -139,6 +153,6 @@
         <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
     Answer. As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>
         <p> LIGHTEN our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.</p>
-    </div>
+    </div>-->
 </body>
 </html>
