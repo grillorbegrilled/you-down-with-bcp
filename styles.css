@@ -109,11 +109,7 @@ body, html {
     display: block;
 }
 
-.textWithMarg {
-            display: flex;
-            align-items: flex-start;
-        }
-        .textWithMarg img {
+  .leftMarg img {
             max-width: 33.33%;
             height: auto;
             margin: 10px;
