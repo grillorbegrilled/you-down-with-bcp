@@ -130,6 +130,29 @@
             <button class="tab" onclick="showTab(2)">Hymn</button>
         </div>
 
+        <script>
+            function showTab(index) {
+                const tabs = document.querySelectorAll('.tab');
+                const contents = document.querySelectorAll('.tab-content');
+            
+                tabs.forEach((tab, i) => {
+                    if (i === index) {
+                        tab.classList.add('active');
+                    } else {
+                        tab.classList.remove('active');
+                    }
+                });
+            
+                contents.forEach((content, i) => {
+                    if (i === index) {
+                        content.classList.add('active');
+                    } else {
+                        content.classList.remove('active');
+                    }
+                });
+            }
+        </script>
+
     <!--<div id="compline">
         <h1>Night Prayer</h1>
         <p>ALMIGHTY and most merciful Father;<br>
