@@ -117,3 +117,8 @@ p {
     font-size: 1.00rem; 
     font-variant-ligatures: historical-ligatures contextual;
 }
+
+p.hymn {
+    text-align: center;
+    margin: 0 auto;
+}
