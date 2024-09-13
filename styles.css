@@ -116,7 +116,10 @@ body, html {
         .textWithMarg img {
             max-width: 33.33%;
             height: auto;
-            margin-right: 10px;
+            margin: 10px;
+    vertical-align: middle;
+    float: left;
+    display: block;
         }
 
 h1 { 
