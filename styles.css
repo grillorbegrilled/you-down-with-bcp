@@ -112,4 +112,7 @@ h3 { font-size: 1.52rem; }
 h4 { font-size: 1.32rem; }
 h5 { font-size: 1.15rem; }
 h6 { font-size: 1.00rem; }*/
-p { font-size: 1.00rem; }
+p { 
+    font-size: 1.00rem; 
+    font-variant-ligatures: historical-ligatures contextual;
+}
