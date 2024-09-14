@@ -17,7 +17,7 @@ function getOfficeMargin1(now) {
 
 function getOfficeMargin2(now) {
   //if (now.getMonth() >= 8 && now.getMonth() < 11) { //September-November for now
-    return "images/marginalia/cicada.jpg";
+    return "images/marginalia/Cicada.jpg";
   //}
 }
 
