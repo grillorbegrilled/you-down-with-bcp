@@ -9,9 +9,15 @@ function setBorderImage(now) {
   }
 }
 
-function getOfficeMargin(now) {
+function getOfficeMargin1(now) {
   //if (now.getMonth() >= 8 && now.getMonth() < 11) { //September-November for now
     return "images/marginalia/apples1.png";
+  //}
+}
+
+function getOfficeMargin2(now) {
+  //if (now.getMonth() >= 8 && now.getMonth() < 11) { //September-November for now
+    return "images/marginalia/cicada.jpg";
   //}
 }
 
