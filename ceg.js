@@ -698,11 +698,11 @@ const propers1662 = {
     "T16": {
         "c": "O LORD, we beseech thee, let thy continual pity cleanse and defend thy Church; and, because it cannot continue in safety without thy succour, preserve it evermore by thy help and goodness; through Jesus Christ our Lord. Amen.",
         "e": {
-            "cit": "Ephesians 3:13",
+            "cit": "Ephesians 3:13-21",
             "txt": "I DESIRE that ye faint not at my tribulations for you, which is your glory. For this cause I bow my knees unto the Father of our Lord Jesus Christ, Of whom the whole family in heaven and earth is named, That he would grant you, according to the riches of his glory, to be strengthened with might by his Spirit in the inner man; That Christ may dwell in your hearts by faith; that ye, being rooted and grounded in love, May be able to comprehend with all saints what is the breadth, and length, and depth, and height; And to know the love of Christ, which passeth knowledge, that ye might be filled with all the fulness of God. Now unto him that is able to do exceeding abundantly above all that we ask or think, according to the power that worketh in us, Unto him be glory in the church by Christ Jesus throughout all ages, world without end. Amen."
         },
         "g": {
-            "cit": "Luke 7:11",
+            "cit": "Luke 7:11-17",
             "txt": "AND it came to pass the day after, that he went into a city called Nain; and many of his disciples went with him, and much people. Now when he came nigh to the gate of the city, behold, there was a dead man carried out, the only son of his mother, and she was a widow: and much people of the city was with her. And when the Lord saw her, he had compassion on her, and said unto her, Weep not. And he came and touched the bier: and they that bare him stood still. And he said, Young man, I say unto thee, Arise. And he that was dead sat up, and began to speak. And he delivered him to his mother. And there came a fear on all: and they glorified God, saying, That a great prophet is risen up among us; and, That God hath visited his people. And this rumour of him went forth throughout all Judaea, and throughout all the region round about."
         }
     },
