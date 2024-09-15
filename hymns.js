@@ -255,7 +255,30 @@ And raiment fit provide.</p>
 Till all our wand'rings cease,<br>
 And at our Father's loved abode<br>
 Our souls arrive in peace!`],
-    "T16": [""],
+    "T16": [`Through all the changing scenes of life,<br>
+in trouble and in joy,<br>
+the praises of my God shall still<br>
+my heart and tongue employ.</p>
+        <p>O magnify the Lord with me,<br>
+with me exalt his Name;<br>
+when in distress to him I called,<br>
+he to my rescue came.</p>
+        <p>The hosts of God encamp around<br>
+the dwellings of the just;<br>
+deliverance he affords to all<br>
+who on his succor trust.</p>
+        <p>O make but trial of his love;<br>
+experience will decide<br>
+how blest are they, and only they<br>
+who in his truth confide.</p>
+        <p>Fear him, ye saints, and you will then<br>
+have nothing else to fear;<br>
+make you his service your delight;<br>
+your wants shall be his care.</p>
+        <p>For God preserves the souls of those<br>
+who on his truth depend;<br>
+to them and their posterity<br>
+his blessing shall descend.`],
     "T17": [""],
     "T18": [""],
     "T19": [""],
