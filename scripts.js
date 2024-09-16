@@ -10,38 +10,14 @@ function displayEventDetails() {
     const hymn = getHymns(liturgicalDay);
     const collect = synthCollects(details.c, week);
 
-    if (!isFast(now))
-        document.getElementById('fastDayLabel').style.display = "none";
-  
-    if (now.getHours() < 12) {
-        document.getElementById('canticle').innerHTML = makeP(getMorn(liturgicalDay));
-        document.getElementById('collect').textContent = "O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings may be ordered by thy governance, to do always that is righteous in thy sight; through Jesus Christ our Lord. Amen.";
-        if (liturgicalDay === 'Whitsun' || liturgicalDay === 'Whitmon' || liturgicalDay === 'WhitTue' || liturgicalDay === 'Xmas' || liturgicalDay === 'Stephen' || liturgicalDay === 'JohnEvangelist' || liturgicalDay === 'Innocents')
-          document.getElementById('creed').innerHTML = "";
-    } else if (now.getHours() < 21) {
-      document.getElementById('officeName').textContent = "Evening Prayer";
-      document.getElementById('canticle').innerHTML = makeP(getEve(liturgicalDay));  
-      document.getElementById('collect').textContent = "O GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
-    } else document.getElementById('office').style.display = "none";
-    
-    if (now.getHours() < 21) {
-        document.getElementById('compline').style.display = "none";
-    }
+    if (!isFast(now)) document.getElementById('fastDayLabel').style.display = "none";
 
+    document.getElementById('office').innerHTML = getOffice(now, liturgicalDay);
+    
     const month = now.getMonth();
     const date = now.getDate();
     const day = now.getDay();
     document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, month, date) + ".gif";
-    
-    document.getElementById("officeMarginalium1").src = getOfficeMargin1(now);
-    document.getElementById("officeMarginalium2").src = getOfficeMargin2(now);
-
-    
-    if (day !== 3 && day !== 5) //All Conditions on W & F
-        document.getElementById('pfac').style.display = "none";
-
-    if (day !== 0 && day !== 4) //General Thanksgiving on Su & Th
-        document.getElementById('genThanks').style.display = "none";
     
     if (details) {
         if (collect.includes("</p><p>"))
@@ -60,33 +36,9 @@ function displayEventDetails() {
         document.getElementById('g_txt').innerHTML = '';
     }
 
-    if (hymn)
-        document.getElementById('hymn').innerHTML = makeP(hymn);
-    else
-        document.getElementById('hymn').innerHTML = '';
+    if (hymn) document.getElementById('hymn').innerHTML = makeP(hymn);
 
-    if (dayName)
-        document.getElementById('nameOfTheDay').textContent = `${dayName}`;
-    else
-        document.getElementById('nameOfTheDay').textContent = '';
-
-    const litany = getLitany(liturgicalDay, month, date, day);
-    if (litany) {
-        document.getElementById('office').style.display = "none";
-        document.getElementById('litany').innerHTML = litany;
-    }
-    else
-        document.getElementById('litany').style.display = "none";
-
-    const penitentialOffice = getPenitentialOffice(liturgicalDay, date, day);
-    if (penitentialOffice) {
-        document.getElementById('office').style.display = "none";
-        document.getElementById('penitentialOffice').innerHTML = penitentialOffice;
-    }
-    else
-        document.getElementById('penitentialOffice').style.display = "none";
-
-    //document.getElementById('spiritualCommunion').style.display = "none";
+    if (dayName) document.getElementById('nameOfTheDay').textContent = `${dayName}`;
 }
 
 function synthCollects(cotd, week) {
