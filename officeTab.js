@@ -1,4 +1,4 @@
-function get office(now, liturgicalDay) {
+function getOffice(now, liturgicalDay) {
     const day = now.getDay();
     
     var result = "";
