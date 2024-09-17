@@ -16,12 +16,13 @@ function getOfficeMargin1(now, liturgicalDay) {
       break;
     default:
       result = "";
-
-      if (result === "") {
-        if (now.getMonth() >= 8 && now.getMonth() < 11) { //September-November for now
-          result = "images/marginalia/apples1.png";
-        }
-      }
+  }
+  
+  if (result === "") {
+    if (now.getMonth() >= 8 && now.getMonth() < 11) { //September-November for now
+      result = "images/marginalia/apples1.png";
+    }
+  }
 
   return result;
 }
