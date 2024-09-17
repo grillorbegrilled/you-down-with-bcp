@@ -18,6 +18,7 @@ function displayEventDetails() {
     const date = now.getDate();
     const day = now.getDay();
     document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, month, date) + ".gif";
+    document.getElementById('euchMargin').src = getEuchMargin(now);
     
     if (details) {
         if (collect.includes("</p><p>"))
