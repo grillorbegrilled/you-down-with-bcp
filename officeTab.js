@@ -22,7 +22,7 @@ function getOffice(now, liturgicalDay) {
         else if (officeType === 3) result += '<h1>Night Prayer</h1><p>ALMIGHTY and most merciful Father.</p>';
     
         //Our Father and first marginalium
-        if (officeType > 0) result += "<p>OUR Father.</p><img class='leftMarg' src='" + getOfficeMargin1(now) + "'>";
+        if (officeType > 0) result += "<p>OUR Father.</p><img class='leftMarg' src='" + getOfficeMargin1(now, liturgicalDay) + "'>";
     
         //Canticle
         var canticle = "";
