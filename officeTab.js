@@ -14,7 +14,7 @@ function getOffice(now, liturgicalDay) {
         var officeType = 0;
         if (now.getHours() >= 5 && now.getHours() < 10) officeType = 1;
         else if (now.getHours() >= 15 && now.getHours() < 21) officeType = 2;
-        else if (now.getHours() >= 21 && now.getHours() < 5) officeType = 3;
+        else if (now.getHours() >= 21 || now.getHours() < 5) officeType = 3;
     
         //Title
         if (officeType === 1) result += "<h1>Morning Prayer</h1>";
