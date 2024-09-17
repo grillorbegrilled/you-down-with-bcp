@@ -5,14 +5,11 @@ function displayEventDetails() {
     const feast = getLiturgicalDate(now);
     const liturgicalDay = synthDate(week, feast, now.getDay());
 
-    const dayName = getDayName(liturgicalDay);
     const details = getProper(liturgicalDay);
     const hymn = getHymns(liturgicalDay);
     const collect = synthCollects(details.c, week);
 
     if (!isFast(now)) document.getElementById('fastDayLabel').style.display = "none";
-
-    document.getElementById('office').innerHTML = getOffice(now, liturgicalDay);
     
     const month = now.getMonth();
     const date = now.getDate();
@@ -21,6 +18,8 @@ function displayEventDetails() {
     document.getElementById('euchMarg').src = getEuchMargin(now);
     
     if (details) {
+        document.getElementById('nameOfTheDay').textContent = `${getDayName(liturgicalDay)}`;
+        
         if (collect.includes("</p><p>"))
             document.getElementById('c_h').textContent = "The Collects";
         
@@ -39,7 +38,7 @@ function displayEventDetails() {
 
     if (hymn) document.getElementById('hymn').innerHTML = makeP(hymn);
 
-    if (dayName) document.getElementById('nameOfTheDay').textContent = `${dayName}`;
+    document.getElementById('office').innerHTML = getOffice(now, liturgicalDay);
 }
 
 function synthCollects(cotd, week) {
