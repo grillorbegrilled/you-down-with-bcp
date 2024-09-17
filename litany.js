@@ -7,12 +7,9 @@ function getLitany(lit, month, date, day) {
         return `<H1>The Litany</H1>
         <P>O GOD the Father, Creator of heaven and earth; <B><BR>
             Have mercy upon us. </B><BR>
-        O God the Son, Redeemer of the world; <B><BR>
-            Have mercy upon us. </B><BR>
-        O God the Holy Ghost, Sanctifier of the faithful; <B><BR>
-            Have mercy upon us. </B><BR>
-        O holy, blessed, and glorious Trinity, one God; <B><BR>
-            Have mercy upon us.</B><BR>
+        O God the Son, Redeemer of the world...<BR>
+        O God the Holy Ghost, Sanctifier of the faithful...<BR>
+        O holy, blessed, and glorious Trinity, one God...
     </P>
     <p>
         Remember not, Lord, our offences, nor the offences of our forefathers; neither take thou vengeance of our sins:<BR>
@@ -20,8 +17,7 @@ function getLitany(lit, month, date, day) {
             Spare us, good Lord.</B><BR>
         From all evil and mischief; from sin; from the crafts and assaults of the devil; from thy wrath, and from everlasting damnation,<BR>
             <B>Good Lord, deliver us.</B><BR>
-        From all blindness of heart; from pride, vainglory, and hypocrisy; from envy, hatred, and malice, and all uncharitableness,<BR>
-            <B>Good Lord, deliver us.</B><BR>
+        From all blindness of heart; from pride, vainglory, and hypocrisy; from envy, hatred, and malice, and all uncharitableness...<BR>
         From all inordinate and sinful affections; and from all the deceits of the world, the flesh, and the devil,<BR>
             <B>Good Lord, deliver us.</B><BR>
         From lightning and tempest; from earthquake, fire, and flood; from plague, pestilence, and famine; from battle and murder, and from sudden death,<BR>
@@ -88,18 +84,7 @@ function getLitany(lit, month, date, day) {
             <B>Lord, have mercy upon us.</B>
     </P>
 
-    <p>OUR Father, who art in heaven,<br>
-            Hallowed be thy Name.<br>
-            Thy kingdom come.<br>
-            Thy will be done, on earth as it is in heaven.<br>
-            Give us this day our daily bread.<br>
-            And forgive us our trespasses,<br>
-            As we forgive them that trespass against us.<br>
-            And lead us not into temptation;<br>
-            But deliver us from evil:<br>
-            For thine is the kingdom,<br>
-            The power, and the glory,<br>
-            For ever and ever. Amen.</p>
+    <p>OUR Father.</p>
     <hr>
     <P>
         O Lord, deal not with us according to our sins. <B><BR>
