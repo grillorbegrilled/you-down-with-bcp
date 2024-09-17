@@ -21,6 +21,16 @@ function getOfficeMargin2(now) {
   //}
 }
 
+function getEuchMargin(now) {
+  var month = now.getMonth();
+  var date = now.getDate();
+
+  if (month === 8) {
+    if (date === 21) return "images/marginalia/matthew.jpg";
+    //else if (date === 29)
+  }
+}
+
 /*
 {
     "A1": [""],
