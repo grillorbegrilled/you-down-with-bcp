@@ -24,10 +24,22 @@ function getOfficeMargin2(now) {
 function getEuchMargin(now, liturgicalDay) {
   var month = now.getMonth();
   var date = now.getDate();
+  var result = "";
+  
+  switch(liturgicalDay) {
+    case "T8":
+      result = "images/marginalia/bytheirfruit.gif";
+      break;
+    case "Matthew":
+      result = "images/marginalia/matthew.jpg";
+      break;
+    default:
+      result = "";
+  }
 
-  if (liturgicalDay === "Matthew") return "images/marginalia/matthew.jpg";
+  //if (result === "") {} //calendar days
 
-  return "";
+  return result;
 }
 
 /*
