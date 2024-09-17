@@ -33,6 +33,9 @@ function getEuchMargin(now, liturgicalDay) {
     case "Matthew":
       result = "images/marginalia/matthew.jpg";
       break;
+    case "Michael":
+      result = "images/marginalia/michael.png";
+      break;
     default:
       result = "";
   }
