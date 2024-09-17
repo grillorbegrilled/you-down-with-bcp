@@ -29,6 +29,8 @@ function getEuchMargin(now) {
     if (date === 21) return "images/marginalia/matthew.jpg";
     //else if (date === 29)
   }
+
+  return "";
 }
 
 /*
