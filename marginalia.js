@@ -34,6 +34,8 @@ function getOfficeMargin1(now, liturgicalDay) {
 
 function getOfficeMargin2(now, liturgicalDay) {
   var result = "";
+  var month = now.getMonth();
+  var date = now.getDate();
 
   switch(liturgicalDay) {
     case "Michael":
@@ -44,7 +46,8 @@ function getOfficeMargin2(now, liturgicalDay) {
   }
 
   if (result === "") {
-    if (now.getMonth() >= 8 && now.getMonth() < 11) result = "images/marginalia/Cicada.jpg";
+    if (month === 8 && date < 29) result = "images/marginalia/Cicada.jpg";
+    else result = "images/marginalia/mums2.jpg";
   }
 
   return result;
