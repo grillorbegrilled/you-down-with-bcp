@@ -40,7 +40,7 @@ function getOffice(now, liturgicalDay) {
         if (officeType !== 3 && !canticle.startsWith("WE praise")) result += "I BELIEVE in God.";
     
         //Collect(s)
-        result += "<div><img class='rightMarg' src='" + getOfficeMargin2(now) + "'>";
+        result += "<div><img class='rightMarg' src='" + getOfficeMargin2(now, liturgicalDay) + "'>";
         if (officeType === 1) result += "<p>O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings may be ordered by thy governance, to do always that is righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
         else if (officeType === 2) result += "<p>O GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.</p>";
         else if (officeType === 3) result += "<p>LIGHTEN our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.</p>";
