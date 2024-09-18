@@ -2,10 +2,6 @@ function getOffice(now, liturgicalDay) {
     const day = now.getDay();
     
     var result = "";
-    //------------------Fast day symbol
-    if (isFast(now))
-        result += "<img class='fastingFish' src='images/marginalia/whitecrappie.gif'>";
-    
     //------------------LITANY
     result += getLitany(liturgicalDay, now.getMonth(), now.getDate(), day);
     
@@ -19,12 +15,16 @@ function getOffice(now, liturgicalDay) {
         if (now.getHours() >= 5 && now.getHours() < 12) officeType = 1;
         else if (/*now.getHours() >= 15 &&*/ now.getHours() < 21) officeType = 2;
         else if (now.getHours() >= 21 || now.getHours() < 5) officeType = 3;
-    
+
+if (isFast(now))
+        result += "<img class='fastingFish' src='images/marginalia/whitecrappie.gif'>";
+        
         //Title
         if (officeType === 1) result += "<h1>Morning Prayer</h1>";
         else if (officeType === 2) result += "<h1>Evening Prayer</h1>";
         else if (officeType === 3) result += '<h1>Night Prayer</h1><p>ALMIGHTY and most merciful Father.</p>';
-    
+    if (isFast(now))
+        result += "<img class='fastingFish-r' src='images/marginalia/whitecrappie.gif'>";
         //Our Father and first marginalium
         if (officeType > 0) result += "<p>OUR Father.</p><img class='leftMarg' src='" + getOfficeMargin1(now, liturgicalDay) + "'>";
     
