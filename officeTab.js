@@ -2,14 +2,18 @@ function getOffice(now, liturgicalDay) {
     const day = now.getDay();
     
     var result = "";
+    //------------------Fast day symbol
+    if isFast(now)
+        result += "<img class='leftMarg' src='images/marginalia/whitecrappie.gif'>";
+    
     //------------------LITANY
-    result = getLitany(liturgicalDay, now.getMonth(), now.getDate(), day);
+    result += getLitany(liturgicalDay, now.getMonth(), now.getDate(), day);
     
     //------------------COMMINATION
     result += getPenitentialOffice(liturgicalDay, now.getDate(), day);
     
     //------------------DAILY PRAYERS
-    if (result === "") {
+    if (!result.toLowerCase().includes("<h1>")) {
         //officeType: 1=MP, 2=EP, 3=Compline
         var officeType = 0;
         if (now.getHours() >= 5 && now.getHours() < 12) officeType = 1;
