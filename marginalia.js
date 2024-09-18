@@ -10,9 +10,14 @@ function setBorderImage(now) {
 }
 
 function getOfficeMargin1(now, liturgicalDay) {
+  var result = "";
+  
   switch(liturgicalDay) {
     case "Matthew":
       result = "images/marginalia/coins.gif";
+      break;
+    case "Michael":
+      result = "images/marginalia/neaster.png";
       break;
     default:
       result = "";
@@ -27,10 +32,22 @@ function getOfficeMargin1(now, liturgicalDay) {
   return result;
 }
 
-function getOfficeMargin2(now) {
-  //if (now.getMonth() >= 8 && now.getMonth() < 11) { //September-November for now
-    return "images/marginalia/Cicada.jpg";
-  //}
+function getOfficeMargin2(now, liturgicalDay) {
+  var result = "";
+
+  switch(liturgicalDay) {
+    case "Michael":
+      result = "images/marginalia/geese.png";
+      break;
+    default:
+      result = "";
+  }
+
+  if (result === "") {
+    if (now.getMonth() >= 8 && now.getMonth() < 11) result = "images/marginalia/Cicada.jpg";
+  }
+
+  return result;
 }
 
 function getEuchMargin(now, liturgicalDay) {
