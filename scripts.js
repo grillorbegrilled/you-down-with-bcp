@@ -9,7 +9,7 @@ function displayEventDetails() {
     const hymn = getHymns(liturgicalDay);
     const collect = synthCollects(details.c, week);
 
-    if (!isFast(now)) document.getElementById('fastDayLabel').style.display = "none";
+    if (!isFast(now)) document.getElementById('fastDayLabel').textContent = "FAST.";
     
     const month = now.getMonth();
     const date = now.getDate();
