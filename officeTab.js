@@ -3,7 +3,7 @@ function getOffice(now, liturgicalDay) {
     
     var result = "";
     //------------------Fast day symbol
-    if isFast(now)
+    if (isFast(now))
         result += "<img class='leftMarg' src='images/marginalia/whitecrappie.gif'>";
     
     //------------------LITANY
