@@ -4,7 +4,7 @@ function getOffice(now, liturgicalDay) {
     var result = "";
     //------------------Fast day symbol
     if (isFast(now))
-        result += "<img class='leftMarg' src='images/marginalia/whitecrappie.gif'>";
+        result += "<img class='fastingFish' src='images/marginalia/whitecrappie.gif'>";
     
     //------------------LITANY
     result += getLitany(liturgicalDay, now.getMonth(), now.getDate(), day);
