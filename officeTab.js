@@ -9,7 +9,7 @@ function getOffice(now, liturgicalDay) {
     result += getPenitentialOffice(liturgicalDay, now.getDate(), day);
     
     //------------------DAILY PRAYERS
-    if (!result.toLowerCase().includes("<h1>")) {
+    if (result === "") {
         //officeType: 1=MP, 2=EP, 3=Compline
         var officeType = 0;
         if (now.getHours() >= 5 && now.getHours() < 12) officeType = 1;
