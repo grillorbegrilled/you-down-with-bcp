@@ -1,11 +1,6 @@
-<html>
-  <head></head>
-  <body>
-<p>I AM the resurrection and the life, saith the Lord: he that believeth in me, though he were dead, yet shall he live: and whosoever liveth and believeth in me shall never die.<i>&mdash;St. John 11:25, 26</i></p>
+function getMemorial() { return `<p>I AM the resurrection and the life, saith the Lord: he that believeth in me, though he were dead, yet shall he live: and whosoever liveth and believeth in me shall never die.<i>&mdash;St. John 11:25, 26</i></p>
 <p>I KNOW that my Redeemer liveth, and that he shall stand at the latter day upon the earth. And though after my skin worms destroy this body, yet in my flesh shall I see God: whom I shall see for myself, and mine eyes shall behold, and not another.<i>&mdash;Job 19:25-27</i></p>
 <p>WE brought nothing into this world, and it is certain we can carry nothing out. The Lord gave, and the Lord hath taken away; blessed be the Name of the Lord.<i>&mdash;1 Tim. 6:7, Job 1:21</i></p>
-
-<!--A hymn may be inserted here-->
     
 <h2>Psalm 90</h2>
 <p>LORD, thou hast been our refuge: from one generation to another.<br>
@@ -51,6 +46,4 @@
 <p>ALMIGHTY God, with whom do live the spirits of them that depart hence in the Lord, and with whom the souls of the faithful, after they are delivered from the burden of the flesh, are in joy and felicity: We give thee hearty thanks, for that it hath pleased thee to deliver our departed brethren <I>[this our brother]</I> out of the miseries of this sinful world; beseeching thee, that it may please thee, of thy gracious goodness, shortly to accomplish the number of thine elect, and to hasten thy kingdom; that we, with all those that are departed in the true faith of thy holy Name, may have our perfect consummation and bliss, both in body and soul, in thy eternal and everlasting glory; through Jesus Christ our Lord. Amen.</p>
 
 <p>O MERCIFUL God, the Father of our Lord Jesus Christ, who is the resurrection and the life; in whom whosoever believeth shall live, though he die; and whosoever liveth, and believeth in him, shall not die eternally; who also hath taught us, by his holy Apostle Saint Paul, not to be sorry, as men without hope, for them that sleep in him: We meekly beseech thee, O Father, to raise us from the death of sin unto the life of righteousness; that, when we shall depart this life, we may rest in him, <i>[as our hope is this our brother doth;]</i> and that, at the general Resurrection in the last day, we may be found acceptable in thy sight; and receive that blessing, which thy well-beloved Son shall then pronounce to all that love and fear thee, saying, Come, ye blessed children of my Father, receive the kingdom prepared for you from the beginning of the world: Grant this, we beseech thee, O merciful Father, through Jesus Christ, our Mediator and Redeemer. Amen.</p>
-<p>THE grace.</p>
-</body>  
-</html>
+<p>THE grace.</p>`;}
