@@ -7,6 +7,9 @@ function getOffice(now, liturgicalDay) {
     
     //------------------COMMINATION
     result += getPenitentialOffice(liturgicalDay, now.getDate(), day);
+
+    //------------------ALL SOULS
+    if (now.getMonth() === 10 && now.getDate() === 2) result = getMemorial();
     
     //------------------DAILY PRAYERS
     if (result === "") {
