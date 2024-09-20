@@ -43,12 +43,12 @@ function getMorn(day) {
     case "HW-Thu":
     case "GF":
     case "EE":
-      return `Blessed art thou, O Lord God of our fathers:* praised and exalted above all for ever.<br>
-        Blessed art thou for the Name of thy Majesty:* praised and exalted above all for ever.<br>
-        Blessed art thou in the temple of thy holiness:* praised and exalted above all for ever.<br>
-        Blessed art thou that beholdest the depths, and dwellest between the Cherubim: * praised and exalted above all for ever.<br>
-        Blessed art thou on the glorious throne of thy kingdom: * praised and exalted above all for ever.<br>
-        Blessed art thou in the firmament of heaven: * praised and exalted above all for ever.</p>
+      return `Blessed art thou, O Lord God of our fathers : praised and exalted above all for ever.<br>
+        Blessed art thou for the Name of thy Majesty : praised and exalted above all for ever.<br>
+        Blessed art thou in the temple of thy holiness : praised and exalted above all for ever.<br>
+        Blessed art thou that beholdest the depths, and dwellest between the Cherubim : praised and exalted above all for ever.<br>
+        Blessed art thou on the glorious throne of thy kingdom : praised and exalted above all for ever.<br>
+        Blessed art thou in the firmament of heaven : praised and exalted above all for ever.</p>
         <p>Glory be.`;
       break;
     case "Easter":
@@ -97,15 +97,15 @@ function getMorn(day) {
     O Lord, in thee have I trusted : let me never be confounded.`;
       break;
     case "ThanksgivingDay":
-      return `O PRAISE the Lord, for it is a good thing to sing praises unto our God; * yea, a joyful and pleasant thing it is to be thankful.<br>
-        The Lord doth build up Jerusalem, * and gather together the outcasts of Israel.<br>
-        He healeth those that are broken in heart, * and giveth medicine to heal their sickness.<br>
-        O sing unto the Lord with thanksgiving; * sing praises upon the harp unto our God:<br>
-        Who covereth the heaven with clouds, and prepareth rain for the earth; * and maketh the grass to grow upon the mountains, and herb for the use of men;<br>
-        Who giveth fodder unto the cattle, * and feedeth the young ravens that call upon him.<br>
-        Praise the Lord, O Jerusalem; * praise thy God, O Sion.<br>
-        For he hath made fast the bars of thy gates, * and hath blessed thy children within thee.<br>
-        He maketh peace in thy borders, * and filleth thee with the flour of wheat.</p>
+      return `O PRAISE the Lord, for it is a good thing to sing praises unto our God : yea, a joyful and pleasant thing it is to be thankful.<br>
+        The Lord doth build up Jerusalem : and gather together the outcasts of Israel.<br>
+        He healeth those that are broken in heart : and giveth medicine to heal their sickness.<br>
+        O sing unto the Lord with thanksgiving : sing praises upon the harp unto our God:<br>
+        Who covereth the heaven with clouds, and prepareth rain for the earth : and maketh the grass to grow upon the mountains, and herb for the use of men;<br>
+        Who giveth fodder unto the cattle : and feedeth the young ravens that call upon him.<br>
+        Praise the Lord, O Jerusalem : praise thy God, O Sion.<br>
+        For he hath made fast the bars of thy gates : and hath blessed thy children within thee.<br>
+        He maketh peace in thy borders : and filleth thee with the flour of wheat.</p>
         <p>Glory be.`;
       break;
     default:
