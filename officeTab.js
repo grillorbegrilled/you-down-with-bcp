@@ -44,7 +44,19 @@ if (isFast(now))
         result += canticle;
     
         //Creed when not Te Deum
-        if (officeType !== 3 && !canticle.startsWith("WE praise")) result += "I BELIEVE in God.";
+        if (officeType === 1 && !canticle.startsWith("WE praise")) result += "I BELIEVE in God.";
+        else if (officeType === 2) result += `<p>O LORD, show thy mercy upon us.
+            <b>And grant us thy salvation.</b><br>
+            O Lord, save the State.<br>
+            <b>And mercifully hear us when we call upon thee.</b><br>
+            Endue thy Ministers with righteousness.<br>
+            <b>And make thy chosen people joyful.</b><br>
+            O Lord, save thy people.<br>
+            <b>And bless thine inheritance.</b><br>
+            Give peace in our time, O Lord.<br>
+            <b>For it is thou, Lord, only, that makest us dwell in safety.</b><br>
+            O God, make clean our hearts within us.<br>
+            <b>And take not thy Holy Spirit from us.</b></p>`;
     
         //Collect(s)
         result += "<div><img class='rightMarg' src='" + getOfficeMargin2(now, liturgicalDay) + "'>";
