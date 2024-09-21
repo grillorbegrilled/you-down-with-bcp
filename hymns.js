@@ -320,7 +320,30 @@ his blessing shall descend.`],
             and, where the Father willeth,<br>
             shall sit with Christ on high.`],
     "Bartholomew": [""],
-    "Matthew": [""],
+    "Matthew": [`He sat to watch o'er customs paid,<br>
+a man of scorned and hardening trade,<br>
+alike the symbol and the tool<br>
+of foreign masters' hated rule.</p>
+        <p>But grace within his heart had stirred,<br>
+there needed but the timely word;<br>
+it came, true Lord of souls, from thee,<br>
+that royal summons, "Follow me."</p>
+        <p>Enough, when thou wert passing by,<br>
+to hear thy voice, to meet thine eye;<br>
+he rose, responsive to the call,<br>
+and left his task, his gains, his all.</p>
+        <p>O wise exchange! with these to part,<br>
+and lay up treasures in the heart;<br>
+with twofold crown of light to shine<br>
+amid thy servants' foremost line.</p>
+        <p>Come, Savior, as in days of old;<br>
+pass where the world has strongest hold,<br>
+and faithless care and selfish greed<br>
+are thorns that choke the holy seed.</p>
+        <p>Who keeps thy gifts, O bid them claim<br>
+the steward's, not the owner's name;<br>
+who yield up all for thy dear sake.<br>
+let them of Matthew's wealth partake.`],
     "Michael": [""],
     "Luke": [""],
     "SimonAndJude": [""],
