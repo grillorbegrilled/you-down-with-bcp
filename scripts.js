@@ -15,7 +15,7 @@ function displayEventDetails() {
     const date = now.getDate();
     const day = now.getDay();
     document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, month, date) + ".gif";
-    document.getElementById('euchMarg').src = getEuchMargin(now);
+    document.getElementById('euchMarg').src = getEuchMargin(now, liturgicalDay);
     
     if (details) {
         document.getElementById('nameOfTheDay').textContent = `${getDayName(liturgicalDay)}`;
