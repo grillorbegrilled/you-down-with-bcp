@@ -279,7 +279,22 @@ your wants shall be his care.</p>
 who on his truth depend;<br>
 to them and their posterity<br>
 his blessing shall descend.`],
-    "T17": [""],
+    "T17": [`Blest are the pure in heart,<br>
+for they shall see our God;<br>
+the secret of the Lord is theirs,<br>
+their soul is Christ's abode.</p>
+        <p>The Lord, who left the heavens<br>
+our life and peace to bring,<br>
+to dwell in lowliness with men,<br>
+their Pattern and their King;</p>
+        <p>still to the lowly soul<br>
+he doth himself impart<br>
+and for his dwelling and his throne<br>
+chooseth the pure in heart.</p>
+        <p>Lord, we thy presence seek;<br>
+may ours this blessing be;<br>
+give us a pure and lowly heart,<br>
+a temple meet for thee.`],
     "T18": [""],
     "T19": [""],
     "T20": [""],
