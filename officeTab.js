@@ -45,7 +45,7 @@ if (isFast(now))
     
         //Creed when not Te Deum
         if (officeType === 1 && !canticle.startsWith("WE praise")) result += "I BELIEVE in God.";
-        else if (officeType === 2) result += `<p>O LORD, show thy mercy upon us.
+        else if (officeType === 2) result += `<p>O LORD, show thy mercy upon us.<br>
             <b>And grant us thy salvation.</b><br>
             O Lord, save the State.<br>
             <b>And mercifully hear us when we call upon thee.</b><br>
