@@ -27,7 +27,7 @@ if (isFast(now))
         else if (officeType === 2) result += "<h1>Evening Prayer</h1>";
         else if (officeType === 3) result += '<h1>Night Prayer</h1><p>ALMIGHTY and most merciful Father.</p>';
     if (isFast(now))
-        result += "<img class='fastingFish-r' src='images/marginalia/whitecrappie.gif'>";
+        //result += "<img class='fastingFish-r' src='images/marginalia/whitecrappie.gif'>";
         //Our Father and first marginalium
         if (officeType > 0) result += "<p>OUR Father.</p><img class='leftMarg' src='" + getOfficeMargin1(now, liturgicalDay) + "'>";
     
