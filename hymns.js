@@ -295,7 +295,30 @@ chooseth the pure in heart.</p>
 may ours this blessing be;<br>
 give us a pure and lowly heart,<br>
 a temple meet for thee.`],
-    "T18": [""],
+    "T18": [`Where cross the crowded ways of life,<br>
+Where sound the cries of race and clan,<br>
+Above the noise of selfish strife,<br>
+We hear Thy voice, O Son of man.</p>
+        <p>In haunts of wretchedness and need,<br>
+On shadowed thresholds dark with fears,<br>
+From paths where hide the lures of greed,<br>
+We catch the vision of Thy tears.</p>
+        <p>From tender childhood's helplessness,<br>
+From woman's grief, man's burdened toil,<br>
+From famished souls, from sorrow's stress,<br>
+Thy heart hath never known recoil.</p>
+        <p>The cup of water given for Thee<br>
+Still holds the freshness of Thy grace;<br>
+Yet long these multitudes to see<br>
+The sweet compassion of Thy face.</p>
+        <p>O Master, from the mountainside,<br>
+Make haste to heal these hearts of pain;<br>
+Among these restless throngs abide,<br>
+O tread the city's streets again;</p>
+        <p>Till sons of men shall learn Thy love,<br>
+And follow where Thy feet have trod;<br>
+Till glorious from Thy heaven above,<br>
+Shall come the City of our God.`],
     "T19": [""],
     "T20": [""],
     "T21": [""],
