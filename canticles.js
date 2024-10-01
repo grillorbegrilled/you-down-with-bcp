@@ -118,14 +118,24 @@ function getMorn(day) {
 }
 
 function getEve() {
-  return `MY soul doth magnify the Lord : and my spirit hath rejoiced in God my Saviour.<br>
-    For he hath regarded : the lowliness of his handmaiden.<br>
-    For behold, from henceforth : all generations shall call me blessed.<br>
-    For he that is mighty hath magnified me : and holy is his Name.<br>
-    And his mercy is on them that fear him : throughout all generations.<br>
-    He hath showed strength with his arm : he hath scattered the proud in the imagination of their hearts.<br>
-    He hath put down the mighty from their seat : and hath exalted the humble and meek.<br>
-    He hath filled the hungry with good things : and the rich he hath sent empty away.<br>
-    He remembering his mercy hath holpen his servant Israel : as he promised to our forefathers, Abraham and his seed, for ever.</p>
-    <p>Glory be.`;
+  var day = "";
+
+  switch(day) {
+    case "foo":
+      return `GLORY be to God on high, and in earth peace, good will towards men. We praise thee, we bless thee, we worship thee, we glorify thee, we give thanks to thee for thy great glory, O Lord God, heavenly King, God the Father Almighty.<br>
+        O Lord, the only begotten Son Jesu Christ; O Lord God, Lamb of God, Son of the Father, that takest away the sins of the world, have mercy upon us. Thou that takest away the sins of the world, have mercy upon us. Thou that takest away the sins of the world, receive our prayer. Thou that sittest at the right hand of God the Father, have mercy upon us.<br>
+        For thou only art holy; thou only art the Lord; thou only, O Christ, with the Holy Ghost, art most high in the glory of God the Father. Amen.`;
+      break;
+    default: 
+      return `MY soul doth magnify the Lord : and my spirit hath rejoiced in God my Saviour.<br>
+        For he hath regarded : the lowliness of his handmaiden.<br>
+        For behold, from henceforth : all generations shall call me blessed.<br>
+        For he that is mighty hath magnified me : and holy is his Name.<br>
+        And his mercy is on them that fear him : throughout all generations.<br>
+        He hath showed strength with his arm : he hath scattered the proud in the imagination of their hearts.<br>
+        He hath put down the mighty from their seat : and hath exalted the humble and meek.<br>
+        He hath filled the hungry with good things : and the rich he hath sent empty away.<br>
+        He remembering his mercy hath holpen his servant Israel : as he promised to our forefathers, Abraham and his seed, for ever.</p>
+        <p>Glory be.`;
+  }
 }
