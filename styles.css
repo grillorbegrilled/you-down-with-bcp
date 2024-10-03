@@ -89,11 +89,9 @@ body, html {
     display: none;
     width: 100%;
     height: 100%; /* Ensure the container has a height */
-    position: relative; /* Make the container a positioned element */
 }
 
 .tab-content iframe {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
