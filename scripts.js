@@ -38,7 +38,7 @@ function displayEventDetails() {
 
     if (hymn) document.getElementById('hymn').innerHTML = makeP(hymn);
 
-    document.getElementById('office').innerHTML = getOffice(now, liturgicalDay);
+    document.getElementById('office').src = getOffice(now, week, feast);
 }
 
 function synthCollects(cotd, week) {
