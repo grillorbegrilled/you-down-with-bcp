@@ -50,22 +50,19 @@
     margin: 10px 0 10px 10px;
 }
 
+.tab-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove iframe border */
+    overflow: auto; /* Ensure the iframe itself can scroll if needed */
+}
+
 .tab-content {
     display: none;
     position: relative;
     width: 100%;
     height: 100%; /* Set the height as required */
-    overflow: auto;
-}
-
-.tab-content iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none; /* Remove iframe border */
-        overflow: hidden;
+    overflow: auto; /* Ensure scrolling in the tab-content */
 }
 
 .tab-content.active {
