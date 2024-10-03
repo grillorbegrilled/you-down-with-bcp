@@ -35,11 +35,8 @@ if (isFast(now))
         var canticle = "";
         if (officeType === 1) canticle = makeP(getMorn(liturgicalDay));
         else if (officeType === 2) canticle = makeP(getEve(liturgicalDay));
-        else if (officeType === 3) canticle = `<p>LORD, now lettest thou thy servant depart in peace : according to thy word.<br>
-            For mine eyes have seen thy salvation : which thou hast prepared : before the face of all people;<br>
-            To be a light to lighten the Gentiles : and to be the glory of thy people Israel.</p>
-            <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
-            Answer. As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
+        else if (officeType === 3) canticle = `<p>LORD, now lettest thou thy servant.</p>
+            <p>Glory be.</p>`;
     
         result += canticle;
     
