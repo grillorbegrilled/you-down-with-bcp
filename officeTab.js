@@ -30,6 +30,8 @@ if (isFast(now))
         //result += "<img class='fastingFish-r' src='images/marginalia/whitecrappie.gif'>";
         //Our Father and first marginalium
         if (officeType > 0) result += "<p>OUR Father.</p><img class='leftMarg' src='" + getOfficeMargin1(now, liturgicalDay) + "'>";
+
+        if (officeType < 3) result += "<p>O LORD, open thou our lips.</p>";
     
         //Canticle
         var canticle = "";
