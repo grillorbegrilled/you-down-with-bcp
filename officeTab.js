@@ -1,10 +1,11 @@
 function getOffice(now, week, feast) {
 
     //------------------COMMINATION
-    if (lit === "AW" && weekday === 3 || //Ash Wednesday
-      lit === "GF" || //Good Friday
-      date < 8 && weekday === 5) //first Friday of the month
+    if (week === "AW" && now.getDay() === 3 || //Ash Wednesday
+      week === "GF" || //Good Friday
+      now.getDate() < 8 && now.getDay() === 5) //first Friday of the month
         return "penitentialOffice.html";
+        
     /*const day = now.getDay();
     
     var result = "";
