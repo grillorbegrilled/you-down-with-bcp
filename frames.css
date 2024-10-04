@@ -57,6 +57,7 @@
 iframe {
   flex: 1; /* Ensures iframe takes up the remaining space and can scroll */
   width: 100%;
+  height: 100%;
   border: none; /* Removes the default iframe border */
 }
 
