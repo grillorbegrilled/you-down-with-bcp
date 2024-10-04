@@ -55,8 +55,8 @@
   }
 
 iframe {
+  flex: 1; /* Ensures iframe takes up the remaining space and can scroll */
   width: 100%;
-  height: 100%;
   border: none; /* Removes the default iframe border */
 }
 
@@ -64,6 +64,7 @@ iframe {
     display: block;
     height: 100%; /* or whatever height you need */
   overflow-y: auto; /* Enables vertical scrolling */
-    
+  display: flex;
+  flex-direction: column;
 }
 
