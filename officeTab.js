@@ -1,12 +1,15 @@
 function getOffice(now, week, feast) {
+
+    //------------------COMMINATION
+    if (lit === "AW" && weekday === 3 || //Ash Wednesday
+      lit === "GF" || //Good Friday
+      date < 8 && weekday === 5) //first Friday of the month
+        return "penitentialOffice.html";
     /*const day = now.getDay();
     
     var result = "";
     //------------------LITANY
     result += getLitany(liturgicalDay, now.getMonth(), now.getDate(), day);
-    
-    //------------------COMMINATION
-    result += getPenitentialOffice(liturgicalDay, now.getDate(), day);
 
     //------------------ALL SOULS
     if (now.getMonth() === 10 && now.getDate() === 2) result = getMemorial();
