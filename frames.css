@@ -62,9 +62,5 @@ iframe {
 
 .tab-content.active {
     display: block;
-    height: 100%; /* or whatever height you need */
-  overflow-y: auto; /* Enables vertical scrolling */
-  display: flex;
-  flex-direction: column;
 }
 
