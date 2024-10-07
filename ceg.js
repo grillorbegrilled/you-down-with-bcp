@@ -720,22 +720,22 @@ const propers1662 = {
     "T18": {
         "c": "LORD, we beseech thee, grant thy people grace to withstand the temptations of the world, the flesh, and the devil, and with pure hearts and minds to follow thee the only God; through Jesus Christ our Lord. Amen.",
         "e": {
-            "cit": "1 Corinthians 1:4",
+            "cit": "1 Corinthians 1:4-8",
             "txt": "I THANK my God always on your behalf, for the grace of God which is given you by Jesus Christ; That in every thing ye are enriched by him, in all utterance, and in all knowledge; Even as the testimony of Christ was confirmed in you: So that ye come behind in no gift; waiting for the coming of our Lord Jesus Christ, Who shall also confirm you unto the end, that ye may be blameless in the day of our Lord Jesus Christ."
         },
         "g": {
-            "cit": "Matthew 22:34",
+            "cit": "Matthew 22:34-46",
             "txt": "WHEN the Pharisees had heard that he had put the Sadducees to silence, they were gathered together. Then one of them, which was a lawyer, asked him a question, tempting him, and saying, Master, which is the great commandment in the law? Jesus said unto him, Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind. This is the first and great commandment. And the second is like unto it, Thou shalt love thy neighbour as thyself. On these two commandments hang all the law and the prophets. While the Pharisees were gathered together, Jesus asked them, Saying, What think ye of Christ? whose son is he? They say unto him, The son of David. He saith unto them, How then doth David in spirit call him Lord, saying, The Lord said unto my Lord, Sit thou on my right hand, till I make thine enemies thy footstool? If David then call him Lord, how is he his son? And no man was able to answer him a word, neither durst any man from that day forth ask him any more questions."
         }
     },
     "T19": {
         "c": "O GOD, forasmuch as without thee we are not able to please thee; Mercifully grant, that thy Holy Spirit may in all things direct and rule our hearts; through Jesus Christ our Lord. Amen.",
         "e": {
-            "cit": "Ephesians 4:17",
+            "cit": "Ephesians 4:17-32",
             "txt": "THIS I say therefore, and testify in the Lord, that ye henceforth walk not as other Gentiles walk, in the vanity of their mind, Having the understanding darkened, being alienated from the life of God through the ignorance that is in them, because of the blindness of their heart: Who being past feeling have given themselves over unto lasciviousness, to work all uncleanness with greediness. But ye have not so learned Christ; If so be that ye have heard him, and have been taught by him, as the truth is in Jesus: That ye put off concerning the former conversation the old man, which is corrupt according to the deceitful lusts; And be renewed in the spirit of your mind; And that ye put on the new man, which after God is created in righteousness and true holiness. Wherefore putting away lying, speak every man truth with his neighbour: for we are members one of another. Be ye angry, and sin not: let not the sun go down upon your wrath: Neither give place to the devil. Let him that stole steal no more: but rather let him labour, working with his hands the thing which is good, that he may have to give to him that needeth. Let no corrupt communication proceed out of your mouth, but that which is good to the use of edifying, that it may minister grace unto the hearers. And grieve not the holy Spirit of God, whereby ye are sealed unto the day of redemption. Let all bitterness, and wrath, and anger, and clamour, and evil speaking, be put away from you, with all malice: And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ's sake hath forgiven you."
         },
         "g": {
-            "cit": "Matthew 9:1",
+            "cit": "Matthew 9:1-8",
             "txt": "JESUS entered into a ship, and passed over, and came into his own city. And, behold, they brought to him a man sick of the palsy, lying on a bed: and Jesus seeing their faith said unto the sick of the palsy; Son, be of good cheer; thy sins be forgiven thee. And, behold, certain of the scribes said within themselves, This man blasphemeth. And Jesus knowing their thoughts said, Wherefore think ye evil in your hearts? For whether is easier, to say, Thy sins be forgiven thee; or to say, Arise, and walk? But that ye may know that the Son of man hath power on earth to forgive sins, (then saith he to the sick of the palsy,) Arise, take up thy bed, and go unto thine house. And he arose, and departed to his house. But when the multitudes saw it, they marvelled, and glorified God, which had given such power unto men."
         }
     },
