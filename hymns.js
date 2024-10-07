@@ -319,7 +319,22 @@ O tread the city's streets again;</p>
 And follow where Thy feet have trod;<br>
 Till glorious from Thy heaven above,<br>
 Shall come the City of our God.`],
-    "T19": [""],
+    "T19": [`Breathe on me, Breath of God,<br>
+fill me with life anew,<br>
+that I may love what thou dost love,<br>
+and do what thou wouldst do.</p>
+        <p>Breathe on me, Breath of God,<br>
+until my heart is pure,<br>
+until my will is one with thine,<br>
+to do and to endure.</p>
+        <p>Breathe on me, Breath of God,<br>
+till I am wholly thine,<br>
+until this earthly part of me<br>
+glows with thy fire divine.</p>
+        <p>Breathe on me, Breath of God,<br>
+so shall I never die;<br>
+but live with thee the perfect life<br>
+of thine eternity.`],
     "T20": [""],
     "T21": [""],
     "T22": [""],
