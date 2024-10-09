@@ -397,7 +397,30 @@ are thorns that choke the holy seed.</p>
 the steward's, not the owner's name;<br>
 who yield up all for thy dear sake.<br>
 let them of Matthew's wealth partake.`],
-    "Michael": [""],
+    "Michael": [`Round the Lord in glory seated,<br>
+cherubim and seraphim<br>
+filled his temple, and repeated<br>
+each to each the alternate hymn:<br>
+"Lord, thy glory fills the heaven,<br>
+earth is with its fulness stored;<br>
+unto thee be glory given,<br>
+holy, holy, holy Lord!"</p>
+        <p>Heav'n is still with glory ringing,<br>
+earth takes up the angels' cry,<br>
+"Holy, holy, holy," singing,<br>
+"Lord of Hosts, the Lord most high."<br>
+With his seraph train before Him,<br>
+with his holy church below,<br>
+thus conspire we to adore him,<br>
+bid we thus our anthem flow.</p>
+        <p>"Lord, thy glory fills the heaven,<br>
+earth is with its fulness stored;<br>
+unto thee be glory given,<br>
+holy, holy, holy Lord!"<br>
+Thus thy glorious Name confessing,<br>
+we adopt thine angels' cry,<br>
+"Holy, holy, holy," blessing<br>
+thee, the Lord of Hosts most high.`],
     "Luke": [""],
     "SimonAndJude": [""],
     "AllSaints": [""],
