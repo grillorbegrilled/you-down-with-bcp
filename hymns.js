@@ -335,7 +335,26 @@ glows with thy fire divine.</p>
 so shall I never die;<br>
 but live with thee the perfect life<br>
 of thine eternity.`],
-    "T20": [""],
+    "T20": [`All people that on earth do dwell,<br>
+sing to the Lord with cheerful voice:<br>
+him serve with mirth, his praise forth tell,<br>
+come ye before him and rejoice.</p>
+        <p>The Lord, ye know,  is God indeed;<br>
+without our aid he did us make:<br>
+we are his folk, he doth us feed,<br>
+and for his sheep he doth us take.</p>
+        <p>O enter then his gates with praise,<br>
+approach with joy his courts unto;<br>
+praise, laud, and bless his Name always,<br>
+for it is seemly so to do.</p>
+        <p>For why? the Lord our God is good,<br>
+his mercy is for ever sure;<br>
+his truth at all times firmly stood,<br>
+and shall from age to age endure.</p>
+        <p>To Father, Son, and Holy Ghost,<br>
+the God whom heaven and earth adore,<br>
+from men and from the angel host<br>
+be praise and glory evermore.`],
     "T21": [""],
     "T22": [""],
     "T23": [""],
