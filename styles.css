@@ -129,6 +129,15 @@ p {
     font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
 
+.drop-cap p:first-child:first-letter {
+  float: left;
+  font-size: 3em;
+  /*line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;*/
+}
+
 .hymn {
     text-align: center;
     margin: 0 auto;
