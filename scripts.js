@@ -25,9 +25,9 @@ function displayEventDetails() {
         
         document.getElementById('c').innerHTML = collect;
         document.getElementById('e_cit').textContent = `${details.e.cit}`;
-        document.getElementById('e_txt').innerHTML = makeP(details.e.txt);
+        document.getElementById('e_txt').innerHTML = makeDropCap(details.e.txt);
         document.getElementById('g_cit').textContent = `${details.g.cit}`;
-        document.getElementById('g_txt').innerHTML = makeP(details.g.txt);
+        document.getElementById('g_txt').innerHTML = makeDropCap(details.g.txt);
     } else {
         document.getElementById('c').innerHTML = '';
         document.getElementById('e_cit').textContent = '';
@@ -42,7 +42,7 @@ function displayEventDetails() {
 }
 
 function synthCollects(cotd, week) {
-    const collectP = makeP(cotd);
+    const collectP = makeDropCap(cotd);
     
     //TODO commemoration
     //TODO eves/vigils (4:00 PM or later)
@@ -85,4 +85,10 @@ function makeP(text){
     if (text == "" || !text) return "";
     
     return "<p>" + text + "</p>";
+}
+
+function makeDropCap(text){
+    if (text == "" || !text) return "";
+    
+    return "<p class='drop-cap'>" + text + "</p>";
 }
