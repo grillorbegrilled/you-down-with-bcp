@@ -129,7 +129,7 @@ p {
     font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
 
-.drop-cap p:first-child:first-letter {
+.drop-cap {
   float: left;
   font-size: 3rem;
   line-height: 3rem;
