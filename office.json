@@ -1,0 +1,481 @@
+{
+    "A1": [
+        {"cit": "Isaiah 1", "txt": ""},
+        {"cit": "Isaiah 2", "txt": ""},
+        {"cit": "Isaiah 4:2ff", "txt": ""}
+      ],
+    "A2": [
+        {"cit": "Isaiah 5", "txt": ""},
+        {"cit": "Isaiah 11:1-11", "txt": ""},
+        {"cit": "Isaiah 24", "txt": ""}
+      ],
+    "A3": [
+        {"cit": "Isaiah 25", "txt": ""},
+        {"cit": "Isaiah 26", "txt": ""},
+        {"cit": "Isaiah 28:5-19", "txt": ""}
+      ],
+    "A4": [
+        {"cit": "Isaiah 30:1-27", "txt": ""},
+        {"cit": "Isaiah 32", "txt": ""},
+        {"cit": "Isaiah 33:2-23", "txt": ""}
+      ],
+    "Xmas": [
+        {"cit": "Isaiah 9:1-8", "txt": ""},
+        {"cit": "Luke 2:1-15", "txt": ""},
+        {"cit": "Isaiah 7:10-17", "txt": ""},
+        {"cit": "Titus 3:4-9", "txt": ""}
+      ],
+    "Stephen": [
+        {"cit": "Genesis 4:1-11", "txt": ""},
+        {"cit": "Acts 6", "txt": ""},
+        {"cit": "2 Chron. 14:15-23", "txt": ""},
+        {"cit": "Acts 8:1-9", "txt": ""}
+      ],
+    "JohnEvangelist": [
+        {"cit": "Exodus 33:9ff", "txt": ""},
+        {"cit": "John 13:23-36", "txt": ""},
+        {"cit": "Isaiah 6", "txt": ""},
+        {"cit": "Revelation 1", "txt": ""}
+      ],
+    "Innocents": [
+        {"cit": "Jeremiah 31:1-18", "txt": ""},
+        {"cit": "Baruch 4:21-31", "txt": ""}
+      ],
+    "X1": [
+        {"cit": "Isaiah 35", "txt": ""},
+        {"cit": "Isaiah 38", "txt": ""},
+        {"cit": "Isaiah 40", "txt": ""}
+      ],
+    "Circ": [
+        {"cit": "Genesis 17:9ff", "txt": ""},
+        {"cit": "Romans 2:17ff", "txt": ""},
+        {"cit": "Deuteronomy 10:12ff", "txt": ""},
+        {"cit": "Colossians 2:8-18", "txt": ""}
+      ],
+    "X2": [
+        {"cit": "Isaiah 42", "txt": ""},
+        {"cit": "Isaiah 43", "txt": ""},
+        {"cit": "Isaiah 44", "txt": ""}
+      ],
+    "Epiphany": [
+        {"cit": "Isaiah 60", "txt": ""},
+        {"cit": "Luke 3:15-23", "txt": ""},
+        {"cit": "Isaiah 49:13-24", "txt": ""},
+        {"cit": "John 2:1-12", "txt": ""}
+      ],
+    "E1": [
+        {"cit": "Isaiah 51", "txt": ""},
+        {"cit": "Isaiah 52:13-53:12", "txt": ""},
+        {"cit": "Isaiah 54", "txt": ""}
+      ],
+    "E2": [
+        {"cit": "Isaiah 55", "txt": ""},
+        {"cit": "Isaiah 57", "txt": ""},
+        {"cit": "Isaiah 61", "txt": ""}
+      ],
+    "E3": [
+        {"cit": "Isaiah 62", "txt": ""},
+        {"cit": "Isaiah 65", "txt": ""},
+        {"cit": "Isaiah 66", "txt": ""}
+      ],
+    "E4": [
+        {"cit": "Job 27", "txt": ""},
+        {"cit": "Job 28", "txt": ""},
+        {"cit": "Job 29", "txt": ""}
+      ],
+    "E5": [
+        {"cit": "Proverbs 1", "txt": ""},
+        {"cit": "Proverbs 3", "txt": ""},
+        {"cit": "Proverbs 8", "txt": ""}
+      ],
+    "E6": [
+        {"cit": "Proverbs 9", "txt": ""},
+        {"cit": "Proverbs 11", "txt": ""},
+        {"cit": "Proverbs 15", "txt": ""}
+      ],
+    "LXX": [
+        {"cit": "Genesis 1:1-2:4", "txt": ""},
+        {"cit": "Rev. 21:1-9", "txt": ""},
+        {"cit": "Genesis 2:4ff", "txt": ""},
+        {"cit": "Job 38", "txt": ""},
+        {"cit": "Rev. 21:9-22:6", "txt": ""}
+      ],
+    "LX": [
+        {"cit": "Genesis 3", "txt": ""},
+        {"cit": "Genesis 6", "txt": ""},
+        {"cit": "Genesis 8", "txt": ""}
+      ],
+    "L": [
+        {"cit": "Genesis 9:1-20", "txt": ""},
+        {"cit": "Genesis 12", "txt": ""},
+        {"cit": "Genesis 13", "txt": ""}
+      ],
+    "AW": [
+        {"cit": "Isaiah 58:1-13", "txt": ""},
+        {"cit": "Mark 2:13-23", "txt": ""},
+        {"cit": "Jonah 3", "txt": ""},
+        {"cit": "Hebrews 12:3-18", "txt": ""}
+      ],
+    "L1": [
+        {"cit": "Genesis 19:12-30", "txt": ""},
+        {"cit": "Genesis 22:1-20", "txt": ""},
+        {"cit": "Genesis 23", "txt": ""}
+      ],
+    "L2": [
+        {"cit": "Genesis 27:1-41", "txt": ""},
+        {"cit": "Genesis 28", "txt": ""},
+        {"cit": "Genesis 32", "txt": ""}
+      ],
+    "L3": [
+        {"cit": "Genesis 37", "txt": ""},
+        {"cit": "Genesis 39", "txt": ""},
+        {"cit": "Genesis 40", "txt": ""}
+      ],
+    "L4": [
+        {"cit": "Genesis 42", "txt": ""},
+        {"cit": "Genesis 43", "txt": ""},
+        {"cit": "Genesis 45", "txt": ""}
+      ],
+    "L5": [
+        {"cit": "Exodus 3", "txt": ""},
+        {"cit": "Exodus 5", "txt": ""},
+        {"cit": "Exodus 6:1-14", "txt": ""}
+      ],
+    "Palm": [
+        {"cit": "Exodus 9", "txt": ""},
+        {"cit": "Matt. 26", "txt": ""},
+        {"cit": "Exodus 10", "txt": ""},
+        {"cit": "Exodus 11", "txt": ""},
+        {"cit": "Luke 19:28ff", "txt": ""},
+        {"cit": "Luke 20:9-21", "txt": ""}
+      ],
+    "HW-Mon": [
+        {"cit": "Lamentations 1:1-15", "txt": ""},
+        {"cit": "John 14:1-15", "txt": ""},
+        {"cit": "Lamentations 2:13ff", "txt": ""},
+        {"cit": "John 14:15ff", "txt": ""}
+      ],
+    "HW-Tue": [
+        {"cit": "Lamentations 3:1-34", "txt": ""},
+        {"cit": "John 15:1-14", "txt": ""},
+        {"cit": "Lamentations 3:34ff", "txt": ""},
+        {"cit": "John 15:14ff", "txt": ""}
+      ],
+    "HW-Wed": [
+        {"cit": "Lamentations 4:1-21", "txt": ""},
+        {"cit": "John 16:1-16", "txt": ""},
+        {"cit": "Daniel 9:20ff", "txt": ""},
+        {"cit": "John 16:16ff", "txt": ""}
+      ],
+    "HW-Thu": [
+        {"cit": "Hosea 13:1-15", "txt": ""},
+        {"cit": "John 17", "txt": ""},
+        {"cit": "Hosea 14", "txt": ""},
+        {"cit": "Johb 13:1-36", "txt": ""}
+      ],
+    "GF": [
+        {"cit": "Genesis 22:1-20", "txt": ""},
+        {"cit": "John 18", "txt": ""},
+        {"cit": "Isaiah 52:13-53:12", "txt": ""},
+        {"cit": "1 Peter 2", "txt": ""}
+      ],
+    "EE": [
+        {"cit": "Zechariah 9", "txt": ""},
+        {"cit": "Luke 23:50ff", "txt": ""},
+        {"cit": "Hosea 5:8-6:4", "txt": ""},
+        {"cit": "Romans 6:1-14", "txt": ""}
+      ],
+    "Easter": [
+        {"cit": "Exodus 12:1-29", "txt": ""},
+        {"cit": "Rev. 1:10-19", "txt": ""},
+        {"cit": "Exodus 12:29ff", "txt": ""},
+        {"cit": "John 20:11-19", "txt": ""},
+        {"cit": "Exodus 14", "txt": ""},
+        {"cit": "Rev. 5", "txt": ""}
+      ],
+    "EasterMon": [
+        {"cit": "Exodus 15:1-22", "txt": ""},
+        {"cit": "Luke 24:13ff", "txt": ""},
+        {"cit": "Song of Songs 2:10ff", "txt": ""},
+        {"cit": "Matthew 28:1-10", "txt": ""}
+      ],
+    "EasterTue": [
+        {"cit": "2 Kings 13:14-22", "txt": ""},
+        {"cit": "John 21:1-15", "txt": ""},
+        {"cit": "Ezekiel 37:1-15", "txt": ""},
+        {"cit": "John 21:15ff", "txt": ""}
+      ],
+    "Ea1": [
+        {"cit": "Num. 16:1-36", "txt": ""},
+        {"cit": "1 Cor. 15:1-29", "txt": ""},
+        {"cit": "Num. 16:36ff", "txt": ""},
+        {"cit": "Num. 17:1-12", "txt": ""},
+        {"cit": "John 20:24-30", "txt": ""}
+      ],
+    "Ea2": [
+        {"cit": "Num. 20:1-14", "txt": ""},
+        {"cit": "Num. 20:14-21:10", "txt": ""},
+        {"cit": "Num. 21:10ff", "txt": ""}
+      ],
+    "Ea3": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Ea4": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Ea5": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Ascension": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Asc1": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Whitsun": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Whitmon": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "WhitTue": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Trinity": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T1": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T2": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T3": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T4": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T5": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T6": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T7": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T8": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T9": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T10": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T11": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T12": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T13": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T14": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T15": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T16": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T17": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T18": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T19": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T20": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T21": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T22": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T23": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "T24": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "SNBA": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Andrew": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Thomas": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Paul": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Candlemas": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Matthias": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Annunciation": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Mark": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "PhilipAndJames": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Barnabas": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "JohnBaptist": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Peter": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "James": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Bartholomew": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Matthew": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Michael": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "Luke": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "SimonAndJude": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "AllSaints": [
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""},
+        {"cit": "", "txt": ""}
+      ],
+    "ThanksgivingDay": [{"cit": "", "txt": ""}]
+}
