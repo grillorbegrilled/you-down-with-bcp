@@ -218,264 +218,292 @@
         {"cit": "Num. 21:10ff", "txt": ""}
       ],
     "Ea3": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Num. 22", "txt": ""},
+        {"cit": "Num. 23", "txt": ""},
+        {"cit": "Num. 24", "txt": ""}
       ],
     "Ea4": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Deut. 4:1-23", "txt": ""},
+        {"cit": "Deut. 4:23-41", "txt": ""},
+        {"cit": "Deut. 5", "txt": ""}
       ],
     "Ea5": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Deut. 6", "txt": ""},
+        {"cit": "Deut. 9", "txt": ""},
+        {"cit": "Deut. 10", "txt": ""}
       ],
     "Ascension": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Daniel 7:9-15", "txt": ""},
+        {"cit": "Luke 24:44ff", "txt": ""},
+        {"cit": "2 Kings 2:1-16", "txt": ""},
+        {"cit": "Hebrews 4", "txt": ""}
       ],
     "Asc1": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Deut. 30", "txt": ""},
+        {"cit": "Deut. 34", "txt": ""},
+        {"cit": "Joshua 1", "txt": ""}
       ],
     "Whitsun": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Deut. 16:1-18", "txt": ""},
+        {"cit": "Romans 8:1-18", "txt": ""},
+        {"cit": "Isaiah 11", "txt": ""},
+        {"cit": "Galatians 5:16ff", "txt": ""},
+        {"cit": "Ezekiel 36:25ff", "txt": ""},
+        {"cit": "Acts 18:24-19:21", "txt": ""}
       ],
     "Whitmon": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Genesis 11:1-10", "txt": ""},
+        {"cit": "1 Corinthians 12:1-14", "txt": ""},
+        {"cit": "Numbers 11:16-31", "txt": ""},
+        {"cit": "1 Corinthians 12:27-13:13", "txt": ""}
       ],
     "WhitTue": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Joel 2:21ff", "txt": ""},
+        {"cit": "1 Thess. 5:12-24", "txt": ""},
+        {"cit": "Micah 4:8ff", "txt": ""},
+        {"cit": "1 John 4:1-14", "txt": ""}
       ],
     "Trinity": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Isaiah 6:1-11", "txt": ""},
+        {"cit": "Rev. 1:1-9", "txt": ""},
+        {"cit": "Genesis 18", "txt": ""},
+        {"cit": "Eph. 4:1-17", "txt": ""},
+        {"cit": "Genesis 1:1-2:4", "txt": ""},
+        {"cit": "Matthew 3", "txt": ""}
       ],
     "T1": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Josh. 3:7-4:15", "txt": ""},
+        {"cit": "Josh. 5:13-6:21", "txt": ""},
+        {"cit": "Joshua 24", "txt": ""}
       ],
     "T2": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Judges 4", "txt": ""},
+        {"cit": "Judges 5", "txt": ""},
+        {"cit": "Judges 6:11ff", "txt": ""}
       ],
     "T3": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "1 Samuel 2:1-27", "txt": ""},
+        {"cit": "1 Samuel 3", "txt": ""},
+        {"cit": "1 Samuel 4:1-19", "txt": ""}
       ],
     "T4": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "1 Samuel 12", "txt": ""},
+        {"cit": "1 Samuel 13", "txt": ""},
+        {"cit": "Ruth 1", "txt": ""}
       ],
     "T5": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "1 Samuel 15:1-24", "txt": ""},
+        {"cit": "1 Samuel 16", "txt": ""},
+        {"cit": "1 Samuel 17", "txt": ""}
       ],
     "T6": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "2 Samuel 1", "txt": ""},
+        {"cit": "2 Samuel 12:1-24", "txt": ""},
+        {"cit": "2 Samuel 18", "txt": ""}
       ],
     "T7": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "1 Chron. 21", "txt": ""},
+        {"cit": "1 Chron. 22", "txt": ""},
+        {"cit": "1 Chron. 28:1-21", "txt": ""}
       ],
     "T8": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "1 Chron. 29:9-29", "txt": ""},
+        {"cit": "2 Chron. 1", "txt": ""},
+        {"cit": "1 Kings 3", "txt": ""}
       ],
     "T9": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "1 Kings 10:1-25", "txt": ""},
+        {"cit": "1 Kings 11:1-15", "txt": ""},
+        {"cit": "1 Kings 11:26ff", "txt": ""}
       ],
     "T10": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "1 Kings 12", "txt": ""},
+        {"cit": "1 Kings 13", "txt": ""},
+        {"cit": "1 Kings 17", "txt": ""}
       ],
     "T11": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "1 Kings 18", "txt": ""},
+        {"cit": "1 Kings 19", "txt": ""},
+        {"cit": "1 Kings 21", "txt": ""}
       ],
     "T12": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "1 Kings 22:1-41", "txt": ""},
+        {"cit": "2 Kings 2:1-16", "txt": ""},
+        {"cit": "2 Kings 4:8-38", "txt": ""}
       ],
     "T13": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "2 Kings 5", "txt": ""},
+        {"cit": "2 Kings 6:1-24", "txt": ""},
+        {"cit": "2 Kings 7", "txt": ""}
       ],
     "T14": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "2 Kings 9", "txt": ""},
+        {"cit": "2 Kings 10:1-32", "txt": ""},
+        {"cit": "2 Kings 13", "txt": ""}
       ],
     "T15": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "2 Kings 18", "txt": ""},
+        {"cit": "2 Kings 19", "txt": ""},
+        {"cit": "2 Kings 23:1-31", "txt": ""}
       ],
     "T16": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "2 Chron. 36", "txt": ""},
+        {"cit": "Nehemiah 1:1-2:9", "txt": ""},
+        {"cit": "Nehemiah 8", "txt": ""}
       ],
     "T17": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Jeremiah 5", "txt": ""},
+        {"cit": "Jeremiah 22", "txt": ""},
+        {"cit": "Jeremiah 35", "txt": ""}
       ],
     "T18": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Jeremiah 36", "txt": ""},
+        {"cit": "Ezekiel 2", "txt": ""},
+        {"cit": "Ezekiel 13:1-17", "txt": ""}
       ],
     "T19": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Ezekiel 14", "txt": ""},
+        {"cit": "Ezekiel 18", "txt": ""},
+        {"cit": "Ezekiel 24:15ff", "txt": ""}
       ],
     "T20": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Ezekiel 34", "txt": ""},
+        {"cit": "Ezekiel 37", "txt": ""},
+        {"cit": "Daniel 1", "txt": ""}
       ],
     "T21": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Daniel 3", "txt": ""},
+        {"cit": "Daniel 4", "txt": ""},
+        {"cit": "Daniel 5", "txt": ""}
       ],
     "T22": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Daniel 6", "txt": ""},
+        {"cit": "Daniel 7:9ff", "txt": ""},
+        {"cit": "Daniel 12", "txt": ""}
       ],
     "T23": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Hosea 14", "txt": ""},
+        {"cit": "Joel 2:1-21", "txt": ""},
+        {"cit": "Joel 3:9ff", "txt": ""}
       ],
     "T24": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Amos 3", "txt": ""},
+        {"cit": "Amos 5", "txt": ""},
+        {"cit": "Amos 9", "txt": ""}
+      ],
+    "T25": [
+        {"cit": "Micah 4:1-5:8", "txt": ""},
+        {"cit": "Micah 6", "txt": ""},
+        {"cit": "Micah 7", "txt": ""}
+      ],
+    "T26": [
+        {"cit": "Habakkuk 2", "txt": ""},
+        {"cit": "Habakkuk 3", "txt": ""},
+        {"cit": "Zephaniah 3", "txt": ""}
       ],
     "SNBA": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Eccles. 11 & 12", "txt": ""},
+        {"cit": "Haggai 2:1-10", "txt": ""},
+        {"cit": "Malachi 3 & 4", "txt": ""}
       ],
     "Andrew": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Isaiah 54", "txt": ""},
+        {"cit": "John 1:35-43", "txt": ""},
+        {"cit": "Isaiah 65:1-17", "txt": ""},
+        {"cit": "John 12:20-42", "txt": ""}
       ],
     "Thomas": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Job 42:1-7", "txt": ""},
+        {"cit": "John 20:19-24", "txt": ""},
+        {"cit": "Isaiah 35", "txt": ""},
+        {"cit": "John 14:1-8", "txt": ""}
       ],
     "Paul": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Isaiah 49:1-13", "txt": ""},
+        {"cit": "Galatians 1:11ff", "txt": ""},
+        {"cit": "Jeremiah 1:1-11", "txt": ""},
+        {"cit": "Acts 26:1-21", "txt": ""}
       ],
     "Candlemas": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Exodus 13:1-17", "txt": ""},
+        {"cit": "Haggai 2:1-10", "txt": ""}
       ],
     "Matthias": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "1 Samuel 2:27-36", "txt": ""},
+        {"cit": "Isaiah 22:15ff", "txt": ""}
       ],
     "Annunciation": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Genesis 3:1-16", "txt": ""},
+        {"cit": "Isaiah 52:7-13", "txt": ""}
       ],
     "Mark": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Isaiah 62:6ff", "txt": ""},
+        {"cit": "Ezekiel 1:1-15", "txt": ""}
       ],
     "PhilipAndJames": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Isaiah 61", "txt": ""},
+        {"cit": "John 1:43ff", "txt": ""},
+        {"cit": "Zechariah 4", "txt": ""}
       ],
     "Barnabas": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Deuteronomy 33:1-12", "txt": ""},
+        {"cit": "Acts 4:31ff", "txt": ""},
+        {"cit": "Nahum 1", "txt": ""},
+        {"cit": "Acts 14:8ff", "txt": ""}
       ],
     "JohnBaptist": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Malachi 3:1-7", "txt": ""},
+        {"cit": "Matthew 3", "txt": ""},
+        {"cit": "Malachi 4", "txt": ""},
+        {"cit": "Matthew 14:1-13", "txt": ""}
       ],
     "Peter": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Ezekiel 3:4-15", "txt": ""},
+        {"cit": "John 21:15-23", "txt": ""},
+        {"cit": "Zechariah 3", "txt": ""},
+        {"cit": "Acts 4:8-23", "txt": ""}
       ],
     "James": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "2 Kings 1:1-16", "txt": ""},
+        {"cit": "Luke 9:51-57", "txt": ""},
+        {"cit": "Jeremiah 26:8-16", "txt": ""}
       ],
     "Bartholomew": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Genesis 28:10-18", "txt": ""},
+        {"cit": "Deuteronomy 18:15ff", "txt": ""}
       ],
     "Matthew": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "1 Kings 19:15ff", "txt": ""},
+        {"cit": "1 Chronicles 29:1-20", "txt": ""}
       ],
     "Michael": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Genesis 32", "txt": ""},
+        {"cit": "Acts 12:5-18", "txt": ""},
+        {"cit": "Daniel 10:4ff", "txt": ""},
+        {"cit": "Revelation 14:14ff", "txt": ""}
       ],
     "Luke": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Isaiah 55", "txt": ""},
+        {"cit": "Ecclus. 38:1-15", "txt": ""}
       ],
     "SimonAndJude": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Isaiah 28:9-17", "txt": ""},
+        {"cit": "Jeremiah 3:12-19", "txt": ""}
       ],
     "AllSaints": [
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""},
-        {"cit": "", "txt": ""}
+        {"cit": "Wisdom 3:1-10", "txt": ""},
+        {"cit": "Hebrews 11:33-12:7", "txt": ""},
+        {"cit": "Wisdom 3:10ff", "txt": ""},
+        {"cit": "Revelation 19:1-17", "txt": ""}
       ],
-    "ThanksgivingDay": [{"cit": "", "txt": ""}]
+    "IndependenceDay": [
+        {"cit": "Deut. 28:1-14", "txt": ""},
+        {"cit": "John 8:31-36", "txt": ""}
+    ],
+    "ThanksgivingDay": [
+        {"cit": "Deut. 8", "txt": ""},
+        {"cit": "1 Thess. 5:12-23", "txt": ""},
+        {"cit": "Isaiah 12", "txt": ""},
+        {"cit": "Philippians 4:4-7", "txt": ""}
+    ]
 }
