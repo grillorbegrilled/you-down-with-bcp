@@ -1,4 +1,19 @@
-{
+function getLesson(liturgicalDay) {
+    var result = Lessons[liturgicalDay];
+    
+    /*if (!result)
+        result = nationalDaysUS[liturgicalDay];
+
+    if (!result)
+        result = otherSaints[liturgicalDay];
+
+    if (!result)
+        result = specialOccasions[liturgicalDay];*/
+
+    return result;
+}
+
+const Lessons = {
     "A1": ["Isaiah 1","Isaiah 2","Isaiah 4:2ff"],
     "A2": ["Isaiah 5","Isaiah 11:1-11","Isaiah 24"],
     "A3": ["Isaiah 25","Isaiah 26","Isaiah 28:5-19"],
