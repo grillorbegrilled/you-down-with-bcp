@@ -3,35 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bible Gateway Fetch</title>
+    <title>Bible Verse Fetch</title>
 </head>
 <body>
-    <h1>Bible Gateway Fetch</h1>
+    <h1>Bible Verse Fetch</h1>
     <input type="text" id="bibleReference" placeholder="Enter Bible reference">
-    <button onclick="fetchTranslationList()">Fetch</button>
+    <button onclick="fetchBibleVerse(document.getElementById('bibleReference').value)">Fetch</button>
     <div id="result"></div>
 
     <script>
-        async function fetchTranslationList() {
-            const username = 'foutzjesse@gmail.com';
-            const password = 'ChristusResurrexit!';
-            const bibleReference = document.getElementById('bibleReference').value;
+        async function fetchBibleVerse(ref) {
             const resultDiv = document.getElementById('result');
 
-            try {
-                // Get access token
-                const tokenResponse = await fetch(`https://api.biblegateway.com/2/request_access_token?username=${username}&password=${password}`, {
-                    method: 'POST'
-                });
-                const tokenData = await tokenResponse.json();
-                const accessToken = tokenData.access_token;
+            // Parse the reference
+            const [bookChapter, verses] = ref.split(':');
+            const [book, chapter] = bookChapter.split(' ');
+            const bookLower = book.toLowerCase();
+            let verseStart, verseEnd;
 
-                // Fetch translation list
-                const translationResponse = await fetch(`https://api.biblegateway.com/2/bible/${bibleReference}/translation-list?access_token=${accessToken}`);
-                const translationData = await translationResponse.json();
+            if (verses) {
+                if (verses.includes('-')) {
+                    // Handle range of verses
+                    [verseStart, verseEnd] = verses.split('-');
+                } else if (verses.includes('ff')) {
+                    // Handle "ff" (following verses)
+                    verseStart = verses.replace('ff', '');
+                    verseEnd = 'end'; // Placeholder for actual logic
+                } else {
+                    // Single verse or multiple verses separated by commas
+                    verseStart = verses;
+                }
+            }
+
+            try {
+                // Fetch Bible chapter
+                const response = await fetch(`https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-US-kjvcpb/books/${bookLower}/chapters/${chapter}.json`);
+                const data = await response.json();
+
+                // Filter and concatenate verses
+                let versesText = '';
+                data.data.forEach(verse => {
+                    if (!verses || (verse.verse >= verseStart && (verseEnd === 'end' || verse.verse <= verseEnd))) {
+                        versesText += verse.text + ' ';
+                    }
+                });
 
                 // Display result
-                resultDiv.innerHTML = JSON.stringify(translationData, null, 2);
+                resultDiv.innerHTML = versesText.trim();
             } catch (error) {
                 resultDiv.innerHTML = 'Error fetching data: ' + error.message;
             }
