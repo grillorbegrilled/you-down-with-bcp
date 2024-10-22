@@ -10,12 +10,12 @@ function getLesson(liturgicalDay) {
     if (!result)
         result = specialOccasions[liturgicalDay];*/
 
-    var result = lessons.map(lesson => {
-        const content = handleBibleReference(lesson);
+    var promises = lessons.map(async lesson => {
+        const content = await handleBibleReference(lesson);
         return `<h2>${lesson}</h2><p>${content}</p>`;
-    }).join('');
+    });
 
-    return result;
+    return Promise.all(promises).then(results => results.join(''));
 }
 
 const Lessons = {
