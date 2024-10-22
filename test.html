@@ -12,13 +12,9 @@
     <div id="result"></div>
 
     <script>
-        async function fetchBibleVerse(ref) {
+        async function fetchBibleVerse(book, chapter, verses = "") {
             const resultDiv = document.getElementById('result');
-
-            // Parse the reference
-            const [bookChapter, verses] = ref.split(':');
-            const [book, chapter] = bookChapter.split(' ');
-            const bookLower = book.toLowerCase();
+            const bookLower = book.replace(/\s+/g, '').toLowerCase();
             let verseStart, verseEnd;
 
             if (verses) {
@@ -42,7 +38,6 @@
 
                 // Convert chapter and verse properties to numbers
                 data.data.forEach(verse => {
-                    verse.chapter = Number(verse.chapter);
                     verse.verse = Number(verse.verse);
                 });
 
@@ -61,17 +56,23 @@
             }
         }
 
+const splitAtLastSpace = str => str.split(/ (?!.* )/);
+
         async function handleBibleReference(bibleReference) {
             const resultDiv = document.getElementById('result');
 
-            // Remove space if the second character is a space
-            if (bibleReference[1] === ' ') {
-                bibleReference = bibleReference[0] + bibleReference.slice(2);
-            }
-
-            if ((bibleReference.match(/:/g) || []).length <= 1) {
+            if (bibleReference.includes('&')) {
+                // Handle ampersand
+                const [firstPart, secondPart] = bibleReference.split('&').map(part => part.trim());
+                const book = splitAtLastSpace(firstPart)[0];
+                const firstResult = await fetchBibleVerse(book, splitAtLastSpace(firstPart)[1]);
+                const secondResult = await fetchBibleVerse(book, secondPart);
+                resultDiv.innerHTML = `${firstResult} ${secondResult}`;
+            } else if ((bibleReference.match(/:/g) || []).length <= 1) {
                 // Zero or one colon
-                const result = await fetchBibleVerse(bibleReference);
+                const [bookChapter, verses] = bibleReference.split(':');
+                const [book, chapter] = splitAtLastSpace(bookChapter);
+                const result = await fetchBibleVerse(book, chapter, verses);
                 resultDiv.innerHTML = result;
             } else {
                 // Two colons
@@ -79,11 +80,10 @@
                 const [firstBookChapter, firstVerse] = firstPart.split(':');
                 const [secondChapter, secondVerse] = secondPart.split(':');
 
-                const firstRef = `${firstBookChapter}:${firstVerse}ff`;
-                const secondRef = `${firstBookChapter.split(' ')[0]} ${secondChapter}:1-${secondVerse}`;
+                const [book, firstChapter] = splitAtLastSpace(firstBookChapter);
 
-                const firstResult = await fetchBibleVerse(firstRef);
-                const secondResult = await fetchBibleVerse(secondRef);
+                const firstResult = await fetchBibleVerse(book, firstChapter, `${firstVerse}ff`);
+                const secondResult = await fetchBibleVerse(book, secondChapter, `1-${secondVerse}`);
 
                 resultDiv.innerHTML = `${firstResult} ${secondResult}`;
             }
