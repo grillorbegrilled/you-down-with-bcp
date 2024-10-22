@@ -1,5 +1,5 @@
 function getLesson(liturgicalDay) {
-    var result = Lessons[liturgicalDay];
+    var lessons = Lessons[liturgicalDay];
     
     /*if (!result)
         result = nationalDaysUS[liturgicalDay];
@@ -9,6 +9,11 @@ function getLesson(liturgicalDay) {
 
     if (!result)
         result = specialOccasions[liturgicalDay];*/
+
+    var result = lessons.map(lesson => {
+        const content = handleBibleReference(lesson);
+        return `<h2>${lesson}</h2><p>${content}</p>`;
+    }).join('');
 
     return result;
 }
