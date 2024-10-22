@@ -10,8 +10,16 @@
 </head>
 <body>
     <h1>Bible Verse Fetch</h1>
-    <input type="text" id="bibleReference" placeholder="Enter Bible reference">
-    <button onclick="handleBibleReference(document.getElementById('bibleReference').value)">Fetch</button>
     <div id="result"></div>
+    <script>const now = new Date();
+    
+    const week = getWeek(now);
+    const feast = getLiturgicalDate(now);
+    const liturgicalDay = synthDate(week, feast, now.getDay());
+
+    const details = getProper(liturgicalDay);
+    
+    handleBibleReference(details.g.cit);
+    </script>
 </body>
 </html>
