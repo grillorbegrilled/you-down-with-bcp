@@ -355,7 +355,30 @@ and shall from age to age endure.</p>
 the God whom heaven and earth adore,<br>
 from men and from the angel host<br>
 be praise and glory evermore.`],
-    "T21": [""],
+    "T21": [`Soldiers of Christ, arise,<br>
+and put your armor on,<br>
+strong in the strength which God supplies<br>
+through his eternal Son;</p>
+        <p>Strong in the Lord of hosts,<br>
+and in his mighty power:<br>
+who in the strength of Jesus trusts <br>
+is more than conqueror.</p>
+        <p>Stand then in his great might,<br>
+with all his strength endured,<br>
+and take, to arm you for the fight,<br>
+the panoply of God.</p>
+        <p>From strength to strength go on,<br>
+wrestle and fight and pray:<br>
+tread all the powers of darkness down,<br>
+and win the well-fought day.</p>
+        <p>That, having all things done,<br>
+and all your conflicts past,<br>
+ye may obtain, through Christ alone,<br>
+a crown of joy at last.</p>
+        <p>Jesus, eternal Son,<br>
+we praise thee and adore,<br>
+who art with God the Father one,<br>
+and Spirit evermore.`],
     "T22": [""],
     "T23": [""],
     "T24": [""],
