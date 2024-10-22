@@ -46,6 +46,7 @@ const splitAtLastSpace = str => str.split(/ (?!.* )/);
 
         async function handleBibleReference(bibleReference) {
             const resultDiv = document.getElementById('result');
+            var result = "";
 
             if (bibleReference.includes('&')) {
                 // Handle ampersand
@@ -53,13 +54,12 @@ const splitAtLastSpace = str => str.split(/ (?!.* )/);
                 const book = splitAtLastSpace(firstPart)[0];
                 const firstResult = await fetchBibleVerse(book, splitAtLastSpace(firstPart)[1]);
                 const secondResult = await fetchBibleVerse(book, secondPart);
-                resultDiv.innerHTML = `${firstResult} ${secondResult}`;
+                result = `${firstResult} ${secondResult}`;
             } else if ((bibleReference.match(/:/g) || []).length <= 1) {
                 // Zero or one colon
                 const [bookChapter, verses] = bibleReference.split(':');
                 const [book, chapter] = splitAtLastSpace(bookChapter);
-                const result = await fetchBibleVerse(book, chapter, verses);
-                resultDiv.innerHTML = result;
+                result = await fetchBibleVerse(book, chapter, verses);
             } else {
                 // Two colons
                 const [firstPart, secondPart] = bibleReference.split('-');
@@ -71,6 +71,8 @@ const splitAtLastSpace = str => str.split(/ (?!.* )/);
                 const firstResult = await fetchBibleVerse(book, firstChapter, `${firstVerse}ff`);
                 const secondResult = await fetchBibleVerse(book, secondChapter, `1-${secondVerse}`);
 
-                resultDiv.innerHTML = `${firstResult} ${secondResult}`;
+                result = `${firstResult} ${secondResult}`;
             }
+
+            return result;
         }
