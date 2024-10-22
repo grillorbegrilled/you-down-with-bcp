@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Gateway Fetch</title>
+</head>
+<body>
+    <h1>Bible Gateway Fetch</h1>
+    <input type="text" id="bibleReference" placeholder="Enter Bible reference">
+    <button onclick="fetchTranslationList()">Fetch</button>
+    <div id="result"></div>
+
+    <script>
+        async function fetchTranslationList() {
+            const username = 'foutzjesse@gmail.com';
+            const password = 'ChristusResurrexit!';
+            const bibleReference = document.getElementById('bibleReference').value;
+            const resultDiv = document.getElementById('result');
+
+            try {
+                // Get access token
+                const tokenResponse = await fetch(`https://api.biblegateway.com/2/request_access_token?username=${username}&password=${password}`, {
+                    method: 'POST'
+                });
+                const tokenData = await tokenResponse.json();
+                const accessToken = tokenData.access_token;
+
+                // Fetch translation list
+                const translationResponse = await fetch(`https://api.biblegateway.com/2/bible/${bibleReference}/translation-list?access_token=${accessToken}`);
+                const translationData = await translationResponse.json();
+
+                // Display result
+                resultDiv.innerHTML = JSON.stringify(translationData, null, 2);
+            } catch (error) {
+                resultDiv.innerHTML = 'Error fetching data: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
