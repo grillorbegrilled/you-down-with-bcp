@@ -1,21 +1,16 @@
 function getLesson(liturgicalDay) {
     var lessons = Lessons[liturgicalDay];
-    
-    /*if (!result)
-        result = nationalDaysUS[liturgicalDay];
-
-    if (!result)
-        result = otherSaints[liturgicalDay];
-
-    if (!result)
-        result = specialOccasions[liturgicalDay];*/
-
     var promises = lessons.map(async lesson => {
         const content = await handleBibleReference(lesson);
         return `<h2>${lesson}</h2><p>${content}</p>`;
     });
 
-    return Promise.all(promises).then(results => results.join(''));
+    let result = '';
+    Promise.all(promises).then(results => {
+        result = results.join('');
+    });
+
+    return result;
 }
 
 const Lessons = {
