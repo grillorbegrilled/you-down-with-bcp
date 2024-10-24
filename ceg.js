@@ -235,6 +235,7 @@ const propers1662 = {
         }
     },
     "AW": {
+        "c": "ALMIGHTY and everlasting God, who hatest nothing that thou hast made and dost forgive the sins of all them that are penitent; Create and make in us new and contrite hearts, that we, worthily lamenting our sins, and acknowledging our wretchedness, may obtain of thee, the God of all mercy, perfect remission and forgiveness; through Jesus Christ our Lord. Amen.",
         "e": {
             "cit": "Joel 2:12-17",
             "txt": "TURN ye even to me with all your heart, and with fasting, and with weeping, and with mourning: And rend your heart, and not your garments, and turn unto the Lord your God: for he is gracious and merciful, slow to anger, and of great kindness, and repenteth him of the evil. Who knoweth if he will return and repent, and leave a blessing behind him; even a meat offering and a drink offering unto the Lord your God? Blow the trumpet in Zion, sanctify a fast, call a solemn assembly: Gather the people, sanctify the congregation, assemble the elders, gather the children, and those that suck the breasts: let the bridegroom go forth of his chamber, and the bride out of her closet. Let the priests, the ministers of the Lord, weep between the porch and the altar, and let them say, Spare thy people, O Lord, and give not thine heritage to reproach, that the heathen should rule over them: wherefore should they say among the people, Where is their God?"
