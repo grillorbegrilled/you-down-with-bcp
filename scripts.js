@@ -4,38 +4,23 @@ function displayEventDetails() {
     const week = getWeek(now);
     const feast = getLiturgicalDate(now);
     const liturgicalDay = synthDate(week, feast, now.getDay());
-
     const details = getProper(liturgicalDay);
-    const hymn = getHymns(liturgicalDay);
     const collect = synthCollects(details.c, week);
 
-    if (isFast(now)) document.getElementById('fastDayLabel').textContent = "FAST.";
-    
-    const month = now.getMonth();
-    const date = now.getDate();
-    const day = now.getDay();
-    document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, month, date) + ".gif";
-    document.getElementById('euchMarg').src = getEuchMargin(now, liturgicalDay);
-    
-    if (details) {
-        document.getElementById('nameOfTheDay').textContent = `${getDayName(liturgicalDay)}`;
-        
-        if (collect.includes("</p><p>"))
-            document.getElementById('c_h').textContent = "The Collects";
-        
-        document.getElementById('c').innerHTML = collect;
-        document.getElementById('e_cit').textContent = `${details.e.cit}`;
-        document.getElementById('e_txt').innerHTML = makeP(makeDropCap(details.e.txt));
-        document.getElementById('g_cit').textContent = `${details.g.cit}`;
-        document.getElementById('g_txt').innerHTML = makeP(makeDropCap(details.g.txt));
-    } else {
-        document.getElementById('c').innerHTML = '';
-        document.getElementById('e_cit').textContent = '';
-        document.getElementById('e_txt').innerHTML = '';
-        document.getElementById('g_cit').textContent = '';
-        document.getElementById('g_txt').innerHTML = '';
-    }
+    document.getElementById('nameOfTheDay').textContent = `${getDayName(liturgicalDay)}`;
+    if (collect.includes("</p><p>")) document.getElementById('c_h').textContent = "The Collects";
+    document.getElementById('c').innerHTML = collect;
+    document.getElementById('e_cit').textContent = `${details.e.cit}`;
+    document.getElementById('e_txt').innerHTML = makeP(makeDropCap(details.e.txt));
+    document.getElementById('g_cit').textContent = `${details.g.cit}`;
+    document.getElementById('g_txt').innerHTML = makeP(makeDropCap(details.g.txt));
 
+    if (isFast(now)) document.getElementById('fastDayLabel').textContent = "FAST.";
+
+    document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, now.getMonth(), now.getDate()) + ".gif";
+    document.getElementById('euchMarg').src = getEuchMargin(now, liturgicalDay);
+
+    const hymn = getHymns(liturgicalDay);
     if (hymn) document.getElementById('hymn').innerHTML = makeP(hymn);
 
     document.getElementById('office').src = getOffice(now, week, feast);
@@ -58,7 +43,7 @@ function synthCollects(cotd, week) {
 
 function getSeasonalCollect(week) {
     switch (week) {
-        case "A1":
+        //case "A1":
         case "A2":
         case "A3":
         case "A4":
