@@ -36,7 +36,7 @@ function synthCollects(cotd, week) {
     //TODO commemoration
     //TODO eves/vigils (4:00 PM or later)
     
-    const seasonal = getSeasonalCollect(week);
+    const seasonal = getSeasonalCollect(week, liturgicalDay);
     
     return collectP + "" + seasonal;
 }
