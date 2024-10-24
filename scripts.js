@@ -49,11 +49,14 @@ function getSeasonalCollect(week) {
         case "A4":
             return makeP("ALMIGHTY God, give us grace that we may cast away the works of darkness, and put upon us the armour of light, now in the time of this mortal life in which thy Son Jesus Christ came to visit us in great humility; that in the last day, when he shall come again in his glorious majesty to judge both the quick and the dead, we may rise to the life immortal; through him who liveth and reigneth with thee and the Holy Ghost, one God, now and for ever. Amen.");
             break;
-        case "Xmas":
+        //case "Xmas":
+        case "Stephen":
+        case "JohnEvangelist":
+        case "Innocents":
         case "X1":
             return makeP("ALMIGHTY God, who hast given us thy only-begotten Son to take our nature upon him, and as at this time to be born of a pure Virgin; Grant that we being regenerate, and made thy children by adoption and grace, may daily be renewed by thy Holy Spirit; through the same our Lord Jesus Christ, who liveth and reigneth with thee and the same Spirit, ever one God, world without end. Amen.");
             break;
-        case "AW":
+        //case "AW":
         case "L1":
         case "L2":
         case "L3":
