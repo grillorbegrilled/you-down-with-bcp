@@ -39,7 +39,10 @@ function displayEventDetails() {
     if (hymn) document.getElementById('hymn').innerHTML = makeP(hymn);
 
     document.getElementById('office').src = getOffice(now, week, feast);
-    document.getElementById('tab-3').innerHTML = getLesson(liturgicalDay);
+
+    getLesson(liturgicalDay).then(lessonContent => {
+        document.getElementById('tab-3').innerHTML = lessonContent;
+    });
 }
 
 function synthCollects(cotd, week) {
