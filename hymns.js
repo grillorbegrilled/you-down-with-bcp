@@ -379,7 +379,30 @@ a crown of joy at last.</p>
 we praise thee and adore,<br>
 who art with God the Father one,<br>
 and Spirit evermore.`],
-    "T22": [""],
+    "T22": [`Lord, with glowing heart I'd praise thee,<br>
+for the bliss thy love bestows,<br>
+for the pardoning grace that saves me,<br>
+and the peace that from it flows:<br>
+help, O God, my weak endeavor;<br>
+this dull soul to rapture raise:<br>
+thou must light the flame, or never<br>
+can my love be warmed to praise.</p>
+        <p>Praise, my soul, the God that sought thee,<br>
+wretched wanderer, far astray;<br>
+found thee lost, and kindly brought thee<br>
+from the paths of death away;<br>
+praise, with love's devoutest feeling,<br>
+him who saw thy guilt-born fear,<br>
+and, since words can never measure,<br>
+let my life show forth thy praise.</p>
+        <p>Lord, this bosom's ardent feeling<br>
+vainly would my lips express.<br>
+Llw before thy footstool kneeling,<br>
+deign thy suppliant's prayer to bless:<br>
+let thy grace, my soul's chief treasure,<br>
+love's pure flame within me raise;<br>
+and, since words can never measure,<br>
+let my life show forth thy praise.`],
     "T23": [""],
     "T24": [""],
     "SNBA": [""],
