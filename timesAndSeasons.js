@@ -348,7 +348,7 @@ function getLiturgicalDate(now) {
         if (day === 29) return "Michael";
     } else if (month === 9) { //oct
         if (day === 18) return "Luke";
-        if (day === 29) return "SimonAndJude";
+        if (day === 28) return "SimonAndJude";
     } else if (month === 10) { //nov
         if (day === 1) return "AllSaints";
         if (day === 30) return "Andrew";
