@@ -4,7 +4,7 @@ function displayEventDetails() {
     const week = getWeek(now);
     const feast = getLiturgicalDate(now);
     const liturgicalDay = synthDate(week, feast, now.getDay());
-    const details = getProper(liturgicalDay);
+    const details = getProper2(liturgicalDay);
     const collect = synthCollects(details.c, week);
 
     document.getElementById('nameOfTheDay').textContent = `${getDayName(liturgicalDay)}`;
@@ -28,6 +28,40 @@ function displayEventDetails() {
     getLesson(liturgicalDay).then(lessonContent => {
         document.getElementById('tab-3').innerHTML = lessonContent;
     });
+}
+
+function getProper2(liturgicalDay) {
+    if (/^A\d$/.test(liturgicalDay) || liturgicalDay === "Xmas" || liturgicalDay === "Stephen" || liturgicalDay === "JohnEvangelist" || liturgicalDay === "Innocents" || liturgicalDay === "Circ" ||
+        liturgicalDay === "Epiphany" || /^E\d$/.test(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/advent-epi.json");
+    else if (liturgicalDay === "LXX" || liturgicalDay === "LX" || liturgicalDay === "L" || liturgicalDay === "AW" || /^L\d$/.test(liturgicalDay) ||
+            liturgicalDay === "Palm" || /^HW.*$/.test(liturgicalDay) || liturgicalDay === "GF" || liturgicalDay === "EE" ||
+            /^Easter.*$/.test(liturgicalDay) || /^Ea\d$/.test(liturgicalDay) || /^Asc.*$/.test(liturgicalDay) || /^Whit...$/.test(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/lxx-whitsun.json");
+    else if (/^T\d{1,2}$/.test(liturgicalDay) || liturgicalDay === "SNBA" || liturgicalDay === "Trinity") return getProperFromFile(liturgicalDay, "./ceg/trinity.json");
+    else if (liturgicalDay === "IndependenceDay" || liturgicalDay === "ThanksgivingDay") return getProperFromFile(liturgicalDay, "./ceg/nationaldays-us.json");
+    else if (liturgicalDay === "Patrick" || liturgicalDay === "Joseph" || liturgicalDay === "SuperWesleyBros" || liturgicalDay === "ElizabethII" || liturgicalDay === "WeddingAnniversary") return getProperFromFile(liturgicalDay, "./ceg/custom-festivals.json");
+    else return getProperFromFile(liturgicalDay, "./ceg/1662festivals.json");
+}
+
+function getProperFromFile(liturgicalDay, filePath) {
+    var result = "";
+    
+    fetch(filePath)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok");
+                }
+                return response.json();
+            })
+            .then(data => {
+                const record = data[liturgicalDay];
+
+                if (record) result = record;
+            })
+            .catch(error => {
+                console.error("There was a problem with the fetch operation:", error);
+            });
+
+    return result;
 }
 
 function synthCollects(cotd, week) {
