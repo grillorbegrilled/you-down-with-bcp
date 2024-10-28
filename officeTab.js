@@ -5,7 +5,7 @@ function getOffice(now, week, feast) {
       week === "GF" || //Good Friday
       now.getDate() < 8 && now.getDay() === 5) //first Friday of the month
         return "penitentialOffice.html";
-        
+
     /*const day = now.getDay();
     
     var result = "";
