@@ -1,6 +1,6 @@
 function displayEventDetails() {
     const now = new Date();
-    
+     
     const week = getWeek(now);
     const feast = getLiturgicalDate(now);
     const liturgicalDay = synthDate(week, feast, now.getDay());
