@@ -4,9 +4,12 @@ function displayEventDetails() {
     const week = getWeek(now);
     const feast = getLiturgicalDate(now);
     const liturgicalDay = synthDate(week, feast, now.getDay());
-    const details = getProper2(liturgicalDay);
+    const details = "";
     const collect = synthCollects(details.c, week);
 
+    getProper2(liturgicalDay).then(x => {
+        details = x;
+    });    
     document.getElementById('nameOfTheDay').textContent = `${getDayName(liturgicalDay)}`;
     if (collect.includes("</p><p>")) document.getElementById('c_h').textContent = "The Collects";
     document.getElementById('c').innerHTML = collect;
@@ -30,7 +33,7 @@ function displayEventDetails() {
     });
 }
 
-function getProper2(liturgicalDay) {
+async function getProper2(liturgicalDay) {
     if (/^A\d$/.test(liturgicalDay) || liturgicalDay === "Xmas" || liturgicalDay === "Stephen" || liturgicalDay === "JohnEvangelist" || liturgicalDay === "Innocents" || liturgicalDay === "Circ" ||
         liturgicalDay === "Epiphany" || /^E\d$/.test(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/advent-epi.json");
     else if (liturgicalDay === "LXX" || liturgicalDay === "LX" || liturgicalDay === "L" || liturgicalDay === "AW" || /^L\d$/.test(liturgicalDay) ||
@@ -42,26 +45,18 @@ function getProper2(liturgicalDay) {
     else return getProperFromFile(liturgicalDay, "./ceg/1662festivals.json");
 }
 
-function getProperFromFile(liturgicalDay, filePath) {
-    var result = "";
-    
-    fetch(filePath)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Network response was not ok");
-                }
-                return response.json();
-            })
-            .then(data => {
-                const record = data[liturgicalDay];
-
-                if (record) result = record;
-            })
-            .catch(error => {
-                console.error("There was a problem with the fetch operation:", error);
-            });
-
-    return result;
+async function getProperFromFile(liturgicalDay, filePath) {
+    try {
+        const response = await fetch(filePath);
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        return data[liturgicalDay] || ""; // Return the actual value for the liturgicalDay or an empty string if not found
+    } catch (error) {
+        console.error("There was a problem with the fetch operation:", error);
+        return "";
+    }
 }
 
 function synthCollects(cotd, week) {
