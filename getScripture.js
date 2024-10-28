@@ -32,7 +32,7 @@ async function fetchBibleVerse(book, chapter, verses = "") {
                 let versesText = '';
                 data.data.forEach(verse => {
                     if (!verses || (verse.verse >= verseStart && (verseEnd === 'end' || verse.verse <= verseEnd))) {
-                        versesText += verse.text + ' ';
+                        versesText += verse.text.replace(/\d+(\.\d+)?\b.*/, '') + ' ';
                     }
                 });
 
