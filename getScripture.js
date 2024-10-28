@@ -19,7 +19,8 @@ async function fetchBibleVerse(book, chapter, verses = "") {
 
             try {
                 // Fetch Bible chapter
-                const response = await fetch(`https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-US-kjvcpb/books/${bookLower}/chapters/${chapter}.json`);
+                //const response = await fetch(`https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-US-kjvcpb/books/${bookLower}/chapters/${chapter}.json`);
+                const response = await fetch(`https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-kjv/books/${bookLower}/chapters/${chapter}.json`);
                 const data = await response.json();
 
                 // Convert chapter and verse properties to numbers
@@ -36,7 +37,7 @@ async function fetchBibleVerse(book, chapter, verses = "") {
                 });
 
                 // Display result
-                return versesText.trim();
+                return versesText.trim().replace(/¶/g, "");
             } catch (error) {
                 return 'Error fetching data: ' + error.message;
             }
