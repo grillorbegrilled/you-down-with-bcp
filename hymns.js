@@ -487,7 +487,42 @@ we adopt thine angels' cry,<br>
 "Holy, holy, holy," blessing<br>
 thee, the Lord of Hosts most high.`],
     "Luke": [""],
-    "SimonAndJude": [""],
+    "SimonAndJude": [`Thou Who sentest Thine apostles<br>
+Two by two before Thy face,<br>
+Partners in the night of toiling,<br>
+Heirs together of Thy grace,<br>
+Throned at length, their labors ended,<br>
+Each in his appointed place;</p>
+        <p>Praise to Thee for those Thy champions<br>
+Whom our hymns to-day proclaim;<br>
+One, whose zeal by Thee enlightened<br>
+Burned anew with nobler flame;<br>
+One, the kinsman of Thy childhood,<br>
+Brought at last to know Thy Name.</p>
+        <p>Praise to Thee! Thy fire within them<br>
+Spake in love, and wrought in power;<br>
+Seen in mighty stars and wonders<br>
+In Thy Church's mourning hour;<br>
+Heard in tones of sternest warning<br>
+When the storms began to lower.</p>
+        <p>Once again those storms are breaking;<br>
+Hearts are failing, love grows cold;<br>
+Faith is darkened, sin abounding;<br>
+Grievous wolves assail Thy fold:<br>
+Save us, Lord, our one Salvation;<br>
+Save the faith revealed of old.</p>
+        <p>Call the erring by Thy pity;<br>
+Warn the tempted by Thy fear;<br>
+Keep us true to Thine allegiance,<br>
+Counting life itself less dear;<br>
+Standing firmer, holding faster,<br>
+As we see the end draw near:</p>
+        <p>Till with holy Jude and Simon<br>
+And the thousand faithful more,<br>
+We, the good confession witnessed<br>
+And the lifelong conflict o'er,<br>
+On the sea of fire and crystal<br>
+Stand, and wonder, and adore.`],
     "AllSaints": [""],
     "ThanksgivingDay": ["O PRAISE the Lord, for it is a good thing to sing praises unto our God; * yea, a joyful and pleasant thing it is to be thankful.<br>The Lord doth build up Jerusalem, * and gather together the outcasts of Israel.<br>He healeth those that are broken in heart, * and giveth medicine to heal their sickness.<br>O sing unto the Lord with thanksgiving; * sing praises upon the harp unto our God:<br>Who covereth the heaven with clouds, and prepareth rain for the earth; * and maketh the grass to grow upon the mountains, and herb for the use of men;<br>Who giveth fodder unto the cattle, * and feedeth the young ravens that call upon him.<br>Praise the Lord, O Jerusalem; * praise thy God, O Sion.<br>For he hath made fast the bars of thy gates, * and hath blessed thy children within thee.<br>He maketh peace in thy borders, * and filleth thee with the flour of wheat.<br>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>As it was in the beginning, is now, and ever shall be, * world without end. Amen."],
     "WeddingAnniversary": [`O FATHER, all creating,<br>
