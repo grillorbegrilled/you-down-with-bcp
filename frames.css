@@ -1,7 +1,7 @@
 .card {
     position: absolute;
     bottom: 0;
-    height: calc(66.66% - 10px);
+    height: 66.67vh;
     background: black;
     border-radius: 10px;
     overflow: hidden;
