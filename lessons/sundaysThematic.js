@@ -1,5 +1,8 @@
 async function getLesson(liturgicalDay) {
     var lessons = sundaysThematic[liturgicalDay];
+
+    if (!lessons) lessons = redLetters[liturgicalDay];
+    
     var promises = lessons.map(async lesson => {
         const content = await handleBibleReference(lesson);
         return `<h2>${lesson}</h2><p>${content}</p>`;
@@ -335,3 +338,45 @@ const sundaysThematic = {
 "Isaiah 25:1-9", "John 5:17-29"
 ]
 };
+
+const redLetters = {
+        "Xmas": ["Isaiah 9:1-8","Luke 2:1-15","Isaiah 7:10-17","Titus 3:4-9"],
+    "Stephen": ["Genesis 4:1-11","Acts 6","2 Chronicles 14:15-23","Acts 8:1-9"],
+    "JohnEvangelist": ["Exodus 33:9ff","John 13:23-36","Isaiah 6","Revelation 1"],
+    "Innocents": ["Jeremiah 31:1-18","Baruch 4:21-31"],
+"Circ": ["Genesis 17:9ff","Romans 2:17ff","Deuteronomy 10:12ff","Colossians 2:8-18"],
+"Epiphany": ["Isaiah 60","Luke 3:15-23","Isaiah 49:13-24","John 2:1-12"],
+"AW": ["Isaiah 58:1-13","Mark 2:13-23","Jonah 3","Hebrews 12:3-18"],
+    "L1": ["Genesis 19:12-30","Genesis 22:1-20","Genesis 23"],
+"HW-Mon": ["Lamentations 1:1-15","John 14:1-15","Lamentations 2:13ff","John 14:15ff"],
+    "HW-Tue": ["Lamentations 3:1-34","John 15:1-14","Lamentations 3:34ff","John 15:14ff"],
+    "HW-Wed": ["Lamentations 4:1-21","John 16:1-16","Daniel 9:20ff","John 16:16ff"],
+    "HW-Thu": ["Hosea 13:1-15","John 17","Hosea 14","John 13:1-36"],
+    "GF": ["Genesis 22:1-20","John 18","Isaiah 52:13-53:12","1 Peter 2"],
+    "EE": ["Zechariah 9","Luke 23:50ff","Hosea 5:8-6:4","Romans 6:1-14"],
+"EasterMon": ["Exodus 15:1-22","Luke 24:13ff","Song of Songs 2:10ff","Matthew 28:1-10"],
+    "EasterTue": ["2 Kings 13:14-22","John 21:1-15","Ezekiel 37:1-15","John 21:15ff"],
+    "Ascension": ["Daniel 7:9-15","Luke 24:44ff","2 Kings 2:1-16","Hebrews 4"],
+"Whitmon": ["Genesis 11:1-10","1 Corinthians 12:1-14","Numbers 11:16-31","1 Corinthians 12:27-13:13"],
+    "WhitTue": ["Joel 2:21ff","1 Thessalonians 5:12-24","Micah 4:8ff","1 John 4:1-14"],
+"Andrew": ["Isaiah 54","John 1:35-43","Isaiah 65:1-17","John 12:20-42"],
+    "Thomas": ["Job 42:1-7","John 20:19-24","Isaiah 35","John 14:1-8"],
+    "Paul": ["Isaiah 49:1-13","Galatians 1:11ff","Jeremiah 1:1-11","Acts 26:1-21"],
+    "Candlemas": ["Exodus 13:1-17","Haggai 2:1-10"],
+    "Matthias": ["1 Samuel 2:27-36","Isaiah 22:15ff"],
+    "Annunciation": ["Genesis 3:1-16","Isaiah 52:7-13"],
+    "Mark": ["Isaiah 62:6ff","Ezekiel 1:1-15"],
+    "PhilipAndJames": ["Isaiah 61","John 1:43ff","Zechariah 4"],
+    "Barnabas": ["Deuteronomy 33:1-12","Acts 4:31ff","Nahum 1","Acts 14:8ff"],
+    "JohnBaptist": ["Malachi 3:1-7","Matthew 3","Malachi 4","Matthew 14:1-13"],
+    "Peter": ["Ezekiel 3:4-15","John 21:15-23","Zechariah 3","Acts 4:8-23"],
+    "James": ["2 Kings 1:1-16","Luke 9:51-57","Jeremiah 26:8-16"],
+    "Bartholomew": ["Genesis 28:10-18","Deuteronomy 18:15ff"],
+    "Matthew": ["1 Kings 19:15ff","1 Chronicles 29:1-20"],
+    "Michael": ["Genesis 32","Acts 12:5-18","Daniel 10:4ff","Revelation 14:14ff"],
+    "Luke": ["Isaiah 55","Ecclesiasticus 38:1-15"],
+    "SimonAndJude": ["Isaiah 28:9-17","Jeremiah 3:12-19"],
+    "AllSaints": ["Wisdom 3:1-10","Hebrews 11:33-12:7","Wisdom 3:10ff","Revelation 19:1-17"],
+    "IndependenceDay": ["Deuteronomy 28:1-14","John 8:31-36"],
+    "ThanksgivingDay": ["Deuteronomy 8","1 Thessalonians 5:12-23","Isaiah 12","Philippians 4:4-7"]
+}
