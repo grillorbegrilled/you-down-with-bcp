@@ -4,7 +4,7 @@ async function getLesson(liturgicalDay) {
     if (!lessons) lessons = redLetters[liturgicalDay];
     
     var promises = lessons.map(async lesson => {
-        const content = await handleBibleReference(lesson);
+        const content = await handleBibleReference(lesson.replace("*", ""));
         return `<h2>${lesson}</h2><p>${content}</p>`;
     });
 
