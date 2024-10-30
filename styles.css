@@ -22,7 +22,7 @@ body, html {
 }
 
 .background {
-    height: 33.33vh;
+    height: 35vh;
     background: url('images/bg/harvest2.gif') no-repeat top center fixed;
     background-size: auto 100%;
 }
