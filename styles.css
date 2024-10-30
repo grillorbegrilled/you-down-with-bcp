@@ -23,8 +23,8 @@ body, html {
 
 .background {
     height: 33.33vh;
-    background: url('images/bg/harvest2.gif') no-repeat center center fixed;
-    background-size: contain;
+    background: url('images/bg/harvest2.gif') no-repeat top center fixed;
+    background-size: auto 100%;
 }
 
 .tiled-border {
