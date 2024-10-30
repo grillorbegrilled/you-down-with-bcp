@@ -61,7 +61,7 @@ iframe {
 }
 
 .tab-content.active {
-    display: block;
+    /*display: block;*/
     height: 100%;
 }
 
