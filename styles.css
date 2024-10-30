@@ -24,7 +24,7 @@ body, html {
 .background {
     flex: 1 1 33.33%;
     background: url('images/bg/harvest2.gif') no-repeat center center fixed;
-    background-size: auto 100%; /* Ensures the image height always fits */
+    background-size: contain;
 }
 
 .tiled-border {
