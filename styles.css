@@ -23,14 +23,8 @@ body, html {
 
 .background {
     height: 35vh;
-    background: url('images/bg/harvest2.gif') no-repeat top center;
+    background: url('images/bg/harvest2.jpg') no-repeat top center;
     background-size: auto 100%;
-}
-
-.tiled-border {
-    height: 64px;
-    background-image: url('thickerborder.png');
-    background-repeat: repeat;
 }
 
 .bookmark {
