@@ -22,15 +22,9 @@ body, html {
 }
 
 .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40%;
+    flex: 1 1 33.33%;
     background: url('images/bg/harvest2.gif') no-repeat center center fixed;
-    /*background: url('images/bg/trinity.png') no-repeat center center fixed;*/
-    background-size: contain;
-    z-index: -1;
+    background-size: auto 100%; /* Ensures the image height always fits */
 }
 
 .tiled-border {
