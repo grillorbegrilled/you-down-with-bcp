@@ -1,5 +1,6 @@
 .card {
     position: absolute;
+    bottom: 0;
     height: calc(66.66% - 10px);
     background: black;
     border-radius: 10px;
