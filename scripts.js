@@ -24,7 +24,7 @@ function displayEventDetails() {
     const hymn = getHymns(liturgicalDay);
     if (hymn) document.getElementById('hymn').innerHTML = makeP(hymn);
 
-    document.getElementById('office').src = getOffice(now, week, feast);
+    getOffice(now, week, feast);
 
     getLesson(liturgicalDay).then(lessonContent => {
         document.getElementById('tab-3').innerHTML = lessonContent;
