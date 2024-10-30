@@ -6,11 +6,11 @@ function getOffice(now, week, feast) {
         now.getDate() < 8 && day === 5) //first Friday of the month
         document.getElementById("tab-0").innerHTML = commination;
 
-    else if (isEmberDay(liturgicalDay, now.getMonth(), now.getDate(), day) || //ember days
-        isRogationDay(liturgicalDay, day) || //rogation days
-        liturgicalDay === "GF" || //good friday
-        liturgicalDay === "AW" && (day === 3 || day === 5) || //ash wednesday, friday thereafter
-        (liturgicalDay === "L2" || liturgicalDay === "L3" || liturgicalDay === "L4" || liturgicalDay === "L5") && day === 5) //other fridays in lent
+    else if (isEmberDay(week, now.getMonth(), now.getDate(), day) || //ember days
+        isRogationDay(week, day) || //rogation days
+        week === "GF" || //good friday
+        week === "AW" && (day === 3 || day === 5) || //ash wednesday, friday thereafter
+        (week === "L2" || week === "L3" || week === "L4" || week === "L5") && day === 5) //other fridays in lent
         document.getElementById("tab-0").innerHTML = litany;
     /*
     //------------------ALL SOULS
