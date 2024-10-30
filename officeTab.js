@@ -5,7 +5,7 @@ function getOffice(now, week, feast) {
         week === "GF" || //Good Friday
         now.getDate() < 8 && day === 5) //first Friday of the month
         document.getElementById("tab-0").innerHTML = commination;
-    
+
     else if (isEmberDay(liturgicalDay, now.getMonth(), now.getDate(), day) || //ember days
         isRogationDay(liturgicalDay, day) || //rogation days
         liturgicalDay === "GF" || //good friday
