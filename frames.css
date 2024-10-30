@@ -2,6 +2,7 @@
     position: absolute;
     bottom: 0;
     height: 66.67vh;
+    width: 100%;
     background: black;
     border-radius: 10px;
     overflow: hidden;
