@@ -58,10 +58,11 @@ iframe {
   height: 100%;
   margin: 10px 10px 10px 0;
   border: none; /* Removes the default iframe border */
+  overflow: hidden;
 }
 
 .tab-content.active {
-    /*display: block;*/
+    display: block;
     height: 100%;
 }
 
