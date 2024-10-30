@@ -1,3 +1,17 @@
+async function getLesson(liturgicalDay) {
+    var lessons = sundaysThematic[liturgicalDay];
+    var promises = lessons.map(async lesson => {
+        const content = await handleBibleReference(lesson);
+        return `<h2>${lesson}</h2><p>${content}</p>`;
+    });
+
+    // Wait for all promises to resolve
+    const results = await Promise.all(promises);
+    
+    // Join the results and return them
+    return results.join('');
+}
+
 const sundaysThematic = {
 "A1":[
 "Malachi 3:1–6 & 4:4–6", "Luke 1:5–25",
