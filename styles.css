@@ -23,7 +23,6 @@ body, html {
 
 .background {
     height: 35vh;
-    background: url('images/bg/allehelgens.jpg') no-repeat top center;
     background-size: auto 100%;
 }
 
