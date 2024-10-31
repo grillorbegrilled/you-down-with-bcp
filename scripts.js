@@ -21,8 +21,11 @@ function displayEventDetails() {
     document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, now.getMonth(), now.getDate()) + ".gif";
     document.getElementById('euchMarg').src = getEuchMargin(now, liturgicalDay);
 
-    const hymn = getHymns(liturgicalDay);
-    if (hymn) document.getElementById('hymn').innerHTML = makeP(hymn);
+    const hymns = getHymns(liturgicalDay);
+    if (hymns) {
+        document.getElementById('hymn-title').textContent = "Hymns";
+        document.getElementById('hymn').innerHTML = hymns.hymns;
+    }
 
     getOffice(now, week, feast);
 
