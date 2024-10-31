@@ -23,7 +23,7 @@ function displayEventDetails() {
 
     const hymns = getHymns(liturgicalDay);
     if (hymns) {
-        document.getElementById('hymn-title').textContent = "Hymns";
+        if (hymns.multiple) document.getElementById('hymn-title').textContent = "Hymns";
         document.getElementById('hymn').innerHTML = hymns.hymns;
     }
 
