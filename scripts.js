@@ -21,6 +21,8 @@ function displayEventDetails() {
     document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, now.getMonth(), now.getDate()) + ".gif";
     document.getElementById('euchMarg').src = getEuchMargin(now, liturgicalDay);
 
+    document.getElementById('top-image').style.backgroundImage = getTopImage(liturgicalDay, now.getMonth(), now.getDate());
+
     const hymns = getHymns(liturgicalDay);
     if (hymns) {
         if (hymns.multiple) document.getElementById('hymn-title').textContent = "Hymns";
