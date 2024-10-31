@@ -4,7 +4,7 @@ function getHymns(liturgicalDay) {
     
     if (!items) result = items.map(item => `<p>${item}</p>`).join("<p style="text-align: center;">✠&#9;✠&#9;✠</p>");
 
-    return result;
+    return {"hymns": result, "multiple": items.length > 1};
 }
 
 const hymns = {
