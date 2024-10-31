@@ -528,7 +528,179 @@ We, the good confession witnessed<br>
 And the lifelong conflict o'er,<br>
 On the sea of fire and crystal<br>
 Stand, and wonder, and adore.`],
-    "AllSaints": [""],
+    "AllSaints": [`For all the saints, who from their labors rest,<br>
+who thee by faith before the world confessed,<br>
+thy Name, O Jesus, be forever blessed.<br>
+Alleluia, Alleluia!</p>
+        <p>Thou wast their Rock, their Fortress and their Might;<br>
+thou, Lord, their Captain in the well fought fight;<br>
+thou, in the darkness drear, their one true Light.<br>
+Alleluia, Alleluia!</p>
+        <p>For the apostles' glorious company,<br>
+who bearing forth the cross o'er land and sea,<br>
+shook all the mighty world, we sing to Thee:<br>
+Alleluia, Alleluia!</p>
+        <p>For the Evangelists, by whose blest word,<br>
+like fourfold streams, the garden of the Lord,<br>
+is fair and fruitful, be thy Name adored.<br>
+Alleluia, Alleluia!</p>
+        <p>For Martyrs, who with rapture kindled eye,<br>
+saw the bright crown descending from the sky,<br>
+and seeing, grasped it, thee we glorify.<br>
+Alleluia, Alleluia!</p>
+        <p>O may thy soldiers, faithful, true, and bold,<br>
+fight as the saints who nobly fought of old,<br>
+and win, with them the victor's crown of gold.<br>
+Alleluia, Alleluia!</p>
+        <p>O blest communion, fellowship divine!<br>
+we feebly struggle, they in glory shine;<br>
+all are one in thee, for all are thine.<br>
+Alleluia, Alleluia!</p>
+        <p>And when the strife is fierce, the warfare long,<br>
+steals on the ear the distant triumph song,<br>
+and hearts are brave, again, and arms are strong.<br>
+Alleluia, Alleluia!</p>
+        <p>The golden evening brightens in the west;<br>
+soon, soon to faithful warriors comes their rest;<br>
+sweet is the calm of paradise the blessed.<br>
+Alleluia, Alleluia!</p>
+        <p>But lo! there breaks a yet more glorious day;<br>
+the saints triumphant rise in bright array;<br>
+the King of glory passes on his way.<br>
+Alleluia, Alleluia!</p>
+        <p>From earth's wide bounds, from ocean's farthest coast,<br>
+through gates of pearl streams in the countless host,<br>
+and singing to Father, Son and Holy Ghost:<br>
+Alleluia, Alleluia!`,
+`I sing a song of the saints of God,<br>
+patient and brave and true,<br>
+who toiled and fought and lived and died<br>
+for the Lord they loved and knew.<br>
+And one was a doctor, and one was a queen,<br>
+and one was a shepherdess on the green:<br>
+they were all of them saints of God—and I mean,<br>
+God helping, to be one too.</p>
+        <p>They loved their Lord so dear, so dear,<br>
+and his love made them strong;<br>
+and they followed the right, for Jesus' sake,<br>
+the whole of their good lives long.<br>
+And one was a soldier, and one was a priest,<br>
+and one was slain by a fierce wild beast:<br>
+and there's not any reason, no, not the least,<br>
+why I shouldn't be one too.</p>
+        <p>They lived not only in ages past,<br>
+there are hundreds of thousands still,<br>
+the world is bright with the joyous saints<br>
+who love to do Jesus' will.<br>
+You can meet them in school, or in lanes, or at sea,<br>
+in church, or in trains, or in shops, or at tea,<br>
+for the saints of God are just folk like me,<br>
+and I mean to be one too.`,
+`Ye watchers and ye holy ones,<br>
+bright seraphs, cherubim, and thrones,<br>
+raise the glad strain! Alleluia!<br>
+Cry out, dominions, princedoms, powers,<br>
+virtues, archangels, angels’ choirs,<br>
+Alleluia! alleluia! alleluia!<br>
+Alleluia! alleluia!</p>
+<p>O higher than the cherubim,<br>
+more glorious than the seraphim,<br>
+lead their praises, Alleluia!<br>
+Thou bearer of th’eternal Word,<br>
+most gracious, magnify the Lord,<br>
+Alleluia! alleluia! alleluia!<br>
+Alleluia! alleluia!</p>
+<p>Respond, ye souls in endless rest,<br>
+ye patriarchs and prophets blest,<br>
+Alleluia, alleluia!<br>
+Ye holy twelve, ye martyrs strong,<br>
+all saints triumphant, raise the song, <br>
+Alleluia! alleluia! alleluia!<br>
+Alleluia! alleluia!</p>
+<p>O friends, in gladness let us sing,<br>
+supernal anthems echoing,<br>
+Alleluia, alleluia!<br>
+To God the Father, God the Son,<br>
+and God the Spirit, Three in One, <br>
+Alleluia! alleluia! alleluia!<br>
+Alleluia! alleluia!`,
+`Jerusalem, my happy home,<br>
+when shall I come to thee?<br>
+When shall my sorrows have an end?<br>
+Thy joys when shall I see?<br>
+Thy saints are crowned with glory great;<br>
+they see God face to face;<br>
+they triumph still, they still rejoice<br>
+most happy is their case.</p>
+<p>There David stands with harp in hand<br>
+as master of the choir:<br>
+ten thousand times that man were blessed<br>
+that might this music hear.<br>
+Our Lady sings Magnificat<br>
+with tune surpassing sweet,<br>
+and all the virgins bear their part,<br>
+sitting at her feet.</p>
+<p>There Magdalen hath left her moan,<br>
+and cheerfully doth sing<br>
+with blessèd saints, whose harmony<br>
+in every street doth ring.<br>
+Jerusalem, Jerusalem,<br>
+God grant that I may see<br>
+thine endless joy, and of the same<br>
+partaker ever be!`,
+`Lo! what a cloud of witnesses<br>
+encompass us around!<br>
+Men once like us with suff’ring tried,<br>
+but now with glory crowned.</p>
+<p>Let us, with zeal like theirs inspired,<br>
+strive in the Christian race;<br>
+and, freed from every weight of sin,<br>
+their holy footsteps trace.</p>
+<p>Behold a Witness nobler still,<br>
+who trod affliction’s path:<br>
+Jesus, the author, finisher,<br>
+rewarder of our faith.</p>
+<p>He, for the joy before him set,<br>
+and moved by pitying love,<br>
+endured the cross, despised the shame,<br>
+and now he reigns above.</p>
+<p>Thither, forgetting things behind,<br>
+press we to God’s right hand;<br>
+there, with the Savior and his saints,<br>
+triumphantly to stand.`,
+`YE holy angels bright,<br>
+who wait at God’s right hand,<br>
+or through the realms of light<br>
+fly at your Lord’s command,<br>
+assist our song,<br>
+for else the theme<br>
+too high doth seem<br>
+for mortal tongue.</p>
+<p>Ye blessèd souls at rest,<br>
+who ran this earthly race<br>
+and now, from sin released,<br>
+behold your Savior’s face,<br>
+his praises sound,<br>
+as in his sight<br>
+with sweet delight<br>
+ye do abound.</p>
+<p>Ye saints, who toil below,<br>
+adore your heav’nly King,<br>
+and onward as ye go<br>
+some joyful anthem sing;<br>
+take what he gives<br>
+and praise him still,<br>
+through good or ill,<br>
+who ever lives!</p>
+<p>My soul, bear thou thy part,<br>
+triumph in God above:<br>
+and with a well-tuned heart<br>
+sing thou the songs of love!<br>
+Let all thy days<br>
+till life shall end,<br>
+whate’er he send,<br>
+be filled with praise!`
+],
     "ThanksgivingDay": ["O PRAISE the Lord, for it is a good thing to sing praises unto our God; * yea, a joyful and pleasant thing it is to be thankful.<br>The Lord doth build up Jerusalem, * and gather together the outcasts of Israel.<br>He healeth those that are broken in heart, * and giveth medicine to heal their sickness.<br>O sing unto the Lord with thanksgiving; * sing praises upon the harp unto our God:<br>Who covereth the heaven with clouds, and prepareth rain for the earth; * and maketh the grass to grow upon the mountains, and herb for the use of men;<br>Who giveth fodder unto the cattle, * and feedeth the young ravens that call upon him.<br>Praise the Lord, O Jerusalem; * praise thy God, O Sion.<br>For he hath made fast the bars of thy gates, * and hath blessed thy children within thee.<br>He maketh peace in thy borders, * and filleth thee with the flour of wheat.<br>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>As it was in the beginning, is now, and ever shall be, * world without end. Amen."],
     "WeddingAnniversary": [`O FATHER, all creating,<br>
             whose wisdom, love, and power<br>
