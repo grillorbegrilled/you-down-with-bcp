@@ -16,7 +16,7 @@ function displayEventDetails() {
         document.getElementById('g_txt').innerHTML = makeP(makeDropCap(details.g.txt));
     });
 
-    if (isFast(now)) document.getElementById('fastDayLabel').textContent = "FAST.";
+    if (isFast(now)) document.getElementById('fastDayLabel').textContent = getTopImage(liturgicalDay, now.getMonth(), now.getDate());// "FAST.";
 
     document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, now.getMonth(), now.getDate()) + ".gif";
     document.getElementById('euchMarg').src = getEuchMargin(now, liturgicalDay);
