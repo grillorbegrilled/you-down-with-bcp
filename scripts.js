@@ -16,13 +16,15 @@ function displayEventDetails() {
         document.getElementById('g_txt').innerHTML = makeP(makeDropCap(details.g.txt));
     });
 
-    if (isFast(now)) document.getElementById('fastDayLabel').textContent = getTopImage(liturgicalDay, now.getMonth(), now.getDate());// "FAST.";
+    if (isFast(now)) document.getElementById('fastDayLabel').textContent = "FAST.";
 
     document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, now.getMonth(), now.getDate()) + ".gif";
     document.getElementById('euchMarg').src = getEuchMargin(now, liturgicalDay);
 
-    document.getElementById('top-image').style.backgroundImage = `url("${getTopImage(liturgicalDay, now.getMonth(), now.getDate())}") no-repeat top center`;
-
+    const element = document.getElementById('top-image');
+element.style.backgroundImage = `url("${getTopImage(liturgicalDay, now.getMonth(), now.getDate())}")`;
+element.style.backgroundRepeat = 'no-repeat';
+element.style.backgroundPosition = 'top center';
     const hymns = getHymns(liturgicalDay);
     if (hymns) {
         if (hymns.multiple) document.getElementById('hymn-title').textContent = "Hymns";
