@@ -21,8 +21,7 @@ function displayEventDetails() {
     document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, now.getMonth(), now.getDate()) + ".gif";
     document.getElementById('euchMarg').src = getEuchMargin(now, liturgicalDay);
 
-    const topImg = document.getElementById('top-image');
-    topImg.style.backgroundImage = `url("${getTopImage(liturgicalDay, now.getMonth(), now.getDate())}") no-repeat top center`;
+    document.getElementById('top-image').style.backgroundImage = `url("${getTopImage(liturgicalDay, now.getMonth(), now.getDate())}") no-repeat top center`;
 
     const hymns = getHymns(liturgicalDay);
     if (hymns) {
