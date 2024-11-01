@@ -1,5 +1,5 @@
 function getTopImage(lit, month, date) {
-  if (lit === "AllSaints") return "images/bg/allehelgens.jpg"; //All Saints, West Plains, MO
+  if (lit === "AllSaints") return "images/bg/All-saints-day.jpg";
 
   return "images/bg/harvest.png";
     /*switch (lit) {
