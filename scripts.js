@@ -33,14 +33,10 @@ element.style.backgroundPosition = 'top center';
 
     getOffice(now, week, feast);
 
-    /*getLesson(liturgicalDay).then(lessonContent => {
-        document.getElementById('tab-3').innerHTML = lessonContent;
-    });*/
-    fetchBibleVerse("Genesis", "1", "1-2").then(lessonContent => {
+    getLesson(liturgicalDay).then(lessonContent => {
         document.getElementById('tab-3').innerHTML = lessonContent;
     });
-    //handleBibleReference("Proverbs 25:8-24") {
-            
+        
 }
 
 async function getProper2(liturgicalDay) {
