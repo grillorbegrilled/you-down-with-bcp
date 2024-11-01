@@ -1,7 +1,9 @@
 function getOffice(now, week, feast) {
     const day = now.getDay();
+    //------------------ALL SOULS
+    if (now.getMonth() === 10 && now.getDate() === 2) result = getMemorial();
     //------------------COMMINATION
-    if (week === "AW" && day === 3 || //Ash Wednesday
+    else if (week === "AW" && day === 3 || //Ash Wednesday
         week === "GF" || //Good Friday
         now.getDate() < 8 && day === 5) //first Friday of the month
         document.getElementById("tab-0").innerHTML = commination;
@@ -12,10 +14,7 @@ function getOffice(now, week, feast) {
         week === "AW" && (day === 3 || day === 5) || //ash wednesday, friday thereafter
         (week === "L2" || week === "L3" || week === "L4" || week === "L5") && day === 5) //other fridays in lent
         document.getElementById("tab-0").innerHTML = litany;
-    /*
-    //------------------ALL SOULS
-        if (now.getMonth() === 10 && now.getDate() === 2) result = getMemorial();
-    */
+    
     else {
         //------------------DAILY PRAYERS
         //officeType: 1=MP, 2=EP, 3=Compline
