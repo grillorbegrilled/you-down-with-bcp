@@ -408,7 +408,36 @@ let thy grace, my soul's chief treasure,<br>
 love's pure flame within me raise;<br>
 and, since words can never measure,<br>
 let my life show forth thy praise.`],
-    "T23": [""],
+    "T23": [`Blessed city, heavenly Salem,<br>
+vision dear of peace and love,<br>
+who of living stones art builded<br>
+in the height of heaven above,<br>
+and, with angel hosts encircled,<br>
+as a bride dost earthward move;</p>
+        <p>from celestial realms descending,<br>
+bridal glory round thee shed,<br>
+meet for him whose love espoused thee,<br>
+to thy Lord shalt thou be led;<br>
+all thy streets and all thy bulwarks<br>
+of pure gold are fashioned.</p>
+        <p>Bright thy gates of pearl are shining;<br>
+they are open evermore;<br>
+and by virtue of his merits<br>
+thither faithful souls do soar,<br>
+who for Christ's dear Name in this world<br>
+pain and tribulation bore.</p>
+        <p>Many a blow and biting sculpture<br>
+polished well those stones elect,<br>
+in their places now compacted<br>
+by the heavenly Architect,<br>
+who therewith hath willed for ever<br>
+that his palace should be decked.</p>
+        <p>Laud and honor to the Father,<br>
+laud and honor to the Son,<br>
+laud and honor to the Spirit,<br>
+ever Three, and ever One,<br>
+consubstantial, coeternal,<br>
+while unending ages run.`],
     "T24": [""],
     "SNBA": [""],
     "Andrew": [""],
