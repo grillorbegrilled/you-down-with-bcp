@@ -92,7 +92,7 @@ const dayNames = {
     "Michael": "Michaelmas",
     "Luke": "St. Luke",
     "SimonAndJude": "SS. Simon and Jude",
-    "AllSaints": "All Saints' Day",
+    "AllSaints": "All Saints",
     "ThanksgivingDay": "Thanksgiving Day",
     "IndependenceDay": "Independence Day"
 };
