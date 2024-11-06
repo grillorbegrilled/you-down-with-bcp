@@ -1,0 +1,415 @@
+{
+  0: {
+    8: {
+        "name": "",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    13: {
+        "name": "",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    18: {
+        "name": "",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    20: {
+        "name": "",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    21: {
+        "name": "",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    22: {
+        "name": "",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    }
+  },
+  1: {
+    5: {
+        "name": "St. Agatha",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    14: {
+        "name": "St. Valentine",
+        "c": "ALMIGHTY and everlasting God, who didst enkindle the flame of thy love in the heart of thy holy martyr Valentine: Grant unto us, thy humble servants, a like faith and power of love, that we who rejoice in his triumph may profit by his example; through Jesus Christ our Lord. Amen.",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    }
+  },
+  2: {
+    1: {
+        "name": "St. David",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    2: {
+        "name": "St. Chad",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    7: {
+        "name": "SS. Perpetua & Felicity",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    12: {
+        "name": "St. Gregory the Great",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    17: {
+        "name": "St. Patrick, Apostle of Ireland",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    21: {
+        "name": "St. Benedict",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    }
+  },
+  3: {
+    3: {
+        "name": "St. Richard",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    4: {
+        "name": "St. Ambrose",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    19: {
+        "name": "St. Alphege",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    23: {
+        "name": "St. George",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    }
+  },
+  4: {
+    3: {
+        "name": "Invention of the Holy Cross",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    6: {
+        "name": "St. John at the Latin Gate",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    19: {
+        "name": "St. Dunstan",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    26: {
+        "name": "St. Augustine of Canterbury, Apostle to the English",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    27: {
+        "name": "St. Bede",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    }
+  },
+  5: {
+    1: {
+        "name": "St. Nicomede",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    5: {
+        "name": "St. Boniface, Apostle to the Germans",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    17: {
+        "name": "St. Alban",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    }
+  },
+  6: {
+    2: {
+        "name": "Visitation",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    4: {
+        "name": "Translation of St. Martin",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    15: {
+        "name": "St. Swithun",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    20: {
+        "name": "St. Margaret",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    22: {
+        "name": "St. Mary Magdalen",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    },
+    26: {
+        "name": "St. Anne",
+        "c": "",
+        "e": {
+            "cit": "",
+            "txt": ""
+        },
+        "g": {
+            "cit": "",
+            "txt": ""
+        }
+    }
+  },
+  7: {
+    //august 1 lammas 6 transfiguration 7 holy name 10 lawrence m 28 augustine b 29 beh john baptist
+  },
+  8: {
+    //september 1 giles a 7 enurchus b 8 nat bvm 14 roodmas 17 lambert b 26 cyprian abp 30 jerome
+  },
+  9: {
+    //october 1 remigius b 6 faith vm 9 denis b 13 trans k edw 17 etheldreda v 25 crispin m
+  },
+  10: {
+    //november 2 allsouls 6 leonard c 11 martin b 13 britius b 15 machutus b 17 hugh b 20 king edmund 22 cecilia vm 23 clement b 25 catherine vm
+  },
+  11: {
+    //december 6 nicholas b 8 conc bvm 13 lucy vm 16 o sapientia 31 silvester b
+  }
+}
