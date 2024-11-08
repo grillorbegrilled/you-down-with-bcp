@@ -438,7 +438,24 @@ laud and honor to the Spirit,<br>
 ever Three, and ever One,<br>
 consubstantial, coeternal,<br>
 while unending ages run.`],
-    "T24": [""],
+    "T24": [`Rock of ages, cleft for me,<br>
+Let me hide myself in Thee;<br>
+Let the water and the blood<br>
+From Thy side, a healing flood,<br>
+Be of sin the double cure,<br>
+Save from wrath, and make me pure.</p>
+        <p>Should my tears for ever flow,<br>
+Should my zeal no languor know,<br>
+All for sin could not atone,<br>
+Thou must save, and Thou alone;<br>
+In my hand no price I bring,<br>
+Simply to Thy cross I cling.</p>
+        <p>While I draw this fleeting breath,<br>
+When mine eyelids close in death,<br>
+When I rise to worlds unknown,<br>
+And behold thee on thy throne,<br>
+Rock of ages, cleft for me,<br>
+Let me hide myself in Thee.`],
     "SNBA": [""],
     "Andrew": [""],
     "Thomas": [""],
