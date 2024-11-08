@@ -33,8 +33,7 @@ function getOffice(now, week, feast) {
                         And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
                         I believe in the Holy Ghost: The holy Catholick Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>`;
                 getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
-                    const lessonText = "hello";
-                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${lessonText}</p>`;
+                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${lessonContent.txt}</p>`;
                 });
                 document.getElementById("office-collect").textContent = "O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings may be ordered by thy governance, to do always that is righteous in thy sight; through Jesus Christ our Lord. Amen.";
                 break;
@@ -54,8 +53,7 @@ function getOffice(now, week, feast) {
                  	  O God, make clean our hearts within us.<br>
                    	<b>And take not thy Holy Spirit from us.</b></p>`;
                 getLessonFromFile(feast || week, "./lessons/evening.json").then(lessonContent => {
-                    const lessonText = "hello";
-                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${lessonText}</p>`;
+                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${lessonContent.txt}</p>`;
                 });
                 document.getElementById("office-collect").textContent = "O GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
                 break;
@@ -205,7 +203,8 @@ async function getLessonFromFile(liturgicalDay, filePath) {
             throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        return data[liturgicalDay] || ""; // Return the actual value for the liturgicalDay or an empty string if not found
+        const lessonText = await handleBibleReference(data[liturgicalDay].cit)
+        return { "cit": data[liturgicalDay].cit, "txt": lessonText } || ""; // Return the actual value for the liturgicalDay or an empty string if not found
     } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
         return "";
