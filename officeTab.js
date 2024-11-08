@@ -32,6 +32,9 @@ function getOffice(now, week, feast) {
                     document.getElementById("creed-or-suffrages").innerHTML = ` <p>I BELIEVE in God the Father Almighty, Maker of heaven and earth : <br>
                         And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
                         I believe in the Holy Ghost: The holy Catholick Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>`;
+                getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
+                    document.getElementById('lesson').innerHTML = `<p>${lessonContent}</p>`;
+                });
                 document.getElementById("office-collect").textContent = "O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings may be ordered by thy governance, to do always that is righteous in thy sight; through Jesus Christ our Lord. Amen.";
                 break;
             case 2:
@@ -49,6 +52,9 @@ function getOffice(now, week, feast) {
                  	  <b>For it is thou, Lord, only, that makest us dwell in safety.</b><br>
                  	  O God, make clean our hearts within us.<br>
                    	<b>And take not thy Holy Spirit from us.</b></p>`;
+                getLessonFromFile(feast || week, "./lessons/evening.json").then(lessonContent => {
+                    document.getElementById('lesson').innerHTML = `<p>${lessonContent}</p>`;
+                });
                 document.getElementById("office-collect").textContent = "O GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
                 break;
             case 3:
@@ -188,6 +194,20 @@ function getEveningCanticle(isFeast) {
          He remembering his mercy hath holpen his servant Israel : as he promised to our forefathers, Abraham and his seed, for ever.</p>
         <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
         As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
+}
+
+async function getLessonFromFile(liturgicalDay, filePath) {
+    try {
+        const response = await fetch(filePath);
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        return data[liturgicalDay] || ""; // Return the actual value for the liturgicalDay or an empty string if not found
+    } catch (error) {
+        console.error("There was a problem with the fetch operation:", error);
+        return "";
+    }
 }
 
 const litany = `<H1>The Litany</H1>
