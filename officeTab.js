@@ -32,6 +32,7 @@ function getOffice(now, week, feast) {
                     document.getElementById("creed-or-suffrages").innerHTML = ` <p>I BELIEVE in God the Father Almighty, Maker of heaven and earth : <br>
                         And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
                         I believe in the Holy Ghost: The holy Catholick Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>`;
+                document.getElementById("office-collect").textContent = "O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings may be ordered by thy governance, to do always that is righteous in thy sight; through Jesus Christ our Lord. Amen.";
                 break;
             case 2:
                 document.getElementById("office-name").textContent = "Evening Prayer";
