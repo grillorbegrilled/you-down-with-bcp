@@ -3,7 +3,7 @@ function getEmberDayPrayer(lit, month, date, day) {
   
   if (isEmberDay(lit, month, date, day)) {
     result = "<h2>For the Ember Days.</h2><p>ALMIGHTY God, the giver of all good gifts, who of thy divine providence hast appointed divers Orders in thy Church; Give thy grace, we humbly beseech thee, to all those who are to be called to any office and administration in the same; and so replenish them with the truth of thy doctrine, and endue them with innocency of life, that they may faithfully serve before thee, to the glory of thy great Name, and the benefit of thy holy Church; through Jesus Christ our Lord. Amen.</p>";
-    switch month {
+    switch (month) {
       case 11: //december
         result += "<p>Grant, we most humbly beseech Thee, O heavenly Father, that with holy Simeon and Anna, and all Thy devout servants, who waited for the consolation of Israel, we may at this time  so serve Thee with fasting and prayer, that by the celebration of the advent and birth of our blessed Redeemer, we may with them be filled with true joy and consolation, through the same Jesus Christ our Lord. Amen. <i>—John Cosin</i></p>";
         break;
