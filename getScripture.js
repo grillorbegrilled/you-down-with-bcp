@@ -59,7 +59,7 @@ async function handleBibleReference(bibleReference) {
         const [firstBookChapter, firstVerse] = firstPart.split(':');
 
         const [book, chapter] = splitAtLastSpace(firstBookChapter);
-
+        if (!chapter) chapter = 1;
         const firstResult = await fetchBibleVerse(book, chapter, firstVerse);
         const secondResult = await fetchBibleVerse(book, chapter, secondPart);
 
