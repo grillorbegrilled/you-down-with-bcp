@@ -1,5 +1,5 @@
 function getLitany(lit, month, date, day) {
-    if (isEmberDay(lit, month, date, day) || //ember days
+    if (//isEmberDay(lit, month, date, day) || //ember days REMOVED and replaced by other.
        isRogationDay(lit, day) || //rogation days
        lit === "GF" || //good friday
        lit === "AW" && (day === 3 || day === 5) || //ash wednesday, friday thereafter
