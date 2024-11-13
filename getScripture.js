@@ -56,10 +56,14 @@ async function handleBibleReference(bibleReference) {
         result = `${firstResult} ${secondResult}`;
     } else if (bibleReference.includes(',')) {
         const [firstPart, secondPart] = bibleReference.split(',').map(part => part.trim());
-        const [firstBookChapter, firstVerse] = firstPart.split(':');
-
+        let [firstBookChapter, firstVerse] = firstPart.split(':');
         let [book, chapter] = splitAtLastSpace(firstBookChapter);
-        if (!chapter) chapter = 1;
+
+        if ((bibleReference.match(/:/g) || []).length === 0) {
+            firstVerse = chapter;
+            chapter = 1;
+        }
+        
         const firstResult = await fetchBibleVerse(book, chapter, firstVerse);
         const secondResult = await fetchBibleVerse(book, chapter, secondPart);
 
@@ -68,7 +72,12 @@ async function handleBibleReference(bibleReference) {
         // Zero or one colon
         const [bookChapter, verses] = bibleReference.split(':');
         let [book, chapter] = splitAtLastSpace(bookChapter);
-        if (!chapter) chapter = 1;
+        
+        if ((bibleReference.match(/:/g) || []).length === 0) {
+            firstVerse = chapter;
+            chapter = 1;
+        }
+        
         result = await fetchBibleVerse(book, chapter, verses);
     } else {
         // Two colons
