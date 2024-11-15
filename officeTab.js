@@ -86,8 +86,11 @@ function getOffice(now, week, feast) {
 
         //Ember Days
         additionalPrayers += getEmberDayPrayer(week, now.getMonth(), now.getDate(), day);
+
+        //Grace
+        additionalPrayers += "<p>THE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>";
         
-        if (additionalPrayers) document.getElementById("additional-prayers").innerHTML = additionalPrayers;
+        document.getElementById("additional-prayers").innerHTML = additionalPrayers;
     }
 }
 
