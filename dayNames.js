@@ -74,6 +74,8 @@ const dayNames = {
     "T22": "The Twenty-second Sunday After Trinity",
     "T23": "The Twenty-third Sunday After Trinity",
     "T24": "The Twenty-fourth Sunday After Trinity",
+    "T25": "The Twenty-fifth Sunday After Trinity",
+    "T26": "The Twenty-sixth Sunday After Trinity",
     "SNBA": "Stir-Up Sunday",
     "Andrew": "St. Andrew",
     "Thomas": "St. Thomas",
