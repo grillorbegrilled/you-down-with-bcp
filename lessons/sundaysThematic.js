@@ -1,5 +1,5 @@
 async function getLesson(liturgicalDay) {
-    var lessons = sundaysThematic[liturgicalDay];
+    var lessons = (liturgicalDay === "T25") ? sundaysThematic["E6"] : (liturgicalDay === "T26") ? sundaysThematic["E5"] : sundaysThematic[liturgicalDay];
 
     if (!lessons) lessons = redLetters[liturgicalDay];
     
