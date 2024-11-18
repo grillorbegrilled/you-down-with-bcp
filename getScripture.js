@@ -12,6 +12,7 @@ async function fetchBibleVerse(book, chapter, verses = "") {
                 verseEnd = 'end';
             } else {
                 verseStart = Number(verses);
+                verseEnd = verseStart;
             }
         }
 
