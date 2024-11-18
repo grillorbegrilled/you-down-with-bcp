@@ -1,5 +1,9 @@
 function getHymns(liturgicalDay) {
-    const items = hymns[liturgicalDay];
+    var day = liturgicalDay;
+    if (day === "T25") day = "E6";
+    else if (day === "T26") day = "E5";
+    
+    const items = hymns[day];
     var result = '';
     
     if (items) result = items.map(item => `<p>${item}</p>`).join("<p style='text-align: center;'>✠&#9;✠&#9;✠</p>");
