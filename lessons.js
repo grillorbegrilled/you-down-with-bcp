@@ -1,8 +1,5 @@
 async function getLesson(liturgicalDay) {
-    var lessons = "";
-    if (liturgicalDay === "T25") lessons = Lessons["E6"];
-    else if (liturgicalDay === "T26") lessons = Lessons["E5"];
-    else lessons = Lessons[liturgicalDay];
+    var lessons = (liturgicalDay === "T25") ? Lessons["E6"] : (liturgicalDay === "T26") ? Lessons["E5"] : Lessons[liturgicalDay];
     var promises = lessons.map(async lesson => {
         const content = await handleBibleReference(lesson);
         return `<h2>${lesson}</h2><p>${content}</p>`;
