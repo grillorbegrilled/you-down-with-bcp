@@ -212,7 +212,7 @@ async function getLessonFromFile(liturgicalDay, filePath) {
         const data = await response.json();
         if (day === "T25") day = "E6";
         else if (day === "T26") day = "E5";
-        const lessonText = await handleBibleReference(data[day].cit)
+        const lessonText = await handleBibleReference(data[day].cit);
         return { "cit": data[day].cit, "txt": lessonText } || ""; // Return the actual value for the liturgicalDay or an empty string if not found
     } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
