@@ -204,13 +204,16 @@ function getEveningCanticle(isFeast) {
 
 async function getLessonFromFile(liturgicalDay, filePath) {
     try {
+        var day = liturgicalDay;
         const response = await fetch(filePath);
         if (!response.ok) {
             throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        const lessonText = await handleBibleReference(data[liturgicalDay].cit)
-        return { "cit": data[liturgicalDay].cit, "txt": lessonText } || ""; // Return the actual value for the liturgicalDay or an empty string if not found
+        if (day === "T25") day = "E6";
+        else if (day === "T26") day = "E5";
+        const lessonText = await handleBibleReference(data[day].cit)
+        return { "cit": data[day].cit, "txt": lessonText } || ""; // Return the actual value for the liturgicalDay or an empty string if not found
     } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
         return "";
