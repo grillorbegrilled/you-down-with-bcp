@@ -253,11 +253,21 @@ function getWeek(now) {
             else return "ERROR";
         }
     }
+
+function getA4() {
+        for (let day = 17; day <= 24; day++) {
+            let date = new Date(year, 11, day);
+            if (date.getDay() === 0) {
+                return date;
+            }
+        }
+        return "NONE";
+}
     
-    const weeksTillXmas = weeksTill(xmas);
+    let weeksTillXmas = weeksTill(getA4());
     
     //Easter and the rest
-    if (now >= easter && weeksTillXmas > 5)
+    if (now >= easter && weeksTillXmas > 4)
     {
         const weeksSinceEaster = weeksSince(easter);
         
@@ -298,14 +308,14 @@ function getWeek(now) {
     }
     
     //Advent and Christmas
-    if (weeksTillXmas <= 5)
+    if (weeksTillXmas <= 4)
     {
-        if (weeksTillXmas > 4) return "SNBA";
-        else if (weeksTillXmas > 3) return "A1";
-        else if (weeksTillXmas > 2) return "A2";
-        else if (weeksTillXmas > 1) return "A3";
-        else if (weeksTillXmas > 0) return "A4";
-        else if (weeksTillXmas > -1) {
+        if (weeksTillXmas > 3) return "SNBA";
+        else if (weeksTillXmas > 2) return "A1";
+        else if (weeksTillXmas > 1) return "A2";
+        else if (weeksTillXmas > 0) return "A3";
+        else if (weeksTillXmas > -1) return "A4";
+        else {
             const xmasSun = getSundayAfterXmas();
             
             if (xmasSun === "NONE" || now < xmasSun) return "Xmas";
