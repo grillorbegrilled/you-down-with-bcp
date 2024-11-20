@@ -255,10 +255,10 @@ function getWeek(now) {
     }
 
 function getA4() {
-        for (let day = 17; day <= 24; day++) {
-            let date = new Date(year, 11, day);
-            if (date.getDay() === 0) {
-                return date;
+        for (let i = 17; i <= 24; i++) {
+            let foo = new Date(year, 11, i);
+            if (foo.getDay() === 0) {
+                return foo;
             }
         }
         return "NONE";
