@@ -321,7 +321,6 @@ function getA4() {
             if (xmasSun === "NONE" || now < xmasSun) return "Xmas";
             else return "X1";
         }
-        else return "I AM ERROR";
     }
 
     return "How did you get here, anyway?";
