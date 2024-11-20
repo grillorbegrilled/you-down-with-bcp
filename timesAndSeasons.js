@@ -298,10 +298,10 @@ function getA4() {
     }
     
     function getSundayAfterXmas() {
-        for (let day = 26; day <= 31; day++) {
-            let date = new Date(year, 11, day);
-            if (date.getDay() === 0) {
-                return date;
+        for (let i = 26; i <= 31; i++) {
+            let foo = new Date(year, 11, i);
+            if (foo.getDay() === 0) {
+                return foo;
             }
         }
         return "NONE";
