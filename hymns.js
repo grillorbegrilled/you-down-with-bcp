@@ -28,7 +28,37 @@ const hymns = {
     "E3": [""],
     "E4": [""],
     "E5": [""],
-    "E6": [""],
+    "E6": [`Great God, what do I see and hear?<br>
+The end of things created!<br>
+The Judge of all men doth appear,<br>
+on clouds of glory seated.<br>
+The trumpet sounds, the graves restore,<br>
+the dead which they contained before!<br>
+Prepare, my soul, to meet him.</p>
+<p>
+The dead in Christ shall first arise<br>
+at that last trumpet's sounding.<br>
+caught up to meet him in the skies,<br>
+with joy their Lord surrounding.<br>
+No gloomy fears their souls dismay,<br>
+his presence sheds eternal day<br>
+on those prepared to meet him.</p>
+<p>
+Th'ungodly, filled with guilty fears,<br>
+behold his wrath prevailing.<br>
+In woe they rise, but all their tears<br>
+and sighs are unavailing.<br>
+The day of grace is past and gone;<br>
+trembling they stand before his throne,<br>
+all unprepared to meet him.</p>
+<p>
+Great God, to thee my spirit clings,<br>
+thy boundless love declaring.<br>
+One wondrous sight my comfort brings,<br>
+the Judge my nature wearing.<br>
+Beneath his cross I view the day<br>
+when heaven and earth shall pass away,<br>
+and thus prepare to meet him.`],
     "LXX": [""],
     "LX": [""],
     "L": [""],
