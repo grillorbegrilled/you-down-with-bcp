@@ -493,7 +493,59 @@ And behold thee on thy throne,<br>
 Rock of ages, cleft for me,<br>
 Let me hide myself in Thee.`],
 
-    "SNBA": [""],
+    "SNBA": [`How bright appears the Morning Star,<br>
+with mercy beaming from afar;<br>
+the host of heaven rejoices;<br>
+O righteous Branch, O Jesse's Rod!<br>
+Thou Son of Man and Son of God!<br>
+We, too, will lift our voices:<br>
+Jesus, Jesus!<br>
+Holy, holy, yet most lowly, <br>
+draw thou near us;<br>
+great Emmanuel, come and hear us.</p>
+        <p>Though circled by the hosts on high,<br>
+he deigned to cast a pitying eye<br>
+upon his helpless creature;<br>
+the whole creation's Head and Lord,<br>
+by highest seraphim adored,<br>
+assumed our very nature;<br>
+Jesus, grant us,<br>
+through thy merit, to inherit<br>
+thy salvation;<br>
+hear, O hear our supplication.</p>
+        <p>Rejoice, ye heavens; thou earth, reply;<br>
+with praise, ye sinners, fill the sky,<br>
+for this his Incarnation.<br>
+Incarnate God, put forth thy pow'r,<br>
+ride on, ride on, great Conqueror,<br>
+till all know thy salvation.<br>
+Amen, amen!<br>
+Alleluia, alleluia!<br>
+Praise be given<br>
+evermore, by earth and heaven.`,
+            `Thy rule, O Christ begin!<br>
+Break with thine iron rod<br>
+the tyrannies of sin!</p>
+        <p>Where is thy reign of peace,<br>
+and purity and love?<br>
+When shall all hatred cease,<br>
+as in the realms above?</p>
+        <p>When comes the promised time<br>
+that war shall be no more,<br>
+oppression, lust, and crime<br>
+shall flee thy face before?</p>
+        <p>We pray thee, Lord, arise,<br>
+and come in thy great might;<br>
+revive our longing eyes,<br>
+which languish for thy sight.</p>
+        <p>Men scorn thy sacred Name,<br>
+and wolves devour thy fold;<br>
+by many deeds of shame<br>
+we learn that love grows cold.</p>
+        <p>O'er lands both near and far<br>
+thick darkness broodeth yet:<br>
+arise, O Morning Star,<br>
+arise, and never set!`],
     "Andrew": [""],
     "Thomas": [""],
     "Paul": [""],
