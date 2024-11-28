@@ -9,6 +9,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Blackletter';
+  src: url('Plain_Black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+
+
 body, html {
     margin: 0;
     padding: 0;
@@ -84,7 +93,7 @@ body, html {
 }
 
 h1 { 
-    font-family: 'UnifrakturMaguntia', Garamond, Georgia, serif;
+    font-family: 'Blackletter', Garamond, Georgia, serif;
     font-size: 2rem; 
     text-align: center;
     font-weight: normal;
