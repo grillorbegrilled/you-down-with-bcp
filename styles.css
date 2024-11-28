@@ -11,9 +11,9 @@
 
 @font-face {
   font-family: 'Blackletter';
-/*  src: url('Plain_Black-webfont.woff') format('woff');
-*/  src: url('rothenbg-webfont.woff') format('woff');
-  font-weight: normal;
+  src: url('Plain_Black-webfont.woff') format('woff');
+/*  src: url('rothenbg-webfont.woff') format('woff');
+*/  font-weight: normal;
   font-display: swap;
 }
 
@@ -95,7 +95,7 @@ body, html {
 
 h1 { 
     font-family: 'Blackletter', Garamond, Georgia, serif;
-    font-size: 2rem; 
+    font-size: 1.5rem; 
     text-align: center;
     font-weight: normal;
 }
