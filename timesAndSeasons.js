@@ -360,7 +360,7 @@ function getLiturgicalDate(now) {
         if (day === 28) return "SimonAndJude";
     } else if (month === 10) { //nov
         if (day === 1 || day > 1 && day <= 8 && now.getDay() !== 0) return "AllSaints";
-        if (day >= 22 && day <= 28 && now.getDay() >= 4 || day === 29 && now.getDay() === 5) return "Thanksgiving";
+        if (day >= 22 && day <= 28 && now.getDay() >= 4 || day === 29 && now.getDay() === 5) return "ThanksgivingDay";
         if (day === 30) return "Andrew";
     } else { //dec
         if (day === 21) return "Thomas";
