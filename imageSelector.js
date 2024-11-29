@@ -2,7 +2,7 @@ function getTopImage(lit, month, date) {
   if (lit === "AllSaints") return "images/bg/All-saints-day.jpg";
 
   return "images/bg/harvest.png";
-    /*switch (lit) {
+    switch (lit) {
         case "A1":
         case "A2":
         case "A3":
@@ -11,9 +11,9 @@ function getTopImage(lit, month, date) {
         case "LXX":
         case "LX":
         case "L":
-            return "midnite";
+            return "images/bg/IMG_3000.JPG";
             break;
-        case "Xmas":
+        /*case "Xmas":
         case "Stephen":
         case "JohnEvangelist":
         case "Innocents":
