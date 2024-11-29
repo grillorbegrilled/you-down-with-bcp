@@ -1,7 +1,7 @@
 function getTopImage(lit, month, date) {
   if (lit === "AllSaints") return "images/bg/All-saints-day.jpg";
 
-  return "images/bg/harvest.png";
+  
     switch (lit) {
         case "A1":
         case "A2":
@@ -117,8 +117,8 @@ function getTopImage(lit, month, date) {
                 return "olive";
             else
                 return "olive";
-            break;
+            break;*/
         default:
-            return "olive";
-    }*/
+            return "images/bg/harvest.png";
+    }
 }
