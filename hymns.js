@@ -517,7 +517,7 @@ the promised day of God.`],
 of our life's wild, restless sea,<br>
 day by day his clear voice soundeth,<br>
 saying, "Christian, follow me;"</p>
-        <p>as, of old, Saint Andrew heart it<br>
+        <p>as, of old, Saint Andrew heard it<br>
 by the Galilean lake,<br>
 turned from home and toil and kindred,<br>
 leaving all for his dear sake.</p>
