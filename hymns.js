@@ -513,7 +513,26 @@ and every heart be healed;</p>
 shall walk the earth abroad;<br>
 the day of perfect righteousness,<br>
 the promised day of God.`],
-    "Andrew": [""],
+    "Andrew": [`Jesus calls us; o'er the tumult<br>
+of our life's wild, restless sea,<br>
+day by day his clear voice soundeth,<br>
+saying, "Christian, follow me;"</p>
+        <p>as, of old, Saint Andrew heart it<br>
+by the Galilean lake,<br>
+turned from home and toil and kindred,<br>
+leaving all for his dear sake.</p>
+        <p>Jesus calls us from the worship<br>
+of the vain world's golden store;<br>
+from each idol that would keep us,<br>
+saying, "Christian, love me more."</p>
+        <p>In our joys and in our sorrows,<br>
+days of toil and hours of ease,<br>
+still he calls, in cares and pleasures,<br>
+"Christian, love me more than these."</p>
+        <p>Jesus calls us!  By thy mercies,<br>
+Savior, may we hear thy call,<br>
+give our hearts to thine obedience,<br>
+serve and love thee best of all.`],
     "Thomas": [""],
     "Paul": [""],
     "Candlemas": [""],
