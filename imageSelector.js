@@ -60,9 +60,11 @@ function getTopImage(lit, month, date) {
             break;
         case "Whitsun":
         case "Whitmon":
-        case "WhitTue":
+        case "WhitTue":*/
         case "Andrew":
-        case "Thomas":
+            return "images/bg/andy.png";
+            break;
+        /*case "Thomas":
         case "Paul":
         case "Matthias":
         case "Mark":
