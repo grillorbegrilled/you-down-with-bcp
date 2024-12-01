@@ -22,7 +22,7 @@ function displayEventDetails() {
     document.getElementById('euchMarg').src = getEuchMargin(now, liturgicalDay);
 
     const element = document.getElementById('top-image');
-element.style.backgroundImage = `url("${getTopImage(liturgicalDay, now.getMonth(), now.getDate())}")`;
+element.style.background = `url("${getTopImage(liturgicalDay, now.getMonth(), now.getDate())}"), #000000`;
 element.style.backgroundRepeat = 'no-repeat';
 element.style.backgroundPosition = 'top center';
     const hymns = getHymns(liturgicalDay);
