@@ -19,7 +19,7 @@ function displayEventDetails() {
 
     if (isFast(now)) document.getElementById('fastDayLabel').textContent = "FAST.";
 
-    document.getElementById('bookmark').src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, now.getMonth(), now.getDate()) + ".gif";
+    for (let e of document.getElementsByName('bookmark')) e.src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, now.getMonth(), now.getDate()) + ".gif";
     document.getElementById('euchMarg').src = getEuchMargin(now, liturgicalDay);
 
     const element = document.getElementById('top-image');
@@ -35,7 +35,7 @@ element.style.backgroundPosition = 'top center';
     getOffice(now, week, feast);
 
     getLesson(liturgicalDay).then(lessonContent => {
-        document.getElementById('tab-3').innerHTML = lessonContent;
+        document.getElementById('readings').innerHTML = lessonContent;
     });
 
     document.getElementById('tab-4').innerHTML = getIntercessions();
