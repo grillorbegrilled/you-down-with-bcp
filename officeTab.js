@@ -108,8 +108,8 @@ function getMorningCanticle(week, feast) {
         To give knowledge of salvation unto his people : for the remission of their sins,<br>
         Through the tender mercy of our God : whereby the day-spring from on high hath visited us;<br>
         To give light to them that sit in darkness, and in the shadow of death : and to guide our feet into the way of peace.</p>
-        <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
-        As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
+        <p>Glory be.</p>`;// to the Father, and to the Son : and to the Holy Ghost;<br>
+        //As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
     
     //Pascha Nostrum
     if (['Easter', 'EasterMon', 'EasterTue'].includes(week)) return `<p>CHRIST our passover is sacrificed for us : therefore let us keep the feast;<br>
@@ -120,8 +120,8 @@ function getMorningCanticle(week, feast) {
         <p>Christ is risen from the dead : and become the first-fruits of them that slept.<br>
           For since by man came death : by man came also the resurrection of the dead.<br>
           For as in Adam all die : even so in Christ shall all be made alive. <i>1 Cor. 15:20-22</i></p>
-        <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
-          As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
+        <p>Glory be.</p>`;// to the Father, and to the Son : and to the Holy Ghost;<br>
+        //As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
     
     //Benedictus Es
     if (['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week)) return `<p>BLESSED art thou, O Lord God of our fathers : praised and exalted above all for ever.<br>
@@ -129,7 +129,9 @@ function getMorningCanticle(week, feast) {
         Blessed art thou in the temple of thy holiness : Praised and exalted above all for ever.<br>
         Blessed art thou that beholdest the depths, and dwellest between the Cherubim : praised and exalted above all for ever.<br>
         Blessed art thou on the glorious throne of thy Kingdom : praised and exalted above all for ever.<br>
-        Blessed art thou in the firmament of heaven : praised and exalted above all for ever.</p>`;
+        Blessed art thou in the firmament of heaven : praised and exalted above all for ever.</p>
+        <p>Glory be.</p>`;// to the Father, and to the Son : and to the Holy Ghost;<br>
+        //As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
 
     //Te Deum
     if (['Xmas', 'X1', 'Whitsun', 'Whitmon', 'WhitTue'].includes(week)) return `<p>WE praise thee, O God : we acknowledge thee to be the Lord.<br>
@@ -172,16 +174,16 @@ function getMorningCanticle(week, feast) {
         Praise the Lord, O Jerusalem : praise thy God, O Sion.<br>
         For he hath made fast the bars of thy gates : and hath blessed thy children within thee.<br>
         He maketh peace in thy borders : and filleth thee with the flour of wheat.</p>
-        <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
-        As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
+        <p>Glory be.</p>`;// to the Father, and to the Son : and to the Holy Ghost;<br>
+        //As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
     
     //Psalm 100;
     return `<p>O BE joyful in the Lord, all ye lands : serve the Lord with gladness, and come before his presence with a song.<br>
         Be ye sure that the Lord he is God; it is he that hath made us, and not we ourselves : we are his people, and the sheep of his pasture.<br>
         O go your way into his gates with thanksgiving, and into his courts with praise : be thankful unto him, and speak good of his Name.<br>
         For the Lord is gracious, his mercy is everlasting : and his truth endureth from generation to generation.</p>
-        <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
-        As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
+        <p>Glory be.</p>`;// to the Father, and to the Son : and to the Holy Ghost;<br>
+        //As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
 }
 
 function getEveningCanticle(isFeast) {
@@ -198,8 +200,8 @@ function getEveningCanticle(isFeast) {
          He hath put down the mighty from their seat : and hath exalted the humble and meek.<br>
          He hath filled the hungry with good things : and the rich he hath sent empty away.<br>
          He remembering his mercy hath holpen his servant Israel : as he promised to our forefathers, Abraham and his seed, for ever.</p>
-        <p>Glory be to the Father, and to the Son : and to the Holy Ghost;<br>
-        As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
+        <p>Glory be.</p>`;// to the Father, and to the Son : and to the Holy Ghost;<br>
+        //As it was in the beginning, is now, and ever shall be : world without end. Amen.</p>`;
 }
 
 async function getLessonFromFile(liturgicalDay, filePath) {
