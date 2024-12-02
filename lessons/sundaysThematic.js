@@ -17,8 +17,8 @@ async function getLesson(liturgicalDay) {
 
 const sundaysThematic = {
 "A1":[
-"Malachi 3:1–6 & 4:4–6", "Luke 1:5–25",
-"*Isaiah 28:14–22", "Hebrews 12:14ff",
+"Malachi 3:1-6 & 4:4-6", "Luke 1:5-25",
+"*Isaiah 28:14-22", "Hebrews 12:14ff",
 "Isaiah 62", "Matthew 25:1-13",
 "Isaiah 13:6-13", "1 Thessalonians 5:1-11"
 ],
