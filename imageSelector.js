@@ -11,7 +11,7 @@ function getTopImage(lit, month, date) {
         case "LXX":
         case "LX":
         case "L":
-            return "images/bg/IMG_3000.JPG";
+            return "images/bg/Bruton.jpg";//IMG_3000.JPG";
             break;
         /*case "Xmas":
         case "Stephen":
