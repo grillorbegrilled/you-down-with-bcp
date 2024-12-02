@@ -36,7 +36,8 @@ element.style.backgroundPosition = 'top center';
     getLesson(liturgicalDay).then(lessonContent => {
         document.getElementById('tab-3').innerHTML = lessonContent;
     });
-        
+
+    document.getElementById('tab-4').innerHTML = getIntercessions();
 }
 
 async function getProper2(liturgicalDay) {
