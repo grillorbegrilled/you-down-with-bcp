@@ -57,7 +57,7 @@ async function handleBibleReference(bibleReference) {
         const firstResult = await fetchBibleVerse(book, firstChapter, firstVerse);
 
         let secondResult = "";
-        if (secondPart.includes(':') {
+        if (secondPart.includes(':')) {
             let [secondChapter, secondVerses] = secondPart.split(':');
             secondResult = await fetchBibleVerse(book, secondChapter, secondVerses);
         }
