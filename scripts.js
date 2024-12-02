@@ -8,12 +8,13 @@ function displayEventDetails() {
     getProper2(liturgicalDay).then(details => {
         const collect = synthCollects(details.c, week);
         document.getElementById('nameOfTheDay').textContent = `${getDayName(liturgicalDay)}`;
-        if (collect.includes("</p><p>")) document.getElementById('c_h').textContent = "The Collects";
-        document.getElementById('c').innerHTML = collect;
-        document.getElementById('e_cit').textContent = `${details.e.cit}`;
-        document.getElementById('e_txt').innerHTML = makeP(makeDropCap(details.e.txt));
-        document.getElementById('g_cit').textContent = `${details.g.cit}`;
-        document.getElementById('g_txt').innerHTML = makeP(makeDropCap(details.g.txt));
+        
+        if (collect.includes("</p><p>")) for (let e of document.getElementsByClassName('c_h')) e.textContent = 'The Collects';
+        for (let e of document.getElementsByClassName('c')) e.innerHTML = collect;
+        for (let e of document.getElementsByClassName('e_cit')) e.textContent = `${details.e.cit}`;
+        for (let e of document.getElementsByClassName('e_txt')) e.innerHTML = makeP(makeDropCap(details.e.txt));
+        for (let e of document.getElementsByClassName('g_cit')) e.textContent = `${details.g.cit}`;
+        for (let e of document.getElementsByClassName('g_txt')) e.innerHTML = makeP(makeDropCap(details.g.txt));
     });
 
     if (isFast(now)) document.getElementById('fastDayLabel').textContent = "FAST.";
