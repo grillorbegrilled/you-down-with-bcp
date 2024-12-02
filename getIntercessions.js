@@ -1,5 +1,6 @@
 function getIntercessions() {
-    return `<p>OUR Father.</p>
+    return `<h1>Intercessions</h1>
+    <p>OUR Father.</p>
     <p>ALMIGHTY God, whose kingdom is everlasting and power infinite; Have mercy upon this whole land; and so rule the hearts of thy servants the Pʀᴇsɪᴅᴇɴᴛ ᴏꜰ ᴛʜᴇ Uɴɪᴛᴇᴅ Sᴛᴀᴛᴇs, The Governor of this State, and all others in authority, that they, knowing whose ministers they are, may above all things seek thy honour and glory; and that we and all the People, duly considering whose authority they bear, may faithfully and obediently honour them, according to thy blessed Word and ordinance; through Jesus Christ our Lord, who with thee and the Holy Ghost liveth and reigneth ever, one God, world without end. Amen.</p>
     <p>ALMIGHTY and everlasting God, from whom cometh every good and perfect gift; Send down upon our Bishops, and other Clergy, and upon the Congregations committed to their charge, the healthful Spirit of thy grace; and, that they may truly please thee, pour upon them the continual dew of thy blessing. Grant this, O Lord, for the honour of our Advocate and Mediator, Jesus Christ. Amen.</p>
     <p>BLESS thy servant <i>N.</i> with health of body and of spirit. Let the hand of thy blessing be upon her head night and day, and support her in all necessities, strengthen her in all temptations, comfort her in all sorrows, and let her be thy servant in all changes; and make us both to dwell with thee for ever in thy favour, in the light of thy countenance, and in thy glory. Amen.<i>⸺Jeremy Taylor</i></p>
