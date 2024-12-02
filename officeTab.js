@@ -29,13 +29,13 @@ function getOffice(now, week, feast) {
                 let canticle = getMorningCanticle(week, feast);
                 document.getElementById("canticle").innerHTML = canticle;
                 if (!canticle.startsWith("WE"))
-                    document.getElementById("creed-or-suffrages").innerHTML = ` <p>I BELIEVE in God the Father Almighty, Maker of heaven and earth : <br>
-                        And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
-                        I believe in the Holy Ghost: The holy Catholick Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>`;
+                    document.getElementById("creed-or-suffrages").innerHTML = "<p>I BELIEVE in God.</p>"; //` <p>I BELIEVE in God the Father Almighty, Maker of heaven and earth : <br>
+                        //And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
+                        //I believe in the Holy Ghost: The holy Catholick Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>`;
                 getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
                     document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${lessonContent.txt}</p>`;
                 });
-                document.getElementById("office-collect").textContent = "O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings may be ordered by thy governance, to do always that is righteous in thy sight; through Jesus Christ our Lord. Amen.";
+                document.getElementById("office-collect").textContent = "O LORD, our heavenly Father."; //"O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings may be ordered by thy governance, to do always that is righteous in thy sight; through Jesus Christ our Lord. Amen.";
                 break;
             case 2:
                 document.getElementById("office-name").textContent = "Evening Prayer";
@@ -55,11 +55,11 @@ function getOffice(now, week, feast) {
                 getLessonFromFile(feast || week, "./lessons/evening.json").then(lessonContent => {
                     document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${lessonContent.txt}</p>`;
                 });
-                document.getElementById("office-collect").textContent = "O GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
+                document.getElementById("office-collect").textContent = "O GOD, from whom all holy desires."; //"O GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
                 break;
             case 3:
                 document.getElementById("office-name").textContent = "Night Prayer";
-                document.getElementById("lp").textContent = "ALMIGHTY and most merciful Father; We have erred, and strayed from thy ways like lost sheep. We have followed too much the devices and desires of our own hearts. We have offended against thy holy laws. We have left undone those things which we ought to have done; And we have done those things which we ought not to have done; And there is no health in us. But thou, O Lord, have mercy upon us, miserable offenders. Spare thou them, O God, who confess their faults. Restore thou them that are penitent; According to thy promises declared unto mankind in Christ Jesu our Lord. And grant, O most merciful Father, for his sake; That we may hereafter live a godly, righteous, and sober life, To the glory of thy holy Name. Amen.";
+                document.getElementById("lp").textContent = "ALMIGHTY and most merciful Father.";//"ALMIGHTY and most merciful Father; We have erred, and strayed from thy ways like lost sheep. We have followed too much the devices and desires of our own hearts. We have offended against thy holy laws. We have left undone those things which we ought to have done; And we have done those things which we ought not to have done; And there is no health in us. But thou, O Lord, have mercy upon us, miserable offenders. Spare thou them, O God, who confess their faults. Restore thou them that are penitent; According to thy promises declared unto mankind in Christ Jesu our Lord. And grant, O most merciful Father, for his sake; That we may hereafter live a godly, righteous, and sober life, To the glory of thy holy Name. Amen.";
                 document.getElementById("canticle").innerHTML = `<p>LORD, now lettest thou thy servant depart in peace : according to thy word.<br>
                     For mine eyes have seen : thy salvation,<br>
                     Which thou hast prepared : before the face of all people;<br>
@@ -75,7 +75,7 @@ function getOffice(now, week, feast) {
     
         //All Conditions
         var additionalPrayers = "";
-        if (day === 3 || day === 5) //All Conditions on W & F
+        if ((day === 3 || day === 5) && officeType == 1) //All Conditions on W & F Morning
             additionalPrayers = `<h2>A Prayer for All Conditions of Men</h2>
                 <p>O GOD, the Creator and Preserver of all mankind, we humbly beseech thee for all sorts and conditions of men: that thou wouldest be pleased to make thy ways known unto them, thy saving health unto all nations. More especially, we pray for the good estate of the Catholick Church; that it may be so guided and governed by thy good Spirit, that all who profess and call themselves Christians may be led into the way of truth, and hold the faith in unity of spirit, in the bond of peace, and in righteousness of life. Finally, we commend to thy fatherly goodness all those, who are any ways afflicted, or distressed, in mind, body, or estate; <i>[especially ________,]</i> that it may please thee to comfort and relieve them, according to their several necessities, giving them patience under their sufferings, and a happy issue out of all their afflictions. And this we beg for Jesus Christ his sake. Amen.</p>`;
         
