@@ -51,9 +51,18 @@ async function handleBibleReference(bibleReference) {
     if (bibleReference.includes('&')) {
         // Handle ampersand
         const [firstPart, secondPart] = bibleReference.split('&').map(part => part.trim());
-        const book = splitAtLastSpace(firstPart)[0];
-        const firstResult = await fetchBibleVerse(book, splitAtLastSpace(firstPart)[1]);
-        const secondResult = await fetchBibleVerse(book, secondPart);
+        let [firstBookChapter, firstVerse] = firstPart.split(':');
+        let [book, firstChapter] = splitAtLastSpace(firstBookChapter);
+        
+        const firstResult = await fetchBibleVerse(book, firstChapter, firstVerse);
+
+        let secondResult = "";
+        if (secondPart.includes(':') {
+            let [secondChapter, secondVerses] = secondPart.split(':');
+            secondResult = await fetchBibleVerse(book, secondChapter, secondVerses);
+        }
+        else secondResult = await fetchBibleVerse(book, secondPart);
+        
         result = `${firstResult} ${secondResult}`;
     } else if (bibleReference.includes(',')) {
         const [firstPart, secondPart] = bibleReference.split(',').map(part => part.trim());
