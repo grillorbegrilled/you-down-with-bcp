@@ -29,17 +29,13 @@ function getOffice(now, week, feast) {
                 let canticle = getMorningCanticle(week, feast);
                 document.getElementById("canticle").innerHTML = canticle;
                 if (!canticle.startsWith(`<span class="drop-cap">W</span>E`))
-                    document.getElementById("creed-or-suffrages").innerHTML = "<p><span class="drop-cap">I</span> BELIEVE in God the Father Almighty, Maker of heaven and earth: <br>
+                    document.getElementById("creed-or-suffrages").innerHTML = "<p><span class='drop-cap'>I</span> BELIEVE in God the Father Almighty, Maker of heaven and earth: <br>
                         And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
-                        I believe in the Holy Ghost: The holy Catholic Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>
-                        <p><span class="drop-cap">O</span> LORD, show thy mercy upon us.<br>
-                     	<b>And grant us thy salvation.</b><br>
-                     	O God, make clean our hearts within us.<br>
-                     	<b>And take not thy Holy Spirit from us.</b></p>`;
+                        I believe in the Holy Ghost: The holy Catholic Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>`;
                 getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
                     document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
                 });
-                document.getElementById("office-collect").textContent = "<span class="drop-cap">O</span> LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.";
+                document.getElementById("office-collect").textContent = "<span class='drop-cap'>O</span> LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.";
                 break;
             case 2:
                 document.getElementById("office-name").textContent = "Evening Prayer";
@@ -59,18 +55,18 @@ function getOffice(now, week, feast) {
                 getLessonFromFile(feast || week, "./lessons/evening.json").then(lessonContent => {
                     document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
                 });
-                document.getElementById("office-collect").textContent = "<span class="drop-cap">O</span> GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
+                document.getElementById("office-collect").textContent = "<span class='drop-cap'>O</span> GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
                 break;
             case 3:
                 document.getElementById("office-name").textContent = "Night Prayer";
-                document.getElementById("lp").textContent = "<span class="drop-cap">A</span>LMIGHTY and most merciful Father; We have erred, and strayed from thy ways like lost sheep. We have followed too much the devices and desires of our own hearts. We have offended against thy holy laws. We have left undone those things which we ought to have done; And we have done those things which we ought not to have done; And there is no health in us. But thou, O Lord, have mercy upon us, miserable offenders. Spare thou them, O God, who confess their faults. Restore thou them that are penitent; According to thy promises declared unto mankind in Christ Jesu our Lord. And grant, O most merciful Father, for his sake; That we may hereafter live a godly, righteous, and sober life, To the glory of thy holy Name. Amen.";
-                document.getElementById("canticle").innerHTML = `<p><span class="drop-cap">L</span>ORD, now lettest thou thy servant depart in peace * according to thy word.<br>
+                document.getElementById("lp").textContent = "<span class='drop-cap'>A</span>LMIGHTY and most merciful Father; We have erred, and strayed from thy ways like lost sheep. We have followed too much the devices and desires of our own hearts. We have offended against thy holy laws. We have left undone those things which we ought to have done; And we have done those things which we ought not to have done; And there is no health in us. But thou, O Lord, have mercy upon us, miserable offenders. Spare thou them, O God, who confess their faults. Restore thou them that are penitent; According to thy promises declared unto mankind in Christ Jesu our Lord. And grant, O most merciful Father, for his sake; That we may hereafter live a godly, righteous, and sober life, To the glory of thy holy Name. Amen.";
+                document.getElementById("canticle").innerHTML = `<p><span class='drop-cap'>L</span>ORD, now lettest thou thy servant depart in peace * according to thy word.<br>
                     For mine eyes have seen * thy salvation,<br>
                     Which thou hast prepared * before the face of all people;<br>
                     To be a light to lighten the Gentiles * and to be the glory of thy people Israel.</p>
                     <p>Glory be to the Father, and to the Son * and to the Holy Ghost;<br>
                     As it was in the beginning, is now, and ever shall be * world without end. Amen.</p>`;
-                document.getElementById("office-collect").textContent = "<span class="drop-cap">L</span>IGHTEN our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.";
+                document.getElementById("office-collect").textContent = "<span class='drop-cap'>L</span>IGHTEN our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.";
                 break;
             default:
                 document.getElementById("office-name").textContent = "Error";
@@ -92,7 +88,7 @@ function getOffice(now, week, feast) {
         additionalPrayers += getEmberDayPrayer(week, now.getMonth(), now.getDate(), day);
 
         //Grace
-        additionalPrayers += "<p><span class="drop-cap">T</span>HE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>";
+        additionalPrayers += "<p><span class='drop-cap'>T</span>HE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>";
         
         document.getElementById("additional-prayers").innerHTML = additionalPrayers;
     }
