@@ -29,7 +29,7 @@ function getOffice(now, week, feast) {
                 let canticle = getMorningCanticle(week, feast);
                 document.getElementById("canticle").innerHTML = canticle;
                 if (!canticle.startsWith("WE"))
-                    document.getElementById("creed-or-suffrages").innerHTML = "<p>I BELIEVE in God the Father Almighty, Maker of heaven and earth * <br>
+                    document.getElementById("creed-or-suffrages").innerHTML = "<p>I BELIEVE in God the Father Almighty, Maker of heaven and earth: <br>
                         And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
                         I believe in the Holy Ghost: The holy Catholic Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>
                         <p>O LORD, show thy mercy upon us.<br>
@@ -100,30 +100,30 @@ function getOffice(now, week, feast) {
 
 function getMorningCanticle(week, feast) {
     //Benedictus Dominus
-    if (['A1', 'A2', 'A3', 'A4'].includes(week) || feast === "JohnBaptist") return `<p>BLESSED be the Lord God of Israel * for he hath visited and redeemed his people;<br>
-        And hath raised up a mighty salvation for us * in the house of his servant David;<br>
-        As he spake by the mouth of his holy Prophets * which have been since the world began;<br>
-        That we should be saved from our enemies * and from the hand of all that hate us.<br>
-        To perform the mercy promised to our forefathers * and to remember his holy Covenant;<br>
-        To perform the oath which he sware to our forefather Abraham * that he would give us;<br>
+    if (['A1', 'A2', 'A3', 'A4'].includes(week) || feast === "JohnBaptist") return `<p>BLESSED be the Lord God of Israel; * for he hath visited and redeemed his people;<br>
+        And hath raised up a mighty salvation for us, * in the house of his servant David;<br>
+        As he spake by the mouth of his holy Prophets, * which have been since the world began;<br>
+        That we should be saved from our enemies, * and from the hand of all that hate us.<br>
+        To perform the mercy promised to our forefathers, * and to remember his holy covenant;<br>
+        To perform the oath which he sware to our forefather Abraham, * that he would give us;<br>
         That we being delivered out of the hand of our enemies * might serve him without fear;<br>
-        In holiness and righteousness before him * all the days of our life.<br>
-        And thou, Child, shalt be called the Prophet of the Highest * for thou shalt go before the face of the Lord to prepare his ways;<br>
+        In holiness and righteousness before him, * all the days of our life.<br>
+        And thou, child, shalt be called the prophet of the Highest: * for thou shalt go. before the face of the Lord to prepare his ways;<br>
         To give knowledge of salvation unto his people * for the remission of their sins,<br>
-        Through the tender mercy of our God * whereby the day-spring from on high hath visited us;<br>
-        To give light to them that sit in darkness, and in the shadow of death * and to guide our feet into the way of peace.</p>
+        Through the tender mercy of our God; * whereby the day-spring from on high hath visited us;<br>
+        To give light to them that sit in darkness, and in the shadow of death, * and to guide our feet into the way of peace.</p>
         <p>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>
         As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
     
     //Pascha Nostrum
-    if (['Easter', 'EasterMon', 'EasterTue'].includes(week)) return `<p>CHRIST our passover is sacrificed for us * therefore let us keep the feast;<br>
-          Not with the old leaven, nor with the leaven of malice and wickedness * but with the unleavened bread of sincerity and truth. <i>1 Cor. 5:7, 8</i></p>
-        <p>Christ being raised from the dead dieth no more * death hath no more dominion over him.<br>
-          For in that he died, he died unto sin once * but in that he liveth, he liveth unto God.<br>
-          Likewise reckon ye also yourselves to be dead indeed unto sin * but alive unto God through Jesus Christ our Lord. <i>Rom. 6:9-11</i></p>
-        <p>Christ is risen from the dead * and become the first-fruits of them that slept.<br>
-          For since by man came death * by man came also the resurrection of the dead.<br>
-          For as in Adam all die * even so in Christ shall all be made alive. <i>1 Cor. 15:20-22</i></p>
+    if (['Easter', 'EasterMon', 'EasterTue'].includes(week)) return `<p>CHRIST our passover is sacrificed for us, * therefore let us keep the feast;<br>
+          Not with the old leaven, nor with the leaven of malice and wickedness, * but with the unleavened bread of sincerity and truth. <i>1 Cor. 5:7, 8</i></p>
+        <p>Christ being raised from the dead dieth no more, * death hath no more dominion over him.<br>
+          For in that he died, he died unto sin once, * but in that he liveth, he liveth unto God.<br>
+          Likewise reckon ye also yourselves to be dead indeed unto sin, * but alive unto God through Jesus Christ our Lord. <i>Rom. 6:9-11</i></p>
+        <p>Christ is risen from the dead, * and become the first-fruits of them that slept.<br>
+          For since by man came death, * by man came also the resurrection of the dead.<br>
+          For as in Adam all die, * even so in Christ shall all be made alive. <i>1 Cor. 15:20-22</i></p>
         <p>Glory be to the Father, and to the Son * and to the Holy Ghost;<br>
         As it was in the beginning, is now, and ever shall be * world without end. Amen.</p>`;
     
@@ -138,74 +138,74 @@ function getMorningCanticle(week, feast) {
         As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
 
     //Te Deum
-    if (['Xmas', 'X1', 'Whitsun', 'Whitmon', 'WhitTue'].includes(week)) return `<p>WE praise thee, O God * we acknowledge thee to be the Lord.<br>
-        All the earth doth worship thee * the Father everlasting.<br>
-        To thee all Angels cry aloud * the Heavens, and all the Powers therein.<br>
-        To thee Cherubin and Seraphin * continually do cry,<br>
-        Holy, Holy, Holy * Lord God of Sabaoth;<br>
-        Heaven and earth are full of the Majesty * of thy glory.<br>
-        The glorious company of the Apostles * praise thee.<br>
-        The goodly fellowship of the Prophets * praise thee.<br>
-        The noble army of Martyrs * praise thee.<br>
-        The holy Church throughout all the world * doth acknowledge thee;<br>
-        The Father * of an infinite Majesty;<br>
-        Thine honourable, true * and only Son;<br>
-        Also the Holy Ghost * the Comforter.<br>
-        Thou art the King of Glory * O Christ.<br>
-        Thou art the everlasting Son * of the Father.<br>
-        When thou tookest upon thee to deliver man * thou didst not abhor the Virgin's womb.<br>
-        When thou hadst overcome the sharpness of death * thou didst open the Kingdom of Heaven to all believers.<br>
-        Thou sittest at the right hand of God * in the glory of the Father.<br>
-        We believe that thou shalt come * to be our Judge.<br>
-        We therefore pray thee, help thy servants * whom thou hast redeemed with thy precious blood.<br>
-        Make them to be numbered with thy Saints * in glory everlasting.<br>
-        O Lord, save thy people * and bless thine heritage.<br>
-        Govern them * and lift them up for ever.<br>
-        Day by day * we magnify thee;<br>
-        And we worship thy Name * ever world without end.<br>
-        Vouchsafe, O Lord * to keep us this day without sin.<br>
-        O Lord, have mercy upon us * have mercy upon us.<br>
-        O Lord, let thy mercy lighten upon us * as our trust is in thee.<br>
-        O Lord, in thee have I trusted * let me never be confounded.</p>`;
+    if (['Xmas', 'X1', 'Whitsun', 'Whitmon', 'WhitTue'].includes(week)) return `<p>WE praise thee, O God; we acknowledge thee to be the Lord.<br>
+        All the earth doth worship thee, the Father everlasting.<br>
+        To thee all Angels cry aloud; the Heavens, and all the Powers therein;<br>
+        To thee Cherubim and Seraphim continually do cry,<br>
+        Holy, Holy, Holy, Lord God of Sabaoth;<br>
+        Heaven and earth are full of the Majesty of thy glory.<br>
+        The glorious company of the Apostles praise thee.<br>
+        The goodly fellowship of the Prophets praise thee.<br>
+        The noble army of Martyrs praise thee.<br>
+        The holy Church throughout all the world doth acknowledge thee;<br>
+        The Father of an infinite Majesty;<br>
+        Thine adorable, true and only Son;<br>
+        Also the Holy Ghost the Comforter.</p>
+        <p>THOU art the King of Glory, O Christ.<br>
+        Thou art the everlasting Son of the Father.<br>
+        When thou tookest upon thee to deliver man, thou didst not abhor the Virgin's womb.<br>
+        When thou hadst overcome the sharpness of death, thou didst open the Kingdom of Heaven to all believers.<br>
+        Thou sittest at the right hand of God, in the glory of the Father.<br>
+        We believe that thou shalt come to be our Judge.<br>
+        We therefore pray thee, help thy servants, whom thou hast redeemed with thy precious blood.<br>
+        Make them to be numbered with thy Saints, in glory everlasting.</p>
+        <p>O LORD, save thy people, and bless thine heritage.<br>
+        Govern them and lift them up for ever.<br>
+        Day by day we magnify thee;<br>
+        And we worship thy Name ever, world without end.<br>
+        Vouchsafe, O Lord, to keep us this day without sin.<br>
+        O Lord, have mercy upon us, have mercy upon us.<br>
+        O Lord, let thy mercy be upon us, as our trust is in thee.<br>
+        O Lord, in thee have I trusted; let me never be confounded.</p>`;
 
     //Thanksgiving
-    if (feast === "Thanksgiving") return `<p>O PRAISE the Lord, for it is a good thing to sing praises unto our God * yea, a joyful and pleasant thing it is to be thankful.<br>
-        The Lord doth build up Jerusalem * and gather together the outcasts of Israel.<br>
-        He healeth those that are broken in heart * and giveth medicine to heal their sickness.<br>
-        O sing unto the Lord with thanksgiving * sing praises upon the harp unto our God:<br>
-        Who covereth the heaven with clouds, and prepareth rain for the earth * and maketh the grass to grow upon the mountains, and herb for the use of men;<br>
-        Who giveth fodder unto the cattle * and feedeth the young ravens that call upon him.<br>
-        Praise the Lord, O Jerusalem * praise thy God, O Sion.<br>
-        For he hath made fast the bars of thy gates * and hath blessed thy children within thee.<br>
-        He maketh peace in thy borders * and filleth thee with the flour of wheat.</p>
+    if (feast === "Thanksgiving") return `<p>O PRAISE the Lord, for it is a good thing to sing praises unto our God; * yea, a joyful and pleasant thing it is to be thankful.<br>
+        The Lord doth build up Jerusalem, * and gather together the outcasts of Israel.<br>
+        He healeth those that are broken in heart, * and giveth medicine to heal their sickness.<br>
+        O sing unto the Lord with thanksgiving; * sing praises upon the harp unto our God:<br>
+        Who covereth the heaven with clouds, and prepareth rain for the earth; * and maketh the grass to grow upon the mountains, and herb for the use of men;<br>
+        Who giveth fodder unto the cattle, * and feedeth the young ravens that call upon him.<br>
+        Praise the Lord, O Jerusalem; * praise thy God, O Sion.<br>
+        For he hath made fast the bars of thy gates, * and hath blessed thy children within thee.<br>
+        He maketh peace in thy borders, * and filleth thee with the flour of wheat.</p>
         <p>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>
         As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
     
     //Psalm 100;
-    return `<p>O BE joyful in the Lord, all ye lands * serve the Lord with gladness, and come before his presence with a song.<br>
-        Be ye sure that the Lord he is God; it is he that hath made us, and not we ourselves * we are his people, and the sheep of his pasture.<br>
-        O go your way into his gates with thanksgiving, and into his courts with praise * be thankful unto him, and speak good of his Name.<br>
-        For the Lord is gracious, his mercy is everlasting * and his truth endureth from generation to generation.</p>
+    return `<p>O BE joyful in the Lord, all ye lands: * serve the Lord with gladness, and come before his presence with a song.
+        Be ye sure that the Lord he is God; it is he that hath made us, and not we ourselves; * we are his people, and the sheep of his pasture.
+        O go your way into his gates with thanksgiving, and into his courts with praise; * be thankful unto him, and speak good of his Name.
+        For the Lord is gracious, his mercy is everlasting; * and his truth endureth from generation to generation.</p>
         <p>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>
         As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
 }
 
 function getEveningCanticle(isFeast) {
-    if (isFeast) return `<p>GLORY be to God on high, and in earth peace, good will towards men. We praise thee, we bless thee, we worship thee, we glorify thee, we give thanks to thee for thy great glory, O Lord God, heavenly King, God the Father Almighty.<br>
-        O Lord, the only begotten Son Jesus Christ; O Lord God, Lamb of God, Son of the Father, that takest away the sins of the world, have mercy upon us. Thou that takest away the sins of the world, have mercy upon us. Thou that takest away the sins of the world, receive our prayer. Thou that sittest at the right hand of God the Father, have mercy upon us.<br>
+    if (isFeast) return `<p>GLORY be to God on high, and on earth peace, good will towards men. We praise thee, we bless thee, we worship thee, we glorify thee, we give thanks to thee for thy great glory, O Lord God, heavenly King, God the Father Almighty.<br>
+        O Lord, the only-begotten Son, Jesus Christ; O Lord God, Lamb of God, Son of the Father, that takest away the sins of the world, have mercy upon us. Thou that takest away the sins of the world, receive our prayer. Thou that sittest at the right hand of God the Father, have mercy upon us.<br>
         For thou only art holy; thou only art the Lord; thou only, O Christ, with the Holy Ghost, art most high in the glory of God the Father. Amen.</p>`;
 
-    return `<p>MY soul doth magnify the Lord * and my spirit hath rejoiced in God my Saviour.<br>
-         For he hath regarded * the lowliness of his handmaiden.<br>
-         For behold, from henceforth * all generations shall call me blessed.<br>
-         For he that is mighty hath magnified me * and holy is his Name.<br>
-         And his mercy is on them that fear him * throughout all generations.<br>
-         He hath showed strength with his arm * he hath scattered the proud in the imagination of their hearts.<br>
-         He hath put down the mighty from their seat * and hath exalted the humble and meek.<br>
-         He hath filled the hungry with good things * and the rich he hath sent empty away.<br>
-         He remembering his mercy hath holpen his servant Israel * as he promised to our forefathers, Abraham and his seed, for ever.</p>
+    return `<p>MY soul doth magnify the Lord, * and my spirit hath rejoiced in God my Saviour.<br>
+        For he hath regarded * the lowliness of his handmaiden.<br>
+        For behold, from henceforth * all generations shall call me blessed.<br>
+        For he that is mighty hath magnified me; * and holy is his Name.<br>
+        And his mercy is on them that fear him * throughout all generations.<br>
+        He hath showed strength with his arm; * he hath scattered the proud in the imagination of their hearts.<br>
+        He hath put down the mighty from their seat, * and hath exalted the humble and meek.<br>
+        He hath filled the hungry with good things; * and the rich he hath sent empty away.<br>
+        He remembering his mercy hath holpen his servant Israel; * as he promised to our forefathers, Abraham and his seed, for ever.</p>
         <p>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>
-        //As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
+        As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
 }
 
 async function getLessonFromFile(liturgicalDay, filePath) {
@@ -234,7 +234,7 @@ const litany = `<H1>The Litany</H1>
         O holy, blessed, and glorious Trinity, one God...
     </P>
     <p>
-        Remember not, Lord, our offences, nor the offences of our forefathers; neither take thou vengeance of our sins:<BR>
+        REMEMBER not, Lord, our offences, nor the offences of our forefathers; neither take thou vengeance of our sins:<BR>
         Spare us, good Lord, spare thy people, whom thou hast redeemed with thy most precious blood, and be not angry with us for ever.<br>
             <B>Spare us, good Lord.</B><BR>
         From all evil and mischief; from sin; from the crafts and assaults of the devil; from thy wrath, and from everlasting damnation,<BR>
@@ -248,7 +248,7 @@ const litany = `<H1>The Litany</H1>
         In all time of our tribulation; in all time of our prosperity; in the hour of death, and in the day of judgment...<BR>
     </p>
     <p>
-        We sinners do beseech thee to hear us, O Lord God; and that it may please thee to rule and govern thy holy Church universal in the right way;<BR>
+        WE sinners do beseech thee to hear us, O Lord God; and that it may please thee to rule and govern thy holy Church universal in the right way;<BR>
             <B>We beseech thee to hear us, good Lord.</B><BR>
         That it may please thee so to rule the heart of thy servant the President of the United States, that he may above all things seek thy honour and glory...<BR>
         That it may please thee to bless and preserve all Christian Rulers and Magistrates, giving them grace to execute justice, and to maintain truth...<BR>
@@ -266,8 +266,9 @@ const litany = `<H1>The Litany</H1>
         That it may please thee to have mercy upon all mankind...<BR>
         That it may please thee to forgive our enemies, persecutors, and slanderers, and to turn their hearts...<BR>
         That it may please thee to give and preserve to our use the kindly fruits of the earth, so that in due time we may enjoy them...<BR>
-        That it may please thee to give us true repentance; to forgive us all our sins, negligences, and ignorances; and to endue us with the grace of thy Holy Spirit to amend our lives according to thy holy Word...<BR>
-        Son of God, we beseech thee to hear us.<BR>
+        That it may please thee to give us true repentance; to forgive us all our sins, negligences, and ignorances; and to endue us with the grace of thy Holy Spirit to amend our lives according to thy holy Word...<BR><p>
+
+        <p>SON of God, we beseech thee to hear us.<BR>
             <B>Son of God, we beseech thee to hear us.</B><BR>
         O Lamb of God, who takest away the sins of the world;<BR>
             <B>Grant us thy peace.</B><BR>
@@ -281,16 +282,16 @@ const litany = `<H1>The Litany</H1>
             <B>Christ, have mercy upon us.</B><BR>
         Lord, have mercy upon us.<BR>
             <B>Lord, have mercy upon us.</B>
-    </P>
+        </P>
 
-    <p>OUR Father.</p>
+    <p>OUR Father, who art in heaven, Hallowed be thy Name. Thy kingdom come. Thy will be done, On earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, As we forgive those who trespass against us. And lead us not into temptation, But deliver us from evil. Amen.</p>
     <hr>
     <P>
         O Lord, deal not with us according to our sins.<br>
         <B>Neither reward us according to our iniquities.</B>
     </p>
-    <p> Let us pray.<BR>
-        O God, merciful Father, who despisest not the sighing of a contrite
+    
+    <p> O God, merciful Father, who despisest not the sighing of a contrite
         heart, nor the desire of such as are sorrowful; Mercifully assist
         our prayers which we make before thee in all our troubles and
         adversities, whensoever they oppress us; and graciously hear us,
@@ -298,12 +299,13 @@ const litany = `<H1>The Litany</H1>
         man worketh against us, may, by thy good providence, be brought
         to nought; that we thy servants, being hurt by no persecutions,
         may evermore give thanks unto thee in thy holy Church; through
-        Jesus Christ our Lord. Amen.<BR>
-        <B>O Lord, arise, help us, and deliver us for thy Name's sake.</B><BR>
+        Jesus Christ our Lord. Amen.<BR></p>
+        
+    <p><B>O Lord, arise, help us, and deliver us for thy Name's sake.</B><BR>
         O God, we have heard with our ears, and our fathers have declared unto us, the noble works that thou didst in their days, and in the old time before them.<BR>
-        <B>O Lord, arise, help us, and deliver us for thine honour.</B><BR>
+            <B>O Lord, arise, help us, and deliver us for thine honour.</B><BR>
         Glory be to the Father, and to the Son, and to the Holy Ghost;<BR>
-        <B>As it was in the beginning, is now, and ever shall be, world without end. Amen. </B><BR>
+            <B>As it was in the beginning, is now, and ever shall be, world without end. Amen. </B><BR>
         From our enemies defend us, O Christ. <B><BR>
             Graciously look upon our afflictions.</B><BR>
         With pity behold the sorrows of our hearts. <B><BR>
@@ -313,12 +315,10 @@ const litany = `<H1>The Litany</H1>
         Both now and ever vouchsafe to hear us, O Christ. <B><BR>
             Graciously hear us, O Christ; graciously hear us, O Lord Christ.</B><BR>
         O Lord, let thy mercy be showed upon us;<BR>
-        <B>As we do put our trust in thee.</B>
+            <B>As we do put our trust in thee.</B>
     </p>
     <hr>
-    <p>
-        Let us pray.<BR>
-        We humbly beseech thee, O Father, mercifully to look upon our
+    <p>We humbly beseech thee, O Father, mercifully to look upon our
         infirmities; and, for the glory of thy Name, turn from us all
         those evils that we most justly have deserved; and grant, that
         in all our troubles we may put our whole trust and confidence
@@ -383,10 +383,10 @@ const commination = `<H1>A Penitential Office</H1>
     <p>Hear also what Saint John saith.<br>
       If any man sin, we have an Advocate with the Father, Jesus Christ the righteous; and he is the propitiation for our sins. <i>&mdash;1 St. John 2:1</i></p>
 
-    <p>BLESSED is he whose unrighteousness is forgiven * and whose sin is covered.<BR>
-    Blessed is the man unto whom the Lord imputeth no sin * and in whose spirit there is no guile.<BR>
-    I said, I will confess my sins unto the Lord * and so thou forgavest the wickedness of my sin.</p>
-    <p>Glory be to the Father, and to the Son * and to the Holy Ghost;<br>
-        As it was in the beginning, is now, and ever shall be * world without end. Amen.</p>
+    <p>BLESSED is he whose unrighteousness is forgiven, * and whose sin is covered.<BR>
+    Blessed is the man unto whom the Lord imputeth no sin, * and in whose spirit there is no guile.<BR>
+    I said, I will confess my sins unto the Lord; * and so thou forgavest the wickedness of my sin.</p>
+    <p>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>
+        As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>
     
     <p>THE Lord bless us, and keep us. The Lord make his face to shine upon us, and be gracious unto us. The Lord lift up his countenance upon us, and give us peace, both now and evermore. Amen.</p>`;
