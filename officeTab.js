@@ -35,7 +35,7 @@ function getOffice(now, week, feast) {
                 getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
                     document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
                 });
-                document.getElementById("office-collect").textContent = "<span class='drop-cap'>O</span> LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.";
+                document.getElementById("office-collect").innerHTML = "<p><span class='drop-cap'>O</span> LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
                 break;
             case 2:
                 document.getElementById("office-name").textContent = "Evening Prayer";
@@ -55,7 +55,7 @@ function getOffice(now, week, feast) {
                 getLessonFromFile(feast || week, "./lessons/evening.json").then(lessonContent => {
                     document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
                 });
-                document.getElementById("office-collect").textContent = "<span class='drop-cap'>O</span> GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.";
+                document.getElementById("office-collect").innerHTML = "<p><span class='drop-cap'>O</span> GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.</p>";
                 break;
             case 3:
                 document.getElementById("office-name").textContent = "Night Prayer";
@@ -66,7 +66,7 @@ function getOffice(now, week, feast) {
                     To be a light to lighten the Gentiles * and to be the glory of thy people Israel.</p>
                     <p>Glory be to the Father, and to the Son * and to the Holy Ghost;<br>
                     As it was in the beginning, is now, and ever shall be * world without end. Amen.</p>`;
-                document.getElementById("office-collect").textContent = "<span class='drop-cap'>L</span>IGHTEN our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.";
+                document.getElementById("office-collect").innerHTML = "<p><span class='drop-cap'>L</span>IGHTEN our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.</p>";
                 break;
             default:
                 document.getElementById("office-name").textContent = "Error";
