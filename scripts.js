@@ -20,7 +20,6 @@ function displayEventDetails() {
     if (isFast(now)) document.getElementById('fastDayLabel').textContent = "FAST.";
 
     for (let e of document.getElementsByName('bookmark')) e.src = "images/bookmarks/" + getBookmarkColor(liturgicalDay, now.getMonth(), now.getDate()) + ".gif";
-    document.getElementById('euchMarg').src = getEuchMargin(now, liturgicalDay);
 
     const element = document.getElementById('top-image');
 element.style.backgroundImage = `url("${getTopImage(liturgicalDay, now.getMonth(), now.getDate())}")`;
@@ -31,6 +30,7 @@ element.style.backgroundPosition = 'top center';
         if (hymns.multiple) document.getElementById('hymn-title').textContent = "Hymns";
         document.getElementById('hymn').innerHTML = hymns.hymns;
     }
+    document.getElementById('preface').innerHTML = getPreface(liturgicalDay, now.getMonth(), now.getDate(), now.getDay());
 
     getOffice(now, week, feast);
 
