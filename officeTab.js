@@ -104,7 +104,7 @@ function getMorningCanticle(week, feast) {
         To perform the oath which he sware to our forefather Abraham, * that he would give us;<br>
         That we being delivered out of the hand of our enemies * might serve him without fear;<br>
         In holiness and righteousness before him, * all the days of our life.<br>
-        And thou, child, shalt be called the prophet of the Highest: * for thou shalt go. before the face of the Lord to prepare his ways;<br>
+        And thou, child, shalt be called the prophet of the Highest: * for thou shalt go before the face of the Lord to prepare his ways;<br>
         To give knowledge of salvation unto his people * for the remission of their sins,<br>
         Through the tender mercy of our God; * whereby the day-spring from on high hath visited us;<br>
         To give light to them that sit in darkness, and in the shadow of death, * and to guide our feet into the way of peace.</p>
