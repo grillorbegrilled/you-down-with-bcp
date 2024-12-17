@@ -143,12 +143,28 @@ function isFast(now) {
 }
 
 function isEmberDay(lit, month, date, day) {
-  if ((lit === "L1" || lit === "Whitsun") && (day === 3 || day === 5 || day === 6) || //Whitsun
-        month === 8 && date >= 15 && date <= 24 && (day === 3 || day === 5 || day === 6) || //September... is this accurate?
-        month === 11 && date >= 14 && date <= 23 && (day === 3 || day === 5 || day === 6)) //December... is THIS accurate?
-        return true;
+  if ((lit === "L1" || lit === "Whitsun") && (day === 3 || day === 5 || day === 6)) //Lent and Whitsun
+    return true;
+  if (month === 8) {
+    const w = getEmberWednesday(month, 14); //Roodmas
+    return (date === w || date === w + 2 || date === w + 3);
+  }
+  if (month === 11) {
+    const w = getEmberWednesday(month, 13); //St. Lucy's Day
+    return (date === w || date === w + 2 || date === w + 3);
+  }
 
-    return false;
+  return false;
+}
+
+function getEmberWednesday(month, anchorDate) {
+    const currentYear = new Date().getFullYear();
+    const startDate = new Date(currentYear, month, anchorDate);
+    const dayOfWeek = startDate.getDay();
+    const daysUntilWednesday = (3 - dayOfWeek + 7) % 7 || 7; // Calculate days until next Wednesday
+    const firstWednesday = new Date(startDate);
+    firstWednesday.setDate(startDate.getDate() + daysUntilWednesday);
+    return firstWednesday.getDate();
 }
 
 function isRogationDay(lit, day) {
