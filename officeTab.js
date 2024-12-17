@@ -87,6 +87,10 @@ function getOffice(now, week, feast) {
         //Ember Days
         additionalPrayers += getEmberDayPrayer(week, now.getMonth(), now.getDate(), day);
 
+        //Passiontide
+        if (['L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'Maundy', 'GF', 'EE'].includes(week))
+            additionalPrayers += `Blessèd Jesus, the only thing greater than the pain and anguish of your Passion was your mercy toward mankind, even to me. All this deserves more love than I have to give. Therefore, Lord, I beseech you to turn me all into love, and all my love into obedience, and let my obedience be without interruption. Make me to be something you delight in, that I may offer you all that I am, and all that I have. Clothe my soul in your garment, hide my sins in your wounds, and bury them in your grave, and then let me rise in the life of grace, and abide and grow in it, till I arrive at the kingdom of glory. Amen. <i>Jeremy Taylor</i>`;
+
         //Grace
         additionalPrayers += "<p><span class='drop-cap'>T</span>HE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>";
         
