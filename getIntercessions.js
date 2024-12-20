@@ -9,8 +9,10 @@ function getIntercessions() {
     <p><i>Pray for any special intentions.</i></p>
     <p>ASSIST us mercifully, O Lord, in these our supplications and prayers, and dispose the way of thy servants towards the attainment of everlasting salvation; that, among all the changes and chances of this mortal life, they may ever be defended by thy most gracious and ready help; through Jesus Christ our Lord. Amen.</p>
     <h1>A Litany of Humility</h1>
-    <p>Lord Jesus, meek and humble of heart, Hear me.<br>
-    From the desire to be esteemed, Deliver me, Jesus.<br>
+    <p>Lord Jesus, meek and humble of heart,<br>
+    <b>Hear me.</b><br>
+    From the desire to be esteemed,<br>
+    <b>Deliver me, Jesus.</b><br>
     From the desire to be loved...<br>
     From the desire to be extolled...<br>
     From the desire to be honored...<br>
@@ -26,7 +28,8 @@ function getIntercessions() {
     From the fear of being ridiculed...<br>
     From the fear of being wronged...<br>
     From the fear of being suspected...</p>
-    <p>That others may be loved more than I, Jesus, grant me the grace to desire it.<br>
+    <p>That others may be loved more than I,<br>
+    <b>Jesus, grant me the grace to desire it.</b><br>
     That others may be esteemed more than I...<br>
     That (in the opinion of the world) others may increase and I may decrease...<br>
     That others may be chosen and I set aside...<br>
