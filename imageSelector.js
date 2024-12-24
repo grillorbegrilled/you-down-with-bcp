@@ -13,15 +13,15 @@ function getTopImage(lit, month, date) {
         case "L":
             return "images/bg/IMG_3000.JPG";
             break;
-        /*case "Xmas":
+        case "Xmas":
         case "Stephen":
         case "JohnEvangelist":
         case "Innocents":
         case "X1":
         case "Circ":
-            return "white_damask";
+            return "images/bg/Xmas.jpg";
             break;
-        case "Candlemas":
+        /*case "Candlemas":
         case "Annunciation":
             return "white_damask"; //pink or Marian blue
             break;
