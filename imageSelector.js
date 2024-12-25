@@ -19,7 +19,7 @@ function getTopImage(lit, month, date) {
         case "Innocents":
         case "X1":
         case "Circ":
-            return "images/bg/Xmas.jpg";
+            return "images/bg/xmas.jpg";
             break;
         /*case "Candlemas":
         case "Annunciation":
