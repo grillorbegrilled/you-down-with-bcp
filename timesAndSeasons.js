@@ -380,7 +380,7 @@ function getLiturgicalDate(now) {
         if (day === 30) return "Andrew";
     } else { //dec
         if (day === 21) return "Thomas";
-        //if (day === 25) return "Xmas";
+        if (day === 25) return "Xmas";
         if (day === 26) return "Stephen";
         if (day === 27) return "JohnEvangelist";
         if (day === 28) return "Innocents";
