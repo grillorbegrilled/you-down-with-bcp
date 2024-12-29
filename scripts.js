@@ -6,9 +6,8 @@ function displayEventDetails() {
     const liturgicalDay = synthDate(week, feast, now.getDay());
 
     getProper2(liturgicalDay).then(details => {
-        const collect = synthCollects(details.c, week);
         document.getElementById('nameOfTheDay').textContent = `${getDayName(liturgicalDay)}`;
-        
+        const collect = synthCollects(details.c, week);
         if (collect.includes("</p><p>")) for (let e of document.getElementsByName('c_h')) e.textContent = 'The Collects';
         for (let e of document.getElementsByName('c')) e.innerHTML = collect;
         for (let e of document.getElementsByName('e_cit')) e.textContent = `${details.e.cit}`;
