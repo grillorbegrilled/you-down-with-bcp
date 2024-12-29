@@ -1,5 +1,5 @@
 function getDayName(liturgicalDate) {
-    return dayNames[liturgicalDate] : liturgicalDate;
+    return dayNames[liturgicalDate];
 }
 
 const dayNames = {
