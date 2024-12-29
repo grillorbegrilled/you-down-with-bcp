@@ -332,6 +332,7 @@ function getA4() {
         else if (weeksTillXmas > 0) return "A3";
         else if (weeksTillXmas > -1 && date < 25) return "A4";
         else {
+            return "X1";
             const xmasSun = getSundayAfterXmas();
             
             if (xmasSun === "NONE" || now < xmasSun) return "Xmas";
