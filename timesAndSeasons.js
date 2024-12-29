@@ -339,7 +339,7 @@ function getA4() {
             else return "X1";
         }
     }
-
+return "X1";
     return "How did you get here, anyway?";
 }
 
