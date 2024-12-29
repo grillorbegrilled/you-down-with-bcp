@@ -42,7 +42,7 @@ element.style.backgroundPosition = 'top center';
 }
 
 async function getProper2(liturgicalDay) {
-    if (/^A\d$/.test(liturgicalDay) || liturgicalDay === "Xmas" || liturgicalDay === "Stephen" || liturgicalDay === "JohnEvangelist" || liturgicalDay === "Innocents" || liturgicalDay === "Circ" ||
+    if (/^A\d$/.test(liturgicalDay) || liturgicalDay === "Xmas" || liturgicalDay === "X1" || liturgicalDay === "Stephen" || liturgicalDay === "JohnEvangelist" || liturgicalDay === "Innocents" || liturgicalDay === "Circ" ||
         liturgicalDay === "Epiphany" || /^E\d$/.test(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/advent-epi.json");
     else if (liturgicalDay === "LXX" || liturgicalDay === "LX" || liturgicalDay === "L" || liturgicalDay === "AW" || /^L\d$/.test(liturgicalDay) ||
             liturgicalDay === "Palm" || /^HW.*$/.test(liturgicalDay) || liturgicalDay === "GF" || liturgicalDay === "EE" ||
