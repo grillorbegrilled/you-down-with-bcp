@@ -1,4 +1,5 @@
 function synthDate(week, day, dayOfWeek) {
+    return "X1";
     if (week === "Palm" || week === "HW-Mon" || week === "HW-Tue" || week === "HW-Wed" || week === "HW-Thu" || week === "GF" || week === "EE"
         || week === "EasterMon" || week === "EasterTue"
         || week === "Whitmon" || week === "WhitTue"
