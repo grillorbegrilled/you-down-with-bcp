@@ -181,6 +181,7 @@ function getTomorrow(today) {
 }
 
 function getWeek(now) {
+    return "X1";
     //This is just the day of the week stuff. Specific dates, even Christmastide, are in getLiturgicalDay().
     const year = now.getFullYear();
     const month = now.getMonth();
@@ -332,14 +333,12 @@ function getA4() {
         else if (weeksTillXmas > 0) return "A3";
         else if (weeksTillXmas > -1 && date < 25) return "A4";
         else {
-            return "X1";
             const xmasSun = getSundayAfterXmas();
             
             if (xmasSun === "NONE" || now < xmasSun) return "Xmas";
             else return "X1";
         }
     }
-return "X1";
     return "How did you get here, anyway?";
 }
 
