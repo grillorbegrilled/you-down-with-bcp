@@ -28,7 +28,7 @@ async function fetchBibleVerse(book, chapter, verses = "") {
         data.data.forEach(verse => {
             if (!verses || (verse.verse >= verseStart && (verseEnd === 'end' || verse.verse <= verseEnd))) {
                 if (!addedVerses.has(verse.verse)) {
-                    versesText += verse.text.replace(/\d+(\.\d+)?\b.*/, '').replace("LORD", "Lᴏʀᴅ").replace("GOD", "Gᴏᴅ") + ' ';
+                    versesText += verse.text.replace(/\d+(\.\d+)?\b.*/, '').replace(/LORD/g, "Lᴏʀᴅ").replace(/GOD/g, "Gᴏᴅ") + ' ';
                     addedVerses.add(verse.verse);
                 }
             }
