@@ -21,6 +21,15 @@ function getTopImage(lit, month, date) {
         case "Circ":
             return "images/bg/xmas.jpg";
             break;
+        case "Epiphany":
+        case "E1":
+        case "E2":
+        case "E3":
+        case "E4":
+        case "E5":
+        case "E6":
+            return "images/bg/magi.jpg";
+            break;
         /*case "Candlemas":
         case "Annunciation":
             return "white_damask"; //pink or Marian blue
@@ -42,7 +51,6 @@ function getTopImage(lit, month, date) {
         case "EE":
             return "purple";
             break;
-        case "Epiphany":
         case "Easter":
         case "EasterMon":
         case "EasterTue":
