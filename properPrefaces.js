@@ -25,6 +25,5 @@ function getPreface(lit, month, date, day) {
   if (month === 10 && date <= 8)
     properPreface = ", who, in the multitude of thy Saints, hast compassed us about with so great a cloud of witnesses that we, rejoicing in their fellowship, may run with patience the race that is set before us, and, together with them, may receive the crown of glory that fadeth not away.";
 
-  return `<P>IT is very meet, right, and our bounden duty, that we should at all times, and in all places, give thanks unto thee, O Lord, Holy Father, Almighty, Everlasting God${properPreface}</p>
-        <p>THEREFORE with Angels and Archangels, and with all the company of heaven, we laud and magnify thy glorious Name; evermore praising thee, and saying,</P>`;
+  return `<P><span class="drop-cap">I</span>T is very meet, right, and our bounden duty, that we should at all times, and in all places, give thanks unto thee, O Lord, Holy Father, Almighty, Everlasting God${properPreface}</p>`;
 }
