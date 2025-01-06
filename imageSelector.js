@@ -23,12 +23,14 @@ function getTopImage(lit, month, date) {
             break;
         case "Epiphany":
         case "E1":
+            return "images/bg/magi.jpg";
+            break;
         case "E2":
         case "E3":
         case "E4":
         case "E5":
         case "E6":
-            return "images/bg/magi.jpg";
+            return "images/bg/cotswolds.jpg";
             break;
         /*case "Candlemas":
         case "Annunciation":
