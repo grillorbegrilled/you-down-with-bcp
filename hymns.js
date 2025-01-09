@@ -2,6 +2,8 @@ function getHymns(liturgicalDay) {
     var day = liturgicalDay;
     if (day === "T25") day = "E6";
     else if (day === "T26") day = "E5";
+    else if (day === "Stephen" || day === "JohnEvangelist" || day === "Innocents" || day === "X1" || day === "Circ") day = "Xmas";
+    else if (day === "E1") day = "Epiphany";
     
     const items = hymns[day];
     var result = '';
@@ -35,15 +37,567 @@ that soul, though all hell shall endeavor to shake,<br>
 I'll never, no, never, no, never forsake."`],
     "A3": ["On Jordan's bank the Baptist's cry<br>announces that the Lord is nigh;<br>awake and hearken, for he brings<br>glad tidings of the King of kings.<br></p><p>Then cleansed be every breast from sin;<br>make straight the way for God within,<br>prepare we in our hearts a home<br>where such a mighty Guest may come.<br></p><p>For thou art our salvation, Lord,<br>our refuge and our great reward;<br>without thy grace we waste away<br>like flowers that wither and decay.<br></p><p>To heal the sick stretch out thine hand,<br>and bid the fallen sinner stand;<br>shine forth and let thy light restore<br>earth's own true loveliness once more.<br></p><p>All praise, eternal Son, to thee,<br>whose advent doth thy people free;<br>whom with the Father we adore<br>and Holy Ghost for evermore."],
     "A4": ["On Jordan's bank the Baptist's cry<br>announces that the Lord is nigh;<br>awake and hearken, for he brings<br>glad tidings of the King of kings.<br></p><p>Then cleansed be every breast from sin;<br>make straight the way for God within,<br>prepare we in our hearts a home<br>where such a mighty Guest may come.<br></p><p>For thou art our salvation, Lord,<br>our refuge and our great reward;<br>without thy grace we waste away<br>like flowers that wither and decay.<br></p><p>To heal the sick stretch out thine hand,<br>and bid the fallen sinner stand;<br>shine forth and let thy light restore<br>earth's own true loveliness once more.<br></p><p>All praise, eternal Son, to thee,<br>whose advent doth thy people free;<br>whom with the Father we adore<br>and Holy Ghost for evermore."],
-//--------------------------------------------------------------------
-    "Xmas": [""],
-    "Stephen": [""],
-    "JohnEvangelist": [""],
-    "Innocents": [""],
-    "X1": [""],
-    "Circ": [""],
-    "Epiphany": [""],
-    "E1": [""],
+    "Xmas": [`Hark! the herald angels sing,<br>
+Glory to the newborn King;<br>
+Peace on earth, and mercy mild,<br>
+God and sinners reconciled!<br>
+Joyful, all ye nations, rise,<br>
+Join the triumph of the skies;<br>
+With angelic host proclaim,<br>
+Christ is born in Bethlehem!<br>
+Hark! the herald angels sing,<br>
+Glory to the newborn King.</p>
+<p>Christ, by highest heav’n adored;<br>
+Christ, the everlasting Lord!<br>
+Late in time behold him come,<br>
+Offspring of the Virgin’s womb;<br>
+Veiled in flesh the Godhead see;<br>
+Hail th’incarnate Deity,<br>
+Pleased as man with men to dwell,<br>
+Jesus, our Emmanuel.<br>
+Hark, &c.</p>
+<p>Hail, the heav’n-born Prince of Peace!<br>
+Hail, the Sun of Righteousness!<br>
+Light and life to all he brings,<br>
+Ris’n with healing in his wings.<br>
+Mild he lays his glory by,<br>
+Born that men no more may die,<br>
+Born to raise the sons of earth,<br>
+Born to give them second birth.<br>
+Hark, &c.`,
+`Angels, from the realms of glory,<br>
+wing your flight o’er all the earth;<br>
+ye who sang creation’s story,<br>
+now proclaim Messiah’s birth:<br>
+Come and worship, come and worship,<br>
+worship Christ, the newborn King.</p>
+<p>Shepherds in the field abiding,<br>
+watching o’er your flocks by night,<br>
+God with man is now residing;<br>
+yonder shines the infant Light:<br>
+Come, &c.</p>
+<p>Sages, leave your contemplations;<br>
+brighter visions beam afar:<br>
+seek the great Desire of nations;<br>
+ye have seen his natal star:<br>
+Come, &c.</p>
+<p>Saints before the altar bending,<br>
+watching long in hope and fear,<br>
+suddenly the Lord, descending,<br>
+in his temple shall appear: <br>
+Come, &c.</p>
+<p>Though an infant now we view him,<br>
+he shall fill his Father’s throne,<br>
+gather all nations to him;<br>
+every knee shall then bow down: <br>
+Come, &c.`,
+`Angels we have heard on high<br>
+Sweetly singing o’er the plains,<br>
+And the mountains in reply<br>
+Echoing their joyous strains.<br>
+Gloria in excelsis Deo!<br>
+Gloria in excelsis Deo!</p>
+<p>Shepherds, why this jubilee?<br>
+Why your joyous strains prolong?<br>
+What the gladsome tidings be<br>
+Which inspire your heav’nly song?<br>
+Gloria, &c.</p>
+<p>Come to Bethlehem and see<br>
+Christ whose birth the angels sing;<br>
+Come, adore on bended knee,<br>
+Christ the Lord, the newborn King. <br>
+Gloria, &c.</p>
+<p>See Him in a manger laid,<br>
+Whom the choirs of angels praise;<br>
+Mary, Joseph, lend your aid,<br>
+While our hearts in love we raise. <br>
+Gloria, &c.`,
+`Away in a manger, no crib for a bed,<br>
+the little Lord Jesus laid down his sweet head.<br>
+The stars in the bright sky looked down where he lay,<br>
+the little Lord Jesus asleep on the hay.</p>
+<p>The cattle are lowing, the baby awakes,<br>
+but little Lord Jesus no crying he makes.<br>
+I love thee, Lord Jesus! Look down from the sky,<br>
+and stay by my side until morning is nigh.</p>
+<p>Be near me, Lord Jesus; I ask thee to stay<br>
+close by me for ever, and love me I pray.<br>
+Bless all the dear children in thy tender care,<br>
+and fit us for heaven to live with thee there.`,
+`It came upon the midnight clear,<br>
+that glorious song of old,<br>
+from angels bending near the earth<br>
+to touch their harps of gold:<br>
+“Peace on earth, good will to men,<br>
+from heaven’s gracious King.”<br>
+The world in solemn stillness lay<br>
+to hear the angels sing.</p>
+<p>Still through the cloven skies they come<br>
+with peaceful wings unfurled,<br>
+and still their heavenly music floats<br>
+o’er all the weary world;<br>
+above its sad and lowly plains<br>
+they bend on hovering wing,<br>
+and ever o’er its Babel-sounds<br>
+the blessed angels sing.</p>
+<p>Yet with the woes of sin and strife<br>
+the world has suffered long;<br>
+beneath the heavenly hymn have rolled<br>
+two thousand years of wrong;<br>
+and warring humankind hears not<br>
+the tidings which they bring;<br>
+O hush the noise and cease your strife<br>
+and hear the angels sing!</p>
+<p>O ye, beneath life’s crushing load<br>
+whose forms are bending low,<br>
+who toil along the climbing way<br>
+with painful steps and slow;<br>
+look now, for glad and golden hours<br>
+come swiftly on the wing:<br>
+O rest beside the weary road,<br>
+and hear the angels sing.</p>
+<p>For lo! the days are hast’ning on,<br>
+by prophets seen of old,<br>
+when with the ever-circling years<br>
+shall come the time foretold,<br>
+when the new heaven and earth shall own<br>
+the Prince of Peace their King,<br>
+and all the world send back the song<br>
+which now the angels sing.`,
+`Joy to the world! the Lord is come:<br>
+let earth receive her King;<br>
+let every heart prepare him room,<br>
+and heav’n and nature sing,<br>
+and heav’n and nature sing,<br>
+and heav’n, and heav’n and nature sing.</p>
+<p>Joy to the world! the Savior reigns;<br>
+let us our songs employ,<br>
+while fields and floods, rocks, hills and plains<br>
+repeat the sounding joy,<br>
+repeat the sounding joy,<br>
+repeat, repeat the sounding joy.</p>
+<p>No more let sins and sorrows grow,<br>
+nor thorns infest the ground;<br>
+he comes to make his blessings flow<br>
+far as the curse is found,<br>
+far as the curse is found,<br>
+far as, far as the curse is found.</p>
+<p>He rules the world with truth and grace,<br>
+and makes the nations prove<br>
+the glories of his righteousness,<br>
+and wonders of his love,<br>
+and wonders of his love,<br>
+and wonders, wonders of his love.`,
+`O little town of Bethlehem,<br>
+how still we see thee lie!<br>
+Above thy deep and dreamless sleep<br>
+the silent stars go by;<br>
+yet in thy dark streets shineth<br>
+the everlasting Light;<br>
+the hopes and fears of all the years<br>
+are met in thee tonight.</p>
+<p>For Christ is born of Mary;<br>
+and gathered all above,<br>
+while mortals sleep, the angels keep<br>
+their watch of wondering love.<br>
+O morning stars, together<br>
+proclaim the holy birth!<br>
+and praises sing to God the King,<br>
+and peace to men on earth.</p>
+<p>How silently, how silently,<br>
+the wondrous gift is given!<br>
+So God imparts to human hearts<br>
+the blessings of his heaven.<br>
+No ear may hear his coming,<br>
+but in this world of sin,<br>
+where meek souls will receive him,<br>
+still the dear Christ enters in.</p>
+<p>Where children pure and happy<br>
+pray to the blessed Child,<br>
+where misery cries out to thee,<br>
+Son of the Mother mild;<br>
+where charity stands watching<br>
+and faith holds wide the door,<br>
+the dark night wakes, the glory breaks,<br>
+and Christmas comes once more.</p>
+<p>O holy Child of Bethlehem,<br>
+descend to us, we pray;<br>
+cast out our sin and enter in,<br>
+be born in us today.<br>
+We hear the Christmas angels<br>
+the great glad tidings tell;<br>
+O come to us, abide with us,<br>
+our Lord Emmanuel!`,
+`Silent night, holy night,<br>
+all is calm, all is bright<br>
+round yon virgin mother and child.<br>
+Holy Infant, so tender and mild,<br>
+sleep in heavenly peace.<br>
+Sleep in heavenly peace.</p>
+<p>Silent night, holy night,<br>
+shepherds quake at the sight,<br>
+glories stream from heaven afar,<br>
+heavenly hosts sing alleluia;<br>
+Christ, the Savior, is born!<br>
+Christ, the Savior, is born!</p>
+<p>Silent night, holy night,<br>
+Son of God, love’s pure light<br>
+radiant beams from thy holy face,<br>
+with the dawn of redeeming grace,<br>
+Jesus, Lord at thy birth.<br>
+Jesus, Lord at thy birth.`,
+`What child is this? who, laid to rest,<br>
+on Mary’s lap is sleeping?<br>
+Whom angels greet with anthems sweet,<br>
+while shepherds watch are keeping?<br>
+This, this is Christ the King,<br>
+whom shepherds guard and angels sing;<br>
+haste, haste to bring him laud,<br>
+the babe, the son of Mary.</p>
+<p>Why lies he in such mean estate<br>
+where ox and ass are feeding?<br>
+Good Christian, fear: for sinners here<br>
+the silent Word is pleading.<br>
+This, &c.</p>
+<p>So bring him incense, gold, and myrrh,<br>
+come, peasant, king, to own him;<br>
+the King of kings salvation brings,<br>
+let loving hearts enthrone him. <br>
+This, &c.`,
+`While shepherds watched their flocks by night,<br>
+all seated on the ground,<br>
+the angel of the Lord came down,<br>
+and glory shone around.</p>
+<p>“Fear not,” said he, for mighty dread<br>
+had seized their troubled mind;<br>
+“Glad tidings of great joy I bring<br>
+to you and all mankind.</p>
+<p>“To you, in David’s town, this day<br>
+is born of David’s line<br>
+a Savior, who is Christ the Lord;<br>
+and this shall be the sign:</p>
+<p>“The heavenly Babe you there shall find<br>
+to human view displayed,<br>
+all meanly wrapped in swathing bands,<br>
+and in a manger laid.”</p>
+<p>Thus spake the seraph, and forthwith<br>
+appeared a shining throng<br>
+of angels praising God, who thus<br>
+addressed their joyful song:</p>
+<p>“All glory be to God on high<br>
+and on earth be peace;<br>
+good will henceforth from heaven to me<br>
+begin and never cease.”`,
+`Of the Father’s love begotten,<br>
+ere the worlds began to be,<br>
+he is Alpha and Omega,<br>
+he the source, the ending he,<br>
+of the things that are, that have been,<br>
+and that future years shall see,<br>
+evermore and evermore!</p>
+<p>At his word the words were framèd;<br>
+he commanded; it was done:<br>
+heaven and earth and depths of ocean<br>
+in their threefold order one;<br>
+all that grows beneath the shining<br>
+of the moon and burning sun,<br>
+evermore and evermore!</p>
+<p>O that birth for ever blessèd,<br>
+when the Virgin, full of grace,<br>
+by the Holy Ghost conceiving,<br>
+bare the Savior of our race;<br>
+and the Babe, the world’s Redeemer,<br>
+first revealed his sacred face,<br>
+evermore and evermore!</p>
+<p>This is he whom seers in old time<br>
+chanted of with one accord;<br>
+whom the voices of the prophets<br>
+promised in their faithful word;<br>
+now he shines, the long expected,<br>
+let creation praise its Lord,<br>
+evermore and evermore!</p>
+<p>O ye heights of heav’n, adore him;<br>
+angel-hosts, his praises sing;<br>
+powers, dominions, bow before him,<br>
+and extol our God and King;<br>
+let no tongue on earth be silent,<br>
+every voice in concert ring,<br>
+evermore and evermore!</p>
+<p>Thee let old men, thee let young men,<br>
+thee let boys in chorus sing;<br>
+matrons, virgins, little maidens,<br>
+with glad voices answering:<br>
+let their guileless songs re-echo,<br>
+and the heart its music bring,<br>
+evermore and evermore!</p>
+<p>Christ, to thee with God the Father,<br>
+and, O Holy Ghost, to thee,<br>
+hymn and chant and high thanksgiving,<br>
+and unwearied praises be;<br>
+honor, glory and dominion,<br>
+and eternal victory,<br>
+evermore and evermore!`,
+`O come, all ye faithful, joyful and triumphant,<br>
+O come ye, O come ye to Bethlehem;<br>
+come, and behold him, born the King of angels;<br>
+O come, let us adore him,<br>
+O come, let us adore him,<br>
+O come, let us adore him,<br>
+Christ the Lord.</p>
+<p>God from God, Light from Light eternal,<br>
+lo! he abhors not the Virgin’s womb;<br>
+only-begotten Son of the Father;<br>
+O come, &c.</p>
+<p>Sing, choirs of angels, sing in exultation,<br>
+sing, all ye citizens of heaven above;<br>
+glory to God, glory in the highest; <br>
+O come, &c.</p>
+<p>See how the shepherds, summoned to his cradle,<br>
+leaving their flocks, draw nigh to gaze;<br>
+we too will thither bend our joyful footsteps; <br>
+O come, &c.</p>
+<p>Child, for us sinners poor and in the manger,<br>
+we would embrace thee, with love and awe;<br>
+who would not love thee, loving us so dearly?<br> 
+O come, &c.</p>
+<p>Yea, Lord, we greet thee, born this happy morning;<br>
+Jesus, to thee be glory given;<br>
+Word of the Father, now in flesh appearing; <br>
+O come, &c.`],
+    "Epiphany": [`O come, all ye faithful, joyful and triumphant,<br>
+O come ye, O come ye to Bethlehem;<br>
+come, and behold him, born the King of angels;<br>
+O come, let us adore him,<br>
+O come, let us adore him,<br>
+O come, let us adore him,<br>
+Christ the Lord.</p>
+<p>God from God, Light from Light eternal,<br>
+lo! he abhors not the Virgin’s womb;<br>
+only-begotten Son of the Father;<br>
+O come, &c.</p>
+<p>Sing, choirs of angels, sing in exultation,<br>
+sing, all ye citizens of heaven above;<br>
+glory to God, glory in the highest; <br>
+O come, &c.</p>
+<p>See how the shepherds, summoned to his cradle,<br>
+leaving their flocks, draw nigh to gaze;<br>
+we too will thither bend our joyful footsteps; <br>
+O come, &c.</p>
+<p>Child, for us sinners poor and in the manger,<br>
+we would embrace thee, with love and awe;<br>
+who would not love thee, loving us so dearly?<br> 
+O come, &c.</p>
+<p>Lo! star-led chieftains, magi, Christ adoring,<br>
+offer him frankincense and gold and myrrh;<br>
+we to the Christ-child bring our hearts oblations: <br>
+O come, &c.`,
+`We three kings of Orient are, <br>
+bearing gifts we traverse afar, <br>
+field and fountain, <br>
+moor and mountain, <br>
+following yonder star. <br>
+O star of wonder, star of night, <br>
+star with royal beauty bright; <br>
+westward leading, still proceeding, <br>
+guide us to thy perfect light!</p>
+<p>Born a King on Bethlehem’s plain, <br>
+gold I bring to crown him again, <br>
+King for ever, <br>
+ceasing never <br>
+over us all to reign. <br>
+O star, &c.</p>
+<p>Frankincense to offer have I: <br>
+incense owns a Deity nigh; <br>
+prayer and praising, <br>
+gladly raising, <br>
+worship him, God Most High  <br>
+O star, &c.</p>
+<p>Myrrh is mine; its bitter perfume <br>
+breathes a life of gathering gloom; <br>
+sorrowing, sighing, <br>
+bleeding, dying, <br>
+sealed in the stone-cold tomb.  <br>
+O star, &c.</p>
+<p>Glorious now behold him arise, <br>
+King and God and Sacrifice; <br>
+heaven sings <br>
+alleluia; alleluia <br>
+the earth replies. <br>
+O star, &c.`,
+`Songs of thankfulness and praise,<br>
+Jesus, Lord, to thee we raise,<br>
+manifested by the star<br>
+to the sages from afar;<br>
+branch of royal David’s stem<br>
+in thy birth at Bethlehem;<br>
+anthems be to thee addressed,<br>
+God in man made manifest.</p>
+<p>Manifest at Jordan’s stream,<br>
+Prophet, Priest and King supreme;<br>
+and at Cana, wedding guest,<br>
+in thy Godhead manifest;<br>
+manifest in power divine,<br>
+changing water into wine;<br>
+anthems, be to thee addressed,<br>
+God in man made manifest.</p>
+<p>Manifest in making whole<br>
+palsied limbs and fainting soul;<br>
+manifest in valiant fight,<br>
+quelling all the devil’s might;<br>
+manifest in gracious will,<br>
+ever bringing good from ill;<br>
+anthems be to thee addressed,<br>
+God in man made manifest.</p>
+<p>Sun and moon shall darkened be,<br>
+stars shall fall, the heavens shall flee;<br>
+Christ will then like lightning shine,<br>
+all will see his glorious sign;<br>
+all will then the trumpet hear,<br>
+all will see the Judge appear;<br>
+thou by all wilt be confessed,<br>
+God in man made manifest.</p>
+<p>Grant us grace to see thee, Lord,<br>
+mirrored in thy holy Word;<br>
+may we imitate thee now,<br>
+and be pure, as pure art thou;<br>
+that we like to thee may be<br>
+at thy great Epiphany;<br>
+and may praise thee, ever blest,<br>
+God in man made manifest.`,
+`As with gladness men of old<br>
+did the guiding star behold;<br>
+as with joy they hailed its light,<br>
+leading onward, beaming bright;<br>
+so, most gracious Lord, may we<br>
+evermore be led to thee.</p>
+<p>As with joyful steps they sped<br>
+to that lowly manger-bed;<br>
+there to bend the knee before<br>
+him whom heaven and earth adore;<br>
+so may we with willing feet<br>
+ever seek the mercy seat.</p>
+<p>As they offered gifts most rare<br>
+at that manger rude and bare;<br>
+so may we with holy joy,<br>
+pure and free from sin’s alloy,<br>
+all our costliest treasures bring,<br>
+Christ! to thee, our heavenly King.</p>
+<p>Holy Jesus! every day<br>
+keep us in the narrow way;<br>
+and, when earthly things are past,<br>
+bring our ransomed souls at last<br>
+where they need no star to guide,<br>
+where no clouds thy glory hide.</p>
+<p>In the heav’nly country bright,<br>
+need they no created light;<br>
+thou its light, its joy, its crown,<br>
+thou its sun which goes not down;<br>
+there for ever may we sing<br>
+alleluias to our King.`,
+`Hail to the Lord’s Anointed,<br>
+great David’s greater Son!<br>
+Hail, in the time appointed,<br>
+his reign on earth begun!<br>
+He comes to break oppression,<br>
+to set the captive free,<br>
+to take away transgression,<br>
+and rule in equity.</p>
+<p>He comes, with succour speedy,<br>
+to those who suffer wrong;<br>
+to help the poor and needy,<br>
+and bid the weak be strong;<br>
+to give them songs for sighing,<br>
+their darkness turn to light,<br>
+whose souls, condemned and dying,<br>
+were precious in his sight.</p>
+<p>He shall come down like showers<br>
+upon the fruitful earth;<br>
+love, joy, and hope, like flowers,<br>
+spring in his path to birth;<br>
+before him, on the mountains,<br>
+shall peace the herald go;<br>
+and righteousness, in fountains,<br>
+from hill to valley flow.</p>
+<p>Kings shall fall down before him,<br>
+and gold and incense bring;<br>
+all nations shall adore him,<br>
+his praise all people sing;<br>
+to him shall prayer unceasing<br>
+and daily vows ascend,<br>
+his kingdom still increasing,<br>
+a kingdom without end.</p>
+<p>O’er every foe victorious,<br>
+he on his throne shall rest;<br>
+from age to age more glorious,<br>
+all-blessing and all-blest.<br>
+the tide of time shall never<br>
+his covenant remove;<br>
+his name shall stand for ever,<br>
+his changeless Name of love.`,
+`Brightest and best of the sons of the morning,<br>
+dawn on our darkness, and lend us thine aid;<br>
+star of the east, the horizon adorning,<br>
+guide where our infant Redeemer is laid.</p>
+<p>Cold on his cradle the dewdrops are shining,<br>
+low lies his head with the beasts of the stall;<br>
+angels adore him in slumber reclining,<br>
+Maker and Monarch and Savior of all.</p>
+<p>Shall we then yield him, in costly devotion,<br>
+odors of Edom, and offerings divine,<br>
+gems of the mountain, and pearls of the ocean,<br>
+myrrh from the forest, and gold from the mine?</p>
+<p>Vainly we offer each ample oblation,<br>
+vainly with gifts would his favor secure,<br>
+richer by far is the heart’s adoration,<br>
+dearer to God are the prayers of the poor.</p>
+<p>Brightest and best of the sons of the morning,<br>
+dawn on our darkness, and lend us thine aid;<br>
+star of the east, the horizon adorning,<br>
+guide where our infant Redeemer is laid.`,
+`What star is this, with beams so bright,<br>
+more lovely than the noonday light?<br>
+‘Tis sent to announce a new-born King,<br>
+glad tidings of our God to bring.</p>
+<p>‘Tis now fulfilled what God decreed,<br>
+“From Jacob shall a star proceed;”<br>
+and lo! the eastern sages stand,<br>
+to read in heaven the Lord’s command.</p>
+<p>While outward signs the star displays,<br>
+an inward light the Lord conveys,<br>
+and urges them, with force benign,<br>
+to seek the giver of the sign.</p>
+<p>True love can brook no dull delay;<br>
+through toil and dangers lies their way;<br>
+and yet their home, their friends, their all<br>
+they leave at once, at God’s high call.</p>
+<p>O, while the star of heavenly grace<br>
+invites us, Lord, to seek thy face,<br>
+may we no more that grace repel,<br>
+or quench that light which shines so well!</p>
+<p>To God the Father, God the Son,<br>
+and Holy Spirit, three in One,<br>
+may every tongue and nation raise<br>
+an endless song of thankful praise!`,
+`Earth has many a noble city;<br>
+Bethl’em, thou dost all excel:<br>
+out of thee the Lord from heaven<br>
+came to rule his Israel.</p>
+<p>Fairer than the sun at morning<br>
+was the star that told his birth,<br>
+to the world its God announcing<br>
+seen in fleshly form on earth.</p>
+<p>Eastern sages at his cradle<br>
+make oblations rich and rare;<br>
+see them give, in deep devotion,<br>
+gold and frankincense and myrrh.</p>
+<p>Sacred gifts of mystic meaning:<br>
+incense doth their God disclose,<br>
+gold the King of kings proclaimeth,<br>
+myrrh his sepulcher foreshows.</p>
+<p>Jesus, whom the Gentiles worshiped<br>
+at thy glad epiphany,<br>
+unto thee, with God the Father<br>
+and the Spirit, glory be.`],
     "E2": [""],
     "E3": [""],
     "E4": [""],
