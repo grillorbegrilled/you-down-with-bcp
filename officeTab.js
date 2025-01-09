@@ -26,6 +26,8 @@ function getOffice(now, week, feast) {
         switch (officeType) {
             case 1:
                 document.getElementById("office-name").textContent = "Morning Prayer";
+                let antiphon = getAntiphon(synthDate(week, feast, day), day);
+                if (antiphon) document.getElementById("antiphon").innerHTML = makeP(antiphon);
                 let canticle = getMorningCanticle(week, feast);
                 document.getElementById("canticle").innerHTML = canticle;
                 if (!canticle.startsWith(`<span class="drop-cap">W</span>E`))
