@@ -16,6 +16,7 @@ function getAntiphon(lit, day) {
     case "Epiphany":
     case "E1":
     case "Transfiguration":
+      if ((new Date()).getDate() <= 13)
       return "The Lord hath manifested forth his glory : O come, let us adore him.";
     //Eastertide when you don't say the Te Deum
     //Alleluia. The Lord is risen indeed : O come let us adore him. Alleluia.
