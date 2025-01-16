@@ -6,7 +6,7 @@ function getAntiphon(lit, day) {
     case "A4":
       if (day === 0)
         return "Our King and Saviour draweth nigh : O come, let us adore him.";
-      break;
+      return "";
     case "Xmas":
     case "Stephen":
     case "JohnEvangelist":
@@ -19,7 +19,7 @@ function getAntiphon(lit, day) {
     case "Transfiguration":
       if ((new Date()).getDate() <= 13)
         return "The Lord hath manifested forth his glory : O come, let us adore him.";
-      break;
+      return "";
     //Eastertide when you don't say the Te Deum
     //Alleluia. The Lord is risen indeed : O come let us adore him. Alleluia.
     case "Ascension":
@@ -31,7 +31,7 @@ function getAntiphon(lit, day) {
       return "Alleluia. The Spirit of the Lord filleth the world : O come, let us adore him. Alleluia.";
     case "Trinity":
       if (day === 0) return "Father, Son, and Holy Ghost, One God : O come, let us adore him.";
-      break;
+      return "";
     case "Candlemas":
     case "Annunciation":
       return "The Word was made flesh : O come, let us adore him.";
