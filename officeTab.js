@@ -102,15 +102,16 @@ function getOffice(now, week, feast) {
 
 function getMorningCanticle(week, feast) {
     //Benedictus Dominus
-    if (['A1', 'A2', 'A3', 'A4'].includes(week) || feast === "JohnBaptist") return `<p><span class="drop-cap">B</span>LESSED be the Lord God of Israel; * for he hath visited and redeemed his people;<br>
+    if (['A1', 'A2', 'A3', 'A4'].includes(week) || feast === "JohnBaptist") return `<p style='margin-bottom: 0;'><span class="drop-cap">B</span>LESSED be the Lord God of Israel; * for he hath visited and redeemed his people;<br>
         And hath raised up a mighty salvation for us, * in the house of his servant David;<br>
         As he spake by the mouth of his holy Prophets, * which have been since the world began;<br>
         That we should be saved from our enemies, * and from the hand of all that hate us.<br>
         To perform the mercy promised to our forefathers, * and to remember his holy covenant;<br>
         To perform the oath which he sware to our forefather Abraham, * that he would give us;<br>
         That we being delivered out of the hand of our enemies * might serve him without fear;<br>
-        In holiness and righteousness before him, * all the days of our life.<br>
-        And thou, child, shalt be called the prophet of the Highest: * for thou shalt go before the face of the Lord to prepare his ways;<br>
+        In holiness and righteousness before him, * all the days of our life.</p>
+        <p style='text-align: center; margin-bottom: 0;'>✠&#9;✠&#9;✠</p>
+        <p>And thou, child, shalt be called the prophet of the Highest: * for thou shalt go before the face of the Lord to prepare his ways;<br>
         To give knowledge of salvation unto his people * for the remission of their sins,<br>
         Through the tender mercy of our God; * whereby the day-spring from on high hath visited us;<br>
         To give light to them that sit in darkness, and in the shadow of death, * and to guide our feet into the way of peace.</p>
@@ -140,7 +141,7 @@ function getMorningCanticle(week, feast) {
         As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
 
     //Te Deum
-    if (['Xmas', 'X1', 'Whitsun', 'Whitmon', 'WhitTue'].includes(week)) return `<p><span class="drop-cap">W</span>E praise thee, O God; we acknowledge thee to be the Lord.<br>
+    if (['Xmas', 'X1', 'Whitsun', 'Whitmon', 'WhitTue'].includes(week)) return `<p style='margin-bottom: 0;'><span class="drop-cap">W</span>E praise thee, O God; we acknowledge thee to be the Lord.<br>
         All the earth doth worship thee, the Father everlasting.<br>
         To thee all Angels cry aloud; the Heavens, and all the Powers therein;<br>
         To thee Cherubim and Seraphim continually do cry,<br>
@@ -161,6 +162,7 @@ function getMorningCanticle(week, feast) {
         We believe that thou shalt come to be our Judge.<br>
         We therefore pray thee, help thy servants, whom thou hast redeemed with thy precious blood.<br>
         Make them to be numbered with thy Saints, in glory everlasting.</p>
+        <p style='text-align: center; margin-bottom: 0;'>✠&#9;✠&#9;✠</p>
         <p>O LORD, save thy people, and bless thine heritage.<br>
         Govern them and lift them up for ever.<br>
         Day by day we magnify thee;<br>
