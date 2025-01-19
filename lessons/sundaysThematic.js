@@ -53,7 +53,7 @@ const sundaysThematic = {
 "Isaiah 49:1-7", "1 John 1:1-9"
 ],
 "E2":[
-"*Zechariah 8:1-8, 20-23", "1 Corinthians 12:12-31a",
+"*Zechariah 8:1-8, 20-23", "1 Corinthians 12:12-31",
 "Exodus 34:29ff", "Mark 9:2-13",
 "Isaiah 56:1-8", "John 2:13ff",
 "Isaiah 54:1-8", "Romans 14:1-15:3"
