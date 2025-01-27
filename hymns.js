@@ -598,8 +598,23 @@ myrrh his sepulcher foreshows.</p>
 at thy glad epiphany,<br>
 unto thee, with God the Father<br>
 and the Spirit, glory be.`],
-    "E2": [""],
-    "E3": [""],
+    "E2": [``],
+    "E3": [`I am not worthy, holy Lord,<br>
+That Thou shouldst come to me;<br>
+Speak but the word: one gracious word<br>
+Can set the sinner free.</p>
+<p>I am not worthy; cold and bare<br>
+The lodging of my soul;<br>
+How canst Thou deign to enter there?<br>
+Lord, speak, and make me whole.</p>
+<p>I am not worthy; yet, my God,<br>
+How can I say Thee nay,<br>
+Thee who didst give Thy flesh and blood<br>
+My ransom-price to pay?</p>
+<p>O come! in this sweet morning hour<br>
+Feed me with food divine,<br>
+And fill with all Thy love and power<br>
+This worthless heart of mine.`],
     "E4": [""],
     "E5": [""],
     "E6": [`Great God, what do I see and hear?<br>
