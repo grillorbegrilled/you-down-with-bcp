@@ -32,8 +32,10 @@ function getTopImage(lit, month, date) {
         case "E6":
             return "images/bg/cotswolds.jpg";
             break;
-        /*case "Candlemas":
-        case "Annunciation":
+        case "Candlemas":
+            return "images/bg/pres-temp-erase.jpg";
+            break;
+        /*case "Annunciation":
             return "white_damask"; //pink or Marian blue
             break;
         case "AW":
