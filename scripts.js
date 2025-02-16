@@ -55,17 +55,12 @@ async function getProper2(liturgicalDay) {
 }
 
 async function getProperFromFile(liturgicalDay, filePath) {
-    try {
         const response = await fetch(filePath);
         if (!response.ok) {
             throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        return data[liturgicalDay] || ""; // Return the actual value for the liturgicalDay or an empty string if not found
-    } catch (error) {
-        console.error("There was a problem with the fetch operation:", error);
-        return "";
-    }
+        return data[liturgicalDay]; // Return the actual value for the liturgicalDay or an empty string if not found
 }
 
 function synthCollects(cotd, week) {
