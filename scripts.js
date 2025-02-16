@@ -6,15 +6,17 @@ function displayEventDetails() {
     const liturgicalDay = synthDate(week, feast, now.getDay());
 
     getProper2(liturgicalDay).then(details => {
-        document.getElementById('nameOfTheDay').textContent = `${getDayName(liturgicalDay)}`;
-        const collect = synthCollects(details.c, week);
-        if (collect.includes("</p><p>")) for (let e of document.getElementsByName('c_h')) e.textContent = 'The Collects';
-        for (let e of document.getElementsByName('c')) e.innerHTML = collect;
-        for (let e of document.getElementsByName('e_cit')) e.textContent = `${details.e.cit}`;
-        for (let e of document.getElementsByName('e_txt')) e.innerHTML = makeP(makeDropCap(details.e.txt));
-        for (let e of document.getElementsByName('g_cit')) e.textContent = `${details.g.cit}`;
-        for (let e of document.getElementsByName('g_txt')) e.innerHTML = makeP(makeDropCap(details.g.txt));
-    });
+    document.getElementById('nameOfTheDay').textContent = `${getDayName(liturgicalDay)}`;
+    const collect = synthCollects(details.c, week);
+    if (collect.includes("</p><p>")) for (let e of document.getElementsByName('c_h')) e.textContent = 'The Collects';
+    for (let e of document.getElementsByName('c')) e.innerHTML = collect;
+    for (let e of document.getElementsByName('e_cit')) e.textContent = `${details.e.cit}`;
+    for (let e of document.getElementsByName('e_txt')) e.innerHTML = makeP(makeDropCap(details.e.txt));
+    for (let e of document.getElementsByName('g_cit')) e.textContent = `${details.g.cit}`;
+    for (let e of document.getElementsByName('g_txt')) e.innerHTML = makeP(makeDropCap(details.g.txt));
+}).catch(error => {
+    document.getElementById('e_txt').innerHTML = error.message;
+});
 
     if (isFast(now)) document.getElementById('fastDayLabel').textContent = "FAST.";
 
