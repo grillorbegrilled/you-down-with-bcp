@@ -15,7 +15,7 @@ function displayEventDetails() {
     for (let e of document.getElementsByName('g_cit')) e.textContent = `${details.g.cit}`;
     for (let e of document.getElementsByName('g_txt')) e.innerHTML = makeP(makeDropCap(details.g.txt));
 }).catch(error => {
-    document.getElementById('e_txt').innerHTML = error.message;
+    for (let e of document.getElementsByName('e_txt')) e.innerHTML = makeP(error.message);
 });
 
     if (isFast(now)) document.getElementById('fastDayLabel').textContent = "FAST.";
