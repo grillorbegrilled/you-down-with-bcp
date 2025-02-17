@@ -648,7 +648,25 @@ the Judge my nature wearing.<br>
 Beneath his cross I view the day<br>
 when heaven and earth shall pass away,<br>
 and thus prepare to meet him.`],
-    "LXX": [""],
+    "LXX": [`Fight the good fight with all thy might,<br>
+Christ is thy strength and Christ thy right;<br>
+lay hold on life, and it shall be<br>
+thy joy and crown eternally.</p>
+<p>
+Run the straight race, through God's good grace,<br>
+lift up thine eyes and seek his face;<br>
+life with its way before us lies,<br>
+Christ is the path and Christ the prize.</p>
+<p>
+Cast care aside, lean on thy Guide;<br>
+his boundless mercy will provide;<br>
+trust, and thy trusting soul shall prove<br>
+Christ is its life and Christ its love.</p>
+<p>
+Faint not nor fear, his arms are near;<br>
+he changeth not, and thou art dear;<br>
+only believe, and thou shalt see<br>
+that Christ is all in all to thee.`],
     "LX": [""],
     "L": [""],
     "AW": [""],
