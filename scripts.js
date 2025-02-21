@@ -33,6 +33,9 @@ element.style.backgroundPosition = 'top center';
     }
     document.getElementById('preface').innerHTML = getPreface(liturgicalDay, now.getMonth(), now.getDate(), now.getDay());
 
+    if (['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week))
+        document.getElementById('gloria').style.display = "none";
+
     getOffice(now, week, feast);
 
     getLesson(liturgicalDay).then(lessonContent => {
