@@ -667,7 +667,24 @@ Faint not nor fear, his arms are near;<br>
 he changeth not, and thou art dear;<br>
 only believe, and thou shalt see<br>
 that Christ is all in all to thee.`],
-    "LX": [""],
+    "LX": [`Almighty God, thy word is cast<br>
+like seed upon the ground,<br>
+now let the dew of heaven descend<br>
+and righteous fruits abound.</p>
+<p>
+Let not the foe of Christ and man<br>
+this holy seed remove:<br>
+but give it root in every heart,<br>
+to bring forth fruits of love.</p>
+<p>
+Let not the world's deceitful cares<br>
+the rising plant destroy,<br>
+but let it yield a hundred-fold<br>
+the fruits of peace and joy.</p>
+<p>Oft as the precious seed is sown,<br>
+thy quickening grace bestow;<br>
+that all whose souls the truth receive<br>
+its saving power may know.`],
     "L": [""],
     "AW": [""],
     "L1": [""],
