@@ -42,7 +42,7 @@ element.style.backgroundPosition = 'top center';
         document.getElementById('readings').innerHTML = lessonContent;
     });
 
-    document.getElementById('tab-4').innerHTML = getIntercessions();
+    document.getElementById('tab-4').innerHTML = "<h1>Intercessions</h1>" + getBidding(liturgicalDay) + getIntercessions();
 }
 
 async function getProper2(liturgicalDay) {
