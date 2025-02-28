@@ -37,15 +37,15 @@ function getTopImage(lit, month, date) {
             break;
         /*case "Annunciation":
             return "white_damask"; //pink or Marian blue
-            break;
+            break;*/
         case "AW":
         case "L1":
         case "L2":
         case "L3":
         case "L4":
-            return "purple";
+            return "images/bg/lent.jpg";
             break;
-        case "L5":
+        /*case "L5":
         case "Palm":
         case "HW-Mon":
         case "HW-Tue":
