@@ -685,7 +685,30 @@ the fruits of peace and joy.</p>
 thy quickening grace bestow;<br>
 that all whose souls the truth receive<br>
 its saving power may know.`],
-    "L": [""],
+    "L": [`Come down, O love divine,<br>
+seek thou this soul of mine,<br>
+and visit it with thine own ardor glowing;<br>
+O Comforter, draw near,<br>
+within my heart appear,<br>
+and kindle it, thy holy flame bestowing.</p>
+<p>O let it freely burn,<br>
+till earthly passions turn<br>
+to dust and ashes in its heat consuming;<br>
+and let thy glorious light<br>
+shine ever on my sight,<br>
+and clothe me round, the while my path illuming.</p>
+<p>Let holy charity<br>
+mine outward vesture be,<br>
+and lowliness become mine inner clothing;<br>
+true lowliness of heart,<br>
+which takes the humbler part,<br>
+and o'er its own shortcomings weeps with loathing.</p>
+<p>And so the yearning strong,<br>
+with which the soul will long,<br>
+shall far outpass the power of human telling;<br>
+for none can guess its grace,<br>
+till Love create a place<br>
+wherein the Holy Spirit makes a dwelling.`],
     "AW": [""],
     "L1": [""],
     "L2": [""],
