@@ -49,7 +49,7 @@ function getBookmarkColor(lit, month, date) {
         case "HW-Thu":
         case "GF":
         case "EE":
-            return ""; //"purple";
+            return "scarlet"; //"purple";
             break;
         case "Epiphany":
         case "Easter":
