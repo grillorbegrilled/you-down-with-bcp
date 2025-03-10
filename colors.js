@@ -39,7 +39,7 @@ function getBookmarkColor(lit, month, date) {
         case "L2":
         case "L3":
         case "L4":
-            return ""; //"purple";
+            return "lent";
             break;
         case "L5":
         case "Palm":
@@ -49,7 +49,7 @@ function getBookmarkColor(lit, month, date) {
         case "HW-Thu":
         case "GF":
         case "EE":
-            return "scarlet"; //"purple";
+            return "scarlet";
             break;
         case "Epiphany":
         case "Easter":
