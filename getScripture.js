@@ -34,7 +34,7 @@ async function fetchBibleVerse(book, chapter, verses = "") {
             }
         });
 
-        return versesText.trim().replace(/¶/g, "");
+        return versesText.trim().replace(/¶/g, "").replace(/^\(|\)/, '');
     } catch (error) {
         console.error('Error fetching data:', error);
         return 'Error fetching data: ' + error.message;
