@@ -730,7 +730,38 @@ and give us joy to see thy face.</p>
 to thee be every prayer addressed,<br>
 who art in three-fold Name adored, <br>
 from age to age, the only Lord.`],
-    "L2": [""],
+    "L2": [`In the hour of trial, <br>
+Jesus, plead for me,<br>
+lest by base denial <br>
+I depart from thee.<br>
+When thou seest me waver, <br>
+with a look recall,<br>
+nor for fear or favor <br>
+suffer me to fall.</p>
+<p>With forbidden pleasures <br>
+would this vain world charm,<br>
+or its sordid treasures <br>
+spread to work me harm,<br>
+bring to my remembrance <br>
+sad Gethsemane,<br>
+or, in darker semblance, <br>
+cross-crowned Calvary.</p>
+<p>If with sore affliction<br>
+thou in love chastise,<br>
+pour thy benediction<br>
+on the sacrifice:<br>
+then upon thine altar<br>
+freely offered up,<br>
+though the faith may falter,<br>
+faith shall drink the cup.</p>
+<p>When in dust and ashes<br>
+to the grave I sink,<br>
+while heaven's glory flashes<br>
+o'er the shelving brink,<br>
+on thy truth relying, <br>
+through that mortal strife,<br>
+Lord, receive me, dying, <br>
+to eternal life.`],
     "L3": [""],
     "L4": [""],
     "L5": [""],
