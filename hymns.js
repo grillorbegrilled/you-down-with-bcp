@@ -710,7 +710,26 @@ for none can guess its grace,<br>
 till Love create a place<br>
 wherein the Holy Spirit makes a dwelling.`],
     "AW": [""],
-    "L1": [""],
+    "L1": [`The glory of these forty days<br>
+we celebrate with songs of praise;<br>
+for Christ, through whom all things were made,<br>
+himself has fasted and has prayed.</p>
+<p>Alone and fasting Moses saw<br>
+the loving God who gave the law;<br>
+and to Elijah, fasting, came <br>
+the steeds and chariots of flame.</p>
+<p>So Daniel trained his mystic sight,<br>
+delivered from the lions' might;<br>
+and John, the Bridegroom's friend, became<br>
+the herald of Messiah's name.</p>
+<p>Then grant us, Lord, like them to be<br>
+full oft in fast and prayer with thee;<br>
+our spirits strengthen with thy grace,<br>
+and give us joy to see thy face.</p>
+<p>O Father, Son, and Spirit blest,<br>
+to thee be every prayer addressed,<br>
+who art in three-fold Name adored, <br>
+from age to age, the only Lord.`],
     "L2": [""],
     "L3": [""],
     "L4": [""],
