@@ -226,7 +226,7 @@ async function getLessonFromFile(liturgicalDay, filePath) {
         return { "cit": data[day].cit, "txt": lessonText } || ""; // Return the actual value for the liturgicalDay or an empty string if not found
     } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
-        return "";
+        return error;
     }
 }
 
