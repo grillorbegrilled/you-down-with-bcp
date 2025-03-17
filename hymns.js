@@ -1556,5 +1556,59 @@ be filled with praise!`
             but naught can break the union<br>
             of hearts in thee made one;<br>
             and love thy Spirit hallows<br>
-            is endless love begun.`]
+            is endless love begun.`],
+    "Patrick":[`I Bind unto myself today<br>
+The strong Name of the Trinity,<br>
+By invocation of the same,<br>
+The Three in One and One in Three.</p>
+        <p>I bind this day to me for ever,<br>
+By power of faith, Christ's Incarnation;<br>
+His baptism in Jordan river;<br>
+His death on cross for my salvation;<br>
+His bursting from the spicèd tomb;<br>
+His riding up the heavenly way;<br>
+His coming at the day of doom:<br>
+I bind unto myself today.</p>
+        <p>I bind unto myself the pow'r<br>
+Of the great love of cherubim;<br>
+The sweet 'Well done' in judgment hour;<br>
+The service of the seraphim;<br>
+Confessors' faith, apostles' word,<br>
+The patriarchs' prayers, the prophets' scrolls;<br>
+All good deeds done unto the Lord,<br>
+And purity of virgin souls.</p>
+        <p>I bind unto myself today<br>
+The virtues of the star-lit heav'n,<br>
+The glorious sun's life-giving ray,<br>
+The whiteness of the moon at even,<br>
+The flashing of the lightning free,<br>
+The whirling wind's tempestuous shocks,<br>
+The stable earth, the deep salt sea,<br>
+Around the old eternal rocks.</p>
+        <p>I bind unto myself today<br>
+The power of God to hold and lead,<br>
+His eye to watch, his might to stay,<br>
+His ear to hearken to my need;<br>
+The wisdom of my God to teach,<br>
+His hand to guide, his shield to ward;<br>
+The word of God to give me speech,<br>
+His heavenly host to be my guard.</p>
+        <p><i>Christ be with me, Christ within me,<br>
+Christ behind me, Christ before me,<br>
+Christ beside me, Christ to win me,<br>
+Christ to comfort and restore me,<br>
+Christ beneath me, Christ above me,<br>
+Christ in quiet, Christ in danger,<br>
+Christ in hearts of all that love me,<br>
+Christ in mouth of friend and stranger.</i></p>
+        <p>I bind unto myself the Name,<br>
+The strong Name of the Trinity;<br>
+By invocation of the same,<br>
+The Three in One, and One in Three.<br>
+Of whom all nature hath creation;<br>
+Eternal Father, Spirit, Word:<br>
+Praise to the Lord of my salvation,<br>
+Salvation is of Christ the Lord.`],
+    "Joseph":[``],
+    "Hugh":[``],
 };
