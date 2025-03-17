@@ -96,5 +96,8 @@ const dayNames = {
     "SimonAndJude": "SS. Simon and Jude",
     "AllSaints": "All Saints",
     "ThanksgivingDay": "Thanksgiving Day",
-    "IndependenceDay": "Independence Day"
+    "IndependenceDay": "Independence Day",
+    "Patrick": "St. Patrick",
+    "Joseph": "St. Joseph",
+    "Hugh": "St. Hugh"
 };
