@@ -379,4 +379,7 @@ const redLetters = {
     "AllSaints": ["Wisdom 3:1-10","Hebrews 11:33-12:7","Wisdom 3:10ff","Revelation 19:1-17"],
     "IndependenceDay": ["Deuteronomy 28:1-14","John 8:31-36"],
     "ThanksgivingDay": ["Deuteronomy 8","1 Thessalonians 5:12-23","Isaiah 12","Philippians 4:4-7"]
+    "Patrick": ["Isaiah 8:19-9:2", "John 1:1-14", "Acts 16:6-10", "Isaiah 51:1-11", "2 Corinthians 4", "2 Corinthians 10"],
+    "Joseph": [],
+    "Hugh": []
 }
