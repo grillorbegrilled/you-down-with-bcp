@@ -119,6 +119,7 @@ function makeP(text){
 }
 
 function makeDropCap(text) {
+    if (!text) return "NULL";
   if (text.length === 0) return text;
   const firstLetter = text.charAt(0);
   const restOfString = text.slice(1);
