@@ -132,6 +132,7 @@ function getTopImage(lit, month, date) {
             else
                 return "olive";
             break;*/
+      case "Patrick": return "images/bg/st-pat.jpg";
         default:
             return "images/bg/harvest.png";
     }
