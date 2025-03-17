@@ -39,6 +39,8 @@ function getBookmarkColor(lit, month, date) {
         case "L2":
         case "L3":
         case "L4":
+        case "Patrick":
+        case "Joseph":
             return "lent";
             break;
         case "L5":
