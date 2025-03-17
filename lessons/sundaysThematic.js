@@ -382,4 +382,4 @@ const redLetters = {
     "Patrick": ["Isaiah 8:19-9:2", "John 1:1-14", "Acts 16:6-10", "Isaiah 51:1-11", "2 Corinthians 4", "2 Corinthians 10"],
     "Joseph": [],
     "Hugh": []
-}
+};
