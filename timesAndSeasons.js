@@ -354,6 +354,8 @@ function getLiturgicalDate(now) {
         if (day === 24) return "Matthias";
     } else if (month === 2) { //mar
         if (day === 25) return "Annunciation";
+        if (day === 17 && now.getDay() !== 0 || day == 18 && now.getDay() === 1) return "Patrick";
+        if (day === 19 && now.getDay() !== 0 || day == 20 && now.getDay() === 1) return "Joseph";
     } else if (month === 3) { //apr
         if (day === 25) return "Mark";
     } else if (month === 4) { //may
