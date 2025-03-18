@@ -41,7 +41,7 @@ function getOffice(now, week, feast) {
                 break;
             case 2:
                 document.getElementById("office-name").textContent = "Evening Prayer";
-                document.getElementById("canticle").innerHTML = getEveningCanticle(feast);
+                document.getElementById("canticle").innerHTML = getEveningCanticle(feast, week);
                 document.getElementById("creed-or-suffrages").innerHTML = `<p><span class="drop-cap">O</span> LORD, show thy mercy upon us.<br>
                  	  <b>And grant us thy salvation.</b><br>
                  	  O Lord, save the State.<br>
@@ -194,8 +194,8 @@ function getMorningCanticle(week, feast) {
         As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
 }
 
-function getEveningCanticle(isFeast) {
-    if (isFeast) return `<p><span class="drop-cap">G</span>LORY be to God on high, and on earth peace, good will towards men. We praise thee, we bless thee, we worship thee, we glorify thee, we give thanks to thee for thy great glory, O Lord God, heavenly King, God the Father Almighty.<br>
+function getEveningCanticle(isFeast, week) {
+    if (isFeast && !['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week)) return `<p><span class="drop-cap">G</span>LORY be to God on high, and on earth peace, good will towards men. We praise thee, we bless thee, we worship thee, we glorify thee, we give thanks to thee for thy great glory, O Lord God, heavenly King, God the Father Almighty.<br>
         O Lord, the only-begotten Son, Jesus Christ; O Lord God, Lamb of God, Son of the Father, that takest away the sins of the world, have mercy upon us. Thou that takest away the sins of the world, receive our prayer. Thou that sittest at the right hand of God the Father, have mercy upon us.<br>
         For thou only art holy; thou only art the Lord; thou only, O Christ, with the Holy Ghost, art most high in the glory of God the Father. Amen.</p>`;
 
