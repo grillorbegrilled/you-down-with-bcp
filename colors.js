@@ -32,7 +32,7 @@ function getBookmarkColor(lit, month, date) {
             break;
         case "Candlemas":
         case "Annunciation":
-            return "white_damask"; //pink or Marian blue
+            return "pink";
             break;
         case "AW":
         case "L1":
