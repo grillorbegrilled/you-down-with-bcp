@@ -35,9 +35,9 @@ function getTopImage(lit, month, date) {
         case "Candlemas":
             return "images/bg/pres-temp-erase.jpg";
             break;
-        /*case "Annunciation":
-            return "white_damask"; //pink or Marian blue
-            break;*/
+        case "Annunciation":
+            return "images/bg/4994.jpg";
+            break;
         case "AW":
         case "L1":
         case "L2":
