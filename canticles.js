@@ -71,6 +71,7 @@ function getMorn(day) {
     case "Whitsun":
     case "Whitmon":
     case "WhitTue":
+    case "Annunciation":
       return `WE praise thee, O God : we acknowledge thee to be the Lord.<br>
     All the earth doth worship thee : the Father everlasting.<br>
     To thee all Angels cry aloud : the Heavens, and all the Powers therein.<br>
