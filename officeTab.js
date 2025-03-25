@@ -131,7 +131,7 @@ function getMorningCanticle(week, feast) {
         As it was in the beginning, is now, and ever shall be * world without end. Amen.</p>`;
     
     //Benedictus Es
-    if (['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week) && !(feast === 'Annunciation' && now.getDay() === 0)) return `<p><span class="drop-cap">B</span>LESSED art thou, O Lord God of our fathers: * praised and exalted above all for ever.<br>
+    if (['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week) && !(feast === 'Annunciation' && (new Date()).getDay() === 0)) return `<p><span class="drop-cap">B</span>LESSED art thou, O Lord God of our fathers: * praised and exalted above all for ever.<br>
         Blessed art thou for the Name of thy Majesty: * praised and exalted above all for ever.<br>
         Blessed art thou in the temple of thy holiness: * Praised and exalted above all for ever.<br>
         Blessed art thou that beholdest the depths, and dwellest between the Cherubim: * praised and exalted above all for ever.<br>
