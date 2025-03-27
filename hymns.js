@@ -3,7 +3,8 @@ function getHymns(liturgicalDay) {
     if (day === "T25") day = "E6";
     else if (day === "T26") day = "E5";
     else if (day === "Stephen" || day === "JohnEvangelist" || day === "Innocents" || day === "X1" || day === "Circ") day = "Xmas";
-    else if (day === "E1") day = "Epiphany";
+    else if (day === "E1") day = "Epiphany"
+    else if (day === "L3") day = "L2";
     
     const items = hymns[day];
     var result = '';
@@ -762,7 +763,7 @@ on thy truth relying, <br>
 through that mortal strife,<br>
 Lord, receive me, dying, <br>
 to eternal life.`],
-    "L3": [""],
+    //"L3": [""], see L2
     "L4": [""],
     "L5": [""],
     "Palm": [""],
