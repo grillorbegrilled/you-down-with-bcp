@@ -3,8 +3,7 @@ function getHymns(liturgicalDay) {
     if (day === "T25") day = "E6";
     else if (day === "T26") day = "E5";
     else if (day === "Stephen" || day === "JohnEvangelist" || day === "Innocents" || day === "X1" || day === "Circ") day = "Xmas";
-    else if (day === "E1") day = "Epiphany"
-    else if (day === "L3") day = "L2";
+    else if (day === "E1") day = "Epiphany";
     
     const items = hymns[day];
     var result = '';
@@ -731,7 +730,19 @@ and give us joy to see thy face.</p>
 to thee be every prayer addressed,<br>
 who art in three-fold Name adored, <br>
 from age to age, the only Lord.`],
-    "L2": [`In the hour of trial, <br>
+    "L2": [`O God of truth, O Lord of might,<br>
+who ord'rest tim and change aright,<br>
+and send'st the early morning ray,<br>
+and light'st the glow of perfect day:</p>
+<p>Extinguish thou each sinful fire,<br>
+and banish every ill desire;<br>
+and while thou keep's the body whole,<br>
+shed forth thy peace upon the soul.</p>
+<p>O Father, that we ask be done,<br>
+through Jesus Christ, thine only Son,<br>
+who, with the Holy Ghost and thee,<br>
+doth live and reign eternally.`],
+    "L3": [`In the hour of trial, <br>
 Jesus, plead for me,<br>
 lest by base denial <br>
 I depart from thee.<br>
@@ -763,7 +774,6 @@ on thy truth relying, <br>
 through that mortal strife,<br>
 Lord, receive me, dying, <br>
 to eternal life.`],
-    //"L3": [""], see L2
     "L4": [""],
     "L5": [""],
     "Palm": [""],
