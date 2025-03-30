@@ -34,7 +34,14 @@ element.style.backgroundPosition = 'top center';
     document.getElementById('preface').innerHTML = getPreface(liturgicalDay, now.getMonth(), now.getDate(), now.getDay());
 
     if (['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week))
-        document.getElementById('gloria').style.display = "none";
+        document.getElementById('gloria').innerHTML = makeP(makeDropCap(`O saving Victim, open wide<br>
+the gate of heav'n to man below;<br>
+our foes press on from every side;<br>
+thine aid supply; thy strength bestow.`)) +
+makeP(`All praise and thanks to thee ascend<br>
+for evermore, blest One in Three;<br>
+O grant us life that shall not end<br>
+in our true native land with thee.`);
 
     getOffice(now, week, feast);
 
