@@ -774,7 +774,30 @@ on thy truth relying, <br>
 through that mortal strife,<br>
 Lord, receive me, dying, <br>
 to eternal life.`],
-    "L4": [""],
+    "L4": [`I heard the voice of Jesus say,<br>
+"Come unto me and rest;<br>
+lay down, thou weary one, lay down<br>
+thy head upon my breast."<br>
+I came to Jesus as I was,<br>
+so weary, worn, and sad;<br>
+I found in him a resting place, <br>
+and he has made me glad.</p>
+<p>I heard the voice of Jesus say,<br>
+"Behold, I freely give<br>
+the living water; thirsty one,<br>
+stoop down and drink, and live."<br>
+I came to Jesus, and I drank<br>
+of that life-giving stream;<br>
+my thirst was quenched, my soul revived,<br>
+and now I live in him.</p>
+<p>I heard the voice of Jesus say,<br>
+"I am this dark world's light;<br>
+look unto me, thy morn shall rise,<br>
+and all thy day be bright."<br>
+I looked to Jesus, and I found <br>
+in him my Star, my Sun;<br>
+and in that light of life I'll walk<br>
+till traveling days are done.`],
     "L5": [""],
     "Palm": [""],
     "HW-Mon": [""],
