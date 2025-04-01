@@ -54,9 +54,11 @@ function getOffice(now, week, feast) {
                  	  <b>For it is thou, Lord, only, that makest us dwell in safety.</b><br>
                  	  O God, make clean our hearts within us.<br>
                    	<b>And take not thy Holy Spirit from us.</b></p>`;
-                getLessonFromFile(feast || week, "./lessons/evening.json").then(lessonContent => {
-                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
-                });
+                //getLessonFromFile(feast || week, "./lessons/evening.json").then(lessonContent => {
+                //    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
+                //});
+                document.getElementById('lesson').style.display = "none";
+                
                 document.getElementById("office-collect").innerHTML = "<p><span class='drop-cap'>O</span> GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that both our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.</p>";
                 break;
             case 3:
