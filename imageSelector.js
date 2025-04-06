@@ -45,7 +45,7 @@ function getTopImage(lit, month, date) {
         case "L4":
             return "images/bg/lent.jpg";
             break;
-        /*case "L5":
+        case "L5":
         case "Palm":
         case "HW-Mon":
         case "HW-Tue":
@@ -53,9 +53,9 @@ function getTopImage(lit, month, date) {
         case "HW-Thu":
         case "GF":
         case "EE":
-            return "purple";
+            return "images/bg/sclems.jpg";
             break;
-        case "Easter":
+        /*case "Easter":
         case "EasterMon":
         case "EasterTue":
         case "Ea1":
