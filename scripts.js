@@ -49,7 +49,7 @@ in our true native land with thee.`);
         document.getElementById('readings').innerHTML = lessonContent;
     });
 
-    document.getElementById('tab-4').innerHTML = "<h1>Intercessions</h1>" + getBidding(liturgicalDay) + getIntercessions() + getAddlPrayers(lit);
+    document.getElementById('tab-4').innerHTML = "<h1>Intercessions</h1>" + getBidding(liturgicalDay) + getIntercessions() + getAddlPrayers(liturgicalDay);
 }
 
 async function getProper2(liturgicalDay) {
