@@ -68,11 +68,7 @@ const litOfHum = `<h1>A Litany of Humility</h1>
     That others may become holier than I, provided that I may become as holy as I should...<span style="display: block; text-align: right; font-style: italic;">⸺after Card. Merry del Val</span></p>`;
 
 function formatStationLesson(ref) {
-    let result = '';
-    handleBibleReference(ref).then(x => {
-        result = `<h3>${ref}</h3><p>${x}</p>`;
-    });
-    return result;
+    return handleBibleReference(ref).then(x => `<h3>${ref}</h3><p>${x}</p>`);
 }
 
 function getStations() {
