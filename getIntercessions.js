@@ -11,9 +11,6 @@ function getIntercessions() {
         the new Jerusalem, where we shall know perfect unity and peace; 
         through Jesus Christ our Lord. Amen.</p>
 
-<p>And now, brethren, summing up all our petitions, and all our thanksgivings, in the words which Christ hath taught us, we make bold to say,</p>
-<p>OUR Father, who art in heaven, Hallowed be thy Name. Thy kingdom come. Thy will be done on earth, As it is in heaven. Give us this day our daily bread. And forgive us our trespasses, As we forgive those who trespass against us. And lead us not into temptation; But deliver us from evil: For thine is the kingdom, and the power, and the glory, for ever and ever. Amen.</p>
-
     <p>ASSIST us mercifully, O Lord, in these our supplications and prayers, and dispose the way of thy servants towards the attainment of everlasting salvation; that, among all the changes and chances of this mortal life, they may ever be defended by thy most gracious and ready help; through Jesus Christ our Lord. Amen.</p>`;
 }
 
