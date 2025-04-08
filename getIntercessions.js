@@ -78,7 +78,7 @@ function getStations() {
         <h2>I. Jesus in the Garden of Gethsemane</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("Matthew 26:36-41")
+        ${formatStationLesson("Matthew 26:36-41")}
         <p>Blessed be your name, O Jesus, and blessed be your lovingkindness, by which you neglected your own sorrows to comfort the sadness of your disciples, quickening their dullness, encouraging their duty, and arming their weakness against the day of trial.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -86,7 +86,7 @@ function getStations() {
         <h2>II. Jesus is betrayed by Judas and arrested</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("Matthew 26:47-52")
+        ${formatStationLesson("Matthew 26:47-52")}
         <p>Blessed be your name, O Jesus, and blessed be your sorrow, that you, Lord of the angels, would yet need and receive comfort from an angel. You offered yourself to your persecutors and received the traitor’s kiss. You healed by a miracle the ear of a spiteful enemy, and reproved your zealous servant in his behalf, and went like a lamb to the slaughter, without noise or violence or resistance, when you could have commanded millions of angels for your guard and rescue.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -94,7 +94,7 @@ function getStations() {
         <h2>III. Jesus is condemned by the Sanhedrin</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("Luke 22:66-71")
+        ${formatStationLesson("Luke 22:66-71")}
         <p>Blessed be your name, O Jesus, and blessed be your longsuffering when your disciples fled and you were left alone in the hands of cruel men. You were led to the house of Annas, and there asked ensnaring questions, and smitten on the face by him whose ear you had only just healed; and from thence were dragged to the house of Caiaphas; and there all night endured spitting, insults, scorn, beating, and intolerable abuse; and all this for Man, who was your enemy, and the cause of all your sorrows. You were accused before the high priest and railed against, and examined with evil purposes and designs of blood; and declared guilty of death for speaking a most necessary truth.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -102,7 +102,7 @@ function getStations() {
         <h2>IV. Jesus is denied by Peter</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("Matthew 26:69-75")        
+        ${formatStationLesson("Matthew 26:69-75")}        
         <p>Blessed be your name, O Jesus, and blessed be your mercy when your servant Peter denied you and forsook you and forswore you, for when he had, then you looked back on him, and by that gracious and chiding look called him back to himself and to you.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -110,7 +110,7 @@ function getStations() {
         <h2>V. Jesus is judged by Pontius Pilate</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("Mark 15:1-5, 15")        
+        ${formatStationLesson("Mark 15:1-5, 15")}        
         <p>Blessed be your name, O Jesus, and blessed be your innocence, for you were sent to Pilate and found blameless, and sent to Herod and still found without guilt, and were then sent back to Pilate, and examined again, and yet nothing but innocence was found in you, and malice round about you. You were more willing to lay down your life for them than they were to take it from you.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -118,7 +118,7 @@ function getStations() {
         <h2>VI. Jesus is scourged at the pillar and crowned with thorns</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("John 19:1-3")        
+        ${formatStationLesson("John 19:1-3")}        
         <p>Blessed be your name, O Jesus, and blessed be that patience and charity, by which for our sakes you allowed yourself to be beaten with canes, and your holy face, which angels behold with joy and wonder, to be spit on, and to be and scourged with unhallowed hands, and condemned to a sad and shameful, a public and painful death, and arrayed in scarlet and crowned with thorns to be mocked.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -126,7 +126,7 @@ function getStations() {
         <h2>VII. Jesus bears the cross</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("John 19:6, 15-17")        
+        ${formatStationLesson("John 19:6, 15-17")}        
         <p>Blessed be your name, O holy Jesus, and blessed be your strength when you were laden with the cross and bound hard with cords, and dragged through the streets, as if you had been a notorious criminal.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -134,7 +134,7 @@ function getStations() {
         <h2>VIII. Jesus is helped by Simon of Cyrene to carry the cross</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("Mark 15:21")        
+        ${formatStationLesson("Mark 15:21")}        
         <p>Blessed be your name, O holy Jesus, and blessed be your humility, for when the load of the cross was too great for you to bear because of your wounds, you were content to receive aid from Simon, teaching by his example that we must take up our own crosses and follow you.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -142,7 +142,7 @@ function getStations() {
         <h2>IX. Jesus meets the women of Jerusalem</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("Luke 23:27-31")        
+        ${formatStationLesson("Luke 23:27-31")}        
         <p>Blessed be your name, O Jesus, and blessed be your compassion, who yet comforted the weeping women of Jerusalem, and had more pity for your persecutors than for yourself, and were more grieved for the miseries of Jerusalem to come forty years after than for your present passion. You were led outside the gates of the city, to become the sacrifice for those beyond the pale, even for all the world.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -150,7 +150,7 @@ function getStations() {
         <h2>X. Jesus is crucified</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("Luke 23:33-34")        
+        ${formatStationLesson("Luke 23:33-34")}        
         <p>Blessed be your name, O Jesus, who were nailed upon the cross, and the cross, being set into a hole in the ground, did in the fall rend the wounds wider, and there, naked and bleeding, sick and faint, wounded and despised, didst hang upon the weight of the nails three long hours, praying for the forgiveness of your persecutors.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -158,7 +158,7 @@ function getStations() {
         <h2>XI. Jesus promises his Kingdom to the repentant thief</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("Luke 23:39-43")        
+        ${formatStationLesson("Luke 23:39-43")}        
         <p>Blessed be your name, O Jesus, and blessed be your love, for, even in your agony, you did not ignore the faith of the penitent thief, a faith that all the ages of the Church could never match: for when he saw you condemned to the same fate as himself—crucified, accused, scorned, forsaken, dying, and distressed, with no miracles to prove your divinity or innocence—yet he confessed you a Lord, a King, and his Savior. He confessed his own shame and unworthiness, submitting to the death of the cross, and begging only for your remembrance, for he knew his own sins to be so great, he dared not ask for more. And you, holding the keys of Paradise in your hand, blessed the good thief with the promise to let him in.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -166,7 +166,7 @@ function getStations() {
         <h2>XII. Jesus speaks to his mother and the Beloved Disciple</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("John 19:25-27")        
+        ${formatStationLesson("John 19:25-27")}        
         <p>Blessed be your name, O Jesus, and blessed be your holy Virgin Mother, upon whom old Simeon’s prophecy was now coming to pass. She now truly felt that sword passing through her very soul, and yet she stood by your side, without fleeing, without clamor or pity for herself, but silent in her grief, deep as the waters of the abyss, but smooth as the face of a pool, full of love, and patience, and sorrow, and hope. Now was her time to make use of all your excellent teachings, which you had given to build up her spirit and fortify it against this day, to exercise the strength of faith, to pass from the grief of the Passion to the hope of the Resurrection.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -174,7 +174,7 @@ function getStations() {
         <h2>XIII. Jesus dies on the cross</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("Luke 23:44-46")        
+        ${formatStationLesson("Luke 23:44-46")}        
         <p>Blessed be your name, O Jesus, who, when the fullness of your suffering was accomplished, gave your soul into the hands of God, reconciling us, who for our sins have no right or claim before the Father.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
@@ -182,7 +182,7 @@ function getStations() {
         <h2>XIV. Jesus is placed in the tomb</h2>
         <p>We adore you, O Christ, and we praise you,<br>
         <b>For by your holy cross you have redeemed the world.</b></p>
-        formatStationLesson("Matthew 27:57-60")        
+        ${formatStationLesson("Matthew 27:57-60")}        
         <p>Blessed be your name, O Jesus, for as your body was composed to burial, and dwelt in darkness three days and three nights, your soul descended to the place of the righteous dead, who waited long in expectation of this day, to loose the bonds of their imprisonment and deliver them with yourself into the presence of God.</p>
         <p>Crucified Lord Jesus,<br>
         <b>Have mercy on us.</b></p>
