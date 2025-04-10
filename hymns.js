@@ -6,7 +6,7 @@ function getHymns(liturgicalDay) {
     else if (day === "E1") day = "Epiphany";
     
     const items = hymns[day];
-    var result = '';
+    var result = "";
     
     if (items) result = items.map(item => `<p>${item}</p>`).join("<p style='text-align: center;'>✠&#9;✠&#9;✠</p>");
 
@@ -798,7 +798,38 @@ I looked to Jesus, and I found <br>
 in him my Star, my Sun;<br>
 and in that light of life I'll walk<br>
 till traveling days are done.`],
-    "L5": [""],
+    "L5": [`Hail, thou once-despisèd Jesus!<br>
+Hail, thou Galilean King!<br>
+Thou didst suffer to release us;<br>
+thou didst free salvation bring.<br>
+Hail, thou universal Savior,<br>
+bearer of our sin and shame,<br>
+by thy merit we find favor:<br>
+life is given through thy Name.</p>
+<p>Paschal Lamb, by God appointed,<br>
+all our sins on thee were laid:<br>
+by almighty love anointed,<br>
+thou hast full atonement made.<br>
+All thy people are forgiven<br>
+through the virtue of thy blood:<br>
+opened is the gate of heaven,<br>
+peace is made 'twixt man and God.</p>
+<p>Jesus, hail! enthroned in glory,<br>
+there for ever to abide;<br>
+all the heavenly hosts adore thee,<br>
+seated at thy Father's side.<br>
+There for sinners thou art pleading:<br>
+there thou dost our place prepare;<br>
+thou for saints are interceding<br>
+till in glory they appear.</p>
+<p>Worship, honor, pow'r, and blessing<br>
+thou art worthy to receive;<br>
+highest praises, without ceasing,<br>
+meet it is for us to give.<br>
+Help, ye bright angelic spirits,<br>
+bring your sweetest, noblest lays;<br>
+help to sing of Jesus’ merits,<br>
+help to chant Emmanuel's praise!`],
     "Palm": [""],
     "HW-Mon": [""],
     "HW-Tue": [""],
@@ -825,7 +856,8 @@ till traveling days are done.`],
     "T3": [""],
 //--------------------------------------------------------------------
     "T4": ["There's a wideness in God's mercy<br>like the wideness of the sea;<br>there's a kindness in his justice,<br>which is more than liberty.<br>There is welcome for the sinner,<br>and more graces for the good;<br>there is mercy with the Savior; <br>there is healing in his blood.<br></p><p>There is no place where earth's sorrows<br>are more felt than in heaven;<br>there is no place where earth's failings<br>have such kind judgment given.<br>There is plentiful redemption<br>in the blood that has been shed;<br>there is joy for all the members<br>in the sorrows of the Head.<br></p><p>For the love of God is broader<br>than the measure of man's mind;<br>and the heart of the Eternal<br>is most wonderfully kind.<br>If our love were but more faithful,<br>we should take him at his word;<br>and our life would be thanksgiving<br>for the goodness of the Lord."],
-    "T5": ["Forth in thy Name, O Lord, I go,<br>my daily labor to pursue;<br>thee, only thee, resolved to know<br>in all I think or speak or do.<br></p><p>The task thy wisdom hath assigned,<br>O let me cheerfully fulfill;<br>in all my works thy presence find,<br>and prove thy good and perfect will.<br></p><p>Thee may I set at my right hand,<br>whose eyes mine inmost substance see,<br>and labor on at thy command,<br>and offer all my works to thee.<br></p><p>Give me to bear thy easy yoke,<br>and every moment watch and pray,<br>and still to things eternal look,<br>and hasten to thy glorious day.<br></p><p>For thee delightfully employ<br>whate'er thy bounteous grace hath giv'n;<br>and run my course with even joy,<br>and closely walk with thee to heav'n."],
+    "T5": ["Forth in thy Name, O Lord, I go,<br>my daily labor to pursue;<br>thee, only thee, resolved to know<br>in all I think or speak or do.<br></p><p>The task thy wisdom hath assigned,<br>O let me cheerfully fulfill;<br>in all my works thy presence find,<br>and prove thy good and perfect will.<br></p><p>Thee may I set at my right hand,<br>whose eyes mine inmost substance see,<br>and labor on at thy command,<br>and offer all my works to thee.<br></p><p>Give me to bear thy easy yoke,<br>and every moment watch and pray,<br>and still to things eternal look,<br>and hasten to
+           thy glorious day.<br></p><p>For thee delightfully employ<br>whate'er thy bounteous grace hath giv'n;<br>and run my course with even joy,<br>and closely walk with thee to heav'n."],
     "T6": ["O Jesus, I have promised <br>to serve thee to the end:<br>be thou ever near me, <br>my Master and my friend;<br>I shall not fear the battle<br>if thou art by my side,<br>nor wander from the pathway<br>if thou wilt be my guide.</p><p>O let me feel thee near me! <br>The world is ever near;<br>I see the sights that dazzle, <br>the tempting sounds I hear;<br>my foes are ever near me, <br>around me and within;<br>but Jesus, draw thou nearer, <br>and shield my soul from sin.</p><p>O let me hear thee speaking <br>in accents clear and still,<br>above the storms of passion, <br>the murmurs of self-will;<br>O speak to reassure me, <br>to hasten or control;<br>O speak, and make me listen, <br>thou guardian of my soul.</p><p>O let me see thy features,<br>the look that once could make<br>so many a true disciple<br>leave all things for thy sake:<br>the look that beamed on Peter<br>when he thy name denied;<br>the look that draws thy lovers<br>close to thy piercèd side.</p><p>O Jesus, thou hast promised <br>to all who follow thee,<br>that where thou art in glory <br>there shall thy servant be;<br>and, Jesus, I have promised <br>to serve thee to the end;<br>O give me grace to follow, <br>my Master and my friend.</p><p>O let me see thy footmarks, <br>and in them plant mine own;<br>My hope to follow duly <br>is in thy strength alone.<br>O guide me, call me, draw me, <br>uphold me to the end;<br>and then in heaven receive me, <br>my Savior and my Friend."],
     "T7": [`Take my life, and let it be<br>
             consecrated, Lord, to thee;<br>
