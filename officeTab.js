@@ -1,5 +1,4 @@
 function getOffice(now, week, feast) {
-    try {
     const day = now.getDay();
     //------------------ALL SOULS
     if (now.getMonth() === 10 && now.getDate() === 2) document.getElementById("tab-0").innerHTML = getMemorial();
@@ -17,6 +16,7 @@ function getOffice(now, week, feast) {
         document.getElementById("tab-0").innerHTML = litany;
     
     else {
+        try {
         //------------------DAILY PRAYERS
         //officeType: 1=MP, 2=EP, 3=Compline
         var officeType = 0;
@@ -76,6 +76,9 @@ function getOffice(now, week, feast) {
             default:
                 document.getElementById("office-name").textContent = "Error";
                 break;
+            } catch (e) {
+        document.getElementById('lesson').innerHTML = `<p>${e}</p>`;
+        }
         }
     
         //All Conditions
@@ -100,9 +103,6 @@ function getOffice(now, week, feast) {
         additionalPrayers += "<p><span class='drop-cap'>T</span>HE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>";
         
         document.getElementById("additional-prayers").innerHTML = additionalPrayers;
-    }
-    } catch (e) {
-        document.getElementById('lesson').innerHTML = `<p>${e}</p>`;
     }
 }
 
