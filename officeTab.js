@@ -77,7 +77,7 @@ function getOffice(now, week, feast) {
                 document.getElementById("office-name").textContent = "Error";
                 break;
             }} catch (e) {
-        document.getElementById('lesson').innerHTML = `<p>${e}</p>`;
+        document.getElementById('lesson').innerHTML = `<p>I AM ERROR ${e}</p>`;
         }
     
         //All Conditions
