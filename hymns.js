@@ -830,7 +830,7 @@ Help, ye bright angelic spirits,<br>
 bring your sweetest, noblest lays;<br>
 help to sing of Jesus’ merits,<br>
 help to chant Emmanuel's praise!`],
-    "Palm": [``],
+    "Palm": [`All glory, laud, and honouir`],
     "HW-Mon": [""],
     "HW-Tue": [""],
     "HW-Wed": [""],
