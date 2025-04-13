@@ -76,9 +76,8 @@ function getOffice(now, week, feast) {
             default:
                 document.getElementById("office-name").textContent = "Error";
                 break;
-            } catch (e) {
+            }} catch (e) {
         document.getElementById('lesson').innerHTML = `<p>${e}</p>`;
-        }
         }
     
         //All Conditions
