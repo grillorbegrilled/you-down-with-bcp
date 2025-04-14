@@ -53,7 +53,7 @@ function getTopImage(lit, month, date) {
         case "HW-Thu":
         case "GF":
         case "EE":
-            return "images/bg/sclems.jpg";
+            return "images/bg/Maroon.jpg";
             break;
         /*case "Easter":
         case "EasterMon":
