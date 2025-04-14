@@ -830,7 +830,35 @@ Help, ye bright angelic spirits,<br>
 bring your sweetest, noblest lays;<br>
 help to sing of Jesus’ merits,<br>
 help to chant Emmanuel's praise!`],
-    "Palm": [`All glory, laud, and honouir`],
+    "Palm": [`All glory, laud, and honor<br>
+to thee, Redeemer, King!<br>
+to whom the lips of children<br>
+made sweet hosannas ring.</p>
+<p>Thou art the King of Israel,<br>
+thou David's royal Son,<br>
+who in the Lord's Name comest,<br>
+the King and Blessèd One.<br>
+All glory, &c.</p>
+<p>The company of angels <br>
+are praising thee on high;<br>
+and mortal men and all things<br>
+created make reply. <br>
+All glory, &c.</p>
+<p>The people of the Hebrews<br>
+with palms before thee went;<br>
+our praise and prayer and anthems<br>
+before thee we present.<br>
+All glory, &c.</p>
+<p>To thee before thy passion<br>
+they sang their hymns of praise;<br>
+to thee, now high exalted,<br>
+our melody we raise. <br>
+All glory, &c.</p>
+<p>Thou didst accept their praises;<br>
+accept the prayers we bring,<br>
+who in all good delightest,<br>
+thou good and gracious King. <br>
+All glory, &c.`],
     "HW-Mon": [""],
     "HW-Tue": [""],
     "HW-Wed": [""],
