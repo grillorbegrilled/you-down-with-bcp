@@ -4,6 +4,7 @@ function getHymns(liturgicalDay) {
     else if (day === "T26") day = "E5";
     else if (day === "Stephen" || day === "JohnEvangelist" || day === "Innocents" || day === "X1" || day === "Circ") day = "Xmas";
     else if (day === "E1") day = "Epiphany";
+    else if (day === "HW-Tue" || day === "HW-Wed") day = "HW-Mon";
     
     const items = hymns[day];
     var result = "";
@@ -859,9 +860,26 @@ accept the prayers we bring,<br>
 who in all good delightest,<br>
 thou good and gracious King. <br>
 All glory, &c.`],
-    "HW-Mon": [""],
-    "HW-Tue": [""],
-    "HW-Wed": [""],
+    "HW-Mon": [`There is a green hill far away,<br>
+Without a city wall,<br>
+Where the dear Lord was crucified<br>
+Who died to save us all.</p>
+<p>We may not know, we cannot tell,<br>
+What pains he had to bear,<br>
+But we believe it was for us<br>
+He hung and suffered there.</p>
+<p>He died that we might be forgiv'n,<br>
+He died to make us good,<br>
+That we might go at last to heav'n,<br>
+Saved by his precious blood.</p>
+<p>There was no other good enough<br>
+To pay the price of sin,<br>
+He only could unlock the gate<br>
+Of heav'n, and let us in.</p>
+<p>O dearly, dearly has he loved!<br>
+And we must love him too,<br>
+And trust in his redeeming blood,<br>
+And try his works to do.`],
     "HW-Thu": [""],
     "GF": [""],
     "EE": [""],
