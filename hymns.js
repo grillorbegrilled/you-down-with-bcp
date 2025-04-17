@@ -879,9 +879,48 @@ Of heav'n, and let us in.</p>
 <p>O dearly, dearly has he loved!<br>
 And we must love him too,<br>
 And trust in his redeeming blood,<br>
-And try his works to do.`],
+And try his works to do.`,
+              `O thou, who through this holy week,<br>
+              didst suffer for us all,<br> the sick to cure, the lost to seek,<br> to raise up them that fall. </p>
+<p>We cannot understand the woe<br> thy love was pleased to bear: <br>
+O Lamb of God, we only know<br> that all our hopes are there. </p>
+<p>Thy feet the path of suff’ring trod,<br> thy hand the vict’ry won: <br>
+what shall we render to our God<br> for all that he hath done? </p>
+<p>O grant us, Lord, with thee to die, <br>with thee to rise anew; <br>
+grant us the things of earth to fly,<br> the things of heav’n pursue. </p>
+<p>To God, the blessèd Three in One,<br> all praise and glory be: <br>
+crown, Lord, thy servants who have won<br> the victory through thee.`],
     "HW-Thu": [""],
-    "GF": [""],
+    "GF": [`O sacred head, surrounded<br> by crown of piercing thorn! <br>
+O bleeding head, so wounded,<br> reviled and put to scorn! <br>
+Our sins have marred the glory<br>
+of thy most holy face,<br> yet angel hosts adore thee<br> and tremble as they gaze.</p>
+<p> I see thy strength and vigor<br> all fading in the strife,<br> and death with cruel rigor,<br> bereaving thee of life; <br>
+O agony and dying! <br>
+O love to sinners free! <br>
+Jesus, all grace supplying,<br> O turn thy face on me. </p>
+<p> In this thy bitter passion,<br> Good Shepherd, think of me <br>with thy most sweet compassion,<br> unworthy though I be: <br>
+beneath thy cross abiding<br> for ever would I rest,<br> in thy dear love confiding,<br> and with thy presence blessed.`,
+`Ah, holy Jesus! how hast thou offended,<br> that man to judge thee hath in hate pretended? <br>
+By foes derided, by thine own rejected, <br>O most afflicted. </p>
+<p>Who was the guilty? Who brought this upon thee? <br>
+Alas, my treason, Jesus, hath undone thee. <br>
+’Twas I, Lord Jesus, I it was denied thee: <br>
+I crucified thee. </p>
+<p>Lo, the Good Shepherd for the sheep is offered; <br>
+the slave hath sinnèd, and the Son hath suffered; <br>
+for our atonement, while we nothing heedeth,<br> God intercedeth. </p>
+<p> For me, kind Jesus, was thy incarnation,<br> thy mortal sorrow, and thy life’s oblation; 
+thy death of anguish and thy bitter passion,<br>
+for my salvation. </p>
+<p>Therefore, kind Jesus, since I cannot pay thee,<br> I do adore thee, and will ever pray thee,<br> think on thy pity and thy love unswerving, <br>not my deserving. `,
+`When I survey the wondrous cross<br> on which the Prince of Glory died, <br>my richest gain I count but loss,<br> and pour contempt on all my pride. </p>
+<p>Forbid it, Lord, that I should boast,<br> save in the cross of Christ, my God: <br>
+all the vain things that charm me most, <br>I sacrifice them to his blood. </p>
+<p>See, from his head, his hands, his feet, <br>sorrow and love flow mingling down! <br>
+Did e’er such love and sorrow meet, <br>or thorns compose so rich a crown? </p>
+<p>Were the whole realm of nature mine,<br> that were an off’ring far too small; <br>
+love so amazing, so divine,<br> demands my soul, my life, my all.`],
     "EE": [""],
     "Easter": [""],
     "EasterMon": [""],
