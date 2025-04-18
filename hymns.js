@@ -941,7 +941,316 @@ Did e’er such love and sorrow meet, <br>or thorns compose so rich a crown? </p
 <p>Were the whole realm of nature mine,<br> that were an off’ring far too small; <br>
 love so amazing, so divine,<br> demands my soul, my life, my all.`],
     "EE": [""],
-    "Easter": [""],
+    "Easter": [`Hail thee, festival day!<br>
+Blest day that art hallowed forever;<br>
+day wherein Christ arose,<br>
+breaking the kingdom of death.</p>
+<p>Lo, the fair beauty of earth,<br>
+from the death of the winter arising,<br>
+every good gift of the year<br>
+now with its Master returns.<br>
+Hail thee, &c.</p>
+<p>He who was nailed to the Cross<br>
+is God and the Ruler of all things;<br>
+all things created on earth<br>
+worship the Maker of all. <br>
+Hail thee, &c.</p>
+<p>God of all pity and power,<br>
+let thy word be assured to the doubted;<br>
+light on the third day returns:<br>
+rise, Son of God, from the tomb! <br>
+Hail thee, &c.</p>
+<p>Ill doth it seem that thy limbs<br>
+should linger in lowly dishonor;<br>
+ransom and price of the world,<br>
+veiled from the vision of men. <br>
+Hail thee, &c.</p>
+<p>Loosen, O Lord, the enchained,<br>
+the spirits imprisoned in darkness;<br>
+rescue, recall into life those<br>
+who are rushing to death. <br>
+Hail thee, &c.</p>
+<p>Ill it beseemeth that thou,<br>
+by whose hand all things are encompassed,<br>
+captive and bound shouldst remain,<br>
+deep in the gloom of the rock. <br>
+Hail thee, &c.</p>
+<p>Rise now, O Lord, from the grave<br>
+and cast off the shroud that enwrapped thee;<br>
+thou art sufficient for us;<br>
+nothing without thee exists. <br>
+Hail thee, &c.</p>
+<p>Mourning they laid thee to rest,<br>
+who art Author of life and creation;<br>
+treading the pathway of death,<br>
+life thou bestowedst on man. <br>
+Hail thee, &c.</p>
+<p>Show us thy face once more,<br>
+that the ages may joy in thy brightness;<br>
+give us the light of day,<br>
+darkened on earth at thy death. <br>
+Hail thee, &c.</p>
+<p>Out of the prison of death<br>
+thou art rescuing numberless captives;<br>
+freely they tread in the way<br>
+whither their Maker has gone. <br>
+Hail thee, &c.</p>
+<p>Jesus has harrowed hell;<br>
+he has led captivity captive;<br>
+darkness and chaos and death<br>
+flee from the face of the light. <br>
+Hail thee, &c.`,
+`Jesus Christ is ris’n today, Alleluia!<br>
+Our triumphant holy day, Alleluia!<br>
+Who did once, upon the cross, Alleluia!<br>
+Suffer to redeem our loss, Alleluia!</p>
+<p>Hymns of praise then let us sing, Alleluia!<br>
+Unto Christ, our heav’nly King, Alleluia!<br>
+Who endured the cross and grave, Alleluia!<br>
+Sinners to redeem and save, Alleluia!</p>
+<p>But the pains which he endured, Alleluia!<br>
+Our salvation hath procured, Alleluia!<br>
+Now above the sky he’s king, Alleluia!<br>
+Where the angels ever sing, Alleluia!</p>
+<p>Sing we to our God above, Alleluia!<br>
+Praise eternal as his love, Alleluia!<br>
+Praise him, all ye heav’nly host, Alleluia!<br>
+Father, Son, and Holy Ghost, Alleluia!`,
+`Alleluia, alleluia!<br>
+Hearts to heav’n and voices raise:<br>
+Sing to God a hymn of gladness,<br>
+Sing to God a hymn of praise.<br>
+He, who on the cross a Victim,<br>
+For the world’s salvation bled,<br>
+Jesus Christ, the King of glory,<br>
+Now is risen from the dead.</p>
+<p>Now the iron bars are broken,<br>
+Christ from death to life is born,<br>
+Glorious life, and life immortal,<br>
+On the holy Easter morn.<br>
+Christ has triumphed, and we conquer<br>
+By his mighty enterprise:<br>
+We with him to life eternal<br>
+By his resurrection rise.</p>
+<p>Christ is risen, Christ, the first fruits<br>
+Of the holy harvest field,<br>
+Which will all its full abundance<br>
+At His second coming yield:<br>
+Then the golden ears of harvest<br>
+Will their heads before him wave,<br>
+Ripened by his glorious sunshine<br>
+From the furrows of the grave.</p>
+<p>Christ is risen! We are risen!<br>
+Shed upon us heav’nly grace,<br>
+Rain and dew and gleams of glory<br>
+From the brightness of thy face;<br>
+That we, with our hearts in heaven,<br>
+Here on earth may fruitful be,<br>
+And by angel hands be gathered,<br>
+And be ever, Lord, with thee.</p>
+<p>Alleluia, alleluia!<br>
+Glory be to God on high;<br>
+Alleluia! to the Savior<br>
+Who has gained the victory;<br>
+Alleluia! to the Spirit,<br>
+Fount of love and sanctity:<br>
+Alleluia, alleluia!<br>
+To the Triune Majesty.`,
+`He is risen, he is risen!<br>
+Tell it out with joyful voice:<br>
+he has burst his three days’ prison;<br>
+let the whole wide earth rejoice:<br>
+death is conquered, man is free,<br>
+Christ has won the victory.</p>
+<p>Come, ye sad and fearful-hearted,<br>
+with glad smile and radiant brow!<br>
+Lent’s long shadows have departed;<br>
+Jesus’ woes are over now,<br>
+and the passion that he bore—<br>
+sin and pain can vex no more.</p>
+<p>Come, with high and holy hymning,<br>
+hail our Lord’s triumphant day;<br>
+not one darksome cloud is dimming<br>
+yonder glorious morning ray,<br>
+breaking o’er the purple east,<br>
+symbol of our Easter feast.</p>
+<p>He is risen, he is risen!<br>
+He hath opened heaven’s gate:<br>
+we are free from sin’s dark prison,<br>
+risen to a holier state;<br>
+and a brighter Easter beam<br>
+on our longing eyes shall stream.`,
+`At the Lamb’s high feast we sing<br>
+praise to our victorious King,<br>
+who hath washed us in the tide<br>
+flowing from his pierced side;<br>
+praise we him, whose love divine<br>
+gives his sacred Blood for wine,<br>
+gives his Body for the feast,<br>
+Christ the victim, Christ the priest.
+</p><p>
+Where the Paschal blood is poured,<br>
+death’s dark angel sheathes his sword;<br>
+Israel’s hosts triumphant go<br>
+through the wave that drowns the foe.<br>
+Praise we Christ, whose blood was shed,<br>
+Paschal victim, Paschal bread;<br>
+with sincerity and love<br>
+eat we manna from above.<br>
+</p><p>
+Mighty victim from on high,<br>
+hell’s fierce powers beneath thee lie;<br>
+thou hast conquered in the fight,<br>
+thou hast brought us life and light:<br>
+now no more can death appall,<br>
+now no more the grave entrall;<br>
+thou hast opened paradise,<br>
+and in thee thy saints shall rise.<br>
+</p><p>
+Easter triumph, Easter joy,<br>
+sin alone can this destroy;<br>
+from sin’s power do thou set free<br>
+souls newborn, O Lord, in thee.<br>
+Hymns of glory and of praise,<br>
+Risen Lord, to thee we raise;<br>
+Holy Father, praise to thee,<br>
+with the Spirit, ever be.`,
+`The strife is o’er, the battle done,<br>
+the victory of life is won;<br>
+the song of triumph has begun.<br>
+Alleluia!</p><p>
+The pow’rs of death have done their worst,<br>
+but Christ their legions hath dispersed:<br>
+let shout of holy joy outburst.<br>
+Alleluia!</p><p>
+The three sad days are quickly sped,<br>
+he rises glorious from the dead:<br>
+all glory to our risen Head!<br>
+Alleluia!</p><p>
+He closed the yawning gates of hell,<br>
+the bars from heaven’s high portals fell;<br>
+let hymns of praise his triumphs tell!<br>
+Alleluia!</p><p>
+Lord! by the stripes which wounded thee,<br>
+from death’s dread sting thy servants free,<br>
+that we may live and sing to thee.<br>
+Alleluia!`,
+`That Eastertide with joy was bright,<br>
+the sun shone out with fairer light,<br>
+when, to their longing eyes restored,<br>
+th’Apostles saw their risen Lord.
+</p><p>
+He bade them see his hands, his side,<br>
+where yet the glorious wounds abide;<br>
+the tokens true which made it plain<br>
+their Lord was risen again.
+</p><p>
+O Jesus, King of gentleness,<br>
+do thou thyself out hearts possess<br>
+that we may give thee all our days<br>
+the tribute of our grateful praise.
+</p><p>
+O Lord of all, with us abide<br>
+in this our joyful Eastertide;<br>
+from every weapon death can wield<br>
+thine own redeemed for ever shield.`,
+`Come, ye faithful, raise the strain<br>
+of triumphant gladness!<br>
+God hath brought his Israel<br>
+into joy from sadness:<br>
+loosed from Pharoah’s bitter yoke<br>
+Jacob’s sons and daughters,<br>
+led them with unmoistened foot<br>
+through the Red Sea waters.
+</p><p>
+‘Tis the spring of souls today:<br>
+Christ hath burst his prison,<br>
+and from three days’ sleep in death<br>
+as a sun hath risen;<br>
+all the winter of our sins,<br>
+long and dark, is flying<br>
+from his light, to whom we give<br>
+laud and praise undying.
+</p><p>
+Now the queen of seasons, bright<br>
+with the day of splendor,<br>
+with the royal feast of feasts,<br>
+comes its joy to render;<br>
+comes to glad Jerusalem,<br>
+who with true affection<br>
+welcomes in unwearied strains<br>
+Jesus’ resurrection.
+</p><p>
+Neither might the gates of death,<br>
+nor the tomb’s dark portal,<br>
+nor the watchers, nor the seal<br>
+hold thee as a mortal:<br>
+but today amidst the twelve<br>
+thou didst stand, bestowing<br>
+that thy peace which evermore<br>
+passeth human knowing.
+</p><p>
+Alleluia now we cry<br>
+to our King Immortal,<br>
+who triumphant burst the bars<br>
+of the tomb’s dark portal;<br>
+alleluia, with the Son<br>
+God the Father praising;<br>
+alleluia yet again<br>
+to the Spirit raising.`,
+`“Welcome, happy morning!”<br>
+age to age shall say:<br>
+hell today is vanquished,<br>
+heav’n is won today!<br>
+Lo! the dead is living,<br>
+God for evermore!<br>
+Him their true Creator,<br>
+all his works adore!
+</p><p>
+Earth her joy confesses,<br>
+clothing her for spring,<br>
+all fresh gifts return<br>
+with her returning King:<br>
+bloom in every meadow,<br>
+leaves on every bough,<br>
+speak his sorrow ended,<br>
+hail his triumph now.
+</p><p>
+Months in due succession,<br>
+days of lengthening light,<br>
+hours and passing moments<br>
+praise thee in their flight.<br>
+Brightness of the morning,<br>
+sky and fields and sea,<br>
+Vanquisher of darkness,<br>
+bring their praise to thee.
+</p><p>
+Maker and Redeemer,<br>
+life and health of all,<br>
+thou from heaven beholding<br>
+human nature’s fall,<br>
+of the Father’s Godhead<br>
+true and only Son,<br>
+mankind to deliver,<br>
+manhood didst put on.
+</p><p>
+Thou, of life the Author,<br>
+death didst undergo,<br>
+tread the path of darkness,<br>
+saving strength to show;<br>
+come then, true and faithful,<br>
+now fulfill thy word,<br>
+‘tis thine own third morning!<br>
+rise, O buried Lord!
+</p><p>
+Loose the souls long prisoned,<br>
+bound with Satan’s chain;<br>
+all that now is fallen<br>
+raise to life again;<br>
+show thy face in brightness,<br>
+bid the nations see;<br>
+bring again our daylight:<br>
+day returns with thee!`],
     "EasterMon": [""],
     "EasterTue": [""],
     "Ea1": [""],
