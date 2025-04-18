@@ -76,8 +76,11 @@ function getOffice(now, week, feast) {
             default:
                 document.getElementById("office-name").textContent = "Error";
                 break;
-            }} catch (e) {
-        document.getElementById('creed-or-suffrages').innerHTML = `<p>I AM ERROR ${e}</p>`;
+            }
+
+            document.getElementById("sentence").innerHTML = makeP(makeDropCap(getSentence(lit, month, date, officeType)));
+        } catch (e) {
+            document.getElementById('creed-or-suffrages').innerHTML = `<p>I AM ERROR ${e}</p>`;
         }
     
         //All Conditions
