@@ -1,4 +1,4 @@
-function getSentence(lit, month, date, officeType) {
+function getSentence(lit, officeType) {
     if (officeType === 1)
       switch (lit) {
           case "A1":
