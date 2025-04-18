@@ -890,7 +890,26 @@ what shall we render to our God<br> for all that he hath done? </p>
 grant us the things of earth to fly,<br> the things of heav’n pursue. </p>
 <p>To God, the blessèd Three in One,<br> all praise and glory be: <br>
 crown, Lord, thy servants who have won<br> the victory through thee.`],
-    "HW-Thu": [""],
+    "HW-Thu": [`’Twas on that dark, that doleful night<br>
+When pow’rs of earth and hell arose<br>
+Against the Son of God’s delight<br>
+And friends betrayed Him to His foes.</p>
+<p>Before the mournful scene began,<br>
+He took the bread and blessed and brake.<br>
+What love through all His actions ran!<br>
+What wondrous words of grace He spake!</p>
+<p>“This is My Body, broke for sin;<br>
+Receive and eat the living Food;”<br>
+Then took the cup and blessed the wine;<br>
+“’Tis the new cov’nant in My Blood.”</p>
+<p> “Do this,” He said, “till time shall end,<br>
+In mem’ry of your dying Friend.<br>
+Meet at My table and record<br>
+The love of your departed Lord.”</p>
+<p>Jesus, Thy feast we celebrate;<br>
+We show Thy death, we sing Thy name,<br>
+Till Thou return and we shall eat<br>
+The marriage supper of the Lamb.`],
     "GF": [`O sacred head, surrounded<br> by crown of piercing thorn! <br>
 O bleeding head, so wounded,<br> reviled and put to scorn! <br>
 Our sins have marred the glory<br>
