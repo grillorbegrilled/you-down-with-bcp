@@ -78,7 +78,7 @@ function getOffice(now, week, feast) {
                 break;
             }
 
-            document.getElementById("sentence").innerHTML = makeP(makeDropCap(getSentence(lit, month, date, officeType)));
+            document.getElementById("sentence").innerHTML = makeP(makeDropCap(getSentence(feast || week, officeType)));
         } catch (e) {
             document.getElementById('creed-or-suffrages').innerHTML = `<p>I AM ERROR ${e}</p>`;
         }
