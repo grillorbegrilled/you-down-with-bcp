@@ -5,7 +5,7 @@ function getHymns(liturgicalDay) {
     else if (day === "Stephen" || day === "JohnEvangelist" || day === "Innocents" || day === "X1" || day === "Circ") day = "Xmas";
     else if (day === "E1") day = "Epiphany";
     else if (day === "HW-Tue" || day === "HW-Wed") day = "HW-Mon";
-    else if (day === "Ea-Tue" || day === "Ea-Mon") day = "Easter";
+    else if (day === "EasterMon" || day === "EasterTue") day = "Easter";
     
     const items = hymns[day];
     var result = "";
