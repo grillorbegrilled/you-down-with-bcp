@@ -40,7 +40,7 @@ function getOffice(now, week, feast) {
                 });
                 document.getElementById("office-collect").innerHTML = "<p><span class='drop-cap'>O</span> LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
                 const cantMarg = getOfficeMargin2(now, feast || week);
-                if (cantMarg) document.getElementById("cantMarg").src = rightMarg;
+                if (cantMarg) document.getElementById("cantMarg").src = cantMarg;
                 else document.getElementById("cantMarg").style.display = "none";
                 break;
             case 2:
