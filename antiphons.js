@@ -20,8 +20,10 @@ function getAntiphon(lit, day) {
       if ((new Date()).getDate() <= 13)
         return "The Lord hath manifested forth his glory : O come, let us adore him.";
       return "";
-    //Eastertide when you don't say the Te Deum
-    //Alleluia. The Lord is risen indeed : O come let us adore him. Alleluia.
+    case "Easter":
+      if(day > 0)
+        return "Alleluia. The Lord is risen indeed : O come let us adore him. Alleluia.";
+      return "";
     case "Ascension":
     case "Asc1":
       return "Alleluia. Christ the Lord ascended into heaven : O come, let us adore him. Alleluia.";
