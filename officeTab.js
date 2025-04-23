@@ -128,7 +128,7 @@ function getMorningCanticle(week, feast) {
         As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
     
     //Pascha Nostrum
-    if (['Easter', 'EasterMon', 'EasterTue'].includes(week)) return `<p><span class="drop-cap">C</span>HRIST our passover is sacrificed for us, * therefore let us keep the feast;<br>
+    if (['Easter', 'EasterMon', 'EasterTue'].includes(week) && [0, 1, 2].includes (new Date().getDay())) return `<p><span class="drop-cap">C</span>HRIST our passover is sacrificed for us, * therefore let us keep the feast;<br>
           Not with the old leaven, nor with the leaven of malice and wickedness, * but with the unleavened bread of sincerity and truth. <i>1 Cor. 5:7, 8</i></p>
         <p>Christ being raised from the dead dieth no more, * death hath no more dominion over him.<br>
           For in that he died, he died unto sin once, * but in that he liveth, he liveth unto God.<br>
