@@ -80,9 +80,11 @@ function getTopImage(lit, month, date) {
             break;
         /*case "Thomas":
         case "Paul":
-        case "Matthias":
+        case "Matthias":*/
         case "Mark":
-        case "PhilipAndJames":
+            return "images/bg/St-Mark.png";
+            break;
+        /*case "PhilipAndJames":
         case "Barnabas":
         case "Peter":
         case "James":
