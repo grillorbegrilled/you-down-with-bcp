@@ -41,13 +41,13 @@ function getOfficeMargin2(now, liturgicalDay) {
 
   if (result === "") {
     //Spring
-    if (month === 2 && date > 20 || month === 3) result = "images/marginalia/RobinEggs.png";
+    if (month === 2 && date > 20 || month === 3 || month === 4) result = "images/marginalia/RobinEggs.png";
     
     //Estival
     if (month === 8) {
-      if (date < 29) result = "images/marginalia/Cicada.jpg";
+      if (date < 29) {result = "images/marginalia/Cicada.jpg";}
       //Autumnal
-      else result = "images/marginalia/mums2.jpg"
+      else {result = "images/marginalia/mums2.jpg"}
     }
   }
 
