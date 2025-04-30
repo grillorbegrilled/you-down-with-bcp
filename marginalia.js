@@ -2,6 +2,11 @@ function getOfficeMargin1(now, liturgicalDay) {
   var result = "";
   
   switch(liturgicalDay) {
+    case "Easter":
+    case "EasterMon":
+    case "EasterTue":
+      result = "images/marginalia/Empty-Tomb.jpg";
+      break;
     case "Matthew":
       result = "images/marginalia/coins.gif";
       break;
