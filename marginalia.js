@@ -44,7 +44,7 @@ function getOfficeMargin2(now, liturgicalDay) {
       result = "";
   }
 
-  if (result === "") {
+  if (/\d$/.test(liturgicalDay) && result === "") {
     //Spring
     if (month === 2 && date > 20 || month === 3 || month === 4) result = "images/marginalia/RobinEggs.png";
     
