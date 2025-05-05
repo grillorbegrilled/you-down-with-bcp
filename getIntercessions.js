@@ -1,18 +1,18 @@
 const wholeState = `<p><span class="drop-cap">A</span>LMIGHTY and everliving God, who by thy holy Apostle hast taught us to make prayers, and supplications, and to give thanks for all men; We humbly beseech thee most mercifully to receive these our prayers, which we offer unto thy Divine Majesty; beseeching thee to inspire continually the Universal Church with the spirit of truth, unity, and concord: And grant that all those who do confess thy holy Name may agree in the truth of thy holy Word, and live in unity and godly love.</p>
-    <p>We beseech thee also, so to direct and dispose the hearts of those who bear the authority of government in this and every land, especially Donald our President and Michael our Governor, that they may truly and impartially administer justice, to the punishment of wickedness and vice, and to the maintenance of thy true religion, and virtue.</p>
-    <p>Give grace, O heavenly Father, to all Bishops and other Ministers, [especially ________,] that they may, both by their life and doctrine, set forth thy true and lively Word, and rightly and duly administer thy holy Sacraments.</p>
+    <p>We beseech thee also, so to direct and dispose the hearts of those who bear the authority of government in this and every land, especially <span name = "prez"></span> our President and <span name = "guv"></span> our Governor, that they may truly and impartially administer justice, to the punishment of wickedness and vice, and to the maintenance of thy true religion, and virtue.</p>
+    <p>Give grace, O heavenly Father, to all Bishops and other Ministers, especially <span name = "clergy"></span>, that they may, both by their life and doctrine, set forth thy true and lively Word, and rightly and duly administer thy holy Sacraments.</p>
     <p>And to all thy People give thy heavenly grace, that, with meek heart and due reverence, they may hear, and receive thy holy Word; truly serving thee in holiness and righteousness all the days of their life.</p>
     <p>And we most humbly beseech thee, of thy goodness, O Lord, to comfort and succour … all those who, in this transitory life, are in trouble, sorrow, need, sickness, or any other adversity.</p>
     <p>And we also bless thy holy Name for all thy servants departed this life in thy faith and fear … ; beseeching thee to grant them continual growth in thy love and service, and to give us grace so to follow the good examples of … all thy saints, that with them we may be partakers of thy heavenly kingdom.</p>
     <p>Grant this, O Father, for Jesus Christ’s sake, our only Mediator and Advocate. <b>Amen.</b>`;
 
 const formV = `<p><span class="drop-cap">F</span>OR the holy Church of God, that it may be filled with truth and love, and be found without fault at the day of your coming, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
-    <p>For [N. our Presiding Bishop, for N. (N.) our own Bishop(s), for] all bishops and other ministers, and for all the holy people of God, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For <span name = "clergy"></span>; for all bishops and other ministers; and for all the holy people of God, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For all who fear God and believe in you, Lord Christ, that our divisions may cease, and that all may be one as you and the Father are one, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For the mission of the Church, that in faithful witness it may preach the Gospel to the ends of the earth, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For those who do not yet believe, and for those who have lost their faith, that they may receive the light of the Gospel, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For the peace of the world, that a spirit of respect and forbearance may grow among nations and peoples, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
-    <p>For those in positions of public trust, especially Donald our President and Michael our Governor, that they may serve justice, and promote the dignity and freedom of every person, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For those in positions of public trust, especially <span name = "prez"></span> our President and <span name = "guv"></span> our Governor, that they may serve justice, and promote the dignity and freedom of every person, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For all who live and work in this community … , we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For a blessing upon all human labor, and for the right use of the riches of creation, that the world may be freed from poverty, famine, and disaster, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For the poor, the persecuted, the sick, and all who suffer; for refugees, prisoners, and all who are in danger; that they may be relieved and protected, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
@@ -36,7 +36,7 @@ const formVI = `<p><span class="drop-cap">I</span>N peace, we pray to you, Lord 
 <b>For those who minister to the sick, the friendless, and the needy.</b></p>
 <p>For the peace and unity of the Church of God;<br>
 <b>For all who proclaim the Gospel, and all who seek the Truth.</b></p>
-<p>For [N. our Presiding Bishop, and N. (N.) our Bishop(s); and for] all bishops and other ministers;<br>
+<p>For <span name = "clergy"></span>; and for all bishops and other ministers;<br>
 <b>For all who serve God in his Church.</b></p>
 <p><i>For …<br>
 Hear us, Lord;<br>
@@ -52,25 +52,14 @@ Lord, let your loving-kindness be upon them;<br>
 <p>Heavenly Father, you have promised to hear what we ask in the Name of your Son: Accept and fulfill our petitions, we pray, not as we ask in our ignorance, nor as we deserve in our sinfulness, but as you know and love us in your Son Jesus Christ our Lord. <b>Amen.</b><p>`;
 
 function getIntercessions() {
-    return `<p><span class="drop-cap">A</span>LMIGHTY and everliving God, who by thy holy Apostle hast taught us to make prayers, and supplications, and to give thanks for all men; We humbly beseech thee most mercifully to receive these our prayers, which we offer unto thy Divine Majesty; beseeching thee to inspire continually the Universal Church with the spirit of truth, unity, and concord: And grant that all those who do confess thy holy Name may agree in the truth of thy holy Word, and live in unity and godly love.</p>
-    <p>We beseech thee also, so to direct and dispose the hearts of all Christian Rulers, that they may truly and impartially administer justice, to the punishment of wickedness and vice, and to the maintenance of thy true religion, and virtue.</p>
-    <p>Give grace, O heavenly Father, to all Bishops and other Ministers, that they may, both by their life and doctrine, set forth thy true and lively Word, and rightly and duly administer thy holy Sacraments.</p>
-    <p>And to all thy People give thy heavenly grace; and especially to this congregation here present; that, with meek heart and due reverence, they may hear, and receive thy holy Word; truly serving thee in holiness and righteousness all the days of their life.</p>
-    <p>And we most humbly beseech thee, of thy goodness, O Lord, to comfort and succour all those who, in this transitory life, are in trouble, sorrow, need, sickness, or any other adversity.</p>
-    <p>And we also bless thy holy Name for all thy servants departed this life in thy faith and fear; beseeching thee to grant them continual growth in thy love and service, and to give us grace so to follow their good examples, that with them we may be partakers of thy heavenly kingdom. Grant this, O Father, for Jesus Christ’s sake, our only Mediator and Advocate. Amen.</p>
-    <p>BLESS thy servant <i>N.</i> with health of body and of spirit. Let the hand of thy blessing be upon her head night and day, and support her in all necessities, strengthen her in all temptations, comfort her in all sorrows, and let her be thy servant in all changes; and make us both to dwell with thee for ever in thy favour, in the light of thy countenance, and in thy glory. Amen.<i>⸺Jeremy Taylor</i></p>
-    <p>ALMIGHTY God, heavenly Father, who hast blessed us with the joy and care of children; Give us light and strength so to train them, that they may love whatsoever things are true and pure and lovely and of good report, following the example of their Saviour Jesus Christ. Amen.</p>
-    <p>O GOD, Giver of life, hear our prayer for <I>N.</i> and for the child she hath conceived, that, by thy grace, they both may come in safety to a timely and healthy birth, and rejoice in thy gracious providence, through Jesus Christ, who liveth and reigneth with thee and the Holy Spirit, one God, world without end. Amen.</p>
-    <p>O HEAVENLY Father, who in thy Word hast given us a vision of that holy City to which the nations of the world bring their glory: 
-        Behold and visit, we beseech thee, the <I>City</i> of <I>N.</i>. 
-        Renew the bonds of charity that uphold our civic life. Send 
-        us honest and able leaders. Deliver us from poverty, prejudice, 
-        and oppression, that peace may prevail with righteousness, and 
-        justice with mercy. And at the last, bring us to thy Holy City, 
-        the new Jerusalem, where we shall know perfect unity and peace; 
-        through Jesus Christ our Lord. Amen.</p>
+    var result = "";
 
-    <p>ASSIST us mercifully, O Lord, in these our supplications and prayers, and dispose the way of thy servants towards the attainment of everlasting salvation; that, among all the changes and chances of this mortal life, they may ever be defended by thy most gracious and ready help; through Jesus Christ our Lord. Amen.</p>`;
+    const dow = (new Date()).getDay();
+    if (dow === 0) result = wholeState;
+    else if (dow % 2 === 1) result = formV;
+    else result = formVI;
+    
+    return result + "<p>ASSIST us mercifully, O Lord, in these our supplications and prayers, and dispose the way of thy servants towards the attainment of everlasting salvation; that, among all the changes and chances of this mortal life, they may ever be defended by thy most gracious and ready help; through Jesus Christ our Lord. Amen.</p>";
 }
 
 function getAddlPrayers(lit) {
