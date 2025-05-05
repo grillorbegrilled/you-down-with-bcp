@@ -4,7 +4,8 @@ const wholeState = `<p><span class="drop-cap">A</span>LMIGHTY and everliving God
     <p>And to all thy People give thy heavenly grace, that, with meek heart and due reverence, they may hear, and receive thy holy Word; truly serving thee in holiness and righteousness all the days of their life.</p>
     <p>And we most humbly beseech thee, of thy goodness, O Lord, to comfort and succour … all those who, in this transitory life, are in trouble, sorrow, need, sickness, or any other adversity.</p>
     <p>And we also bless thy holy Name for all thy servants departed this life in thy faith and fear … ; beseeching thee to grant them continual growth in thy love and service, and to give us grace so to follow the good examples of … all thy saints, that with them we may be partakers of thy heavenly kingdom.</p>
-    <p>Grant this, O Father, for Jesus Christ’s sake, our only Mediator and Advocate. <b>Amen.</b>`;
+    <p>Grant this, O Father, for Jesus Christ’s sake, our only Mediator and Advocate. <b>Amen.</b></p>
+    <p><span class="drop-cap">A</span>SSIST us mercifully, O Lord, in these our supplications and prayers, and dispose the way of thy servants towards the attainment of everlasting salvation; that, among all the changes and chances of this mortal life, they may ever be defended by thy most gracious and ready help; through Jesus Christ our Lord. <b>Amen.</b></p>`;
 
 const formV = `<p><span class="drop-cap">F</span>OR the holy Church of God, that it may be filled with truth and love, and be found without fault at the day of your coming, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For <span name = "clergy"></span>; for all bishops and other ministers; and for all the holy people of God, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
@@ -59,7 +60,7 @@ function getIntercessions() {
     else if (dow % 2 === 1) result = formV;
     else result = formVI;
     
-    return result + "<p>ASSIST us mercifully, O Lord, in these our supplications and prayers, and dispose the way of thy servants towards the attainment of everlasting salvation; that, among all the changes and chances of this mortal life, they may ever be defended by thy most gracious and ready help; through Jesus Christ our Lord. Amen.</p>";
+    return result + "";
 }
 
 function getAddlPrayers(lit) {
@@ -70,7 +71,7 @@ function getAddlPrayers(lit) {
 }
 
 const litOfHum = `<h1>A Litany of Humility</h1>
-    <p>Lord Jesus, meek and humble of heart,<br>
+    <p><span class="drop-cap">L</span>ord Jesus, meek and humble of heart,<br>
     <b>Hear me.</b><br>
     From the desire to be esteemed,<br>
     <b>Deliver me, Jesus.</b><br>
@@ -100,7 +101,7 @@ const litOfHum = `<h1>A Litany of Humility</h1>
 
 function getStations() {
     return `<h1>Stations of the Cross</h1>
-        <p>In the name of the Father, and of the Son, and of the Holy Ghost:<br>
+        <p><span class="drop-cap">I</span>n the name of the Father, and of the Son, and of the Holy Ghost:<br>
         <b>Amen.</b></p>
         <h2>I. Jesus in the Garden of Gethsemane</h2>
         <p>We adore you, O Christ, and we praise you,<br>
