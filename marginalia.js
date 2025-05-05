@@ -40,6 +40,9 @@ function getOfficeMargin2(now, liturgicalDay) {
     case "EasterTue":
       result = "images/marginalia/FloweredCross.jpg";
       break;
+    case "Ea2":
+      result = "images/marginalia/GoodShepherd.jpg";
+      break;
     default:
       result = "";
   }
