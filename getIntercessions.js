@@ -6,53 +6,50 @@ const wholeState = `<p><span class="drop-cap">A</span>LMIGHTY and everliving God
     <p>And we also bless thy holy Name for all thy servants departed this life in thy faith and fear … ; beseeching thee to grant them continual growth in thy love and service, and to give us grace so to follow the good examples of … all thy saints, that with them we may be partakers of thy heavenly kingdom.</p>
     <p>Grant this, O Father, for Jesus Christ’s sake, our only Mediator and Advocate. <b>Amen.</b>`;
 
-const formV = `<p><span class="drop-cap">F</span>OR the holy Church of God, that it may be filled with truth and love, and be found without fault at the day of your coming, we pray to you, O Lord.</p>
-    <p><b>Lord, have mercy.</b></p>
-    <p>For [N. our Presiding Bishop, for N. (N.) our own Bishop(s), for] all bishops and other ministers, and for all the holy people of God, we pray to you, O Lord.</p>
-    <p><b>Lord, have mercy.</b></p>
-    <p>For all who fear God and believe in you, Lord Christ, that our divisions may cease, and that all may be one as you and the Father are one, we pray to you, O Lord.</p>
-    <p><b>Lord, have mercy.</b></p>
-    <p>For the mission of the Church, that in faithful witness it may preach the Gospel to the ends of the earth, we pray to you, O Lord.</p>
-    <p><b>Lord, have mercy.</b></p>
-    <p>For those who do not yet believe, and for those who have lost their faith, that they may receive the light of the Gospel, we pray to you, O Lord.</p>
-    <p><b>Lord, have mercy.</b></p>
-    <p>For the peace of the world, that a spirit of respect and forbearance may grow among nations and peoples, we pray to you, O Lord.
-Lord, have mercy.
+const formV = `<p><span class="drop-cap">F</span>OR the holy Church of God, that it may be filled with truth and love, and be found without fault at the day of your coming, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For [N. our Presiding Bishop, for N. (N.) our own Bishop(s), for] all bishops and other ministers, and for all the holy people of God, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For all who fear God and believe in you, Lord Christ, that our divisions may cease, and that all may be one as you and the Father are one, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For the mission of the Church, that in faithful witness it may preach the Gospel to the ends of the earth, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For those who do not yet believe, and for those who have lost their faith, that they may receive the light of the Gospel, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For the peace of the world, that a spirit of respect and forbearance may grow among nations and peoples, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For those in positions of public trust, especially Donald our President and Michael our Governor, that they may serve justice, and promote the dignity and freedom of every person, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For all who live and work in this community … , we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For a blessing upon all human labor, and for the right use of the riches of creation, that the world may be freed from poverty, famine, and disaster, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For the poor, the persecuted, the sick, and all who suffer; for refugees, prisoners, and all who are in danger; that they may be relieved and protected, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For our congregation, that we may be delivered from hardness of heart, and show forth your glory in all that we do, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For our enemies and those who wish us harm, and for all whom we have injured or offended, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For ourselves; for the forgiveness of our sins, and for the grace of the Holy Spirit to amend our lives, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>For … all who have commended themselves to our prayers; for our families, friends, and neighbors; that being freed from anxiety, they may live in joy, peace, and health, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p><i>For … , we pray to you, O Lord.<br><b>Lord, have mercy.</b></i></p>
+    <p>For all who have died in the communion of your Church, and those whose faith is known to you alone, that, with all the saints, they may have rest in that place where there is no pain or grief, but life eternal, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+    <p>Rejoicing in the fellowship of … all the saints, let us commend ourselves, and one another, and all our life to Christ our God.<br><b>To you, O Lord our God.</b></p>
+    <p>For yours is the majesty, O Father, Son, and Holy Spirit; yours is the kingdom and the power and the glory, now and for ever. <b>Amen.</b></p>`;
 
-For those in positions of public trust, especially Donald our President and Michael our Governor, that they may serve justice, and promote the dignity and freedom of every person, we pray to you, O Lord.
-Lord, have mercy.
-
-For all who live and work in this community … , we pray to you, O Lord.
-Lord, have mercy.
-
-For a blessing upon all human labor, and for the right use of the riches of creation, that the world may be freed from poverty, famine, and disaster, we pray to you, O Lord.
-Lord, have mercy.
-
-For the poor, the persecuted, the sick, and all who suffer; for refugees, prisoners, and all who are in danger; that they may be relieved and protected, we pray to you, O Lord.
-Lord, have mercy.
-
-For our congregation, that we may be delivered from hardness of heart, and show forth your glory in all that we do, we pray to you, O Lord.
-Lord, have mercy.
-
-For our enemies and those who wish us harm, and for all whom we have injured or offended, we pray to you, O Lord.
-Lord, have mercy.
-
-For ourselves; for the forgiveness of our sins, and for the grace of the Holy Spirit to amend our lives, we pray to you, O Lord.
-Lord, have mercy.
-
-For … all who have commended themselves to our prayers; for our families, friends, and neighbors; that being freed from anxiety, they may live in joy, peace, and health, we pray to you, O Lord.
-Lord, have mercy.
-
-For … , we pray to you, O Lord.
-Lord, have mercy.
-
-For all who have died in the communion of your Church, and those whose faith is known to you alone, that, with all the saints, they may have rest in that place where there is no pain or grief, but life eternal, we pray to you, O Lord.
-Lord, have mercy.
-
-Rejoicing in the fellowship of … all the saints, let us commend ourselves, and one another, and all our life to Christ our God.
-To you, O Lord our God.
-
-For yours is the majesty, O Father, Son, and Holy Spirit; yours is the kingdom and the power and the glory, now and for ever. Amen.`;
+const formVI = `<p><span class="drop-cap">I</span>N peace, we pray to you, Lord God.</p>
+<p>For all people in their daily life and work;<br>
+<b>For our families, friends, and neighbors, and for those who are alone.</b></p>
+<p>For this community, the nation, and the world;<br>
+<b>For all who work for justice, freedom, and peace.</b></p>
+<p>For the just and proper use of your creation;<br>
+<b>For the victims of hunger, fear, injustice, and oppression.</b></p>
+<p>For all who are in danger, sorrow, or any kind of trouble;<br>
+<b>For those who minister to the sick, the friendless, and the needy.</b></p>
+<p>For the peace and unity of the Church of God;<br>
+<b>For all who proclaim the Gospel, and all who seek the Truth.</b></p>
+<p>For [N. our Presiding Bishop, and N. (N.) our Bishop(s); and for] all bishops and other ministers;<br>
+<b>For all who serve God in his Church.</b></p>
+<p><i>For …<br>
+Hear us, Lord;<br>
+<b>For your mercy is great.</b></i></p>
+<p>We thank you, Lord, for all the blessings of this life: for rain and sunshine; for the fruits of the earth; for the products of all honest industry; and for all his good gifts, temporal and spiritual, to us and to all men …<br>
+We will exalt you, O God our King;<br>
+<b>And praise your Name for ever and ever.</b></p>
+<p>We pray for all who have died, that they may have a place in your eternal kingdom …<br>
+Lord, let your loving-kindness be upon them;<br>
+<b>Who put their trust in you.</b></p>
+<p>We pray to you also for the forgiveness of our sins.<br>
+<b>Have mercy upon us, most merciful Father; in your compassion forgive us our sins, known and unknown, things done and left undone; and so uphold us by your Spirit that we may live and serve you in newness of life, to the honor and glory of your Name; through Jesus Christ our Lord. Amen.</b></p>
+<p>Heavenly Father, you have promised to hear what we ask in the Name of your Son: Accept and fulfill our petitions, we pray, not as we ask in our ignorance, nor as we deserve in our sinfulness, but as you know and love us in your Son Jesus Christ our Lord. <b>Amen.</b><p>`;
 
 function getIntercessions() {
     return `<p><span class="drop-cap">A</span>LMIGHTY and everliving God, who by thy holy Apostle hast taught us to make prayers, and supplications, and to give thanks for all men; We humbly beseech thee most mercifully to receive these our prayers, which we offer unto thy Divine Majesty; beseeching thee to inspire continually the Universal Church with the spirit of truth, unity, and concord: And grant that all those who do confess thy holy Name may agree in the truth of thy holy Word, and live in unity and godly love.</p>
