@@ -1255,7 +1255,43 @@ day returns with thee!`],
     "EasterMon": [""],
     "EasterTue": [""],
     "Ea1": [""],
-    "Ea2": [""],
+    "Ea2": [`Savior, like a shepherd lead us;<br>
+much we need thy tender care;<br>
+in thy pleasant pastures feed us;<br>
+for our use thy folds prepare.<br>
+Blessèd Jesus! Blessèd Jesus!<br>
+Thou hast bought us, thine we are.<br>
+</p><p>
+Early let us seek thy favor,<br>
+early let us learn thy will;<br>
+blessèd Lord and only Savior, <br>
+with thy love our bosoms fill.<br>
+Blessèd Jesus! Blessèd Jesus!<br>
+Thou hast loved us: love us still.`,
+    `Loving Shepherd of thy sheep,<br>
+keep us all, in safety keep;<br>
+nothing can thy power withstand,<br>
+none can pluck us from thy hand.<br>
+</p><p>
+Loving Savior, thou didst give<br>
+thine own life that we might live,<br>
+bought with blood and bought for thee,<br>
+thine, and only thine, we'd be.<br>
+</p><p>
+We would praise thee every day,<br>
+gladly all thy will obey,<br>
+like thy blessèd ones above<br>
+happy in thy precious love.<br>
+</p><p>
+Loving Shepherd, ever near,<br>
+teach us all thy voice to hear,<br>
+suffer not our steps to stray<br>
+from the straight and narrow way.<br>
+</p><p>
+Where thou leadest we would go,<br>
+walking in thy steps below,<br>
+till before our Father's throne<br>
+we shall know as we are known.`],
     "Ea3": [""],
     "Ea4": [""],
     "Ea5": [""],
