@@ -42,7 +42,7 @@ const formVI = `<p><span class="drop-cap">I</span>N peace, we pray to you, Lord 
 <p><i>For …<br>
 Hear us, Lord;<br>
 <b>For your mercy is great.</b></i></p>
-<p>We thank you, Lord, for all the blessings of this life: for rain and sunshine; for the fruits of the earth; for the products of all honest industry; and for all his good gifts, temporal and spiritual, to us and to all men …<br>
+<p>We thank you, Lord, for all the blessings of this life: for rain and sunshine; for the fruits of the earth; for the products of all honest industry; and for all your good gifts, temporal and spiritual, to us and to all mankind …<br>
 We will exalt you, O God our King;<br>
 <b>And praise your Name for ever and ever.</b></p>
 <p>We pray for all who have died, that they may have a place in your eternal kingdom …<br>
