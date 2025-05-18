@@ -6,6 +6,7 @@ function getHymns(liturgicalDay) {
     else if (day === "E1") day = "Epiphany";
     else if (day === "HW-Tue" || day === "HW-Wed") day = "HW-Mon";
     else if (day === "EasterMon" || day === "EasterTue") day = "Easter";
+    else if (day === "Ea4") day = "T19";
     
     const items = hymns[day];
     var result = "";
@@ -1332,7 +1333,7 @@ Then, O my Lord, prepare<br>
 My soul for that glad day.<br>
 O wash me in Thy precious blood,<br>
 And take my sins away.`],
-    "Ea4": [""],
+   // "Ea4": [""], T19, breathe on me
     "Ea5": [""],
     "Ascension": [""],
     "Asc1": [""],
