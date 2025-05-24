@@ -62,8 +62,10 @@ function getTopImage(lit, month, date) {
         case "Ea2":
         case "Ea3":
         case "Ea4":
+return "images/bg/Easter.jpg";
+        break;
         case "Ea5":
-            return "images/bg/Easter.jpg";
+            return "images/bg/Rogation.jpg";
         break;
         /*case "Ascension":
         case "Asc1":
