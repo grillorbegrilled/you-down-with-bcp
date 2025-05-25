@@ -1334,60 +1334,35 @@ My soul for that glad day.<br>
 O wash me in Thy precious blood,<br>
 And take my sins away.`],
    // "Ea4": [""], T19, breathe on me
-    "Ea5": [`To thee, our God, we fly<br>
-for mercy and for grace;<br>
-O hear our lowly cry<br>
-and hide not thou thy face.<br>
-<i>O Lord, stretch forth thy mighty hand<br>
-and guard and bless our fatherland.</i>
+    "Ea5": [`Lord, in thy Name thy servants plead,<br>
+and thou hast sworn to hear;<br>
+thine is the harvest, thine the seed,<br>
+the fresh and fading year.<br>
 </p><p>
-Arise, O Lord of hosts,<br>
-be jealous for thy name<br>
-and drive from out our coasts<br>
-the sins that put to shame.<br>
-<i>O Lord, stretch forth, &c.</i>
+Our hope, when autumn winds blew wild,<br>
+we trusted, Lord, with thee:<br>
+and still, now spring has on us smiled,<br>
+we wait on thy decree.<br>
 </p><p>
-Thy best gifts from on high<br>
-in rich abundance pour<br>
-that we may magnify<br>
-and praise thee more and more.<br>
-<i>O Lord, stretch forth, &c.</i>
+The former and the latter rain,<br>
+the summer sun and air,<br>
+the green ear and the gold grain,<br>
+all thine, are ours by prayer.<br>
 </p><p>
-The powers ordained by thee<br>
-with heavenly wisdom bless;<br>
-may they thy servants be<br>
-and rule in righteousness!<br>
-<i>O Lord, stretch forth, &c.</i>
+Thine too by right and ours by grace,<br>
+the wondrous growth unseen,<br>
+the hopes that soothe, the fears that brace,.<br>
+the love that shines serene.<br>
 </p><p>
-The Church of thy dear Son<br>
-inflame with love's pure fire;<br>
-bind her once more in one<br>
-and life and truth inspire.<br>
-<i>O Lord, stretch forth, &c.</i>
+So grant the precious things brought forth<br>
+by sun and moon below,<br>
+that thee in thy new heaven and earth<br>
+we never may forgo.<br>
 </p><p>
-The pastors of thy fold<br>
-with grace and power endue<br>
-that, faithful, pure, and bold,<br>
-they may be pastors true.<br>
-<i>O Lord, stretch forth, &c.</i>
-</p><p>
-O let us love thy house<br>
-and sanctify thy day,<br>
-bring unto thee our vows,<br>
-and loyal homage pay.<br>
-<i>O Lord, stretch forth, &c.</i>
-</p><p>
-Give peace, Lord, in our time;<br>
-O let no foe draw nigh<br>
-nor lawless deed of crime<br>
-insult thy majesty!1<br>
-<i>O Lord, stretch forth, &c.</i>
-</p><p>
-Though vile and worthless, still<br>
-thy people, Lord, are we;<br>
-and for our God we will<br>
-none other have but thee.<br>
-<i>O Lord, stretch forth, &c.</i>`],
+To Father, Son and Holy Ghost, <br>
+the God whom we adore,<br>
+be glory, as it was, is now<br>
+and shall be evermore.`],
     "Ascension": [""],
     "Asc1": [""],
     "Whitsun": [""],
