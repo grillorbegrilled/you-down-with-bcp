@@ -1334,7 +1334,60 @@ My soul for that glad day.<br>
 O wash me in Thy precious blood,<br>
 And take my sins away.`],
    // "Ea4": [""], T19, breathe on me
-    "Ea5": [""],
+    "Ea5": [`To thee, our God, we fly<br>
+for mercy and for grace;<br>
+O hear our lowly cry<br>
+and hide not thou thy face.<br>
+<i>O Lord, stretch forth thy mighty hand<br>
+and guard and bless our fatherland.</i>
+</p><p>
+Arise, O Lord of hosts,<br>
+be jealous for thy name<br>
+and drive from out our coasts<br>
+the sins that put to shame.<br>
+<i>O Lord, stretch forth, &c.</i>
+</p><p>
+Thy best gifts from on high<br>
+in rich abundance pour<br>
+that we may magnify<br>
+and praise thee more and more.<br>
+<i>O Lord, stretch forth, &c.</i>
+</p><p>
+The powers ordained by thee<br>
+with heavenly wisdom bless;<br>
+may they thy servants be<br>
+and rule in righteousness!<br>
+<i>O Lord, stretch forth, &c.</i>
+</p><p>
+The Church of thy dear Son<br>
+inflame with love's pure fire;<br>
+bind her once more in one<br>
+and life and truth inspire.<br>
+<i>O Lord, stretch forth, &c.</i>
+</p><p>
+The pastors of thy fold<br>
+with grace and power endue<br>
+that, faithful, pure, and bold,<br>
+they may be pastors true.<br>
+<i>O Lord, stretch forth, &c.</i>
+</p><p>
+O let us love thy house<br>
+and sanctify thy day,<br>
+bring unto thee our vows,<br>
+and loyal homage pay.<br>
+<i>O Lord, stretch forth, &c.</i>
+</p><p>
+Give peace, Lord, in our time;<br>
+O let no foe draw nigh<br>
+nor lawless deed of crime<br>
+insult thy majesty!1<br>
+<i>O Lord, stretch forth, &c.</i>
+</p><p>
+Though vile and worthless, still<br>
+thy people, Lord, are we;<br>
+and for our God we will<br>
+none other have but thee.<br>
+<i>O Lord, stretch forth, &c.</i>`],
     "Ascension": [""],
     "Asc1": [""],
     "Whitsun": [""],
