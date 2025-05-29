@@ -13,7 +13,7 @@ function getPreface(lit, month, date, day) {
   if (lit === "Easter" || lit === "EasterMon" || lit === "EasterTue" || lit === "Ea1" && day === 0)
     properPreface = ", but chiefly are we bound to praise thee for the glorious Resurrection of thy Son Jesus Christ our Lord: for he is the very Paschal Lamb, which was offered for us, and hath taken away the sin of the world; who by his death hath destroyed death, and by his rising to life again hath restored to us everlasting life.";
   
-  if (lit === "Asc" || lit === "Asc1" && day <= 4)
+  if (lit === "Ascension" || lit === "Asc1" && day <= 4)
     properPreface =  ", through thy most dearly beloved Son Jesus Christ our Lord; who, after his most glorious Resurrection, manifestly appeared to all his Apostles, and in their sight ascended up into heaven, to prepare a place for us; that where he is, thither we might also ascend, and reign with him in glory.";
   
   if (lit === "Whitsun" || lit === "Whitmon" || lit === "WhitTue")
