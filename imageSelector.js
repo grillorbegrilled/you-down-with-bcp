@@ -67,9 +67,11 @@ return "images/bg/Easter.jpg";
         case "Ea5":
             return "images/bg/Rogation.jpg";
         break;
-        /*case "Ascension":
+        case "Ascension":
         case "Asc1":
-        case "Trinity":
+        return "images/bg/Ascension.jpg";
+        break;
+        /*case "Trinity":
         case "AllSaints":
         case "ThanksgivingDay":
             return "white_damask";
