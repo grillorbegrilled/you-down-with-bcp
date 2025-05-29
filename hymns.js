@@ -7,6 +7,7 @@ function getHymns(liturgicalDay) {
     else if (day === "HW-Tue" || day === "HW-Wed") day = "HW-Mon";
     else if (day === "EasterMon" || day === "EasterTue") day = "Easter";
     else if (day === "Ea4") day = "T19";
+    else if (day === "Asc1") day = "Ascension";
     
     const items = hymns[day];
     var result = "";
@@ -1363,7 +1364,139 @@ To Father, Son and Holy Ghost, <br>
 the God whom we adore,<br>
 be glory, as it was, is now<br>
 and shall be evermore.`],
-    "Ascension": [""],
+    "Ascension": [`See, the Conqueror mounts in triumph; 
+see the King in royal state,<br>
+riding on the clouds, his chariot, <br>
+to his heavenly palace gate.<br>
+Hark! the choirs of angel voices <br>
+joyful alleluias sing,<br>
+and the portals high are lifted <br>
+to receive their heavenly King.<br>
+</p><p>
+Who is this that comes in glory, <br>
+with the trump of jubilee?<br>
+Lord of battles, God of armies, <br>
+he has gained the victory.<br>
+he who on the cross did suffer, <br>
+he who from the grave arose,<br>
+he has vanquished sin and Satan, <br>
+he by death has spoiled his foes.<br>
+</p><p>
+While he raised his hands in blessing, <br>
+he was parted from his friends<br>
+while their eager eyes behold him, <br>
+he upon the clouds ascends;<br>
+he who walked with God and pleased him, <br>
+preaching truth and doom to come,<br>
+he, our Enoch, is translated <br>
+to his everlasting home.<br>
+</p><p>
+Now our heavenly Aaron enters, <br>
+with his blood, within the veil;<br>
+Joshua now is come to Canaan, <br>
+and the kings before him quail;<br>
+now he plants the tribes of Israel <br>
+in their promised resting place;<br>
+now our great Elijah offers <br>
+double portion of his grace.<br>
+</p><p>
+He has raised our human nature<br>
+on the clouds to God's right hand;<br>
+there we sit in heavenly places,<br>
+there with him in glory stand:<br>
+Jesus reigns, adored by angels;<br>
+man with God is on the throne;<br>
+mighty Lord, in thine ascension<br>
+we by faith behold our own.<br>
+</p><p>
+Glory be to God the Father, <br>
+glory be to God the Son,<br>
+dying, risen, ascending for us, <br>
+who the heavenly realm has won;<br>
+glory to the Holy Spirit, t<br>
+to One God in persons Three;<br>
+glory both in earth and heaven, <br>
+glory, endless glory, be.`,
+                 `Crown him with many crowns, <br>
+the Lamb upon his throne.<br>
+Hark! How the heavenly anthem drowns <br>
+all music but its own.<br>
+Awake, my soul, and sing of him <br>
+who died for thee,<br>
+and hail him as thy matchless King <br>
+through all eternity.<br>
+</p><p>
+Crown him the virgin's Son, <br>
+the God incarnate born,<br>
+whose arm those crimson trophies won <br>
+which now His brow adorn;<br>
+fruit of the mystic rose, <br>
+as of that rose the stem;<br>
+the root whence mercy ever flows, <br>
+the Babe of Bethlehem.<br>
+</p><p>
+Crown him the Son of God, <br>
+before the worlds began,<br>
+and ye who tread where he hath trod, <br>
+crown him the Son of Man;<br>
+who every grief hath known <br>
+that wrings the human breast,<br>
+and takes and bears them for His own,<br>
+that all in him may rest.<br>
+</p><p>
+Crown him the Lord of life, <br>
+who triumphed over the grave,<br>
+and rose victorious in the strife <br>
+for those he came to save.<br>
+His glories now we sing, <br>
+who died, and rose on high,<br>
+who died eternal life to bring, <br>
+and lives that death may die.<br>
+</p><p>
+Crown him the Lord of peace, <br>
+whose power a scepter sways<br>
+from pole to pole, that wars may cease, <br>
+and all be prayer and praise.<br>
+his reign shall know no end, <br>
+and round his pierc&egrave;d feet<br>
+fair flowers of paradise extend<br>
+their fragrance ever sweet.<br>
+</p><p>
+Crown him the Lord of love, <br>
+behold his hands and side,<br>
+those wounds, yet visible above, <br>
+in beauty glorified.<br>
+No angel in the sky <br>
+can fully bear that sight,<br>
+but downward bends his burning eye <br>
+at mysteries so bright.<br>
+</p><p>
+Crown him the Lord of Heaven, <br>
+enthroned in worlds above,<br>
+crown him the King to whom is given <br>
+the wondrous name of Love.<br>
+Crown him with many crowns, <br>
+as thrones before him fall;<br>
+Crown him, ye kings, with many crowns, <br>
+for he is King of all.<br>
+</p><p>
+Crown him the Lord of lords, <br>
+who over all doth reign,<br>
+who once on earth, the incarnate Word, <br>
+for ransomed sinners slain,<br>
+now lives in realms of light, <br>
+where saints with angels sing<br>
+their songs before him day and night, <br>
+their God, Redeemer, King.<br>
+</p><p>
+Crown him the Lord of years, <br>
+the Potentate of time,<br>
+Creator of the rolling spheres, <br>
+ineffably sublime.<br>
+all hail, Redeemer, hail! <br>
+For thou has died for me;<br>
+thy praise and glory shall not fail <br>
+throughout eternity.`],
     "Asc1": [""],
     "Whitsun": [""],
     "Whitmon": [""],
