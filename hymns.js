@@ -1338,33 +1338,82 @@ And take my sins away.`],
     "Ea5": [`Lord, in thy Name thy servants plead,<br>
 and thou hast sworn to hear;<br>
 thine is the harvest, thine the seed,<br>
-the fresh and fading year.<br>
+the fresh and fading year.
 </p><p>
 Our hope, when autumn winds blew wild,<br>
 we trusted, Lord, with thee:<br>
 and still, now spring has on us smiled,<br>
-we wait on thy decree.<br>
+we wait on thy decree.
 </p><p>
 The former and the latter rain,<br>
 the summer sun and air,<br>
 the green ear and the gold grain,<br>
-all thine, are ours by prayer.<br>
+all thine, are ours by prayer.
 </p><p>
 Thine too by right and ours by grace,<br>
 the wondrous growth unseen,<br>
 the hopes that soothe, the fears that brace,.<br>
-the love that shines serene.<br>
+the love that shines serene.
 </p><p>
 So grant the precious things brought forth<br>
 by sun and moon below,<br>
 that thee in thy new heaven and earth<br>
-we never may forgo.<br>
+we never may forgo.
 </p><p>
 To Father, Son and Holy Ghost, <br>
 the God whom we adore,<br>
 be glory, as it was, is now<br>
 and shall be evermore.`],
-    "Ascension": [`See, the Conqueror mounts in triumph; 
+    "Ascension": [`Hail thee, festival day!<br>
+Blest day that art hallowed forever;<br>
+day when our God ascends<br>
+high in the heavens to reign.</p><p>
+Lo, the fair beauty of earth,<br>
+from the death of the winter arising,<br>
+every good gift of the year<br>
+now with its Master returns.<br>
+Hail thee, &c.</p><p>
+Daily the loveliness grows,<br>
+adorned with the glory of blossom;<br>
+heaven her gates unbars, <br>
+flinging her increase of light.<br>
+Hail thee, &c.</p><p>
+Christ in his triumph ascends, <br>
+who hath vanquished the devil's dominion;<br>
+gay is the woodland with leaves,<br>
+bright are the meadows with flowers.<br>
+Hail thee, &c.</p><p>
+Christ overwhelms the domain<br>
+of Hades and rises to heaven;<br>
+fitly the light gives him praise--<br>
+meadows and ocean and sky.<br>
+Hail thee, &c.</p><p>
+Loosen, O Lord, the enchained,<br>
+the spirits imprisoned in darkness;<br>
+rescue, recall into life those<br>
+who are rushing to death.<br>
+Hail thee, &c.</p><p>
+So shalt thou bear in thine arms<br>
+an immaculate people to heaven,<br>
+bearing them pure unto God, <br>
+pledge of thy victory here.<br>
+Hail thee, &c.</p><p>
+Jesus, the health of the world,<br>
+enlighten our minds, thou Redeemer,<br>
+Son of the Father supreme, <br>
+only-begotten of God!<br>
+Hail thee, &c.</p><p>
+Equal art thou, co-eternal,<br>
+in fellowship ay with the Father;<br>
+in the beginning by thee<br>
+all was created and made.<br>
+Hail thee, &c.</p><p>
+And it was thou, blessèd Lord,<br>
+who discerning humanity's sorrow,<br>
+humbledst thyself for our race,<br>
+taking our flesh for thine own.<br>
+Hail thee, &c.`,
+                  `See, the Conqueror mounts in triumph; 
 see the King in royal state,<br>
 riding on the clouds, his chariot, <br>
 to his heavenly palace gate.<br>
