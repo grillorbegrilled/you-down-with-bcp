@@ -5,8 +5,8 @@ function getHymns(liturgicalDay) {
     else if (day === "Stephen" || day === "JohnEvangelist" || day === "Innocents" || day === "X1" || day === "Circ") day = "Xmas";
     else if (day === "E1") day = "Epiphany";
     else if (day === "HW-Tue" || day === "HW-Wed") day = "HW-Mon";
-    else if (day === "EasterMon" || day === "EasterTue") day = "Easter";
-    else if (day === "Ea4") day = "T19";
+    else if (day === "EasterMon" || day === "EasterTue" || day === "Ea1") day = "Easter";
+    else if (day === "Ea4") day = "T19"; //breathe on me
     else if (day === "Asc1") day = "Ascension";
     
     const items = hymns[day];
@@ -602,7 +602,26 @@ myrrh his sepulcher foreshows.</p>
 at thy glad epiphany,<br>
 unto thee, with God the Father<br>
 and the Spirit, glory be.`],
-    "E2": [``],
+    "E2": [`Blest be the tie that binds<br>
+Our hearts in Jesus' love:<br>
+The fellowship of Christian minds<br>
+Is like to that above.</p>
+<p>Before our Father's throne<br>
+We pour united prayers;<br>
+Our fears, our hopes, our aims are one,<br>
+Our comforts and our cares.</p>
+<p>We share our mutual woes,<br>
+Our mutual burdens bear;<br>
+And often for each other flows<br>
+The sympathizing tear.</p>
+<p>When we at death must part,<br>
+Not like the world's, our pain;<br>
+But one in Christ, and one in heart,<br>
+We part to meet again.</p>
+<p>From sorrow, toil, and pain,<br>
+And sin, we shall be free;<br>
+And perfect love and friendship reign<br>
+Throughout eternity.`],
     "E3": [`I am not worthy, holy Lord,<br>
 That Thou shouldst come to me;<br>
 Speak but the word: one gracious word<br>
@@ -619,8 +638,54 @@ My ransom-price to pay?</p>
 Feed me with food divine,<br>
 And fill with all Thy love and power<br>
 This worthless heart of mine.`],
-    "E4": [""],
-    "E5": [""],
+    "E4": [`Eternal Father! strong to save,<br>
+Whose arm hath bound the restless wave,<br>
+Who bid'st the mighty ocean deep<br>
+Its own appointed limits keep:<br>
+O hear us when we cry to Thee<br>
+For those in peril on the sea.</p>
+<p>O Christ! Whose voice the waters heard<br>
+And hushed their raging at Thy word,<br>
+Who walkedest on the foaming deep,<br>
+And calm amidst its rage didst sleep;<br>
+O hear us when we cry to Thee<br>
+For those in peril on the sea.</p>
+<p>Most Holy Spirit! Who didst brood<br>
+Upon the chaos dark and rude,<br>
+And bid its angry tumult cease,<br>
+And give for wild confusion, peace;<br>
+O hear us when we cry to Thee<br>
+For those in peril on the sea.</p>
+<p>O Trinity of love and power!<br>
+Our brethren shield in danger's hour;<br>
+From rock and tempest, fire and foe,<br>
+Protect them wheresoe'er they go:<br>
+Thus evermore shall rise to Thee<br>
+Glad hymns of praise from land and sea.`],
+    "E5": [`The church of God a kingdom is,<br>
+where Christ in power doth reign;<br>
+where spirits yearn till, seen in bliss,<br>
+their Lord shall come again.</p>
+<p>Glad companies of saints possess<br>
+this church below, above;<br>
+and God’s perpetual calm doth bless<br>
+their paradise of love.</p>
+<p>An altar stands within the shrine<br>
+whereon, once sacrificed,<br>
+is set, immaculate, divine,<br>
+the Lamb of God, the Christ.</p>
+<p>There rich and poor, from countless lands,<br>
+praise God on mystic Rood;<br>
+there nations reach forth holy hands<br>
+to take God’s holy food.</p>
+<p>There pure life-giving streams o’erflow<br>
+the sower’s garden-ground;<br>
+and faith and hope fair blossoms show,<br>
+and fruits of love abound.</p>
+<p>O King, O Christ, this endless grace<br>
+to us and all men bring,<br>
+to see the vision of your face<br>
+in joy, O Christ, our King.`],
     "E6": [`Great God, what do I see and hear?<br>
 The end of things created!<br>
 The Judge of all men doth appear,<br>
@@ -713,7 +778,58 @@ shall far outpass the power of human telling;<br>
 for none can guess its grace,<br>
 till Love create a place<br>
 wherein the Holy Spirit makes a dwelling.`],
-    "AW": [""],
+    "AW": [`Lord, who throughout these forty days,<br>
+For us didst fast and pray,<br>
+Teach us with thee to mourn our sins,<br>
+And close by thee to stay.</p>
+<p>As thou with Satan didst contend,<br>
+And didst the victory win,<br>
+O give us strength in thee to fight,<br>
+In thee to conquer sin.</p>
+<p>As thou didst hunger bear and thirst,<br>
+So teach us, gracious Lord,<br>
+To die to self, and chiefly live<br>
+By thy most holy word.</p>
+<p>And through these days of penitence,<br>
+And through thy Passion-tide,<br>
+Yea, evermore, in life and death,<br>
+Jesus! with us abide.</p>
+<p>Abide with us, that so, this life<br>
+Of suffering overpast,<br>
+An Easter of unending joy<br>
+We may attain at last!`,
+          `The fast, as taught by holy lore,<br>
+We keep in solemn course once more;<br>
+The fast to all men known, and bound<br>
+In forty days of yearly round.</p>
+<p>The law and seers that were of old<br>
+In divers ways this Lent foretold<br>
+Which Christ, all seasons’ king and guide,<br>
+In after ages sanctified.</p>
+<p>More sparing therefore let us make<br>
+The words we speak, the food we take,<br>
+Our sleep and mirth, and closer barred<br>
+Be every sense in holy guard.</p>
+<p>In prayer together let us fall,<br>
+And cry for mercy, one and all,<br>
+And weep before the Judge’s feet,<br>
+And His avenging wrath entreat.</p>
+<p>Thy grace have we offended sore,<br>
+By sins, O God, which we deplore;<br>
+But pour upon us from on high,<br>
+O pardoning One, Thy clemency.</p>
+<p>Remember Thou, though frail we be,<br>
+That yet Thine handiwork are we;<br>
+Nor let the honor of Thy name<br>
+Be by another put to shame.</p>
+<p>Forgive the sin that we have wrought;<br>
+Increase the good that we have sought;<br>
+That we at length, our wanderings o’er,<br>
+May please Thee here and evermore.</p>
+<p>We pray Thee, holy Trinity,<br>
+One God, unchanging Unity,<br>
+That we from this our abstinence<br>
+May reap the fruits of penitence.`],
     "L1": [`The glory of these forty days<br>
 we celebrate with songs of praise;<br>
 for Christ, through whom all things were made,<br>
@@ -943,7 +1059,30 @@ all the vain things that charm me most, <br>I sacrifice them to his blood. </p>
 Did e’er such love and sorrow meet, <br>or thorns compose so rich a crown? </p>
 <p>Were the whole realm of nature mine,<br> that were an off’ring far too small; <br>
 love so amazing, so divine,<br> demands my soul, my life, my all.`],
-    "EE": [""],
+    "EE": [`Resting from His work to-day<br>
+In the tomb the Saviour lay;<br>
+Still He slept, from head to feet<br>
+Shrouded in the winding-sheet,<br>
+Lying in the rock alone,<br>
+Hidden by the sealèd stone.</p>
+<p>Late at even there was seen<br>
+Watching long the Magdalene;<br>
+Early, ere the break of day,<br>
+Sorrowful she took her way<br>
+To the holy garden glade,<br>
+Where her buried Lord was laid.</p>
+<p>So with Thee, till life shall end,<br>
+I would solemn vigil spend:<br>
+Let me hew Thee, Lord, a shrine<br>
+In this rocky heart of mine,<br>
+Where in pure embalmèd cell,<br>
+None but Thou may ever dwell.</p>
+<p>Myrrh and spices will I bring,<br>
+True affection's offering;<br>
+Close the door from sight and sound<br>
+Of the busy world around;<br>
+And in patient watch remain<br>
+Till my Lord appear again.`],
     "Easter": [`Hail thee, festival day!<br>
 Blest day that art hallowed forever;<br>
 day wherein Christ arose,<br>
@@ -1254,9 +1393,42 @@ show thy face in brightness,<br>
 bid the nations see;<br>
 bring again our daylight:<br>
 day returns with thee!`],
-    "EasterMon": [""],
-    "EasterTue": [""],
-    "Ea1": [""],
+    "Ea1": [`O sons and daughters, let us sing!<br>
+The King of heaven, the glorious King,<br>
+O'er death today rose triumphing.<br>
+Alleluia! Alleluia!</p><p>
+That Easter morn, at break of day,<br>
+The faithful women went their way<br>
+To seek the tomb where Jesus lay.<br>
+Alleluia! Alleluia!</p><p>
+An angel clad in white they see,<br>
+Who sat, and spake unto the three,<br>
+"Your Lord doth go to Galilee."<br>
+Alleluia! Alleluia!</p><p>
+That night the apostles met in fear;<br>
+Amidst them came their Lord most dear,<br>
+And said, "My peace be on all here."<br>
+Alleluia! Alleluia!</p><p>
+When Thomas first the tidings heard,<br>
+How they had seen the risen Lord,<br>
+He doubted the disciples' word.<br>
+Alleluia! Alleluia!</p><p>
+"My piercèd hands, O Thomas, see;<br>
+My hands, my feet, I show to thee;<br>
+Not faithless, but believing be."<br>
+Alleluia! Alleluia!</p><p>
+No longer Thomas then denied,<br>
+He saw the feet, the hands, the side;<br>
+"Thou art my Lord and God," he cried.<br>
+Alleluia! Alleluia!</p><p>
+How blest are they who have not seen,<br>
+And yet whose faith has constant been,<br>
+For they eternal life shall win.<br>
+Alleluia! Alleluia!</p><p>
+On this most holy day of days,<br>
+To God your hearts and voices raise,<br>
+In laud, and jubilee, and praise.<br>
+Alleluia! Alleluia!`],
     "Ea2": [`Savior, like a shepherd lead us;<br>
 much we need thy tender care;<br>
 in thy pleasant pastures feed us;<br>
@@ -1334,7 +1506,6 @@ Then, O my Lord, prepare<br>
 My soul for that glad day.<br>
 O wash me in Thy precious blood,<br>
 And take my sins away.`],
-   // "Ea4": [""], T19, breathe on me
     "Ea5": [`Lord, in thy Name thy servants plead,<br>
 and thou hast sworn to hear;<br>
 thine is the harvest, thine the seed,<br>
