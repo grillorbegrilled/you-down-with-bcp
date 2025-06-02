@@ -64,6 +64,10 @@ function getIntercessions() {
 }
 
 function getAddlPrayers(lit) {
+    if ((new Date()).getDay() === 0)
+        return `<h1>Before Receiving Communion</h1><p><span class="drop-cap">W</span>E do not presume to come to this thy Table, O merciful Lord, trusting in our own righteousness, but in thy manifold and great mercies. We are not worthy so much as to gather up the crumbs under thy Table. But thou art the same Lord, whose property is always to have mercy: Grant us therefore, gracious Lord, so to eat the flesh of thy dear Son Jesus Christ, and to drink his blood, that our sinful bodies may be made clean by his Body, and our souls washed through his most precious Blood, and that we may evermore dwell in him, and he in us. Amen.</p>
+            <h1>After Receiving Communion</h1><p><span class="drop-cap">A</span>LMIGHTY and everliving God, we most heartily thank thee, for that thou dost vouchsafe to feed us who have duly received these holy mysteries with the spiritual food of the most precious Body and Blood of thy Son our Saviour Jesus Christ; and dost assure us thereby of thy favour and goodness towards us; and that we are very members incorporate in the mystical body of thy Son, which is the blessed company of all faithful people; and are also heirs through hope of thy everlasting kingdom, by the merits of his most precious death and passion. And we humbly beseech thee, O heavenly Father, so to assist us with thy grace, that we may continue in that holy fellowship, and do all such good works as thou hast prepared for us to walk in; through Jesus Christ our Lord, to whom, with thee and the Holy Ghost, be all honour and glory, world without end. Amen.</p>`;
+    
     if (["AW", "L1", "L2", "L3", "L4", "L5", "Palm", "HW-Mon", "HW-Tue", "HW-Wed", "Maundy", "GF"].includes(lit))
         return getStations();
 
@@ -71,7 +75,7 @@ function getAddlPrayers(lit) {
 }
 
 const litOfHum = `<h1>A Litany of Humility</h1>
-    <p><span class="drop-cap">L</span>ord Jesus, meek and humble of heart,<br>
+    <p><span class="drop-cap">L</span>ORD Jesus, meek and humble of heart,<br>
     <b>Hear me.</b><br>
     From the desire to be esteemed,<br>
     <b>Deliver me, Jesus.</b><br>
