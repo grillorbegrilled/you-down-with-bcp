@@ -8,6 +8,7 @@ function getHymns(liturgicalDay) {
     else if (day === "EasterMon" || day === "EasterTue") day = "Easter";
     else if (day === "Ea4") day = "T19"; //breathe on me
     else if (day === "Asc1") day = "Ascension";
+    else if (day === "Whitmon" || day === "WhitTue") day = "Whitsun";
     
     const items = hymns[day];
     var result = "";
@@ -1591,7 +1592,7 @@ to his heavenly palace gate.<br>
 Hark! the choirs of angel voices <br>
 joyful alleluias sing,<br>
 and the portals high are lifted <br>
-to receive their heavenly King.<br>
+to receive their heavenly King.
 </p><p>
 Who is this that comes in glory, <br>
 with the trump of jubilee?<br>
@@ -1600,7 +1601,7 @@ he has gained the victory.<br>
 he who on the cross did suffer, <br>
 he who from the grave arose,<br>
 he has vanquished sin and Satan, <br>
-he by death has spoiled his foes.<br>
+he by death has spoiled his foes.
 </p><p>
 While he raised his hands in blessing, <br>
 he was parted from his friends<br>
@@ -1609,7 +1610,7 @@ he upon the clouds ascends;<br>
 he who walked with God and pleased him, <br>
 preaching truth and doom to come,<br>
 he, our Enoch, is translated <br>
-to his everlasting home.<br>
+to his everlasting home.
 </p><p>
 Now our heavenly Aaron enters, <br>
 with his blood, within the veil;<br>
@@ -1618,7 +1619,7 @@ and the kings before him quail;<br>
 now he plants the tribes of Israel <br>
 in their promised resting place;<br>
 now our great Elijah offers <br>
-double portion of his grace.<br>
+double portion of his grace.
 </p><p>
 He has raised our human nature<br>
 on the clouds to God's right hand;<br>
@@ -1627,7 +1628,7 @@ there with him in glory stand:<br>
 Jesus reigns, adored by angels;<br>
 man with God is on the throne;<br>
 mighty Lord, in thine ascension<br>
-we by faith behold our own.<br>
+we by faith behold our own.
 </p><p>
 Glory be to God the Father, <br>
 glory be to God the Son,<br>
@@ -1644,7 +1645,7 @@ all music but its own.<br>
 Awake, my soul, and sing of him <br>
 who died for thee,<br>
 and hail him as thy matchless King <br>
-through all eternity.<br>
+through all eternity.
 </p><p>
 Crown him the virgin's Son, <br>
 the God incarnate born,<br>
@@ -1653,7 +1654,7 @@ which now His brow adorn;<br>
 fruit of the mystic rose, <br>
 as of that rose the stem;<br>
 the root whence mercy ever flows, <br>
-the Babe of Bethlehem.<br>
+the Babe of Bethlehem.
 </p><p>
 Crown him the Son of God, <br>
 before the worlds began,<br>
@@ -1662,7 +1663,7 @@ crown him the Son of Man;<br>
 who every grief hath known <br>
 that wrings the human breast,<br>
 and takes and bears them for His own,<br>
-that all in him may rest.<br>
+that all in him may rest.
 </p><p>
 Crown him the Lord of life, <br>
 who triumphed over the grave,<br>
@@ -1671,7 +1672,7 @@ for those he came to save.<br>
 His glories now we sing, <br>
 who died, and rose on high,<br>
 who died eternal life to bring, <br>
-and lives that death may die.<br>
+and lives that death may die.
 </p><p>
 Crown him the Lord of peace, <br>
 whose power a scepter sways<br>
@@ -1680,7 +1681,7 @@ and all be prayer and praise.<br>
 his reign shall know no end, <br>
 and round his pierc&egrave;d feet<br>
 fair flowers of paradise extend<br>
-their fragrance ever sweet.<br>
+their fragrance ever sweet.
 </p><p>
 Crown him the Lord of love, <br>
 behold his hands and side,<br>
@@ -1689,7 +1690,7 @@ in beauty glorified.<br>
 No angel in the sky <br>
 can fully bear that sight,<br>
 but downward bends his burning eye <br>
-at mysteries so bright.<br>
+at mysteries so bright.
 </p><p>
 Crown him the Lord of Heaven, <br>
 enthroned in worlds above,<br>
@@ -1698,7 +1699,7 @@ the wondrous name of Love.<br>
 Crown him with many crowns, <br>
 as thrones before him fall;<br>
 Crown him, ye kings, with many crowns, <br>
-for he is King of all.<br>
+for he is King of all.
 </p><p>
 Crown him the Lord of lords, <br>
 who over all doth reign,<br>
@@ -1707,7 +1708,7 @@ for ransomed sinners slain,<br>
 now lives in realms of light, <br>
 where saints with angels sing<br>
 their songs before him day and night, <br>
-their God, Redeemer, King.<br>
+their God, Redeemer, King.
 </p><p>
 Crown him the Lord of years, <br>
 the Potentate of time,<br>
@@ -1717,10 +1718,129 @@ all hail, Redeemer, hail! <br>
 For thou has died for me;<br>
 thy praise and glory shall not fail <br>
 throughout eternity.`],
-    "Asc1": [""],
-    "Whitsun": [""],
-    "Whitmon": [""],
-    "WhitTue": [""],
+    "Whitsun": [`Come, thou Holy Spirit, come,<br>
+and from thy celestial home<br>
+shed a ray of light divine!<br>
+Come, thou Father of the poor!<br>
+Come, thou Source of all our store!<br>
+Come, within our bosoms shine!
+</p><p>
+Thou, of comforters the best;<br>
+thou, the soul's most welcome guest;<br>
+sweet refreshment here below;<br>
+in our labor, rest most sweet;<br>
+grateful coolness in the heat;<br>
+solace in the midst of woe.
+</p><p>
+O most blessèd Light divine,<br>
+shine within these hearts of thine,<br>
+and our inmost being fill!<br>
+Where thou art not, man hath naught,<br>
+nothing good in deed or thought,<br>
+nothing free from taint of ill.
+</p><p>
+Heal our wounds, our strength renew;<br>
+on our dryness pour thy dew;<br>
+wash the stains of guilt away;<br>
+bend the stubborn heart and will;<br>
+melt the frozen, warm the chill;<br>
+guide the steps that go astray.
+</p><p>
+On the faithful, who adore<br>
+and confess thee, evermore<br>
+in thy sevenfold gift descend;<br>
+give them virtue's sure reward<br>
+give them thy salvation, Lord;<br>
+give them joys that never end.`,
+`Hail thee, festival day!<br>
+Blest day that art hallowed forever;<br>
+day wherein God from heaven,<br>
+shone on the world with his grace.
+</p><p>
+Lo! in the likeness of fire,<br>
+on them that await his appearing,<br>
+he whom the Lord foretold,<br>
+suddenly, swiftly, descends.<br>
+Hail thee, &c.</p><p>
+Forth from the Father he comes<br>
+with his sevenfold mystical dowry,<br>
+pouring on human souls<br>
+infinite riches of God. <br>
+Hail thee, &c.</p><p>
+Hark! in a hundred tongues<br>
+Christ's own, his chosen Apostles,<br>
+preach to a hundred tribes<br>
+Christ and his wonderful works. <br>
+Hail thee, &c.</p><p>
+Praise to the Spirit of life,<br>
+all praise to the Fount of our being,<br>
+light that dost lighten all,<br>
+life that in all dost abide. <br>
+Hail thee, &c.</p><p>
+God, who art giver of all<br>
+good gifts and lover of concord,<br>
+pour thy balm on our souls,<br>
+order our ways in thy peace. <br>
+Hail thee, &c.</p><p>
+God Almighty, who fillest<br>
+the heaven, the earth and the ocean,<br>
+guard us from harm without,<br>
+cleanse us from evil within. <br>
+Hail thee, &c.</p><p>
+Kindle our lips with his live bright coal<br>
+from the hands of the Seraph;<br>
+shine in our minds with thy light;<br>
+burn in our hearts with thy love. <br>
+Hail thee, &c.`,
+                `Come down, O love divine,<br>
+seek thou this soul of mine,<br>
+and visit it with thine own ardor glowing;<br>
+O Comforter, draw near,<br>
+within my heart appear,<br>
+and kindle it, thy holy flame bestowing.
+<p></p>
+O let it freely burn,<br>
+till earthly passions turn<br>
+to dust and ashes in its heat consuming;<br>
+and let thy glorious light<br>
+shine ever on my sight,<br>
+and clothe me round, the while my path illuming.
+<p></p>
+Let holy charity<br>
+mine outward vesture be,<br>
+and lowliness become mine inner clothing;<br>
+true lowliness of heart,<br>
+which takes the humbler part,<br>
+and o'er its own shortcomings weeps with loathing.
+<p></p>
+And so the yearning strong,<br>
+with which the soul will long,<br>
+shall far outpass the power of human telling;<br>
+for none can guess its grace,<br>
+till Love create a place<br>
+wherein the Holy Spirit makes a dwelling.`,
+               `Come, Holy Ghost, our souls inspire,<br>
+and lighten with celestial fire.<br>
+Thou the anointing Spirit art,<br>
+who dost thy sevenfold gifts impart.
+<p></p>
+Thy blessed unction from above<br>
+is comfort, life, and fire of love.<br>
+Enable with perpetual light<br>
+the dullness of our blinded sight.
+<p></p>
+Anoint and cheer our soilèd face<br>
+with the abundance of thy grace.<br>
+Keep far from foes, give peace at home:<br>
+where thou art guide, no ill can come.
+<p></p>
+Teach us to know the Father, Son,<br>
+and thee, of both, to be but One,<br>
+that through the ages all along,<br>
+this may be our endless song:
+<p></p>
+Praise to thy eternal merit,<br>
+Father, Son, and Holy Spirit.`],
     "Trinity": [""],
     "T1": [""],
     "T2": [""],
