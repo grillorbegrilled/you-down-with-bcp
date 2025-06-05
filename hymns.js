@@ -1634,7 +1634,7 @@ Glory be to God the Father, <br>
 glory be to God the Son,<br>
 dying, risen, ascending for us, <br>
 who the heavenly realm has won;<br>
-glory to the Holy Spirit, t<br>
+glory to the Holy Spirit,<br>
 to One God in persons Three;<br>
 glory both in earth and heaven, <br>
 glory, endless glory, be.`,
@@ -1679,7 +1679,7 @@ whose power a scepter sways<br>
 from pole to pole, that wars may cease, <br>
 and all be prayer and praise.<br>
 his reign shall know no end, <br>
-and round his pierc&egrave;d feet<br>
+and round his piercèd feet<br>
 fair flowers of paradise extend<br>
 their fragrance ever sweet.
 </p><p>
@@ -1703,7 +1703,7 @@ for he is King of all.
 </p><p>
 Crown him the Lord of lords, <br>
 who over all doth reign,<br>
-who once on earth, the incarnate Word, <br>
+who once on earth, th'incarnate Word, <br>
 for ransomed sinners slain,<br>
 now lives in realms of light, <br>
 where saints with angels sing<br>
