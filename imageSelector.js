@@ -71,14 +71,17 @@ return "images/bg/Easter.jpg";
         case "Asc1":
         return "images/bg/Ascension.jpg";
         break;
+        case "Whitsun":
+        case "Whitmon":
+        case "WhitTue":
+        return "images/bg/Whitsun.jpg";
+        break;
         /*case "Trinity":
         case "AllSaints":
         case "ThanksgivingDay":
             return "white_damask";
             break;
-        case "Whitsun":
-        case "Whitmon":
-        case "WhitTue":*/
+        */
         case "Andrew":
             return "images/bg/andy.png";
             break;
