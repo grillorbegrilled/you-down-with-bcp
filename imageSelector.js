@@ -94,8 +94,10 @@ return "images/bg/Easter.jpg";
         case "PhilipAndJames":
             return "images/bg/PnJ.jpg";
             break;
-        /*case "Barnabas":
-        case "Peter":
+        case "Barnabas":
+            return "images/bg/Barnabas.png";
+            break;
+        /*case "Peter":
         case "James":
         case "Bartholomew":
         case "Matthew":
