@@ -13,6 +13,9 @@ function getOfficeMargin1(now, liturgicalDay) {
     case "Michael":
       result = "images/marginalia/neaster.png";
       break;
+    case "Trinity":
+      result = "images/marginalia/Triquetra.png";
+      break;
     default:
       result = "";
   }
@@ -76,6 +79,9 @@ function getEuchMargin(now, liturgicalDay) {
       break;
     case "Michael":
       result = "images/marginalia/michael.png";
+      break;
+    case "Trinity":
+      result = "images/marginalia/Triquetra.png";
       break;
     default:
       result = "";
