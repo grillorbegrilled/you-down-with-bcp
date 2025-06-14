@@ -76,8 +76,10 @@ return "images/bg/Easter.jpg";
         case "WhitTue":
         return "images/bg/Whitsun.jpg";
         break;
-        /*case "Trinity":
-        case "AllSaints":
+        case "Trinity":
+        return "images/bg/Htcincy.jpg";
+        break;
+        /*case "AllSaints":
         case "ThanksgivingDay":
             return "white_damask";
             break;
@@ -150,6 +152,9 @@ return "images/bg/Easter.jpg";
       case "Patrick": return "images/bg/st-pat.jpg";
       case "Joseph": return "images/bg/joseph.jpg";
         default:
+          if (month < 8 || month === 8 && date < 29)
+            return "images/bg/trinity.png";
+          else
             return "images/bg/harvest.png";
     }
 }
