@@ -1841,7 +1841,27 @@ this may be our endless song:
 <p></p>
 Praise to thy eternal merit,<br>
 Father, Son, and Holy Spirit.`],
-    "Trinity": [""],
+    "Trinity": [`Holy, holy, holy! Lord God Almighty! <br>
+Early in the morning our song shall rise to thee: <br>
+Holy, holy, holy! Merciful and mighty,<br> God in three Persons, blessèd Trinity. 
+<p></p>
+Holy, holy, holy! All the saints adore thee,<br> Casting down their golden crowns around the glassy sea; <br>
+Cherubim and seraphim falling down before thee, <br>Which wert, and art, and evermore shalt be. 
+<p></p>
+Holy, holy, holy! Though the darkness hide thee, <br>Though the eye of sinful man thy glory may not see, <br>Only thou art holy; there is none beside thee,<br>
+Perfect in pow’r, in love, and purity. 
+<p></p>
+Holy, holy, holy! Lord God Almighty! <br>
+All thy works shall praise thy Name, in earth, and sky, and sea; <br>
+Holy, holy, holy! Merciful and mighty, <br>God in three Persons, blessèd Trinity.`,
+`Holy Father, great Creator, <br>Source of mercy, love, and peace,<br> Look upon the Mediator, <br>Clothe us with his righteousness; <br>
+Heav’nly Father, heav’nly Father,<br> Through the Saviour hear and bless. <p></p>
+Holy Jesus, Lord of glory,<br> Whom angelic hosts proclaim, <br>While we hear thy wondrous story,<br> Meet and worship in thy Name,<br> Dear Redeemer, dear Redeemer, <br>In our hearts thy peace proclaim. <p></p>
+Holy Spirit, Sanctifier,<br> Come with unction from above, <br>Raise our hearts to raptures higher,<br> Fill them with the Saviour’s love! <br>
+Source of comfort, Source of comfort,<br> Cheer us with the Saviour’s love. <p></p>
+God the Lord, through every nation <br>Let thy wondrous mercies shine!<br>
+In the song of thy salvation<br> Ev’ry tongue and race combine! <br>
+Great Jehovah, great Jehovah, <br>Form our hearts and make them thine.`],
     "T1": [""],
     "T2": [""],
     "T3": [""],
