@@ -7,7 +7,6 @@ function getTopImage(lit, month, date) {
         case "A2":
         case "A3":
         case "A4":
-        case "JohnBaptist":
         case "LXX":
         case "LX":
         case "L":
@@ -79,6 +78,9 @@ return "images/bg/Easter.jpg";
         case "Trinity":
         return "images/bg/Htcincy.jpg";
         break;
+        case "JohnBaptist":
+        return "images/bg/John Baptist.jpg";
+        break;
         /*case "AllSaints":
         case "ThanksgivingDay":
             return "white_damask";
@@ -111,44 +113,7 @@ return "images/bg/Easter.jpg";
         case "Michael":
             return "white_damask"; //blue?
             break;
-        case "E1":
-        case "E2":
-        case "E3":
-        case "E4":
-        case "E5":
-        case "E6":        
-        case "T1":
-        case "T2":
-        case "T3":
-        case "T4":
-        case "T5":
-        case "T6":
-        case "T7":
-        case "T8":
-        case "T9":
-        case "T10":
-        case "T11":
-        case "T12":
-        case "T13":
-        case "T14":
-        case "T15":
-        case "T16":
-        case "T17":
-        case "T18":
-        case "T19":
-        case "T20":
-        case "T21":
-        case "T22":
-        case "T23":
-        case "T24":
-        case "SNBA":
-            if (month === 5 && date > 24 || month === 6 || month === 7 || month === 8 && date < 29)
-                return "olive";
-            else if (month === 8 && date > 29 || month >= 9)
-                return "olive";
-            else
-                return "olive";
-            break;*/
+        */
       case "Patrick": return "images/bg/st-pat.jpg";
       case "Joseph": return "images/bg/joseph.jpg";
         default:
