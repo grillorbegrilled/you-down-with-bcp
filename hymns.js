@@ -1862,7 +1862,40 @@ Source of comfort, Source of comfort,<br> Cheer us with the Saviour’s love. <p
 God the Lord, through every nation <br>Let thy wondrous mercies shine!<br>
 In the song of thy salvation<br> Ev’ry tongue and race combine! <br>
 Great Jehovah, great Jehovah, <br>Form our hearts and make them thine.`],
-    "T1": [""],
+    "T1": [`Lord, speak to me that I may speak<br>
+in living echoes of thy tone;<br>
+as thou has sought, so let me seek<br>
+thine erring children lost and lone.
+<p></p>
+O lead me, Lord, that I may lead<br>
+the wandering and the wavering feet;<br>
+O feed me, Lord, that I may feed<br>
+thy hungering ones with manna sweet.
+<p></p>
+O strengthen me, that while I stand<br>
+firm on the rock, and strong in thee,<br>
+I may stretch out a loving hand<br>
+to wrestlers with the troubled sea.
+<p></p>
+O teach me, Lord, that I may teach<br>
+the precious things thou dost impart;<br>
+and wing my words, that they may reach<br>
+the hidden depths of many a heart.
+<p></p>
+O give thine own sweet rest to me,<br>
+that I may speak with soothing power<br>
+a word in season, as from thee,<br>
+to weary ones in needful hour.
+<p></p>
+O fill me with thy fullness, Lord,<br>
+until my very heart overflow<br>
+in kindling thought and glowing word,<br>
+thy love to tell, thy praise to show.
+<p></p>
+O use me, Lord, use even me,<br>
+just as thou wilt, and when, and where,<br>
+until thy blessèd face I see,<br>
+thy rest, thy joy, thy glory share.`],
     "T2": [""],
     "T3": [""],
 //--------------------------------------------------------------------
