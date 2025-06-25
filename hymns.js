@@ -2720,4 +2720,24 @@ Praise to the Lord of my salvation,<br>
 Salvation is of Christ the Lord.`],
     "Joseph":[``],
     "Hugh":[``],
+    "JohnBaptist":[`The great forerunner of the morn,<br>
+the herald of the Word, is born;<br>
+and faithful hearts shall never fail<br>
+with thanks and praise his light to hail.</p>
+        <p>With heav’nly message Gabriel came,<br>
+that John should be the herald's name,<br>
+and with prophetic utterance told<br>
+his actions great and manifold.</p>
+        <p>John, still unborn, yet gave aright<br>
+his witness to the coming light;<br>
+and Christ, the Sun of all the earth,<br>
+fulfilled that witness at his birth.</p>
+        <p>Of woman born shall never be<br>
+a greater prophet than was he,<br>
+whose mighty deeds exalt his fame<br>
+to greater than a prophet's name.</p>
+        <p>All praise to God the Father be,<br>
+all praise, eternal Son, to thee,<br>
+whom with the Spirit we adore<br>
+for ever and for evermore.`]
 };
