@@ -46,6 +46,9 @@ function getOfficeMargin2(now, liturgicalDay) {
     case "Ea2":
       result = "images/marginalia/GoodShepherd.jpg";
       break;
+    case "JohnBaptist":
+      result = "images/marginalia/agnusdei.png";
+      break;
     default:
       result = "";
   }
