@@ -23,7 +23,9 @@ function getOffice(now, week, feast) {
         if (now.getHours() >= 5 && now.getHours() < 12) officeType = 1;
         else if (now.getHours() < 21) officeType = 2;
         else officeType = 3;
-    
+    const topMarg = getOfficeMargin1(now, feast || week);
+                if (topMarg) document.getElementById("topMarg").src = topMarg;
+                else document.getElementById("topMarg").style.display = "none";
         switch (officeType) {
             case 1:
                 document.getElementById("office-name").textContent = "Morning Prayer";
@@ -39,16 +41,12 @@ function getOffice(now, week, feast) {
                     document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
                 });
                 document.getElementById("office-collect").innerHTML = "<p><span class='drop-cap'>O</span> LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
-                const topMarg = getOfficeMargin1(now, feast || week);
-                if (topMarg) document.getElementById("topMarg").src = topMarg;
-                else document.getElementById("topMarg").style.display = "none";
+                
                 const cantMarg = getOfficeMargin2(now, feast || week);
                 if (cantMarg) document.getElementById("cantMarg").src = cantMarg;
                 else document.getElementById("cantMarg").style.display = "none";
                 break;
             case 2:
-                const topMarge = getOfficeMargin1(now, feast || week);
-                if (topMarge) document.getElementById("topMarg").src = topMarg;
                 else document.getElementById("topMarg").style.display = "none";
                 document.getElementById("office-name").textContent = "Evening Prayer";
                 document.getElementById("canticle").innerHTML = getEveningCanticle(feast, week);
