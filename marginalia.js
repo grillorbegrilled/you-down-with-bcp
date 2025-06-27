@@ -49,9 +49,6 @@ function getOfficeMargin2(now, liturgicalDay) {
     case "JohnBaptist":
       result = "images/marginalia/wortwortwort.jpg";
       break;
-    case "T1":
-      result = "images/marginalia/dives.jpg";
-      break;
     default:
       result = "";
   }
@@ -92,6 +89,9 @@ function getEuchMargin(now, liturgicalDay) {
       break;
     case "JohnBaptist":
       result = "images/marginalia/agnusdei.png";
+      break;
+    case "T1":
+      result = "images/marginalia/dives.jpg";
       break;
     default:
       result = "";
