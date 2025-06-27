@@ -49,6 +49,9 @@ function getOfficeMargin2(now, liturgicalDay) {
     case "JohnBaptist":
       result = "images/marginalia/wortwortwort.jpg";
       break;
+    case "T1":
+      result = "images/marginalia/dives.jpg";
+      break;
     default:
       result = "";
   }
@@ -56,7 +59,8 @@ function getOfficeMargin2(now, liturgicalDay) {
   if (/\d$/.test(liturgicalDay) && result === "") {
     //Spring
     if (month === 2 && date > 20 || month === 3 || month === 4) result = "images/marginalia/RobinEggs.png";
-    
+    //June
+    if (month === 5) result = "images/marginalia/opuntia.png";
     //Estival
     if (month === 8) {
       if (date < 29) {result = "images/marginalia/Cicada.jpg";}
