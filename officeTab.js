@@ -47,6 +47,9 @@ function getOffice(now, week, feast) {
                 else document.getElementById("cantMarg").style.display = "none";
                 break;
             case 2:
+                const topMarg = getOfficeMargin1(now, feast || week);
+                if (topMarg) document.getElementById("topMarg").src = topMarg;
+                else document.getElementById("topMarg").style.display = "none";
                 document.getElementById("office-name").textContent = "Evening Prayer";
                 document.getElementById("canticle").innerHTML = getEveningCanticle(feast, week);
                 document.getElementById("creed-or-suffrages").innerHTML = `<p><span class="drop-cap">O</span> LORD, show thy mercy upon us.<br>
