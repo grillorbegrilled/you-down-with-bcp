@@ -57,7 +57,9 @@ function getOfficeMargin2(now, liturgicalDay) {
     //Spring
     if (month === 2 && date > 20 || month === 3 || month === 4) result = "images/marginalia/RobinEggs.png";
     //June
-    if (month === 5) result = "images/marginalia/Daylily.jpg";
+    if (month === 5) {
+      if (date < 24) result = "images/marginalia/Strawberry.jpg";
+      else result = "images/marginalia/Daylily.jpg";}
     //Estival
     if (month === 8) {
       if (date < 29) {result = "images/marginalia/Cicada.jpg";}
