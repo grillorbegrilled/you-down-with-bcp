@@ -2739,5 +2739,30 @@ to greater than a prophet's name.</p>
         <p>All praise to God the Father be,<br>
 all praise, eternal Son, to thee,<br>
 whom with the Spirit we adore<br>
-for ever and for evermore.`]
+for ever and for evermore.`],
+    "Peter": [`Forsaken once, and thrice denied,<br>
+the risen Lord gave pardon free,<br>
+stood once again at Peter's side,<br>
+and asked him, “Lov’st thou me?”</p>
+        <p>How many times with faithless word<br>
+have we denied his holy name,<br>
+how oft forsaken our dear Lord,<br>
+and shrunk when trial came!</p>
+        <p>Saint Peter, when the cock crew clear,<br>
+went out, and wept his broken faith:<br>
+strong as a rock through strife and fear,<br>
+he served his Lord till death.
+</p>
+        <p>How oft his cowardice of heart<br>
+we have without his love sincere,<br>
+the sin without the sorrow's smart,<br>
+the shame without the tear!</p>
+        <p>0 oft forsaken, oft denied,<br>
+forgive our shame, wash out our sin; <br>
+look on us from thy Father's side <br>
+and let that sweet look win.</p>
+        <p>Hear when we call thee from the deep, <br>
+still walk beside us on the shore,<br>
+give hands to work, and eyes to weep,<br>
+and hearts to love thee more.`]
 };
