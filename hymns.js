@@ -2742,7 +2742,7 @@ whom with the Spirit we adore<br>
 for ever and for evermore.`],
     "Peter": [`Forsaken once, and thrice denied,<br>
 the risen Lord gave pardon free,<br>
-stood once again at Peter's side,<br>
+stood once again at Peter’s side,<br>
 and asked him, “Lov’st thou me?”</p>
         <p>How many times with faithless word<br>
 have we denied his holy name,<br>
@@ -2757,7 +2757,7 @@ he served his Lord till death.
 we have without his love sincere,<br>
 the sin without the sorrow's smart,<br>
 the shame without the tear!</p>
-        <p>0 oft forsaken, oft denied,<br>
+        <p>O oft forsaken, oft denied,<br>
 forgive our shame, wash out our sin; <br>
 look on us from thy Father's side <br>
 and let that sweet look win.</p>
