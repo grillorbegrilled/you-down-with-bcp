@@ -1896,7 +1896,35 @@ O use me, Lord, use even me,<br>
 just as thou wilt, and when, and where,<br>
 until thy blessèd face I see,<br>
 thy rest, thy joy, thy glory share.`],
-    "T2": [""],
+    "T2": [`How sweet and awful is the place<br>
+with Christ within the doors,<br>
+while everlasting love displays<br>
+the choicest of her stores.
+<p></p>
+While all our hearts and all our songs<br>
+join to admire the feast,<br>
+each of us cries, with thankful tongue,<br>
+“Lord, why was I a guest?
+<p></p>
+“Why was I made to hear Thy voice,<br>
+and enter while there's room,<br>
+when thousands make a wretched choice<br>
+and rather starve than come?”
+<p></p>
+’Twas the same love that spread the feast<br>
+that sweetly drew us in;<br>
+else we had still refused to taste,<br>
+and perished in our sin.
+<p></p>
+Pity the nations, O our God,<br>
+constrain the earth to come;<br>
+send Thy victorious Word abroad,<br>
+and bring the strangers home.
+<p></p>
+We long to see Thy churches full,<br>
+that all the human race<br>
+may, with one voice and heart and soul,<br>
+sing Thy redeeming grace.`],
     "T3": [""],
 //--------------------------------------------------------------------
     "T4": ["There's a wideness in God's mercy<br>like the wideness of the sea;<br>there's a kindness in his justice,<br>which is more than liberty.<br>There is welcome for the sinner,<br>and more graces for the good;<br>there is mercy with the Savior; <br>there is healing in his blood.<br></p><p>There is no place where earth's sorrows<br>are more felt than in heaven;<br>there is no place where earth's failings<br>have such kind judgment given.<br>There is plentiful redemption<br>in the blood that has been shed;<br>there is joy for all the members<br>in the sorrows of the Head.<br></p><p>For the love of God is broader<br>than the measure of man's mind;<br>and the heart of the Eternal<br>is most wonderfully kind.<br>If our love were but more faithful,<br>we should take him at his word;<br>and our life would be thanksgiving<br>for the goodness of the Lord."],
