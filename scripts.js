@@ -127,7 +127,7 @@ function makeP(text){
 
 function makeDropCap(text) {
     if (!text) return "NULL";
-  if (text.length === 0) return text;
+  if (text === "") return text;
   const firstLetter = text.charAt(0);
   const restOfString = text.slice(1);
   return `<span class="drop-cap">${firstLetter}</span>${restOfString}`;
