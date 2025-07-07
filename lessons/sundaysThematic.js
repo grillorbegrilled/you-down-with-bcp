@@ -203,7 +203,7 @@ const sundaysThematic = {
 "2 Kings 4:8-17"
 ],
 "T3":[
-"*Jer 31:1-14", "Matthew 9:9-13",
+"*Jeremiah 31:1-14", "Matthew 9:9-13",
 "Proverbs 16:18ff", "Philippians 1:27-2:4",
 "Jeremiah 23:1-8", "Luke 19:2-10",
 "Ezekiel 34:20-24"
