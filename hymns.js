@@ -1925,8 +1925,41 @@ We long to see Thy churches full,<br>
 that all the human race<br>
 may, with one voice and heart and soul,<br>
 sing Thy redeeming grace.`],
-    "T3": [""],
-//--------------------------------------------------------------------
+    "T3": [`There were ninety and nine that safely lay<br>
+in the shelter of the fold.<br>
+but one was out on the hills away,<br>
+far off from the gates of gold.<br>
+away on the mountains wild and bare.<br>
+away from the tender Shepherd's care.<br>
+away from the tender Shepherd's care.<p></p>
+"Lord, thou hast here thy ninety and nine;<br>
+are they not enough for thee?"<br>
+But the Shepherd made answer: "this of mine<br>
+has wandered away from me;<br>
+and although the road be rough and steep,<br>
+I go to the desert to find my sheep,<br>
+I go to the desert to find my sheep."<p></p>
+But none of the ransomed ever knew<br>
+how deep were the waters crossed;<br>
+nor how dark was the night the Lord passed through<br>
+ere he found his sheep that was lost.<br>
+out in the desert he heard its cry,<br>
+sick and helpless and ready to die;<br>
+sick and helpless and ready to die.<p></p>
+"Lord, whence are those blood drops all the way<br>
+that mark out the mountain's track?"<br>
+"they were shed for one who had gone astray<br>
+ere the Shepherd could bring him back."<br>
+"Lord, whence are thy hands so rent and torn?"<br>
+"They are pierced tonight by many a thorn;<br>
+they are pierced tonight by many a thorn."<p></p>
+And all through the mountains, thunder riven<br>
+and up from the rocky steep,<br>
+there arose a glad cry to the gate of heaven,<br>
+"Rejoice! I have found My sheep!"<br>
+and the angels echoed around the throne,<br>
+"Rejoice, for the Lord brings back his own!<br>
+rejoice, for the Lord brings back his own!"`],
     "T4": ["There's a wideness in God's mercy<br>like the wideness of the sea;<br>there's a kindness in his justice,<br>which is more than liberty.<br>There is welcome for the sinner,<br>and more graces for the good;<br>there is mercy with the Savior; <br>there is healing in his blood.<br></p><p>There is no place where earth's sorrows<br>are more felt than in heaven;<br>there is no place where earth's failings<br>have such kind judgment given.<br>There is plentiful redemption<br>in the blood that has been shed;<br>there is joy for all the members<br>in the sorrows of the Head.<br></p><p>For the love of God is broader<br>than the measure of man's mind;<br>and the heart of the Eternal<br>is most wonderfully kind.<br>If our love were but more faithful,<br>we should take him at his word;<br>and our life would be thanksgiving<br>for the goodness of the Lord."],
     "T5": ["Forth in thy Name, O Lord, I go,<br>my daily labor to pursue;<br>thee, only thee, resolved to know<br>in all I think or speak or do.<br></p><p>The task thy wisdom hath assigned,<br>O let me cheerfully fulfill;<br>in all my works thy presence find,<br>and prove thy good and perfect will.<br></p><p>Thee may I set at my right hand,<br>whose eyes mine inmost substance see,<br>and labor on at thy command,<br>and offer all my works to thee.<br></p><p>Give me to bear thy easy yoke,<br>and every moment watch and pray,<br>and still to things eternal look,<br>and hasten to thy glorious day.<br></p><p>For thee delightfully employ<br>whate'er thy bounteous grace hath giv'n;<br>and run my course with even joy,<br>and closely walk with thee to heav'n."],
     "T6": ["O Jesus, I have promised <br>to serve thee to the end:<br>be thou ever near me, <br>my Master and my friend;<br>I shall not fear the battle<br>if thou art by my side,<br>nor wander from the pathway<br>if thou wilt be my guide.</p><p>O let me feel thee near me! <br>The world is ever near;<br>I see the sights that dazzle, <br>the tempting sounds I hear;<br>my foes are ever near me, <br>around me and within;<br>but Jesus, draw thou nearer, <br>and shield my soul from sin.</p><p>O let me hear thee speaking <br>in accents clear and still,<br>above the storms of passion, <br>the murmurs of self-will;<br>O speak to reassure me, <br>to hasten or control;<br>O speak, and make me listen, <br>thou guardian of my soul.</p><p>O let me see thy features,<br>the look that once could make<br>so many a true disciple<br>leave all things for thy sake:<br>the look that beamed on Peter<br>when he thy name denied;<br>the look that draws thy lovers<br>close to thy piercèd side.</p><p>O Jesus, thou hast promised <br>to all who follow thee,<br>that where thou art in glory <br>there shall thy servant be;<br>and, Jesus, I have promised <br>to serve thee to the end;<br>O give me grace to follow, <br>my Master and my friend.</p><p>O let me see thy footmarks, <br>and in them plant mine own;<br>My hope to follow duly <br>is in thy strength alone.<br>O guide me, call me, draw me, <br>uphold me to the end;<br>and then in heaven receive me, <br>my Savior and my Friend."],
