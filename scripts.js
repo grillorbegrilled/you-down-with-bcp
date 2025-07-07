@@ -26,7 +26,7 @@ function displayEventDetails() {
 element.style.backgroundImage = `url("${getTopImage(liturgicalDay, now.getMonth(), now.getDate())}")`;
 element.style.backgroundRepeat = 'no-repeat';
 element.style.backgroundPosition = 'top center';
-    const hymns = getHymns(liturgicalDay);
+    const hymns = getHymns2(liturgicalDay);
     if (hymns) {
         if (hymns.multiple) document.getElementById('hymn-title').textContent = "Hymns";
         document.getElementById('hymn').innerHTML = hymns.hymns;
