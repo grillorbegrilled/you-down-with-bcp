@@ -1,39 +1,41 @@
 async function getHymns2(liturgicalDay) {
   var day = liturgicalDay;
-  case "T25":
-    day = "E6";
-    break;
-  case "T26":
-    day = "E5";
-    break;
-  case "Stephen":
-  case "JohnEvangelist":
-  case "Innocents":
-  case "X1":
-  case "Circ":
-    day = "Xmas";
-    break;
-  case "E1":
-    day = "Epiphany";
-    break;
-  case "HW-Tue":
-  case "HW-Wed":
-    day = "HW-Mon";
-    break;
-  case "EasterMon":
-  case "EasterTue":
-    day = "Easter";
-    break;
-  case "Ea4":
-    day = "T19"; // breathe on me
-    break;
-  case "Asc1":
-    day = "Ascension";
-    break;
-  case "Whitmon":
-  case "WhitTue":
-    day = "Whitsun";
-    break;
+  switch (day) {
+    case "T25":
+      day = "E6";
+      break;
+    case "T26":
+      day = "E5";
+      break;
+    case "Stephen":
+    case "JohnEvangelist":
+    case "Innocents":
+    case "X1":
+    case "Circ":
+      day = "Xmas";
+      break;
+    case "E1":
+      day = "Epiphany";
+      break;
+    case "HW-Tue":
+    case "HW-Wed":
+      day = "HW-Mon";
+      break;
+    case "EasterMon":
+    case "EasterTue":
+      day = "Easter";
+      break;
+    case "Ea4":
+      day = "T19"; // breathe on me
+      break;
+    case "Asc1":
+      day = "Ascension";
+      break;
+    case "Whitmon":
+    case "WhitTue":
+      day = "Whitsun";
+      break;
+  }
 
   const items = await getDataFromFile(liturgicalDay, "hymns");
   var result = "";
