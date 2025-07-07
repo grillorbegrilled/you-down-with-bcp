@@ -83,7 +83,7 @@ async function getDataFromFile(liturgicalDay, pathPrefix) {
   else if (custom.has(liturgicalDay)) 
     filePath = `./${pathPrefix}/custom-festivals.json`;
   else
-    filePath = `./${pathPrefix}/1662festivals.json`);
+    filePath = `./${pathPrefix}/1662festivals.json`;
 
   const response = await fetch(filePath);
   if (!response.ok) {
