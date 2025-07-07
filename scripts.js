@@ -53,14 +53,37 @@ in our true native land with thee.`);
 }
 
 async function getProper2(liturgicalDay) {
-    if (/^A\d$/.test(liturgicalDay) || liturgicalDay === "Xmas" || liturgicalDay === "X1" || liturgicalDay === "Stephen" || liturgicalDay === "JohnEvangelist" || liturgicalDay === "Innocents" || liturgicalDay === "Circ" ||
-        liturgicalDay === "Epiphany" || /^E\d$/.test(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/advent-epi.json");
-    else if (liturgicalDay === "LXX" || liturgicalDay === "LX" || liturgicalDay === "L" || liturgicalDay === "AW" || /^L\d$/.test(liturgicalDay) ||
-            liturgicalDay === "Palm" || /^HW.*$/.test(liturgicalDay) || liturgicalDay === "GF" || liturgicalDay === "EE" ||
-            /^Easter.*$/.test(liturgicalDay) || /^Ea\d$/.test(liturgicalDay) || /^Asc.*$/.test(liturgicalDay) || /^Whit...$/.test(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/lxx-whitsun.json");
-    else if (/^T\d{1,2}$/.test(liturgicalDay) || liturgicalDay === "SNBA" || liturgicalDay === "Trinity") return getProperFromFile(liturgicalDay, "./ceg/trinity.json");
+    const adventEpi = new Set([
+      "A1", "A2", "A3", "A4",
+      "Xmas", "X1", "Stephen", "JohnEvangelist", "Innocents", "Circ", "Epiphany",
+      "E1", "E2", "E3", "E4", "E5", "E6"
+    ]);
+
+    const lxxWhitsun = new Set([
+      "LXX", "LX", "L", "AW",
+      "L1", "L2", "L3", "L4", "L5",
+      "Palm", "GF", "EE",
+      "HW-Mon", "HW-Tue", "HW-Wed", "HW-Thu",
+      "Easter", "EasterMon", "EasterTue",
+      "Ea1", "Ea2", "Ea3", "Ea4", "Ea5",
+      "Ascension", "Asc1",
+      "Whitsun", "Whitmon", "WhitTue"
+    ]);
+
+    const trinity = new Set([
+      "SNBA", "Trinity",
+      "T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "T9", "T10",
+      "T11", "T12", "T13", "T14", "T15", "T16", "T17", "T18", "T19", "T20",
+      "T21", "T22", "T23", "T24", "T25", "T26"
+    ]);
+
+    const custom = new Set(["Patrick", "Joseph", "SuperWesleyBros", "ElizabethII", "WeddingAnniversary"]);
+
+    if (adventEpi.has(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/advent-epi.json");
+    else if (lxxWhitsun.has(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/lxx-whitsun.json");
+    else if (trinity.has(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/trinity.json");
     else if (liturgicalDay === "IndependenceDay" || liturgicalDay === "ThanksgivingDay") return getProperFromFile(liturgicalDay, "./ceg/nationaldays-us.json");
-    else if (liturgicalDay === "Patrick" || liturgicalDay === "Joseph" || liturgicalDay === "SuperWesleyBros" || liturgicalDay === "ElizabethII" || liturgicalDay === "WeddingAnniversary") return getProperFromFile(liturgicalDay, "./ceg/custom-festivals.json");
+    else if (custom.has(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/custom-festivals.json");
     else return getProperFromFile(liturgicalDay, "./ceg/1662festivals.json");
 }
 
