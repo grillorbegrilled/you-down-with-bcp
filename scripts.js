@@ -26,11 +26,15 @@ function displayEventDetails() {
 element.style.backgroundImage = `url("${getTopImage(liturgicalDay, now.getMonth(), now.getDate())}")`;
 element.style.backgroundRepeat = 'no-repeat';
 element.style.backgroundPosition = 'top center';
-    const hymns = await getHymns2(liturgicalDay);
-    if (hymns) {
-        if (hymns.multiple) document.getElementById('hymn-title').textContent = "Hymns";
-        document.getElementById('hymn').innerHTML = hymns.hymns;
-    }
+    let hymns = "";
+    getHymns2(liturgicalDay).then(x => {
+        hymns = x;
+    
+        if (hymns) {
+            if (hymns.multiple) document.getElementById('hymn-title').textContent = "Hymns";
+            document.getElementById('hymn').innerHTML = hymns.hymns;
+        }
+    });
     document.getElementById('preface').innerHTML = getPreface(liturgicalDay, now.getMonth(), now.getDate(), now.getDay());
 
     if (['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week))
