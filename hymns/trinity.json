@@ -1,541 +1,81 @@
 {
-  "Trinity": [`Holy, holy, holy! Lord God Almighty! <br>
-Early in the morning our song shall rise to thee: <br>
-Holy, holy, holy! Merciful and mighty,<br> God in three Persons, blessèd Trinity. 
-<p></p>
-Holy, holy, holy! All the saints adore thee,<br> Casting down their golden crowns around the glassy sea; <br>
-Cherubim and seraphim falling down before thee, <br>Which wert, and art, and evermore shalt be. 
-<p></p>
-Holy, holy, holy! Though the darkness hide thee, <br>Though the eye of sinful man thy glory may not see, <br>Only thou art holy; there is none beside thee,<br>
-Perfect in pow’r, in love, and purity. 
-<p></p>
-Holy, holy, holy! Lord God Almighty! <br>
-All thy works shall praise thy Name, in earth, and sky, and sea; <br>
-Holy, holy, holy! Merciful and mighty, <br>God in three Persons, blessèd Trinity.`,
-`Holy Father, great Creator, <br>Source of mercy, love, and peace,<br> Look upon the Mediator, <br>Clothe us with his righteousness; <br>
-Heav’nly Father, heav’nly Father,<br> Through the Saviour hear and bless. <p></p>
-Holy Jesus, Lord of glory,<br> Whom angelic hosts proclaim, <br>While we hear thy wondrous story,<br> Meet and worship in thy Name,<br> Dear Redeemer, dear Redeemer, <br>In our hearts thy peace proclaim. <p></p>
-Holy Spirit, Sanctifier,<br> Come with unction from above, <br>Raise our hearts to raptures higher,<br> Fill them with the Saviour’s love! <br>
-Source of comfort, Source of comfort,<br> Cheer us with the Saviour’s love. <p></p>
-God the Lord, through every nation <br>Let thy wondrous mercies shine!<br>
-In the song of thy salvation<br> Ev’ry tongue and race combine! <br>
-Great Jehovah, great Jehovah, <br>Form our hearts and make them thine.`],
-    "T1": [`Lord, speak to me that I may speak<br>
-in living echoes of thy tone;<br>
-as thou has sought, so let me seek<br>
-thine erring children lost and lone.
-<p></p>
-O lead me, Lord, that I may lead<br>
-the wandering and the wavering feet;<br>
-O feed me, Lord, that I may feed<br>
-thy hungering ones with manna sweet.
-<p></p>
-O strengthen me, that while I stand<br>
-firm on the rock, and strong in thee,<br>
-I may stretch out a loving hand<br>
-to wrestlers with the troubled sea.
-<p></p>
-O teach me, Lord, that I may teach<br>
-the precious things thou dost impart;<br>
-and wing my words, that they may reach<br>
-the hidden depths of many a heart.
-<p></p>
-O give thine own sweet rest to me,<br>
-that I may speak with soothing power<br>
-a word in season, as from thee,<br>
-to weary ones in needful hour.
-<p></p>
-O fill me with thy fullness, Lord,<br>
-until my very heart overflow<br>
-in kindling thought and glowing word,<br>
-thy love to tell, thy praise to show.
-<p></p>
-O use me, Lord, use even me,<br>
-just as thou wilt, and when, and where,<br>
-until thy blessèd face I see,<br>
-thy rest, thy joy, thy glory share.`],
-    "T2": [`How sweet and awful is the place<br>
-with Christ within the doors,<br>
-while everlasting love displays<br>
-the choicest of her stores.
-<p></p>
-While all our hearts and all our songs<br>
-join to admire the feast,<br>
-each of us cries, with thankful tongue,<br>
-“Lord, why was I a guest?
-<p></p>
-“Why was I made to hear Thy voice,<br>
-and enter while there's room,<br>
-when thousands make a wretched choice<br>
-and rather starve than come?”
-<p></p>
-’Twas the same love that spread the feast<br>
-that sweetly drew us in;<br>
-else we had still refused to taste,<br>
-and perished in our sin.
-<p></p>
-Pity the nations, O our God,<br>
-constrain the earth to come;<br>
-send Thy victorious Word abroad,<br>
-and bring the strangers home.
-<p></p>
-We long to see Thy churches full,<br>
-that all the human race<br>
-may, with one voice and heart and soul,<br>
-sing Thy redeeming grace.`],
-    "T3": [`There were ninety and nine that safely lay<br>
-in the shelter of the fold.<br>
-but one was out on the hills away,<br>
-far off from the gates of gold.<br>
-away on the mountains wild and bare.<br>
-away from the tender Shepherd's care.<br>
-away from the tender Shepherd's care.<p></p>
-"Lord, thou hast here thy ninety and nine;<br>
-are they not enough for thee?"<br>
-But the Shepherd made answer: "this of mine<br>
-has wandered away from me;<br>
-and although the road be rough and steep,<br>
-I go to the desert to find my sheep,<br>
-I go to the desert to find my sheep."<p></p>
-But none of the ransomed ever knew<br>
-how deep were the waters crossed;<br>
-nor how dark was the night the Lord passed through<br>
-ere he found his sheep that was lost.<br>
-out in the desert he heard its cry,<br>
-sick and helpless and ready to die;<br>
-sick and helpless and ready to die.<p></p>
-"Lord, whence are those blood drops all the way<br>
-that mark out the mountain's track?"<br>
-"they were shed for one who had gone astray<br>
-ere the Shepherd could bring him back."<br>
-"Lord, whence are thy hands so rent and torn?"<br>
-"They are pierced tonight by many a thorn;<br>
-they are pierced tonight by many a thorn."<p></p>
-And all through the mountains, thunder riven<br>
-and up from the rocky steep,<br>
-there arose a glad cry to the gate of heaven,<br>
-"Rejoice! I have found My sheep!"<br>
-and the angels echoed around the throne,<br>
-"Rejoice, for the Lord brings back his own!<br>
-rejoice, for the Lord brings back his own!"`],
-    "T4": ["There's a wideness in God's mercy<br>like the wideness of the sea;<br>there's a kindness in his justice,<br>which is more than liberty.<br>There is welcome for the sinner,<br>and more graces for the good;<br>there is mercy with the Savior; <br>there is healing in his blood.<br></p><p>There is no place where earth's sorrows<br>are more felt than in heaven;<br>there is no place where earth's failings<br>have such kind judgment given.<br>There is plentiful redemption<br>in the blood that has been shed;<br>there is joy for all the members<br>in the sorrows of the Head.<br></p><p>For the love of God is broader<br>than the measure of man's mind;<br>and the heart of the Eternal<br>is most wonderfully kind.<br>If our love were but more faithful,<br>we should take him at his word;<br>and our life would be thanksgiving<br>for the goodness of the Lord."],
-    "T5": ["Forth in thy Name, O Lord, I go,<br>my daily labor to pursue;<br>thee, only thee, resolved to know<br>in all I think or speak or do.<br></p><p>The task thy wisdom hath assigned,<br>O let me cheerfully fulfill;<br>in all my works thy presence find,<br>and prove thy good and perfect will.<br></p><p>Thee may I set at my right hand,<br>whose eyes mine inmost substance see,<br>and labor on at thy command,<br>and offer all my works to thee.<br></p><p>Give me to bear thy easy yoke,<br>and every moment watch and pray,<br>and still to things eternal look,<br>and hasten to thy glorious day.<br></p><p>For thee delightfully employ<br>whate'er thy bounteous grace hath giv'n;<br>and run my course with even joy,<br>and closely walk with thee to heav'n."],
-    "T6": ["O Jesus, I have promised <br>to serve thee to the end:<br>be thou ever near me, <br>my Master and my friend;<br>I shall not fear the battle<br>if thou art by my side,<br>nor wander from the pathway<br>if thou wilt be my guide.</p><p>O let me feel thee near me! <br>The world is ever near;<br>I see the sights that dazzle, <br>the tempting sounds I hear;<br>my foes are ever near me, <br>around me and within;<br>but Jesus, draw thou nearer, <br>and shield my soul from sin.</p><p>O let me hear thee speaking <br>in accents clear and still,<br>above the storms of passion, <br>the murmurs of self-will;<br>O speak to reassure me, <br>to hasten or control;<br>O speak, and make me listen, <br>thou guardian of my soul.</p><p>O let me see thy features,<br>the look that once could make<br>so many a true disciple<br>leave all things for thy sake:<br>the look that beamed on Peter<br>when he thy name denied;<br>the look that draws thy lovers<br>close to thy piercèd side.</p><p>O Jesus, thou hast promised <br>to all who follow thee,<br>that where thou art in glory <br>there shall thy servant be;<br>and, Jesus, I have promised <br>to serve thee to the end;<br>O give me grace to follow, <br>my Master and my friend.</p><p>O let me see thy footmarks, <br>and in them plant mine own;<br>My hope to follow duly <br>is in thy strength alone.<br>O guide me, call me, draw me, <br>uphold me to the end;<br>and then in heaven receive me, <br>my Savior and my Friend."],
-    "T7": [`Take my life, and let it be<br>
-            consecrated, Lord, to thee;<br>
-            take my moments and my days,<br>
-            let them flow in ceaseless praise.</p>
-        <p>Take my hands, and let them move<br>
-            at the impulse of thy love;<br>
-            take my feet, and let them be<br>
-            swift and beautiful for thee.</p>
-        <p>Take my voice, and let me sing<br>
-            always, only, for my King;<br>
-            take my lips, and let them be<br>
-            filled with messages from thee.</p>
-        <p>Take my silver and my gold,<br>
-            not a mite would I withhold;<br>
-            take my intellect, and use<br>
-            every power as thou shalt choose.</p>
-        <p>Take my will and make it thine;<br>
-            it shall be no longer mine.<br>
-            take my heart, it is thine own;<br>
-            it shall be thy royal throne.</p>
-        <p>Take my love; my Lord, I pour<br>
-            at thy feet its treasure store;<br>
-            take my self, and I will be<br>
-            ever, only, all for thee.`],
-    "T8": [`Blessèd are the sons of God,<br>
-            They are bought with Christ’s own blood;<br>
-            They are ransomed from the grave,<br>
-            Life eternal they shall have:<br>
-            With them numbered may we be<br>
-            Here and in eternity!</p>
-        <p>They are justified by grace,<br>
-            They enjoy the Savior’s peace;<br>
-            All their sins are washed away,<br>
-            They shall stand in God’s great Day;<br>
-            With them numbered may we be<br>
-            Here and in eternity!</p>
-        <p>They are lights upon the earth,<br>
-            Children of a heav'nly birth;<br>
-            One with God, with Jesus one;<br>
-            Glory is in them begun:<br>
-            With them numbered may we be<br>
-            Here and in eternity!`],
-    "T9": [`A charge to keep I have,<br>
-            A God to glorify,<br>
-            A never-dying soul to save,<br>
-            And fit it for the sky;</p>
-        <p>From youth to hoary age,<br>
-            My calling to fulfil;<br>
-            O may it all my pow'rs engage<br>
-            To do my Master's will.</p>
-        <p>Arm me with jealous care,<br>
-            As in Thy sight to live;<br>
-            And oh, Thy servant, Lord, prepare<br>
-            A strict account to give.</p>
-        <p>Help me to watch and pray,<br>
-            And on Thyself rely;<br>
-            And let me ne'er thy trust betray,<br>
-            But press to realms on high.`],
-    "T10": [`Forward through the ages, in unbroken line,<br>
-            move the faithful spirits, at the call divine;<br>
-            gifts in different measure, hearts of one accord,<br>
-            manifold the service, one the sure reward.</p>
-        <p>Forward through the ages, in unbroken line<br>
-            move the faithful spirits at the call divine.</p>
-        <p>Wider grows the kingdom, reign of love and light;<br>
-            for it we must labor, till our faith is sight.<br>
-            prophets have proclaimed it, martyrs testified.<br>
-            poets sung its glory, heroes for it died.</p>
-        <p>Forward through the ages, in unbroken line<br>
-            move the faithful spirits at the call divine.</p>
-        <p>Not alone we conquer, not alone we fall;<br>
-            in each loss or triumph lose or triumph all.<br>
-            bound by God's far purpose in one living whole,<br>
-            move we on together to the shining goal.</p>
-        <p>Forward through the ages, in unbroken line<br>
-            move the faithful spirits at the call divine.</p>`],
-    "T11": [`With broken heart and contrite sigh,<br>
-            a trembling sinner, Lord, I cry;<br>
-            thy pard'ning grace is rich and free:<br>
-            O God, be merciful to me.</p>
-        <p>I smite upon my troubled breast,<br>
-            with deep and conscious guilt oppressed,<br>
-            Christ and his cross my only plea:<br>
-            O God, be merciful to me.</p>
-        <p>Far off I stand with tearful eyes,<br>
-            nor dare uplift them to the skies;<br>
-            but thou dost all my anguish see:<br>
-            O God, be merciful to me.</p>
-        <p>Nor alms, nor deeds that I have done,<br>
-            can for a single sin atone;<br>
-            to Calvary alone I flee:<br>
-            O God, be merciful to me.</p>
-        <p>And when, redeemed from sin and hell,<br>
-            with all the ransomed throng I dwell,<br>
-            my raptured song shall ever be,<br>
-            God has been merciful to me.`],
-    "T12": [`Through the love of God, our Savior, <br>
-            all will be well;<br>
-            free and changeless is his favor, <br>
-            all will be well;<br>
-            precious is the blood that healed us, <br>
-            perfect is the grace that sealed us,<br>
-            strong the hand stretched out to shield us, <br>
-            all will be well.</p>
-        <p>Though we pass through tribulation, <br>
-            all will be well;<br>
-            ours is such a full salvation, <br>
-            all will be well.<br>
-            happy when in God confiding, <br>
-            fruitful if in Christ abiding,<br>
-            holy through the Spirit's guiding, <br>
-            all will be well.</p>
-        <p>We expect a bright tomorrow; <br>
-            all will be well;<br>
-            faith can sing through days of sorrow, <br>
-            all will be well;<br>
-            on our Father's love relying, <br>
-            Jesus every need supplying<br>
-            in our living, in our dying, <br>
-            all will be well.`],
-    "T13": [`Lord of Glory, who hast bought us<br>
-with Thy lifeblood as the price,<br>
-Never grudging for the lost ones<br>
-that tremendous sacrifice;<br>
-And with that hast freely given<br>
-blessings countless as the sand,<br>
-To the unthankful and the evil<br>
-with Thine own unsparing hand.</p>
-        <p>Grant us hearts, dear Lord, to yield Thee<br>
-gladly, freely, of Thine own.<br>
-With the sunshine of Thy goodness<br>
-melt our thankless hearts of stone.<br>
-Till our cold and selfish natures,<br>
-warmed by Thee, at length believe<br>
-That more happy and more blessed <br>
-’tis to give than to receive.</p>
-        <p>Wondrous honor hast Thou given<br>
-to our humblest charity.<br>
-In Thine own mysterious sentence,<br>
-"Ye have done it unto Me."<br>
-Can it be, O gracious Master,<br>
-Thou dost deign for alms to sue,<br>
-Saying by Thy poor and needy,<br>
-"Give as I have given you?"</p>
-        <p>Yes: the sorrow and the suffering,<br>
-which on every hand we see,<br>
-Channels are for tithes and offerings<br>
-due by solemn right to Thee;<br>
-Right of which we may not rob Thee,<br>
-debt we may not choose but pay,<br>
-Lest that face of love and pity<br>
-turn from us another day.</p>
-        <p>Lord of Glory, who hast bought us<br>
-with Thy lifeblood as the price,<br>
-Never grudging for the lost ones<br>
-that tremendous sacrifice;<br>
-Give us faith, to trust Thee boldly;<br>
-hope, to stay our souls on Thee;<br>
-But O, best of all Thy graces,<br>
-give us Thine own charity.`],
-    "T14": [`Come down, O love divine,<br>
-seek thou this soul of mine,<br>
-and visit it with thine own ardor glowing;<br>
-O Comforter, draw near,<br>
-within my heart appear,<br>
-and kindle it, thy holy flame bestowing.</p>
-        <p>O let it freely burn,<br>
-till earthly passions turn<br>
-to dust and ashes in its heat consuming;<br>
-and let thy glorious light<br>
-shine ever on my sight,<br>
-and clothe me round, the while my path illuming.</p>
-        <p>Let holy charity<br>
-mine outward vesture be,<br>
-and lowliness become mine inner clothing;<br>
-true lowliness of heart,<br>
-which takes the humbler part,<br>
-and o'er its own shortcomings weeps with loathing.</p>
-        <p>And so the yearning strong,<br>
-with which the soul will long,<br>
-shall far outpass the power of human telling;<br>
-for none can guess its grace,<br>
-till Love create a place<br>
-wherein the Holy Spirit makes a dwelling.`],
-    "T15": [`O God of Jacob, by whose hand<br>
-Thy people still are fed;<br>
-Who, through this weary pilgrimage,<br>
-Hast all our fathers led!</p>
-        </p> To Thee our humble vows we raise,<br>
-To Thee address our prayer;<br>
-And in Thy kind and faithful breast<br>
-Deposit all our care.</p>
-        <p>Through each perplexing path of life<br>
-Our wandering footsteps guide;<br>
-Give us each day our daily bread,<br>
-And raiment fit provide.</p>
-        <p>O spread Thy cov'ring wings around,<br>
-Till all our wand'rings cease,<br>
-And at our Father's loved abode<br>
-Our souls arrive in peace!`],
-    "T16": [`Through all the changing scenes of life,<br>
-in trouble and in joy,<br>
-the praises of my God shall still<br>
-my heart and tongue employ.</p>
-        <p>O magnify the Lord with me,<br>
-with me exalt his Name;<br>
-when in distress to him I called,<br>
-he to my rescue came.</p>
-        <p>The hosts of God encamp around<br>
-the dwellings of the just;<br>
-deliverance he affords to all<br>
-who on his succor trust.</p>
-        <p>O make but trial of his love;<br>
-experience will decide<br>
-how blest are they, and only they<br>
-who in his truth confide.</p>
-        <p>Fear him, ye saints, and you will then<br>
-have nothing else to fear;<br>
-make you his service your delight;<br>
-your wants shall be his care.</p>
-        <p>For God preserves the souls of those<br>
-who on his truth depend;<br>
-to them and their posterity<br>
-his blessing shall descend.`],
-    "T17": [`Blest are the pure in heart,<br>
-for they shall see our God;<br>
-the secret of the Lord is theirs,<br>
-their soul is Christ's abode.</p>
-        <p>The Lord, who left the heavens<br>
-our life and peace to bring,<br>
-to dwell in lowliness with men,<br>
-their Pattern and their King;</p>
-        <p>still to the lowly soul<br>
-he doth himself impart<br>
-and for his dwelling and his throne<br>
-chooseth the pure in heart.</p>
-        <p>Lord, we thy presence seek;<br>
-may ours this blessing be;<br>
-give us a pure and lowly heart,<br>
-a temple meet for thee.`],
-    "T18": [`Where cross the crowded ways of life,<br>
-Where sound the cries of race and clan,<br>
-Above the noise of selfish strife,<br>
-We hear Thy voice, O Son of man.</p>
-        <p>In haunts of wretchedness and need,<br>
-On shadowed thresholds dark with fears,<br>
-From paths where hide the lures of greed,<br>
-We catch the vision of Thy tears.</p>
-        <p>From tender childhood's helplessness,<br>
-From woman's grief, man's burdened toil,<br>
-From famished souls, from sorrow's stress,<br>
-Thy heart hath never known recoil.</p>
-        <p>The cup of water given for Thee<br>
-Still holds the freshness of Thy grace;<br>
-Yet long these multitudes to see<br>
-The sweet compassion of Thy face.</p>
-        <p>O Master, from the mountainside,<br>
-Make haste to heal these hearts of pain;<br>
-Among these restless throngs abide,<br>
-O tread the city's streets again;</p>
-        <p>Till sons of men shall learn Thy love,<br>
-And follow where Thy feet have trod;<br>
-Till glorious from Thy heaven above,<br>
-Shall come the City of our God.`],
-    "T19": [`Breathe on me, Breath of God,<br>
-fill me with life anew,<br>
-that I may love what thou dost love,<br>
-and do what thou wouldst do.</p>
-        <p>Breathe on me, Breath of God,<br>
-until my heart is pure,<br>
-until my will is one with thine,<br>
-to do and to endure.</p>
-        <p>Breathe on me, Breath of God,<br>
-till I am wholly thine,<br>
-until this earthly part of me<br>
-glows with thy fire divine.</p>
-        <p>Breathe on me, Breath of God,<br>
-so shall I never die;<br>
-but live with thee the perfect life<br>
-of thine eternity.`],
-    "T20": [`All people that on earth do dwell,<br>
-sing to the Lord with cheerful voice:<br>
-him serve with mirth, his praise forth tell,<br>
-come ye before him and rejoice.</p>
-        <p>The Lord, ye know,  is God indeed;<br>
-without our aid he did us make:<br>
-we are his folk, he doth us feed,<br>
-and for his sheep he doth us take.</p>
-        <p>O enter then his gates with praise,<br>
-approach with joy his courts unto;<br>
-praise, laud, and bless his Name always,<br>
-for it is seemly so to do.</p>
-        <p>For why? the Lord our God is good,<br>
-his mercy is for ever sure;<br>
-his truth at all times firmly stood,<br>
-and shall from age to age endure.</p>
-        <p>To Father, Son, and Holy Ghost,<br>
-the God whom heaven and earth adore,<br>
-from men and from the angel host<br>
-be praise and glory evermore.`],
-    "T21": [`Soldiers of Christ, arise,<br>
-and put your armor on,<br>
-strong in the strength which God supplies<br>
-through his eternal Son;</p>
-        <p>Strong in the Lord of hosts,<br>
-and in his mighty power:<br>
-who in the strength of Jesus trusts <br>
-is more than conqueror.</p>
-        <p>Stand then in his great might,<br>
-with all his strength endured,<br>
-and take, to arm you for the fight,<br>
-the panoply of God.</p>
-        <p>From strength to strength go on,<br>
-wrestle and fight and pray:<br>
-tread all the powers of darkness down,<br>
-and win the well-fought day.</p>
-        <p>That, having all things done,<br>
-and all your conflicts past,<br>
-ye may obtain, through Christ alone,<br>
-a crown of joy at last.</p>
-        <p>Jesus, eternal Son,<br>
-we praise thee and adore,<br>
-who art with God the Father one,<br>
-and Spirit evermore.`],
-    "T22": [`Lord, with glowing heart I'd praise thee,<br>
-for the bliss thy love bestows,<br>
-for the pardoning grace that saves me,<br>
-and the peace that from it flows:<br>
-help, O God, my weak endeavor;<br>
-this dull soul to rapture raise:<br>
-thou must light the flame, or never<br>
-can my love be warmed to praise.</p>
-        <p>Praise, my soul, the God that sought thee,<br>
-wretched wanderer, far astray;<br>
-found thee lost, and kindly brought thee<br>
-from the paths of death away;<br>
-praise, with love's devoutest feeling,<br>
-him who saw thy guilt-born fear,<br>
-and, since words can never measure,<br>
-let my life show forth thy praise.</p>
-        <p>Lord, this bosom's ardent feeling<br>
-vainly would my lips express.<br>
-Llw before thy footstool kneeling,<br>
-deign thy suppliant's prayer to bless:<br>
-let thy grace, my soul's chief treasure,<br>
-love's pure flame within me raise;<br>
-and, since words can never measure,<br>
-let my life show forth thy praise.`],
-    "T23": [`Blessed city, heavenly Salem,<br>
-vision dear of peace and love,<br>
-who of living stones art builded<br>
-in the height of heaven above,<br>
-and, with angel hosts encircled,<br>
-as a bride dost earthward move;</p>
-        <p>from celestial realms descending,<br>
-bridal glory round thee shed,<br>
-meet for him whose love espoused thee,<br>
-to thy Lord shalt thou be led;<br>
-all thy streets and all thy bulwarks<br>
-of pure gold are fashioned.</p>
-        <p>Bright thy gates of pearl are shining;<br>
-they are open evermore;<br>
-and by virtue of his merits<br>
-thither faithful souls do soar,<br>
-who for Christ's dear Name in this world<br>
-pain and tribulation bore.</p>
-        <p>Many a blow and biting sculpture<br>
-polished well those stones elect,<br>
-in their places now compacted<br>
-by the heavenly Architect,<br>
-who therewith hath willed for ever<br>
-that his palace should be decked.</p>
-        <p>Laud and honor to the Father,<br>
-laud and honor to the Son,<br>
-laud and honor to the Spirit,<br>
-ever Three, and ever One,<br>
-consubstantial, coeternal,<br>
-while unending ages run.`],
-    "T24": [`Rock of ages, cleft for me,<br>
-Let me hide myself in Thee;<br>
-Let the water and the blood<br>
-From Thy side, a healing flood,<br>
-Be of sin the double cure,<br>
-Save from wrath, and make me pure.</p>
-        <p>Should my tears for ever flow,<br>
-Should my zeal no languor know,<br>
-All for sin could not atone,<br>
-Thou must save, and Thou alone;<br>
-In my hand no price I bring,<br>
-Simply to Thy cross I cling.</p>
-        <p>While I draw this fleeting breath,<br>
-When mine eyelids close in death,<br>
-When I rise to worlds unknown,<br>
-And behold thee on thy throne,<br>
-Rock of ages, cleft for me,<br>
-Let me hide myself in Thee.`],
-
-    "SNBA": [`"Thy kingdom come!" on bended knee<br>
-the passing ages pray;<br>
-and faithful souls have yearned to see<br>
-on earth that kingdom's day.</p>
-        <p>But the slow watches of the night<br>
-not less to God belong;<br>
-and for the everlasting right<br>
-the silent stars are strong.</p>
-        <p>And lo, already on the hills<br>
-the flags of dawn appear;<br>
-gird up your loins, ye prophet souls,<br>
-proclaim the day is near:</p>
-        <p>The day to whose clear shining light<br>
-all wrong shall stand revealed,<br>
-when justice shall be throned in might,<br>
-and every heart be healed;</p>
-        <p>When knowledge, hand in hand with peace,<br>
-shall walk the earth abroad;<br>
-the day of perfect righteousness,<br>
-the promised day of God.`]
+  "Trinity": [
+"Holy, holy, holy! Lord God Almighty! <br>Early in the morning our song shall rise to thee: <br>Holy, holy, holy! Merciful and mighty,<br> God in three Persons, blessèd Trinity. <p></p>Holy, holy, holy! All the saints adore thee,<br> Casting down their golden crowns around the glassy sea; <br>Cherubim and seraphim falling down before thee, <br>Which wert, and art, and evermore shalt be. <p></p>Holy, holy, holy! Though the darkness hide thee, <br>Though the eye of sinful man thy glory may not see, <br>Only thou art holy; there is none beside thee,<br>Perfect in pow’r, in love, and purity. <p></p>Holy, holy, holy! Lord God Almighty! <br>All thy works shall praise thy Name, in earth, and sky, and sea; <br>Holy, holy, holy! Merciful and mighty, <br>God in three Persons, blessèd Trinity.",
+"Holy Father, great Creator, <br>Source of mercy, love, and peace,<br> Look upon the Mediator, <br>Clothe us with his righteousness; <br>Heav’nly Father, heav’nly Father,<br> Through the Saviour hear and bless. <p></p>Holy Jesus, Lord of glory,<br> Whom angelic hosts proclaim, <br>While we hear thy wondrous story,<br> Meet and worship in thy Name,<br> Dear Redeemer, dear Redeemer, <br>In our hearts thy peace proclaim. <p></p>Holy Spirit, Sanctifier,<br> Come with unction from above, <br>Raise our hearts to raptures higher,<br> Fill them with the Saviour’s love! <br>Source of comfort, Source of comfort,<br> Cheer us with the Saviour’s love. <p></p>God the Lord, through every nation <br>Let thy wondrous mercies shine!<br>In the song of thy salvation<br> Ev’ry tongue and race combine! <br>Great Jehovah, great Jehovah, <br>Form our hearts and make them thine."
+  ],
+  "T1": [
+"Lord, speak to me that I may speak<br>in living echoes of thy tone;<br>as thou has sought, so let me seek<br>thine erring children lost and lone.<p></p>O lead me, Lord, that I may lead<br>the wandering and the wavering feet;<br>O feed me, Lord, that I may feed<br>thy hungering ones with manna sweet.<p></p>O strengthen me, that while I stand<br>firm on the rock, and strong in thee,<br>I may stretch out a loving hand<br>to wrestlers with the troubled sea.<p></p>O teach me, Lord, that I may teach<br>the precious things thou dost impart;<br>and wing my words, that they may reach<br>the hidden depths of many a heart.<p></p>O give thine own sweet rest to me,<br>that I may speak with soothing power<br>a word in season, as from thee,<br>to weary ones in needful hour.<p></p>O fill me with thy fullness, Lord,<br>until my very heart overflow<br>in kindling thought and glowing word,<br>thy love to tell, thy praise to show.<p></p>O use me, Lord, use even me,<br>just as thou wilt, and when, and where,<br>until thy blessèd face I see,<br>thy rest, thy joy, thy glory share."
+  ],
+  "T2": [
+"How sweet and awful is the place<br>with Christ within the doors,<br>while everlasting love displays<br>the choicest of her stores.<p></p>While all our hearts and all our songs<br>join to admire the feast,<br>each of us cries, with thankful tongue,<br>“Lord, why was I a guest?<p></p>“Why was I made to hear Thy voice,<br>and enter while there's room,<br>when thousands make a wretched choice<br>and rather starve than come?”<p></p>’Twas the same love that spread the feast<br>that sweetly drew us in;<br>else we had still refused to taste,<br>and perished in our sin.<p></p>Pity the nations, O our God,<br>constrain the earth to come;<br>send Thy victorious Word abroad,<br>and bring the strangers home.<p></p>We long to see Thy churches full,<br>that all the human race<br>may, with one voice and heart and soul,<br>sing Thy redeeming grace."
+  ],
+  "T3": [
+"There were ninety and nine that safely lay<br>in the shelter of the fold.<br>but one was out on the hills away,<br>far off from the gates of gold.<br>away on the mountains wild and bare.<br>away from the tender Shepherd's care.<br>away from the tender Shepherd's care.<p></p>\"Lord, thou hast here thy ninety and nine;<br>are they not enough for thee?\"<br>But the Shepherd made answer: \"this of mine<br>has wandered away from me;<br>and although the road be rough and steep,<br>I go to the desert to find my sheep,<br>I go to the desert to find my sheep.\"<p></p>But none of the ransomed ever knew<br>how deep were the waters crossed;<br>nor how dark was the night the Lord passed through<br>ere he found his sheep that was lost.<br>out in the desert he heard its cry,<br>sick and helpless and ready to die;<br>sick and helpless and ready to die.<p></p>\"Lord, whence are those blood drops all the way<br>that mark out the mountain's track?\"<br>\"they were shed for one who had gone astray<br>ere the Shepherd could bring him back.\"<br>\"Lord, whence are thy hands so rent and torn?\"<br>\"They are pierced tonight by many a thorn;<br>they are pierced tonight by many a thorn.\"<p></p>And all through the mountains, thunder riven<br>and up from the rocky steep,<br>there arose a glad cry to the gate of heaven,<br>\"Rejoice! I have found My sheep!\"<br>and the angels echoed around the throne,<br>\"Rejoice, for the Lord brings back his own!<br>rejoice, for the Lord brings back his own!\""
+  ],
+  "T4": [
+"There's a wideness in God's mercy<br>like the wideness of the sea;<br>there's a kindness in his justice,<br>which is more than liberty.<br>There is welcome for the sinner,<br>and more graces for the good;<br>there is mercy with the Savior; <br>there is healing in his blood.<br></p><p>There is no place where earth's sorrows<br>are more felt than in heaven;<br>there is no place where earth's failings<br>have such kind judgment given.<br>There is plentiful redemption<br>in the blood that has been shed;<br>there is joy for all the members<br>in the sorrows of the Head.<br></p><p>For the love of God is broader<br>than the measure of man's mind;<br>and the heart of the Eternal<br>is most wonderfully kind.<br>If our love were but more faithful,<br>we should take him at his word;<br>and our life would be thanksgiving<br>for the goodness of the Lord."
+  ],
+  "T5": [
+"Forth in thy Name, O Lord, I go,<br>my daily labor to pursue;<br>thee, only thee, resolved to know<br>in all I think or speak or do.<br></p><p>The task thy wisdom hath assigned,<br>O let me cheerfully fulfill;<br>in all my works thy presence find,<br>and prove thy good and perfect will.<br></p><p>Thee may I set at my right hand,<br>whose eyes mine inmost substance see,<br>and labor on at thy command,<br>and offer all my works to thee.<br></p><p>Give me to bear thy easy yoke,<br>and every moment watch and pray,<br>and still to things eternal look,<br>and hasten to thy glorious day.<br></p><p>For thee delightfully employ<br>whate'er thy bounteous grace hath giv'n;<br>and run my course with even joy,<br>and closely walk with thee to heav'n."
+  ],
+  "T6": [
+"O Jesus, I have promised <br>to serve thee to the end:<br>be thou ever near me, <br>my Master and my friend;<br>I shall not fear the battle<br>if thou art by my side,<br>nor wander from the pathway<br>if thou wilt be my guide.</p><p>O let me feel thee near me! <br>The world is ever near;<br>I see the sights that dazzle, <br>the tempting sounds I hear;<br>my foes are ever near me, <br>around me and within;<br>but Jesus, draw thou nearer, <br>and shield my soul from sin.</p><p>O let me hear thee speaking <br>in accents clear and still,<br>above the storms of passion, <br>the murmurs of self-will;<br>O speak to reassure me, <br>to hasten or control;<br>O speak, and make me listen, <br>thou guardian of my soul.</p><p>O let me see thy features,<br>the look that once could make<br>so many a true disciple<br>leave all things for thy sake:<br>the look that beamed on Peter<br>when he thy name denied;<br>the look that draws thy lovers<br>close to thy piercèd side.</p><p>O Jesus, thou hast promised <br>to all who follow thee,<br>that where thou art in glory <br>there shall thy servant be;<br>and, Jesus, I have promised <br>to serve thee to the end;<br>O give me grace to follow, <br>my Master and my friend.</p><p>O let me see thy footmarks, <br>and in them plant mine own;<br>My hope to follow duly <br>is in thy strength alone.<br>O guide me, call me, draw me, <br>uphold me to the end;<br>and then in heaven receive me, <br>my Savior and my Friend."
+  ],
+  "T7": [
+"Take my life, and let it be<br>consecrated, Lord, to thee;<br>take my moments and my days,<br>let them flow in ceaseless praise.</p><p>Take my hands, and let them move<br>at the impulse of thy love;<br>take my feet, and let them be<br>swift and beautiful for thee.</p><p>Take my voice, and let me sing<br>always, only, for my King;<br>take my lips, and let them be<br>filled with messages from thee.</p><p>Take my silver and my gold,<br>not a mite would I withhold;<br>take my intellect, and use<br>every power as thou shalt choose.</p><p>Take my will and make it thine;<br>it shall be no longer mine.<br>take my heart, it is thine own;<br>it shall be thy royal throne.</p><p>Take my love; my Lord, I pour<br>at thy feet its treasure store;<br>take my self, and I will be<br>ever, only, all for thee."
+  ],
+  "T8": [
+"Blessèd are the sons of God,<br>They are bought with Christ’s own blood;<br>They are ransomed from the grave,<br>Life eternal they shall have:<br>With them numbered may we be<br>Here and in eternity!</p><p>They are justified by grace,<br>They enjoy the Savior’s peace;<br>All their sins are washed away,<br>They shall stand in God’s great Day;<br>With them numbered may we be<br>Here and in eternity!</p><p>They are lights upon the earth,<br>Children of a heav'nly birth;<br>One with God, with Jesus one;<br>Glory is in them begun:<br>With them numbered may we be<br>Here and in eternity!"
+  ],
+  "T9": [
+"A charge to keep I have,<br>A God to glorify,<br>A never-dying soul to save,<br>And fit it for the sky;</p><p>From youth to hoary age,<br>My calling to fulfil;<br>O may it all my pow'rs engage<br>To do my Master's will.</p><p>Arm me with jealous care,<br>As in Thy sight to live;<br>And oh, Thy servant, Lord, prepare<br>A strict account to give.</p><p>Help me to watch and pray,<br>And on Thyself rely;<br>And let me ne'er thy trust betray,<br>But press to realms on high."
+  ],
+  "T10": [
+"Forward through the ages, in unbroken line,<br>move the faithful spirits, at the call divine;<br>gifts in different measure, hearts of one accord,<br>manifold the service, one the sure reward.</p><p>Forward through the ages, in unbroken line<br>move the faithful spirits at the call divine.</p><p>Wider grows the kingdom, reign of love and light;<br>for it we must labor, till our faith is sight.<br>prophets have proclaimed it, martyrs testified.<br>poets sung its glory, heroes for it died.</p><p>Forward through the ages, in unbroken line<br>move the faithful spirits at the call divine.</p><p>Not alone we conquer, not alone we fall;<br>in each loss or triumph lose or triumph all.<br>bound by God's far purpose in one living whole,<br>move we on together to the shining goal.</p><p>Forward through the ages, in unbroken line<br>move the faithful spirits at the call divine.</p>"
+  ],
+  "T11": [
+"With broken heart and contrite sigh,<br>a trembling sinner, Lord, I cry;<br>thy pard'ning grace is rich and free:<br>O God, be merciful to me.</p><p>I smite upon my troubled breast,<br>with deep and conscious guilt oppressed,<br>Christ and his cross my only plea:<br>O God, be merciful to me.</p><p>Far off I stand with tearful eyes,<br>nor dare uplift them to the skies;<br>but thou dost all my anguish see:<br>O God, be merciful to me.</p><p>Nor alms, nor deeds that I have done,<br>can for a single sin atone;<br>to Calvary alone I flee:<br>O God, be merciful to me.</p><p>And when, redeemed from sin and hell,<br>with all the ransomed throng I dwell,<br>my raptured song shall ever be,<br>God has been merciful to me."
+  ],
+  "T12": [
+"Through the love of God, our Savior, <br>all will be well;<br>free and changeless is his favor, <br>all will be well;<br>precious is the blood that healed us, <br>perfect is the grace that sealed us,<br>strong the hand stretched out to shield us, <br>all will be well.</p><p>Though we pass through tribulation, <br>all will be well;<br>ours is such a full salvation, <br>all will be well.<br>happy when in God confiding, <br>fruitful if in Christ abiding,<br>holy through the Spirit's guiding, <br>all will be well.</p><p>We expect a bright tomorrow; <br>all will be well;<br>faith can sing through days of sorrow, <br>all will be well;<br>on our Father's love relying, <br>Jesus every need supplying<br>in our living, in our dying, <br>all will be well."
+  ],
+  "T13": [
+"Lord of Glory, who hast bought us<br>with Thy lifeblood as the price,<br>Never grudging for the lost ones<br>that tremendous sacrifice;<br>And with that hast freely given<br>blessings countless as the sand,<br>To the unthankful and the evil<br>with Thine own unsparing hand.</p><p>Grant us hearts, dear Lord, to yield Thee<br>gladly, freely, of Thine own.<br>With the sunshine of Thy goodness<br>melt our thankless hearts of stone.<br>Till our cold and selfish natures,<br>warmed by Thee, at length believe<br>That more happy and more blessed <br>’tis to give than to receive.</p><p>Wondrous honor hast Thou given<br>to our humblest charity.<br>In Thine own mysterious sentence,<br>\"Ye have done it unto Me.\"<br>Can it be, O gracious Master,<br>Thou dost deign for alms to sue,<br>Saying by Thy poor and needy,<br>\"Give as I have given you?\"</p><p>Yes: the sorrow and the suffering,<br>which on every hand we see,<br>Channels are for tithes and offerings<br>due by solemn right to Thee;<br>Right of which we may not rob Thee,<br>debt we may not choose but pay,<br>Lest that face of love and pity<br>turn from us another day.</p><p>Lord of Glory, who hast bought us<br>with Thy lifeblood as the price,<br>Never grudging for the lost ones<br>that tremendous sacrifice;<br>Give us faith, to trust Thee boldly;<br>hope, to stay our souls on Thee;<br>But O, best of all Thy graces,<br>give us Thine own charity."
+  ],
+  "T14": [
+"Come down, O love divine,<br>seek thou this soul of mine,<br>and visit it with thine own ardor glowing;<br>O Comforter, draw near,<br>within my heart appear,<br>and kindle it, thy holy flame bestowing.</p><p>O let it freely burn,<br>till earthly passions turn<br>to dust and ashes in its heat consuming;<br>and let thy glorious light<br>shine ever on my sight,<br>and clothe me round, the while my path illuming.</p><p>Let holy charity<br>mine outward vesture be,<br>and lowliness become mine inner clothing;<br>true lowliness of heart,<br>which takes the humbler part,<br>and o'er its own shortcomings weeps with loathing.</p><p>And so the yearning strong,<br>with which the soul will long,<br>shall far outpass the power of human telling;<br>for none can guess its grace,<br>till Love create a place<br>wherein the Holy Spirit makes a dwelling."
+  ],
+  "T15": [
+"O God of Jacob, by whose hand<br>Thy people still are fed;<br>Who, through this weary pilgrimage,<br>Hast all our fathers led!</p></p> To Thee our humble vows we raise,<br>To Thee address our prayer;<br>And in Thy kind and faithful breast<br>Deposit all our care.</p><p>Through each perplexing path of life<br>Our wandering footsteps guide;<br>Give us each day our daily bread,<br>And raiment fit provide.</p><p>O spread Thy cov'ring wings around,<br>Till all our wand'rings cease,<br>And at our Father's loved abode<br>Our souls arrive in peace!"
+  ],
+  "T16": [
+"Through all the changing scenes of life,<br>in trouble and in joy,<br>the praises of my God shall still<br>my heart and tongue employ.</p><p>O magnify the Lord with me,<br>with me exalt his Name;<br>when in distress to him I called,<br>he to my rescue came.</p><p>The hosts of God encamp around<br>the dwellings of the just;<br>deliverance he affords to all<br>who on his succor trust.</p><p>O make but trial of his love;<br>experience will decide<br>how blest are they, and only they<br>who in his truth confide.</p><p>Fear him, ye saints, and you will then<br>have nothing else to fear;<br>make you his service your delight;<br>your wants shall be his care.</p><p>For God preserves the souls of those<br>who on his truth depend;<br>to them and their posterity<br>his blessing shall descend."
+  ],
+  "T17": [
+"Blest are the pure in heart,<br>for they shall see our God;<br>the secret of the Lord is theirs,<br>their soul is Christ's abode.</p><p>The Lord, who left the heavens<br>our life and peace to bring,<br>to dwell in lowliness with men,<br>their Pattern and their King;</p><p>still to the lowly soul<br>he doth himself impart<br>and for his dwelling and his throne<br>chooseth the pure in heart.</p><p>Lord, we thy presence seek;<br>may ours this blessing be;<br>give us a pure and lowly heart,<br>a temple meet for thee."
+  ],
+  "T18": [
+"Where cross the crowded ways of life,<br>Where sound the cries of race and clan,<br>Above the noise of selfish strife,<br>We hear Thy voice, O Son of man.</p><p>In haunts of wretchedness and need,<br>On shadowed thresholds dark with fears,<br>From paths where hide the lures of greed,<br>We catch the vision of Thy tears.</p><p>From tender childhood's helplessness,<br>From woman's grief, man's burdened toil,<br>From famished souls, from sorrow's stress,<br>Thy heart hath never known recoil.</p><p>The cup of water given for Thee<br>Still holds the freshness of Thy grace;<br>Yet long these multitudes to see<br>The sweet compassion of Thy face.</p><p>O Master, from the mountainside,<br>Make haste to heal these hearts of pain;<br>Among these restless throngs abide,<br>O tread the city's streets again;</p><p>Till sons of men shall learn Thy love,<br>And follow where Thy feet have trod;<br>Till glorious from Thy heaven above,<br>Shall come the City of our God."
+  ],
+  "T19": [
+"Breathe on me, Breath of God,<br>fill me with life anew,<br>that I may love what thou dost love,<br>and do what thou wouldst do.</p><p>Breathe on me, Breath of God,<br>until my heart is pure,<br>until my will is one with thine,<br>to do and to endure.</p><p>Breathe on me, Breath of God,<br>till I am wholly thine,<br>until this earthly part of me<br>glows with thy fire divine.</p><p>Breathe on me, Breath of God,<br>so shall I never die;<br>but live with thee the perfect life<br>of thine eternity."
+  ],
+  "T20": [
+"All people that on earth do dwell,<br>sing to the Lord with cheerful voice:<br>him serve with mirth, his praise forth tell,<br>come ye before him and rejoice.</p><p>The Lord, ye know,  is God indeed;<br>without our aid he did us make:<br>we are his folk, he doth us feed,<br>and for his sheep he doth us take.</p><p>O enter then his gates with praise,<br>approach with joy his courts unto;<br>praise, laud, and bless his Name always,<br>for it is seemly so to do.</p><p>For why? the Lord our God is good,<br>his mercy is for ever sure;<br>his truth at all times firmly stood,<br>and shall from age to age endure.</p><p>To Father, Son, and Holy Ghost,<br>the God whom heaven and earth adore,<br>from men and from the angel host<br>be praise and glory evermore."
+  ],
+  "T21": [
+"Soldiers of Christ, arise,<br>and put your armor on,<br>strong in the strength which God supplies<br>through his eternal Son;</p><p>Strong in the Lord of hosts,<br>and in his mighty power:<br>who in the strength of Jesus trusts <br>is more than conqueror.</p><p>Stand then in his great might,<br>with all his strength endured,<br>and take, to arm you for the fight,<br>the panoply of God.</p><p>From strength to strength go on,<br>wrestle and fight and pray:<br>tread all the powers of darkness down,<br>and win the well-fought day.</p><p>That, having all things done,<br>and all your conflicts past,<br>ye may obtain, through Christ alone,<br>a crown of joy at last.</p><p>Jesus, eternal Son,<br>we praise thee and adore,<br>who art with God the Father one,<br>and Spirit evermore."
+  ],
+  "T22": [
+"Lord, with glowing heart I'd praise thee,<br>for the bliss thy love bestows,<br>for the pardoning grace that saves me,<br>and the peace that from it flows:<br>help, O God, my weak endeavor;<br>this dull soul to rapture raise:<br>thou must light the flame, or never<br>can my love be warmed to praise.</p><p>Praise, my soul, the God that sought thee,<br>wretched wanderer, far astray;<br>found thee lost, and kindly brought thee<br>from the paths of death away;<br>praise, with love's devoutest feeling,<br>him who saw thy guilt-born fear,<br>and, since words can never measure,<br>let my life show forth thy praise.</p><p>Lord, this bosom's ardent feeling<br>vainly would my lips express.<br>Llw before thy footstool kneeling,<br>deign thy suppliant's prayer to bless:<br>let thy grace, my soul's chief treasure,<br>love's pure flame within me raise;<br>and, since words can never measure,<br>let my life show forth thy praise."
+  ],
+  "T23": [
+"Blessed city, heavenly Salem,<br>vision dear of peace and love,<br>who of living stones art builded<br>in the height of heaven above,<br>and, with angel hosts encircled,<br>as a bride dost earthward move;</p><p>from celestial realms descending,<br>bridal glory round thee shed,<br>meet for him whose love espoused thee,<br>to thy Lord shalt thou be led;<br>all thy streets and all thy bulwarks<br>of pure gold are fashioned.</p><p>Bright thy gates of pearl are shining;<br>they are open evermore;<br>and by virtue of his merits<br>thither faithful souls do soar,<br>who for Christ's dear Name in this world<br>pain and tribulation bore.</p><p>Many a blow and biting sculpture<br>polished well those stones elect,<br>in their places now compacted<br>by the heavenly Architect,<br>who therewith hath willed for ever<br>that his palace should be decked.</p><p>Laud and honor to the Father,<br>laud and honor to the Son,<br>laud and honor to the Spirit,<br>ever Three, and ever One,<br>consubstantial, coeternal,<br>while unending ages run."
+  ],
+  "T24": [
+"Rock of ages, cleft for me,<br>Let me hide myself in Thee;<br>Let the water and the blood<br>From Thy side, a healing flood,<br>Be of sin the double cure,<br>Save from wrath, and make me pure.</p><p>Should my tears for ever flow,<br>Should my zeal no languor know,<br>All for sin could not atone,<br>Thou must save, and Thou alone;<br>In my hand no price I bring,<br>Simply to Thy cross I cling.</p><p>While I draw this fleeting breath,<br>When mine eyelids close in death,<br>When I rise to worlds unknown,<br>And behold thee on thy throne,<br>Rock of ages, cleft for me,<br>Let me hide myself in Thee."
+  ],
+  "SNBA": [
+"\"Thy kingdom come!\" on bended knee<br>the passing ages pray;<br>and faithful souls have yearned to see<br>on earth that kingdom's day.</p><p>But the slow watches of the night<br>not less to God belong;<br>and for the everlasting right<br>the silent stars are strong.</p><p>And lo, already on the hills<br>the flags of dawn appear;<br>gird up your loins, ye prophet souls,<br>proclaim the day is near:</p><p>The day to whose clear shining light<br>all wrong shall stand revealed,<br>when justice shall be throned in might,<br>and every heart be healed;</p><p>When knowledge, hand in hand with peace,<br>shall walk the earth abroad;<br>the day of perfect righteousness,<br>the promised day of God."
+  ]
 }
