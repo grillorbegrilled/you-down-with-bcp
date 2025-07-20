@@ -21,9 +21,6 @@ function getOfficeMargin1(now, liturgicalDay) {
   }
   
   if (result === "") {
-    if (now.getMonth() === 6 && now.getDate() >= 25 || now.getMonth() >= 7) { //S James-August for now
-      result = "images/marginalia/peaches.jpg";
-    }
     if (now.getMonth() >= 8 && now.getMonth() < 11) { //September-November for now
       result = "images/marginalia/apples1.png";
     }
@@ -63,9 +60,13 @@ function getOfficeMargin2(now, liturgicalDay) {
     if (month === 5) {
       if (date < 24) result = "images/marginalia/Strawberry.jpg";
       else result = "images/marginalia/Daylily.jpg";}
+    // July-August
+    if (now.getMonth() === 6 && now.getDate() >= 25 || now.getMonth() === 7) { //S James-August for now
+      result = "images/marginalia/peaches.jpg";
+    }
     //Estival
     if (month === 8) {
-      if (date < 29) {result = "images/marginalia/Cicada.jpg";}
+      if (date < 29) result = "images/marginalia/Cicada.jpg";
       //Autumnal
       else {result = "images/marginalia/mums2.jpg"}
     }
