@@ -21,8 +21,8 @@ function getOfficeMargin1(now, liturgicalDay) {
   }
   
   if (result === "") {
-    if (now.getMonth() >= 6 && now.getMonth() < 8) { //September-November for now
-      result = "images/marginalia/peaches. jpg";
+    if (now.getMonth() === 6 && now.getDate() >= 25 || now.getMonth() >= 7) { //S James-August for now
+      result = "images/marginalia/peaches.jpg";
     }
     if (now.getMonth() >= 8 && now.getMonth() < 11) { //September-November for now
       result = "images/marginalia/apples1.png";
