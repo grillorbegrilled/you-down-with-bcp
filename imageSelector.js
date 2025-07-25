@@ -101,9 +101,11 @@ return "images/bg/Easter.jpg";
         case "Barnabas":
             return "images/bg/Barnabas.png";
             break;
-        /*case "Peter":
+        /*case "Peter":*/
         case "James":
-        case "Bartholomew":
+            return "images/bg/SJtoronto.JPG";
+            break;
+        /*case "Bartholomew":
         case "Matthew":
         case "Michael":
         case "Luke":
