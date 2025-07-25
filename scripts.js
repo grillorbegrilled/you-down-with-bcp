@@ -5,6 +5,10 @@ function displayEventDetails() {
     const feast = getLiturgicalDate(now);
     const liturgicalDay = synthDate(week, feast, now.getDay());
 
+    const euchMarg = getEuchMargin(now, liturgicalDay);
+    if (euchMarg) document.getElementById("euchMarg").src = euchMarg;
+    else document.getElementById("euchMarg").style.display = "none";
+
     getProper2(liturgicalDay).then(details => {
     document.getElementById('nameOfTheDay').textContent = `${getDayName(liturgicalDay)}`;
     const collect = synthCollects(details.c, week);
