@@ -60,7 +60,7 @@ function getOffice(now, week, feast) {
                  	  <b>For it is thou, Lord, only, that makest us dwell in safety.</b><br>
                  	  O God, make clean our hearts within us.<br>
                    	<b>And take not thy Holy Spirit from us.</b></p>`;
-                getLessonFromFile(feast || week, "./lessons/evening.json").then(lessonContent => {
+                getLessonFromFile(feast || week, "./lessons/evening.json", "./lessons/morning.json").then(lessonContent => {
                     document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
                 });
                 //document.getElementById('lesson').style.display = "none";
@@ -227,14 +227,24 @@ function getEveningCanticle(isFeast, week) {
         As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
 }
 
-async function getLessonFromFile(liturgicalDay, filePath) {
+async function getLessonFromFile(liturgicalDay, filePath, fallbackFilePath = "") {
     try {
         var day = liturgicalDay;
-        const response = await fetch(filePath);
+        let response = await fetch(filePath);
         if (!response.ok) {
             throw new Error("Network response was not ok");
         }
-        const data = await response.json();
+        let data = await response.json();
+
+        if(fallbackFilePath && !data[day].cit)
+        {
+            response = await fetch(fallbackFilePath);
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            data = await response.json();
+        }
+        
         if (day === "T25") day = "E6";
         else if (day === "T26") day = "E5";
         const lessonText = await handleBibleReference(data[day].cit);
