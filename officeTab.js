@@ -60,10 +60,10 @@ function getOffice(now, week, feast) {
                  	  <b>For it is thou, Lord, only, that makest us dwell in safety.</b><br>
                  	  O God, make clean our hearts within us.<br>
                    	<b>And take not thy Holy Spirit from us.</b></p>`;
-                //getLessonFromFile(feast || week, "./lessons/evening.json").then(lessonContent => {
-                //    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
-                //});
-                document.getElementById('lesson').style.display = "none";
+                getLessonFromFile(feast || week, "./lessons/evening.json").then(lessonContent => {
+                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
+                });
+                //document.getElementById('lesson').style.display = "none";
                 break;
             case 3:
                 document.getElementById("office-name").textContent = "Night Prayer";
