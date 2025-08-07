@@ -85,7 +85,7 @@ async function getProper2(liturgicalDay) {
       "T21", "T22", "T23", "T24", "T25", "T26"
     ]);
 
-    const custom = new Set(["Patrick", "Joseph", "SuperWesleyBros", "ElizabethII", "WeddingAnniversary"]);
+    const custom = new Set(["Patrick", "Joseph", "SuperWesleyBros", "ElizabethII", "WeddingAnniversary", "MaryMagdalene", "Transfiguration"]);
 
     if (adventEpi.has(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/advent-epi.json");
     else if (lxxWhitsun.has(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/lxx-whitsun.json");
@@ -163,3 +163,4 @@ function makeDropCap(text) {
   const restOfString = text.slice(1);
   return `<span class="drop-cap">${firstLetter}</span>${restOfString}`;
 }
+
