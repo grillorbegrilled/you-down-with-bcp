@@ -381,5 +381,7 @@ const redLetters = {
     "ThanksgivingDay": ["Deuteronomy 8","1 Thessalonians 5:12-23","Isaiah 12","Philippians 4:4-7"],
     "Patrick": ["Isaiah 8:19-9:2", "John 1:1-14", "Acts 16:6-10", "Isaiah 51:1-11", "2 Corinthians 4", "2 Corinthians 10"],
     "Joseph": [],
-    "Hugh": []
+    "Hugh": [],
+    "MaryMagdalene": [],
+    "Transfiguration": ["Exodus 34:29ff", "2 Corinthians 3", "Exodus 24:12ff", "Philippians 3:13ff", "1 Kings 19:1-12", "2 Corinthians 4:1-6"]
 };
