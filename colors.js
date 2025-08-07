@@ -28,6 +28,7 @@ function getBookmarkColor(lit, month, date) {
         case "Innocents":
         case "X1":
         case "Circ":
+        case "Transfiguration":
             return "white_damask";
             break;
         case "Candlemas":
