@@ -35,6 +35,9 @@ function getOfficeMargin2(now, liturgicalDay) {
   var date = now.getDate();
 
   switch(liturgicalDay) {
+    case "T8":
+      result = "images/marginalia/bytheirfruit.gif";
+      break;
     case "Michael":
       result = "images/marginalia/geese.png";
       break;
