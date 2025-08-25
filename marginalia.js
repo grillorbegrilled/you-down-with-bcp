@@ -65,7 +65,7 @@ function getOfficeMargin2(now, liturgicalDay) {
       else result = "images/marginalia/Daylily.jpg";}
     // July-August
     if (now.getMonth() === 6 && now.getDate() >= 25 || now.getMonth() === 7) { //S James-August for now
-      result = "images/marginalia/peaches.jpg";
+      result = "images/marginalia/sunflower.jpg";
     }
     //Estival
     if (month === 8) {
