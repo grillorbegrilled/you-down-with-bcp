@@ -20,8 +20,8 @@ function getOffice(now, week, feast) {
         //------------------DAILY PRAYERS
         //officeType: 1=MP, 2=EP, 3=Compline
         var officeType = 0;
-        if (now.getHours() >= 5 && now.getHours() < 12) officeType = 1;
-        else if (now.getHours() < 21) officeType = 2;
+        if (now.getHours() >= 3 && now.getHours() < 12) officeType = 1;
+        else if (now.getHours() > 12 && now.getHours() < 21) officeType = 2;
         else officeType = 3;
     const topMarg = getOfficeMargin1(now, feast || week);
                 if (topMarg) document.getElementById("topMarg").src = topMarg;
