@@ -84,7 +84,6 @@ function getBookmarkColor(lit, month, date) {
         case "James":
         case "Bartholomew":
         case "Matthew":
-        case "Michael":
         case "Luke":
         case "SimonAndJude":
             return "red";
