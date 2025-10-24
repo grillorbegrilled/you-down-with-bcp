@@ -12,67 +12,38 @@ var r = document.querySelector(':root');
 
 function getBookmarkColor(lit, month, date) {
     switch (lit) {
+        //ADVENT BLUE=============
         case "A1":
         case "A2":
         case "A3":
         case "A4":
         case "JohnBaptist":
+        case "Joseph":
         case "LXX":
         case "LX":
         case "L":
             return "midnite";
             break;
+        //FESTAL GOLD============
         case "Xmas":
-        case "Stephen":
-        case "JohnEvangelist":
-        case "Innocents":
-        case "X1":
-        case "Circ":
-        case "Transfiguration":
-            return "white_damask";
-            break;
-        case "Candlemas":
-        case "Annunciation":
-            return "pink";
-            break;
-        case "AW":
-        case "L1":
-        case "L2":
-        case "L3":
-        case "L4":
-        case "Patrick":
-        case "Joseph":
-            return "lent";
-            break;
-        case "L5":
-        case "Palm":
-        case "HW-Mon":
-        case "HW-Tue":
-        case "HW-Wed":
-        case "HW-Thu":
-        case "GF":
-        case "EE":
-            return "scarlet";
-            break;
         case "Epiphany":
         case "Easter":
         case "EasterMon":
         case "EasterTue":
-        case "Ea1":
-        case "Ea2":
-        case "Ea3":
-        case "Ea4":
-        case "Ea5":
         case "Ascension":
-        case "Asc1":
-        case "Trinity":
-        case "AllSaints":
-        case "ThanksgivingDay":
-            return "white_damask";
-            break;
         case "Whitsun":
         case "Whitmon":
         case "WhitTue":
+        case "Trinity":
+        case "AllSaints": //Or figure out a way to do EVERY color
+            
+        case "Anniversary":
+            return "gold";
+            break;
+        //RED===================
+        case "Stephen":
+        case "Innocents":
+        case "Circ":
         case "Andrew":
         case "Thomas":
         case "Paul":
@@ -86,17 +57,70 @@ function getBookmarkColor(lit, month, date) {
         case "Matthew":
         case "Luke":
         case "SimonAndJude":
+        case "IndependenceDay":
+        //Apostles, Evangelists, St. Mary Magdalene, Martyrs, and local Apostles
             return "red";
             break;
+        //WHITE==================
+        case "JohnEvangelist":
+        case "X1":
+        case "Transfiguration":
+        case "Ea1":
+        case "Ea2":
+        case "Ea3":
+        case "Ea4":
+        case "Ea5":
+        case "Asc1":
+        case "SNBA":
+        case "ThanksgivingDay": //or blue
+        //virgins not martyrs
+            return "white_damask";
+            break;
+        //ROSE===================
+        case "Candlemas":
+        case "Annunciation":
+        //Visitation, all the Lady Days, votives of BVM
+            return "pink";
+            break;
+        //LENTEN ARRAY===========
+        case "AW":
+        case "L1":
+        case "L2":
+        case "L3":
+        case "L4":
+        case "Patrick":
+            return "lent";
+            break;
+        //MAROON================
+        case "L5":
+        case "Palm":
+        case "HW-Mon":
+        case "HW-Tue":
+        case "HW-Wed":
+        case "HW-Thu":
+        case "GF":
+        case "EE":
+            return "scarlet";
+            break;
+        //SKY BLUE===============
         case "Michael":
             return "white_damask"; //blue?
             break;
+        //DARK GREEN============
         case "E1":
         case "E2":
         case "E3":
         case "E4":
         case "E5":
-        case "E6":        
+        case "E6": 
+        case "Patrick":
+            return "green";
+            break;
+        //BLACK===================
+        case "AllSouls":
+            return "black";
+            break;
+        //TRINITYTIDE================
         case "T1":
         case "T2":
         case "T3":
@@ -121,15 +145,21 @@ function getBookmarkColor(lit, month, date) {
         case "T22":
         case "T23":
         case "T24":
-        case "SNBA":
+            //OLIVE
             if (month === 5 && date > 24 || month === 6 || month === 7 || month === 8 && date < 29)
                 return "olive";
+            //ORANGE
             else if (month === 8 && date > 29 || month >= 9)
                 return "olive";
+            //YELLOW
             else
                 return "olive";
             break;
         default:
-            return "olive";
+            return "green";
+        //Future additions:
+            //Confessors, Monastics, Matrons: Orange or Yellow
+            //Virgin Martyrs: White with red
+            //Corpus Christi: White AND red, or white WITH red
     }
 }
