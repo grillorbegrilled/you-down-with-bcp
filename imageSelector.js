@@ -108,11 +108,11 @@ return "images/bg/Easter.jpg";
         /*case "Bartholomew":
         case "Matthew":
         case "Michael":
-        case "Luke":
+        case "Luke":*/
         case "SimonAndJude":
-            return "red";
+            return "images/bg/SimonJude.jpg";
             break;
-        case "Michael":
+        /*case "Michael":
             return "white_damask"; //blue?
             break;
         */
