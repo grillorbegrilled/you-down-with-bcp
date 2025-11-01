@@ -1,7 +1,5 @@
 function getOffice(now, week, feast) {
     const day = now.getDay();
-    //------------------ALL SOULS
-    if (feast === "AllSouls") document.getElementById("tab-0").innerHTML = getMemorial();
     //------------------COMMINATION
     else if (week === "AW" && day === 3 || //Ash Wednesday
         week === "GF" || //Good Friday
