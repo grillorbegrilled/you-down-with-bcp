@@ -1,7 +1,7 @@
 function getOffice(now, week, feast) {
     const day = now.getDay();
     //------------------COMMINATION
-    else if (week === "AW" && day === 3 || //Ash Wednesday
+    if (week === "AW" && day === 3 || //Ash Wednesday
         week === "GF" || //Good Friday
         now.getDate() < 8 && day === 5) //first Friday of the month
         document.getElementById("tab-0").innerHTML = commination;
