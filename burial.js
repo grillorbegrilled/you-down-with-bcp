@@ -1,4 +1,5 @@
-function getMemorial() { return `<p>I AM the resurrection and the life, saith the Lord: he that believeth in me, though he were dead, yet shall he live: and whosoever liveth and believeth in me shall never die.<i>&mdash;St. John 11:25, 26</i></p>
+function getMemorial() { return `<h1>A Memorial Service</h1>
+<p>I AM the resurrection and the life, saith the Lord: he that believeth in me, though he were dead, yet shall he live: and whosoever liveth and believeth in me shall never die.<i>&mdash;St. John 11:25, 26</i></p>
 <p>I KNOW that my Redeemer liveth, and that he shall stand at the latter day upon the earth. And though after my skin worms destroy this body, yet in my flesh shall I see God: whom I shall see for myself, and mine eyes shall behold, and not another.<i>&mdash;Job 19:25-27</i></p>
 <p>WE brought nothing into this world, and it is certain we can carry nothing out. The Lord gave, and the Lord hath taken away; blessed be the Name of the Lord.<i>&mdash;1 Tim. 6:7, Job 1:21</i></p>
     
