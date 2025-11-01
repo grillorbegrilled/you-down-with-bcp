@@ -57,7 +57,11 @@ in our true native land with thee.`);
         document.getElementById('readings').innerHTML = lessonContent;
     });
 
-    document.getElementById('tab-4').innerHTML = "<h1>Intercessions</h1>" + getIntercessions() + getAddlPrayers(liturgicalDay);
+    //additional devotions
+    if (now.getMonth() == 10 && now.getDate() <= 8)
+        document.getElementById("tab-4").innerHTML = getMemorial();
+    else
+        document.getElementById('tab-4').innerHTML = "<h1>Intercessions</h1>" + getIntercessions() + getAddlPrayers(liturgicalDay);
 }
 
 async function getProper2(liturgicalDay) {
@@ -163,4 +167,5 @@ function makeDropCap(text) {
   const restOfString = text.slice(1);
   return `<span class="drop-cap">${firstLetter}</span>${restOfString}`;
 }
+
 
