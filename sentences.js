@@ -81,8 +81,7 @@ function getSentence(lit, officeType) {
                 "Let the words of my mouth, and the meditation of my heart, be alway acceptable in thy sight, O Lord, my strength and my redeemer.  <i>Psalm 19:14</i>",
                 "O send out thy light and thy truth, that they may lead me, and bring me unto thy holy hill, and to thy dwelling.  <i>Psalm 43:3</i>",
                 "Thus saith the high and lofty One that inhabiteth eternity, whose name is Holy; I dwell in the high and holy place, with him also that is of a contrite and humble spirit, to revive the spirit of the humble, and to revive the heart of the contrite ones.  <i>Isaiah 57:15</i>",
-                "The hour cometh, and now is, when the true worshippers shall worship the Father in spirit and in truth: for the Father seeketh such to worship him.  <i>John 4:23</i>",
-                "Grace be unto you, and peace, from God our Father, and from the Lord Jesus Christ.  <i>Philippians 1:2</i>"]);
+                "The hour cometh, and now is, when the true worshippers shall worship the Father in spirit and in truth: for the Father seeketh such to worship him.  <i>John 4:23</i>"]);
       }
   else if (officeType === 2)
       switch (lit) {
