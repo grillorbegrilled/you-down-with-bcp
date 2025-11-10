@@ -38,7 +38,7 @@ function getOffice(now, week, feast) {
                 getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
                     document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
                 });
-                document.getElementById("office-collect").innerHTML = "<p><span class='drop-cap'>O</span> LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
+                document.getElementById("office-collect").innerHTML = "<p><span class='drop-cap'>O</span> Lᴏʀᴅ, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
                 const cantMarg = getOfficeMargin2(now, feast || week);
                 if (cantMarg) document.getElementById("cantMarg").src = cantMarg;
                 else document.getElementById("cantMarg").style.display = "none";
@@ -46,7 +46,7 @@ function getOffice(now, week, feast) {
             case 2:
                 document.getElementById("office-name").textContent = "Evening Prayer";
                 document.getElementById("canticle").innerHTML = getEveningCanticle(feast, week);
-                document.getElementById("creed-or-suffrages").innerHTML = `<p><span class="drop-cap">O</span> LORD, show thy mercy upon us.<br>
+                document.getElementById("creed-or-suffrages").innerHTML = `<p><span class="drop-cap">O</span> Lᴏʀᴅ, show thy mercy upon us.<br>
                  	  <b>And grant us thy salvation.</b><br>
                  	  O Lord, save the State.<br>
                  	  <b>And mercifully hear us when we call upon thee.</b><br>
@@ -177,7 +177,7 @@ function getMorningCanticle(week, feast) {
         We therefore pray thee, help thy servants, whom thou hast redeemed with thy precious blood.<br>
         Make them to be numbered with thy Saints, in glory everlasting.</p>
         <p style='text-align: center; margin-bottom: 0;'>✠&#9;✠&#9;✠</p>
-        <p>O LORD, save thy people, and bless thine heritage.<br>
+        <p>O Lᴏʀᴅ, save thy people, and bless thine heritage.<br>
         Govern them and lift them up for ever.<br>
         Day by day we magnify thee;<br>
         And we worship thy Name ever, world without end.<br>
@@ -355,32 +355,109 @@ const litany = `<H1>The Litany</H1>
         and Advocate, Jesus Christ our Lord. Amen.</p>`;
 
 const commination = `<H1>A Penitential Office</H1>
-    <P>GOD spake these words, and said:<BR>
-      I. &emsp; I am the Lord thy God; Thou shalt have none other gods but me.<br>
-      II. &emsp; Thou shalt not make to thyself any graven image, nor the likeness
+    <p><span class='drop-cap'>B</span>LESS the Lord, who forgiveth all our sins.<br>
+    <b>His mercy endureth for ever.</b></p>
+    
+    <H2>The Seven Deadly Sins</H2>
+      <H3>Pride</H3> <!--lion-->
+        <p>Vainglory, or a high opinion of one’s achievements. ❦ Indignation at perceived injustices. ❦ Hypocrisy. ❦ Presumption and meddling. ❦ Disobedience. ❦ Loquacity. ❦ Blasphemy. ❦ Impatience. ❦ Stubbornness.</p>
+        <p style="text-align: center;"><i>Pride can spring from countless sources, as wealth and prosperity, high descent, fine clothes, wit, beauty, strength, even extraordinary piety and pure morals.</i></p>
+      <H3>Envy</H3><!--snake-->
+      <p>Ingratitude. ❦ Hatred. ❦ Grieving at the good of another.  ❦ Enjoying or dismissing the misfortune of another. ❦ Exposing faults. ❦ Backbiting. ❦ Upbraiding.</p>
+      <H3>Wrath</H3> <!--unicorn-->
+        <p>Contention or strife. ❦ Rage. ❦ Abusive reproach. ❦ Cursing.  ❦ Violence.  ❦ Wishing evil upon another.</p>
+      <h3>Sloth</h3> <!--bear-->
+        <p>A lukewarm heart, which does not light up with love for God. ❦ Faintheartedness or reluctance to undertake anything arduous in the hope of help from God, and in confidence of His grace. ❦ Sluggishness and dullness of heart in doing good. ❦ Idleness.  ❦ Grudging and grumbling.  ❦ Sorrow for loss or displeasure. ❦ Negligence, whether in saying, doing, providing, or caring for anything. ❦ Despair.</p>
+      <h3>Greed</h3> <!--fox-->
+        <p>Treachery and guile. ❦ Theft. ❦ Rapine, or taking things by violence. ❦ Extortion, or taking things by force or threat. ❦ Perjury, or false testimony. ❦ Simony, or taking payment for religious service. ❦ Usury, or charging interest. ❦ Unwillingness to give or lend. ❦ Murder.</p>
+        <p style="text-align: center;"><i>All that man or woman desires more than is sufficient for leading life comfortably, according to their station, is covetousness, and the root of mortal sin. This is true religion – that every one, according to his station, should borrow from this frail world as little as possible of food, clothes, goods, and of all worldly things.</i></p>
+      <h3>Gluttony</h3> <!--swine-->
+        <p>Eating too early. ❦ Eating too luxuriously, and being picky. ❦ Eating too voraciously. ❦ Eating too much. ❦ Eating too often.</p>
+      <h3>Lust</h3> <!--Scorpion-->
+        <p>Most fruits and consequences of this sin are obvious, and so need not be listed in detail. These less-obvious ones, however, must also be considered:</p>
+        <p>Lecherous thoughts. ❦ Precursors such as flirting, indecency, and immodesty.</p>
+
+    <H2>The Five Senses</H2>
+    <h3>Sight</h3>
+    <p style="text-align: center;"><i>Love your windows as little as possible.</i>&mdash;The Ancrene Riwle</p>
+    <ul>
+      <li>Have I turned lustful, envious, or wrathful eyes on anyone?</li>
+      <li>Have I given anyone occasion to do the same?</li>
+      <li>Have I desired that any would?</li>
+      <li>Have I looked with greed at anything; or innocently, but at the expense of better things, especially my duties?</li>
+    </ul>
+    <h3>Hearing</h3>
+    <p style="text-align: center;"><i>A man full of words shall not prosper upon the earth.</i>&mdash;Ps. 140:11</p>
+    <ul>
+      <li>Have I spoken seldom and little, or rather  often and long? </li>
+      <li>Have I desired to be heard more than to listen?</li>
+      <li>Have I spoken evil, or consented to evil speech by listening, namely:
+        <ul>
+          <li>That which serves no good and is unnecessary?</li>
+          <li>That which concerns lechery and other uncleanness?</li> 
+          <li>Heresies, lies, backbiting, flattery, or that which instigates men to evil deeds?</li>
+        </ul></li>
+    </ul>
+    <h3>Smell</h3>
+    <ul>
+      <li>Have I followed any pleasing aroma to gluttony, luxury, or any other sinful thought or deed?</li>
+      <li>Have I avoided the good that I ought to do, or thought less of anyone, because my senses were offended?</li>
+    </ul>
+    <h3>Taste</h3>
+    <ul>
+      <li>Have I eaten or drunk to excess?</li>
+      <li>Have I refused or complained about food set before me because it was not to my liking?</li>
+    </ul>
+    <h3>Touch</h3>
+    <p>Have I done evil, or neglected good, whether in the pursuit of enjoyment and comfort or the avoidance of pain and irritation?</p>
+    
+    <H2>The Ten Commandments</H2>
+    <P><span class='drop-cap'>G</span>OD spake these words, and said:</P>
+    <ol type="I">
+      <li>I am the Lord thy God; Thou shalt have none other gods but me.</li>
+      <li>Thou shalt not make to thyself any graven image, nor the likeness
       of any thing that is in heaven above, or in the earth beneath,
       or in the water under the earth; thou shalt not bow down to them,
-      nor worship them.<br>
-      III. &emsp; Thou shalt not take the Name of the Lord thy God in vain.<br>
-      IV. &emsp; Remember that thou keep holy the Sabbath-day.<br>
-        <b>Lord, have mercy upon us, and incline our hearts to keep this law.</b></p>
-      <p>V. &emsp; Honour thy father and thy mother.<br>
-      VI. &emsp; Thou shalt do no murder.<br>
-      VII. &emsp; Thou shalt not commit adultery.<br>
-      VIII. &emsp; Thou shalt not steal.<br>
-      IX. &emsp; Thou shalt not bear false witness against thy neighbour.<br>
-      X. &emsp; Thou shalt not covet.<br>
-        <b>Lord, have mercy upon us, and write all these thy laws in our hearts, we beseech thee.</b>
-    </P>
-    
-    <P>Hear what our Lord Jesus Christ saith.<br>
-      THOU shalt love the Lord thy God with all thy heart, and with
-      all thy soul, and with all thy mind. This is the first and great
-      commandment. And the second is like unto it; Thou shalt love
-      thy neighbour as thyself. On these two commandments hang all the Law and the Prophets.
-    </P>
+      nor worship them,<br>
+      <span style="font-size: 75%;">for I the Lᴏʀᴅ thy God am a jealous God, and visit the sins
+      of the fathers upon the children, unto the third and fourth generation
+      of them that hate me; and show mercy unto thousands in them that
+      love me and keep my commandments.</span></li>
+        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
+      <li>Thou shalt not take the Name of the Lord thy God in vain,<br>
+      <span style="font-size: 75%;">for the Lᴏʀᴅ will not hold him guiltless, that taketh his Name in vain.</span></li>
+        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
+      <li>Remember that thou keep holy the Sabbath-day.<br>
+      <span style="font-size: 75%;">Six days shalt thou labour, and do all that thou hast to
+      do; but the seventh day is the Sabbath of the Lᴏʀᴅ thy God. In
+      it thou shalt do no manner of work; thou, and thy son, and thy
+      daughter, thy man-servant, and thy maid-servant, thy cattle,
+      and the stranger that is within thy gates. For in six days the
+      Lᴏʀᴅ made heaven and earth, the sea, and all that in them is,
+      and rested the seventh day: wherefore the Lᴏʀᴅ blessed the seventh
+      day, and hallowed it.</span></li>
+    </ol>
+    <p><b>Lord, have mercy upon us, and incline our hearts to keep this law.</b></p>
+    <ol type="I" start="5">
+      <li>Honour thy father and thy mother.<br>
+      <span style="font-size: 75%;">that thy days may be long in the land which the Lᴏʀᴅ thy God giveth thee.</span></li>
+        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
+      <li>Thou shalt do no murder.</li>
+        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
+      <li>Thou shalt not commit adultery.</li>
+        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
+      <li>Thou shalt not steal.</li>
+        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
+      <li>Thou shalt not bear false witness against thy neighbour.</li>
+        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
+      <li>Thou shalt not covet<br>
+      <span style="font-size: 75%;">thy neighbour’s house, thou shalt not covet thy neighbour’s
+      wife, nor his servant, nor his maid, nor his ox, nor his ass, nor any thing that is his.</span></li>
+    </ol>
+    <p><b>Lord, have mercy upon us, and write all these thy laws in our hearts, we beseech thee.</b></P>
 
-    <p>ALMIGHTY God, Father of our Lord Jesus Christ,<BR>
+    <h2>Confession</h2>
+    <p><span class='drop-cap'>A</span>LMIGHTY God, Father of our Lord Jesus Christ,<BR>
     Maker of all things, judge of all men;<BR>
     We acknowledge and bewail our manifold sins and wickedness,<BR>
     Which we, from time to time, most grievously have committed,<BR>
@@ -393,16 +470,16 @@ const commination = `<H1>A Penitential Office</H1>
     The burden of them is intolerable. <BR>
     Have mercy upon us, <BR>
     Have mercy upon us, most merciful Father; <BR>
-    For thy Son our Lord Jesus Christ's sake, <BR>
+    For thy Son our Lord Jesus Christ’s sake, <BR>
     Forgive us all that is past; <BR>
     And grant that we may ever hereafter <BR>
     Serve and please thee <BR>
     In newness of life, <BR>
     To the honour and glory of thy Name; <BR>
     Through Jesus Christ our Lord. Amen.</p>
-    
-    <p>Hear what comfortable words our Saviour Christ saith unto all that truly turn to him.<br>
-      COME unto me all that travail and are heavy laden, and I will refresh you. <i>&mdash;St. Matthew 11:28</i><br>
+
+    <p><span class='drop-cap'>H</span>EAR what comfortable words our Saviour Christ saith unto all that truly turn to him.<br>
+      Come unto me all that travail and are heavy laden, and I will refresh you. <i>&mdash;St. Matthew 11:28</i><br>
       So God loved the world, that he gave his only-begotten Son, to the end that all that believe in him should not perish, but have everlasting life. <i>&mdash;St. John 3:16</i></p>
 
     <p>Hear also what Saint Paul saith.<br>
@@ -411,10 +488,31 @@ const commination = `<H1>A Penitential Office</H1>
     <p>Hear also what Saint John saith.<br>
       If any man sin, we have an Advocate with the Father, Jesus Christ the righteous; and he is the propitiation for our sins. <i>&mdash;1 St. John 2:1</i></p>
 
-    <p>BLESSED is he whose unrighteousness is forgiven, * and whose sin is covered.<BR>
-    Blessed is the man unto whom the Lord imputeth no sin, * and in whose spirit there is no guile.<BR>
-    I said, I will confess my sins unto the Lord; * and so thou forgavest the wickedness of my sin.</p>
+    <p><span class='drop-cap'>B</span>LESSED is he whose unrighteousness is forgiven * and whose sin is covered.<BR>
+    Blessed is the man unto whom the Lᴏʀᴅ imputeth no sin * and in whose spirit there is no guile.<BR>
+    I said, I will confess my sins unto the Lᴏʀᴅ * and so thou forgavest the wickedness of my sin.</p>
     <p>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>
-        As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>
+    As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>
+
+    <h2>The Works of Mercy</h2>
+    <p>Feed the hungry. ❦ Give drink to the thirsty. ❦ Clothe the naked. ❦ Shelter the homeless. ❦ Visit the sick. ❦ Ransom the captive. ❦ Bury the dead.</p>
+
+    <h2>The Gifts of the Holy Ghost</h2>
+    <p>Wisdom ❦ Understanding ❦ Counsel ❦ Fortitude ❦ Knowledge ❦ Piety ❦ Fear of the Lord</p>
+
+    <h2>The Fruit of the Spirit</h2>
+    <p>Love ❦ Joy ❦ Peace ❦ Longsuffering ❦ Gentleness ❦ Goodness ❦ Faith ❦ Meekness ❦ Temperance</p>
+
+    <h2>The Beatitudes</h2>
+    <ol>
+      <li>Blessed are the poor in spirit: for theirs is the kingdom of heaven.</li>
+      <li>Blessed are they that mourn: for they shall be comforted.</li>
+      <li>Blessed are the meek: for they shall inherit the earth.</li>
+      <li>Blessed are they which do hunger and thirst after righteousness: for they shall be filled.</li>
+      <li>Blessed are the merciful: for they shall obtain mercy.</li>
+      <li>Blessed are the pure in heart: for they shall see God.</li>
+      <li>Blessed are the peacemakers: for they shall be called the children of God.</li>
+      <li>Blessed are they which are persecuted for righteousness’ sake: for theirs is the kingdom of heaven.</li>
+    </ol>
     
-    <p>THE Lord bless us, and keep us. The Lord make his face to shine upon us, and be gracious unto us. The Lord lift up his countenance upon us, and give us peace, both now and evermore. Amen.</p>`;
+    <p><span class='drop-cap'>T</span>HE Lord bless us, and keep us. The Lord make his face to shine upon us, and be gracious unto us. The Lord lift up his countenance upon us, and give us peace, both now and evermore. Amen.</p>`;
