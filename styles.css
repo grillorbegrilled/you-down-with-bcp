@@ -23,7 +23,7 @@
 /* Bold */
 @font-face {
   font-family: 'Garamond';
-  src: url('eb-garamond-bold.woff') format('woff');
+  src: url('eb-garamond-semibold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 /* Bold Italic */
 @font-face {
   font-family: 'Garamond';
-  src: url('eb-garamond-bold-italic.woff') format('woff');
+  src: url('eb-garamond-semibold-italic.woff') format('woff');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
