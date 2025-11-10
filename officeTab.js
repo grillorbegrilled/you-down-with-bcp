@@ -46,7 +46,7 @@ function getOffice(now, week, feast) {
             case 2:
                 document.getElementById("office-name").textContent = "Evening Prayer";
                 document.getElementById("canticle").innerHTML = getEveningCanticle(feast, week);
-                document.getElementById("creed-or-suffrages").innerHTML = `<p><span class="drop-cap">O</span> Lᴏʀᴅ, show thy mercy upon us.<br>
+                document.getElementById("creed-or-suffrages").innerHTML = `<p><span class="drop-cap">O</span> LORD, show thy mercy upon us.<br>
                  	  <b>And grant us thy salvation.</b><br>
                  	  O Lord, save the State.<br>
                  	  <b>And mercifully hear us when we call upon thee.</b><br>
