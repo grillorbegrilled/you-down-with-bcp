@@ -504,7 +504,7 @@ const commination = `<H1>A Penitential Office</H1>
     <p>Love ❦ Joy ❦ Peace ❦ Longsuffering ❦ Gentleness ❦ Goodness ❦ Faith ❦ Meekness ❦ Temperance</p>
 
     <h2>The Beatitudes</h2>
-    <ol>
+    <ol type="I">
       <li>Blessed are the poor in spirit: for theirs is the kingdom of heaven.</li>
       <li>Blessed are they that mourn: for they shall be comforted.</li>
       <li>Blessed are the meek: for they shall inherit the earth.</li>
