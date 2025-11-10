@@ -42,8 +42,7 @@
 @font-face {
   font-family: 'Blackletter';
   src: url('Plain_Black-webfont.woff') format('woff');
-/*  src: url('rothenbg-webfont.woff') format('woff');
-*/  font-weight: normal;
+  font-weight: normal;
   font-display: swap;
 }
 
