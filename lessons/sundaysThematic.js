@@ -308,7 +308,7 @@ const sundaysThematic = {
 "Jeremiah 2:1-9, 13"
 ],
 "T21":[
-"*Isaiah 59:15bff", "2 Corinthians 10:1-7,17-18",
+"*Isaiah 59:15ff", "2 Corinthians 10:1-7,17-18",
 "Proverbs 3:13-26", "Baruch 3:14-15, 29-37", "John 9:1-38",
 "Genesis 15:1-6", "Romans 4:1-8",
 "2 Kings 5:1-15"
