@@ -2,12 +2,42 @@
     font-size: 100%;
 }
 
+/* Regular */
 @font-face {
-  font-family: 'Cormorant Garamond';
-  /*src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/57225/EBGaramond12-Regular.woff') format('woff');*/
-  font-weight: normal;
+  font-family: 'Garamond';
+  src: url('eb-garamond-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
+
+/* Italic */
+@font-face {
+  font-family: 'Garamond';
+  src: url('eb-garamond-italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Garamond';
+  src: url('eb-garamond-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'Garamond';
+  src: url('eb-garamond-bold-italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
 
 @font-face {
   font-family: 'Blackletter';
@@ -25,9 +55,9 @@ body, html {
     height: 100%;
     overflow: hidden;
     color: black;
-    font-family: "Cormorant Garamond", Garamond, Georgia, serif;
+    font-family: "Garamond", Garamond, Georgia, serif;
     font-weight: normal;
-    font-feature-settings: "liga" 1, "dlig" 1, "calt" 1, "ss01" 1;
+    font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
     font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
 
@@ -104,7 +134,7 @@ h2 {
     text-align: center;
     margin-bottom: 0;
     padding: 0;
-    font-feature-settings: "swsh" 1;
+    font-feature-settings: "liga" 1, "dlig" 1, "swsh" 1, "calt" 1;
     font-style: italic;
 }
 
@@ -112,7 +142,7 @@ h3 {
     text-align: center;
     margin-bottom: 0;
     padding: 0;
-    font-feature-settings: "swsh" 1;
+    font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
 }
 
 .fastingLabel { 
