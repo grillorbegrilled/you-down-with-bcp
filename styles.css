@@ -4,7 +4,9 @@
 
 @font-face {
   font-family: 'Garamond';
-  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/57225/EBGaramond12-Regular.woff') format('woff');
+  src: url('/fonts/CormorantGaramond-Regular.woff2') format('woff2'),
+       url('/fonts/CormorantGaramond-Regular.woff') format('woff');
+  /*src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/57225/EBGaramond12-Regular.woff') format('woff');*/
   font-weight: normal;
   font-display: swap;
 }
