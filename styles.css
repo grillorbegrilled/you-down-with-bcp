@@ -67,8 +67,7 @@ body, html {
     color: black;
     font-family: "Garamond", Garamond, Georgia, serif;
     font-weight: normal;
-    font-feature-settings: "liga" 1, "dlig" 1, "swsh" 1, "calt" 1;
-    font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
+    font-feature-settings: "liga" 1, "dlig" 1, "swsh" 0, "calt" 1;
 }
 
 .background {
