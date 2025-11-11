@@ -97,24 +97,6 @@ body, html {
     position: relative;
 }
 
- .fastingFish {
-    max-height: 2rem;
-    width: auto;
-    margin: 10px;
-    float: left;
-    display: block;
-    position: relative;
-}
-
- .fastingFish {
-    max-height: 2rem;
-    width: auto;
-    margin: 10px;
-    float: left;
-    display: block;
-    position: relative;
-}
-
 .rightMarg {
     max-width: 33%;
     height: auto;
@@ -185,4 +167,15 @@ p {
 .hymn {
     text-align: center;
     margin: 0 auto;
+}
+
+.devo {
+  font-style: italic;
+  font-feature-settings: 
+    "liga" 1,
+    "dlig" 1,
+    "swsh" 1,
+    "calt" 1,
+    "rand" 1;
+  text-align: right;
 }
