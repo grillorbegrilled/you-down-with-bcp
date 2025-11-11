@@ -42,7 +42,7 @@ element.style.backgroundPosition = 'top center';
     document.getElementById('preface').innerHTML = getPreface(liturgicalDay, now.getMonth(), now.getDate(), now.getDay());
 
     if (['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week))
-        document.getElementById('gloria').innerHTML = makeDropCap(`O saving Victim, open wide<br>
+        document.getElementById('gloria').innerHTML = makeDropCap(`O SAVING Victim, open wide<br>
 the gate of heav’n to man below;<br>
 our foes press on from every side;<br>
 thine aid supply; thy strength bestow.`) +
@@ -161,6 +161,7 @@ function makeP(text){
 }
 
 const makeDropCap = text => `<p class="dropcap">${text}</p>`;
+
 
 
 
