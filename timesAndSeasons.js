@@ -392,18 +392,474 @@ function getLiturgicalDate(now) {
     return "";
 }
 
-function getBlackletterDay() {
-    //TODO
-    //January: 8 Lucian PM, 13 Hilary BpC, 18 Prisca VM, 20 Fabian BpM 21 Agnes VM 22 Vincent M
-    //february: 5 agatha vm 14 valentine b
-    //march: 1 david abp 2 chad b 7 perpetua m 12 gregory mb 18 king edward 21 benedict a
+function getBlackletterDay(month, date) {
+    switch (month) {
+        case 0: //january
+            switch (date) {
+                case 8:
+                    return {
+                        name: "Lucian",
+                        longName: "",
+                        type: "PM",
+                        gender: 0
+                    };
+                    break;
+                case 13:
+                    return {
+                        name: "Hilary",
+                        longName: "Hilary of Poitiers",
+                        type: "BpC",
+                        gender: 0
+                    };
+                    break;
+                case 18:
+                    return {
+                        name: "Prisca",
+                        longName: "",
+                        type: "VM",
+                        gender: 1
+                    };
+                    break;
+                case 20:
+                    return {
+                        name: "Fabian",
+                        longName: "",
+                        type: "BpM",
+                        gender: 0
+                    };
+                    break;
+                case 21:
+                    return {
+                        name: "Agnes",
+                        longName: "",
+                        type: "VM",
+                        gender: 1
+                    };
+                    break;
+                case 22:
+                    return {
+                        name: "Vincent",
+                        longName: "Vincent of Saragossa",
+                        type: "M",
+                        gender: 0
+                    };
+                    break;
+            }  
+            break;
+        case 1: //feb
+            switch (date) {
+                case 5:
+                    return {
+                        name: "Agatha",
+                        longName: "",
+                        type: "VM",
+                        gender: 1
+                    };
+                    break;
+                case 14:
+                    return {
+                        name: "Valentine",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+            }
+            break;
+        case 2: //mar
+            switch (date) {
+                case 1:
+                    return {
+                        name: "David",
+                        longName: "",
+                        type: "Abp",
+                        gender: 0
+                    };
+                    break;
+                case 2:
+                    return {
+                        name: "Chad",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+                case 7:
+                    return {
+                        name: "Perpetua",
+                        longName: "",
+                        type: "M",
+                        gender: 1
+                    };
+                    break;
+                case 12:
+                    return {
+                        name: "Gregory",
+                        longName: "Gregory the Great",
+                        type: "MB",
+                        gender: 0
+                    };
+                    break;
+                case 18:
+                    return {
+                        name: "Edward",
+                        longName: "",
+                        type: "",
+                        gender: 0
+                    };
+                    break;
+                case 21:
+                    return {
+                        name: "Benedict",
+                        longName: "",
+                        type: "A",
+                        gender: 0
+                    };
+                    break;
+            }
+            break;
+        case 3: //apr
     //april 3 richard b 4 ambrose b 19 alphege abp 23 george m
-    //may 3 invent cross 6 john ante port lat 19 dunstan abp 26 augustine abp 27 bede p
-    //june 1 nicomede m 5 boniface b 11 barnabas ap 17 alban m 20 trans king edward
-    //july 2 visitation 4 trans s martin 15 swithun b 20 margaret vm 22 mary magdalen 26 anne
-    //august 1 lammas 6 transfiguration 7 holy name 10 lawrence m 28 augustine b 29 beh john baptist
-    //september 1 giles a 7 enurchus b 8 nat bvm 14 roodmas 17 lambert b 26 cyprian abp 30 jerome
-    //october 1 remigius b 6 faith vm 9 denis b 13 trans k edw 17 etheldreda v 25 crispin m
-    //november 2 allsouls 6 leonard c 11 martin b 13 britius b 15 machutus b 17 hugh b 20 king edmund 22 cecilia vm 23 clement b 25 catherine vm
-    //december 6 nicholas b 8 conc bvm 13 lucy vm 16 o sapientia 31 silvester b
+            switch (date) {
+                case 3:
+                    return {
+                        name: "Richard",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+                case 4:
+                    return {
+                        name: "Ambrose",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+                case 19:
+                    return {
+                        name: "Alphege",
+                        longName: "",
+                        type: "Abp",
+                        gender: 0
+                    };
+                    break;
+                case 23:
+                    return {
+                        name: "George",
+                        longName: "",
+                        type: "M",
+                        gender: 0
+                    };
+                    break;
+            }
+            break;
+        case 4: //may
+    //may 3 invent cross 6 john ante port lat
+            switch (date) {
+                case 19:
+                    return {
+                        name: "Dunstan",
+                        longName: "",
+                        type: "Abp",
+                        gender: 0
+                    };
+                    break;
+                case 26:
+                    return {
+                        name: "Augustine",
+                        longName: "Augustine of Canterbury",
+                        type: "Abp",
+                        gender: 0
+                    };
+                    break;
+                case 27:
+                    return {
+                        name: "Bede",
+                        longName: "",
+                        type: "P",
+                        gender: 0
+                    };
+                    break;
+            }
+            break;
+        case 5: //jun
+    //20 trans king edward
+            switch (date) {
+                case 1:
+                    return {
+                        name: "Nicomede",
+                        longName: "",
+                        type: "M",
+                        gender: 0
+                    };
+                    break;
+                case 5:
+                    return {
+                        name: "Boniface",
+                        longName: "",
+                        title: "Apostle to the Germans",
+                        type: "BM",
+                        gender: 0
+                    };
+                    break;
+                case 17:
+                    return {
+                        name: "Alban",
+                        longName: "",
+                        type: "M",
+                        gender: 0
+                    };
+                    break;
+            }
+            break;
+        case 6: //jul
+    //july 2 visitation 4 trans s martin
+            switch (date) {
+                case 15:
+                    return {
+                        name: "Swithun",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+                case 20:
+                    return {
+                        name: "Margaret",
+                        longName: "",
+                        type: "VM",
+                        gender: 1
+                    };
+                    break;
+                case 22:
+                    return {
+                        name: "Mary Magdalene",
+                        longName: "",
+                        type: "",
+                        gender: 1
+                    };
+                    break;
+                case 26:
+                    return {
+                        name: "Anne",
+                        longName: "",
+                        type: "",
+                        gender: 1
+                    };
+                    break;
+            }
+            break;
+        case 7: //aug
+    //august 1 lammas 6 transfiguration 7 holy name 29 beh john baptist
+            switch (date) {
+                case 10:
+                    return {
+                        name: "Lawrence",
+                        longName: "",
+                        type: "M",
+                        gender: 0
+                    };
+                    break;
+                case 28:
+                    return {
+                        name: "Augustine",
+                        longName: "Augustine of Hippo",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+            }
+            break;
+        case 8: //sep
+    //september 8 nat bvm 14 roodmas
+            switch (date) {
+                case 1:
+                    return {
+                        name: "Giles",
+                        longName: "",
+                        type: "",
+                        gender: 0
+                    };
+                    break;
+                case 7:
+                    return {
+                        name: "Enurchus",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+                case 17:
+                    return {
+                        name: "Lambert",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+                case 26:
+                    return {
+                        name: "Cyprian",
+                        longName: "",
+                        type: "Abp",
+                        gender: 0
+                    };
+                    break;
+                case 30:
+                    return {
+                        name: "Jerome",
+                        longName: "",
+                        type: "P",
+                        gender: 0
+                    };
+                    break;
+            }
+            break;
+        case 9: //oct
+    //october 13 trans k edw
+            switch (date) {
+                case 1:
+                    return {
+                        name: "Remigius",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+                case 6:
+                    return {
+                        name: "Faith",
+                        longName: "",
+                        type: "VM",
+                        gender: 1
+                    };
+                    break;
+                case 9:
+                    return {
+                        name: "Denis",
+                        longName: "",
+                        type: "BM",
+                        gender: 0
+                    };
+                    break;
+                case 17:
+                    return {
+                        name: "Etheldreda",
+                        longName: "",
+                        type: "V",
+                        gender: 1
+                    };
+                    break;
+                case 25:
+                    return {
+                        name: "Crispin",
+                        longName: "",
+                        type: "M",
+                        gender: 0
+                    };
+                    break;
+            }
+            break;
+        case 10: //nov
+            switch (date) {
+                case 6:
+                    return {
+                        name: "Leonard",
+                        longName: "",
+                        type: "C",
+                        gender: 0
+                    };
+                    break;
+                case 11:
+                    return {
+                        name: "Martin",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+                case 13:
+                    return {
+                        name: "Britius",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+                case 15:
+                    return {
+                        name: "Machutus",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+                case 20:
+                    return {
+                        name: "Edmund",
+                        longName: "",
+                        type: "",
+                        gender: 0
+                    };
+                    break;
+                case 22:
+                    return {
+                        name: "Cecilia",
+                        longName: "",
+                        type: "VM",
+                        gender: 1
+                    };
+                    break;
+                case 22:
+                    return {
+                        name: "Clement",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+                case 25:
+                    return {
+                        name: "Catherine",
+                        longName: "",
+                        type: "VM",
+                        gender: 1
+                    };
+                    break;
+            }
+            break;
+        case 11: //dec
+    //december 8 conc bvm 16 o sapientia
+            switch (date) {
+                case 6:
+                    return {
+                        name: "Nicholas",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+                case 13:
+                    return {
+                        name: "Lucy",
+                        longName: "",
+                        type: "VM",
+                        gender: 1
+                    };
+                    break;
+                case 31:
+                    return {
+                        name: "Silvester",
+                        longName: "",
+                        type: "B",
+                        gender: 0
+                    };
+                    break;
+            }
+            break;
+    }
+
+    return "";
 }
