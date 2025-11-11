@@ -515,5 +515,12 @@ const commination = `<H1>A Penitential Office</H1>
       <li>Blessed are the peacemakers: for they shall be called the children of God.</li>
       <li>Blessed are they which are persecuted for righteousness’ sake: for theirs is the kingdom of heaven.</li>
     </ol>
+
+    <P><span class='drop-cap'>O</span> ALMIGHTY Lord, and everlasting God, vouchsafe, we beseech thee,
+      to direct, sanctify, and govern, both our hearts and bodies,
+      in the ways of thy laws, and in the works of thy commandments;
+      that, through thy most mighty protection, both here and ever,
+      we may be preserved in body and soul; through our Lord and Saviour
+      Jesus Christ. Amen.</P>
     
     <p><span class='drop-cap'>T</span>HE Lord bless us, and keep us. The Lord make his face to shine upon us, and be gracious unto us. The Lord lift up his countenance upon us, and give us peace, both now and evermore. Amen.</p>`;
