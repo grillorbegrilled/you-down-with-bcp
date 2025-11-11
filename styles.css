@@ -134,7 +134,6 @@ h1 {
         "kern" 1,   /* kerning */
         "salt" 1,   /* stylistic alternates */
         "calt" 1,   /* contextual alternates */
-        "hist" 1,   /* historical forms OFF (disables long s) */
         "titl" 1;
 }
 h2 { 
