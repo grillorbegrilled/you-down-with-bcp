@@ -154,6 +154,20 @@ p {
     font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
 }
 
+p.dropcap {
+  /* no reset needed — keep exactly the same as <p> */
+}
+
+/* Just style the initial letter */
+p.dropcap::first-letter {
+  font-family: "EBGInit", serif;
+  font-size: 5.15em;
+  float: left;
+  padding-right: 3px;
+  color: #990000;
+  line-height: 0.9;
+}
+
 .drop-cap {
   float: left;
   display: inline-block;
