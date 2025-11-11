@@ -74,6 +74,7 @@ function getOffice(now, week, feast) {
                     As it was in the beginning, is now, and ever shall be * world without end. Amen.</p>`;
                 document.getElementById("office-collect").innerHTML = "<p><span class='drop-cap'>L</span>IGHTEN our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.</p>";
                 document.getElementById('sentence').style.display = "none";
+                document.getElementById("additional-prayers").style.display = "none";
                 break;
             default:
                 document.getElementById("office-name").textContent = "Error";
