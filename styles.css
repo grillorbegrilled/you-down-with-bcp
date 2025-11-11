@@ -134,7 +134,8 @@ h1 {
         "kern" 1,   /* kerning */
         "salt" 1,   /* stylistic alternates */
         "calt" 1,   /* contextual alternates */
-        "hist" 0;   /* historical forms OFF (disables long s) */
+        "hist" 1,   /* historical forms OFF (disables long s) */
+        "titl" 1;
 }
 h2 { 
     font-size: 1.15rem;
