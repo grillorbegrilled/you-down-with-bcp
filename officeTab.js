@@ -31,14 +31,14 @@ function getOffice(now, week, feast) {
                 if (antiphon) document.getElementById("antiphon").innerHTML = makeP(antiphon);
                 let canticle = getMorningCanticle(week, feast);
                 document.getElementById("canticle").innerHTML = canticle;
-                if (!canticle.startsWith(`<span class="drop-cap">W</span>E`))
-                    document.getElementById("creed-or-suffrages").innerHTML = `<p><span class='drop-cap'>I</span> BELIEVE in God the Father Almighty, Maker of heaven and earth: <br>
+                if (!canticle.startsWith(`WE`))
+                    document.getElementById("creed-or-suffrages").innerHTML = `<p class="dropcap">I BELIEVE in God the Father Almighty, Maker of heaven and earth: <br>
                         And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
                         I believe in the Holy Ghost: The holy Catholic Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>`;
                 getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
-                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
+                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeDropCap(lessonContent.txt)}`;
                 });
-                document.getElementById("office-collect").innerHTML = "<p><span class='drop-cap'>O</span> LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
+                document.getElementById("office-collect").innerHTML = "<p class="dropcap">O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
                 const cantMarg = getOfficeMargin2(now, feast || week);
                 if (cantMarg) document.getElementById("cantMarg").src = cantMarg;
                 else document.getElementById("cantMarg").style.display = "none";
@@ -46,7 +46,7 @@ function getOffice(now, week, feast) {
             case 2:
                 document.getElementById("office-name").textContent = "Evening Prayer";
                 document.getElementById("canticle").innerHTML = getEveningCanticle(feast, week);
-                document.getElementById("creed-or-suffrages").innerHTML = `<p><span class="drop-cap">O</span> LORD, show thy mercy upon us.<br>
+                document.getElementById("creed-or-suffrages").innerHTML = `<p class="dropcap">O LORD, show thy mercy upon us.<br>
                  	  <b>And grant us thy salvation.</b><br>
                  	  O Lord, save the State.<br>
                  	  <b>And mercifully hear us when we call upon thee.</b><br>
@@ -59,20 +59,20 @@ function getOffice(now, week, feast) {
                  	  O God, make clean our hearts within us.<br>
                    	<b>And take not thy Holy Spirit from us.</b></p>`;
                 getLessonFromFile(feast || week, "./lessons/evening.json", "./lessons/morning.json").then(lessonContent => {
-                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2><p>${makeDropCap(lessonContent.txt)}</p>`;
+                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeDropCap(lessonContent.txt)}`;
                 });
                 //document.getElementById('lesson').style.display = "none";
                 break;
             case 3:
                 document.getElementById("office-name").textContent = "Night Prayer";
-                document.getElementById("lp").innerHTML = "<span class='drop-cap'>A</span>LMIGHTY and most merciful Father; We have erred, and strayed from thy ways like lost sheep. We have followed too much the devices and desires of our own hearts. We have offended against thy holy laws. We have left undone those things which we ought to have done; And we have done those things which we ought not to have done; And there is no health in us. But thou, O Lord, have mercy upon us, miserable offenders. Spare thou those, O God, who confess their faults. Restore thou those who are penitent; According to thy promises declared unto mankind in Christ Jesus our Lord. And grant, O most merciful Father, for his sake; That we may hereafter live a godly, righteous, and sober life, To the glory of thy holy Name. Amen.";
-                document.getElementById("canticle").innerHTML = `<p><span class='drop-cap'>L</span>ORD, now lettest thou thy servant depart in peace * according to thy word.<br>
+                document.getElementById("lp").innerHTML = "ALMIGHTY and most merciful Father; We have erred, and strayed from thy ways like lost sheep. We have followed too much the devices and desires of our own hearts. We have offended against thy holy laws. We have left undone those things which we ought to have done; And we have done those things which we ought not to have done; And there is no health in us. But thou, O Lord, have mercy upon us, miserable offenders. Spare thou those, O God, who confess their faults. Restore thou those who are penitent; According to thy promises declared unto mankind in Christ Jesus our Lord. And grant, O most merciful Father, for his sake; That we may hereafter live a godly, righteous, and sober life, To the glory of thy holy Name. Amen.";
+                document.getElementById("canticle").innerHTML = `<p class='dropcap'>LORD, now lettest thou thy servant depart in peace * according to thy word.<br>
                     For mine eyes have seen * thy salvation,<br>
                     Which thou hast prepared * before the face of all people;<br>
                     To be a light to lighten the Gentiles * and to be the glory of thy people Israel.</p>
                     <p>Glory be to the Father, and to the Son * and to the Holy Ghost;<br>
                     As it was in the beginning, is now, and ever shall be * world without end. Amen.</p>`;
-                document.getElementById("office-collect").innerHTML = "<p><span class='drop-cap'>L</span>IGHTEN our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.</p>";
+                document.getElementById("office-collect").innerHTML = "<p class='dropcap'>LIGHTEN our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.</p>";
                 document.getElementById('sentence').style.display = "none";
                 document.getElementById("additional-prayers").style.display = "none";
                 break;
@@ -81,7 +81,7 @@ function getOffice(now, week, feast) {
                 break;
             }
 
-            document.getElementById("sentence").innerHTML = makeP(makeDropCap(getSentence(feast || week, officeType)));
+            document.getElementById("sentence").innerHTML = makeDropCap(getSentence(feast || week, officeType));
         } catch (e) {
             document.getElementById('creed-or-suffrages').innerHTML = `<p>I AM ERROR ${e}</p>`;
         }
@@ -94,12 +94,12 @@ function getOffice(now, week, feast) {
             "<p>O HEAVENLY Father, who in thy Word hast given us a vision of that holy City to which the nations of the world bring their glory: Behold and visit, we beseech thee, the <I>City</i> of <I>N.</i> Renew the bonds of charity that uphold our civic life. Send us honest and able leaders. Deliver us from poverty, prejudice, and oppression, that peace may prevail with righteousness, and justice with mercy. And at the last, bring us to thy Holy City, the new Jerusalem, where we shall know perfect unity and peace; through Jesus Christ our Lord. Amen.</p>";
         if ((day === 3 || day === 5) && officeType == 1) //All Conditions on W & F Morning
             additionalPrayers += `<h2>A Prayer for All Conditions of Men</h2>
-                <p><span class="drop-cap">O</span> GOD, the Creator and Preserver of all mankind, we humbly beseech thee for all sorts and conditions of men: that thou wouldest be pleased to make thy ways known unto them, thy saving health unto all nations. More especially, we pray for thy holy Church universal; that it may be so guided and governed by thy good Spirit, that all who profess and call themselves Christians may be led into the way of truth, and hold the faith in unity of spirit, in the bond of peace, and in righteousness of life. Finally, we commend to thy fatherly goodness all those, who are any ways afflicted, or distressed, in mind, body, or estate; ... that it may please thee to comfort and relieve them, according to their several necessities, giving them patience under their sufferings, and a happy issue out of all their afflictions. And this we beg for Jesus Christ’s sake. Amen.</p>`;
+                <p class="dropcap">O GOD, the Creator and Preserver of all mankind, we humbly beseech thee for all sorts and conditions of men: that thou wouldest be pleased to make thy ways known unto them, thy saving health unto all nations. More especially, we pray for thy holy Church universal; that it may be so guided and governed by thy good Spirit, that all who profess and call themselves Christians may be led into the way of truth, and hold the faith in unity of spirit, in the bond of peace, and in righteousness of life. Finally, we commend to thy fatherly goodness all those, who are any ways afflicted, or distressed, in mind, body, or estate; ... that it may please thee to comfort and relieve them, according to their several necessities, giving them patience under their sufferings, and a happy issue out of all their afflictions. And this we beg for Jesus Christ’s sake. Amen.</p>`;
         
         //General Thanks
         if (day === 0 || day === 4) //General Thanksgiving on Su & Th
             additionalPrayers += `<h2>A General Thanksgiving</h2>
-                <p><span class="drop-cap">A</span>LMIGHTY God, Father of all mercies, we thine unworthy servants do give thee most humble and hearty thanks for all thy goodness and loving-kindness to us, and to all men; ... . We bless thee for our creation, preservation, and all the blessings of this life; but above all, for thine inestimable love in the redemption of the world by our Lord Jesus Christ; for the means of grace, and for the hope of glory. And, we beseech thee, give us that due sense of all thy mercies, that our hearts may be unfeignedly thankful, and that we shew forth thy praise, not only with our lips, but in our lives; by giving up ourselves to thy service, and by walking before thee in holiness and righteousness all our days; through Jesus Christ our Lord, to whom with thee and the Holy Ghost be all honour and glory, world without end. Amen.</p>`;
+                <p class="dropcap">ALMIGHTY God, Father of all mercies, we thine unworthy servants do give thee most humble and hearty thanks for all thy goodness and loving-kindness to us, and to all men; ... . We bless thee for our creation, preservation, and all the blessings of this life; but above all, for thine inestimable love in the redemption of the world by our Lord Jesus Christ; for the means of grace, and for the hope of glory. And, we beseech thee, give us that due sense of all thy mercies, that our hearts may be unfeignedly thankful, and that we shew forth thy praise, not only with our lips, but in our lives; by giving up ourselves to thy service, and by walking before thee in holiness and righteousness all our days; through Jesus Christ our Lord, to whom with thee and the Holy Ghost be all honour and glory, world without end. Amen.</p>`;
 
         //Ember Days
         additionalPrayers += getEmberDayPrayer(week, now.getMonth(), now.getDate(), day);
@@ -109,7 +109,7 @@ function getOffice(now, week, feast) {
             additionalPrayers += `Blessèd Jesus, the only thing greater than the pain and anguish of your Passion was your mercy toward mankind, even to me. All this deserves more love than I have to give. Therefore, Lord, I beseech you to turn me all into love, and all my love into obedience, and let my obedience be without interruption. Make me to be something you delight in, that I may offer you all that I am, and all that I have. Clothe my soul in your garment, hide my sins in your wounds, and bury them in your grave, and then let me rise in the life of grace, and abide and grow in it, till I arrive at the kingdom of glory. Amen.<i>⸺Jeremy Taylor</i>`;
 
         //Grace
-        additionalPrayers += "<p><span class='drop-cap'>T</span>HE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>";
+        additionalPrayers += "<p class='dropcap'>THE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>";
         
         document.getElementById("additional-prayers").innerHTML = additionalPrayers;
     }
@@ -117,7 +117,7 @@ function getOffice(now, week, feast) {
 
 function getMorningCanticle(week, feast) {
     //Benedictus Dominus
-    if (['A1', 'A2', 'A3', 'A4'].includes(week) || feast === "JohnBaptist") return `<p style='margin-bottom: 0;'><span class="drop-cap">B</span>LESSED be the Lord God of Israel; * for he hath visited and redeemed his people;<br>
+    if (['A1', 'A2', 'A3', 'A4'].includes(week) || feast === "JohnBaptist") return `<p class="dropcap" style='margin-bottom: 0;'>BLESSED be the Lord God of Israel; * for he hath visited and redeemed his people;<br>
         And hath raised up a mighty salvation for us, * in the house of his servant David;<br>
         As he spake by the mouth of his holy Prophets, * which have been since the world began;<br>
         That we should be saved from our enemies, * and from the hand of all that hate us.<br>
@@ -134,7 +134,7 @@ function getMorningCanticle(week, feast) {
         As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
     
     //Pascha Nostrum
-    if (['Easter', 'EasterMon', 'EasterTue'].includes(week) && [0, 1, 2].includes (new Date().getDay())) return `<p><span class="drop-cap">C</span>HRIST our passover is sacrificed for us, * therefore let us keep the feast;<br>
+    if (['Easter', 'EasterMon', 'EasterTue'].includes(week) && [0, 1, 2].includes (new Date().getDay())) return `<p class="dropcap">CHRIST our passover is sacrificed for us, * therefore let us keep the feast;<br>
           Not with the old leaven, nor with the leaven of malice and wickedness, * but with the unleavened bread of sincerity and truth. <i>1 Cor. 5:7, 8</i></p>
         <p>Christ being raised from the dead dieth no more, * death hath no more dominion over him.<br>
           For in that he died, he died unto sin once, * but in that he liveth, he liveth unto God.<br>
@@ -146,7 +146,7 @@ function getMorningCanticle(week, feast) {
         As it was in the beginning, is now, and ever shall be * world without end. Amen.</p>`;
     
     //Benedictus Es
-    if (['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week) && !(feast === 'Annunciation' && (new Date()).getDay() !== 0)) return `<p><span class="drop-cap">B</span>LESSED art thou, O Lord God of our fathers: * praised and exalted above all for ever.<br>
+    if (['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week) && !(feast === 'Annunciation' && (new Date()).getDay() !== 0)) return `<p class="dropcap">BLESSED art thou, O Lord God of our fathers: * praised and exalted above all for ever.<br>
         Blessed art thou for the Name of thy Majesty: * praised and exalted above all for ever.<br>
         Blessed art thou in the temple of thy holiness: * Praised and exalted above all for ever.<br>
         Blessed art thou that beholdest the depths, and dwellest between the Cherubim: * praised and exalted above all for ever.<br>
@@ -156,7 +156,7 @@ function getMorningCanticle(week, feast) {
         As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
 
     //Te Deum
-    if (['Xmas', 'X1', 'Whitsun', 'Whitmon', 'WhitTue'].includes(week) || feast === 'Annunciation') return `<p style='margin-bottom: 0;'><span class="drop-cap">W</span>E praise thee, O God; we acknowledge thee to be the Lord.<br>
+    if (['Xmas', 'X1', 'Whitsun', 'Whitmon', 'WhitTue'].includes(week) || feast === 'Annunciation') return `<p style='margin-bottom: 0;' class="drop-cap">WE praise thee, O God; we acknowledge thee to be the Lord.<br>
         All the earth doth worship thee, the Father everlasting.<br>
         To thee all Angels cry aloud; the Heavens, and all the Powers therein;<br>
         To thee Cherubim and Seraphim continually do cry,<br>
@@ -188,7 +188,7 @@ function getMorningCanticle(week, feast) {
         O Lord, in thee have I trusted; let me never be confounded.</p>`;
 
     //Thanksgiving
-    if (feast === "Thanksgiving") return `<p><span class="drop-cap">O</span> PRAISE the Lord, for it is a good thing to sing praises unto our God; * yea, a joyful and pleasant thing it is to be thankful.<br>
+    if (feast === "Thanksgiving") return `<p class="dropcap">O PRAISE the Lord, for it is a good thing to sing praises unto our God; * yea, a joyful and pleasant thing it is to be thankful.<br>
         The Lord doth build up Jerusalem, * and gather together the outcasts of Israel.<br>
         He healeth those that are broken in heart, * and giveth medicine to heal their sickness.<br>
         O sing unto the Lord with thanksgiving; * sing praises upon the harp unto our God:<br>
@@ -201,7 +201,7 @@ function getMorningCanticle(week, feast) {
         As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
     
     //Psalm 100;
-    return `<p><span class="drop-cap">O</span> BE joyful in the Lord, all ye lands: * serve the Lord with gladness, and come before his presence with a song.
+    return `<p class="dropcap">O BE joyful in the Lord, all ye lands: * serve the Lord with gladness, and come before his presence with a song.
         Be ye sure that the Lord he is God; it is he that hath made us, and not we ourselves; * we are his people, and the sheep of his pasture.
         O go your way into his gates with thanksgiving, and into his courts with praise; * be thankful unto him, and speak good of his Name.
         For the Lord is gracious, his mercy is everlasting; * and his truth endureth from generation to generation.</p>
@@ -210,11 +210,11 @@ function getMorningCanticle(week, feast) {
 }
 
 function getEveningCanticle(isFeast, week) {
-    if (isFeast && !['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week)) return `<p><span class="drop-cap">G</span>LORY be to God on high, and on earth peace, good will towards men. We praise thee, we bless thee, we worship thee, we glorify thee, we give thanks to thee for thy great glory, O Lord God, heavenly King, God the Father Almighty.<br>
+    if (isFeast && !['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week)) return `<p class="dropcap">GLORY be to God on high, and on earth peace, good will towards men. We praise thee, we bless thee, we worship thee, we glorify thee, we give thanks to thee for thy great glory, O Lord God, heavenly King, God the Father Almighty.<br>
         O Lord, the only-begotten Son, Jesus Christ; O Lord God, Lamb of God, Son of the Father, that takest away the sins of the world, have mercy upon us. Thou that takest away the sins of the world, receive our prayer. Thou that sittest at the right hand of God the Father, have mercy upon us.<br>
         For thou only art holy; thou only art the Lord; thou only, O Christ, with the Holy Ghost, art most high in the glory of God the Father. Amen.</p>`;
 
-    return `<p><span class="drop-cap">M</span>Y soul doth magnify the Lord, * and my spirit hath rejoiced in God my Saviour.<br>
+    return `<p class="dropcap">MY soul doth magnify the Lord, * and my spirit hath rejoiced in God my Saviour.<br>
         For he hath regarded * the lowliness of his handmaiden.<br>
         For behold, from henceforth * all generations shall call me blessed.<br>
         For he that is mighty hath magnified me; * and holy is his Name.<br>
@@ -356,7 +356,7 @@ const litany = `<H1>The Litany</H1>
         and Advocate, Jesus Christ our Lord. Amen.</p>`;
 
 const commination = `<H1>A Penitential Office</H1>
-    <p><span class='drop-cap'>B</span>LESS the Lord, who forgiveth all our sins.<br>
+    <p class='dropcap'>BLESS the Lord, who forgiveth all our sins.<br>
     <b>His mercy endureth for ever.</b></p>
     
     <H2>The Seven Deadly Sins</H2>
@@ -413,7 +413,7 @@ const commination = `<H1>A Penitential Office</H1>
     <p>Have I done evil, or neglected good, whether in the pursuit of enjoyment and comfort or the avoidance of pain and irritation?</p>
     
     <H2>The Ten Commandments</H2>
-    <P><span class='drop-cap'>G</span>OD spake these words, and said:</P>
+    <P class='dropcap'>GOD spake these words, and said:</P>
     <ol type="I">
       <li>I am the Lord thy God; Thou shalt have none other gods but me.</li>
       <li>Thou shalt not make to thyself any graven image, nor the likeness
@@ -458,7 +458,7 @@ const commination = `<H1>A Penitential Office</H1>
     <p><b>Lord, have mercy upon us, and write all these thy laws in our hearts, we beseech thee.</b></P>
 
     <h2>Confession</h2>
-    <p><span class='drop-cap'>A</span>LMIGHTY God, Father of our Lord Jesus Christ,<BR>
+    <p class='dropcap'>ALMIGHTY God, Father of our Lord Jesus Christ,<BR>
     Maker of all things, judge of all men;<BR>
     We acknowledge and bewail our manifold sins and wickedness,<BR>
     Which we, from time to time, most grievously have committed,<BR>
@@ -479,7 +479,7 @@ const commination = `<H1>A Penitential Office</H1>
     To the honour and glory of thy Name; <BR>
     Through Jesus Christ our Lord. Amen.</p>
 
-    <p><span class='drop-cap'>H</span>EAR what comfortable words our Saviour Christ saith unto all that truly turn to him.<br>
+    <p class='dropcap'>HEAR what comfortable words our Saviour Christ saith unto all that truly turn to him.<br>
       Come unto me all that travail and are heavy laden, and I will refresh you. <i>&mdash;St. Matthew 11:28</i><br>
       So God loved the world, that he gave his only-begotten Son, to the end that all that believe in him should not perish, but have everlasting life. <i>&mdash;St. John 3:16</i></p>
 
@@ -489,7 +489,7 @@ const commination = `<H1>A Penitential Office</H1>
     <p>Hear also what Saint John saith.<br>
       If any man sin, we have an Advocate with the Father, Jesus Christ the righteous; and he is the propitiation for our sins. <i>&mdash;1 St. John 2:1</i></p>
 
-    <p><span class='drop-cap'>B</span>LESSED is he whose unrighteousness is forgiven * and whose sin is covered.<BR>
+    <p class='dropcap'>BLESSED is he whose unrighteousness is forgiven * and whose sin is covered.<BR>
     Blessed is the man unto whom the Lᴏʀᴅ imputeth no sin * and in whose spirit there is no guile.<BR>
     I said, I will confess my sins unto the Lᴏʀᴅ * and so thou forgavest the wickedness of my sin.</p>
     <p>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>
@@ -516,11 +516,11 @@ const commination = `<H1>A Penitential Office</H1>
       <li>Blessed are they which are persecuted for righteousness’ sake: for theirs is the kingdom of heaven.</li>
     </ol>
 
-    <P><span class='drop-cap'>O</span> ALMIGHTY Lord, and everlasting God, vouchsafe, we beseech thee,
+    <P class='dropcap'>O ALMIGHTY Lord, and everlasting God, vouchsafe, we beseech thee,
       to direct, sanctify, and govern, both our hearts and bodies,
       in the ways of thy laws, and in the works of thy commandments;
       that, through thy most mighty protection, both here and ever,
       we may be preserved in body and soul; through our Lord and Saviour
       Jesus Christ. Amen.</P>
     
-    <p><span class='drop-cap'>T</span>HE Lord bless us, and keep us. The Lord make his face to shine upon us, and be gracious unto us. The Lord lift up his countenance upon us, and give us peace, both now and evermore. Amen.</p>`;
+    <p class='dropcap'>THE Lord bless us, and keep us. The Lord make his face to shine upon us, and be gracious unto us. The Lord lift up his countenance upon us, and give us peace, both now and evermore. Amen.</p>`;
