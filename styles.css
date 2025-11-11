@@ -127,6 +127,14 @@ h1 {
     font-size: 1.5rem; 
     text-align: center;
     font-weight: normal;
+      font-feature-settings:
+        "liga" 1,   /* common ligatures */
+        "dlig" 1,   /* discretionary ligatures */
+        "clig" 1,   /* contextual ligatures */
+        "kern" 1,   /* kerning */
+        "salt" 1,   /* stylistic alternates */
+        "calt" 1,   /* contextual alternates */
+        "hist" 0;   /* historical forms OFF (disables long s) */
 }
 h2 { 
     font-size: 1.15rem;
@@ -163,7 +171,6 @@ p {
 }
 
 .drop-cap {
-  font-family: 'Blackletter', Garamond, Georgia, serif;
   float: left;
   font-size: 3.5rem;
   line-height: 3rem;
