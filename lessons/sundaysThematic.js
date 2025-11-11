@@ -29,9 +29,9 @@ const sundaysThematic = {
 "Isaiah 11:1-10", "John 5:30-40"
 ],
 "A3":[
-"Jeremiah 1:4-10,17-19", "Luke 1:57ff",
+"Jeremiah 1:4-10, 17-19", "Luke 1:57ff",
 "*Isaiah 35", "1 Thessalonians 5:12-23",
-"Nahum 1:3-8,15", "1 Corinthians 9:7-23",
+"Nahum 1:3-8, 15", "1 Corinthians 9:7-23",
 "Isaiah 26:1-11", "Matthew 9:35-10:15"
 ],
 "A4":[
@@ -90,7 +90,7 @@ const sundaysThematic = {
 "*Isaiah 50:4-10", "2 Corinthians 12:1-12",
 "Isaiah 30:8-21", "Mark 4:26-34",
 "Ecclesiastes 11:1-6", "John 4:31-38",
-"Daniel 3:1-26", "Matthew 10:16-23,40-42"
+"Daniel 3:1-26", "Matthew 10:16-23, 40-42"
 ],
 "L":[
 "Isaiah 5:1-16", "Wisdom 7:7-14", "John 15:1-17",
@@ -111,8 +111,8 @@ const sundaysThematic = {
 "Habakkuk 2:1-14", "Ecclesiasticus 51:1-12", "Luke 18:1-8"
 ],
 "L3":[
-"*Deuteronomy 6:1-9,20-25", "1 Corinthians 3",
-"Zechariah 1:1-6,12-17", "Mark 8:27-9:1",
+"*Deuteronomy 6:1-9, 20-25", "1 Corinthians 3",
+"Zechariah 1:1-6, 12-17", "Mark 8:27-9:1",
 "Amos 5:4-15", "Galatians 5:16-24",
 "Proverbs 4:7-18", "Luke 11:29-36"
 ],
@@ -131,12 +131,12 @@ const sundaysThematic = {
 "Palm":[
 "*Zechariah 9:9-12", "Mark 11:1-11",
 "Isaiah 52:13–53:12", "Matthew 26",
-"Jeremiah 8:9-15,18-9:1", "1 Corinthians 1:17ff",
+"Jeremiah 8:9-15, 18-9:1", "1 Corinthians 1:17ff",
 "Isaiah 59:1-3, 9-21", "John 12:20-36"
 ],
 "Easter":[
-"*Isaiah 25:1-9", "Matthew 28:1-10,16-20",
-"Exodus 12:1-14", "Revelation 14:1-7,12-13",
+"*Isaiah 25:1-9", "Matthew 28:1-10, 16-20",
+"Exodus 12:1-14", "Revelation 14:1-7, 12-13",
 "Isaiah 51:9-16", "Luke 24:13-35",
 "Isaiah 12", "John 20:11-18"
 ],
@@ -149,19 +149,19 @@ const sundaysThematic = {
 "Ea2":[
 "*Isaiah 40:1-11", "John 10:1-10",
 "Ecclesiastes 9", "Baruch 4:21-30", "Philippians 3:7-16",
-"Ezekiel 34:11-16,30-31", "John 21:1-19",
+"Ezekiel 34:11-16, 30-31", "John 21:1-19",
 "Ezekiel 20:1-20", "2 Esdras 8:20-30, 46, 51-54", "1 Corinthians 15:12-23"
 ],
 "Ea3":[
 "2 Samuel 12:15b-23", "John 14:1-14",
 "*1 Samuel 2:1b-10", "Acts 2:22-36",
-"Isaiah 26:12-16,19", "2 Corinthians 5",
+"Isaiah 26:12-16, 19", "2 Corinthians 5",
 "Nehemiah 1", "Wisdom 5:1-6, 14-16", "Luke 20:27-39"
 ],
 "Ea4":[
 "*Job 19:21-27a", "John 12:44ff",
 "Ezekiel 37:1-14", "Acts 3:1-21",
-"Daniel 12:1-4,13", "1 Thessalonians 4:13ff",
+"Daniel 12:1-4, 13", "1 Thessalonians 4:13ff",
 "Isaiah 60:13ff", "John 8:12-30"
 ],
 "Ea5":[
@@ -171,12 +171,12 @@ const sundaysThematic = {
 "Ezekiel 36:25ff", "Mark 11:22-26"
 ],
 "Asc1":[
-"*Isaiah 33:5,17,20-22", "John 17",
+"*Isaiah 33:5, 17, 20-22", "John 17",
 "Isaiah 4:2ff", "Hebrews 4:14-5:10",
-"Isaiah 65:17ff", "Revelation 21:1-14,21-27",
+"Isaiah 65:17ff", "Revelation 21:1-14, 21-27",
 "Zephaniah 3:8-17", "Wisdom 9", "Ephesians 1",
-"Isaiah 32:1-4,15-20", "John 3:16-21,31-36a",
-"Daniel 7:9-10,13-14", "Revelation 22"
+"Isaiah 32:1-4, 15-20", "John 3:16-21, 31-36a",
+"Daniel 7:9-10, 13-14", "Revelation 22"
 ],
 "Whitsun":[
 "Numbers 11:16-29", "Wisdom 1:1-7", "John 4:19-26",
@@ -193,13 +193,13 @@ const sundaysThematic = {
 "T1":[
 "*Jeremiah 23:23-32", "Matthew 7:13ff",
 "Isaiah 5:8-24", "James 5",
-"Deuteronomy 30:11ff", "John 13:1-17,34-35",
+"Deuteronomy 30:11ff", "John 13:1-17, 34-35",
 "Job 21:17-33"
 ],
 "T2":[
 "Job 31:13-28", "1 Corinthians 13",
 "*Deuteronomy 20:1-9", "Luke 9:57",
-"1 Samuel 20:1-7,12-42", "1 Peter 1:17",
+"1 Samuel 20:1-7, 12-42", "1 Peter 1:17",
 "2 Kings 4:8-17"
 ],
 "T3":[
@@ -210,26 +210,26 @@ const sundaysThematic = {
 ],
 "T4":[
 "*Lamentations 3:22-33", "Matthew 10:24-39",
-"Deuteronomy 32:1-4,34-39", "Romans 2:1-16",
+"Deuteronomy 32:1-4, 34-39", "Romans 2:1-16",
 "Isaiah 29:9-15", "Matthew 15:1-20",
-"Proverbs 27:1,10-12"
+"Proverbs 27:1, 10-12"
 ],
 "T5":[
-"*Ecclesiastes 2:1-11,18-23", "Matthew 19:16ff",
-"Proverbs 15:1-10,26", "James 3",
-"Proverbs 3:1-7,11-12", "Luke 14:25ff",
+"*Ecclesiastes 2:1-11, 18-23", "Matthew 19:16ff",
+"Proverbs 15:1-10, 26", "James 3",
+"Proverbs 3:1-7, 11-12", "Luke 14:25ff",
 "Judges 6:11-23"
 ],
 "T6":[
 "2 Samuel 19:16-23", "Matthew 5:38ff",
 "*Isaiah 57:13b-19", "2 Timothy 2:7-13",
-"Exodus 24:1-11,16-18", "Hebrews 9:18ff",
+"Exodus 24:1-11, 16-18", "Hebrews 9:18ff",
 "Genesis 4:1-16"
 ],
 "T7":[
 "*Hosea 14", "Romans 6:12-18",
 "2 Kings 22", "Ecclesiasticus 6:5-17", "John 15:12ff",
-"Daniel 5:1-9,13-30", "Romans 1:17-32",
+"Daniel 5:1-9, 13-30", "Romans 1:17-32",
 "Micah 7:14ff"
 ],
 "T8":[
@@ -248,7 +248,7 @@ const sundaysThematic = {
 "Lamentations 1:1-12"
 ],
 "T11":[
-"*Isaiah 26:12-16,19", "Romans 8:26ff",
+"*Isaiah 26:12-16, 19", "Romans 8:26ff",
 "Job 5:8-18", "Matthew 23:13-31",
 "Deuteronomy 15:7-18", "Ecclesiasticus 35:10-19", "Mark 12:38ff",
 "Ecclesiastes 5:1-7"
@@ -260,8 +260,8 @@ const sundaysThematic = {
 "Isaiah 29:18"
 ],
 "T13":[
-"*Joshua 24:14-28", "Ecclesiasticus 17:1-15", "Mark 3:20-21,31-35",
-"Habakkuk 1:12-2:4,14", "Hebrews 10:35ff",
+"*Joshua 24:14-28", "Ecclesiasticus 17:1-15", "Mark 3:20-21, 31-35",
+"Habakkuk 1:12-2:4, 14", "Hebrews 10:35ff",
 "Deuteronomy 15:7-15", "Matthew 26:6-13",
 "Deuteronomy 24:10ff"
 ],
@@ -269,7 +269,7 @@ const sundaysThematic = {
 "*Micah 6:1-8", "Philippians 4:4-13",
 "1 Chronicles 29:10-17", "Luke 17:5-10",
 "Jeremiah 7:1-11", "Luke 13:18-30",
-"Deuteronomy 8:1-14,17-20"
+"Deuteronomy 8:1-14, 17-20"
 ],
 "T15":[
 "*Proverbs 26:1-12", "Ecclesiasticus 5:1-10", "Luke 12:13-21",
@@ -302,13 +302,13 @@ const sundaysThematic = {
 "Job 34:10-28", "Wisdom 12:12-19"
 ],
 "T20":[
-"Malachi 2:14ff", "Matthew 19:3-9a,13-15",
+"Malachi 2:14ff", "Matthew 19:3-9a, 13-15",
 "*Ecclesiastes 9:4-10", "Ephesians 6:1-9",
 "Jeremiah 31:31-37", "John 13:31-35",
 "Jeremiah 2:1-9, 13"
 ],
 "T21":[
-"*Isaiah 59:15ff", "2 Corinthians 10:1-7,17-18",
+"*Isaiah 59:15ff", "2 Corinthians 10:1-7, 17-18",
 "Proverbs 3:13-26", "Baruch 3:14-15, 29-37", "John 9:1-38",
 "Genesis 15:1-6", "Romans 4:1-8",
 "2 Kings 5:1-15"
