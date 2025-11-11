@@ -44,6 +44,16 @@
   src: url('KJV1611.woff2') format('woff');
   font-weight: normal;
   font-display: swap;
+  font-feature-settings:
+        "liga" 1,   /* common ligatures */
+        "dlig" 1,   /* discretionary ligatures */
+        "clig" 1,   /* contextual ligatures */
+        "kern" 1,   /* kerning */
+        "salt" 1,   /* stylistic alternates */
+        "calt" 1,   /* contextual alternates */
+        "ornm" 1,
+        "onum" 1,
+        "titl" 1;
 }
 
 
@@ -127,14 +137,6 @@ h1 {
     font-size: 1.5rem; 
     text-align: center;
     font-weight: normal;
-      font-feature-settings:
-        "liga" 1,   /* common ligatures */
-        "dlig" 1,   /* discretionary ligatures */
-        "clig" 1,   /* contextual ligatures */
-        "kern" 1,   /* kerning */
-        "salt" 1,   /* stylistic alternates */
-        "calt" 1,   /* contextual alternates */
-        "titl" 1;
 }
 h2 { 
     font-family: 'Blackletter', Garamond, Georgia, serif;
