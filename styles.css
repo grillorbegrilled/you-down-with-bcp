@@ -137,19 +137,19 @@ h1 {
         "titl" 1;
 }
 h2 { 
+    font-family: 'Blackletter', Garamond, Georgia, serif;
     font-size: 1.15rem;
     text-align: center;
     margin-bottom: 0;
     padding: 0;
-    font-feature-settings: "liga" 1, "dlig" 1, "swsh" 0, "calt" 1;
-    font-style: italic;
 }
 
 h3 { 
     text-align: center;
     margin-bottom: 0;
     padding: 0;
-    font-feature-settings: "liga" 1, "dlig" 1, "calt" 1;
+    font-feature-settings: "liga" 1, "dlig" 1, "swsh" 0, "calt" 1;
+    font-style: italic;
 }
 
 .fastingLabel { 
