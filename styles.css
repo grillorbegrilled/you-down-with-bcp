@@ -169,12 +169,19 @@ p.dropcap {
 /* Just style the initial letter */
 p.dropcap::first-letter {
   font-family: "EBGInit" !important;
+  float: left;
+  display: inline-block;
+  font-size: 5rem;
+  line-height: 1;
+  margin: -0.5rem 0 -1rem 0; /*top right bottom left*/
+}
+/*
   font-size: 5rem;
   float: left;
   padding-right: 3px;
   color: #990000;
   line-height: 1;
-}
+}*)
 
 .drop-cap {
   float: left;
