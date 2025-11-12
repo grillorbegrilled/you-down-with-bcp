@@ -66,6 +66,7 @@ function getOffice(now, week, feast) {
             case 3:
                 document.getElementById("office-name").textContent = "Night Prayer";
                 document.getElementById("lp").innerHTML = "ALMIGHTY and most merciful Father; We have erred, and strayed from thy ways like lost sheep. We have followed too much the devices and desires of our own hearts. We have offended against thy holy laws. We have left undone those things which we ought to have done; And we have done those things which we ought not to have done; And there is no health in us. But thou, O Lord, have mercy upon us, miserable offenders. Spare thou those, O God, who confess their faults. Restore thou those who are penitent; According to thy promises declared unto mankind in Christ Jesus our Lord. And grant, O most merciful Father, for his sake; That we may hereafter live a godly, righteous, and sober life, To the glory of thy holy Name. Amen.";
+                document.getElementById("lp").className = "dropcap";
                 document.getElementById("canticle").innerHTML = `<p class='dropcap'>LORD, now lettest thou thy servant depart in peace * according to thy word.<br>
                     For mine eyes have seen * thy salvation,<br>
                     Which thou hast prepared * before the face of all people;<br>
