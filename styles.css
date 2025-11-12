@@ -168,7 +168,7 @@ p.dropcap {
 
 /* Just style the initial letter */
 p.dropcap::first-letter {
-  font-family: "EBGInit", "Garamond", serif;
+  font-family: "EBGInit" !important;
   font-size: 5.15em;
   float: left;
   padding-right: 3px;
