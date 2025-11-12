@@ -38,6 +38,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'EBGInit';
+  src: url('EBGaramond-Initials.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 @font-face {
   font-family: 'Blackletter';
@@ -160,7 +168,7 @@ p.dropcap {
 
 /* Just style the initial letter */
 p.dropcap::first-letter {
-  font-family: "EBGInit", serif;
+  font-family: "EBGInit", "Garamond", serif;
   font-size: 5.15em;
   float: left;
   padding-right: 3px;
