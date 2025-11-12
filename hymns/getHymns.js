@@ -39,7 +39,7 @@ async function getHymns2(liturgicalDay) {
 
   const items = await getDataFromFile(liturgicalDay, "hymns");
   var result = "";
-  if (items) result = items.map(item => `<p>${item}</p>`).join("<p style='text-align: center;'>✠&#9;✠&#9;✠</p>");
+  if (items) result = items.map(item => `<p class="dropcap">${item}</p>`).join("");//<p style='text-align: center;'>✠&#9;✠&#9;✠</p>");
 
   return {"hymns": result, "multiple": items.length > 1};
 }
