@@ -36,7 +36,7 @@ function getOffice(now, week, feast) {
                         And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
                         I believe in the Holy Ghost: The holy Catholic Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>`;
                 getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
-                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeDropCap(lessonContent.txt)}`;
+                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeP(lessonContent.txt)}`;
                 });
                 document.getElementById("office-collect").innerHTML = "<p class='dropcap'>O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
                 const cantMarg = getOfficeMargin2(now, feast || week);
@@ -59,7 +59,7 @@ function getOffice(now, week, feast) {
                  	  O God, make clean our hearts within us.<br>
                    	<b>And take not thy Holy Spirit from us.</b></p>`;
                 getLessonFromFile(feast || week, "./lessons/evening.json", "./lessons/morning.json").then(lessonContent => {
-                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeDropCap(lessonContent.txt)}`;
+                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeP(lessonContent.txt)}`;
                 });
                 //document.getElementById('lesson').style.display = "none";
                 break;
@@ -156,7 +156,7 @@ function getMorningCanticle(week, feast) {
         As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>`;
 
     //Te Deum
-    if (['Xmas', 'X1', 'Whitsun', 'Whitmon', 'WhitTue'].includes(week) || feast === 'Annunciation') return `<p style='margin-bottom: 0;' class="drop-cap">WE praise thee, O God; we acknowledge thee to be the Lord.<br>
+    if (['Xmas', 'X1', 'Whitsun', 'Whitmon', 'WhitTue'].includes(week) || feast === 'Annunciation') return `<p style='margin-bottom: 0;' class="dropcap">WE praise thee, O God; we acknowledge thee to be the Lord.<br>
         All the earth doth worship thee, the Father everlasting.<br>
         To thee all Angels cry aloud; the Heavens, and all the Powers therein;<br>
         To thee Cherubim and Seraphim continually do cry,<br>
