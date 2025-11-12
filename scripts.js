@@ -15,9 +15,9 @@ function displayEventDetails() {
     if (collect.includes("</p><p>")) for (let e of document.getElementsByName('c_h')) e.textContent = 'The Collects';
     for (let e of document.getElementsByName('c')) e.innerHTML = collect;
     for (let e of document.getElementsByName('e_cit')) e.textContent = `${details.e.cit}`;
-    for (let e of document.getElementsByName('e_txt')) e.innerHTML = makeDropCap(details.e.txt);
+    for (let e of document.getElementsByName('e_txt')) e.textContent = details.e.txt;
     for (let e of document.getElementsByName('g_cit')) e.textContent = `${details.g.cit}`;
-    for (let e of document.getElementsByName('g_txt')) e.innerHTML = makeDropCap(details.g.txt);
+    for (let e of document.getElementsByName('g_txt')) e.textContent = details.g.txt;
 }).catch(error => {
     for (let e of document.getElementsByName('e_txt')) e.innerHTML = makeP(error.message);
 });
@@ -161,6 +161,7 @@ function makeP(text){
 }
 
 const makeDropCap = text => `<p class="dropcap">${text}</p>`;
+
 
 
 
