@@ -38,7 +38,7 @@ function getOffice(now, week, feast) {
                 getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
                     document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeP(lessonContent.txt)}`;
                 });
-                document.getElementById("office-collect").innerHTML = "<p class='dropcap'>O LORD, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
+                document.getElementById("office-collect").innerHTML = "<p>O Lord, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
                 const cantMarg = getOfficeMargin2(now, feast || week);
                 if (cantMarg) document.getElementById("cantMarg").src = cantMarg;
                 else document.getElementById("cantMarg").style.display = "none";
@@ -58,6 +58,7 @@ function getOffice(now, week, feast) {
                  	  <b>For it is thou, Lord, only, that makest us dwell in safety.</b><br>
                  	  O God, make clean our hearts within us.<br>
                    	<b>And take not thy Holy Spirit from us.</b></p>`;
+                document.getElementById("office-collect").innerHTML = "<p>O God, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.</p>";
                 getLessonFromFile(feast || week, "./lessons/evening.json", "./lessons/morning.json").then(lessonContent => {
                     document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeP(lessonContent.txt)}`;
                 });
@@ -73,7 +74,7 @@ function getOffice(now, week, feast) {
                     To be a light to lighten the Gentiles * and to be the glory of thy people Israel.</p>
                     <p>Glory be to the Father, and to the Son * and to the Holy Ghost;<br>
                     As it was in the beginning, is now, and ever shall be * world without end. Amen.</p>`;
-                document.getElementById("office-collect").innerHTML = "<p class='dropcap'>LIGHTEN our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.</p>";
+                document.getElementById("office-collect").innerHTML = "<p>Lighten our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.</p>";
                 document.getElementById('sentence').style.display = "none";
                 document.getElementById("additional-prayers").style.display = "none";
                 break;
