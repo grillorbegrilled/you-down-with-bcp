@@ -174,7 +174,7 @@ p.dropcap::first-letter {
   font-size: 5rem;
   line-height: 1;
   color: firebrick;
-  margin: 0 0 -1rem 0; /*top right bottom left*/
+  margin: 0 0 -0.5rem 0; /*top right bottom left*/
 }
 /*
   font-size: 5rem;
