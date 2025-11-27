@@ -190,7 +190,7 @@ function getMorningCanticle(week, feast) {
         O Lord, in thee have I trusted; let me never be confounded.</p>`;
 
     //Thanksgiving
-    if (feast === "Thanksgiving") return `<p class="dropcap">O PRAISE the Lord, for it is a good thing to sing praises unto our God; * yea, a joyful and pleasant thing it is to be thankful.<br>
+    if (feast === "ThanksgivingDay") return `<p class="dropcap">O PRAISE the Lord, for it is a good thing to sing praises unto our God; * yea, a joyful and pleasant thing it is to be thankful.<br>
         The Lord doth build up Jerusalem, * and gather together the outcasts of Israel.<br>
         He healeth those that are broken in heart, * and giveth medicine to heal their sickness.<br>
         O sing unto the Lord with thanksgiving; * sing praises upon the harp unto our God:<br>
