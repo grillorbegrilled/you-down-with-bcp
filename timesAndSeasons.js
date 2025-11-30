@@ -380,7 +380,7 @@ function getLiturgicalDate(now) {
         if (day === 1 || day > 1 && day <= 8) return "AllSaints";
         if (day === 16) return "Hugh";
         if (day >= 22 && day <= 28 && [4, 5].includes(now.getDay()) || day === 29 && now.getDay() === 5) return "ThanksgivingDay";
-        if (day === 30) return "Andrew";
+        if (day === 30) {if (now.getDay() == 0) return "A1"; else return "Andrew";}
     } else { //dec
         if (day === 21) return "Thomas";
         if (day === 25) return "Xmas";
