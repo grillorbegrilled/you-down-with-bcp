@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Prayers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="frames.css">
+    <!--<link href='https://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet'>-->
+    <script src="burial.js"></script>
+    <!--<script src="hymns.js"></script>-->
+    <script src="dayNames.js"></script>
+    <script src="canticles.js"></script>
+    <script src="litany.js"></script>
+    <!--<script src="penitentialOffice.js"></script>-->
+    <script src="timesAndSeasons.js"></script>
+    <script src="colors.js"></script>
+    <script src="marginalia.js"></script>
+    <script src="officeTab.js"></script>
+    <!--<script src="lessons.js"></script>-->
+    <script src="lessons/sundaysThematic.js"></script>
+    <script src="getScripture.js"></script>
+    <script src="emberDays.js"></script>
+    <script src="imageSelector.js"></script>
+    <script src="getIntercessions.js"></script>
+    <script src="properPrefaces.js"></script>
+    <script src="antiphons.js"></script>
+    <script src="sentences.js"></script>
+    <script src="hymns/getHymns.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        window.onload = function() {
+              displayEventDetails();
+              for (let e of document.getElementsByName("prez")) e.textContent = "Donald";
+              for (let e of document.getElementsByName("guv")) e.textContent = "Michael";
+              for (let e of document.getElementsByName("clergy")) e.textContent = "Sarah, Sean, Stephen, Raymond, Chandler, Juan, Mark, y Peter";
+        }
+    </script>
+</head>
+<body>
+    <div class="background" id="top-image"></div>
+    <div class="card">
+        <div class="content">
+            <div class="tab-content active" id="tab-0">
+                <img name="bookmark" class="bookmark">
+                <h1 id="office-name"></h1>
+                <p id="fastDayLabel" class="fastingLabel"></p>
+                <div id="sentence"></div>
+                <img id="topMarg" class="centerMarg"></img>
+                <p id="lp">PADRE nuestro, que estás en los cielos, Santificado sea tu Nombre. Venga tu reino. Hágase tu voluntad, Así en la tierra como en los cielos. El pan nuestro de cada día, dánosle hoy. Y perdónanos nuestras deudas, Así como nosotros perdonamos a nuestros deudores. Y no nos dejes caer en la tentación, Mas líbranos de mal. Porque tuyo es el reino, y el poder, y la gloria, por siempre jamás. Amén.</p>
+                <div id="antiphon"></div>
+                <img id="cantMarg" class="leftMarg"></img>
+                <div id="canticle"></div>
+                <div id="lesson"></div>
+                <div id="creed-or-suffrages"></div>
+                <p name="c" id="cotd-office"></p>
+                <div id="office-collect"></div>
+                <div id="additional-prayers"></div>
+            </div>
+            
+            <div class="tab-content" id="tab-1">
+                <h1>Missa Sicca<br>
+                for<br>
+                <span id="nameOfTheDay"></span></h1>
+                <img id="euchMarg" class="centerMarg">
+                  <P class="dropcap">ALMIGHTY God, unto whom all hearts are open, all desires known,
+                  and from whom no secrets are hid; Cleanse the thoughts of our
+                  hearts by the inspiration of thy Holy Spirit, that we may perfectly
+                  love thee, and worthily magnify thy holy Name; through Christ
+                  our Lord. Amen.</P>
+                  
+                  <P>Hear what our Lord Jesus Christ saith.<br>
+                  Thou shalt love the Lord thy God with all thy heart, and with
+                  all thy soul, and with all thy mind. This is the first and great
+                  commandment. And the second is like unto it; Thou shalt love
+                  thy neighbour as thyself. On these two commandments hang all
+                  the Law and the Prophets.<br>    
+                  <b>Lord, have mercy upon us, and write these thy laws in our hearts, we beseech thee.</b></P>
+                  
+                  <P>O Almighty Lord, and everlasting God, vouchsafe, we beseech thee,
+                  to direct, sanctify, and govern, both our hearts and bodies,
+                  in the ways of thy laws, and in the works of thy commandments;
+                  that, through thy most mighty protection, both here and ever,
+                  we may be preserved in body and soul; through our Lord and Saviour
+                  Jesus Christ. Amen.</P>
+                    <p name="c"></p>
+                    <h2 name="e_cit"></h2>
+                    <p name="e_txt"></p>
+                    <h2 name="g_cit"></h2>
+                    <p name="g_txt"></p>
+                <p><b>Praise be to thee, O Christ.</b></P>
+
+                <!--Nicene on xmas, easter, ascension, whitsun, and trinity-->
+                <p>I believe in God the Father Almighty, Maker of heaven and earth: <br>
+                    And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
+                    I believe in the Holy Ghost: The holy Catholic Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>
+                                
+                <P class="dropcap">ALMIGHTY God, Father of our Lord Jesus Christ, Maker of all things,
+                  Judge of all men; We acknowledge and bewail our manifold sins
+                  and wickedness, Which we, from time to time, most grievously
+                  have committed, By thought, word, and deed, Against thy Divine
+                  Majesty, Provoking most justly thy wrath and indignation against
+                  us. We do earnestly repent, And are heartily sorry for these
+                  our misdoings; The remembrance of them is grievous unto us; The
+                  burden of them is intolerable. Have mercy upon us, Have mercy
+                  upon us, most merciful Father; For thy Son our Lord Jesus Christ’s
+                  sake, Forgive us all that is past; And grant that we may ever
+                  hereafter Serve and please thee In newness of life, To the honour
+                  and glory of thy Name; Through Jesus Christ our Lord. Amen.</P>
+                  
+                  <P>Hear what comfortable words our Saviour Christ saith unto all
+                  who truly turn to him.<br>
+                  Come unto me, all ye that travail and are heavy laden, and I
+                  will refresh you.<i>&mdash;Matthew 11:28</i><BR />
+                  So God loved the world, that he gave his only-begotten Son, to
+                  the end that all that believe in him should not perish, but have
+                  everlasting life.<i>&mdash;John 3:16</i></p>
+                  <p>Hear also what Saint Paul saith.<BR />
+                  This is a true saying, and worthy of all men to be received,
+                  That Christ Jesus came into the world to save sinners.<i>&mdash;1 Timothy 1:15</i></p>
+                  <p>Hear also what Saint John saith.<BR />
+                  If any man sin, we have an Advocate with the Father, Jesus Christ
+                  the righteous; and he is the Propitiation for our sins.<i>&mdash;1 John 2:1-2</i></P>
+
+                  <p class="devo">Therefore, O my Lord, because Thou didst come to save me a sinner, I desire with all my heart to repent of all my sin and to put away whatsoever displeases Thee. Grant me to grow in Thy grace that with all Thy blessed saints I may continually praise Thee. Amen.</p>
+                  <p class="devo">Thanks be to God for his forgiveness.</p>
+                  <p class="devo">Lord, I believe in Thee,<br/>
+                      help Thou mine unbelief.<br/>
+                      Lord, I hope in Thee,<br/>
+                      help me to trust more firmly.<br/>
+                      Lord, I love Thee,<br/>
+                      help me to love more truly.</p>
+                
+                  <P>Lift up your hearts.<BR />
+                  <b>We lift them up unto the Lord.</b><BR />
+                  Let us give thanks unto our Lord God.<BR />
+                  <b>It is meet and right so to do.</b></P>
+
+                <div id="preface"></div>
+
+                  <p>Therefore with Angels and Archangels, and with all the company of heaven, we laud and magnify thy glorious Name; evermore praising thee, and saying,</p>                                                                                                                                                  
+                  <p class="dropcap">HOLY, HOLY, HOLY, Lord God of hosts, Heaven and earth are full
+                  of thy glory: Glory be to thee, O Lord Most High. Amen.</p>
+
+                <p>We earnestly desire thy fatherly goodness, mercifully to
+                  accept this our sacrifice of praise and thanksgiving; most humbly
+                  beseeching thee to grant that, by the merits and death of thy
+                  Son Jesus Christ, and through faith in his blood, we, and all
+                  thy whole Church, may obtain remission of our sins, and all other
+                  benefits of his passion. And here we offer and present unto thee, O Lord, our selves, our souls
+                  and bodies, to be a reasonable, holy, and living sacrifice unto
+                  thee; humbly beseeching thee that we may be filled
+                  with thy grace and heavenly benediction, and made one body with
+                  him, that he may dwell in us, and we in him. And although we
+                  are unworthy, through our manifold sins, to offer unto thee any
+                  sacrifice; yet we beseech thee to accept this our bounden duty
+                  and service; not weighing our merits, but pardoning our offences,
+                  through Jesus Christ our Lord; by whom, and with whom, in the
+                  unity of the Holy Ghost, all honour and glory be unto thee, O
+                  Father Almighty, world without end. Amen.</p>
+                
+                <P>And now, as our Saviour Christ hath taught us, we are bold to say,</p>
+                <p class="dropcap">OUR Father, who art in heaven, Hallowed be thy Name. Thy kingdom
+                    come. Thy will be done on earth, As it is in heaven. Give us
+                    this day our daily bread. And forgive us our trespasses, As we
+                    forgive those who trespass against us. And lead us not into temptation,
+                    But deliver us from evil. For thine is the kingdom, and the power, and the glory, for ever and ever. Amen.</P>
+
+                <p class="devo">Grant, O Lord Jesus Christ, that as the hem of Thy garment, touched in faith, healed the woman who could not touch Thy Body, so the soul of Thy servant may be healed by like faith in Thee, Whom I cannot now sacramentally receive.
+                I unite myself to Thee, and embrace Thee with all the affections of my soul. O let nothing ever separate me from Thee. Let me live and die in Thy love. Amen.</p>
+                
+                <p style="color: firebrick; font-size: 75%;">¶If a man, by any just impediment, do not receive the Sacrament of Christ’s Body and Blood,
+                    if he do truly repent him of his sins, and stedfastly believe that Jesus Christ hath suffered death upon the Cross for him,
+                    and shed his Blood for his redemption, earnestly remembering the benefits he hath thereby, and giving him hearty thanks therefor,
+                    he doth eat and drink the Body and Blood of our Saviour Christ profitably to his soul’s health, although he do not receive the Sacrament with his mouth.</p>
+
+                <P>The Body and Blood of our Lord Jesus Christ, which was given and shed for me, preserve my body and soul unto everlasting life.</P>
+                
+                <p class="devo">¶Ask Jesus for the spiritual gifts you most need.</p>
+                <p class="devo">¶Ask Him for any other needs for yourself, your school, and your friends.</p>
+                <p class="devo">Lord Jesus, I thank Thee that Thou hast now fed me with Thy Body and Blood, and imparted to me Thy life. Teach me to live with a grateful heart, and as Thou hast to-day come anew into my soul, so abide in me continually, till in Thine own good time I may see Thee face to face, where Thou livest and reignest with the Father and the Holy Ghost one God world without end. Amen.&mdash;Cecil John Wood</p>
+                
+                <div id="gloria"><P class="dropcap">GLORY be to God on high, and on earth peace, good will towards
+                  men. We praise thee, we bless thee, we worship thee, we glorify
+                  thee, we give thanks to thee for thy great glory, O Lord God,
+                  heavenly King, God the Father Almighty.</p>
+                  <p>O Lord, the only-begotten Son, Jesus Christ; O Lord God, Lamb
+                  of God, Son of the Father, that takest away the sins of the world,
+                  have mercy upon us. Thou that takest away the sins of the world,
+                  receive our prayer. Thou that sittest at the right hand of God
+                  the Father, have mercy upon us.</p>
+                  <p>For thou only art holy; thou only art the Lord; thou only, O
+                  Christ, with the Holy Ghost, art most high in the glory of God
+                  the Father. Amen.</P></div>
+                
+                <p>The grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost be with us all evermore. Amen.</p>
+            </div>
+            
+            <div class="tab-content" id="tab-2">
+                <h1 id="hymn-title">A Hymn</h1>
+                <div id="hymn"></div>
+            </div>
+        
+            <div class="tab-content" id="tab-3">
+                <img name="bookmark" class="bookmark">
+                    <h2 name="c_h">The Collect</h2>
+                    <p name="c"></p>
+                    <h2 name="e_cit"></h2>
+                    <p name="e_txt"></p>
+                    <h2 name="g_cit"></h2>
+                    <p name="g_txt"></p>
+                <div id="readings"></div>
+            </div>
+            <div class="tab-content" id="tab-4"></div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab(0)"><img src="images/sun.gif"></button>
+            <button class="tab" onclick="showTab(1)"><img src="images/chalice.gif"></button>
+            <button class="tab" onclick="showTab(3)"><img src="images/book.gif"></button>
+            <button class="tab" onclick="showTab(2)"><img src="images/lyre.gif"></button>
+            <button class="tab" onclick="showTab(4)"><img src="images/hands.gif"></button>
+        </div>
+
+        <script>
+            function showTab(index) {
+                const tabs = document.querySelectorAll('.tab');
+                const contents = document.querySelectorAll('.tab-content');
+            
+                tabs.forEach((tab, i) => {
+                    if (i === index) {
+                        tab.classList.add('active');
+                    } else {
+                        tab.classList.remove('active');
+                    }
+                });
+            
+                contents.forEach((content, i) => {
+                    if (i === index) {
+                        content.classList.add('active');
+                    } else {
+                        content.classList.remove('active');
+                    }
+                });
+            }
+        </script>
+</body>
+</html>
