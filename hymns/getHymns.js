@@ -37,7 +37,7 @@ async function getHymns2(liturgicalDay) {
       break;
   }
 
-  const items = await getDataFromFile(liturgicalDay, "hymns");
+  const items = await getDataFromFile(day, "hymns");
   var result = "";
   if (items) result = items.map(item => `<p class="dropcap">${item}</p>`).join("");//<p style='text-align: center;'>✠&#9;✠&#9;✠</p>");
 
