@@ -1,41 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Viewer</title>
-</head>
-<body>
-    <h1>Data Viewer</h1>
-    <div id="data"></div>
-    <script>
-        async function fetchData() {
-            const files = ["/arch/ceg.js", "/arch/hymns.js"];
-            let dataObjects = [];
-            for (const file of files) {
-                const response = await fetch(file);
-                const text = await response.text();
-                const jsonData = eval(text);
-                // Assuming jsonData is an array of objects with keys that might include "AW"
-                dataObjects.push(...jsonData.filter(obj => obj.AW));
-            }
-            return dataObjects;
-        }
+<script src="ceg.js"></script>
+<script src="hymns.js"></script>
 
-        function displayData(data) {
-            const dataDiv = document.getElementById('data');
-            data.forEach(item => {
-                const para = document.createElement('p');
-                para.textContent = JSON.stringify(item);
-                dataDiv.appendChild(para);
-            });
-        }
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const properResults = getProper('AW');
+        const hymnsResults = getHymns('AW');
 
-        window.onload = async function() {
-            const data = await fetchData();
-            displayData(data);
-        };
-    </script>
-</body>
-</html>
+        const properContainer = document.createElement('div');
+        const hymnsContainer = document.createElement('div');
+
+        properResults.forEach(result => {
+            const p = document.createElement('p');
+            p.textContent = result;
+            properContainer.appendChild(p);
+        });
+
+        hymnsResults.forEach(result => {
+            const p = document.createElement('p');
+            p.textContent = result;
+            hymnsContainer.appendChild(p);
+        });
+
+        document.body.appendChild(properContainer);
+        document.body.appendChild(hymnsContainer);
+    });
+</script>
