@@ -1,1 +1,35 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Data Viewer</title>\n    <script src="ceg.js"></script>\n    <script src="hymns.js"></script>\n    <script>\n        window.onload = function() {\n            const properData = getProper('AW');\n            const hymnsData = getHymns('AW');\n            displayData(properData, hymnsData);\n        };\n\n        function displayData(properData, hymnsData) {\n            for (const key in properData) {\n                if (properData.hasOwnProperty(key)) {\n                    const p = document.createElement('p');\n                    p.textContent = `${key}: ${properData[key]}`;\n                    document.body.appendChild(p);\n                }\n            }\n            for (const key in hymnsData) {\n                if (hymnsData.hasOwnProperty(key)) {\n                    const p = document.createElement('p');\n                    p.textContent = `${key}: ${hymnsData[key]}`;\n                    document.body.appendChild(p);\n                }\n            }\n        }\n    <\/script>\n</head>\n<body>\n</body>\n</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Viewer</title>
+    <script src="ceg.js"></script>
+    <script src="hymns.js"></script>
+    <script>
+      window.onload = function() {
+        const properData = getProper('AW');
+        const hymnsData = getHymns('AW');
+        displayData(properData, hymnsData);
+      };
+      function displayData(properData, hymnsData) {
+        for (const key in properData) {
+          if (properData.hasOwnProperty(key)) {
+            const p = document.createElement('p');
+            p.textContent = `${key}: ${properData[key]}`;
+            document.body.appendChild(p);
+          }
+        }
+        for (const key in hymnsData) {
+          if (hymnsData.hasOwnProperty(key)) {
+            const p = document.createElement('p');
+            p.textContent = `${key}: ${hymnsData[key]}`;
+            document.body.appendChild(p);
+          }
+        }
+      }
+      <\/script>
+        </head>
+        <body>
+        </body>
+        </html>
