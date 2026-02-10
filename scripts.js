@@ -58,10 +58,7 @@ in our true native land with thee.`);
     });
 
     //additional devotions
-    if (now.getMonth() == 10 && now.getDate() <= 8)
-        document.getElementById("tab-4").innerHTML = getMemorial();
-    else
-        document.getElementById('tab-4').innerHTML = "<h1>Intercessions</h1>" + getIntercessions() + getAddlPrayers(liturgicalDay);
+    document.getElementById('tab-4').innerHTML = getAddlPrayers(liturgicalDay);
 }
 
 async function getProper2(liturgicalDay) {
@@ -161,6 +158,7 @@ function makeP(text){
 }
 
 const makeDropCap = text => `<p class="dropcap">${text}</p>`;
+
 
 
 
