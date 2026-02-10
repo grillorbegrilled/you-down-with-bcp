@@ -3,8 +3,9 @@ function getOffice(now, week, feast) {
     //------------------COMMINATION
     if (now.getDate() < 8 && day === 5) //first Friday of the month
         document.getElementById("tab-0").innerHTML = commination;
-    //------------------litany schedule has been moved to getIntercessions()
+    //------------------litany & commination on AW, just litany on Lenten Fridays not first of month
     if (week === "AW" && day === 3) document.getElementById("tab-0").innerHTML = getIntercessions() + commination; //Ash Wednesday litany and commination
+    if (["L2", "L3", "L4", "L5"].contains(week) && day === 5) document.getElementById("tab-0").innerHTML = getIntercessions();
     
     else {
         try {
