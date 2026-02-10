@@ -94,7 +94,7 @@ function getOffice(now, week, feast) {
                 break;
             }
         } catch (e) {
-            document.getElementById("tab-0").innerHTML = `<p>I AM ERROR ${e}</p>`;
+            document.getElementById("tab-0").innerHTML = `<p>I AM ERROR ${e.message}\n${e.stack}</p>`;
         }
     }
 }
