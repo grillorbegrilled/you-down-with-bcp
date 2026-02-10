@@ -35,9 +35,11 @@ function getOffice(now, week, feast) {
                     document.getElementById("creed-or-suffrages").innerHTML = `<p class="dropcap">I BELIEVE in God the Father Almighty, Maker of heaven and earth: <br>
                         And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
                         I believe in the Holy Ghost: The holy Catholic Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>`;
-                getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
-                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeP(lessonContent.txt)}`;
-                });
+                //getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
+                //    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeP(lessonContent.txt)}`;
+                //});
+                document.getElementById("ogc").style.display = "none";
+                document.getElementById("ogt").style.display = "none";
                 document.getElementById("office-collect").innerHTML = "<p>O Lord, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
                 const cantMarg = getOfficeMargin2(now, feast || week);
                 if (cantMarg) document.getElementById("cantMarg").src = cantMarg;
@@ -59,10 +61,11 @@ function getOffice(now, week, feast) {
                  	  O God, make clean our hearts within us.<br>
                    	<b>And take not thy Holy Spirit from us.</b></p>`;
                 document.getElementById("office-collect").innerHTML = "<p>O God, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.</p>";
-                getLessonFromFile(feast || week, "./lessons/evening.json", "./lessons/morning.json").then(lessonContent => {
-                    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeP(lessonContent.txt)}`;
-                });
-                //document.getElementById('lesson').style.display = "none";
+                //getLessonFromFile(feast || week, "./lessons/evening.json", "./lessons/morning.json").then(lessonContent => {
+                //    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeP(lessonContent.txt)}`;
+                //});
+                document.getElementById("oec").style.display = "none";
+                document.getElementById("oet").style.display = "none";
                 break;
             case 3:
                 document.getElementById("office-name").textContent = "Night Prayer";
@@ -77,6 +80,10 @@ function getOffice(now, week, feast) {
                 document.getElementById("office-collect").innerHTML = "<p>Lighten our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.</p>";
                 document.getElementById('sentence').style.display = "none";
                 document.getElementById("additional-prayers").style.display = "none";
+                document.getElementById("oec").style.display = "none";
+                document.getElementById("oet").style.display = "none";
+                document.getElementById("ogc").style.display = "none";
+                document.getElementById("ogt").style.display = "none";
                 break;
             default:
                 document.getElementById("office-name").textContent = "Error";
