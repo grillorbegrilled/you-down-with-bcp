@@ -32,7 +32,7 @@ function getOffice(now, week, feast) {
                 let canticle = getMorningCanticle(week, feast);
                 document.getElementById("canticle").innerHTML = canticle;
                 if (!canticle.startsWith(`WE`))
-                    document.getElementById("creed-or-suffrages").innerHTML = `<p>I BELIEVE in God the Father Almighty, Maker of heaven and earth: <br>
+                    document.getElementById("creed-or-suffrages").innerHTML = `<p>I believe in God the Father Almighty, Maker of heaven and earth: <br>
                         And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
                         I believe in the Holy Ghost: The holy Catholic Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>`;
                 //getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
