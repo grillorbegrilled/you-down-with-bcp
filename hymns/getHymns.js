@@ -52,5 +52,5 @@ async function getHymnTexts(numbers) {
       throw new Error("Network response was not ok");
   }
   const data = await response.json();
-  return numbers.map(x => data[x]) ?? [];
+  return (numbers ?? []).flatMap(x => data[x] === undefined ? [] : [data[x]]) ?? [];
 }
