@@ -856,30 +856,8 @@
     }
   ],
   "LX": [
-    {
-      "title": "Spread, O spread, thou mighty word",
-      "number": "253"
-    },
-    {
-      "title": "Awake, thou spirit of the watchman",
-      "number": "255"
-    },
-    {
-      "title": "Give Praise and glory unto God",
-      "number": "287"
-    },
-    {
-      "title": "We gather together",
-      "number": "315"
-    },
-    {
-      "title": "Breathe on me, Breath of God",
-      "number": "375"
-    },
-    {
-      "title": "Come, gracious Spirit, heavenly Dove",
-      "number": "378"
-    },
+    { "title": "Oft in danger oft in woe", "number": "558" },
+    { "title": "Spread, O spread, thou mighty word", "number": "253" },
     {
       "title": "Lamp of our feet, whereby we trace",
       "number": "400"
@@ -888,14 +866,21 @@
       "title": "O Christ, the Word incarnate",
       "number": "402"
     },
+    
+    {
+      "title": "Breathe on me, Breath of God",
+      "number": "375"
+    },
+    {
+      "title": "Come, gracious Spirit, heavenly Dove",
+      "number": "378"
+    },
+    
     {
       "title": "God be in my head",
       "number": "466"
     },
-    {
-      "title": "Oft in danger oft in woe",
-      "number": "558"
-    },
+    
     {
       "title": "He who would valiant be",
       "number": "563"
@@ -903,7 +888,8 @@
     {
       "title": "How firm a foundation",
       "number": "564"
-    }
+    },
+    { "number": "400" }
   ],
   "L": [
     {
