@@ -40,6 +40,7 @@ function getOffice(now, week, feast) {
                 if (cantMarg) document.getElementById("cantMarg").src = cantMarg;
                 else document.getElementById("cantMarg").style.display = "none";
                 document.getElementById("additional-prayers").innerHTML = getAdditionalPrayers(week, day, officeType);
+                document.getElementById("sentence").innerHTML = makeDropCap(getSentence(feast || week, officeType));
                 break;
             case 2:
                 document.getElementById("office-name").textContent = "Evening Prayer";
@@ -63,6 +64,7 @@ function getOffice(now, week, feast) {
                 //});
                 document.getElementById("oec").style.display = "none";
                 document.getElementById("oet").style.display = "none";
+                document.getElementById("sentence").innerHTML = makeDropCap(getSentence(feast || week, officeType));
                 break;
             case 3:
                 document.getElementById("office-name").textContent = "Night Prayer";
@@ -90,8 +92,6 @@ function getOffice(now, week, feast) {
                 document.getElementById("tab-0").innerHTML = `<p>Invalid Office type ${officeType}</p>`;
                 break;
             }
-
-            document.getElementById("sentence").innerHTML = makeDropCap(getSentence(feast || week, officeType));
         } catch (e) {
             document.getElementById("tab-0").innerHTML = `<p>I AM ERROR ${e}</p>`;
         }
