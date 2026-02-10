@@ -16,6 +16,9 @@ function getOfficeMargin1(now, liturgicalDay) {
     case "Trinity":
       result = "images/marginalia/Triquetra.png";
       break;
+    case "LX":
+      result = "images/marginalia/sower.jpg";
+      break;
     default:
       result = "";
   }
