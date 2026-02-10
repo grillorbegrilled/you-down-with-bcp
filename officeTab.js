@@ -1,25 +1,19 @@
 function getOffice(now, week, feast) {
     const day = now.getDay();
     //------------------COMMINATION
-    if (week === "AW" && day === 3 || //Ash Wednesday
-        week === "GF" || //Good Friday
-        now.getDate() < 8 && day === 5) //first Friday of the month
+    if (now.getDate() < 8 && day === 5) //first Friday of the month
         document.getElementById("tab-0").innerHTML = commination;
-
-    else if (//isEmberDay(week, now.getMonth(), now.getDate(), day) || //ember days
-        isRogationDay(week, day) || //rogation days
-        week === "GF" || //good friday
-        week === "AW" && (day === 3 || day === 5) || //ash wednesday, friday thereafter
-        (week === "L2" || week === "L3" || week === "L4" || week === "L5") && day === 5) //other fridays in lent
-        document.getElementById("tab-0").innerHTML = litany;
+    //------------------litany schedule has been moved to getIntercessions()
+    if (week === "AW" && day === 3) document.getElementById("tab-0").innerHTML = getIntercessions() + commination; //Ash Wednesday litany and commination
     
     else {
         try {
         //------------------DAILY PRAYERS
-        //officeType: 1=MP, 2=EP, 3=Compline
+        //officeType: 1=MP, 2=EP, 3=Compline, 4=Intercessions
         var officeType = 0;
-        if (now.getHours() >= 3 && now.getHours() < 12) officeType = 1;
-        else if (now.getHours() >= 12 && now.getHours() < 21) officeType = 2;
+        if (now.getHours() >= 3 && now.getHours() < 11) officeType = 1;
+        else if (now.getHours() >=11 && now.getHours() < 15) officeType = 4;
+        else if (now.getHours() >= 15 && now.getHours() < 21) officeType = 2;
         else officeType = 3;
     const topMarg = getOfficeMargin1(now, feast || week);
                 if (topMarg) document.getElementById("topMarg").src = topMarg;
@@ -85,6 +79,8 @@ function getOffice(now, week, feast) {
                 document.getElementById("ogc").style.display = "none";
                 document.getElementById("ogt").style.display = "none";
                 break;
+            case 4:
+                document.getElementById("tab-0").innerHTML = getIntercessions();
             default:
                 document.getElementById("office-name").textContent = "Error";
                 break;
@@ -264,109 +260,51 @@ async function getLessonFromFile(liturgicalDay, filePath, fallbackFilePath = "")
     }
 }
 
-const litany = `<H1>The Litany</H1>
-        <P>O GOD the Father, Creator of heaven and earth; <B><BR>
-            Have mercy upon us. </B><BR>
-        O God the Son, Redeemer of the world...<BR>
-        O God the Holy Ghost, Sanctifier of the faithful...<BR>
-        O holy, blessed, and glorious Trinity, one God...
-    </P>
-    <p>
-        REMEMBER not, Lord, our offences, nor the offences of our forefathers; neither take thou vengeance of our sins:<BR>
-        Spare us, good Lord, spare thy people, whom thou hast redeemed with thy most precious blood, and be not angry with us for ever.<br>
-            <B>Spare us, good Lord.</B><BR>
-        From all evil and mischief; from sin; from the crafts and assaults of the devil; from thy wrath, and from everlasting damnation,<BR>
-            <B>Good Lord, deliver us.</B><BR>
-        From all blindness of heart; from pride, vainglory, and hypocrisy; from envy, hatred, and malice, and all uncharitableness...<BR>
-        From all inordinate and sinful affections; and from all the deceits of the world, the flesh, and the devil...<BR>
-        From lightning and tempest; from earthquake, fire, and flood; from plague, pestilence, and famine; from battle and murder, and from sudden death...<BR>
-        From all sedition, privy conspiracy, and rebellion; from all false doctrine, heresy, and schism; from hardness of heart, and contempt of thy Word and Commandment...<BR>
-        By the mystery of thy holy Incarnation; by thy holy Nativity and Circumcision; by thy Baptism, Fasting, and Temptation...<BR>
-        By thine Agony and Bloody Sweat; by thy Cross and Passion; by thy precious Death and Burial; by thy glorious Resurrection and Ascension, and by the Coming of the Holy Ghost...<BR>
-        In all time of our tribulation; in all time of our prosperity; in the hour of death, and in the day of judgment...<BR>
-    </p>
-    <p>
-        WE sinners do beseech thee to hear us, O Lord God; and that it may please thee to rule and govern thy holy Church universal in the right way;<BR>
-            <B>We beseech thee to hear us, good Lord.</B><BR>
-        That it may please thee so to rule the heart of thy servant the President of the United States, that he may above all things seek thy honour and glory...<BR>
-        That it may please thee to bless and preserve all Christian Rulers and Magistrates, giving them grace to execute justice, and to maintain truth...<BR>
-        That it may please thee to illuminate all Bishops, Priests, and Deacons, with true knowledge and understanding of thy Word; and that both by their preaching and living they may set it forth, and show it accordingly...<BR>
-        That it may please thee to send forth labourers into thy harvest...<BR>
-        That it may please thee to bless and keep all thy people...<BR>
-        That it may please thee to give to all nations unity, peace, and concord...<BR>
-        That it may please thee to give us an heart to love and fear thee, and diligently to live after thy commandments...<BR>
-        That it may please thee to give to all thy people increase of grace to hear meekly thy Word, and to receive it with pure affection, and to bring forth the fruits of the Spirit...<BR>
-        That it may please thee to bring into the way of truth all such as have erred, and are deceived...<BR>
-        That it may please thee to strengthen such as do stand; and to comfort and help the weak-hearted; and to raise up those who fall; and finally to beat down Satan under our feet...<BR>
-        That it may please thee to succour, help, and comfort, all who are in danger, necessity, and tribulation...<BR>
-        That it may please thee to preserve all who travel by land, by water, or by air, all women in child-birth, all sick persons, and young children; and to show thy pity upon all prisoners and captives...<BR>
-        That it may please thee to defend, and provide for, the fatherless children, and widows, and all who are desolate and oppressed...<BR>
-        That it may please thee to have mercy upon all mankind...<BR>
-        That it may please thee to forgive our enemies, persecutors, and slanderers, and to turn their hearts...<BR>
-        That it may please thee to give and preserve to our use the kindly fruits of the earth, so that in due time we may enjoy them...<BR>
-        That it may please thee to give us true repentance; to forgive us all our sins, negligences, and ignorances; and to endue us with the grace of thy Holy Spirit to amend our lives according to thy holy Word...<BR><p>
-
-        <p>SON of God, we beseech thee to hear us.<BR>
-            <B>Son of God, we beseech thee to hear us.</B><BR>
-        O Lamb of God, who takest away the sins of the world;<BR>
-            <B>Grant us thy peace.</B><BR>
-        O Lamb of God, who takest away the sins of the world;<BR>
-            <B>Have mercy upon us.</B><BR>
-        O Christ, hear us.<BR>
-            <B>O Christ, hear us.</B><BR>
-        Lord, have mercy upon us.<BR>
-            <B>Lord, have mercy upon us.</B><BR>
-        Christ, have mercy upon us.<BR>
-            <B>Christ, have mercy upon us.</B><BR>
-        Lord, have mercy upon us.<BR>
-            <B>Lord, have mercy upon us.</B>
-        </P>
-
-    <p>OUR Father, who art in heaven, Hallowed be thy Name. Thy kingdom come. Thy will be done, On earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, As we forgive those who trespass against us. And lead us not into temptation, But deliver us from evil. Amen.</p>
-    <hr>
-    <P>
-        O Lord, deal not with us according to our sins.<br>
-        <B>Neither reward us according to our iniquities.</B>
-    </p>
-    
-    <p> O God, merciful Father, who despisest not the sighing of a contrite
-        heart, nor the desire of such as are sorrowful; Mercifully assist
-        our prayers which we make before thee in all our troubles and
-        adversities, whensoever they oppress us; and graciously hear us,
-        that those evils which the craft and subtilty of the devil or
-        man worketh against us, may, by thy good providence, be brought
-        to nought; that we thy servants, being hurt by no persecutions,
-        may evermore give thanks unto thee in thy holy Church; through
-        Jesus Christ our Lord. Amen.<BR></p>
-        
-    <p><B>O Lord, arise, help us, and deliver us for thy Name's sake.</B><BR>
-        O God, we have heard with our ears, and our fathers have declared unto us, the noble works that thou didst in their days, and in the old time before them.<BR>
-            <B>O Lord, arise, help us, and deliver us for thine honour.</B><BR>
-        Glory be to the Father, and to the Son, and to the Holy Ghost;<BR>
-            <B>As it was in the beginning, is now, and ever shall be, world without end. Amen. </B><BR>
-        From our enemies defend us, O Christ. <B><BR>
-            Graciously look upon our afflictions.</B><BR>
-        With pity behold the sorrows of our hearts. <B><BR>
-            Mercifully forgive the sins of thy people.</B><BR>
-        Favourably with mercy hear our prayers. <B><BR>
-            O Son of David, have mercy upon us. </B><BR>
-        Both now and ever vouchsafe to hear us, O Christ. <B><BR>
-            Graciously hear us, O Christ; graciously hear us, O Lord Christ.</B><BR>
-        O Lord, let thy mercy be showed upon us;<BR>
-            <B>As we do put our trust in thee.</B>
-    </p>
-    <hr>
-    <p>We humbly beseech thee, O Father, mercifully to look upon our
-        infirmities; and, for the glory of thy Name, turn from us all
-        those evils that we most justly have deserved; and grant, that
-        in all our troubles we may put our whole trust and confidence
-        in thy mercy, and evermore serve thee in holiness and pureness
-        of living, to thy honour and glory; through our only Mediator
-        and Advocate, Jesus Christ our Lord. Amen.</p>`;
-
 const commination = `<H1>A Penitential Office</H1>
-    <p class='dropcap'>BLESS the Lord, who forgiveth all our sins.<br>
-    <b>His mercy endureth for ever.</b></p>
+<p class="devo">¶Before beginning, choose one or more of the lists below to examine and interrogate the welfare of your soul.</p>
+    <p class='dropcap'>Have mercy upon me, O God, after thy great goodness; * according to the multitude of thy mercies do away mine offences.<br>
+Wash me throughly from my wickedness, * and cleanse me from my sin.<br>
+For I acknowledge my faults, * and my sin is ever before me.<br>
+Against thee only have I sinned, and done this evil in thy sight; * that thou mightest be justified in thy saying, and clear when thou art judged.<br>
+Behold, I was shapen in wickedness, * and in sin hath my mother conceived me.<br>
+But lo, thou requirest truth in the inward parts, * and shalt make me to understand wisdom secretly.<br>
+Thou shalt purge me with hyssop, and I shall be clean; * thou shalt wash me, and I shall be whiter than snow.<br>
+Thou shalt make me hear of joy and gladness, * that the bones which thou hast broken may rejoice.<br>
+Turn thy face from my sins, * and put out all my misdeeds.<br>
+Make me a clean heart, O God, * and renew a right spirit within me.<br>
+Cast me not away from thy presence, * and take not thy holy Spirit from me.<br>
+O give me the comfort of thy help again, * and stablish me with thy free Spirit.<br>
+Then shall I teach thy ways unto the wicked, * and sinners shall be converted unto thee.<br>
+Deliver me from blood-guiltiness, O God, thou that art the God of my health; * and my tongue shall sing of thy righteousness.<br>
+Thou shalt open my lips, O Lord, * and my mouth shall show thy praise.<br>
+For thou desirest no sacrifice, else would I give it thee; but thou delightest not in burnt-offerings.<br>
+The sacrifice of God is a troubled spirit: * a broken and contrite heart, O God, shalt thou not despise.</p>
+<p>Glory be to the Father, and to the Son, * and to the Holy Ghost;
+As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>
+<hr>
+<p>Lord, have mercy upon us.<br>
+<b>Christ, have mercy upon us.</b><br>
+Lord, have mercy upon us.</p>
+
+<p>Our Father, who art in heaven, Hallowed be thy Name. Thy kingdom come. Thy will be done, On earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, As we forgive those who trespass against us. And lead us not into temptation, But deliver us from evil. Amen.</p>
+<hr>
+<p>O Lord, save thy servants;<br>
+<b>That put their trust in thee.</b><br>
+Send unto them help from above.<br>
+<b>And evermore mightily defend them.</b><br>
+Help us, O God our Saviour.<br>
+<b>And for the glory of thy Name deliver us; be merciful to us sinners, for thy Name’s sake.</b><br>
+O Lord, hear our prayer.<br>
+<b>And let our cry come unto thee.</b></p>
+
+<p class='dropcap'>O LORD, we beseech thee, mercifully hear our prayers, and spare all those who confess their sins unto thee; that they, whose consciences by sin are accused, by thy merciful pardon may be absolved; through Christ our Lord. Amen.</p>
+<p>O Most mighty God, and merciful Father, who hast compassion upon all men, and who wouldest not the death of a sinner, but rather that he should turn from his sin, and be saved; Mercifully forgive us our trespasses; receive and comfort us, who are grieved and wearied with the burden of our sins. Thy property is always to have mercy; to thee only it appertaineth to forgive sins. Spare us therefore, good Lord, spare thy people, whom thou hast redeemed; enter not into judgment with thy servants; but so turn thine anger from us, who meekly acknowledge our transgressions, and truly repent us of our faults, and so make haste to help us in this world, that we may ever live with thee in the world to come; through Jesus Christ our Lord. Amen.</p>
+<p><b>Turn thou us, O good Lord, and so shall we be turned. Be favourable, O Lord, Be favourable to thy people, Who turn to thee in weeping, fasting, and praying. For thou art a merciful God, Full of compassion, Long-suffering, and of great pity. Thou sparest when we deserve punishment, And in thy wrath thinkest upon mercy. Spare thy people, good Lord, spare them, And let not thine heritage be brought to confusion. Hear us, O Lord, for thy mercy is great, And after the multitude of thy mercies look upon us; Through the merits and mediation of thy blessed Son, Jesus Christ our Lord. Amen.</b></p>
+
+<p class="dropcap">O GOD, whose nature and property is ever to have mercy and to forgive; Receive our humble petitions; and though we be tied and bound with the chain of our sins, yet let the pitifulness of thy great mercy loose us; for the honour of Jesus Christ, our Mediator and Advocate. Amen.</p>
+<p>The Lord bless us, and keep us. The Lord make his face to shine upon us, and be gracious unto us. The Lord lift up his countenance upon us, and give us peace, both now and evermore. Amen.</p>
+
+<p style='text-align: center;'>✠&#9;✠&#9;✠</p>
     
     <H2>The Seven Deadly Sins</H2>
       <H3>Pride</H3> <!--lion-->
@@ -433,10 +371,8 @@ const commination = `<H1>A Penitential Office</H1>
       of the fathers upon the children, unto the third and fourth generation
       of them that hate me; and show mercy unto thousands in them that
       love me and keep my commandments.</span></li>
-        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
       <li>Thou shalt not take the Name of the Lord thy God in vain,<br>
       <span style="font-size: 75%;">for the Lᴏʀᴅ will not hold him guiltless, that taketh his Name in vain.</span></li>
-        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
       <li>Remember that thou keep holy the Sabbath-day.<br>
       <span style="font-size: 75%;">Six days shalt thou labour, and do all that thou hast to
       do; but the seventh day is the Sabbath of the Lᴏʀᴅ thy God. In
@@ -446,63 +382,16 @@ const commination = `<H1>A Penitential Office</H1>
       Lᴏʀᴅ made heaven and earth, the sea, and all that in them is,
       and rested the seventh day: wherefore the Lᴏʀᴅ blessed the seventh
       day, and hallowed it.</span></li>
-    </ol>
-    <p><b>Lord, have mercy upon us, and incline our hearts to keep this law.</b></p>
-    <ol type="I" start="5">
       <li>Honour thy father and thy mother.<br>
       <span style="font-size: 75%;">that thy days may be long in the land which the Lᴏʀᴅ thy God giveth thee.</span></li>
-        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
       <li>Thou shalt do no murder.</li>
-        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
       <li>Thou shalt not commit adultery.</li>
-        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
       <li>Thou shalt not steal.</li>
-        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
       <li>Thou shalt not bear false witness against thy neighbour.</li>
-        <!--<b>Lord, have mercy upon us, and incline our hearts to keep this law.</b><br>-->
       <li>Thou shalt not covet<br>
       <span style="font-size: 75%;">thy neighbour’s house, thou shalt not covet thy neighbour’s
       wife, nor his servant, nor his maid, nor his ox, nor his ass, nor any thing that is his.</span></li>
     </ol>
-    <p><b>Lord, have mercy upon us, and write all these thy laws in our hearts, we beseech thee.</b></P>
-
-    <h2>Confession</h2>
-    <p class='dropcap'>ALMIGHTY God, Father of our Lord Jesus Christ,<BR>
-    Maker of all things, judge of all men;<BR>
-    We acknowledge and bewail our manifold sins and wickedness,<BR>
-    Which we, from time to time, most grievously have committed,<BR>
-    By thought, word, and deed,<BR>
-    Against thy Divine Majesty,<BR>
-    Provoking most justly thy wrath and indignation against us.<BR>
-    We do earnestly repent, <BR>
-    And are heartily sorry for these our misdoings; <BR>
-    The remembrance of them is grievous unto us; <BR>
-    The burden of them is intolerable. <BR>
-    Have mercy upon us, <BR>
-    Have mercy upon us, most merciful Father; <BR>
-    For thy Son our Lord Jesus Christ’s sake, <BR>
-    Forgive us all that is past; <BR>
-    And grant that we may ever hereafter <BR>
-    Serve and please thee <BR>
-    In newness of life, <BR>
-    To the honour and glory of thy Name; <BR>
-    Through Jesus Christ our Lord. Amen.</p>
-
-    <p class='dropcap'>HEAR what comfortable words our Saviour Christ saith unto all that truly turn to him.<br>
-      Come unto me all that travail and are heavy laden, and I will refresh you. <i>&mdash;St. Matthew 11:28</i><br>
-      So God loved the world, that he gave his only-begotten Son, to the end that all that believe in him should not perish, but have everlasting life. <i>&mdash;St. John 3:16</i></p>
-
-    <p>Hear also what Saint Paul saith.<br>
-      This is a true saying, and worthy of all men to be received, that Christ Jesus came into the world to save sinners. <i>&mdash;1 St. Timothy 1:15</i></p>
-
-    <p>Hear also what Saint John saith.<br>
-      If any man sin, we have an Advocate with the Father, Jesus Christ the righteous; and he is the propitiation for our sins. <i>&mdash;1 St. John 2:1</i></p>
-
-    <p class='dropcap'>BLESSED is he whose unrighteousness is forgiven * and whose sin is covered.<BR>
-    Blessed is the man unto whom the Lᴏʀᴅ imputeth no sin * and in whose spirit there is no guile.<BR>
-    I said, I will confess my sins unto the Lᴏʀᴅ * and so thou forgavest the wickedness of my sin.</p>
-    <p>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>
-    As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>
 
     <h2>The Works of Mercy</h2>
     <p>Feed the hungry. ❦ Give drink to the thirsty. ❦ Clothe the naked. ❦ Shelter the homeless. ❦ Visit the sick. ❦ Ransom the captive. ❦ Bury the dead.</p>
@@ -523,13 +412,4 @@ const commination = `<H1>A Penitential Office</H1>
       <li>Blessed are the pure in heart: for they shall see God.</li>
       <li>Blessed are the peacemakers: for they shall be called the children of God.</li>
       <li>Blessed are they which are persecuted for righteousness’ sake: for theirs is the kingdom of heaven.</li>
-    </ol>
-
-    <P class='dropcap'>O ALMIGHTY Lord, and everlasting God, vouchsafe, we beseech thee,
-      to direct, sanctify, and govern, both our hearts and bodies,
-      in the ways of thy laws, and in the works of thy commandments;
-      that, through thy most mighty protection, both here and ever,
-      we may be preserved in body and soul; through our Lord and Saviour
-      Jesus Christ. Amen.</P>
-    
-    <p class='dropcap'>THE Lord bless us, and keep us. The Lord make his face to shine upon us, and be gracious unto us. The Lord lift up his countenance upon us, and give us peace, both now and evermore. Amen.</p>`;
+    </ol>`;
