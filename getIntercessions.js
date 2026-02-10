@@ -1,13 +1,4 @@
-const wholeState = `<p><span class="drop-cap">A</span>LMIGHTY and everliving God, who by thy holy Apostle hast taught us to make prayers, and supplications, and to give thanks for all men; We humbly beseech thee most mercifully to receive these our prayers, which we offer unto thy Divine Majesty; beseeching thee to inspire continually the Universal Church with the spirit of truth, unity, and concord: And grant that all those who do confess thy holy Name may agree in the truth of thy holy Word, and live in unity and godly love.</p>
-    <p>We beseech thee also, so to direct and dispose the hearts of those who bear the authority of government in this and every land, especially <span name = "prez"></span> our President and <span name = "guv"></span> our Governor, that they may truly and impartially administer justice, to the punishment of wickedness and vice, and to the maintenance of thy true religion, and virtue.</p>
-    <p>Give grace, O heavenly Father, to all Bishops and other Ministers, especially <span name = "clergy"></span>, that they may, both by their life and doctrine, set forth thy true and lively Word, and rightly and duly administer thy holy Sacraments.</p>
-    <p>And to all thy People give thy heavenly grace, that, with meek heart and due reverence, they may hear, and receive thy holy Word; truly serving thee in holiness and righteousness all the days of their life.</p>
-    <p>And we most humbly beseech thee, of thy goodness, O Lord, to comfort and succour … all those who, in this transitory life, are in trouble, sorrow, need, sickness, or any other adversity.</p>
-    <p>And we also bless thy holy Name for all thy servants departed this life in thy faith and fear … ; beseeching thee to grant them continual growth in thy love and service, and to give us grace so to follow the good examples of … all thy saints, that with them we may be partakers of thy heavenly kingdom.</p>
-    <p>Grant this, O Father, for Jesus Christ’s sake, our only Mediator and Advocate. <b>Amen.</b></p>
-    <p><span class="drop-cap">A</span>SSIST us mercifully, O Lord, in these our supplications and prayers, and dispose the way of thy servants towards the attainment of everlasting salvation; that, among all the changes and chances of this mortal life, they may ever be defended by thy most gracious and ready help; through Jesus Christ our Lord. <b>Amen.</b></p>`;
-
-const formV = `<p><span class="drop-cap">F</span>OR the holy Church of God, that it may be filled with truth and love, and be found without fault at the day of your coming, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+const formV = `<p class="dropcap">FOR the holy Church of God, that it may be filled with truth and love, and be found without fault at the day of your coming, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For <span name = "clergy"></span>; for all bishops and other ministers; and for all the holy people of God, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For all who fear God and believe in you, Lord Christ, that our divisions may cease, and that all may be one as you and the Father are one, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For the mission of the Church, that in faithful witness it may preach the Gospel to the ends of the earth, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
@@ -26,7 +17,7 @@ const formV = `<p><span class="drop-cap">F</span>OR the holy Church of God, that
     <p>Rejoicing in the fellowship of … all the saints, let us commend ourselves, and one another, and all our life to Christ our God.<br><b>To you, O Lord our God.</b></p>
     <p>For yours is the majesty, O Father, Son, and Holy Spirit; yours is the kingdom and the power and the glory, now and for ever. <b>Amen.</b></p>`;
 
-const formVI = `<p><span class="drop-cap">I</span>N peace, we pray to you, Lord God.</p>
+const formVI = `<p class="dropcap">IN peace, we pray to you, Lord God.</p>
 <p>For all people in their daily life and work;<br>
 <b>For our families, friends, and neighbors, and for those who are alone.</b></p>
 <p>For this community, the nation, and the world;<br>
@@ -52,15 +43,118 @@ Lord, let your loving-kindness be upon them;<br>
 <b>Have mercy upon us, most merciful Father; in your compassion forgive us our sins, known and unknown, things done and left undone; and so uphold us by your Spirit that we may live and serve you in newness of life, to the honor and glory of your Name; through Jesus Christ our Lord. Amen.</b></p>
 <p>Heavenly Father, you have promised to hear what we ask in the Name of your Son: Accept and fulfill our petitions, we pray, not as we ask in our ignorance, nor as we deserve in our sinfulness, but as you know and love us in your Son Jesus Christ our Lord. <b>Amen.</b><p>`;
 
-function getIntercessions() {
-    var result = "";
+const litany = `<H1>The Litany</H1>
+        <P class="dropcap">O GOD the Father, Creator of heaven and earth; <B><BR>
+            Have mercy upon us. </B><BR>
+        O God the Son, Redeemer of the world...<BR>
+        O God the Holy Ghost, Sanctifier of the faithful...<BR>
+        O holy, blessed, and glorious Trinity, one God...
+    </P>
+    <p class="dropcap">
+        REMEMBER not, Lord, our offences, nor the offences of our forefathers; neither take thou vengeance of our sins:<BR>
+        Spare us, good Lord, spare thy people, whom thou hast redeemed with thy most precious blood, and be not angry with us for ever.<br>
+            <B>Spare us, good Lord.</B><BR>
+        From all evil and mischief; from sin; from the crafts and assaults of the devil; from thy wrath, and from everlasting damnation,<BR>
+            <B>Good Lord, deliver us.</B><BR>
+        From all blindness of heart; from pride, vainglory, and hypocrisy; from envy, hatred, and malice, and all uncharitableness...<BR>
+        From all inordinate and sinful affections; and from all the deceits of the world, the flesh, and the devil...<BR>
+        From lightning and tempest; from earthquake, fire, and flood; from plague, pestilence, and famine; from battle and murder, and from sudden death...<BR>
+        From all sedition, privy conspiracy, and rebellion; from all false doctrine, heresy, and schism; from hardness of heart, and contempt of thy Word and Commandment...<BR>
+        By the mystery of thy holy Incarnation; by thy holy Nativity and Circumcision; by thy Baptism, Fasting, and Temptation...<BR>
+        By thine Agony and Bloody Sweat; by thy Cross and Passion; by thy precious Death and Burial; by thy glorious Resurrection and Ascension, and by the Coming of the Holy Ghost...<BR>
+        In all time of our tribulation; in all time of our prosperity; in the hour of death, and in the day of judgment...<BR>
+    </p>
+    <p class="dropcap">
+        WE sinners do beseech thee to hear us, O Lord God; and that it may please thee to rule and govern thy holy Church universal in the right way;<BR>
+            <B>We beseech thee to hear us, good Lord.</B><BR>
+        That it may please thee so to rule the heart of thy servant the President of the United States, that he may above all things seek thy honour and glory...<BR>
+        That it may please thee to bless and preserve all Christian Rulers and Magistrates, giving them grace to execute justice, and to maintain truth...<BR>
+        That it may please thee to illuminate all Bishops, Priests, and Deacons, with true knowledge and understanding of thy Word; and that both by their preaching and living they may set it forth, and show it accordingly...<BR>
+        That it may please thee to send forth labourers into thy harvest...<BR>
+        That it may please thee to bless and keep all thy people...<BR>
+        That it may please thee to give to all nations unity, peace, and concord...<BR>
+        That it may please thee to give us an heart to love and fear thee, and diligently to live after thy commandments...<BR>
+        That it may please thee to give to all thy people increase of grace to hear meekly thy Word, and to receive it with pure affection, and to bring forth the fruits of the Spirit...<BR>
+        That it may please thee to bring into the way of truth all such as have erred, and are deceived...<BR>
+        That it may please thee to strengthen such as do stand; and to comfort and help the weak-hearted; and to raise up those who fall; and finally to beat down Satan under our feet...<BR>
+        That it may please thee to succour, help, and comfort, all who are in danger, necessity, and tribulation...<BR>
+        That it may please thee to preserve all who travel by land, by water, or by air, all women in child-birth, all sick persons, and young children; and to show thy pity upon all prisoners and captives...<BR>
+        That it may please thee to defend, and provide for, the fatherless children, and widows, and all who are desolate and oppressed...<BR>
+        That it may please thee to have mercy upon all mankind...<BR>
+        That it may please thee to forgive our enemies, persecutors, and slanderers, and to turn their hearts...<BR>
+        That it may please thee to give and preserve to our use the kindly fruits of the earth, so that in due time we may enjoy them...<BR>
+        That it may please thee to give us true repentance; to forgive us all our sins, negligences, and ignorances; and to endue us with the grace of thy Holy Spirit to amend our lives according to thy holy Word...<BR><p>
 
-    const dow = (new Date()).getDay();
-    if (dow === 0) result = wholeState;
-    else if (dow % 2 === 1) result = formV;
-    else result = formVI;
+        <p>SON of God, we beseech thee to hear us.<BR>
+            <B>Son of God, we beseech thee to hear us.</B><BR>
+        O Lamb of God, who takest away the sins of the world;<BR>
+            <B>Grant us thy peace.</B><BR>
+        O Lamb of God, who takest away the sins of the world;<BR>
+            <B>Have mercy upon us.</B><BR>
+        O Christ, hear us.<BR>
+            <B>O Christ, hear us.</B><BR>
+        Lord, have mercy upon us.<BR>
+            <B>Lord, have mercy upon us.</B><BR>
+        Christ, have mercy upon us.<BR>
+            <B>Christ, have mercy upon us.</B><BR>
+        Lord, have mercy upon us.<BR>
+            <B>Lord, have mercy upon us.</B>
+        </P>
+
+    <p><b>Our Father, who art in heaven, Hallowed be thy Name. Thy kingdom come. Thy will be done, On earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, As we forgive those who trespass against us. And lead us not into temptation, But deliver us from evil. Amen.</b></p>
+    <hr>
+    <P>
+        O Lord, deal not with us according to our sins.<br>
+        <B>Neither reward us according to our iniquities.</B>
+    </p>
     
-    return result + "";
+    <p> O God, merciful Father, who despisest not the sighing of a contrite
+        heart, nor the desire of such as are sorrowful; Mercifully assist
+        our prayers which we make before thee in all our troubles and
+        adversities, whensoever they oppress us; and graciously hear us,
+        that those evils which the craft and subtilty of the devil or
+        man worketh against us, may, by thy good providence, be brought
+        to nought; that we thy servants, being hurt by no persecutions,
+        may evermore give thanks unto thee in thy holy Church; through
+        Jesus Christ our Lord. Amen.<BR></p>
+        
+    <p><B>O Lord, arise, help us, and deliver us for thy Name’s sake.</B><BR>
+        O God, we have heard with our ears, and our fathers have declared unto us, the noble works that thou didst in their days, and in the old time before them.<BR>
+            <B>O Lord, arise, help us, and deliver us for thine honour.</B><BR>
+        Glory be to the Father, and to the Son, and to the Holy Ghost;<BR>
+            <B>As it was in the beginning, is now, and ever shall be, world without end. Amen. </B><BR>
+        From our enemies defend us, O Christ. <B><BR>
+            Graciously look upon our afflictions.</B><BR>
+        With pity behold the sorrows of our hearts. <B><BR>
+            Mercifully forgive the sins of thy people.</B><BR>
+        Favourably with mercy hear our prayers. <B><BR>
+            O Son of David, have mercy upon us. </B><BR>
+        Both now and ever vouchsafe to hear us, O Christ. <B><BR>
+            Graciously hear us, O Christ; graciously hear us, O Lord Christ.</B><BR>
+        O Lord, let thy mercy be showed upon us;<BR>
+            <B>As we do put our trust in thee.</B>
+    </p>
+    <hr>
+    <p class="dropcap">We humbly beseech thee, O Father, mercifully to look upon our
+        infirmities; and, for the glory of thy Name, turn from us all
+        those evils that we most justly have deserved; and grant, that
+        in all our troubles we may put our whole trust and confidence
+        in thy mercy, and evermore serve thee in holiness and pureness
+        of living, to thy honour and glory; through our only Mediator
+        and Advocate, Jesus Christ our Lord. Amen.</p>`;
+
+function getIntercessions() {
+    const now = new Date();
+    const dow = now.getDay();
+    const lit = synthDate(getWeek(now), getLiturgicalDate(now), dow);
+    
+    if ([0, 3, 5].contains(dow) || //sun, wed, fri
+        isEmberDay(lit, now.getMonth(), now.getDate(), dow) || //ember days
+        isRogationDay(lit, dow) || //rogation days
+        ["HW-Mon", "HW-Tue", "HW-Thu", "EE"].contains(lit)) //holy week
+        return litany;
+    else if [1, 4].contains(dow) return formV; //Mon and Thu
+    else return formVI; //Tue and Sat
 }
 
 function getAddlPrayers(lit) {
@@ -69,7 +163,7 @@ function getAddlPrayers(lit) {
             <h1>After Receiving Communion</h1><p><span class="drop-cap">A</span>LMIGHTY and everliving God, we most heartily thank thee, for that thou dost vouchsafe to feed us who have duly received these holy mysteries with the spiritual food of the most precious Body and Blood of thy Son our Saviour Jesus Christ; and dost assure us thereby of thy favour and goodness towards us; and that we are very members incorporate in the mystical body of thy Son, which is the blessed company of all faithful people; and are also heirs through hope of thy everlasting kingdom, by the merits of his most precious death and passion. And we humbly beseech thee, O heavenly Father, so to assist us with thy grace, that we may continue in that holy fellowship, and do all such good works as thou hast prepared for us to walk in; through Jesus Christ our Lord, to whom, with thee and the Holy Ghost, be all honour and glory, world without end. Amen.</p>`;
     
     if (["AW", "L1", "L2", "L3", "L4", "L5", "Palm", "HW-Mon", "HW-Tue", "HW-Wed", "Maundy", "GF"].includes(lit))
-        return getStations();
+        return stations;
 
     return litOfHum;
 }
@@ -103,8 +197,7 @@ const litOfHum = `<h1>A Litany of Humility</h1>
     That others may be preferred to me in everything...<br>
     That others may become holier than I, provided that I may become as holy as I should...<span style="display: block; text-align: right; font-style: italic;">⸺after Card. Merry del Val</span></p>`;
 
-function getStations() {
-    return `<h1>Stations of the Cross</h1>
+const stations `<h1>Stations of the Cross</h1>
         <p><span class="drop-cap">I</span>n the name of the Father, and of the Son, and of the Holy Ghost:<br>
         <b>Amen.</b></p>
         <h2>I. Jesus in the Garden of Gethsemane</h2>
@@ -207,4 +300,3 @@ function getStations() {
         
         The grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore.
         <b>Amen.</b>`;
-}
