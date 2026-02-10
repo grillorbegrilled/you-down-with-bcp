@@ -197,7 +197,7 @@ const litOfHum = `<h1>A Litany of Humility</h1>
     That others may be preferred to me in everything...<br>
     That others may become holier than I, provided that I may become as holy as I should...<span style="display: block; text-align: right; font-style: italic;">⸺after Card. Merry del Val</span></p>`;
 
-const stations `<h1>Stations of the Cross</h1>
+const stations = `<h1>Stations of the Cross</h1>
         <p><span class="drop-cap">I</span>n the name of the Father, and of the Son, and of the Holy Ghost:<br>
         <b>Amen.</b></p>
         <h2>I. Jesus in the Garden of Gethsemane</h2>
