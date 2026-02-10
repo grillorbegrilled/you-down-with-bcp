@@ -119,7 +119,7 @@ function getOffice(now, week, feast) {
         //Grace
         additionalPrayers += "<p>The grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>";
         
-        document.getElementById("additional-prayers").innerHTML = additionalPrayers;
+        if([1, 2].includes(officeType)) document.getElementById("additional-prayers").innerHTML = additionalPrayers;
     }
 }
 
