@@ -1,4 +1,5 @@
-const formV = `<p class="dropcap">FOR the holy Church of God, that it may be filled with truth and love, and be found without fault at the day of your coming, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
+const formV = `<h1>Intercessions</h1>
+<p class="dropcap">FOR the holy Church of God, that it may be filled with truth and love, and be found without fault at the day of your coming, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For <span name = "clergy"></span>; for all bishops and other ministers; and for all the holy people of God, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For all who fear God and believe in you, Lord Christ, that our divisions may cease, and that all may be one as you and the Father are one, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For the mission of the Church, that in faithful witness it may preach the Gospel to the ends of the earth, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
@@ -17,7 +18,8 @@ const formV = `<p class="dropcap">FOR the holy Church of God, that it may be fil
     <p>Rejoicing in the fellowship of … all the saints, let us commend ourselves, and one another, and all our life to Christ our God.<br><b>To you, O Lord our God.</b></p>
     <p>For yours is the majesty, O Father, Son, and Holy Spirit; yours is the kingdom and the power and the glory, now and for ever. <b>Amen.</b></p>`;
 
-const formVI = `<p class="dropcap">IN peace, we pray to you, Lord God.</p>
+const formVI = `<h1>Intercessions</h1>
+<p class="dropcap">IN peace, we pray to you, Lord God.</p>
 <p>For all people in their daily life and work;<br>
 <b>For our families, friends, and neighbors, and for those who are alone.</b></p>
 <p>For this community, the nation, and the world;<br>
