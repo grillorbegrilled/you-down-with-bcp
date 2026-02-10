@@ -39,6 +39,7 @@ function getOffice(now, week, feast) {
                 const cantMarg = getOfficeMargin2(now, feast || week);
                 if (cantMarg) document.getElementById("cantMarg").src = cantMarg;
                 else document.getElementById("cantMarg").style.display = "none";
+                document.getElementById("additional-prayers").innerHTML = getAdditionalPrayers(week, day, officeType);
                 break;
             case 2:
                 document.getElementById("office-name").textContent = "Evening Prayer";
@@ -56,6 +57,7 @@ function getOffice(now, week, feast) {
                  	  O God, make clean our hearts within us.<br>
                    	<b>And take not thy Holy Spirit from us.</b></p>`;
                 document.getElementById("office-collect").innerHTML = "<p>O God, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.</p>";
+                document.getElementById("additional-prayers").innerHTML = getAdditionalPrayers(week, day, officeType);
                 //getLessonFromFile(feast || week, "./lessons/evening.json", "./lessons/morning.json").then(lessonContent => {
                 //    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeP(lessonContent.txt)}`;
                 //});
@@ -93,34 +95,36 @@ function getOffice(now, week, feast) {
         } catch (e) {
             document.getElementById("tab-0").innerHTML = `<p>I AM ERROR ${e}</p>`;
         }
-    
-        //All Conditions
-        var additionalPrayers = //`<p>BLESS thy servant <i>N.</i> with health of body and of spirit. Let the hand of thy blessing be upon her head night and day, and support her in all necessities, strengthen her in all temptations, comfort her in all sorrows, and let her be thy servant in all changes; and make us both to dwell with thee for ever in thy favour, in the light of thy countenance, and in thy glory. Amen.<i>⸺Jeremy Taylor</i></p>
+    }
+}
+
+function getAdditionalPrayers(week, day, officeType) {
+    //All Conditions
+        var result = //`<p>BLESS thy servant <i>N.</i> with health of body and of spirit. Let the hand of thy blessing be upon her head night and day, and support her in all necessities, strengthen her in all temptations, comfort her in all sorrows, and let her be thy servant in all changes; and make us both to dwell with thee for ever in thy favour, in the light of thy countenance, and in thy glory. Amen.<i>⸺Jeremy Taylor</i></p>
             //<p>ALMIGHTY God, heavenly Father, who hast blessed us with the joy and care of children; Give us light and strength so to train them, that they may love whatsoever things are true and pure and lovely and of good report, following the example of their Saviour Jesus Christ. Amen.</p>
             "<p>O God, merciful and gracious, who hast made my family, my friends, and my benefactors ministers of thy mercy and instruments of Providence to me, I humbly beg a blessing to descend upon the heads of <i>N, &c.</i> and all those who desire our prayers. Send thy holy angels to guard their persons, thy Holy Spirit to guide their souls, thy providence to minister to their necessities; and let thy grace and mercy preserve them from the bitter pains of hell, and bring them to everlasting life, through Jesus Christ. Amen.<i>⸺after Jeremy Taylor</i></p>" +
            // <p>PRESERVE, O Lord, we beseech thee, thy servant <i>N.</i> under the shield of thy protection. And as thou hast ordained of thy grace that she be with child, so when the time of her labour shall draw near, graciously deliver her and mercifully keep her, and her child, from all disquietude. Amen.</p>
             "<p>O heavenly Father, who in thy Word hast given us a vision of that holy City to which the nations of the world bring their glory: Behold and visit, we beseech thee, the <I>City</i> of <I>N.</i> Renew the bonds of charity that uphold our civic life. Send us honest and able leaders. Deliver us from poverty, prejudice, and oppression, that peace may prevail with righteousness, and justice with mercy. And at the last, bring us to thy Holy City, the new Jerusalem, where we shall know perfect unity and peace; through Jesus Christ our Lord. Amen.</p>";
         if ((day === 3 || day === 5) && officeType == 1) //All Conditions on W & F Morning
-            additionalPrayers += `<h2>A Prayer for All Conditions of Men</h2>
+            result += `<h2>A Prayer for All Conditions of Men</h2>
                 <p>O God, the Creator and Preserver of all mankind, we humbly beseech thee for all sorts and conditions of men: that thou wouldest be pleased to make thy ways known unto them, thy saving health unto all nations. More especially, we pray for thy holy Church universal; that it may be so guided and governed by thy good Spirit, that all who profess and call themselves Christians may be led into the way of truth, and hold the faith in unity of spirit, in the bond of peace, and in righteousness of life. Finally, we commend to thy fatherly goodness all those, who are any ways afflicted, or distressed, in mind, body, or estate; ... that it may please thee to comfort and relieve them, according to their several necessities, giving them patience under their sufferings, and a happy issue out of all their afflictions. And this we beg for Jesus Christ’s sake. Amen.</p>`;
         
         //General Thanks
         if (day === 0 || day === 4) //General Thanksgiving on Su & Th
-            additionalPrayers += `<h2>A General Thanksgiving</h2>
+            result += `<h2>A General Thanksgiving</h2>
                 <p>Almighty God, Father of all mercies, we thine unworthy servants do give thee most humble and hearty thanks for all thy goodness and loving-kindness to us, and to all men; ... . We bless thee for our creation, preservation, and all the blessings of this life; but above all, for thine inestimable love in the redemption of the world by our Lord Jesus Christ; for the means of grace, and for the hope of glory. And, we beseech thee, give us that due sense of all thy mercies, that our hearts may be unfeignedly thankful, and that we shew forth thy praise, not only with our lips, but in our lives; by giving up ourselves to thy service, and by walking before thee in holiness and righteousness all our days; through Jesus Christ our Lord, to whom with thee and the Holy Ghost be all honour and glory, world without end. Amen.</p>`;
 
         //Ember Days
-        additionalPrayers += getEmberDayPrayer(week, now.getMonth(), now.getDate(), day);
+        result += getEmberDayPrayer(week, now.getMonth(), now.getDate(), day);
 
         //Passiontide
         if (['L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'Maundy', 'GF', 'EE'].includes(week))
-            additionalPrayers += `Blessèd Jesus, the only thing greater than the pain and anguish of your Passion was your mercy toward mankind, even to me. All this deserves more love than I have to give. Therefore, Lord, I beseech you to turn me all into love, and all my love into obedience, and let my obedience be without interruption. Make me to be something you delight in, that I may offer you all that I am, and all that I have. Clothe my soul in your garment, hide my sins in your wounds, and bury them in your grave, and then let me rise in the life of grace, and abide and grow in it, till I arrive at the kingdom of glory. Amen.<i>⸺Jeremy Taylor</i>`;
+            result += `Blessèd Jesus, the only thing greater than the pain and anguish of your Passion was your mercy toward mankind, even to me. All this deserves more love than I have to give. Therefore, Lord, I beseech you to turn me all into love, and all my love into obedience, and let my obedience be without interruption. Make me to be something you delight in, that I may offer you all that I am, and all that I have. Clothe my soul in your garment, hide my sins in your wounds, and bury them in your grave, and then let me rise in the life of grace, and abide and grow in it, till I arrive at the kingdom of glory. Amen.<i>⸺Jeremy Taylor</i>`;
 
         //Grace
-        additionalPrayers += "<p>The grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>";
-        
-        if([1, 2].includes(officeType)) document.getElementById("additional-prayers").innerHTML = additionalPrayers;
-    }
+        result += "<p>The grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. Amen.</p>";
+
+    return result;
 }
 
 function getMorningCanticle(week, feast) {
