@@ -85,7 +85,7 @@ function getOffice(now, week, feast) {
                     document.getElementById("tab-0").innerHTML = getMemorial();
                 document.getElementById("tab-0").innerHTML = getIntercessions();
             default:
-                document.getElementById("office-name").textContent = "Error";
+                document.getElementById("tab-0").innerHTML = `<p>Invalid Office type ${officeType}</p>`;
                 break;
             }
 
