@@ -148,12 +148,12 @@ function getIntercessions() {
     const dow = now.getDay();
     const lit = synthDate(getWeek(now), getLiturgicalDate(now), dow);
     
-    if ([0, 3, 5].contains(dow) || //sun, wed, fri
+    if ([0, 3, 5].includes(dow) || //sun, wed, fri
         isEmberDay(lit, now.getMonth(), now.getDate(), dow) || //ember days
         isRogationDay(lit, dow) || //rogation days
-        ["HW-Mon", "HW-Tue", "HW-Thu", "EE"].contains(lit)) //holy week
+        ["HW-Mon", "HW-Tue", "HW-Thu", "EE"].includes(lit)) //holy week
         return litany;
-    else if [1, 4].contains(dow) return formV; //Mon and Thu
+    else if [1, 4].includes(dow) return formV; //Mon and Thu
     else return formVI; //Tue and Sat
 }
 
