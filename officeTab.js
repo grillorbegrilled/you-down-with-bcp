@@ -81,6 +81,8 @@ function getOffice(now, week, feast) {
                 document.getElementById("ogt").style.display = "none";
                 break;
             case 4:
+                if (now.getMonth() == 10 && now.getDate() <= 8)
+                    document.getElementById("tab-0").innerHTML = getMemorial();
                 document.getElementById("tab-0").innerHTML = getIntercessions();
             default:
                 document.getElementById("office-name").textContent = "Error";
