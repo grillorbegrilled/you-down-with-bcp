@@ -88,6 +88,7 @@ function getOffice(now, week, feast) {
                 if (now.getMonth() == 10 && now.getDate() <= 8)
                     document.getElementById("tab-0").innerHTML = getMemorial();
                 document.getElementById("tab-0").innerHTML = getIntercessions();
+                break;
             default:
                 document.getElementById("tab-0").innerHTML = `<p>Invalid Office type ${officeType}</p>`;
                 break;
