@@ -153,7 +153,7 @@ function getIntercessions() {
         isRogationDay(lit, dow) || //rogation days
         ["HW-Mon", "HW-Tue", "HW-Thu", "EE"].includes(lit)) //holy week
         return litany;
-    else if [1, 4].includes(dow) return formV; //Mon and Thu
+    else if ([1, 4].includes(dow)) return formV; //Mon and Thu
     else return formVI; //Tue and Sat
 }
 
