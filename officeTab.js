@@ -33,8 +33,7 @@ function getOffice(now, week, feast) {
                 //getLessonFromFile(feast || week, "./lessons/morning.json").then(lessonContent => {
                 //    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeP(lessonContent.txt)}`;
                 //});
-                document.getElementById("ogc").style.display = "none";
-                document.getElementById("ogt").style.display = "none";
+                hideOneLesson(day, officeType);
                 document.getElementById("office-collect").innerHTML = "<p>O Lord, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
                 const cantMarg = getOfficeMargin2(now, feast || week);
                 if (cantMarg) document.getElementById("cantMarg").src = cantMarg;
@@ -62,8 +61,7 @@ function getOffice(now, week, feast) {
                 //getLessonFromFile(feast || week, "./lessons/evening.json", "./lessons/morning.json").then(lessonContent => {
                 //    document.getElementById('lesson').innerHTML = `<h2>${lessonContent.cit}</h2>${makeP(lessonContent.txt)}`;
                 //});
-                document.getElementById("oec").style.display = "none";
-                document.getElementById("oet").style.display = "none";
+                hideOneLesson(day, officeType);
                 document.getElementById("sentence").innerHTML = makeDropCap(getSentence(feast || week, officeType));
                 break;
             case 3:
@@ -97,6 +95,12 @@ function getOffice(now, week, feast) {
             document.getElementById("tab-0").innerHTML = `<p>I AM ERROR ${e.message}\n${e.stack}</p>`;
         }
     }
+}
+
+function hideOneLesson(x, y) {
+    var letter = (x % 2 === y % 2) ? "g" : "e";
+    document.getElementById(`o${letter}c`).style.display = "none";
+                document.getElementById(`o${letter}t`).style.display = "none";
 }
 
 function getAdditionalPrayers(week, day, officeType) {
