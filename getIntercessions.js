@@ -32,8 +32,7 @@ const formVI = `<h1>Intercessions</h1>
 <b>For all who proclaim the Gospel, and all who seek the Truth.</b></p>
 <p>For <span name = "clergy"></span>; and for all bishops and other ministers;<br>
 <b>For all who serve God in his Church.</b></p>
-<p><i>For …<br>
-Hear us, Lord;<br>
+<p><i>For … hear us, Lord;<br>
 <b>For your mercy is great.</b></i></p>
 <p>We thank you, Lord, for all the blessings of this life: for rain and sunshine; for the fruits of the earth; for the products of all honest industry; and for all your good gifts, temporal and spiritual, to us and to all mankind …<br>
 We will exalt you, O God our King;<br>
@@ -87,7 +86,7 @@ const litany = `<H1>The Litany</H1>
         That it may please thee to give and preserve to our use the kindly fruits of the earth, so that in due time we may enjoy them...<BR>
         That it may please thee to give us true repentance; to forgive us all our sins, negligences, and ignorances; and to endue us with the grace of thy Holy Spirit to amend our lives according to thy holy Word...<BR><p>
 
-        <p>SON of God, we beseech thee to hear us.<BR>
+        <p class="dropcap">SON of God, we beseech thee to hear us.<BR>
             <B>Son of God, we beseech thee to hear us.</B><BR>
         O Lamb of God, who takest away the sins of the world;<BR>
             <B>Grant us thy peace.</B><BR>
