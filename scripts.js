@@ -58,7 +58,7 @@ in our true native land with thee.`);
     });
 
     //additional devotions
-    document.getElementById('tab-4').innerHTML = getAddlPrayers(liturgicalDay);
+    document.getElementById('addlPrayers').innerHTML = getAddlPrayers(liturgicalDay);
 }
 
 async function getProper2(liturgicalDay) {
@@ -158,6 +158,7 @@ function makeP(text){
 }
 
 const makeDropCap = text => `<p class="dropcap">${text}</p>`;
+
 
 
 
