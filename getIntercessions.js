@@ -155,6 +155,7 @@ function getIntercessions() {
         isRogationDay(lit, dow) || //rogation days
         ["HW-Mon", "HW-Tue", "HW-Thu", "EE"].includes(lit)) //holy week
         return litany;
+    else if (["AW", "L1", "L2", "L3", "L4", "L5", "HW-Mon", "HW-Tue", "Maundy"].includes(lit)) return penitentialPsalms; //Penitential Psalms during Lent
     else if ([1, 4].includes(dow)) return formV; //Mon and Thu
     else return formVI; //Tue and Sat
 }
@@ -302,3 +303,128 @@ const stations = `<h1>Stations of the Cross</h1>
         
         The grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore.
         <b>Amen.</b>`;
+
+const penitentialPsalms = `<h1>The Penitential Psalms</h1>
+<h2>Psalm 6</h2>
+<p class="dropcap">O Lᴏʀᴅ, rebuke me not in thine indignation, * neither chasten me in thy displeasure.<br>
+2 Have mercy upon me, O Lᴏʀᴅ, for I am weak; * O Lᴏʀᴅ, heal me, for my bones are vexed.<br>
+3 My soul also is sore troubled: * but, Lᴏʀᴅ, how long wilt thou punish me?<br>
+4 Turn thee, O Lᴏʀᴅ, and deliver my soul; * O save me, for thy mercy’s sake.<br>
+5 For in death no man remembereth thee; * and who will give thee thanks in the pit?<br>
+6 I am weary of my groaning; * every night wash I my bed, and water my couch with my tears.<br>
+7 My beauty is gone for very trouble, * and worn away because of all mine enemies.<br>
+8 Away from me, all ye that work iniquity; * for the Lᴏʀᴅ hath heard the voice of my weeping.<br>
+9 The Lᴏʀᴅ hath heard my petition; * the Lᴏʀᴅ will receive my prayer.<br>
+10 All mine enemies shall be confounded, and sore vexed; * they shall be turned back, and put to shame suddenly.</p>
+
+<h2>Psalm 32</h2>
+<p class="dropcap">BLESSED is he whose unrighteousness is forgiven, * and whose sin is covered.<br>
+2 Blessed is the man unto whom the Lᴏʀᴅ imputeth no sin, * and in whose spirit there is no guile.<br>
+3 For whilst I held my tongue, * my bones consumed away through my daily complaining.<br>
+4 For thy hand was heavy upon me day and night, * and my moisture was like the drought in summer.<br>
+5 I acknowledged my sin unto thee; * and mine unrighteousness have I not hid.<br>
+6 I said, I will confess my sins unto the Lᴏʀᴅ; * and so thou forgavest the wickedness of my sin.<br>
+7 For this shall every one that is godly make his prayer unto thee, in a time when thou mayest be found; * surely the great water-floods shall not come nigh him.<br>
+8 Thou art a place to hide me in; thou shalt preserve me from trouble; * thou shalt compass me about with songs of deliverance.<br>
+9 I will inform thee, and teach thee in the way wherein thou shalt go; * and I will guide thee with mine eye.<br>
+10 Be ye not like to horse and mule, which have no understanding; * whose mouths must be held with bit and bridle, else they will not obey thee.<br>
+11 Great plagues remain for the ungodly; * but whoso putteth his trust in the Lᴏʀᴅ, mercy embraceth him on every side.<br>
+12 Be glad, O ye righteous, and rejoice in the Lᴏʀᴅ; * and be joyful, all ye that are true of heart.</p>
+
+<h2>Psalm 38</h2>
+<p class="dropcap">PUT ME not to rebuke, O Lᴏʀᴅ, in thine anger; * neither chasten me in thy heavy displeasure:<br>
+2 For thine arrows stick fast in me, * and thy hand presseth me sore.<br>
+3 There is no health in my flesh, because of thy displeasure; * neither is there any rest in my bones, by reason of my sin.<br>
+4 For my wickednesses are gone over my head, * and are like a sore burden, too heavy for me to bear.<br>
+5 My wounds stink, and are corrupt, * through my foolishness.<br>
+6 I am brought into so great trouble and misery, * that I go mourning all the day long.<br>
+7 For my loins are filled with a sore disease, * and there is no whole part in my body.<br>
+8 I am feeble and sore smitten; * I have roared for the very disquietness of my heart.<br>
+9 Lord, thou knowest all my desire; * and my groaning is not hid from thee.<br>
+10 My heart panteth, my strength hath failed me, * and the light of mine eyes is gone from me.<br>
+11 My lovers and my neighbours did stand looking upon my trouble, * and my kinsmen stood afar off.<br>
+12 They also that sought after my life laid snares for me; * and they that went about to do me evil talked of wickedness, and imagined deceit all the day long.<br>
+13 As for me, I was like a deaf man, and heard not; * and as one that is dumb, who doth not open his mouth.<br>
+14 I became even as a man that heareth not, * and in whose mouth are no reproofs.<br>
+15 For in thee, O Lᴏʀᴅ, have I put my trust; * thou shalt answer for me, O Lord my God.<br>
+16 I have required that they, even mine enemies, should not triumph over me; * for when my foot slipt, they rejoiced greatly against me.<br>
+17 And I truly am set in the plague, * and my heaviness is ever in my sight.<br>
+18 For I will confess my wickedness, * and be sorry for my sin.<br>
+19 But mine enemies live, and are mighty; * and they that hate me wrongfully are many in number.<br>
+20 They also that reward evil for good are against me; * because I follow the thing that good is.<br>
+21 Forsake me not, O Lᴏʀᴅ my God; * be not thou far from me.</p>
+
+<h2>Psalm 51</h2>
+<p class="dropcap">HAVE mercy upon me, O God, after thy great goodness; * according to the multitude of thy mercies do away mine offences.<br>
+2 Wash me throughly from my wickedness, * and cleanse me from my sin.<br>
+3 For I acknowledge my faults, * and my sin is ever before me.<br>
+4 Against thee only have I sinned, and done this evil in thy sight; * that thou mightest be justified in thy saying, and clear when thou shalt judge.<br>
+5 Behold, I was shapen in wickedness, * and in sin hath my mother conceived me.<br>
+6 But lo, thou requirest truth in the inward parts, * and shalt make me to understand wisdom secretly.<br>
+7 Thou shalt purge me with hyssop, and I shall be clean; * thou shalt wash me, and I shall be whiter than snow.<br>
+8 Thou shalt make me hear of joy and gladness, * that the bones which thou hast broken may rejoice.<br>
+9 Turn thy face from my sins, * and put out all my misdeeds.<br>
+10 Make me a clean heart, O God, * and renew a right spirit within me.<br>
+11 Cast me not away from thy presence, * and take not thy holy Spirit from me.<br>
+12 O give me the comfort of thy help again, * and stablish me with thy free Spirit.<br>
+13 Then shall I teach thy ways unto the wicked, * and sinners shall be converted unto thee.<br>
+14 Deliver me from blood-guiltiness, O God, thou that art the God of my health; * and my tongue shall sing of thy righteousness.<br>
+15 Thou shalt open my lips, O Lord, * and my mouth shall show thy praise.<br>
+16 For thou desirest no sacrifice, else would I give it thee; * but thou delightest not in burnt-offerings.<br>
+17 The sacrifice of God is a troubled spirit: * a broken and contrite heart, O God, shalt thou not despise.<br>
+18 O be favourable and gracious unto Sion; * build thou the walls of Jerusalem.<br>
+19 Then shalt thou be pleased with the sacrifice of righteousness, with the burnt-offerings and oblations; * then shall they offer young bullocks upon thine altar.</p>
+
+<h2>Psalm 102</h2>
+<p class="dropcap">HEAR my prayer, O Lᴏʀᴅ, * and let my crying come unto thee.<br>
+2 Hide not thy face from me in the time of my trouble; * incline thine ear unto me when I call; O hear me, and that right soon.<br>
+3 For my days are consumed away like smoke, * and my bones are burnt up as it were a firebrand.<br>
+4 My heart is smitten down, and withered like grass; * so that I forget to eat my bread.<br>
+5 For the voice of my groaning, * my bones will scarce cleave to my flesh.<br>
+6 I am become like a pelican in the wilderness, * and like an owl that is in the desert.<br>
+7 I have watched, and am even as it were a sparrow, * that sitteth alone upon the housetop.<br>
+8 Mine enemies revile me all the day long; * and they that are mad upon me are sworn together against me.<br>
+9 For I have eaten ashes as it were bread, * and mingled my drink with weeping;<br>
+10 And that, because of thine indignation and wrath; * for thou hast taken me up, and cast me down.<br>
+11 My days are gone like a shadow, * and I am withered like grass.<br>
+12 But thou, O Lᴏʀᴅ, shalt endure for ever, * and thy remembrance throughout all generations.<br>
+13 Thou shalt arise, and have mercy upon Sion; * for it is time that thou have mercy upon her, yea, the time is come.<br>
+14 And why? thy servants think upon her stones, * and it pitieth them to see her in the dust.<br>
+15 The nations shall fear thy Name, O Lᴏʀᴅ; * and all the kings of the earth thy majesty;<br>
+16 When the Lᴏʀᴅ shall build up Sion, * and when his glory shall appear;<br>
+17 When he turneth him unto the prayer of the poor destitute, * and despiseth not their desire.<br>
+18 This shall be written for those that come after, * and the people which shall be born shall praise the Lᴏʀᴅ.<br>
+19 For he hath looked down from his sanctuary; * out of the heaven did the Lᴏʀᴅ behold the earth;<br>
+20 That he might hear the mournings of such as are in captivity, * and deliver them that are appointed unto death;<br>
+21 That they may declare the Name of the Lᴏʀᴅ in Sion, * and his worship at Jerusalem;<br>
+22 When the peoples are gathered together, * and the kingdoms also, to serve the Lᴏʀᴅ.<br>
+23 He brought down my strength in my journey, * and shortened my days.<br>
+24 But I said, O my God, take me not away in the midst of mine age; * as for thy years, they endure throughout all generations.<br>
+25 Thou, Lord, in the beginning hast laid the foundation of the earth, * and the heavens are the work of thy hands.<br>
+26 They shall perish, but thou shalt endure: * they all shall wax old as doth a garment;<br>
+27 And as a vesture shalt thou change them, and they shall be changed; * but thou art the same, and thy years shall not fail.<br>
+28 The children of thy servants shall continue, * and their seed shall stand fast in thy sight.</p>
+
+<h2>Psalm 130</h2>
+<p class="dropcap">OUT OF the deep have I called unto thee, O Lᴏʀᴅ; * Lord, hear my voice.<br>
+2 O let thine ears consider well * the voice of my complaint.<br>
+3 If thou, Lᴏʀᴅ, wilt be extreme to mark what is done amiss, * O Lord, who may abide it?<br>
+4 For there is mercy with thee; * therefore shalt thou be feared.<br>
+5 I look for the Lᴏʀᴅ; my soul doth wait for him; * in his word is my trust.<br>
+6 My soul fleeth unto the Lord before the morning watch; * I say, before the morning watch.<br>
+7 O Israel, trust in the Lᴏʀᴅ; for with the Lᴏʀᴅ there is mercy, * and with him is plenteous redemption.<br>
+8 And he shall redeem Israel * from all his sins.</p>
+
+<h2>Psalm 143</h2>
+<p class="dropcap">HEAR my prayer, O Lᴏʀᴅ, and consider my desire; * hearken unto me for thy truth and righteousness’ sake.<br>
+2 And enter not into judgment with thy servant; * for in thy sight shall no man living be justified.<br>
+3 For the enemy hath persecuted my soul; he hath smitten my life down to the ground; * he hath laid me in the darkness, as the men that have been long dead.<br>
+4 Therefore is my spirit vexed within me, * and my heart within me is desolate.<br>
+5 Yet do I remember the time past; I muse upon all thy works; * yea, I exercise myself in the works of thy hands.<br>
+6 I stretch forth my hands unto thee; * my soul gaspeth unto thee as a thirsty land.<br>
+7 Hear me, O Lᴏʀᴅ, and that soon; for my spirit waxeth faint: * hide not thy face from me, lest I be like unto them that go down into the pit.<br>
+8 O let me hear thy loving-kindness betimes in the morning; for in thee is my trust: * show thou me the way that I should walk in; for I lift up my soul unto thee.<br>
+9 Deliver me, O Lᴏʀᴅ, from mine enemies; * for I flee unto thee to hide me.<br>
+10 Teach me to do the thing that pleaseth thee; for thou art my God: * let thy loving Spirit lead me forth into the land of righteousness.<br>
+11 Quicken me, O Lᴏʀᴅ, for thy Name’s sake; * and for thy righteousness’ sake bring my soul out of trouble.<br>
+12 And of thy goodness slay mine enemies, * and destroy all them that vex my soul; for I am thy servant.</p>`;
