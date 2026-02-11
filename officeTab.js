@@ -56,7 +56,7 @@ function getOffice(now, week, feast) {
                  	  <b>For it is thou, Lord, only, that makest us dwell in safety.</b><br>
                  	  O God, make clean our hearts within us.<br>
                    	<b>And take not thy Holy Spirit from us.</b></p>`;
-                document.getElementById('cotd-office')?.classList = "";
+                document.getElementById("cotd-office").className = "";
                 document.getElementById("office-collect").innerHTML = "<p>O God, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.</p>";
                 document.getElementById("additional-prayers").innerHTML = getAdditionalPrayers(week, day, officeType);
                 //getLessonFromFile(feast || week, "./lessons/evening.json", "./lessons/morning.json").then(lessonContent => {
