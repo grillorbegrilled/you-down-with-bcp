@@ -179,7 +179,7 @@ p.dropcap::first-letter {
 
 /*Capitalize the first line*/
 p.dropcap::first-line {
-  text-transform: uppercase;
+  font-variant: small-caps;
 }
 /*
   font-size: 5rem;
