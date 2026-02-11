@@ -1,7 +1,4 @@
 function getTopImage(lit, month, date) {
-  if (lit === "AllSaints") return "images/bg/All-saints-day.jpg";
-
-  
     switch (lit) {
         case "A1":
         case "A2":
@@ -81,8 +78,10 @@ return "images/bg/Easter.jpg";
         case "JohnBaptist":
         return "images/bg/John Baptist.jpg";
         break;
-        /*case "AllSaints":
-        case "ThanksgivingDay":
+        case "AllSaints":
+        return "images/bg/All-saints-day.jpg";
+        break;
+        /*case "ThanksgivingDay":
             return "white_damask";
             break;
         */
