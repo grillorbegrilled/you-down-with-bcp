@@ -176,6 +176,11 @@ p.dropcap::first-letter {
   color: firebrick;
   margin: 0.25rem 0 -0.25rem 0; /*top right bottom left*/
 }
+
+/*Capitalize the first line*/
+p.dropcap::first-line {
+  text-transform: uppercase;
+}
 /*
   font-size: 5rem;
   float: left;
