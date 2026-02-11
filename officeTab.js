@@ -98,9 +98,9 @@ function getOffice(now, week, feast) {
 }
 
 function hideOneLesson(x, y) {
-    var letter = (x % 2 === y % 2) ? "g" : "e";
+    var letter = (x % 2 !== y % 2) ? "g" : "e";
     document.getElementById(`o${letter}c`).style.display = "none";
-                document.getElementById(`o${letter}t`).style.display = "none";
+    document.getElementById(`o${letter}t`).style.display = "none";
 }
 
 function getAdditionalPrayers(week, day, officeType) {
