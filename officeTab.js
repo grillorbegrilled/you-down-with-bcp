@@ -44,7 +44,7 @@ function getOffice(now, week, feast) {
             case 2:
                 document.getElementById("office-name").textContent = "Evening Prayer";
                 document.getElementById("canticle").innerHTML = getEveningCanticle(feast, week);
-                document.getElementById("creed-or-suffrages").innerHTML = `<p>O Lord, show thy mercy upon us.<br>
+                document.getElementById("creed-or-suffrages").innerHTML = `<p class="dropcap">O Lord, show thy mercy upon us.<br>
                  	  <b>And grant us thy salvation.</b><br>
                  	  O Lord, save the State.<br>
                  	  <b>And mercifully hear us when we call upon thee.</b><br>
@@ -56,6 +56,7 @@ function getOffice(now, week, feast) {
                  	  <b>For it is thou, Lord, only, that makest us dwell in safety.</b><br>
                  	  O God, make clean our hearts within us.<br>
                    	<b>And take not thy Holy Spirit from us.</b></p>`;
+                document.getElementById('cotd-office')?.classList.remove('dropcap');
                 document.getElementById("office-collect").innerHTML = "<p>O God, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. Amen.</p>";
                 document.getElementById("additional-prayers").innerHTML = getAdditionalPrayers(week, day, officeType);
                 //getLessonFromFile(feast || week, "./lessons/evening.json", "./lessons/morning.json").then(lessonContent => {
