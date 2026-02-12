@@ -171,7 +171,7 @@ p.dropcap::first-letter {
   font-family: "EBGInit" !important;
   float: left;
   display: inline-block;
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 1;
   color: firebrick;
   margin: 0.25rem 0 -0.25rem 0; /*top right bottom left*/
