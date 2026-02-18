@@ -1,14 +1,24 @@
 function getOffice(now, week, feast) {
+    var tab0ovr = false;
     const day = now.getDay();
     //------------------COMMINATION
-    if (now.getDate() < 8 && day === 5) //first Friday of the month
+    if (now.getDate() < 8 && day === 5) {//first Friday of the month
         document.getElementById("tab-0").innerHTML = commination;
+        tab0ovr = true;
+    }
     //------------------litany & commination on AW, just litany on Lenten Fridays not first of month
-    if (week === "AW" && day === 3) document.getElementById("tab-0").innerHTML = getIntercessions() + commination; //Ash Wednesday litany and commination
-    if (["L2", "L3", "L4", "L5"].includes(week) && day === 5) document.getElementById("tab-0").innerHTML = getIntercessions();
+    if (week === "AW" && day === 3) {
+        document.getElementById("tab-0").innerHTML = getIntercessions() + commination; //Ash Wednesday litany and commination
+        tab0ovr = true;
+    }
+    if (["L2", "L3", "L4", "L5"].includes(week) && day === 5) {
+        document.getElementById("tab-0").innerHTML = getIntercessions();
+        tab0ovr = true;
+    }
     
     else {
         try {
+            if (!tab0ovr){
         //------------------DAILY PRAYERS
         //officeType: 1=MP, 2=EP, 3=Compline, 4=Intercessions
         var officeType = 0;
@@ -17,10 +27,8 @@ function getOffice(now, week, feast) {
         else if (now.getHours() >= 15 && now.getHours() < 21) officeType = 2;
         else officeType = 3;
     const topMarg = getOfficeMargin1(now, feast || week);
-            if(document.getElementById("topMarg")) {
                 if (topMarg) document.getElementById("topMarg").src = topMarg;
                 else document.getElementById("topMarg").style.display = "none";
-            }
         switch (officeType) {
             case 1:
                 document.getElementById("office-name").textContent = "Morning Prayer";
@@ -38,10 +46,8 @@ function getOffice(now, week, feast) {
                 hideOneLesson(day, officeType);
                 document.getElementById("office-collect").innerHTML = "<p>O Lord, our heavenly Father, Almighty and everlasting God, who hast safely brought us to the beginning of this day; Defend us in the same with thy mighty power; and grant that this day we fall into no sin, neither run into any kind of danger; but that all our doings, being ordered by thy governance, may be righteous in thy sight; through Jesus Christ our Lord. Amen.</p>";
                 const cantMarg = getOfficeMargin2(now, feast || week);
-                if (document.getElementById("cantMarg")) {
                     if (cantMarg) document.getElementById("cantMarg").src = cantMarg;
                     else document.getElementById("cantMarg").style.display = "none";
-                }
                 document.getElementById("additional-prayers").innerHTML = getAdditionalPrayers(week, day, officeType);
                 document.getElementById("sentence").innerHTML = makeDropCap(getSentence(feast || week, officeType));
                 break;
@@ -80,12 +86,12 @@ function getOffice(now, week, feast) {
                     <p>Glory be to the Father, and to the Son * and to the Holy Ghost;<br>
                     As it was in the beginning, is now, and ever shall be * world without end. Amen.</p>`;
                 document.getElementById("office-collect").innerHTML = "<p>Lighten our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. Amen.</p>";
-                if (document.getElementById("sentence")) document.getElementById('sentence').style.display = "none";
-                if (document.getElementById("additional-prayers")) document.getElementById("additional-prayers").style.display = "none";
-                if (document.getElementById("oec")) document.getElementById("oec").style.display = "none";
-                if (document.getElementById("oet")) document.getElementById("oet").style.display = "none";
-                if (document.getElementById("ogc")) document.getElementById("ogc").style.display = "none";
-                if (document.getElementById("ogt")) document.getElementById("ogt").style.display = "none";
+                document.getElementById('sentence').style.display = "none";
+                document.getElementById("additional-prayers").style.display = "none";
+                document.getElementById("oec").style.display = "none";
+                document.getElementById("oet").style.display = "none";
+                document.getElementById("ogc").style.display = "none";
+                document.getElementById("ogt").style.display = "none";
                 break;
             case 4:
                 if (now.getMonth() == 10 && now.getDate() <= 8)
@@ -96,6 +102,7 @@ function getOffice(now, week, feast) {
                 document.getElementById("tab-0").innerHTML = `<p>Invalid Office type ${officeType}</p>`;
                 break;
             }
+            }
         } catch (e) {
             document.getElementById("tab-0").innerHTML = `<p>I AM ERROR ${e.message}\n${e.stack}</p>`;
         }
@@ -104,10 +111,8 @@ function getOffice(now, week, feast) {
 
 function hideOneLesson(x, y) {
     var letter = (x % 2 !== y % 2) ? "g" : "e";
-    if (document.getElementById(`o${letter}c`)) {
         document.getElementById(`o${letter}c`).style.display = "none";
         document.getElementById(`o${letter}t`).style.display = "none";
-    }
 }
 
 function getAdditionalPrayers(week, day, officeType) {
