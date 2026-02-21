@@ -305,7 +305,7 @@ const stations = `<h1>Stations of the Cross</h1>
 
 const penitentialPsalms = `<h1>The Penitential Psalms</h1>
 <h2>Psalm 6</h2>
-<p class="dropcap">O Lᴏʀᴅ, rebuke me not in thine indignation, * neither chasten me in thy displeasure.<br>
+<p class="dropcap">O Lord, rebuke me not in thine indignation, * neither chasten me in thy displeasure.<br>
 2 Have mercy upon me, O Lᴏʀᴅ, for I am weak; * O Lᴏʀᴅ, heal me, for my bones are vexed.<br>
 3 My soul also is sore troubled: * but, Lᴏʀᴅ, how long wilt thou punish me?<br>
 4 Turn thee, O Lᴏʀᴅ, and deliver my soul; * O save me, for thy mercy’s sake.<br>
@@ -375,7 +375,7 @@ const penitentialPsalms = `<h1>The Penitential Psalms</h1>
 19 Then shalt thou be pleased with the sacrifice of righteousness, with the burnt-offerings and oblations; * then shall they offer young bullocks upon thine altar.</p>
 
 <h2>Psalm 102</h2>
-<p class="dropcap">HEAR my prayer, O Lᴏʀᴅ, * and let my crying come unto thee.<br>
+<p class="dropcap">HEAR my prayer, O Lord, * and let my crying come unto thee.<br>
 2 Hide not thy face from me in the time of my trouble; * incline thine ear unto me when I call; O hear me, and that right soon.<br>
 3 For my days are consumed away like smoke, * and my bones are burnt up as it were a firebrand.<br>
 4 My heart is smitten down, and withered like grass; * so that I forget to eat my bread.<br>
@@ -415,7 +415,7 @@ const penitentialPsalms = `<h1>The Penitential Psalms</h1>
 8 And he shall redeem Israel * from all his sins.</p>
 
 <h2>Psalm 143</h2>
-<p class="dropcap">HEAR my prayer, O Lᴏʀᴅ, and consider my desire; * hearken unto me for thy truth and righteousness’ sake.<br>
+<p class="dropcap">HEAR my prayer, O Lord, and consider my desire; * hearken unto me for thy truth and righteousness’ sake.<br>
 2 And enter not into judgment with thy servant; * for in thy sight shall no man living be justified.<br>
 3 For the enemy hath persecuted my soul; he hath smitten my life down to the ground; * he hath laid me in the darkness, as the men that have been long dead.<br>
 4 Therefore is my spirit vexed within me, * and my heart within me is desolate.<br>
