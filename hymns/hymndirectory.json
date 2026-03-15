@@ -178,7 +178,6 @@
   ],
   "E4": [
     { "title": "Songs of thankfulness and praise", "number": "53" },
-    { "title": "O food to pilgrims given", "number": "192" },
     { "title": "There's a wideness in God's mercy", "number": "304" },
     { "title": "Let us with a gladsome mind", "number": "308" },
     { "title": "The spacious firmament on high", "number": "309" },
@@ -313,16 +312,15 @@
     { "title": "Come labor on", "number": "576" }
   ],
   "L4": [
-    { "title": "O food to men wayfaring", "number": "192" },
+    { "title": "O mother dear, Jerusalem", "number": "584" },
+    { "title": "Jerusalem, my happy home", "number": "585" },
+    { "title": "O what their joy and their glory must be", "number": "589" },
+    { "title": "There is a blessed home", "number": "591" },
     { "title": "How wondrous and great thy works", "number": "260" },
     { "title": "When all thy mercies, O my God", "number": "297" },
     { "title": "The King of love my shepherd is", "number": "345" },
     { "title": "O very God of very God", "number": "442" },
-    { "title": "Lord dismiss us with thy blessing", "number": "489" },
-    { "title": "O mother dear, Jerusalem", "number": "584" },
-    { "title": "Jerusalem, my happy home", "number": "585" },
-    { "title": "O what their joy and their glory must be", "number": "589" },
-    { "title": "There is a blessed home", "number": "591" }
+    { "title": "Lord dismiss us with thy blessing", "number": "489" }
   ],
   "L5": [
     { "title": "The Royal banners forward go (office hymn)", "number": "63" },
