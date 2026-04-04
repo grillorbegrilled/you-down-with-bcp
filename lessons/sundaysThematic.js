@@ -131,7 +131,7 @@ const sundaysThematic = {
 "Palm":[
 "*Zechariah 9:9-12", "Mark 11:1-11",
 "Isaiah 52:13–53:12", "Matthew 26",
-"Jeremiah 8:9-15, 18-9:1", "1 Corinthians 1:17ff",
+"Jeremiah 8:9-9:1", "1 Corinthians 1:17ff",
 "Isaiah 59:1-3, 9-21", "John 12:20-36"
 ],
 "Easter":[
