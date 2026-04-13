@@ -402,7 +402,6 @@
     { "title": "Hail! thee, festival day (procession)", "number": "86" },
     { "title": "Welcome happy morning", "number": "87" },
     { "title": "Jesus lives", "number": "88" },
-    { "title": "At the Lamb's high feast", "number": "89" },
     { "title": "He is risen", "number": "90" },
     { "title": "Alleluia! The strife is o'er", "number": "91" },
     { "title": "Alleluia Hearts and voices", "number": "92" },
@@ -419,7 +418,6 @@
     { "title": "Jesus Christ is risen today", "number": "85" },
     { "title": "Welcome happy morning", "number": "87" },
     { "title": "Jesus lives", "number": "88" },
-    { "title": "At the Lamb's high feast (office)", "number": "89" },
     { "title": "He is risen", "number": "90" },
     { "title": "Alleluia! The strife is o'er", "number": "91" },
     { "title": "Alleluia Hearts and voices", "number": "92" },
@@ -435,7 +433,6 @@
     { "title": "Christ for the world we sing", "number": "537" }
   ],
   "Ea2": [
-    { "title": "At the Lamb's high feast (office)", "number": "89" },
     { "title": "Alleluia! The strife is o'er", "number": "91" },
     { "title": "Thou hallowed chosen morn of praise", "number": "93" },
     { "title": "Savior, like a shepherd lead us", "number": "247" },
@@ -447,7 +444,6 @@
     { "title": "All praise to thee, for thou, O King divine", "number": "366" }
   ],
   "Ea3": [
-    { "title": "At the Lamb's high feast", "number": "89" },
     { "title": "Love's redeeming work is done", "number": "95" },
     { "title": "We sing the glorious conquest", "number": "114" },
     { "title": "O love, how deep, how broad, how high", "number": "344" },
