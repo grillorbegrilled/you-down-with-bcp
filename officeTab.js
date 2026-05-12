@@ -135,7 +135,7 @@ function getAdditionalPrayers(week, day, officeType) {
         result += getEmberDayPrayer(week, (new Date()).getMonth(), (new Date()).getDate(), day);
 
         //Rogationtide & Labor Day
-        if (week === 'Ea5' && day > 0 && day < 4 || new Date()).getMonth() === 8 && day === 1 && new Date()).getDate() < 8)
+        if (week === 'Ea5' && day > 0 && day < 4 || (new Date()).getMonth() === 8 && day === 1 && (new Date()).getDate() < 8)
             result += `<h2>For the Increase of the Ministry.</h2>
 <p>O almighty God, look mercifully upon the world which thou hast redeemed by the blood of thy dear Son, and incline the hearts of many to dedicate themselves to the sacred ministry of thy Church; through the same thy Son Jesus Christ our Lord. Amen. </p>
 <h2>For Commerce & Industry.</h2>
