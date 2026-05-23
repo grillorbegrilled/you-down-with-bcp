@@ -64,8 +64,10 @@ return "images/bg/Easter.jpg";
             return "images/bg/Rogation.jpg";
         break;
         case "Ascension":
-        case "Asc1":
         return "images/bg/Ascension.jpg";
+        break;
+            case "Asc1":
+            return "images/bg/Christusrex.jpg";
         break;
         case "Whitsun":
         case "Whitmon":
