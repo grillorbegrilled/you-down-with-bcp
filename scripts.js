@@ -93,7 +93,7 @@ async function getProper2(liturgicalDay) {
     else if (trinity.has(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/trinity.json");
     else if (liturgicalDay === "IndependenceDay" || liturgicalDay === "ThanksgivingDay") return getProperFromFile(liturgicalDay, "./ceg/nationaldays-us.json");
     else if (custom.has(liturgicalDay)) return getProperFromFile(liturgicalDay, "./ceg/custom-festivals.json");
-    else return getProperFromFile(liturgicalDay, "./ceg/1662festivals.json");
+    else return getProperFromFile(liturgicalDay, "./ceg/1928festivals.json");
 }
 
 async function getProperFromFile(liturgicalDay, filePath) {
@@ -142,6 +142,26 @@ function getSeasonalCollect(week) {
         case "L5":
         case "L6":
             return "Almighty and everlasting God, who hatest nothing that thou hast made and dost forgive the sins of all them that are penitent; Create and make in us new and contrite hearts, that we, worthily lamenting our sins, and acknowledging our wretchedness, may obtain of thee, the God of all mercy, perfect remission and forgiveness; through Jesus Christ our Lord. Amen.";
+            break;
+        case "HW-Mon":
+        case "HW-Tue":
+        case "HW-Wed":
+        case "HW-Thu":
+            return "Almighty and everlasting God, who, of thy tender love towards mankind, hast sent thy Son, our Savior Jesus Christ, to take upon him our flesh, and to suffer death upon the cross, that all mankind should follow the example of his great humility; Mercifully grant, that we may both follow the example of his patience, and also be made partakers of his resurrection; through the same Jesus Christ our Lord. Amen.";
+            break;
+        case "Easter":
+        case "EasterMon":
+        case "EasterTue":
+            return "Almighty God, who through thine only-begotten Son Jesus Christ hast overcome death, and opened unto us the gate of everlasting life; We humbly beseech thee that, as by thy special grace preventing us thou dost put into our minds good desires, so by thy continual help we may bring the same to good effect; through the same Jesus Christ our Lord, who liveth and reigneth with thee and the Holy Ghost ever, one God, world without end. Amen.";
+            break;
+        case "Ascension":
+        case "Asc1":
+            return "Grant, we beseech thee, Almighty God, that like as we do believe thy only-begotten Son our Lord Jesus Christ to have ascended into the heavens; so we may also in heart and mind thither ascend, and with him continually dwell, who liveth and reigneth with thee and the Holy Ghost, one God, world without end. Amen.";
+            break;
+        case "Whitsun":
+        case "Whitmon":
+        case "WhitTue":
+            return "O God, who as at this time didst teach the hearts of thy faithful people, by sending to them the light of thy Holy Spirit; Grant us by the same Spirit to have a right judgment in all things, and evermore to rejoice in his holy comfort; through the merits of Christ Jesus our Saviour, who liveth and reigneth with thee, in the unity of the same Spirit, one God, world without end. Amen.";
             break;
         default:
             return "";
