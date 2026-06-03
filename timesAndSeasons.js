@@ -217,8 +217,11 @@ function getWeek(now) {
     const easter = getEaster(year);
     
     //Xmas in January
-    if (now < epiphany)
-        return "Circ";
+    if (now < epiphany) {
+        if (day <= date - 2) return "X2";
+        return "X1";
+    }
+        
     
     const weeksTillEaster = weeksTill(easter);
     
@@ -346,7 +349,7 @@ function getLiturgicalDate(now) {
     const day = now.getDate();
     
     if (month === 0) { //jan
-        //if (day === 1) return "Circ";
+        if (day === 1) return "Circ";
         //if (day === 6) return "Epiphany";
         if (day === 25) return "Paul";
     } else if (month === 1) { //feb
