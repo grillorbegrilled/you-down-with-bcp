@@ -134,39 +134,6 @@ function getAdditionalPrayers(week, day, officeType) {
         //Ember Days
         result += getEmberDayPrayer(week, (new Date()).getMonth(), (new Date()).getDate(), day);
 
-        //Rogationtide & Labor Day
-        if (week === 'Ea5' && day > 0 && day < 4 || (new Date()).getMonth() === 8 && day === 1 && (new Date()).getDate() < 8)
-            result += `<h2>For the Increase of the Ministry.</h2>
-<p>O almighty God, look mercifully upon the world which thou hast redeemed by the blood of thy dear Son, and incline the hearts of many to dedicate themselves to the sacred ministry of thy Church; through the same thy Son Jesus Christ our Lord. Amen. </p>
-<h2>For Commerce & Industry.</h2>
-<p>O Lord Jesus Christ, who in thy earthly life didst share man’s toil, and hallow the labour of his hands: Prosper our brethren who maintain the commerce and industries of this land, and give to all who labour pride in their work, a just reward for their labours, and joy both in supplying need and in serving thee; who with the Father and the Holy Spirit livest and reignest, ever one God, world without end. Amen.</p>
-<h2>For Right Relations in Industry.</h2>
-<p>O God, who hast ordained that men should live and work together as brethren: We beseech thee to bless the industries of this land, that there be no strife among those who are engaged in the varied tasks of industry and commerce. Grant that all, seeking only what is right, may ever continue in brotherly union and concord, to their own well-being and the good of their fellow men; through Jesus Christ our Lord. Amen. </p>
-<h2>For those who are obliged to work on the Lord’s Day. </h2>
-<p>O Lord, have mercy upon all those who are required to continue in their work upon thy holy day. Draw their thoughts to thyself, and make them partakers of the benefits of the prayers and intercessions of thy holy Church. And grant to their employers grace to consider the needs of those whom thou hast made in thine image; that they who toil may fail not finally to attain to that rest which remaineth for the people of God; through Jesus Christ our Lord. Amen. </p>
-<h2>For Fruitful Seasons.</h2> 
-<p>O gracious Father, who openest thine hand and fillest all things living with plenteousness; We beseech thee of thine infinite goodness to hear us, who now make our prayers and supplications unto thee. Remember not our sins, but thy promises of mercy. Vouchsafe to bless the lands and multiply the harvests of the world. Let thy breath go forth that it may renew the face of the earth. Show thy loving-kindness, that our land may give her increase; and so fill us with good things that the poor and needy may give thanks unto thy Name; through Christ our Lord. Amen. </p>
-<h2>For Fisheries. </h2>
-<p>O almighty God, who hast made the sea, and all that move therein: Bestow thy blessing on the harvest of the waters, that it may be abundant in its season, and on our sailors and fishermen, that they may be safe in every peril of the deep; so that we all with thankful hearts may acknowledge thee, who art Lord of the sea and of the dry land; through Jesus Christ our Lord. Amen. </p>
-<h2>For Miners. </h2>
-<p>Almighty God, to whom darkness and light are both alike; Look upon all thy children who labor under the earth; 
-keep them mindful of thy presence and protect them in their labor; let no evil come near them; save them from all accident and suffering; and grant that they may serve thee so faithfully in this life, and in the darkness of their labor, that they may at last attain to the brightness of thy glory, through him who gave himself to labor and suffer for them, thy Son Jesus Christ our Lord. Amen. </p>
-<h2>For Retail & Service Workers. </h2>
-<p>O Lord our heavenly Father, whose blessed Son came not to be served but to serve: Bless, we beseech thee, all who labour to supply the needs of others; that with wisdom and patience they may serve in his name; through Jesus Christ our Lord. Amen.</p>
-<h2>For Engineers & Artisans. </h2>
-<p>O God, we pray thee to have mercy upon all artisans, and grant that the intelligence which they employ on earthly objects for the benefit of society may be enlightened by thy Holy Spirit to a clear perception of the things of heaven, guiding them, amidst all their industry, to work out their own salvation with reverence and godly fear; through thy Son Jesus Christ our Lord. Amen. </p>
-<h2>For Schools, Colleges, & Universities. </h2>
-<p>Almighty God, we beseech thee, with thy gracious favour, to behold our universities, colleges, and schools, that knowledge may be increased among us, and all good learning flourish and abound; bless all who teach and all who learn; and grant that in humility of heart they may ever look unto thee, who art the fountain of all wisdom; through Jesus Christ our Lord. Amen. </p>
-<h2>For the Medical Professions. </h2>
-<p>Almighty God, whose blessed Son Jesus Christ went about doing good, and healing all manner of sickness and disease: Continue, we beseech thee, this his gracious work among us; grant to physicians, surgeons, and nurses wisdom, skill, sympathy, and patience; and send down thy blessing upon all who labor to prevent suffering; through Jesus Christ our Lord. Amen. </p>
-<h2>For those in Hazardous Occupations. </h2>
-<p>Protect and prosper, O Lord, all those who labour at tasks of danger and difficulty, that they may be preserved in safety and health; and grant that, knowing the dangers which beset them, they may ever take thought one for another, and be sustained by a sure trust in thee; through Jesus Christ our Lord. Amen. </p>
-<h2>For Writers, Artists, Broadcasters. </h2>
-<p>Almighty God, who hast proclaimed thine eternal truth by the voice of prophets and evangelists: Direct and bless, we beseech thee, those who in this our generation speak where many listen and write what many read; that they may do their part in making the heart of the people wise, its mind sound, and its will righteous; to the honour of Jesus Christ our Lord. Amen. </p>
-<h2>For the Unemployed. </h2>
-<p>O Lord, our Heavenly Father, we commend to thy care and compassion the men and women of our land now suffering distress through lack of work; support and strengthen them, we beseech thee; and so prosper the counsels of those who are engaged in the ordering of our industrial life, that thy people may be set free from want and fear, and be enabled to labour in security and peace, for the relief of their necessities and for the well-being of this realm; through Jesus Christ our Lord. Amen.</p>`;
-                
-
         //Passiontide
         if (['L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'Maundy', 'GF', 'EE'].includes(week))
             result += `Blessèd Jesus, the only thing greater than the pain and anguish of your Passion was your mercy toward mankind, even to me. All this deserves more love than I have to give. Therefore, Lord, I beseech you to turn me all into love, and all my love into obedience, and let my obedience be without interruption. Make me to be something you delight in, that I may offer you all that I am, and all that I have. Clothe my soul in your garment, hide my sins in your wounds, and bury them in your grave, and then let me rise in the life of grace, and abide and grow in it, till I arrive at the kingdom of glory. Amen.<i>⸺Jeremy Taylor</i>`;
