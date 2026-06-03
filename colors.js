@@ -34,9 +34,7 @@ function getBookmarkColor(lit, month, date) {
         case "Whitsun":
         case "Whitmon":
         case "WhitTue":
-        case "Trinity":
         case "AllSaints": //Or figure out a way to do EVERY color
-            
         case "Anniversary":
             return "gold";
             break;
@@ -121,6 +119,10 @@ function getBookmarkColor(lit, month, date) {
             return "black";
             break;
         //TRINITYTIDE================
+        case "Trinity":
+            if ((new Date()).getDay() === 0) return "gold";
+            else return "green";
+            break;
         case "T1":
         case "T2":
         case "T3":
