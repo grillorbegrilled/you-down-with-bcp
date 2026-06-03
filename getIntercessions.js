@@ -1,3 +1,12 @@
+const hc = `<h1>Intercessions</h1>     
+    <p class="dropcap">Almighty and everliving God, who by thy holy Apostle hast taught us to make prayers, and supplications, and to give thanks for all men; We humbly beseech thee most mercifully to receive these our prayers, which we offer unto thy Divine Majesty; beseeching thee to inspire continually the Universal Church with the spirit of truth, unity, and concord: And grant that all those who do confess thy holy Name may agree in the truth of thy holy Word, and live in unity and godly love.</p>
+    <p>We beseech thee also, so to direct and dispose the hearts of those who bear the authority of government in this and every land, especially <span name = "prez"></span> our President and <span name = "guv"></span> our Governor, that they may truly and impartially administer justice, to the punishment of wickedness and vice, and to the maintenance of thy true religion, and virtue.</p>
+    <p>Give grace, O heavenly Father, to all Bishops and other Ministers, especially <span name = "clergy"></span>, that they may, both by their life and doctrine, set forth thy true and lively Word, and rightly and duly administer thy holy Sacraments.</p>
+    <p>And to all thy People give thy heavenly grace, that, with meek heart and due reverence, they may hear, and receive thy holy Word; truly serving thee in holiness and righteousness all the days of their life.</p>
+    <p>And we most humbly beseech thee, of thy goodness, O Lord, to comfort and succour … all those who, in this transitory life, are in trouble, sorrow, need, sickness, or any other adversity.</p>
+    <p>And we also bless thy holy Name for all thy servants departed this life in thy faith and fear … ; beseeching thee to grant them continual growth in thy love and service, and to give us grace so to follow the good examples of … all thy saints, that with them we may be partakers of thy heavenly kingdom.</p>
+    <p>Grant this, O Father, for Jesus Christ’s sake, our only Mediator and Advocate. <b>Amen.</b></p>`;
+
 const formV = `<h1>Intercessions</h1>
 <p class="dropcap">FOR THE HOLY Church of God, that it may be filled with truth and love, and be found without fault at the day of your coming, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p>For <span name = "clergy"></span>; for all bishops and other ministers; and for all the holy people of God, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
@@ -149,11 +158,12 @@ function getIntercessions() {
     const dow = now.getDay();
     const lit = synthDate(getWeek(now), getLiturgicalDate(now), dow);
     
-    if ([0, 3, 5].includes(dow) || //sun, wed, fri
+    if ([3, 5].includes(dow) || //wed, fri
         isEmberDay(lit, now.getMonth(), now.getDate(), dow) || //ember days
         isRogationDay(lit, dow) || //rogation days
         ["HW-Mon", "HW-Tue", "HW-Thu", "EE"].includes(lit)) //holy week
         return litany;
+    else if (dow === 0) return hc; //communion intercession on Sunday
     else if (["AW", "L1", "L2", "L3", "L4", "L5", "HW-Mon", "HW-Tue", "Maundy"].includes(lit)) return penitentialPsalms; //Penitential Psalms during Lent
     else if ([1, 4].includes(dow)) return formV; //Mon and Thu
     else return formVI; //Tue and Sat
