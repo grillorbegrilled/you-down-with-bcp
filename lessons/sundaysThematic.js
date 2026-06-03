@@ -46,8 +46,14 @@ const sundaysThematic = {
 "Isaiah 63:7-16", "2 Peter 1:1-12",
 "Job 28:12ff", "Matthew 11:25ff"
 ],
+"X2":[
+"*Micah 4:1-5 & 5:2-4", "Luke 2:21-32",
+"Isaiah 44:1-8", "Colossians 2:6-17",
+"Proverbs 9:1-10", "2 Corinthians 4:1-6",
+"Haggai 2:1-9", "Luke 2:34-40"
+],
 "E1":[
-"Isaiah 60:1-9†", "Isaiah 60:10ff", "Matthew 2:1-12",
+"Isaiah 60:1-9", "Isaiah 60:10ff", "Matthew 2:1-12",
 "*Proverbs 8:22-35", "Colossians 1:9ff",
 "1 Samuel 1:21ff", "Matthew 18:1-14",
 "Isaiah 49:1-7", "1 John 1:1-9"
@@ -55,18 +61,20 @@ const sundaysThematic = {
 "E2":[
 "*Zechariah 8:1-8, 20-23", "1 Corinthians 12:12-31",
 "Exodus 34:29ff", "Mark 9:2-13",
-"Isaiah 56:1-8", "John 2:13ff",
-"Isaiah 54:1-8", "Romans 14:1-15:3"
+"Isaiah 45:1-15", "Romans 9:14-26",
+"Isaiah 54:11ff", "John 1:35ff",
 ],
 "E3":[
 "*Isaiah 41:8-10, 17-20", "John 4:1-14",
 "Deuteronomy 16:18-20 & 17:8-11", "James 2:1-13",
-"Daniel 10:10-19", "Mark 6:45ff"
+"Isaiah 56:1-8", "John 2:13ff",
+"Isaiah 54:1-8", "Romans 14:1-15:3"
 ],
 "E4":[
 "Isaiah 61", "Luke 4:16-32",
 "*Deuteronomy 4:5-13, 32-40", "Ephesians 2",
-"Isaiah 45:20ff", "Romans 10"
+"Isaiah 45:20ff", "Romans 10",
+"Daniel 10:10-19", "Mark 6:45ff"
 ],
 "E5":[
 "Ruth 1:1-17", "Colossians 3:5-11",
