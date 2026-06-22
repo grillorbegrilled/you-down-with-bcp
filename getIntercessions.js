@@ -4,7 +4,7 @@ const hc = `<h1>Intercessions</h1>
     <p>Give grace, O heavenly Father, to all Bishops and other Ministers, especially <span name = "clergy"></span>, that they may, both by their life and doctrine, set forth thy true and lively Word, and rightly and duly administer thy holy Sacraments.</p>
     <p>And to all thy People give thy heavenly grace, that, with meek heart and due reverence, they may hear, and receive thy holy Word; truly serving thee in holiness and righteousness all the days of their life.</p>
     <p>And we most humbly beseech thee, of thy goodness, O Lord, to comfort and succour … all those who, in this transitory life, are in trouble, sorrow, need, sickness, or any other adversity.</p>
-    <p>And we also bless thy holy Name for all thy servants departed this life in thy faith and fear … ; beseeching thee to grant them continual growth in thy love and service, and to give us grace so to follow the good examples of … all thy saints, that with them we may be partakers of thy heavenly kingdom.</p>
+    <p>And we also bless thy holy Name for all thy servants departed this life in thy faith and fear … ; beseeching thee to grant them continual growth in thy love and service, and to give us grace so to follow the good examples of <span name = "saint"></span> all thy saints, that with them we may be partakers of thy heavenly kingdom.</p>
     <p>Grant this, O Father, for Jesus Christ’s sake, our only Mediator and Advocate. <b>Amen.</b></p>`;
 
 const formV = `<h1>Intercessions</h1>
@@ -24,7 +24,7 @@ const formV = `<h1>Intercessions</h1>
     <p>For … all who have commended themselves to our prayers; for our families, friends, and neighbors; that being freed from anxiety, they may live in joy, peace, and health, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
     <p><i>For … , we pray to you, O Lord.<br><b>Lord, have mercy.</b></i></p>
     <p>For all who have died in the communion of your Church, and those whose faith is known to you alone, that, with all the saints, they may have rest in that place where there is no pain or grief, but life eternal, we pray to you, O Lord.<br><b>Lord, have mercy.</b></p>
-    <p>Rejoicing in the fellowship of … all the saints, let us commend ourselves, and one another, and all our life to Christ our God.<br><b>To you, O Lord our God.</b></p>
+    <p>Rejoicing in the fellowship of <span name = "saint"></span> all the saints, let us commend ourselves, and one another, and all our life to Christ our God.<br><b>To you, O Lord our God.</b></p>
     <p>For yours is the majesty, O Father, Son, and Holy Spirit; yours is the kingdom and the power and the glory, now and for ever. <b>Amen.</b></p>`;
 
 const formVI = `<h1>Intercessions</h1>
