@@ -450,6 +450,9 @@ function getBlackletterDay(month, date) {
                 case 25:
                     return {name: "Paul"}; //RED-LETTER
                     break;
+                case 26:
+                    return {name: "Timothy"}; //local
+                    break;
             }  
             break;
         case 1: //feb
