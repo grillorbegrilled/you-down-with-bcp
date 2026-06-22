@@ -447,10 +447,16 @@ function getBlackletterDay(month, date) {
                         gender: 0
                     };
                     break;
+                case 25:
+                    return {name: "Paul"}; //RED-LETTER
+                    break;
             }  
             break;
         case 1: //feb
             switch (date) {
+                case 2:
+                    return {name: "Mary"}; //Candlemas
+                    break;
                 case 5:
                     return {
                         name: "Agatha",
@@ -466,6 +472,9 @@ function getBlackletterDay(month, date) {
                         type: "B",
                         gender: 0
                     };
+                    break;
+                case 24:
+                    return {name: "Matthias"}; //RED-LETTER
                     break;
             }
             break;
@@ -503,6 +512,9 @@ function getBlackletterDay(month, date) {
                         gender: 0
                     };
                     break;
+                case 17:
+                    return {name: "Patrick"}; //RED-LETTER
+                    break;
                 case 18:
                     return {
                         name: "Edward",
@@ -511,6 +523,9 @@ function getBlackletterDay(month, date) {
                         gender: 0
                     };
                     break;
+                case 19:
+                    return {name: "Joseph"}; //RED-LETTER
+                    break;
                 case 21:
                     return {
                         name: "Benedict",
@@ -518,6 +533,9 @@ function getBlackletterDay(month, date) {
                         type: "A",
                         gender: 0
                     };
+                    break;
+                case 25:
+                    return {name: "Mary"}; //Annunciation
                     break;
             }
             break;
@@ -556,11 +574,17 @@ function getBlackletterDay(month, date) {
                         gender: 0
                     };
                     break;
+                case 25:
+                    return {name: "Mark"}; //RED-LETTER
+                    break;
             }
             break;
         case 4: //may
     //may 3 invent cross 6 john ante port lat
             switch (date) {
+                case 1:
+                    return {name: "Philip, James,"}; //RED-LETTER
+                    break;
                 case 19:
                     return {
                         name: "Dunstan",
@@ -607,6 +631,9 @@ function getBlackletterDay(month, date) {
                         gender: 0
                     };
                     break;
+                case 11:
+                    return {name: "Barnabas"}; //RED-LETTER
+                    break;
                 case 17:
                     return {
                         name: "Alban",
@@ -614,6 +641,12 @@ function getBlackletterDay(month, date) {
                         type: "M",
                         gender: 0
                     };
+                    break;
+                case 24:
+                    return {name: "John the Baptist"}; //RED-LETTER
+                    break;
+                case 29:
+                    return {name: "Peter"}; //RED-LETTER
                     break;
             }
             break;
@@ -644,6 +677,9 @@ function getBlackletterDay(month, date) {
                         gender: 1
                     };
                     break;
+                case 25:
+                    return {name: "James"}; //RED-LETTER
+                    break;
                 case 26:
                     return {
                         name: "Anne",
@@ -664,6 +700,12 @@ function getBlackletterDay(month, date) {
                         type: "M",
                         gender: 0
                     };
+                    break;
+                case 15:
+                    return {name: "Mary"}; //Assumption
+                    break;
+                case 24:
+                    return {name: "Bartholomew"}; //RED-LETTER
                     break;
                 case 28:
                     return {
@@ -694,6 +736,9 @@ function getBlackletterDay(month, date) {
                         gender: 0
                     };
                     break;
+                case 8:
+                    return {name: "Elizabeth"}; //as in the queen
+                    break;
                 case 17:
                     return {
                         name: "Lambert",
@@ -702,6 +747,12 @@ function getBlackletterDay(month, date) {
                         gender: 0
                     };
                     break;
+                case 21:
+                    return {name: "Matthew"}; //RED-LETTER
+                    break;
+                case 24:
+                    return {name: "Our Lady of Walsingham"};
+                    break;
                 case 26:
                     return {
                         name: "Cyprian",
@@ -709,6 +760,9 @@ function getBlackletterDay(month, date) {
                         type: "Abp",
                         gender: 0
                     };
+                    break;
+                case 29:
+                    return {name: "Michael"}; //RED-LETTER
                     break;
                 case 30:
                     return {
@@ -755,6 +809,9 @@ function getBlackletterDay(month, date) {
                         gender: 1
                     };
                     break;
+                case 18:
+                    return {name: "Luke"}; //RED-LETTER
+                    break;
                 case 25:
                     return {
                         name: "Crispin",
@@ -762,6 +819,9 @@ function getBlackletterDay(month, date) {
                         type: "M",
                         gender: 0
                     };
+                    break;
+                case 28:
+                    return {name: "Simon, Jude,"}; //RED-LETTER
                     break;
             }
             break;
@@ -799,6 +859,9 @@ function getBlackletterDay(month, date) {
                         gender: 0
                     };
                     break;
+                case 16:
+                    return {name: "Hugh"}; //RED-LETTER
+                    break;
                 case 20:
                     return {
                         name: "Edmund",
@@ -831,11 +894,17 @@ function getBlackletterDay(month, date) {
                         gender: 1
                     };
                     break;
+                case 30:
+                    return {name: "Andrew"}; //RED-LETTER
+                    break;
             }
             break;
         case 11: //dec
     //december 8 conc bvm 16 o sapientia
             switch (date) {
+                case 4:
+                    return {name: "Barbara"}; //local
+                    break;
                 case 6:
                     return {
                         name: "Nicholas",
@@ -844,6 +913,9 @@ function getBlackletterDay(month, date) {
                         gender: 0
                     };
                     break;
+                case 8:
+                    return {name: "Mary"}; //local
+                    break;
                 case 13:
                     return {
                         name: "Lucy",
@@ -851,6 +923,18 @@ function getBlackletterDay(month, date) {
                         type: "VM",
                         gender: 1
                     };
+                    break;
+                case 21:
+                    return {name: "Thomas"}; //RED-LETTER
+                    break;
+                case 26:
+                    return {name: "Stephen"}; //RED-LETTER
+                    break;
+                case 17:
+                    return {name: "John"}; //RED-LETTER
+                    break;
+                case 28:
+                    return {name: "the Holy Innocents,"}; //RED-LETTER
                     break;
                 case 31:
                     return {
