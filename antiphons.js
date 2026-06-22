@@ -53,6 +53,9 @@ function getAntiphon(lit, day) {
     case "Luke":
     case "SimonAndJude":
     case "AllSaints":
+    case "Patrick":
+    case "Joseph":
+    case "Hugh":
       return "The Lord is glorious in his saints : O come, let us adore him.";
     default:
       return "";
