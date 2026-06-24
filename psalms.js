@@ -572,3 +572,29 @@ const cxxi = `<p class="dropcap">I WILL lift up mine eyes unto the hills; * from
 6 So that the sun shall not burn thee by day, * neither the moon by night.<br>
 7 The LORD shall preserve thee from all evil; * yea, it is even he that shall keep thy soul.<br>
 8 The LORD shall preserve thy going out, and thy coming in, * from this time forth for evermore.</p>`;
+
+function getRandomPsalm() {
+    const hour = new Date().getHours();
+
+    const options = [
+        lxvii, xcii, xcvi, xix, xlii, xlvi, xc, lxxxiv, xcvi,
+        lxii, cxx, cxxi, cxix1, cxix2, cxix3, cxix4, cxix5,
+        cxix6, cxix7, cxix8, cxix9, cxix10, cxix11, cxix12, 
+        cxix13, cxix14, cxix15, cxix16, cxix17, cxix18, cxix19,
+        cxix20, cxix21, cxix22
+    ];
+
+    if (hour >= 3 && hour < 12) {
+        options.push(cxlviii, cxlix, cl, lxiii);
+    }
+
+    if (hour >= 15 && hour < 20) {
+        options.push(xcii, xcviii, ciii);
+    }
+
+    if (hour >= 20 || hour < 3) {
+        options.push(xci);
+    }
+
+    return options[Math.floor(Math.random() * options.length)];
+}
