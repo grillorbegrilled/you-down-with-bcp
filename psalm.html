@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Psalm Test</title>
+</head>
+<body>
+    <div id="psalm"></div>
+
+    <script src="psalms.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("psalm").innerHTML = getRandomPsalm();
+        });
+    </script>
+</body>
+</html>
