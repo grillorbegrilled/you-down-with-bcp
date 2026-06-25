@@ -1,22 +1,22 @@
 //all these at lauds
-const cxlviii = `<p class="dropcap">O PRAISE the LORD from the heavens: * praise him in the heights.<br>
+const cxlviii = `<p class="dropcap">O PRAISE the Lᴏʀᴅ from the heavens: * praise him in the heights.<br>
 2 Praise him, all ye angels of his: * praise him, all his host.<br>
 3 Praise him, sun and moon: * praise him, all ye stars and light.<br>
 4 Praise him, all ye heavens, * and ye waters that are above the heavens.<br>
-5 Let them praise the Name of the LORD: * for he spake the word, and they were made; he commanded, and they were created.<br>
+5 Let them praise the Name of the Lᴏʀᴅ: * for he spake the word, and they were made; he commanded, and they were created.<br>
 6 He hath made them fast for ever and ever: * he hath given them a law which shall not be broken.<br>
-7 Praise the LORD from the earth, * ye dragons and all deeps;<br>
+7 Praise the Lᴏʀᴅ from the earth, * ye dragons and all deeps;<br>
 8 Fire and hail, snow and vapours, * wind and storm, fulfilling his word;<br>
 9 Mountains and all hills; * fruitful trees and all cedars;<br>
 10 Beasts and all cattle; * creeping things and flying fowls;<br>
 11 Kings of the earth, and all peoples; * princes, and all judges of the world;<br>
-12 Young men and maidens, old men and children, praise the Name of the LORD: * for his Name only is excellent, and his praise above heaven and earth.<br>
+12 Young men and maidens, old men and children, praise the Name of the Lᴏʀᴅ: * for his Name only is excellent, and his praise above heaven and earth.<br>
 13 He shall exalt the horn of his people: all his saints shall praise him; * even the children of Israel, even the people that serveth him.</p>`;
 
-const cxlix = `<p class="dropcap">O SING unto the LORD a new song; * let the congregation of saints praise him.<br>
+const cxlix = `<p class="dropcap">O SING unto the Lᴏʀᴅ a new song; * let the congregation of saints praise him.<br>
 2 Let Israel rejoice in him that made him, * and let the children of Sion be joyful in their King.<br>
 3 Let them praise his Name in the dance: * let them sing praises unto him with tabret and harp.<br>
-4 For the LORD hath pleasure in his people, * and helpeth the meek-hearted.<br>
+4 For the Lᴏʀᴅ hath pleasure in his people, * and helpeth the meek-hearted.<br>
 5 Let the saints be joyful with glory; * let them rejoice in their beds.<br>
 6 Let the praises of God be in their mouth; * and a two-edged sword in their hands;<br>
 7 To be avenged of the nations, * and to rebuke the peoples;<br>
@@ -28,7 +28,7 @@ const cl = `<p class="dropcap">O PRAISE God in his sanctuary: * praise him in th
 3 Praise him in the sound of the trumpet: * praise him upon the lute and harp.<br>
 4 Praise him in the timbrels and dances: * praise him upon the strings and pipe.<br>
 5 Praise him upon the well-tuned cymbals: * praise him upon the loud cymbals.<br>
-6 Let every thing that hath breath * praise the LORD.</p>`;
+6 Let every thing that hath breath * praise the Lᴏʀᴅ.</p>`;
 
 const penitentials = `<h1>The Penitential Psalms</h1>
 <h2>Psalm 6</h2>
@@ -180,14 +180,14 @@ const lxvii = `<p class="dropcap">GOD be merciful unto us, and bless us, * and s
 
 //compline
 const xci = `<p class="dropcap">WHOSO dwelleth under the defence of the Most High, * shall abide under the shadow of the Almighty.<br>
-2 I will say unto the LORD, Thou art my hope, and my stronghold; * my God, in him will I trust.<br>
+2 I will say unto the Lᴏʀᴅ, Thou art my hope, and my stronghold; * my God, in him will I trust.<br>
 3 For he shall deliver thee from the snare of the hunter, * and from the noisome pestilence.<br>
 4 He shall defend thee under his wings, and thou shalt be safe under his feathers; * his faithfulness and truth shall be thy shield and buckler.<br>
 5 Thou shalt not be afraid for any terror by night, * nor for the arrow that flieth by day;<br>
 6 For the pestilence that walketh in darkness, * nor for the sickness that destroyeth in the noon-day.<br>
 7 A thousand shall fall beside thee, and ten thousand at thy right hand; * but it shall not come nigh thee.<br>
 8 Yea, with thine eyes shalt thou behold, * and see the reward of the ungodly.<br>
-9 For thou, LORD, art my hope; * thou hast set thine house of defence very high.<br>
+9 For thou, Lᴏʀᴅ, art my hope; * thou hast set thine house of defence very high.<br>
 10 There shall no evil happen unto thee, * neither shall any plague come nigh thy dwelling.<br>
 11 For he shall give his angels charge over thee, * to keep thee in all thy ways.<br>
 12 They shall bear thee in their hands, * that thou hurt not thy foot against a stone.<br>
