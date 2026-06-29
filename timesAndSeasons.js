@@ -395,7 +395,11 @@ function getLiturgicalDate(now) {
     return "";
 }
 
-function getBlackletterDay(month, date) {
+function getBlackletterDay() {
+    var now = new Date();
+    var month = now.getMonth();
+    var date = now.getDate();
+    
     switch (month) {
         case 0: //january
             switch (date) {
