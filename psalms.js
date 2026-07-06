@@ -638,3 +638,43 @@ function getRandomPsalm() {
 
     return options[Math.floor(Math.random() * options.length)];
 }
+
+/*
+a1 46
+a2 119:89-104 119:1-16 67
+a3 130
+a4 102(15ff)
+xmas 
+stephen
+johnevangelist
+holyinnocents
+x1 98
+circ
+x2 121
+epi
+e1 92 84 19 67
+e2 62
+e3 42 103
+e4
+e5
+e6 98 96
+lxx 121
+lx
+l 103 19 23 119:33-48
+========
+6 19 32 38 42 46 51 62 63 67 84 90 91 92 96 98 102 103 119 120 121 130 143 148 149 150
+============
+aw
+l1 
+l2
+l3
+l4
+l5
+palm
+hw-mon
+hw-tue
+hw-wed
+maundy
+gf
+ee
+*/
