@@ -33,8 +33,7 @@ const cl = `<h1>Psalm 150</h1>
 5 Praise him upon the well-tuned cymbals: * praise him upon the loud cymbals.<br>
 6 Let every thing that hath breath * praise the Lᴏʀᴅ.</p>`;
 
-const penitentials = `<h1>The Penitential Psalms</h1>
-<h2>Psalm 6</h2>
+const vi = `<h1>Psalm 6</h1>
 <p class="dropcap">O Lord, rebuke me not in thine indignation, * neither chasten me in thy displeasure.<br>
 2 Have mercy upon me, O Lᴏʀᴅ, for I am weak; * O Lᴏʀᴅ, heal me, for my bones are vexed.<br>
 3 My soul also is sore troubled: * but, Lᴏʀᴅ, how long wilt thou punish me?<br>
@@ -44,9 +43,9 @@ const penitentials = `<h1>The Penitential Psalms</h1>
 7 My beauty is gone for very trouble, * and worn away because of all mine enemies.<br>
 8 Away from me, all ye that work iniquity; * for the Lᴏʀᴅ hath heard the voice of my weeping.<br>
 9 The Lᴏʀᴅ hath heard my petition; * the Lᴏʀᴅ will receive my prayer.<br>
-10 All mine enemies shall be confounded, and sore vexed; * they shall be turned back, and put to shame suddenly.</p>
+10 All mine enemies shall be confounded, and sore vexed; * they shall be turned back, and put to shame suddenly.</p>`;
 
-<h2>Psalm 32</h2>
+const xxxii = `<h1>Psalm 32</h1>
 <p class="dropcap">BLESSED is he whose unrighteousness is forgiven, * and whose sin is covered.<br>
 2 Blessed is the man unto whom the Lᴏʀᴅ imputeth no sin, * and in whose spirit there is no guile.<br>
 3 For whilst I held my tongue, * my bones consumed away through my daily complaining.<br>
@@ -58,9 +57,9 @@ const penitentials = `<h1>The Penitential Psalms</h1>
 9 I will inform thee, and teach thee in the way wherein thou shalt go; * and I will guide thee with mine eye.<br>
 10 Be ye not like to horse and mule, which have no understanding; * whose mouths must be held with bit and bridle, else they will not obey thee.<br>
 11 Great plagues remain for the ungodly; * but whoso putteth his trust in the Lᴏʀᴅ, mercy embraceth him on every side.<br>
-12 Be glad, O ye righteous, and rejoice in the Lᴏʀᴅ; * and be joyful, all ye that are true of heart.</p>
+12 Be glad, O ye righteous, and rejoice in the Lᴏʀᴅ; * and be joyful, all ye that are true of heart.</p>`;
 
-<h2>Psalm 38</h2>
+const xxxviii = `<h1>Psalm 38</h1>
 <p class="dropcap">PUT ME not to rebuke, O Lᴏʀᴅ, in thine anger; * neither chasten me in thy heavy displeasure:<br>
 2 For thine arrows stick fast in me, * and thy hand presseth me sore.<br>
 3 There is no health in my flesh, because of thy displeasure; * neither is there any rest in my bones, by reason of my sin.<br>
@@ -81,9 +80,9 @@ const penitentials = `<h1>The Penitential Psalms</h1>
 18 For I will confess my wickedness, * and be sorry for my sin.<br>
 19 But mine enemies live, and are mighty; * and they that hate me wrongfully are many in number.<br>
 20 They also that reward evil for good are against me; * because I follow the thing that good is.<br>
-21 Forsake me not, O Lᴏʀᴅ my God; * be not thou far from me.</p>
+21 Forsake me not, O Lᴏʀᴅ my God; * be not thou far from me.</p>`;
 
-<h2>Psalm 51</h2>
+const li = `<h1>Psalm 51</h1>
 <p class="dropcap">HAVE mercy upon me, O God, after thy great goodness; * according to the multitude of thy mercies do away mine offences.<br>
 2 Wash me throughly from my wickedness, * and cleanse me from my sin.<br>
 3 For I acknowledge my faults, * and my sin is ever before me.<br>
@@ -102,10 +101,10 @@ const penitentials = `<h1>The Penitential Psalms</h1>
 16 For thou desirest no sacrifice, else would I give it thee; * but thou delightest not in burnt-offerings.<br>
 17 The sacrifice of God is a troubled spirit: * a broken and contrite heart, O God, shalt thou not despise.<br>
 18 O be favourable and gracious unto Sion; * build thou the walls of Jerusalem.<br>
-19 Then shalt thou be pleased with the sacrifice of righteousness, with the burnt-offerings and oblations; * then shall they offer young bullocks upon thine altar.</p>
+19 Then shalt thou be pleased with the sacrifice of righteousness, with the burnt-offerings and oblations; * then shall they offer young bullocks upon thine altar.</p>`;
 
-<h2>Psalm 102</h2>
-<p class="dropcap">HEAR my prayer, O Lord, * and let my crying come unto thee.<br>
+const cii = `<h1>Psalm 102</h1>
+<p>Hear my prayer, O Lᴏʀᴅ, * and let my crying come unto thee.<br>
 2 Hide not thy face from me in the time of my trouble; * incline thine ear unto me when I call; O hear me, and that right soon.<br>
 3 For my days are consumed away like smoke, * and my bones are burnt up as it were a firebrand.<br>
 4 My heart is smitten down, and withered like grass; * so that I forget to eat my bread.<br>
@@ -118,8 +117,8 @@ const penitentials = `<h1>The Penitential Psalms</h1>
 11 My days are gone like a shadow, * and I am withered like grass.<br>
 12 But thou, O Lᴏʀᴅ, shalt endure for ever, * and thy remembrance throughout all generations.<br>
 13 Thou shalt arise, and have mercy upon Sion; * for it is time that thou have mercy upon her, yea, the time is come.<br>
-14 And why? thy servants think upon her stones, * and it pitieth them to see her in the dust.<br>
-15 The nations shall fear thy Name, O Lᴏʀᴅ; * and all the kings of the earth thy majesty;<br>
+14 And why? thy servants think upon her stones, * and it pitieth them to see her in the dust.</p>
+<p class="dropcap">The nations shall fear thy Name, O Lᴏʀᴅ; * and all the kings of the earth thy majesty;<br>
 16 When the Lᴏʀᴅ shall build up Sion, * and when his glory shall appear;<br>
 17 When he turneth him unto the prayer of the poor destitute, * and despiseth not their desire.<br>
 18 This shall be written for those that come after, * and the people which shall be born shall praise the Lᴏʀᴅ.<br>
@@ -132,9 +131,9 @@ const penitentials = `<h1>The Penitential Psalms</h1>
 25 Thou, Lord, in the beginning hast laid the foundation of the earth, * and the heavens are the work of thy hands.<br>
 26 They shall perish, but thou shalt endure: * they all shall wax old as doth a garment;<br>
 27 And as a vesture shalt thou change them, and they shall be changed; * but thou art the same, and thy years shall not fail.<br>
-28 The children of thy servants shall continue, * and their seed shall stand fast in thy sight.</p>
+28 The children of thy servants shall continue, * and their seed shall stand fast in thy sight.</p>`;
 
-<h2>Psalm 130</h2>
+const cxxx = `<h1>Psalm 130</h1>
 <p class="dropcap">OUT OF the deep have I called unto thee, O Lᴏʀᴅ; * Lord, hear my voice.<br>
 2 O let thine ears consider well * the voice of my complaint.<br>
 3 If thou, Lᴏʀᴅ, wilt be extreme to mark what is done amiss, * O Lord, who may abide it?<br>
@@ -142,9 +141,9 @@ const penitentials = `<h1>The Penitential Psalms</h1>
 5 I look for the Lᴏʀᴅ; my soul doth wait for him; * in his word is my trust.<br>
 6 My soul fleeth unto the Lord before the morning watch; * I say, before the morning watch.<br>
 7 O Israel, trust in the Lᴏʀᴅ; for with the Lᴏʀᴅ there is mercy, * and with him is plenteous redemption.<br>
-8 And he shall redeem Israel * from all his sins.</p>
+8 And he shall redeem Israel * from all his sins.</p>`;
 
-<h2>Psalm 143</h2>
+const cxliii = `<h1>Psalm 143</h1>
 <p class="dropcap">HEAR my prayer, O Lord, and consider my desire; * hearken unto me for thy truth and righteousness’ sake.<br>
 2 And enter not into judgment with thy servant; * for in thy sight shall no man living be justified.<br>
 3 For the enemy hath persecuted my soul; he hath smitten my life down to the ground; * he hath laid me in the darkness, as the men that have been long dead.<br>
@@ -204,44 +203,44 @@ const xci = `<h1>Psalm 91</h1>
 
 //evensong
 const xcii = `<h1>Psalm 92</h1>
-<p class="dropcap">It is a good thing to give thanks unto the LORD, * and to sing praises unto thy Name, O Most Highest;<br>
+<p class="dropcap">It is a good thing to give thanks unto the Lᴏʀᴅ, * and to sing praises unto thy Name, O Most Highest;<br>
 2 To tell of thy loving-kindness early in the morning, * and of thy truth in the night season;<br>
 3 Upon an instrument of ten strings, and upon the lute; * upon a loud instrument, and upon the harp.<br>
-4 For thou, LORD, hast made me glad through thy works; * and I will rejoice in giving praise for the operations of thy hands.</p>
+4 For thou, Lᴏʀᴅ, hast made me glad through thy works; * and I will rejoice in giving praise for the operations of thy hands.</p>
 <p style='text-align: center; margin-bottom: 0;'>✠&#9;✠&#9;✠</p>
-<p>5 O LORD, how glorious are thy works! * thy thoughts are very deep.<br>
+<p>5 O Lᴏʀᴅ, how glorious are thy works! * thy thoughts are very deep.<br>
 6 An unwise man doth not well consider this, * and a fool doth not understand it.<br>
-7 When the ungodly are green as the grass, and when all the workers of wickedness do flourish, * then shall they be destroyed for ever; but thou, LORD, art the Most Highest for evermore.<br>
-8 For lo, thine enemies, O LORD, lo, thine enemies shall perish; * and all the workers of wickedness shall be destroyed.<br>
+7 When the ungodly are green as the grass, and when all the workers of wickedness do flourish, * then shall they be destroyed for ever; but thou, Lᴏʀᴅ, art the Most Highest for evermore.<br>
+8 For lo, thine enemies, O Lᴏʀᴅ, lo, thine enemies shall perish; * and all the workers of wickedness shall be destroyed.<br>
 9 But my horn shall be exalted like the horn of an unicorn; * for I am anointed with fresh oil.<br>
 10 Mine eye also shall see his lust of mine enemies, * and mine ear shall hear his desire of the wicked that arise up against me.<br>
 11 The righteous shall flourish like a palm-tree, * and shall spread abroad like a cedar in Lebanon.<br>
-12 Such as are planted in the house of the LORD, * shall flourish in the courts of the house of our God.<br>
+12 Such as are planted in the house of the Lᴏʀᴅ, * shall flourish in the courts of the house of our God.<br>
 13 They also shall bring forth more fruit in their age, * and shall be fat and well-liking;<br>
-14 That they may show how true the LORD my strength is, * and that there is no unrighteousness in him.</p>`;
+14 That they may show how true the Lᴏʀᴅ my strength is, * and that there is no unrighteousness in him.</p>`;
 
 //evensong
 const xcviii = `<h1>Psalm 98</h1>
-<p class="dropcap">O Sing unto the LORD a new song; * for he hath done marvellous things.<br>
+<p class="dropcap">O Sing unto the Lᴏʀᴅ a new song; * for he hath done marvellous things.<br>
 2 With his own right hand, and with his holy arm, * hath he gotten himself the victory.<br>
-3 The LORD declared his salvation; * his righteousness hath he openly showed in the sight of the heathen.<br>
+3 The Lᴏʀᴅ declared his salvation; * his righteousness hath he openly showed in the sight of the heathen.<br>
 4 He hath remembered his mercy and truth toward the house of Israel; * and all the ends of the world have seen the salvation of our God.<br>
-5 Show yourselves joyful unto the LORD, all ye lands; * sing, rejoice, and give thanks.<br>
-6 Praise the LORD upon the harp; * sing to the harp with a psalm of thanksgiving.<br>
-7 With trumpets also and shawms, * O show yourselves joyful before the LORD, the King.<br>
+5 Show yourselves joyful unto the Lᴏʀᴅ, all ye lands; * sing, rejoice, and give thanks.<br>
+6 Praise the Lᴏʀᴅ upon the harp; * sing to the harp with a psalm of thanksgiving.<br>
+7 With trumpets also and shawms, * O show yourselves joyful before the Lᴏʀᴅ, the King.<br>
 8 Let the sea make a noise, and all that therein is; * the round world, and they that dwell therein.<br>
-9 Let the floods clap their hands, and let the hills be joyful together before the LORD; * for he cometh to judge the earth.<br>
+9 Let the floods clap their hands, and let the hills be joyful together before the Lᴏʀᴅ; * for he cometh to judge the earth.<br>
 10 With righteousness shall he judge the world, * and the peoples with equity.</p>`;
 
 //evensong
 const ciii = `<h1>Psalm 103</h1>
-<p class="dropcap">Praise the LORD, O my soul; * and all that is within me, praise his holy Name.<br>
-Praise the LORD, O my soul, * and forget not all his benefits:<br>
+<p class="dropcap">Praise the Lord, O my soul; * and all that is within me, praise his holy Name.<br>
+Praise the Lᴏʀᴅ, O my soul, * and forget not all his benefits:<br>
 Who forgiveth all thy sin, * and healeth all thine infirmities;<br>
 Who saveth thy life from destruction, * and crowneth thee with mercy and loving-kindness.<br>
-O praise the LORD, ye angels of his, ye that excel in strength; * ye that fulfil his commandment, and hearken unto the voice of his word.<br>
-O praise the LORD, all ye his hosts; * ye servants of his that do his pleasure.<br>
-O speak good of the LORD, all ye works of his, in all places of his dominion: * praise thou the LORD, O my soul.</p>`;
+O praise the Lᴏʀᴅ, ye angels of his, ye that excel in strength; * ye that fulfil his commandment, and hearken unto the voice of his word.<br>
+O praise the Lᴏʀᴅ, all ye his hosts; * ye servants of his that do his pleasure.<br>
+O speak good of the Lᴏʀᴅ, all ye works of his, in all places of his dominion: * praise thou the Lᴏʀᴅ, O my soul.</p>`;
 
 //general
 const xix = `<h1>Psalm 19</h1>
@@ -251,14 +250,14 @@ const xix = `<h1>Psalm 19</h1>
 4 Their sound is gone out into all lands; * and their words into the ends of the world.<br>
 5 In them hath he set a tabernacle for the sun; * which cometh forth as a bridegroom out of his chamber, and rejoiceth as a giant to run his course.<br>
 6 It goeth forth from the uttermost part of the heaven, and runneth about unto the end of it again; * and there is nothing hid from the heat thereof.<br>
-7 The law of the LORD is an undefiled law, converting the soul; * the testimony of the LORD is sure, and giveth wisdom unto the simple.<br>
-8 The statutes of the LORD are right, and rejoice the heart; * the commandment of the LORD is pure, and giveth light unto the eyes.<br>
-9 The fear of the LORD is clean, and endureth for ever; * the judgments of the LORD are true, and righteous altogether.<br>
+7 The law of the Lᴏʀᴅ is an undefiled law, converting the soul; * the testimony of the Lᴏʀᴅ is sure, and giveth wisdom unto the simple.<br>
+8 The statutes of the Lᴏʀᴅ are right, and rejoice the heart; * the commandment of the Lᴏʀᴅ is pure, and giveth light unto the eyes.<br>
+9 The fear of the Lᴏʀᴅ is clean, and endureth for ever; * the judgments of the Lᴏʀᴅ are true, and righteous altogether.<br>
 10 More to be desired are they than gold, yea, than much fine gold; * sweeter also than honey, and the honeycomb.<br>
 11 Moreover, by them is thy servant taught; * and in keeping of them there is great reward.<br>
 12 Who can tell how oft he offendeth? * O cleanse thou me from my secret faults.<br>
 13 Keep thy servant also from presumptuous sins, lest they get the dominion over me; * so shall I be undefiled, and innocent from the great offence.<br>
-14 Let the words of my mouth, and the meditation of my heart, be alway acceptable in thy sight, * O LORD, my strength and my redeemer.</p>`;
+14 Let the words of my mouth, and the meditation of my heart, be alway acceptable in thy sight, * O Lᴏʀᴅ, my strength and my redeemer.</p>`;
 
 const xlii = `<h1>Psalm 42</h1>
 <p class="dropcap">LIKE as the hart desireth the water-brooks, * so longeth my soul after thee, O God.<br>
@@ -270,7 +269,7 @@ const xlii = `<h1>Psalm 42</h1>
 7 O put thy trust in God; * for I will yet thank him, which is the help of my countenance, and my God.<br>
 8 My soul is vexed within me; * therefore will I remember thee from the land of Jordan, from Hermon and the little hill.<br>
 9 One deep calleth another, because of the noise of thy water-floods; * all thy waves and storms are gone over me.<br>
-10 The LORD will grant his loving-kindness in the daytime; * and in the night season will I sing of him, and make my prayer unto the God of my life.<br>
+10 The Lᴏʀᴅ will grant his loving-kindness in the daytime; * and in the night season will I sing of him, and make my prayer unto the God of my life.<br>
 11 I will say unto the God of my strength, Why hast thou forgotten me? * why go I thus heavily, while the enemy oppresseth me?<br>
 12 My bones are smitten asunder as with a sword, * while mine enemies that trouble me cast me in the teeth;<br>
 13 Namely, while they say daily unto me, * Where is now thy God?<br>
@@ -284,11 +283,11 @@ const xlvi = `<h1>Psalm 46</h1>
 4 There is a river, the streams whereof make glad the city of God; * the holy place of the tabernacle of the Most Highest.<br>
 5 God is in the midst of her, therefore shall she not be removed; * God shall help her, and that right early.<br>
 6 The nations make much ado, and the kingdoms are moved; * but God hath showed his voice, and the earth shall melt away.<br>
-7 The LORD of hosts is with us; * the God of Jacob is our refuge.<br>
-8 O come hither, and behold the works of the LORD, * what destruction he hath brought upon the earth.<br>
+7 The Lᴏʀᴅ of hosts is with us; * the God of Jacob is our refuge.<br>
+8 O come hither, and behold the works of the Lᴏʀᴅ, * what destruction he hath brought upon the earth.<br>
 9 He maketh wars to cease in all the world; * he breaketh the bow, and knappeth the spear in sunder, and burneth the chariots in the fire.<br>
 10 Be still then, and know that I am God: * I will be exalted among the nations, and I will be exalted in the earth.<br>
-11 The LORD of hosts is with us; * the God of Jacob is our refuge.</p>`;
+11 The Lᴏʀᴅ of hosts is with us; * the God of Jacob is our refuge.</p>`;
 
 const xc = `<h1>Psalm 90</h1>
 <p class="dropcap">LORD, thou hast been our refuge, * from one generation to another.<br>
@@ -303,40 +302,40 @@ const xc = `<h1>Psalm 90</h1>
 10 The days of our age are threescore years and ten; and though men be so strong that they come to fourscore years, * yet is their strength then but labour and sorrow; so soon passeth it away, and we are gone.<br>
 11 But who regardeth the power of thy wrath? * or feareth aright thy indignation?<br>
 12 So teach us to number our days, * that we may apply our hearts unto wisdom.<br>
-13 Turn thee again, O LORD, at the last, * and be gracious unto thy servants.<br>
+13 Turn thee again, O Lᴏʀᴅ, at the last, * and be gracious unto thy servants.<br>
 14 O satisfy us with thy mercy, and that soon: * so shall we rejoice and be glad all the days of our life.<br>
 15 Comfort us again now after the time that thou hast plagued us; * and for the years wherein we have suffered adversity.<br>
 16 Show thy servants thy work, * and their children thy glory.<br>
-17 And the glorious majesty of the LORD our God be upon us: * prosper thou the work of our hands upon us; O prosper thou our handy-work.</p>`;
+17 And the glorious majesty of the Lᴏʀᴅ our God be upon us: * prosper thou the work of our hands upon us; O prosper thou our handy-work.</p>`;
 
 const lxxxiv = `<h1>Psalm 84</h1>
-<p class="dropcap">O HOW amiable are thy dwellings, * thou LORD of hosts!<br>
-2 My soul hath a desire and longing to enter into the courts of the LORD; * my heart and my flesh rejoice in the living God.<br>
-3 Yea, the sparrow hath found her an house, and the swallow a nest, where she may lay her young; * even thy altars, O LORD of hosts, my King and my God.<br>
+<p class="dropcap">O HOW amiable are thy dwellings, * thou Lᴏʀᴅ of hosts!<br>
+2 My soul hath a desire and longing to enter into the courts of the Lᴏʀᴅ; * my heart and my flesh rejoice in the living God.<br>
+3 Yea, the sparrow hath found her an house, and the swallow a nest, where she may lay her young; * even thy altars, O Lᴏʀᴅ of hosts, my King and my God.<br>
 4 Blessed are they that dwell in thy house; * they will be alway praising thee.<br>
 5 Blessed is the man whose strength is in thee; * in whose heart are thy ways.<br>
 6 Who going through the vale of misery use it for a well; * and the pools are filled with water.<br>
 7 They will go from strength to strength, * and unto the God of gods appeareth every one of them in Sion.<br>
-8 O LORD God of hosts, hear my prayer; * hearken, O God of Jacob.<br>
+8 O Lᴏʀᴅ God of hosts, hear my prayer; * hearken, O God of Jacob.<br>
 9 Behold, O God our defender, * and look upon the face of thine anointed.<br>
 10 For one day in thy courts * is better than a thousand.<br>
 11 I had rather be a door-keeper in the house of my God, * than to dwell in the tents of ungodliness.<br>
-12 For the LORD God is a light and defence; * the LORD will give grace and worship; and no good thing shall he withhold from them that live a godly life.<br>
-13 O LORD God of hosts, * blessed is the man that putteth his trust in thee.</p>`;
+12 For the Lᴏʀᴅ God is a light and defence; * the Lᴏʀᴅ will give grace and worship; and no good thing shall he withhold from them that live a godly life.<br>
+13 O Lᴏʀᴅ God of hosts, * blessed is the man that putteth his trust in thee.</p>`;
 
 const xcvi = `<h1>Psalm 96</h1>
-<p class="dropcap">O SING unto the LORD a new song; * sing unto the LORD, all the whole earth.<br>
-2 Sing unto the LORD, and praise his Name; * be telling of his salvation from day to day.<br>
+<p class="dropcap">O SING unto the Lᴏʀᴅ a new song; * sing unto the Lᴏʀᴅ, all the whole earth.<br>
+2 Sing unto the Lᴏʀᴅ, and praise his Name; * be telling of his salvation from day to day.<br>
 3 Declare his honour unto the heathen, * and his wonders unto all peoples.<br>
-4 For the LORD is great, and cannot worthily be praised;* he is more to be feared than all gods.<br>
-5 As for all the gods of the heathen, they are but idols; * but it is the LORD that made the heavens.<br>
+4 For the Lᴏʀᴅ is great, and cannot worthily be praised;* he is more to be feared than all gods.<br>
+5 As for all the gods of the heathen, they are but idols; * but it is the Lᴏʀᴅ that made the heavens.<br>
 6 Glory and worship are before him; * power and honour are in his sanctuary.<br>
-7 Ascribe unto the LORD, O ye kindreds of the peoples, * ascribe unto the LORD worship and power.<br>
-8 Ascribe unto the LORD the honour due unto his Name; * bring presents, and come into his courts.<br>
-9 O worship the LORD in the beauty of holiness; * let the whole earth stand in awe of him.<br>
-10 Tell it out among the heathen, that the LORD is King, and that it is he who hath made the round world so fast that it cannot be moved; * and how that he shall judge the peoples righteously.<br>
+7 Ascribe unto the Lᴏʀᴅ, O ye kindreds of the peoples, * ascribe unto the Lᴏʀᴅ worship and power.<br>
+8 Ascribe unto the Lᴏʀᴅ the honour due unto his Name; * bring presents, and come into his courts.<br>
+9 O worship the Lᴏʀᴅ in the beauty of holiness; * let the whole earth stand in awe of him.<br>
+10 Tell it out among the heathen, that the Lᴏʀᴅ is King, and that it is he who hath made the round world so fast that it cannot be moved; * and how that he shall judge the peoples righteously.<br>
 11 Let the heavens rejoice, and let the earth be glad; * let the sea make a noise, and all that therein is.<br>
-12 Let the field be joyful, and all that is in it; * then shall all the trees of the wood rejoice before the LORD.<br>
+12 Let the field be joyful, and all that is in it; * then shall all the trees of the wood rejoice before the Lᴏʀᴅ.<br>
 13 For he cometh, for he cometh to judge the earth; * and with righteousness to judge the world, and the peoples with his truth.</p>`;
 
 const lxii = `<h1>Psalm 62</h1>
@@ -354,8 +353,8 @@ const lxii = `<h1>Psalm 62</h1>
 12 And that thou, Lord, art merciful; * for thou rewardest every man according to his work.</p>`;
 
 const cxx = `<h1>Psalm 120</h1>
-<p class="dropcap">WHEN I was in trouble, I called upon the LORD, * and he heard me.<br>
-2 Deliver my soul, O LORD, from lying lips, * and from a deceitful tongue.<br>
+<p class="dropcap">WHEN I was in trouble, I called upon the Lᴏʀᴅ, * and he heard me.<br>
+2 Deliver my soul, O Lᴏʀᴅ, from lying lips, * and from a deceitful tongue.<br>
 3 What reward shall be given or done unto thee, thou false tongue? * even mighty and sharp arrows, with hot burning coals.<br>
 4 Woe is me, that I am constrained to dwell with Meshech, * and to have my habitation among the tents of Kedar!<br>
 5 My soul hath long dwelt among them * that are enemies unto peace.<br>
@@ -363,7 +362,7 @@ const cxx = `<h1>Psalm 120</h1>
 
 const cxix1 = `<h1>Psalm 119</h1>
 <p style='text-align: center; margin-bottom: 0;'>א</p>
-<p class="dropcap">BLESSED are those that are undefiled in the way, and walk in the law of the LORD.<br>
+<p class="dropcap">BLESSED are those that are undefiled in the way, and walk in the law of the Lᴏʀᴅ.<br>
 2 Blessed are they that keep his testimonies, * and seek him with their whole heart;<br>
 3 Even they who do no wickedness, * and walk in his ways.<br>
 4 Thou hast charged * that we shall diligently keep thy commandments.<br>
@@ -377,7 +376,7 @@ const cxix2 = `<h1>Psalm 119</h1>
 <p class="dropcap">WHEREWITHAL shall a young man cleanse his way? * even by ruling himself after thy word.<br>
 10 With my whole heart have I sought thee; * O let me not go wrong out of thy commandments.<br>
 11 Thy word have I hid within my heart, * that I should not sin against thee.<br>
-12 Blessed art thou, O LORD; * O teach me thy statutes.<br>
+12 Blessed art thou, O Lᴏʀᴅ; * O teach me thy statutes.<br>
 13 With my lips have I been telling * of all the judgments of thy mouth.<br>
 14 I have had as great delight in the way of thy testimonies, * as in all manner of riches.<br>
 15 I will talk of thy commandments, * and have respect unto thy ways.<br>
@@ -402,12 +401,12 @@ const cxix4 = `<h1>Psalm 119</h1>
 28 My soul melteth away for very heaviness; * comfort thou me according unto thy word.<br>
 29 Take from me the way of lying, * and cause thou me to make much of thy law.<br>
 30 I have chosen the way of truth, * and thy judgments have I laid before me.<br>
-31 I have stuck unto thy testimonies; * O LORD, confound me not.<br>
+31 I have stuck unto thy testimonies; * O Lᴏʀᴅ, confound me not.<br>
 32 I will run the way of thy commandments, * when thou hast set my heart at liberty.</p>`;
 
 const cxix5 = `<h1>Psalm 119</h1>
 <p style='text-align: center; margin-bottom: 0;'>ה</p>
-<p class="dropcap">TEACH me, O LORD, the way of thy statutes, * and I shall keep it unto the end.<br>
+<p class="dropcap">TEACH me, O Lord, the way of thy statutes, * and I shall keep it unto the end.<br>
 34 Give me understanding, and I shall keep thy law; * yea, I shall keep it with my whole heart.<br>
 35 Make me to go in the path of thy commandments; * for therein is my desire.<br>
 36 Incline my heart unto thy testimonies, * and not to covetousness.<br>
@@ -418,7 +417,7 @@ const cxix5 = `<h1>Psalm 119</h1>
 
 const cxix6 = `<h1>Psalm 119</h1>
 <p style='text-align: center; margin-bottom: 0;'>ו</p>
-<p class="dropcap">LET thy loving mercy come also unto me, O LORD, * even thy salvation, according unto thy word.<br>
+<p class="dropcap">LET thy loving mercy come also unto me, O Lᴏʀᴅ, * even thy salvation, according unto thy word.<br>
 42 So shall I make answer unto my blasphemers; * for my trust is in thy word.<br>
 43 O take not the word of thy truth utterly out of my mouth; * for my hope is in thy judgments.<br>
 44 So shall I alway keep thy law; * yea, for ever and ever.<br>
@@ -432,22 +431,22 @@ const cxix7 = `<h1>Psalm 119</h1>
 <p class="dropcap">O THINK upon thy servant, as concerning thy word, * wherein thou hast caused me to put my trust.<br>
 50 The same is my comfort in my trouble; * for thy word hath quickened me.<br>
 51 The proud have had me exceedingly in derision; * yet have I not shrinked from thy law.<br>
-52 For I remembered thine everlasting judgments, O LORD, * and received comfort.<br>
+52 For I remembered thine everlasting judgments, O Lᴏʀᴅ, * and received comfort.<br>
 53 I am horribly afraid, * for the ungodly that forsake thy law.<br>
 54 Thy statutes have been my songs, * in the house of my pilgrimage.<br>
-55 I have thought upon thy Name, O LORD, in the night season, * and have kept thy law.<br>
+55 I have thought upon thy Name, O Lᴏʀᴅ, in the night season, * and have kept thy law.<br>
 56 This I had, * because I kept thy commandments.</p>`;
 
 const cxix8 = `<h1>Psalm 119</h1>
 <p style='text-align: center; margin-bottom: 0;'>ח</p>
-<p class="dropcap">THOU art my portion, O LORD; * I have promised to keep thy law.<br>
+<p class="dropcap">THOU art my portion, O Lᴏʀᴅ; * I have promised to keep thy law.<br>
 58 I made my humble petition in thy presence with my whole heart; * O be merciful unto me, according to thy word.<br>
 59 I called mine own ways to remembrance, * and turned my feet unto thy testimonies.<br>
 60 I made haste, and prolonged not the time, * to keep thy commandments.<br>
 61 The snares of the ungodly have compassed me about; * but I have not forgotten thy law.<br>
 62 At midnight I will rise to give thanks unto thee, * because of thy righteous judgments.<br>
 63 I am a companion of all them that fear thee, * and keep thy commandments.<br>
-64 The earth, O LORD, is full of thy mercy: * O teach me thy statutes.</p>`;
+64 The earth, O Lᴏʀᴅ, is full of thy mercy: * O teach me thy statutes.</p>`;
 
 const cxix9 = `<h1>Psalm 119</h1>
 <p style='text-align: center; margin-bottom: 0;'>ט</p>
@@ -464,7 +463,7 @@ const cxix10 = `<h1>Psalm 119</h1>
 <p style='text-align: center; margin-bottom: 0;'>י</p>
 <p class="dropcap">THY hands have made me and fashioned me: * O give me understanding, that I may learn thy commandments.<br>
 74 They that fear thee will be glad when they see me; * because I have put my trust in thy word.<br>
-75 I know, O LORD, that thy judgments are right, * and that thou of very faithfulness hast caused me to be troubled.<br>
+75 I know, O Lᴏʀᴅ, that thy judgments are right, * and that thou of very faithfulness hast caused me to be troubled.<br>
 76 O let thy merciful kindness be my comfort, * according to thy word unto thy servant.<br>
 77 O let thy loving mercies come unto me, that I may live; * for thy law is my delight.<br>
 78 Let the proud be confounded, for they go wickedly about to destroy me; * but I will be occupied in thy commandments.<br>
@@ -508,8 +507,8 @@ const cxix14 = `<h1>Psalm 119</h1>
 <p style='text-align: center; margin-bottom: 0;'>נ</p>
 <p class="dropcap">THY word is a lantern unto my feet, * and a light unto my paths.<br>
 106 I have sworn, and am stedfastly purposed, * to keep thy righteous judgments.<br>
-107 I am troubled above measure: * quicken me, O LORD, according to thy word.<br>
-108 Let the free-will offerings of my mouth please thee, O LORD; * and teach me thy judgments.<br>
+107 I am troubled above measure: * quicken me, O Lᴏʀᴅ, according to thy word.<br>
+108 Let the free-will offerings of my mouth please thee, O Lᴏʀᴅ; * and teach me thy judgments.<br>
 109 My soul is alway in my hand; * yet do I not forget thy law.<br>
 110 The ungodly have laid a snare for me; * but yet I swerved not from thy commandments.<br>
 111 Thy testimonies have I claimed as mine heritage for ever; * and why? they are the very joy of my heart.<br>
@@ -533,7 +532,7 @@ const cxix16 = `<h1>Psalm 119</h1>
 123 Mine eyes are wasted away with looking for thy health, * and for the word of thy righteousness.<br>
 124 O deal with thy servant according unto thy loving mercy, * and teach me thy statutes.<br>
 125 I am thy servant; O grant me understanding, * that I may know thy testimonies.<br>
-126 It is time for thee, LORD, to lay to thine hand; * for they have destroyed thy law.<br>
+126 It is time for thee, Lᴏʀᴅ, to lay to thine hand; * for they have destroyed thy law.<br>
 127 For I love thy commandments * above gold and precious stones.<br>
 128 Therefore hold I straight all thy commandments; * and all false ways I utterly abhor.</p>`;
 
@@ -550,7 +549,7 @@ const cxix17 = `<h1>Psalm 119</h1>
 
 const cxix18 = `<h1>Psalm 119</h1>
 <p style='text-align: center; margin-bottom: 0;'>צ</p>
-<p class="dropcap">RIGHTEOUS art thou, O LORD; * and true are thy judgments.<br>
+<p class="dropcap">RIGHTEOUS art thou, O Lord; * and true are thy judgments.<br>
 138 The testimonies that thou hast commanded * are exceeding righteous and true.<br>
 139 My zeal hath even consumed me; * because mine enemies have forgotten thy words.<br>
 140 Thy word is tried to the uttermost, * and thy servant loveth it.<br>
@@ -561,13 +560,13 @@ const cxix18 = `<h1>Psalm 119</h1>
 
 const cxix19 = `<h1>Psalm 119</h1>
 <p style='text-align: center; margin-bottom: 0;'>ק</p>
-<p class="dropcap">I CALL with my whole heart; * hear me, O LORD; I will keep thy statutes.<br>
+<p class="dropcap">I CALL with my whole heart; * hear me, O Lᴏʀᴅ; I will keep thy statutes.<br>
 146 Yea, even unto thee do I call; * help me, and I shall keep thy testimonies.<br>
 147 Early in the morning do I cry unto thee; * for in thy word is my trust.<br>
 148 Mine eyes prevent the night watches; * that I might be occupied in thy word.<br>
-149 Hear my voice, O LORD, according unto thy lovingkindness; * quicken me, according to thy judgments.<br>
+149 Hear my voice, O Lᴏʀᴅ, according unto thy lovingkindness; * quicken me, according to thy judgments.<br>
 150 They draw nigh that of malice persecute me, * and are far from thy law.<br>
-151 Be thou nigh at hand, O LORD; * for all thy commandments are true.<br>
+151 Be thou nigh at hand, O Lᴏʀᴅ; * for all thy commandments are true.<br>
 152 As concerning thy testimonies, I have known long since, * that thou hast grounded them for ever.</p>`;
 
 const cxix20 = `<h1>Psalm 119</h1>
@@ -575,10 +574,10 @@ const cxix20 = `<h1>Psalm 119</h1>
 <p class="dropcap">O CONSIDER mine adversity, and deliver me, * for I do not forget thy law.<br>
 154 Avenge thou my cause, and deliver me; * quicken me according to thy word.<br>
 155 Health is far from the ungodly; * for they regard not thy statutes.<br>
-156 Great is thy mercy, O LORD; * quicken me, as thou art wont.<br>
+156 Great is thy mercy, O Lᴏʀᴅ; * quicken me, as thou art wont.<br>
 157 Many there are that trouble me, and persecute me; * yet do I not swerve from thy testimonies.<br>
 158 It grieveth me when I see the transgressors; * because they keep not thy law.<br>
-159 Consider, O LORD, how I love thy commandments; * O quicken me, according to thy loving-kindness.<br>
+159 Consider, O Lᴏʀᴅ, how I love thy commandments; * O quicken me, according to thy loving-kindness.<br>
 160 Thy word is true from everlasting; * all the judgments of thy righteousness endure for evermore.</p>`;
 
 const cxix21 = `<h1>Psalm 119</h1>
@@ -588,30 +587,108 @@ const cxix21 = `<h1>Psalm 119</h1>
 163 As for lies, I hate and abhor them; * but thy law do I love.<br>
 164 Seven times a day do I praise thee; * because of thy righteous judgments.<br>
 165 Great is the peace that they have who love thy law; * and they have none occasion of stumbling.<br>
-166 LORD, I have looked for thy saving health, * and done after thy commandments.<br>
+166 Lᴏʀᴅ, I have looked for thy saving health, * and done after thy commandments.<br>
 167 My soul hath kept thy testimonies, * and loved them exceedingly.<br>
 168 I have kept thy commandments and testimonies; * for all my ways are before thee.</p>`;
 
 const cxix22 = `<h1>Psalm 119</h1>
 <p style='text-align: center; margin-bottom: 0;'>ת</p>
-<p class="dropcap">LET my complaint come before thee, O LORD; * give me understanding according to thy word.<br>
+<p class="dropcap">LET my complaint come before thee, O Lᴏʀᴅ; * give me understanding according to thy word.<br>
 170 Let my supplication come before thee; * deliver me according to thy word.<br>
 171 My lips shall speak of thy praise, * when thou hast taught me thy statutes.<br>
 172 Yea, my tongue shall sing of thy word; * for all thy commandments are righteous.<br>
 173 Let thine hand help me; * for I have chosen thy commandments.<br>
-174 I have longed for thy saving health, O LORD; * and in thy law is my delight.<br>
+174 I have longed for thy saving health, O Lᴏʀᴅ; * and in thy law is my delight.<br>
 175 O let my soul live, and it shall praise thee; * and thy judgments shall help me.<br>
 176 I have gone astray like a sheep that is lost; * O seek thy servant, for I do not forget thy commandments.</p>`;
 
 const cxxi = `<h1>Psalm 121</h1>
 <p class="dropcap">I WILL lift up mine eyes unto the hills; * from whence cometh my help?<br>
-2 My help cometh even from the LORD, * who hath made heaven and earth.<br>
+2 My help cometh even from the Lᴏʀᴅ, * who hath made heaven and earth.<br>
 3 He will not suffer thy foot to be moved; * and he that keepeth thee will not sleep.<br>
 4 Behold, he that keepeth Israel * shall neither slumber nor sleep.<br>
-5 The LORD himself is thy keeper; * the LORD is thy defence upon thy right hand;<br>
+5 The Lᴏʀᴅ himself is thy keeper; * the Lᴏʀᴅ is thy defence upon thy right hand;<br>
 6 So that the sun shall not burn thee by day, * neither the moon by night.<br>
-7 The LORD shall preserve thee from all evil; * yea, it is even he that shall keep thy soul.<br>
-8 The LORD shall preserve thy going out, and thy coming in, * from this time forth for evermore.</p>`;
+7 The Lᴏʀᴅ shall preserve thee from all evil; * yea, it is even he that shall keep thy soul.<br>
+8 The Lᴏʀᴅ shall preserve thy going out, and thy coming in, * from this time forth for evermore.</p>`;
+
+const xxiii = `<h1>Psalm 23</h1>
+<p class="dropcap">THE Lord is my shepherd; * therefore can I lack nothing.<br>
+2 He shall feed me in a green pasture, * and lead me forth beside the waters of comfort.<br>
+3 He shall convert my soul, * and bring me forth in the paths of righteousness for his Name's sake.<br>
+4 Yea, though I walk through the valley of the shadow of death, I will fear no evil; * for thou art with me; thy rod and thy staff comfort me.<br>
+5 Thou shalt prepare a table before me in the presence of them that trouble me; * thou hast anointed my head with oil, and my cup shall be full.<br>
+6 Surely thy loving-kindness and mercy shall follow me all the days of my life; * and I will dwell in the house of the Lᴏʀᴅ for ever.</p>`;
+
+const c = `<h1>Psalm 100</h1>
+<p class="dropcap">O BE joyful in the Lord, all ye lands: * serve the Lord with gladness, and come before his presence with a song.
+2 Be ye sure that the Lord he is God; it is he that hath made us, and not we ourselves; * we are his people, and the sheep of his pasture.
+3 O go your way into his gates with thanksgiving, and into his courts with praise; * be thankful unto him, and speak good of his Name.
+4 For the Lord is gracious, his mercy is everlasting; * and his truth endureth from generation to generation.</p>`;
+
+const paschaNostrum = `<p class="dropcap">CHRIST our passover is sacrificed for us, * therefore let us keep the feast;<br>
+Not with the old leaven, nor with the leaven of malice and wickedness, * but with the unleavened bread of sincerity and truth. <i>1 Cor. 5:7, 8</i></p>
+<p>Christ being raised from the dead dieth no more, * death hath no more dominion over him.<br>
+For in that he died, he died unto sin once, * but in that he liveth, he liveth unto God.<br>
+Likewise reckon ye also yourselves to be dead indeed unto sin, * but alive unto God through Jesus Christ our Lord. <i>Rom. 6:9-11</i></p>
+<p>Christ is risen from the dead, * and become the first-fruits of them that slept.<br>
+For since by man came death, * by man came also the resurrection of the dead.<br>
+For as in Adam all die, * even so in Christ shall all be made alive. <i>1 Cor. 15:20-22</i></p>`;
+
+const teDeum = `<p style='margin-bottom: 0;' class="dropcap">WE praise thee, O God; we acknowledge thee to be the Lord.<br>
+        All the earth doth worship thee, the Father everlasting.<br>
+        To thee all Angels cry aloud; the Heavens, and all the Powers therein;<br>
+        To thee Cherubim and Seraphim continually do cry,<br>
+        Holy, Holy, Holy, Lord God of Sabaoth;<br>
+        Heaven and earth are full of the Majesty of thy glory.<br>
+        The glorious company of the Apostles praise thee.<br>
+        The goodly fellowship of the Prophets praise thee.<br>
+        The noble army of Martyrs praise thee.<br>
+        The holy Church throughout all the world doth acknowledge thee;<br>
+        The Father of an infinite Majesty;<br>
+        Thine adorable, true and only Son;<br>
+        Also the Holy Ghost the Comforter.</p>
+        <p>THOU art the King of Glory, O Christ.<br>
+        Thou art the everlasting Son of the Father.<br>
+        When thou tookest upon thee to deliver man, thou didst not abhor the Virgin's womb.<br>
+        When thou hadst overcome the sharpness of death, thou didst open the Kingdom of Heaven to all believers.<br>
+        Thou sittest at the right hand of God, in the glory of the Father.<br>
+        We believe that thou shalt come to be our Judge.<br>
+        We therefore pray thee, help thy servants, whom thou hast redeemed with thy precious blood.<br>
+        Make them to be numbered with thy Saints, in glory everlasting.</p>
+        <p style='text-align: center; margin-bottom: 0;'>✠&#9;✠&#9;✠</p>
+        <p>O Lᴏʀᴅ, save thy people, and bless thine heritage.<br>
+        Govern them and lift them up for ever.<br>
+        Day by day we magnify thee;<br>
+        And we worship thy Name ever, world without end.<br>
+        Vouchsafe, O Lord, to keep us this day without sin.<br>
+        O Lord, have mercy upon us, have mercy upon us.<br>
+        O Lord, let thy mercy be upon us, as our trust is in thee.<br>
+        O Lord, in thee have I trusted; let me never be confounded.</p>`;
+
+const thanksgiving = `<p class="dropcap">O PRAISE the Lord, for it is a good thing to sing praises unto our God; * yea, a joyful and pleasant thing it is to be thankful.<br>
+        The Lord doth build up Jerusalem, * and gather together the outcasts of Israel.<br>
+        He healeth those that are broken in heart, * and giveth medicine to heal their sickness.<br>
+        O sing unto the Lord with thanksgiving; * sing praises upon the harp unto our God:<br>
+        Who covereth the heaven with clouds, and prepareth rain for the earth; * and maketh the grass to grow upon the mountains, and herb for the use of men;<br>
+        Who giveth fodder unto the cattle, * and feedeth the young ravens that call upon him.<br>
+        Praise the Lord, O Jerusalem; * praise thy God, O Sion.<br>
+        For he hath made fast the bars of thy gates, * and hath blessed thy children within thee.<br>
+        He maketh peace in thy borders, * and filleth thee with the flour of wheat.</p>`;
+
+const benedictus `<p class="dropcap" style='margin-bottom: 0;'>BLESSED be the Lord God of Israel; * for he hath visited and redeemed his people;<br>
+        And hath raised up a mighty salvation for us, * in the house of his servant David;<br>
+        As he spake by the mouth of his holy Prophets, * which have been since the world began;<br>
+        That we should be saved from our enemies, * and from the hand of all that hate us.<br>
+        To perform the mercy promised to our forefathers, * and to remember his holy covenant;<br>
+        To perform the oath which he sware to our forefather Abraham, * that he would give us;<br>
+        That we being delivered out of the hand of our enemies * might serve him without fear;<br>
+        In holiness and righteousness before him, * all the days of our life.</p>
+        <p style='text-align: center; margin-bottom: 0;'>✠&#9;✠&#9;✠</p>
+        <p>And thou, child, shalt be called the prophet of the Highest: * for thou shalt go before the face of the Lord to prepare his ways;<br>
+        To give knowledge of salvation unto his people * for the remission of their sins,<br>
+        Through the tender mercy of our God; * whereby the day-spring from on high hath visited us;<br>
+        To give light to them that sit in darkness, and in the shadow of death, * and to guide our feet into the way of peace.</p>`;
 
 function getRandomPsalm() {
     const hour = new Date().getHours();
@@ -639,42 +716,125 @@ function getRandomPsalm() {
     return options[Math.floor(Math.random() * options.length)];
 }
 
-/*
-a1 46
-a2 119:89-104 119:1-16 67
-a3 130
-a4 102(15ff)
-xmas 
-stephen
-johnevangelist
-holyinnocents
-x1 98
-circ
-x2 121
-epi
-e1 92 84 19 67
-e2 62
-e3 42 103
-e4
-e5
-e6 98 96
-lxx 121
-lx
-l 103 19 23 119:33-48
-========
-6 19 32 38 42 46 51 62 63 67 84 90 91 92 96 98 102 103 119 120 121 130 143 148 149 150
-============
-aw
-l1 
-l2
-l3
-l4
-l5
-palm
-hw-mon
-hw-tue
-hw-wed
-maundy
-gf
-ee
-*/
+function getPsalm(lit, dow) {
+    let options = [];
+    switch (lit) {
+        case "A1": options.push(xlvi); break;
+        case "A2": options.push(cxix12, cxix1, lxvii); break;
+        case "A3":
+            if (dow === 3 && dow === 5 && dow === 6)
+                options.push(lxii, xcii, li, ciii);
+            else options.push(cxxx);
+            break;
+        case "A4": options.push(cii); break;
+        case "JohnBaptist": options.push(ciii, xcviii, xcvi, benedictus); break;
+        case "LXX": options.push(cxxi); break;
+        //case "LX":
+        case "L": options.push(ciii, xix, xxiii, cxix5); break;
+        case "Xmas": 
+        case "Stephen":
+            options.push(xix, teDeum);
+            break;
+        case "Epiphany": options.push(xlvi, c, teDeum); break;
+        case "Easter": 
+        case "EasterTue":
+            options.push(xcviii, teDeum, paschaNostrum);
+            break;
+        case "EasterMon": options.push(ciii, teDeum, paschaNostrum); break;
+        case "Ascension": options.push(xcvi, teDeum); break;
+        case "Whitsun":
+            if (dow === 3 && dow === 5 && dow === 6)
+                options.push(xix, lxxxiv);
+            else options.push(xlvi);
+            break;
+        case "Whitmon": options.push(ciii); break;
+        case "WhitTue": options.push(cxlviii); break;
+        case "AllSaints": options.push(cxlviii, cl); break;
+        //case "Anniversary":
+        case "Innocents": options.push(xix); break;
+        case "Circ": options.push(ciii, cxlviii); break;
+        case "Andrew": options.push(xcvi, c); break;
+        case "Thomas": options.push(xxiii, cxxi); break;
+        case "Paul": options.push(xix, lxvii); break;
+        //case "Matthias":
+        case "Mark": options.push(lxvii, xcvi, cii, xix); break;
+        case "PhilipAndJames": options.push(cxix5); break;
+        case "Barnabas": options.push(c); break;
+        case "Peter": options.push(lxvii, xxiii); break;
+        //case "James":
+        case "Bartholomew": options.push(xci, xlvi, cii); break;
+        case "Matthew": options.push(cxix1, xix); break;
+        case "Luke": options.push(ciii, lxvii, xcvi); break;
+        case "SimonAndJude": options.push(lxii, cxxi); break;
+        case "IndependenceDay": options.push(cxxi); break;
+        case "JohnEvangelist": options.push(xxiii); break;
+        case "X1": options.push(xcviii); break;
+        case "X2": options.push(cxxi); break;
+        case "Transfiguration": options.push(teDeum); break;
+        case "Ea1": options.push(ciii, cxxi); break;
+        case "Ea2": options.push(xxiii, c); break;
+        //case "Ea3":
+        //case "Ea4":
+        case "Ea5": options.push(lxvii); break;
+        case "Asc1": options.push(xcvi, xlvi); break;
+        case "SNBA": options.push(xc, ciii); break;
+        case "ThanksgivingDay": options.push(thanksgiving, lxvii, ciii, cxlviii, cl); break;
+        case "Candlemas": options.push(lxxxiv); break;
+        case "Annunciation": options.push(teDeum); break;
+        case "AW": options.push(xxxii, cxliii, cii, cxxx); break;
+        case "L1":
+            if (dow === 3 && dow === 5 && dow === 6)
+                options.push(lxxxiv, xix, xxiii);
+            else options.push(lxii, xcii);
+            break;
+        case "L2": options.push(xxxii, cxix1); break;
+        case "L3": options.push(cxix15, cxliii); break;
+        case "L4": options.push(xlvi); break;
+        case "L5": options.push(li, xlii); break;
+        case "Palm": options.push(cxxx); break;
+        case "HW-Mon": options.push(xlii); break;
+        case "HW-Tue": options.push(li, vi); break;
+        //case "HW-Wed":
+        case "HW-Thu": options.push(cxliii); break;
+        //case "GF":
+        //case "EE":
+        case "Michael": options.push(cxlviii, cl, xci); break;
+        case "E1": options.push(xcii, lxxxiv, xix, lxvii); break;
+        case "E2": options.push(lxii); break;
+        case "E3": options.push(xlii, ciii); break;
+        //case "E4":
+        //case "E5":
+        case "E6": options.push(xcviii, xcvi); break;
+        case "Trinity": options.push(xcviii, c, cxlviii, cl); break;
+        case "T1": options.push(cxix5); break;
+        case "T2": options.push(xix); break;
+        case "T3": options.push(xxxii, ciii); break;
+        case "T4": options.push(xci, li); break;
+        case "T5": options.push(lxii, lxiii); break;
+        case "T6": options.push(cxxx); break;
+        //case "T7":
+        case "T8": options.push(cxix5, xcii); break;
+        case "T9": options.push(ciii, cxix3, li); break;
+        case "T10": options.push(cxlvii, xlvi, xlii); break;
+        case "T11": options.push(c); break;
+        //case "T12":
+        //case "T13":
+        case "T14": options.push(xcii); break;
+        case "T15": options.push(ciii); break;
+        case "T16": options.push(xc, xci); break;
+        case "T17": options.push(cxxx); break;
+        case "T18": options.push(lxii, lxiii, cxix12); break;
+        case "T19": options.push(ciii); break;
+        case "T20": options.push(lxxxiv); break;
+        case "T21": options.push(cxxi); break;
+        case "T22": options.push(xxxii, li); break;
+        case "T23": options.push(xix, lxvii); break;
+        //case "T24":
+        //fall emberdays
+            //options.push(lxxxiv, c);
+            //break;
+    };
+
+    if (options.length > 0) return options[Math.floor(Math.random() * options.length)];
+    else return getRandomPsalm();
+}
