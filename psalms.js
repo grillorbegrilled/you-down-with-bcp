@@ -690,6 +690,16 @@ const benedictus `<p class="dropcap" style='margin-bottom: 0;'>BLESSED be the Lo
         Through the tender mercy of our God; * whereby the day-spring from on high hath visited us;<br>
         To give light to them that sit in darkness, and in the shadow of death, * and to guide our feet into the way of peace.</p>`;
 
+const magnificat = `<p class="dropcap">MY soul doth magnify the Lord, * and my spirit hath rejoiced in God my Saviour.<br>
+        For he hath regarded * the lowliness of his handmaiden.<br>
+        For behold, from henceforth * all generations shall call me blessed.<br>
+        For he that is mighty hath magnified me; * and holy is his Name.<br>
+        And his mercy is on them that fear him * throughout all generations.<br>
+        He hath showed strength with his arm; * he hath scattered the proud in the imagination of their hearts.<br>
+        He hath put down the mighty from their seat, * and hath exalted the humble and meek.<br>
+        He hath filled the hungry with good things; * and the rich he hath sent empty away.<br>
+        He remembering his mercy hath holpen his servant Israel; * as he promised to our forefathers, Abraham and his seed, for ever.</p>`;
+
 function getRandomPsalm() {
     const hour = new Date().getHours();
 
@@ -702,11 +712,11 @@ function getRandomPsalm() {
     ];
 
     if (hour >= 3 && hour < 12) {
-        options.push(cxlviii, cxlix, cl, lxiii);
+        options.push(cxlviii, cxlix, cl, lxiii, benedictus);
     }
 
     if (hour >= 15 && hour < 20) {
-        options.push(xcii, xcviii, ciii);
+        options.push(xcii, xcviii, ciii, magnificat);
     }
 
     if (hour >= 20 || hour < 3) {
