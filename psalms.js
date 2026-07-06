@@ -676,7 +676,7 @@ const thanksgiving = `<p class="dropcap">O PRAISE the Lord, for it is a good thi
         For he hath made fast the bars of thy gates, * and hath blessed thy children within thee.<br>
         He maketh peace in thy borders, * and filleth thee with the flour of wheat.</p>`;
 
-const benedictus `<p class="dropcap" style='margin-bottom: 0;'>BLESSED be the Lord God of Israel; * for he hath visited and redeemed his people;<br>
+const benedictus = `<p class="dropcap" style='margin-bottom: 0;'>BLESSED be the Lord God of Israel; * for he hath visited and redeemed his people;<br>
         And hath raised up a mighty salvation for us, * in the house of his servant David;<br>
         As he spake by the mouth of his holy Prophets, * which have been since the world began;<br>
         That we should be saved from our enemies, * and from the hand of all that hate us.<br>
