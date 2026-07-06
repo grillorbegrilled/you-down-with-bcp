@@ -1,5 +1,5 @@
 //all these at lauds
-const cxlviii = `<h1>Psalm 148</h1>
+const cxlviii = `<h2>Psalm 148</h2>
 <p class="dropcap">O PRAISE the Lᴏʀᴅ from the heavens: * praise him in the heights.<br>
 2 Praise him, all ye angels of his: * praise him, all his host.<br>
 3 Praise him, sun and moon: * praise him, all ye stars and light.<br>
@@ -14,7 +14,7 @@ const cxlviii = `<h1>Psalm 148</h1>
 12 Young men and maidens, old men and children, praise the Name of the Lᴏʀᴅ: * for his Name only is excellent, and his praise above heaven and earth.<br>
 13 He shall exalt the horn of his people: all his saints shall praise him; * even the children of Israel, even the people that serveth him.</p>`;
 
-const cxlix = `<h1>Psalm 149</h1>
+const cxlix = `<h2>Psalm 149</h2>
 <p class="dropcap">O SING unto the Lᴏʀᴅ a new song; * let the congregation of saints praise him.<br>
 2 Let Israel rejoice in him that made him, * and let the children of Sion be joyful in their King.<br>
 3 Let them praise his Name in the dance: * let them sing praises unto him with tabret and harp.<br>
@@ -25,7 +25,7 @@ const cxlix = `<h1>Psalm 149</h1>
 8 To bind their kings in chains, * and their nobles with links of iron;<br>
 9 To execute judgment upon them; as it is written, * Such honour have all his saints.</p>`;
     
-const cl = `<h1>Psalm 150</h1>
+const cl = `<h2>Psalm 150</h2>
 <p class="dropcap">O PRAISE God in his sanctuary: * praise him in the firmament of his power.<br>
 2 Praise him in his noble acts: * praise him according to his excellent greatness.<br>
 3 Praise him in the sound of the trumpet: * praise him upon the lute and harp.<br>
@@ -33,7 +33,7 @@ const cl = `<h1>Psalm 150</h1>
 5 Praise him upon the well-tuned cymbals: * praise him upon the loud cymbals.<br>
 6 Let every thing that hath breath * praise the Lᴏʀᴅ.</p>`;
 
-const vi = `<h1>Psalm 6</h1>
+const vi = `<h2>Psalm 6</h2>
 <p class="dropcap">O Lord, rebuke me not in thine indignation, * neither chasten me in thy displeasure.<br>
 2 Have mercy upon me, O Lᴏʀᴅ, for I am weak; * O Lᴏʀᴅ, heal me, for my bones are vexed.<br>
 3 My soul also is sore troubled: * but, Lᴏʀᴅ, how long wilt thou punish me?<br>
@@ -45,7 +45,7 @@ const vi = `<h1>Psalm 6</h1>
 9 The Lᴏʀᴅ hath heard my petition; * the Lᴏʀᴅ will receive my prayer.<br>
 10 All mine enemies shall be confounded, and sore vexed; * they shall be turned back, and put to shame suddenly.</p>`;
 
-const xxxii = `<h1>Psalm 32</h1>
+const xxxii = `<h2>Psalm 32</h2>
 <p class="dropcap">BLESSED is he whose unrighteousness is forgiven, * and whose sin is covered.<br>
 2 Blessed is the man unto whom the Lᴏʀᴅ imputeth no sin, * and in whose spirit there is no guile.<br>
 3 For whilst I held my tongue, * my bones consumed away through my daily complaining.<br>
@@ -59,7 +59,7 @@ const xxxii = `<h1>Psalm 32</h1>
 11 Great plagues remain for the ungodly; * but whoso putteth his trust in the Lᴏʀᴅ, mercy embraceth him on every side.<br>
 12 Be glad, O ye righteous, and rejoice in the Lᴏʀᴅ; * and be joyful, all ye that are true of heart.</p>`;
 
-const xxxviii = `<h1>Psalm 38</h1>
+const xxxviii = `<h2>Psalm 38</h2>
 <p class="dropcap">PUT ME not to rebuke, O Lᴏʀᴅ, in thine anger; * neither chasten me in thy heavy displeasure:<br>
 2 For thine arrows stick fast in me, * and thy hand presseth me sore.<br>
 3 There is no health in my flesh, because of thy displeasure; * neither is there any rest in my bones, by reason of my sin.<br>
@@ -82,7 +82,7 @@ const xxxviii = `<h1>Psalm 38</h1>
 20 They also that reward evil for good are against me; * because I follow the thing that good is.<br>
 21 Forsake me not, O Lᴏʀᴅ my God; * be not thou far from me.</p>`;
 
-const li = `<h1>Psalm 51</h1>
+const li = `<h2>Psalm 51</h2>
 <p class="dropcap">HAVE mercy upon me, O God, after thy great goodness; * according to the multitude of thy mercies do away mine offences.<br>
 2 Wash me throughly from my wickedness, * and cleanse me from my sin.<br>
 3 For I acknowledge my faults, * and my sin is ever before me.<br>
@@ -103,7 +103,7 @@ const li = `<h1>Psalm 51</h1>
 18 O be favourable and gracious unto Sion; * build thou the walls of Jerusalem.<br>
 19 Then shalt thou be pleased with the sacrifice of righteousness, with the burnt-offerings and oblations; * then shall they offer young bullocks upon thine altar.</p>`;
 
-const cii = `<h1>Psalm 102</h1>
+const cii = `<h2>Psalm 102</h2>
 <p>Hear my prayer, O Lᴏʀᴅ, * and let my crying come unto thee.<br>
 2 Hide not thy face from me in the time of my trouble; * incline thine ear unto me when I call; O hear me, and that right soon.<br>
 3 For my days are consumed away like smoke, * and my bones are burnt up as it were a firebrand.<br>
@@ -133,7 +133,7 @@ const cii = `<h1>Psalm 102</h1>
 27 And as a vesture shalt thou change them, and they shall be changed; * but thou art the same, and thy years shall not fail.<br>
 28 The children of thy servants shall continue, * and their seed shall stand fast in thy sight.</p>`;
 
-const cxxx = `<h1>Psalm 130</h1>
+const cxxx = `<h2>Psalm 130</h2>
 <p class="dropcap">OUT OF the deep have I called unto thee, O Lᴏʀᴅ; * Lord, hear my voice.<br>
 2 O let thine ears consider well * the voice of my complaint.<br>
 3 If thou, Lᴏʀᴅ, wilt be extreme to mark what is done amiss, * O Lord, who may abide it?<br>
@@ -143,7 +143,7 @@ const cxxx = `<h1>Psalm 130</h1>
 7 O Israel, trust in the Lᴏʀᴅ; for with the Lᴏʀᴅ there is mercy, * and with him is plenteous redemption.<br>
 8 And he shall redeem Israel * from all his sins.</p>`;
 
-const cxliii = `<h1>Psalm 143</h1>
+const cxliii = `<h2>Psalm 143</h2>
 <p class="dropcap">HEAR my prayer, O Lord, and consider my desire; * hearken unto me for thy truth and righteousness’ sake.<br>
 2 And enter not into judgment with thy servant; * for in thy sight shall no man living be justified.<br>
 3 For the enemy hath persecuted my soul; he hath smitten my life down to the ground; * he hath laid me in the darkness, as the men that have been long dead.<br>
@@ -158,7 +158,7 @@ const cxliii = `<h1>Psalm 143</h1>
 12 And of thy goodness slay mine enemies, * and destroy all them that vex my soul; for I am thy servant.</p>`;
 
 //lauds
-const lxiii = `<h1>Psalm 63</h1>
+const lxiii = `<h2>Psalm 63</h2>
 <p class="dropcap">O GOD, thou art my God; * early will I seek thee.<br>
 2 My soul thirsteth for thee, my flesh also longeth after thee, * in a barren and dry land where no water is.<br>
 3 Thus have I looked for thee in the sanctuary, * that I might behold thy power and glory.<br>
@@ -173,7 +173,7 @@ const lxiii = `<h1>Psalm 63</h1>
 12 But the King shall rejoice in God; all they also that swear by him shall be commended; * for the mouth of them that speak lies shall be stopped.</p>`;
 
 //evensong, roman lauds
-const lxvii = `<h1>Psalm 67</h1>
+const lxvii = `<h2>Psalm 67</h2>
 <p class="dropcap">GOD be merciful unto us, and bless us, * and show us the light of his countenance, and be merciful unto us;<br>
 2 That thy way may be known upon earth, * thy saving health among all nations.<br>
 3 Let the peoples praise thee, O God; * yea, let all the peoples praise thee.<br>
@@ -183,7 +183,7 @@ const lxvii = `<h1>Psalm 67</h1>
 7 God shall bless us; * and all the ends of the world shall fear him.</p>`;
 
 //compline
-const xci = `<h1>Psalm 91</h1>
+const xci = `<h2>Psalm 91</h2>
 <p class="dropcap">WHOSO dwelleth under the defence of the Most High, * shall abide under the shadow of the Almighty.<br>
 2 I will say unto the Lᴏʀᴅ, Thou art my hope, and my stronghold; * my God, in him will I trust.<br>
 3 For he shall deliver thee from the snare of the hunter, * and from the noisome pestilence.<br>
@@ -202,7 +202,7 @@ const xci = `<h1>Psalm 91</h1>
 16 With long life will I satisfy him, * and show him my salvation.</p>`;
 
 //evensong
-const xcii = `<h1>Psalm 92</h1>
+const xcii = `<h2>Psalm 92</h2>
 <p class="dropcap">It is a good thing to give thanks unto the Lᴏʀᴅ, * and to sing praises unto thy Name, O Most Highest;<br>
 2 To tell of thy loving-kindness early in the morning, * and of thy truth in the night season;<br>
 3 Upon an instrument of ten strings, and upon the lute; * upon a loud instrument, and upon the harp.<br>
@@ -220,7 +220,7 @@ const xcii = `<h1>Psalm 92</h1>
 14 That they may show how true the Lᴏʀᴅ my strength is, * and that there is no unrighteousness in him.</p>`;
 
 //evensong
-const xcviii = `<h1>Psalm 98</h1>
+const xcviii = `<h2>Psalm 98</h2>
 <p class="dropcap">O Sing unto the Lᴏʀᴅ a new song; * for he hath done marvellous things.<br>
 2 With his own right hand, and with his holy arm, * hath he gotten himself the victory.<br>
 3 The Lᴏʀᴅ declared his salvation; * his righteousness hath he openly showed in the sight of the heathen.<br>
@@ -233,7 +233,7 @@ const xcviii = `<h1>Psalm 98</h1>
 10 With righteousness shall he judge the world, * and the peoples with equity.</p>`;
 
 //evensong
-const ciii = `<h1>Psalm 103</h1>
+const ciii = `<h2>Psalm 103</h2>
 <p class="dropcap">Praise the Lord, O my soul; * and all that is within me, praise his holy Name.<br>
 Praise the Lᴏʀᴅ, O my soul, * and forget not all his benefits:<br>
 Who forgiveth all thy sin, * and healeth all thine infirmities;<br>
@@ -243,7 +243,7 @@ O praise the Lᴏʀᴅ, all ye his hosts; * ye servants of his that do his pleas
 O speak good of the Lᴏʀᴅ, all ye works of his, in all places of his dominion: * praise thou the Lᴏʀᴅ, O my soul.</p>`;
 
 //general
-const xix = `<h1>Psalm 19</h1>
+const xix = `<h2>Psalm 19</h2>
 <p class="dropcap">THE heavens declare the glory of God; * and the firmament showeth his handy-work.<br>
 2 One day telleth another; * and one night certifieth another.<br>
 3 There is neither speech nor language; * but their voices are heard among them.<br>
@@ -259,7 +259,7 @@ const xix = `<h1>Psalm 19</h1>
 13 Keep thy servant also from presumptuous sins, lest they get the dominion over me; * so shall I be undefiled, and innocent from the great offence.<br>
 14 Let the words of my mouth, and the meditation of my heart, be alway acceptable in thy sight, * O Lᴏʀᴅ, my strength and my redeemer.</p>`;
 
-const xlii = `<h1>Psalm 42</h1>
+const xlii = `<h2>Psalm 42</h2>
 <p class="dropcap">LIKE as the hart desireth the water-brooks, * so longeth my soul after thee, O God.<br>
 2 My soul is athirst for God, yea, even for the living God: * when shall I come to appear before the presence of God?<br>
 3 My tears have been my meat day and night, * while they daily say unto me, Where is now thy God?<br>
@@ -276,7 +276,7 @@ const xlii = `<h1>Psalm 42</h1>
 14 Why art thou so vexed, O my soul? * and why art thou so disquieted within me?<br>
 15 O put thy trust in God; * for I will yet thank him, which is the help of my countenance, and my God.</p>`;
 
-const xlvi = `<h1>Psalm 46</h1>
+const xlvi = `<h2>Psalm 46</h2>
 <p class="dropcap">GOD is our hope and strength, * a very present help in trouble.<br>
 2 Therefore will we not fear, though the earth be moved, * and though the hills be carried into the midst of the sea;<br>
 3 Though the waters thereof rage and swell, * and though the mountains shake at the tempest of the same.<br>
@@ -289,7 +289,7 @@ const xlvi = `<h1>Psalm 46</h1>
 10 Be still then, and know that I am God: * I will be exalted among the nations, and I will be exalted in the earth.<br>
 11 The Lᴏʀᴅ of hosts is with us; * the God of Jacob is our refuge.</p>`;
 
-const xc = `<h1>Psalm 90</h1>
+const xc = `<h2>Psalm 90</h2>
 <p class="dropcap">LORD, thou hast been our refuge, * from one generation to another.<br>
 2 Before the mountains were brought forth, or ever the earth and the world were made, * thou art God from everlasting, and world without end.<br>
 3 Thou turnest man to destruction; * again thou sayest, Come again, ye children of men.<br>
@@ -308,7 +308,7 @@ const xc = `<h1>Psalm 90</h1>
 16 Show thy servants thy work, * and their children thy glory.<br>
 17 And the glorious majesty of the Lᴏʀᴅ our God be upon us: * prosper thou the work of our hands upon us; O prosper thou our handy-work.</p>`;
 
-const lxxxiv = `<h1>Psalm 84</h1>
+const lxxxiv = `<h2>Psalm 84</h2>
 <p class="dropcap">O HOW amiable are thy dwellings, * thou Lᴏʀᴅ of hosts!<br>
 2 My soul hath a desire and longing to enter into the courts of the Lᴏʀᴅ; * my heart and my flesh rejoice in the living God.<br>
 3 Yea, the sparrow hath found her an house, and the swallow a nest, where she may lay her young; * even thy altars, O Lᴏʀᴅ of hosts, my King and my God.<br>
@@ -323,7 +323,7 @@ const lxxxiv = `<h1>Psalm 84</h1>
 12 For the Lᴏʀᴅ God is a light and defence; * the Lᴏʀᴅ will give grace and worship; and no good thing shall he withhold from them that live a godly life.<br>
 13 O Lᴏʀᴅ God of hosts, * blessed is the man that putteth his trust in thee.</p>`;
 
-const xcvi = `<h1>Psalm 96</h1>
+const xcvi = `<h2>Psalm 96</h2>
 <p class="dropcap">O SING unto the Lᴏʀᴅ a new song; * sing unto the Lᴏʀᴅ, all the whole earth.<br>
 2 Sing unto the Lᴏʀᴅ, and praise his Name; * be telling of his salvation from day to day.<br>
 3 Declare his honour unto the heathen, * and his wonders unto all peoples.<br>
@@ -338,7 +338,7 @@ const xcvi = `<h1>Psalm 96</h1>
 12 Let the field be joyful, and all that is in it; * then shall all the trees of the wood rejoice before the Lᴏʀᴅ.<br>
 13 For he cometh, for he cometh to judge the earth; * and with righteousness to judge the world, and the peoples with his truth.</p>`;
 
-const lxii = `<h1>Psalm 62</h1>
+const lxii = `<h2>Psalm 62</h2>
 <p class="dropcap">MY soul truly waiteth still upon God; * for of him cometh my salvation.<br>
 2 He verily is my strength and my salvation; * he is my defence, so that I shall not greatly fall.<br>
 3 How long will ye imagine mischief against every man? * Ye shall be slain all the sort of you; yea, as a tottering wall shall ye be, and like a broken hedge.<br>
@@ -352,7 +352,7 @@ const lxii = `<h1>Psalm 62</h1>
 11 God spake once, and twice I have also heard the same, * that power belongeth unto God;<br>
 12 And that thou, Lord, art merciful; * for thou rewardest every man according to his work.</p>`;
 
-const cxx = `<h1>Psalm 120</h1>
+const cxx = `<h2>Psalm 120</h2>
 <p class="dropcap">WHEN I was in trouble, I called upon the Lᴏʀᴅ, * and he heard me.<br>
 2 Deliver my soul, O Lᴏʀᴅ, from lying lips, * and from a deceitful tongue.<br>
 3 What reward shall be given or done unto thee, thou false tongue? * even mighty and sharp arrows, with hot burning coals.<br>
@@ -360,7 +360,7 @@ const cxx = `<h1>Psalm 120</h1>
 5 My soul hath long dwelt among them * that are enemies unto peace.<br>
 6 I labour for peace; but when I speak unto them thereof, * they make them ready to battle.</p>`;
 
-const cxix1 = `<h1>Psalm 119</h1>
+const cxix1 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>א</p>
 <p class="dropcap">BLESSED are those that are undefiled in the way, and walk in the law of the Lᴏʀᴅ.<br>
 2 Blessed are they that keep his testimonies, * and seek him with their whole heart;<br>
@@ -371,7 +371,7 @@ const cxix1 = `<h1>Psalm 119</h1>
 7 I will thank thee with an unfeigned heart, * when I shall have learned the judgments of thy righteousness.<br>
 8 I will keep thy statutes; * O forsake me not utterly.</p>`;
 
-const cxix2 = `<h1>Psalm 119</h1>
+const cxix2 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ב</p>
 <p class="dropcap">WHEREWITHAL shall a young man cleanse his way? * even by ruling himself after thy word.<br>
 10 With my whole heart have I sought thee; * O let me not go wrong out of thy commandments.<br>
@@ -382,7 +382,7 @@ const cxix2 = `<h1>Psalm 119</h1>
 15 I will talk of thy commandments, * and have respect unto thy ways.<br>
 16 My delight shall be in thy statutes, * and I will not forget thy word.</p>`;
 
-const cxix3 = `<h1>Psalm 119</h1>
+const cxix3 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ג</p>
 <p class="dropcap">O DO well unto thy servant; * that I may live, and keep thy word.<br>
 18 Open thou mine eyes; * that I may see the wondrous things of thy law.<br>
@@ -393,7 +393,7 @@ const cxix3 = `<h1>Psalm 119</h1>
 23 Princes also did sit and speak against me; * but thy servant is occupied in thy statutes.<br>
 24 For thy testimonies are my delight, * and my counsellors.</p>`;
 
-const cxix4 = `<h1>Psalm 119</h1>
+const cxix4 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ד</p>
 <p class="dropcap">MY soul cleaveth to the dust; * O quicken thou me, according to thy word.<br>
 26 I have acknowledged my ways, and thou heardest me: * O teach me thy statutes.<br>
@@ -404,7 +404,7 @@ const cxix4 = `<h1>Psalm 119</h1>
 31 I have stuck unto thy testimonies; * O Lᴏʀᴅ, confound me not.<br>
 32 I will run the way of thy commandments, * when thou hast set my heart at liberty.</p>`;
 
-const cxix5 = `<h1>Psalm 119</h1>
+const cxix5 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ה</p>
 <p class="dropcap">TEACH me, O Lord, the way of thy statutes, * and I shall keep it unto the end.<br>
 34 Give me understanding, and I shall keep thy law; * yea, I shall keep it with my whole heart.<br>
@@ -415,7 +415,7 @@ const cxix5 = `<h1>Psalm 119</h1>
 39 Take away the rebuke that I am afraid of; * for thy judgments are good.<br>
 40 Behold, my delight is in thy commandments; * O quicken me in thy righteousness.</p>`;
 
-const cxix6 = `<h1>Psalm 119</h1>
+const cxix6 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ו</p>
 <p class="dropcap">LET thy loving mercy come also unto me, O Lᴏʀᴅ, * even thy salvation, according unto thy word.<br>
 42 So shall I make answer unto my blasphemers; * for my trust is in thy word.<br>
@@ -426,7 +426,7 @@ const cxix6 = `<h1>Psalm 119</h1>
 47 And my delight shall be in thy commandments, * which I have loved.<br>
 48 My hands also will I lift up unto thy commandments, which I have loved; * and my study shall be in thy statutes.</p>`;
 
-const cxix7 = `<h1>Psalm 119</h1>
+const cxix7 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ז</p>
 <p class="dropcap">O THINK upon thy servant, as concerning thy word, * wherein thou hast caused me to put my trust.<br>
 50 The same is my comfort in my trouble; * for thy word hath quickened me.<br>
@@ -437,7 +437,7 @@ const cxix7 = `<h1>Psalm 119</h1>
 55 I have thought upon thy Name, O Lᴏʀᴅ, in the night season, * and have kept thy law.<br>
 56 This I had, * because I kept thy commandments.</p>`;
 
-const cxix8 = `<h1>Psalm 119</h1>
+const cxix8 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ח</p>
 <p class="dropcap">THOU art my portion, O Lᴏʀᴅ; * I have promised to keep thy law.<br>
 58 I made my humble petition in thy presence with my whole heart; * O be merciful unto me, according to thy word.<br>
@@ -448,7 +448,7 @@ const cxix8 = `<h1>Psalm 119</h1>
 63 I am a companion of all them that fear thee, * and keep thy commandments.<br>
 64 The earth, O Lᴏʀᴅ, is full of thy mercy: * O teach me thy statutes.</p>`;
 
-const cxix9 = `<h1>Psalm 119</h1>
+const cxix9 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ט</p>
 <p class="dropcap">O LORD, thou hast dealt graciously with thy servant, * according unto thy word.<br>
 66 O teach me true understanding and knowledge; * for I have believed thy commandments.<br>
@@ -459,7 +459,7 @@ const cxix9 = `<h1>Psalm 119</h1>
 71 It is good for me that I have been in trouble; * that I may learn thy statutes.<br>
 72 The law of thy mouth is dearer unto me * than thousands of gold and silver.</p>`;
  
-const cxix10 = `<h1>Psalm 119</h1>
+const cxix10 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>י</p>
 <p class="dropcap">THY hands have made me and fashioned me: * O give me understanding, that I may learn thy commandments.<br>
 74 They that fear thee will be glad when they see me; * because I have put my trust in thy word.<br>
@@ -470,7 +470,7 @@ const cxix10 = `<h1>Psalm 119</h1>
 79 Let such as fear thee, and have known thy testimonies, * be turned unto me.<br>
 80 O let my heart be sound in thy statutes, * that I be not ashamed.</p>`;
 
-const cxix11 = `<h1>Psalm 119</h1>
+const cxix11 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>כ</p>
 <p class="dropcap">MY soul hath longed for thy salvation, * and I have a good hope because of thy word.<br>
 82 Mine eyes-long sore for thy word; * saying, O when wilt thou comfort me?<br>
@@ -481,7 +481,7 @@ const cxix11 = `<h1>Psalm 119</h1>
 87 They had almost made an end of me upon earth; * but I forsook not thy commandments.<br>
 88 O quicken me after thy loving-kindness; * and so shall I keep the testimonies of thy mouth.</p>`;
 
-const cxix12 = `<h1>Psalm 119</h1>
+const cxix12 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ל</p>
 <p class="dropcap">O LORD, thy word * endureth for ever in heaven.<br>
 90 Thy truth also remaineth from one generation to another; * thou hast laid the foundation of the earth, and it abideth.<br>
@@ -492,7 +492,7 @@ const cxix12 = `<h1>Psalm 119</h1>
 95 The ungodly laid wait for me, to destroy me; * but I will consider thy testimonies.<br>
 96 I see that all things come to an end; * but thy commandment is exceeding broad.</p>`;
 
-const cxix13 = `<h1>Psalm 119</h1>
+const cxix13 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>מ</p>
 <p class="dropcap">LORD, what love have I unto thy law! * all the day long is my study in it.<br>
 98 Thou, through thy commandments, hast made me wiser than mine enemies; * for they are ever with me.<br>
@@ -503,7 +503,7 @@ const cxix13 = `<h1>Psalm 119</h1>
 103 O how sweet are thy words unto my throat; * yea, sweeter than honey unto my mouth!<br>
 104 Through thy commandments I get understanding: * therefore I hate all evil ways.</p>`;
 
-const cxix14 = `<h1>Psalm 119</h1>
+const cxix14 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>נ</p>
 <p class="dropcap">THY word is a lantern unto my feet, * and a light unto my paths.<br>
 106 I have sworn, and am stedfastly purposed, * to keep thy righteous judgments.<br>
@@ -514,7 +514,7 @@ const cxix14 = `<h1>Psalm 119</h1>
 111 Thy testimonies have I claimed as mine heritage for ever; * and why? they are the very joy of my heart.<br>
 112 I have applied my heart to fulfil thy statutes alway, * even unto the end.</p>`;
 
-const cxix15 = `<h1>Psalm 119</h1>
+const cxix15 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ס</p>
 <p class="dropcap">I HATE them that imagine evil things; * but thy law do I love.<br>
 114 Thou art my defence and shield; * and my trust is in thy word.<br>
@@ -525,7 +525,7 @@ const cxix15 = `<h1>Psalm 119</h1>
 119 Thou puttest away all the ungodly of the earth like dross; * therefore I love thy testimonies.<br>
 120 My flesh trembleth for fear of thee; * and I am afraid of thy judgments.</p>`;
 
-const cxix16 = `<h1>Psalm 119</h1>
+const cxix16 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ע</p>
 <p class="dropcap">I DEAL with the thing that is lawful and right; * O give me not over unto mine oppressors.<br>
 122 Make thou thy servant to delight in that which is good, * that the proud do me no wrong.<br>
@@ -536,7 +536,7 @@ const cxix16 = `<h1>Psalm 119</h1>
 127 For I love thy commandments * above gold and precious stones.<br>
 128 Therefore hold I straight all thy commandments; * and all false ways I utterly abhor.</p>`;
 
-const cxix17 = `<h1>Psalm 119</h1>
+const cxix17 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>פ</p>
 <p class="dropcap">THY testimonies are wonderful; * therefore doth my soul keep them.<br>
 130 When thy word goeth forth, * it giveth light and understanding unto the simple.<br>
@@ -547,7 +547,7 @@ const cxix17 = `<h1>Psalm 119</h1>
 135 Show the light of thy countenance upon thy servant, * and teach me thy statutes.<br>
 136 Mine eyes gush out with water, * because men keep not thy law.</p>`;
 
-const cxix18 = `<h1>Psalm 119</h1>
+const cxix18 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>צ</p>
 <p class="dropcap">RIGHTEOUS art thou, O Lord; * and true are thy judgments.<br>
 138 The testimonies that thou hast commanded * are exceeding righteous and true.<br>
@@ -558,7 +558,7 @@ const cxix18 = `<h1>Psalm 119</h1>
 143 Trouble and heaviness have taken hold upon me; * yet is my delight in thy commandments.<br>
 144 The righteousness of thy testimonies is everlasting: * O grant me understanding, and I shall live.</p>`;
 
-const cxix19 = `<h1>Psalm 119</h1>
+const cxix19 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ק</p>
 <p class="dropcap">I CALL with my whole heart; * hear me, O Lᴏʀᴅ; I will keep thy statutes.<br>
 146 Yea, even unto thee do I call; * help me, and I shall keep thy testimonies.<br>
@@ -569,7 +569,7 @@ const cxix19 = `<h1>Psalm 119</h1>
 151 Be thou nigh at hand, O Lᴏʀᴅ; * for all thy commandments are true.<br>
 152 As concerning thy testimonies, I have known long since, * that thou hast grounded them for ever.</p>`;
 
-const cxix20 = `<h1>Psalm 119</h1>
+const cxix20 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ר</p>
 <p class="dropcap">O CONSIDER mine adversity, and deliver me, * for I do not forget thy law.<br>
 154 Avenge thou my cause, and deliver me; * quicken me according to thy word.<br>
@@ -580,7 +580,7 @@ const cxix20 = `<h1>Psalm 119</h1>
 159 Consider, O Lᴏʀᴅ, how I love thy commandments; * O quicken me, according to thy loving-kindness.<br>
 160 Thy word is true from everlasting; * all the judgments of thy righteousness endure for evermore.</p>`;
 
-const cxix21 = `<h1>Psalm 119</h1>
+const cxix21 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ש</p>
 <p class="dropcap">PRINCES have persecuted me without a cause; * but my heart standeth in awe of thy word.<br>
 162 I am as glad of thy word, * as one that findeth great spoils.<br>
@@ -591,7 +591,7 @@ const cxix21 = `<h1>Psalm 119</h1>
 167 My soul hath kept thy testimonies, * and loved them exceedingly.<br>
 168 I have kept thy commandments and testimonies; * for all my ways are before thee.</p>`;
 
-const cxix22 = `<h1>Psalm 119</h1>
+const cxix22 = `<h2>Psalm 119</h2>
 <p style='text-align: center; margin-bottom: 0;'>ת</p>
 <p class="dropcap">LET my complaint come before thee, O Lᴏʀᴅ; * give me understanding according to thy word.<br>
 170 Let my supplication come before thee; * deliver me according to thy word.<br>
@@ -602,7 +602,7 @@ const cxix22 = `<h1>Psalm 119</h1>
 175 O let my soul live, and it shall praise thee; * and thy judgments shall help me.<br>
 176 I have gone astray like a sheep that is lost; * O seek thy servant, for I do not forget thy commandments.</p>`;
 
-const cxxi = `<h1>Psalm 121</h1>
+const cxxi = `<h2>Psalm 121</h2>
 <p class="dropcap">I WILL lift up mine eyes unto the hills; * from whence cometh my help?<br>
 2 My help cometh even from the Lᴏʀᴅ, * who hath made heaven and earth.<br>
 3 He will not suffer thy foot to be moved; * and he that keepeth thee will not sleep.<br>
@@ -612,7 +612,7 @@ const cxxi = `<h1>Psalm 121</h1>
 7 The Lᴏʀᴅ shall preserve thee from all evil; * yea, it is even he that shall keep thy soul.<br>
 8 The Lᴏʀᴅ shall preserve thy going out, and thy coming in, * from this time forth for evermore.</p>`;
 
-const xxiii = `<h1>Psalm 23</h1>
+const xxiii = `<h2>Psalm 23</h2>
 <p class="dropcap">THE Lord is my shepherd; * therefore can I lack nothing.<br>
 2 He shall feed me in a green pasture, * and lead me forth beside the waters of comfort.<br>
 3 He shall convert my soul, * and bring me forth in the paths of righteousness for his Name's sake.<br>
@@ -620,7 +620,7 @@ const xxiii = `<h1>Psalm 23</h1>
 5 Thou shalt prepare a table before me in the presence of them that trouble me; * thou hast anointed my head with oil, and my cup shall be full.<br>
 6 Surely thy loving-kindness and mercy shall follow me all the days of my life; * and I will dwell in the house of the Lᴏʀᴅ for ever.</p>`;
 
-const c = `<h1>Psalm 100</h1>
+const c = `<h2>Psalm 100</h2>
 <p class="dropcap">O BE joyful in the Lord, all ye lands: * serve the Lord with gladness, and come before his presence with a song.
 2 Be ye sure that the Lord he is God; it is he that hath made us, and not we ourselves; * we are his people, and the sheep of his pasture.
 3 O go your way into his gates with thanksgiving, and into his courts with praise; * be thankful unto him, and speak good of his Name.
