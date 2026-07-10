@@ -117,8 +117,9 @@ return "images/bg/Easter.jpg";
             return "white_damask"; //blue?
             break;
         */
-      case "Patrick": return "images/bg/st-pat.jpg";
-      case "Joseph": return "images/bg/joseph.jpg";
+      case "Patrick": return "images/bg/st-pat.jpg"; break;
+      case "Joseph": return "images/bg/joseph.jpg"; break:
+        case "T5": return "images/bg/draught_of_fishes.jpg"; break;
         default:
           if (month < 8 || month === 8 && date < 29)
             return "images/bg/trinity.png";
