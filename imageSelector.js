@@ -118,7 +118,7 @@ return "images/bg/Easter.jpg";
             break;
         */
       case "Patrick": return "images/bg/st-pat.jpg"; break;
-      case "Joseph": return "images/bg/joseph.jpg"; break:
+      case "Joseph": return "images/bg/joseph.jpg"; break;
         case "T5": return "images/bg/draught_of_fishes.jpg"; break;
         default:
           if (month < 8 || month === 8 && date < 29)
