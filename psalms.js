@@ -1,3 +1,15 @@
+const cxi = `h2>Psalm 111</h2>
+<p class="dropcap">I WILL give thanks unto the Lᴏʀᴅ with my whole heart, * secretly among the faithful, and in the congregation.<br>
+2 The works of the Lᴏʀᴅ are great, * sought out of all them that have pleasure therein.<br>
+3 His work is worthy to be praised and had in honour, * and his righteousness endureth for ever.<br>
+4 The merciful and gracious Lᴏʀᴅ hath so done his marvellous works, * that they ought to be had in remembrance.<br>
+5 He hath given meat unto them that fear him; * he shall ever be mindful of his covenant.<br>
+6 He hath showed his people the power of his works, * that he may give them the heritage of the heathen.<br>
+7 The works of his hands are verity and judgment; * all his commandments are true.<br>
+8 They stand fast for ever and ever, * and are done in truth and equity.<br>
+9 He sent redemption unto his people; * he hath commanded his covenant for ever; holy and reverend is his Name.<br>
+10 The fear of the Lᴏʀᴅ is the beginning of wisdom; * a good understanding have all they that do thereafter; his praise endureth for ever.</p>`;
+
 //all these at lauds
 const cxlviii = `<h2>Psalm 148</h2>
 <p class="dropcap">O PRAISE the Lᴏʀᴅ from the heavens: * praise him in the heights.<br>
