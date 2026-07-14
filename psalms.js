@@ -720,7 +720,7 @@ function getRandomPsalm() {
         lxii, cxx, cxxi, cxix1, cxix2, cxix3, cxix4, cxix5,
         cxix6, cxix7, cxix8, cxix9, cxix10, cxix11, cxix12, 
         cxix13, cxix14, cxix15, cxix16, cxix17, cxix18, cxix19,
-        cxix20, cxix21, cxix22
+        cxix20, cxix21, cxix22, cxi
     ];
 
     if (hour >= 3 && hour < 12) {
@@ -742,7 +742,7 @@ function getPsalm(lit, dow) {
     let options = [];
     switch (lit) {
         case "A1": options.push(xlvi); break;
-        case "A2": options.push(cxix12, cxix1, lxvii); break;
+        case "A2": options.push(cxix12, cxix1, lxvii, cxi); break;
         case "A3":
             if (dow === 3 && dow === 5 && dow === 6)
                 options.push(lxii, xcii, li, ciii);
@@ -757,10 +757,11 @@ function getPsalm(lit, dow) {
         case "Stephen":
             options.push(xix, teDeum);
             break;
+        case "X2": options.push(cxi); break;
         case "Epiphany": options.push(xlvi, c, teDeum); break;
         case "Easter": 
         case "EasterTue":
-            options.push(xcviii, teDeum, paschaNostrum);
+            options.push(xcviii, teDeum, paschaNostrum, cxi);
             break;
         case "EasterMon": options.push(ciii, teDeum, paschaNostrum); break;
         case "Ascension": options.push(xcvi, teDeum); break;
@@ -833,7 +834,7 @@ function getPsalm(lit, dow) {
         case "T3": options.push(xxxii, ciii); break;
         case "T4": options.push(xci, li); break;
         case "T5": options.push(lxii, lxiii); break;
-        case "T6": options.push(cxxx); break;
+        case "T6": options.push(cxxx, cxi); break;
         //case "T7":
         case "T8": options.push(cxix5, xcii); break;
         case "T9": options.push(ciii, cxix3, li); break;
