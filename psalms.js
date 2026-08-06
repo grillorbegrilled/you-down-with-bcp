@@ -1,4 +1,4 @@
-const cxi = `<h2>Psalm 111</h2>
+const cxi =  `<h2>Psalm 111</h2>
 <p class="dropcap">I WILL give thanks unto the Lᴏʀᴅ with my whole heart, * secretly among the faithful, and in the congregation.<br>
 2 The works of the Lᴏʀᴅ are great, * sought out of all them that have pleasure therein.<br>
 3 His work is worthy to be praised and had in honour, * and his righteousness endureth for ever.<br>
