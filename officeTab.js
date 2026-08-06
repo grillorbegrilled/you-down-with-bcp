@@ -1,5 +1,5 @@
 function getOffice(now, week, feast) {
-    var tab0ovr = false;
+    var tab0ovr = false; 
     const day = now.getDay();
     let lit = synthDate(week, feast, day);
     //------------------COMMINATION
