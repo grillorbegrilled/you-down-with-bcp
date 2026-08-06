@@ -660,9 +660,9 @@ const teDeum = `<p style='margin-bottom: 0;' class="dropcap">WE praise thee, O G
         The Father of an infinite Majesty;<br>
         Thine adorable, true and only Son;<br>
         Also the Holy Ghost the Comforter.</p>
-        <p>THOU art the King of Glory, O Christ.<br>
+        <p>Thou art the King of Glory, O Christ.<br>
         Thou art the everlasting Son of the Father.<br>
-        When thou tookest upon thee to deliver man, thou didst not abhor the Virgin's womb.<br>
+        When thou tookest upon thee to deliver man, thou didst not abhor the Virgin’s womb.<br>
         When thou hadst overcome the sharpness of death, thou didst open the Kingdom of Heaven to all believers.<br>
         Thou sittest at the right hand of God, in the glory of the Father.<br>
         We believe that thou shalt come to be our Judge.<br>
