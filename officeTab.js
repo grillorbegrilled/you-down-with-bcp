@@ -37,7 +37,7 @@ function getOffice(now, week, feast) {
                 if (antiphon) document.getElementById("antiphon").innerHTML = makeP(antiphon);
                 let canticle = getMorningCanticle(lit, day);
                 document.getElementById("canticle").innerHTML = canticle;
-                if (!canticle.startsWith(`<p class="dropcap">WE`))
+                if (!canticle.startsWith(`<p style='margin-bottom: 0;'`))
                     document.getElementById("creed-or-suffrages").innerHTML = `<p>I believe in God the Father Almighty, Maker of heaven and earth: <br>
                         And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
                         I believe in the Holy Ghost: The holy Catholic Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>`;
@@ -147,7 +147,7 @@ function getAdditionalPrayers(week, day, officeType) {
 
 function getMorningCanticle(lit, dow) {
     let foo = getPsalm(lit, dow);
-    if (!foo.toLowerCase().startsWith('<p class="dropcap">we'))
+    if (!foo.toLowerCase().startsWith("<p style='margin-bottom: 0;'"))
         foo += "<p>Glory be to the Father, and to the Son, * and to the Holy Ghost;<br>As it was in the beginning, is now, and ever shall be, * world without end. Amen.</p>";
     return foo;
 }
