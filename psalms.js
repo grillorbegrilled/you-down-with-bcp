@@ -838,7 +838,7 @@ function getPsalm(lit, dow) {
         //case "T7":
         case "T8": options.push(cxix5, xcii); break;
         case "T9": options.push(ciii, cxix3, li); break;
-        case "T10": options.push(cxlvii, xlvi, xlii); break;
+        case "T10": options.push(xlvi, xlii); break;
         case "T11": options.push(c); break;
         //case "T12":
         //case "T13":
