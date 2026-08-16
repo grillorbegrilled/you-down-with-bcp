@@ -60,7 +60,7 @@ const dayNames = {
     "T8": "The Eighth Sunday After Trinity",
     "T9": "The Ninth Sunday After Trinity",
     "T10": "The Tenth Sunday After Trinity",
-    "T11": "The ELeventh Sunday After Trinity",
+    "T11": "The Eleventh Sunday After Trinity",
     "T12": "The Twelfth Sunday After Trinity",
     "T13": "The Thirteenth Sunday After Trinity",
     "T14": "The Fourteenth Sunday After Trinity",
