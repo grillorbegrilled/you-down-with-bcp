@@ -8,7 +8,7 @@ function getOfficeMargin1(now, liturgicalDay) {
       result = "images/marginalia/Empty-Tomb.jpg";
       break;
     case "Matthew":
-      result = "images/marginalia/coins.gif";
+      result = "images/marginalia/matthew.jpg";
       break;
     case "Michael":
       result = "images/marginalia/neaster.png";
