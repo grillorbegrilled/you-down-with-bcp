@@ -7,64 +7,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="frames.css">
     <link rel="icon" type="image/png" href="images/icon.png">
-    <!--<link href='https://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet'>-->
-    <script src="occasionalServices.js"></script>
-    <script src="dayNames.js"></script>
-    <script src="timesAndSeasons.js"></script>
-    <script src="colors.js"></script>
-    <script src="marginalia.js"></script>
-    <script src="getIntercessions.js"></script>
-    <script src="antiphons.js"></script>
-    <script src="sentences.js"></script>
-    <script src="psalms.js"></script>
-    <script src="officeTab.js"></script>
-    <script src="lessons/sundaysThematic.js"></script>
-    <script src="getScripture.js"></script>
-    <script src="emberDays.js"></script>
-    <script src="imageSelector.js"></script>
-    <script src="properPrefaces.js"></script>
-    <script src="hymns/getHymns.js"></script>
-    <script src="scripts.js"></script>
-    <script>
-        window.onload = function() {
-              displayEventDetails();
-              for (let e of document.getElementsByName("prez")) e.textContent = "Donald";
-              for (let e of document.getElementsByName("guv")) e.textContent = "Michael";
-              for (let e of document.getElementsByName("clergy")) e.textContent = "Sarah, Sean, and Anne";
-              const saintOfTheDay = getBlackletterDay();
-              for (let e of document.getElementsByName("saint")) e.textContent = saintOfTheDay ? `${saintOfTheDay.name} and` : "…";
-        }
-    </script>
 </head>
 <body>
     <div class="background" id="top-image"></div>
-    <div class="card">
-        <div class="content">
-            <div class="tab-content active" id="tab-0">
-                <img name="bookmark" class="bookmark">
-                <h1 id="office-name"></h1>
-                <p id="fastDayLabel" class="fastingLabel"></p>
-                <div id="sentence"></div>
-                <img id="topMarg" class="centerMarg"></img>
-                <p id="lp">Our Father, who art in heaven, Hallowed be thy Name. Thy kingdom come. Thy will be done on earth, As it is in heaven. Give us this day our daily bread. And forgive us our trespasses, As we forgive those who trespass against us. And lead us not into temptation, But deliver us from evil. For thine is the kingdom, The power, and the glory, For ever and ever. Amen.</p>
-                <div id="antiphon"></div>
-                <img id="cantMarg" class="leftMarg"></img>
-                <div id="canticle"></div>
-                <!--<div id="lesson"></div>-->
-                <h2 id="oec" name="e_cit"></h2>
-                <p id="oet" class="dropcap" name="e_txt"></p>
-                <h2 id="ogc" name="g_cit"></h2>
-                <p id="ogt" class="dropcap" name="g_txt"></p>
-                <div id="creed-or-suffrages"></div>
-                <p name="c" id="cotd-office" class="dropcap"></p>
-                <div id="office-collect"></div>
-                <div id="additional-prayers"></div>
-            </div>
-            
-            <div class="tab-content" id="tab-1">
-                <h1>Missa Sicca<br>for<br><span id="nameOfTheDay"></span></h1>
-                <img id="euchMarg" class="centerMarg">
-                <P class="dropcap">ALMIGHTY God, unto whom all hearts are open, all desires known,
+                <h1>Missa Sicca<br>for<br>Any Necessity</span></h1>
+<p class="dropcap">I am the salvation of the people, saith the Lord : in whatsoever distress they shall call on Me, I will hear them, and will be their Lord for ever.<br>
+<i>Ps. 78.</i>Hear my law, O my people ; incline your ears unto the words of my mouth.</p>
+                <P>Almighty God, unto whom all hearts are open, all desires known,
                 and from whom no secrets are hid; Cleanse the thoughts of our
                 hearts by the inspiration of thy Holy Spirit, that we may perfectly
                 love thee, and worthily magnify thy holy Name; through Christ
@@ -84,18 +33,19 @@
                 that, through thy most mighty protection, both here and ever,
                 we may be preserved in body and soul; through our Lord and Saviour
                 Jesus Christ. Amen.</P>
-                <p name="c" class="dropcap"></p>
-                <h2 name="e_cit"></h2>
-                <p name="e_txt"></p>
-                <h2 name="g_cit"></h2>
-                <p name="g_txt"></p>
+                <p class="dropcap">O God, Who by the grace of the Holy Ghost dost pour the gift of charity into the hearts of Thy faithful people, grant unto Thy servants, our brethren and sisters, for whom we entreat Thy mercy, health of mind and body, that they may love Thee with their whole strength, and may accomplish that which is pleasing unto Thee with a perfect love; Through Jesus Christ our Lord.</p>
+                <h2>Isaiah 19:19-20</h2>
+                <p>In that day shall there be an altar to the Lord in the midst of the land of Egypt, and a pillar at the border thereof to the Lord. And it shall be for a sign and for a witness unto the Lord of hosts in the land of Egypt: for they shall cry unto the Lord because of the oppressors, and he shall send them a saviour, and a great one, and he shall deliver them.</p>
+    <h2>Psalm 79</h2>
+    <p>Be merciful to our sins, O Lord : wherefore do the heathen say, Where is now their God?<br>
+℣ Help us, O God of our salvation : for the glory of Thy Name deliver us, O Lord. </p>
+<p>Alleluia. ℣ <i>Ps. 85.</i> Shew us Thy mercy, O Lord : and grant us Thy salvation.</p>
+                <h2>Mark 12:41-44</h2>
+                <p class="dropcap">Jesus sat over against the treasury, and beheld how the people cast money into the treasury: and many that were rich cast in much. And there came a certain poor widow, and she threw in two mites, which make a farthing. And he called unto him his disciples, and saith unto them, Verily I say unto you, That this poor widow hath cast more in, than all they which have cast into the treasury: For all they did cast in of their abundance; but she of her want did cast in all that she had, even all her living.</p>
                 <p><b>Praise be to thee, O Christ.</b></P>
-
-                <!--Nicene on xmas, easter, ascension, whitsun, and trinity-->
-                <p>I believe in God the Father Almighty, Maker of heaven and earth: <br>
-                    And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.<br>
-                    I believe in the Holy Ghost: The holy Catholic Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body, And the Life everlasting. Amen.</p>
-                
+       <p><i>Ps. 55.</i> Hear my prayer, O God : and hide not Thyself from my petition. Take heed unto me, and hear me.</p>         
+    <p>Have mercy, O Lord, we beseech Thee, upon Thy servants and handmaids, for whom we offer this Sacrifice of praise unto Thy Majesty; and grant that they may receive the grace of heavenly benediction, and attain unto the glory of everlasting happiness; through Jesus Christ our Lord.</p>
+    <p><i>Additional prayers may be said here.</i></p>
                 <P class="dropcap">ALMIGHTY God, Father of our Lord Jesus Christ, Maker of all things,
                     Judge of all men; We acknowledge and bewail our manifold sins
                     and wickedness, Which we, from time to time, most grievously
@@ -159,32 +109,12 @@
                     forgive those who trespass against us. And lead us not into temptation,
                     But deliver us from evil. For thine is the kingdom, and the power, and the glory, for ever and ever. Amen.</P>
 
-                <p class="devo">Grant, O Lord Jesus Christ, that as the hem of Thy garment, touched in faith, healed the woman who could not touch Thy Body, so the soul of Thy servant may be healed by like faith in Thee, Whom I cannot now sacramentally receive. I unite myself to Thee, and embrace Thee with all the affections of my soul. O let nothing ever separate me from Thee. Let me live and die in Thy love. Amen.</p>
-                
-                <p style="color: firebrick; font-size: 75%;">¶If a man, by any just impediment, do not receive the Sacrament of Christ’s Body and Blood,
-                    if he do truly repent him of his sins, and stedfastly believe that Jesus Christ hath suffered death upon the Cross for him,
-                    and shed his Blood for his redemption, earnestly remembering the benefits he hath thereby, and giving him hearty thanks therefor,
-                    he doth eat and drink the Body and Blood of our Saviour Christ profitably to his soul’s health, although he do not receive the Sacrament with his mouth.</p>
-
-                <P>The Body and Blood of our Lord Jesus Christ, which was given and shed for me, preserve my body and soul unto everlasting life.</P>
+    <p><i>Mark 2.</i> Verily, I say unto you, what things soever ye desire when ye pray, believe that ye receive them, and ye shall have them.</p>
                 
                 <p class="devo">¶Ask Jesus for the spiritual gifts you most need.</p>
                 <p class="devo">¶Ask Him for any other needs for yourself, your school, and your friends.</p>
                 <p class="devo">Lord Jesus, I thank Thee that Thou hast now fed me with Thy Body and Blood, and imparted to me Thy life. Teach me to live with a grateful heart, and as Thou hast to-day come anew into my soul, so abide in me continually, till in Thine own good time I may see Thee face to face, where Thou livest and reignest with the Father and the Holy Ghost one God world without end. Amen.&mdash;Cecil John Wood</p>
                 
-                <div id="gloria">
-                    <P class="dropcap">GLORY be to God on high, and on earth peace, good will towards
-                        men. We praise thee, we bless thee, we worship thee, we glorify
-                        thee, we give thanks to thee for thy great glory, O Lord God,
-                        heavenly King, God the Father Almighty.</p>
-                    <p>O Lord, the only-begotten Son, Jesus Christ; O Lord God, Lamb
-                        of God, Son of the Father, that takest away the sins of the world,
-                        have mercy upon us. Thou that takest away the sins of the world,
-                        receive our prayer. Thou that sittest at the right hand of God
-                        the Father, have mercy upon us.</p>
-                    <p>For thou only art holy; thou only art the Lord; thou only, O
-                        Christ, with the Holy Ghost, art most high in the glory of God
-                        the Father. Amen.</P>
                 </div>
                 
                 <p>The grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost be with us all evermore. Amen.</p>
