@@ -10,6 +10,9 @@ function synthDate(week, day, dayOfWeek) {
     return day;
 }
 
+const includeGloria = (isFeast, week) =>
+    (isFeast || (new Date()).getDay() === 0) && !['AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week);
+
 function isFast(now) {
     const day = now.getDay();
     const month = now.getMonth();
