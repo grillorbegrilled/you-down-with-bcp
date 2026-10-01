@@ -41,7 +41,11 @@ element.style.backgroundPosition = 'top center';
     });
     document.getElementById('preface').innerHTML = getPreface(liturgicalDay, now.getMonth(), now.getDate(), now.getDay());
 
-    if (['LXX', 'LX', 'L', 'AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week))
+    if (!feast && now.getDay() > 0) {
+        document.getElementById('gloria').style.display = "none";
+        document.getElementById('massCreed').style.display = "none";
+    }
+    else if (['LXX', 'LX', 'L', 'AW', 'L1', 'L2', 'L3', 'L4', 'L5', 'Palm', 'HW-Mon', 'HW-Tue', 'HW-Wed', 'HW-Thu', 'GF', 'EE'].includes(week))
         document.getElementById('gloria').innerHTML = makeDropCap(`O SAVING Victim, open wide<br>
 the gate of heav’n to man below;<br>
 our foes press on from every side;<br>
