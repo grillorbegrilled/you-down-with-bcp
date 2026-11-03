@@ -41,7 +41,10 @@ element.style.backgroundPosition = 'top center';
     });
     document.getElementById('preface').innerHTML = getPreface(liturgicalDay, now.getMonth(), now.getDate(), now.getDay());
 
-    if (!feast && now.getDay() > 0) {
+    if (!feast && now.getDay() > 0 
+        || ["Easter", "EaMon", "EaTue"].includes(week) //always during Easter week
+        || feast === "AllSaints" && now.getDay() > 0 && now.getDate() > 1 //no gloria or creed during all saints octave
+       ) {
         document.getElementById('gloria').style.display = "none";
         document.getElementById('massCreed').style.display = "none";
     }
