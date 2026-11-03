@@ -44,6 +44,7 @@ element.style.backgroundPosition = 'top center';
     if (!feast && now.getDay() > 0 
         || ["Easter", "EaMon", "EaTue"].includes(week) //always during Easter week
         || feast === "AllSaints" && now.getDay() > 0 && now.getDate() > 1 //no gloria or creed during all saints octave
+        || feast === "AllSouls"
        ) {
         document.getElementById('gloria').style.display = "none";
         document.getElementById('massCreed').style.display = "none";
