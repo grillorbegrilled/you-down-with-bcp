@@ -81,6 +81,7 @@ return "images/bg/Easter.jpg";
         return "images/bg/John Baptist.jpg";
         break;
         case "AllSaints":
+        case "AllSouls":
         return "images/bg/All-saints-day.jpg";
         break;
         /*case "ThanksgivingDay":
