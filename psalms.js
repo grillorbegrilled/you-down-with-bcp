@@ -624,6 +624,17 @@ const cxxi = `<h2>Psalm 121</h2>
 7 The Lᴏʀᴅ shall preserve thee from all evil; * yea, it is even he that shall keep thy soul.<br>
 8 The Lᴏʀᴅ shall preserve thy going out, and thy coming in, * from this time forth for evermore.</p>`;
 
+const cxxii = `<h2>Psalm 122</h2>
+<p class="dropcap">I WAS glad when they said unto me, * We will go into the house of the Lᴏʀᴅ.<br>
+2 Our feet shall stand in thy gates, * O Jerusalem.<br>
+3 Jerusalem is built as a city * that is at unity in itself.<br>
+4 For thither the tribes go up, even the tribes of the Lᴏʀᴅ, * to testify unto Israel, to give thanks unto the Name of the Lᴏʀᴅ.<br>
+5 For there is the seat of judgment, * even the seat of the house of David.<br>
+6 O pray for the peace of Jerusalem; * they shall prosper that love thee.<br>
+7 Peace be within thy walls, * and plenteousness within thy palaces.<br>
+8 For my brethren and companions’ sakes, * I will wish thee prosperity.<br>
+9 Yea, because of the house of the Lᴏʀᴅ our God, * I will seek to do thee good.</p>`;
+
 const xxiii = `<h2>Psalm 23</h2>
 <p class="dropcap">THE Lord is my shepherd; * therefore can I lack nothing.<br>
 2 He shall feed me in a green pasture, * and lead me forth beside the waters of comfort.<br>
@@ -812,7 +823,7 @@ function getPsalm(lit, dow) {
             break;
         case "L2": options.push(xxxii, cxix1); break;
         case "L3": options.push(cxix15, cxliii); break;
-        case "L4": options.push(xlvi); break;
+        case "L4": options.push(xlvi, cxxii); break;
         case "L5": options.push(li, xlii); break;
         case "Palm": options.push(cxxx); break;
         case "HW-Mon": options.push(xlii); break;
