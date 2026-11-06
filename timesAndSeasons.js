@@ -349,7 +349,7 @@ function getA4() {
 
 function getLiturgicalDate(now) {
     const month = now.getMonth();
-    const day = now.getDate();
+    const day = now.getDate() + (now.getHours() >= 18); //eve!
     
     if (month === 0) { //jan
         if (day === 1) return "Circ";
