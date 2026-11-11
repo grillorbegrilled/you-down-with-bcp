@@ -125,6 +125,6 @@ return "images/bg/Easter.jpg";
           if (month < 8 || month === 8 && date < 29)
             return "images/bg/trinity.png";
           else
-            return "images/bg/harvest.png";
+            return "images/bg/harvest.jpg";
     }
 }
