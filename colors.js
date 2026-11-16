@@ -71,6 +71,7 @@ function getBookmarkColor(lit, month, date) {
         case "Asc1":
         case "SNBA":
         case "ThanksgivingDay": //or blue
+        case "Hugh":
         //virgins not martyrs
             return "white_damask";
             break;
