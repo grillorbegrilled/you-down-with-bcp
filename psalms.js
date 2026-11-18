@@ -233,7 +233,7 @@ const xcii = `<h2>Psalm 92</h2>
 
 //evensong
 const xcviii = `<h2>Psalm 98</h2>
-<p class="dropcap">O Sing unto the Lᴏʀᴅ a new song; * for he hath done marvellous things.<br>
+<p class="dropcap">O Sing unto the Lord a new song; * for he hath done marvellous things.<br>
 2 With his own right hand, and with his holy arm, * hath he gotten himself the victory.<br>
 3 The Lᴏʀᴅ declared his salvation; * his righteousness hath he openly showed in the sight of the heathen.<br>
 4 He hath remembered his mercy and truth toward the house of Israel; * and all the ends of the world have seen the salvation of our God.<br>
@@ -336,7 +336,7 @@ const lxxxiv = `<h2>Psalm 84</h2>
 13 O Lᴏʀᴅ God of hosts, * blessed is the man that putteth his trust in thee.</p>`;
 
 const xcvi = `<h2>Psalm 96</h2>
-<p class="dropcap">O SING unto the Lᴏʀᴅ a new song; * sing unto the Lᴏʀᴅ, all the whole earth.<br>
+<p class="dropcap">O SING unto the Lord a new song; * sing unto the Lᴏʀᴅ, all the whole earth.<br>
 2 Sing unto the Lᴏʀᴅ, and praise his Name; * be telling of his salvation from day to day.<br>
 3 Declare his honour unto the heathen, * and his wonders unto all peoples.<br>
 4 For the Lᴏʀᴅ is great, and cannot worthily be praised;* he is more to be feared than all gods.<br>
