@@ -11,9 +11,7 @@
     <script src="occasionalServices.js"></script>
     <script src="dayNames.js"></script>
     <script src="timesAndSeasons.js"></script>
-    <script src="colors.js"></script>
     <script src="marginalia.js"></script>
-    <script src="getIntercessions.js"></script>
     <script src="antiphons.js"></script>
     <script src="sentences.js"></script>
     <script src="psalms.js"></script>
@@ -27,8 +25,9 @@
     <script src="scripts.js"></script>
     <script>
         window.onload = function() {
+              let lit = "A1";
               displayEventDetails();
-              let canticle = getMorningCanticle(lit, day);
+              let canticle = getMorningCanticle(lit);
                 document.getElementById("canticle").innerHTML = canticle;
         }
     </script>
