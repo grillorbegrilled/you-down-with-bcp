@@ -127,6 +127,7 @@ h1 {
     font-size: 1.5rem; 
     text-align: center;
     font-weight: normal;
+    margin-bottom: 0;
 }
 h2 { 
     font-family: 'Blackletter', Garamond, Georgia, serif;
@@ -166,6 +167,8 @@ p {
   hyphenate-limit-chars: 7 3 3;   /* fewer, longer-word hyphens */
   text-wrap: pretty;               /* better breaks */
   font-kerning: normal;
+    margin-top: 0;
+    line-height: 1;
 }
 
 p.dropcap {
