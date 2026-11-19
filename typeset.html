@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Prayer Book</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="frames.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <!--<link href='https://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet'>-->
+    <script src="occasionalServices.js"></script>
+    <script src="dayNames.js"></script>
+    <script src="timesAndSeasons.js"></script>
+    <script src="colors.js"></script>
+    <script src="marginalia.js"></script>
+    <script src="getIntercessions.js"></script>
+    <script src="antiphons.js"></script>
+    <script src="sentences.js"></script>
+    <script src="psalms.js"></script>
+    <script src="officeTab.js"></script>
+    <script src="lessons/sundaysThematic.js"></script>
+    <script src="getScripture.js"></script>
+    <script src="emberDays.js"></script>
+    <script src="imageSelector.js"></script>
+    <script src="properPrefaces.js"></script>
+    <script src="hymns/getHymns.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        window.onload = function() {
+              displayEventDetails();
+        }
+    </script>
+</head>
+<body>
+    <div class="background" id="top-image"></div>
+    <div class="card">
+        <div class="content">
+            <div class="tab-content active" id="tab-0">
+              <h1 id="nameOfTheDay"></h1>
+              <img id="euchMarg" class="centerMarg">
+              <p name="c" class="dropcap"></p>
+              <h2 name="e_cit"></h2>
+              <p name="e_txt"></p>
+              <h2 name="g_cit"></h2>
+              <p name="g_txt"></p>
+              <h2>The Preface</h2>
+              <div id="preface"></div>
+              <div id="additional-prayers"></div>
+              <p id="lessons">Lorem ipsum 3:29ff Adminimveniam 14:1-11</p>
+              <h2 id="hymn-title">A Hymn</h2>
+              <div id="hymn"></div>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab(0)"><img src="images/sun.gif"></button>
+        </div>
+    </div>
+        <script>
+            function showTab(index) {
+                const tabs = document.querySelectorAll('.tab');
+                const contents = document.querySelectorAll('.tab-content');
+            
+                tabs.forEach((tab, i) => {
+                    if (i === index) {
+                        tab.classList.add('active');
+                    } else {
+                        tab.classList.remove('active');
+                    }
+                });
+            
+                contents.forEach((content, i) => {
+                    if (i === index) {
+                        content.classList.add('active');
+                    } else {
+                        content.classList.remove('active');
+                    }
+                });
+
+                //fix this
+                //document.querySelector('.content')?.scrollTop = 0;
+            }
+        </script>
+</body>
+</html>
