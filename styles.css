@@ -168,7 +168,7 @@ p {
   text-wrap: pretty;               /* better breaks */
   font-kerning: normal;
     margin-top: 0;
-    line-height: 1;
+    line-height: 1.15;
 }
 
 p.dropcap {
