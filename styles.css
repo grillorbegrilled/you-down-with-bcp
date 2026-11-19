@@ -161,7 +161,11 @@ p {
     font-size: 1.00rem;
     font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
     hyphens: auto;
-  overflow-wrap: break-word;
+    text-align: justify;
+  text-justify: inter-word;
+  hyphenate-limit-chars: 7 3 3;   /* fewer, longer-word hyphens */
+  text-wrap: pretty;               /* better breaks */
+  font-kerning: normal;
 }
 
 p.dropcap {
