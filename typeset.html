@@ -28,6 +28,8 @@
     <script>
         window.onload = function() {
               displayEventDetails();
+              let canticle = getMorningCanticle(lit, day);
+                document.getElementById("canticle").innerHTML = canticle;
         }
     </script>
 </head>
