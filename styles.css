@@ -160,6 +160,8 @@ h6 { font-size: 1.00rem; }*/
 p { 
     font-size: 1.00rem;
     font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
+    hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 p.dropcap {
