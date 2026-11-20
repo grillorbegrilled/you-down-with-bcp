@@ -1,0 +1,180 @@
+:root {    
+    font-size: 100%;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Garamond';
+  src: url('eb-garamond-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Garamond';
+  src: url('eb-garamond-italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Garamond';
+  src: url('eb-garamond-semibold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'Garamond';
+  src: url('eb-garamond-semibold-italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'EBGInit';
+  src: url('FloralCapitals.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Blackletter';
+  src: url('KJV1611.woff2') format('woff');
+  font-weight: normal;
+  font-display: swap;
+  font-feature-settings:
+        "liga" 1,   /* common ligatures */
+        "dlig" 1,   /* discretionary ligatures */
+        "clig" 1,   /* contextual ligatures */
+        "kern" 1,   /* kerning */
+        "salt" 1,   /* stylistic alternates */
+        "calt" 1,   /* contextual alternates */
+        "ornm" 1,
+        "onum" 1,
+        "pnum" 1,
+        "titl" 1;
+}
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    color: black;
+    font-family: "Garamond", Garamond, Georgia, serif;
+    font-weight: normal;
+    font-feature-settings: "liga" 1, "dlig" 1, "swsh" 0, "calt" 1, "onum" 1, "pnum" 1;
+}
+
+.centerMarg {
+    max-width: 25%;
+    height: auto;
+    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 { 
+    font-family: 'Blackletter', Garamond, Georgia, serif;
+    font-size: 9pt; 
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+h2 { 
+    font-family: 'Blackletter', Garamond, Georgia, serif;
+    font-size: 6pt;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+h3 { 
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0;
+    font-feature-settings: "liga" 1, "dlig" 1, "swsh" 0, "calt" 1;
+    font-style: italic;
+}
+
+/*h1 { font-size: 2.00rem; }
+h2 { font-size: 1.74rem; }
+h3 { font-size: 1.52rem; }
+h4 { font-size: 1.32rem; }
+h5 { font-size: 1.15rem; }
+h6 { font-size: 1.00rem; }*/
+p {
+    font-size: 6pt;
+    font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
+    text-align: justify;
+    text-justify: inter-word;
+    font-kerning: normal;
+    margin-top: 0;
+    line-height: 6.3pt;
+}
+
+p.dropcap {
+  /* no reset needed — keep exactly the same as <p> */
+}
+
+/* Just style the initial letter */
+p.dropcap::first-letter {
+  font-family: "EBGInit" !important;
+  float: left;
+  display: inline-block;
+  font-size: 27pt;
+  line-height: 1;
+  color: firebrick;
+  margin: 0 0 -1.5pt 0; /*top right bottom left*/
+}
+
+/*Capitalize the first line*/
+p.dropcap::first-line {
+    text-transform: uppercase;
+    /*font-size: 75%;*/
+  /*font-variant: small-caps;*/
+}
+/*
+  font-size: 5rem;
+  float: left;
+  padding-right: 3px;
+  color: #990000;
+  line-height: 1;
+}*)
+
+.drop-cap {
+  float: left;
+  display: inline-block;
+  font-size: 3.5rem;
+  line-height: 1;
+  margin: -0.5rem 0 -1rem 0; /*top right bottom left*/
+}
+
+.hymn {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.devo {
+  font-style: italic;
+  font-feature-settings: 
+    "liga" 1,
+    "dlig" 1,
+    "swsh" 1,
+    "calt" 1,
+    "rand" 1;
+  text-align: right;
+}
