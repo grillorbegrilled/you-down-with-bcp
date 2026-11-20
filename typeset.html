@@ -38,6 +38,7 @@
 }).catch(error => {
     for (let e of document.getElementsByName('e_txt')) e.innerHTML = makeP(error.message);
 });
+            if (lit === "A3") document.getElementById("additional-prayers").innerHTML = "<h2>For the Ember Days</h2><p>Grant, we most humbly beseech Thee, O heavenly Father, that with holy Simeon and Anna, and all Thy devout servants, who waited for the consolation of Israel, we may at this time  so serve Thee with fasting and prayer, that by the celebration of the advent and birth of our blessed Redeemer, we may with them be filled with true joy and consolation, through the same Jesus Christ our Lord. Amen. <i>—John Cosin</i></p>";
               document.getElementById("canticle").innerHTML = getMorningCanticle(lit, "");
         }
     </script>
@@ -55,7 +56,7 @@
               <p name="e_txt"></p>
               <h2 name="g_cit"></h2>
               <p name="g_txt"></p>
-              <h2>The Preface</h2>
+              <h2 hidden>The Preface</h2>
               <div id="preface"></div>
               <div id="additional-prayers"></div>
               <!--<p id="lessons">Lorem ipsum 3:29ff Adminimveniam 14:1-11</p>
