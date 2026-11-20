@@ -63,35 +63,7 @@
               <div id="hymn"></div>-->
             </div>
         </div>
-
-        <div class="tabs">
-            <button class="tab active" onclick="showTab(0)"><img src="images/sun.gif"></button>
-        </div>
+        <div class="tabs"></div>
     </div>
-        <script>
-            function showTab(index) {
-                const tabs = document.querySelectorAll('.tab');
-                const contents = document.querySelectorAll('.tab-content');
-            
-                tabs.forEach((tab, i) => {
-                    if (i === index) {
-                        tab.classList.add('active');
-                    } else {
-                        tab.classList.remove('active');
-                    }
-                });
-            
-                contents.forEach((content, i) => {
-                    if (i === index) {
-                        content.classList.add('active');
-                    } else {
-                        content.classList.remove('active');
-                    }
-                });
-
-                //fix this
-                //document.querySelector('.content')?.scrollTop = 0;
-            }
-        </script>
 </body>
 </html>
