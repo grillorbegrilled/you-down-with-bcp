@@ -98,7 +98,8 @@ h2 {
     font-family: 'Blackletter', Garamond, Georgia, serif;
     font-size: 6pt;
     text-align: center;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 0;
 }
 
