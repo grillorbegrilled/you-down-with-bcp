@@ -166,7 +166,7 @@ p.tl-done {
   top: 0;
   left: 0;
   font-family: "EBGInit";
-  font-size: 27pt;
+  font-size: 20pt;          /* 3 lines: 3 x 6.3pt = 18.9pt. Indent line count follows size automatically */
   line-height: 1;
   color: firebrick;
   margin: 0 0 -1.5pt 0;     /* top right bottom left; right margin = gap to text */

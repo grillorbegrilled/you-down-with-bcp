@@ -382,6 +382,9 @@
         capW = r.width + (parseFloat(cc.marginLeft) || 0) + (parseFloat(cc.marginRight) || 0);
         const capH = r.height + (parseFloat(cc.marginTop) || 0) + (parseFloat(cc.marginBottom) || 0);
         dropLines = Math.max(2, Math.ceil(capH / lineH - 0.15));
+        // optional manual override in CSS: .tl-dropcap { --drop-lines: 3; }
+        const ov = parseInt(cc.getPropertyValue('--drop-lines'), 10);
+        if (ov > 0) dropLines = ov;
       }
     }
 
