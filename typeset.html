@@ -14,19 +14,33 @@
     <script src="psalms.js"></script>
     <script src="properPrefaces.js"></script>
     <script src="scripts.js"></script>
-    <script src="https://unpkg.com/tex-linebreak2@0.8/dist/lib.js"></script>
+    <script src="kp.js"></script>
     <script>
-async function typesetText() {
-    // Wait for the local EB Garamond fonts to finish loading.
+// Make sure every face the text uses is actually loaded before measuring.
+// document.fonts.ready alone can resolve early: fonts only start loading once
+// text using them has been laid out, and content was just injected.
+async function loadTypefaces() {
+    const faces = [
+        '400 1em Garamond',
+        'italic 400 1em Garamond',
+        '700 1em Garamond',
+        'italic 700 1em Garamond',
+        '1em EBGInit'
+    ];
+    try {
+        await Promise.all(faces.map(f => document.fonts.load(f, 'AaBbCc')));
+    } catch (e) {
+        console.warn('font load issue', e);
+    }
     await document.fonts.ready;
+}
 
-    // Typeset all paragraphs in the main content area.
-   /* texLinebreak.texLinebreakDOM(
-        document.querySelectorAll('#tab-0 p'),
-        {
-            updateOnWindowResize: true
-        }
-    );*/
+async function typesetText() {
+    await loadTypefaces();
+    KPTypeset.typesetAll();          // Knuth-Plass on every justified <p> in .content
+    KPTypeset.watch('.content');     // re-break on width change
+    // Optional real hyphenation:
+    // KPTypeset.config.hyphenate = word => myHyphenator(word);  // -> ['syl','la','bles']
 }
         
         window.onload = function() {

@@ -49,7 +49,7 @@
 
 @font-face {
   font-family: 'Blackletter';
-  src: url('KJV1611.woff2') format('woff');
+  src: url('KJV1611.woff2') format('woff2');
   font-weight: normal;
   font-display: swap;
   font-feature-settings:
@@ -134,12 +134,8 @@ p {
     line-height: 6.3pt;
 }
 
-p.dropcap {
-  /* no reset needed — keep exactly the same as <p> */
-}
-
-/* Just style the initial letter */
-p.dropcap::first-letter {
+/* Fallback (JS off / not yet typeset): browser drop cap */
+p.dropcap:not(.tl-done)::first-letter {
   font-family: "EBGInit" !important;
   float: left;
   display: inline-block;
@@ -148,27 +144,36 @@ p.dropcap::first-letter {
   color: firebrick;
   margin: 0 0 -1.5pt 0; /*top right bottom left*/
 }
-
-/*Capitalize the first line*/
-p.dropcap::first-line {
-    text-transform: uppercase;
-    /*font-size: 75%;*/
-  /*font-variant: small-caps;*/
+p.dropcap:not(.tl-done)::first-line {
+  text-transform: uppercase;
 }
-/*
-  font-size: 5rem;
-  float: left;
-  padding-right: 3px;
-  color: #990000;
-  line-height: 1;
-}*)
 
-.drop-cap {
-  float: left;
-  display: inline-block;
-  font-size: 3.5rem;
+/* Knuth-Plass output (kp.js) */
+p.tl-done {
+  position: relative;
+}
+.tl-line {
+  display: block;
+  white-space: nowrap;      /* breaks already decided by kp.js */
+  text-align: left;         /* justification done via word-spacing */
+  text-align-last: left;
+}
+.tl-upper {
+  text-transform: uppercase;
+}
+.tl-dropcap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "EBGInit";
+  font-size: 27pt;
   line-height: 1;
-  margin: -0.5rem 0 -1rem 0; /*top right bottom left*/
+  color: firebrick;
+  margin: 0 0 -1.5pt 0;     /* top right bottom left; right margin = gap to text */
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none;
+  word-spacing: 0;
 }
 
 .hymn {
