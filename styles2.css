@@ -72,6 +72,7 @@ body, html {
     padding: 0;
     height: 100%;
     overflow: hidden;
+    background: black;
     color: black;
     font-family: "Garamond", Garamond, Georgia, serif;
     font-weight: normal;
@@ -180,4 +181,13 @@ p.dropcap::first-line {
     "calt" 1,
     "rand" 1;
   text-align: right;
+}
+
+.content {
+    width: 2.75in;
+    height: 4.25in;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: white;
 }
