@@ -2,15 +2,21 @@
  * pdf-export.js - paginated PDF export for the typeset .content div.
  *
  * Click #savePdf -> content is split into pages the size of .content (width/height/padding
- * read from its computed CSS, so 2.75in x 4.25in with 0.5in margins today). Pages are built
- * as real DOM, then the browser prints them; choose "Save as PDF". Result is vector text
- * with the fonts embedded, laid out exactly as on screen.
+ * read from its computed CSS, 2.75in x 4.25in with 0.5in margins today). The paginated pages
+ * are built as real DOM, every word is measured from that DOM, and a PDF is written directly
+ * with pdf-lib: exact page size, embedded fonts, selectable text, one-click download.
+ * Needs pdf-lib.min.js and fontkit.umd.min.js loaded first (see README lines in the reply).
+ *
+ * If direct PDF fails, it can fall back to the browser print dialog (CFG.fallbackToPrint).
+ * That route honours @page size on desktop browsers but NOT in Firefox for Android.
  *
  * Pagination works on the lines kp.js already decided (.tl-line spans), so line breaks are
  * never re-flowed. Orphans/widows are enforced per paragraph. Headings are kept with the
  * text that follows. Drop-cap paragraphs never split inside the cap's lines.
  *
  * Non-kp blocks (headings, images, unjustified paragraphs) are treated as unbreakable.
+ * Drawn: text (font, size, colour, text-transform, kerning-free ligature/feature support
+ * via fontkit) and <img>. Not drawn: borders, backgrounds, rules.
  */
 (function (global) {
   'use strict';
@@ -21,7 +27,9 @@
     orphans: 2,          // min lines of a paragraph left at the bottom of a page
     widows: 2,           // min lines of a paragraph carried to the top of the next page
     eps: 0.05,           // px tolerance for float noise
-    titleFrom: '#nameOfTheDay'   // text used as the PDF file name (browser default), optional
+    titleFrom: '#nameOfTheDay',  // text used as the PDF title / file name, optional
+    mode: 'pdf',                 // 'pdf' = direct download, 'print' = browser print dialog only
+    fallbackToPrint: true        // if direct PDF throws, offer the print dialog
   };
 
   const STYLE_ID = 'pf-style';
@@ -315,7 +323,8 @@
   function removeRoot() { const r = document.getElementById(ROOT_ID); if (r) r.remove(); }
 
   // Build the page DOM (attached to body, hidden on screen). Returns {root, plan, geom}.
-  async function prepare() {
+  async function prepare(opts) {
+    opts = opts || {};
     const content = document.querySelector(CFG.contentSelector);
     if (!content) throw new Error('pdf-export: no ' + CFG.contentSelector);
     await document.fonts.ready;
@@ -340,15 +349,270 @@
 
     const plan = paginate(atoms, geom.innerH);
     const root = buildDOM(plan, geom);
+    if (opts.measurable) {   // laid out but invisible, so words can be measured
+      root.style.cssText = 'display:block;position:absolute;left:-100000px;top:0;' +
+        'visibility:hidden;width:' + geom.w + 'px;';
+    }
     document.body.appendChild(root);
     flow.remove();
     return { root: root, plan: plan, geom: geom };
   }
 
+  /* ---------------------------------------------------------------- *
+   * Direct PDF (pdf-lib + fontkit)
+   * ---------------------------------------------------------------- */
+
+  const PX2PT = 0.75;
+
+  const normWeight = w => {
+    w = String(w || '').trim().toLowerCase();
+    if (w === 'normal' || !w) return 400;
+    if (w === 'bold') return 700;
+    return parseInt(w, 10) || 400;
+  };
+  const isItalic = s => /italic|oblique/i.test(s || '');
+
+  // @font-face rules -> [{family, weight, italic, url}]
+  function readFontFaces() {
+    const faces = [];
+    for (const sheet of Array.from(document.styleSheets)) {
+      let rules;
+      try { rules = sheet.cssRules; } catch (e) { continue; }
+      for (const rule of Array.from(rules)) {
+        if (rule.type !== CSSRule.FONT_FACE_RULE) continue;
+        const st = rule.style;
+        const m = /url\(\s*["']?([^"')]+)["']?\s*\)/.exec(st.getPropertyValue('src'));
+        if (!m) continue;
+        faces.push({
+          family: st.getPropertyValue('font-family').replace(/["']/g, '').trim().toLowerCase(),
+          weight: normWeight(st.getPropertyValue('font-weight')),
+          italic: isItalic(st.getPropertyValue('font-style')),
+          url: new URL(m[1], sheet.href || document.baseURI).href
+        });
+      }
+    }
+    return faces;
+  }
+
+  // Best-matching face of each family in the CSS font stack, in stack order.
+  function candidateFaces(cs, faces) {
+    const fams = cs.fontFamily.split(',').map(f => f.trim().replace(/^["']|["']$/g, '').toLowerCase());
+    const want = normWeight(cs.fontWeight), italic = isItalic(cs.fontStyle);
+    const out = [];
+    for (const f of fams) {
+      const c = faces.filter(x => x.family === f);
+      if (!c.length) continue;
+      c.sort((x, y) =>
+        ((x.italic !== italic) - (y.italic !== italic)) ||
+        (Math.abs(x.weight - want) - Math.abs(y.weight - want)));
+      out.push(c[0]);
+    }
+    return out;
+  }
+
+  // OpenType features the browser would apply, as {tag: bool} for fontkit
+  function featuresOf(cs) {
+    const feat = {};
+    const vl = cs.fontVariantLigatures;
+    if (vl && vl !== 'normal') {
+      if (/\bnone\b/.test(vl)) { feat.liga = feat.clig = feat.dlig = feat.hlig = feat.calt = false; }
+      else {
+        const set = (re, tags) => {
+          if (new RegExp('\\bno-' + re).test(vl)) tags.forEach(t => feat[t] = false);
+          else if (new RegExp('\\b' + re).test(vl)) tags.forEach(t => feat[t] = true);
+        };
+        set('common-ligatures', ['liga', 'clig']);
+        set('discretionary-ligatures', ['dlig']);
+        set('historical-ligatures', ['hlig']);
+        set('contextual', ['calt']);
+      }
+    }
+    const ffs = cs.fontFeatureSettings;
+    if (ffs && ffs !== 'normal') {
+      for (const m of ffs.matchAll(/["'](\w{4})["']\s*(on|off|\d+)?/g)) {
+        feat[m[1]] = !(m[2] === 'off' || m[2] === '0');
+      }
+    }
+    return feat;
+  }
+
+  function parseColor(c) {
+    const m = /rgba?\(\s*([\d.]+)[ ,]+([\d.]+)[ ,]+([\d.]+)/.exec(c);
+    return m ? [m[1] / 255, m[2] / 255, m[3] / 255] : [0, 0, 0];
+  }
+
+  async function renderPDF(root, geom) {
+    const L = global.PDFLib;
+    if (!L) throw new Error('pdf-lib.min.js is not loaded');
+    if (!global.fontkit) throw new Error('fontkit.umd.min.js is not loaded');
+
+    const pdf = await L.PDFDocument.create();
+    pdf.registerFontkit(global.fontkit);
+    const faces = readFontFaces();
+    const fontCache = new Map();      // key -> Promise<PDFFont>
+    const bytesCache = new Map();     // url -> Promise<Uint8Array>
+    const warned = new Set();
+    const warnOnce = msg => { if (!warned.has(msg)) { warned.add(msg); console.warn('pdf-export: ' + msg); } };
+
+    const stdFont = cs => {
+      const b = normWeight(cs.fontWeight) >= 600, i = isItalic(cs.fontStyle);
+      const F = L.StandardFonts;
+      return pdf.embedFont(b ? (i ? F.TimesRomanBoldItalic : F.TimesRomanBold)
+                             : (i ? F.TimesRomanItalic : F.TimesRoman));
+    };
+
+    const stdSet = new WeakSet();
+
+    async function embedFace(face, feat) {
+      try {
+        if (!bytesCache.has(face.url)) {
+          bytesCache.set(face.url, fetch(face.url).then(r => {
+            if (!r.ok) throw new Error('HTTP ' + r.status);
+            return r.arrayBuffer();
+          }).then(b => new Uint8Array(b)));
+        }
+        const bytes = await bytesCache.get(face.url);
+        try { return await pdf.embedFont(bytes, { subset: true, features: feat }); }
+        catch (e) { return await pdf.embedFont(bytes, { subset: false, features: feat }); }
+      } catch (e) {
+        warnOnce('could not embed ' + face.url + ' (' + e.message + ')');
+        return null;
+      }
+    }
+
+    // Same order the browser tries: each family in the stack, then a standard font.
+    async function fontFor(cs) {
+      const feat = featuresOf(cs);
+      for (const face of candidateFaces(cs, faces)) {
+        const key = face.url + '|' + JSON.stringify(feat);
+        if (!fontCache.has(key)) fontCache.set(key, embedFace(face, feat));
+        const f = await fontCache.get(key);
+        if (f) return f;
+      }
+      warnOnce('no usable @font-face for "' + cs.fontFamily + '", using Times');
+      const k = 'std|' + (normWeight(cs.fontWeight) >= 600) + '|' + isItalic(cs.fontStyle);
+      if (!fontCache.has(k)) fontCache.set(k, stdFont(cs).then(f => { stdSet.add(f); return f; }));
+      return fontCache.get(k);
+    }
+
+    const csCache = new Map();
+    const styleOf = el => { if (!csCache.has(el)) csCache.set(el, getComputedStyle(el)); return csCache.get(el); };
+    const setCache = new Map();
+    const rng = document.createRange();
+
+    // Pieces of a word, one per visual line (normally just one).
+    function pieces(tn, s, e) {
+      rng.setStart(tn, s); rng.setEnd(tn, e);
+      const rects = rng.getClientRects();
+      if (rects.length <= 1) {
+        const r = rects[0] || rng.getBoundingClientRect();
+        return [{ s: s, e: e, left: r.left, top: r.top, w: r.width, h: r.height }];
+      }
+      const out = [];
+      for (let k = s; k < e; k++) {          // wrapped word: group characters by line
+        rng.setStart(tn, k); rng.setEnd(tn, k + 1);
+        const r = rng.getBoundingClientRect();
+        const last = out[out.length - 1];
+        if (last && Math.abs(last.top - r.top) < 1) last.e = k + 1;
+        else out.push({ s: k, e: k + 1, left: r.left, top: r.top, w: r.width, h: r.height });
+      }
+      return out;
+    }
+
+    // baseline distance below the top of a text rect, measured with a zero-size probe
+    function baselineOffset(tn, rectTop) {
+      const p = document.createElement('span');
+      p.style.cssText = 'display:inline-block;width:0;height:0;margin:0;padding:0;border:0;';
+      tn.parentNode.insertBefore(p, tn);
+      const b = p.getBoundingClientRect().bottom;
+      p.remove();
+      return b - rectTop;
+    }
+
+    const wpt = geom.w * PX2PT, hpt = geom.h * PX2PT;
+
+    for (const pageEl of Array.from(root.querySelectorAll('.pf-page'))) {
+      const page = pdf.addPage([wpt, hpt]);
+      const pr = pageEl.getBoundingClientRect();
+
+      // ---- text
+      const tw = document.createTreeWalker(pageEl, NodeFilter.SHOW_TEXT);
+      const nodes = [];
+      for (let n; (n = tw.nextNode());) if (n.data.trim() && n.parentElement) nodes.push(n);
+
+      for (const tn of nodes) {
+        const cs = styleOf(tn.parentElement);
+        if (cs.visibility === 'hidden' && !tn.parentElement.closest('#' + ROOT_ID)) continue;
+        const font = await fontFor(cs);
+        const size = parseFloat(cs.fontSize) * PX2PT;
+        const [cr, cg, cb] = parseColor(cs.color);
+        const color = L.rgb(cr, cg, cb);
+        const tt = cs.textTransform;
+        // standard fonts throw on characters outside WinAnsi; custom fonts just draw .notdef
+        const chars = stdSet.has(font) ? (setCache.get(font) || setCache.set(font, new Set(font.getCharacterSet())).get(font)) : null;
+
+        let off = null;
+        const re = /\S+/g;
+        let m;
+        while ((m = re.exec(tn.data))) {
+          for (const pc of pieces(tn, m.index, m.index + m[0].length)) {
+            if (!(pc.w > 0 || pc.h > 0)) continue;
+            if (off === null) off = baselineOffset(tn, pc.top);
+            let text = tn.data.slice(pc.s, pc.e).replace(/\u00AD/g, '');
+            if (tt === 'uppercase') text = text.toUpperCase();
+            else if (tt === 'lowercase') text = text.toLowerCase();
+            if (chars) text = Array.from(text).map(c => chars.has(c.codePointAt(0)) ? c : '?').join('');
+            if (!text) continue;
+            page.drawText(text, {
+              x: (pc.left - pr.left) * PX2PT,
+              y: hpt - (pc.top + off - pr.top) * PX2PT,
+              size: size, font: font, color: color
+            });
+          }
+        }
+      }
+
+      // ---- images
+      for (const img of Array.from(pageEl.querySelectorAll('img'))) {
+        if (!img.getAttribute('src') || !img.naturalWidth) continue;
+        try {
+          const c = document.createElement('canvas');
+          c.width = img.naturalWidth; c.height = img.naturalHeight;
+          c.getContext('2d').drawImage(img, 0, 0);
+          const blob = await new Promise(r => c.toBlob(r, 'image/png'));
+          const emb = await pdf.embedPng(await blob.arrayBuffer());
+          const r = img.getBoundingClientRect();
+          page.drawImage(emb, {
+            x: (r.left - pr.left) * PX2PT, y: hpt - (r.bottom - pr.top) * PX2PT,
+            width: r.width * PX2PT, height: r.height * PX2PT
+          });
+        } catch (e) { warnOnce('image skipped: ' + e.message); }
+      }
+    }
+    return pdf;
+  }
+
+  function fileName() {
+    const t = CFG.titleFrom && document.querySelector(CFG.titleFrom);
+    const base = (t && t.textContent.trim()) || document.title || 'document';
+    return base.replace(/[\\/:*?"<>|]+/g, '-').trim() + '.pdf';
+  }
+
+  function download(bytes, name) {
+    const url = URL.createObjectURL(new Blob([bytes], { type: 'application/pdf' }));
+    const a = document.createElement('a');
+    a.href = url; a.download = name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 30000);
+  }
+
+  /* ---------------------------------------------------------------- *
+   * Drivers
+   * ---------------------------------------------------------------- */
+
   let busy = false;
-  async function exportPDF() {
-    if (busy) return;
-    busy = true;
+
+  async function printRoute() {
     const oldTitle = document.title;
     try {
       await prepare();
@@ -363,10 +627,32 @@
     }
   }
 
+  async function exportPDF() {
+    if (busy) return;
+    busy = true;
+    if (CFG.mode === 'print') return printRoute();
+    try {
+      const r = await prepare({ measurable: true });
+      const pdf = await renderPDF(r.root, r.geom);
+      pdf.setTitle(fileName().replace(/\.pdf$/, ''));
+      download(await pdf.save(), fileName());
+      removeRoot(); removeStyle(); busy = false;
+    } catch (err) {
+      console.error('pdf-export:', err);
+      removeRoot(); removeStyle();
+      if (CFG.fallbackToPrint &&
+          confirm('Direct PDF failed: ' + err.message + '\n\nOpen the print dialog instead? ' +
+                  '(Some browsers ignore the page size there.)')) {
+        return printRoute();
+      }
+      busy = false;
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     const b = document.querySelector(CFG.buttonSelector);
     if (b) b.addEventListener('click', exportPDF);
   });
 
-  global.PagedPDF = { exportPDF: exportPDF, prepare: prepare, paginate: paginate, config: CFG };
+  global.PagedPDF = { exportPDF: exportPDF, prepare: prepare, renderPDF: renderPDF, paginate: paginate, config: CFG };
 })(window);
