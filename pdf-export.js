@@ -29,6 +29,8 @@
     eps: 0.05,           // px tolerance for float noise
     titleFrom: '#nameOfTheDay',  // text used as the PDF title / file name, optional
     mode: 'pdf',                 // 'pdf' = direct download, 'print' = browser print dialog only
+    fontMode: 'full',            // 'full' = embed whole fonts (woff is unwrapped to TTF first),
+                                 // 'subset' = let pdf-lib subset them (smaller, but see notes)
     fallbackToPrint: true        // if direct PDF throws, offer the print dialog
   };
 
@@ -372,6 +374,43 @@
   };
   const isItalic = s => /italic|oblique/i.test(s || '');
 
+  async function inflate(u8) {
+    const stream = new Blob([u8]).stream().pipeThrough(new DecompressionStream('deflate'));
+    return new Uint8Array(await new Response(stream).arrayBuffer());
+  }
+
+  // WOFF 1 -> plain sfnt (TTF/OTF) so pdf-lib can embed the whole font as-is.
+  async function woffToSfnt(u8) {
+    const dv = new DataView(u8.buffer, u8.byteOffset, u8.byteLength);
+    const tag = o => String.fromCharCode(u8[o], u8[o + 1], u8[o + 2], u8[o + 3]);
+    if (tag(0) !== 'wOFF') throw new Error('not a WOFF 1 file');
+    const flavor = dv.getUint32(4), n = dv.getUint16(12);
+    const tables = [];
+    for (let i = 0; i < n; i++) {
+      const o = 44 + i * 20;
+      const off = dv.getUint32(o + 4), comp = dv.getUint32(o + 8), orig = dv.getUint32(o + 12);
+      let data = u8.subarray(off, off + comp);
+      if (comp < orig) data = await inflate(data);
+      if (data.length !== orig) throw new Error('bad table length in ' + tag(o));
+      tables.push({ tag: u8.subarray(o, o + 4), sum: dv.getUint32(o + 16), data: data });
+    }
+    tables.sort((a, b) => (String.fromCharCode(...a.tag) < String.fromCharCode(...b.tag) ? -1 : 1));
+    let size = 12 + 16 * n;
+    tables.forEach(t => { t.off = size; size += (t.data.length + 3) & ~3; });
+    const out = new Uint8Array(size), ov = new DataView(out.buffer);
+    ov.setUint32(0, flavor); ov.setUint16(4, n);
+    let sr = 1, es = 0;
+    while (sr * 2 <= n) { sr *= 2; es++; }
+    ov.setUint16(6, sr * 16); ov.setUint16(8, es); ov.setUint16(10, n * 16 - sr * 16);
+    tables.forEach((t, i) => {
+      const o = 12 + i * 16;
+      out.set(t.tag, o); ov.setUint32(o + 4, t.sum);
+      ov.setUint32(o + 8, t.off); ov.setUint32(o + 12, t.data.length);
+      out.set(t.data, t.off);
+    });
+    return out;
+  }
+
   // @font-face rules -> [{family, weight, italic, url}]
   function readFontFaces() {
     const faces = [];
@@ -463,17 +502,37 @@
 
     const stdSet = new WeakSet();
 
+    // Raw font bytes + whether they can be embedded whole.
+    function loadBytes(face) {
+      if (!bytesCache.has(face.url)) {
+        bytesCache.set(face.url, (async () => {
+          const r = await fetch(face.url);
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          let bytes = new Uint8Array(await r.arrayBuffer());
+          const sig = String.fromCharCode(bytes[0], bytes[1], bytes[2], bytes[3]);
+          let full = false;
+          if (CFG.fontMode === 'full') {
+            if (sig === 'wOFF' && typeof DecompressionStream === 'function') {
+              try { bytes = await woffToSfnt(bytes); full = true; }
+              catch (e) { warnOnce('woff unwrap failed for ' + face.url + ': ' + e.message); }
+            } else if (sig === 'OTTO' || sig === 'true' || sig === '\0\x01\0\0') {
+              full = true;                      // already a plain sfnt
+            }                                   // wOF2 (and anything else): pdf-lib subsets
+          }
+          return { bytes: bytes, full: full };
+        })());
+      }
+      return bytesCache.get(face.url);
+    }
+
     async function embedFace(face, feat) {
       try {
-        if (!bytesCache.has(face.url)) {
-          bytesCache.set(face.url, fetch(face.url).then(r => {
-            if (!r.ok) throw new Error('HTTP ' + r.status);
-            return r.arrayBuffer();
-          }).then(b => new Uint8Array(b)));
+        const f = await loadBytes(face);
+        try { return await pdf.embedFont(f.bytes, { subset: !f.full, features: feat }); }
+        catch (e) {
+          warnOnce('embed (subset=' + !f.full + ') failed for ' + face.url + ': ' + e.message);
+          return await pdf.embedFont(f.bytes, { subset: f.full, features: feat });
         }
-        const bytes = await bytesCache.get(face.url);
-        try { return await pdf.embedFont(bytes, { subset: true, features: feat }); }
-        catch (e) { return await pdf.embedFont(bytes, { subset: false, features: feat }); }
       } catch (e) {
         warnOnce('could not embed ' + face.url + ' (' + e.message + ')');
         return null;
@@ -654,5 +713,5 @@
     if (b) b.addEventListener('click', exportPDF);
   });
 
-  global.PagedPDF = { exportPDF: exportPDF, prepare: prepare, renderPDF: renderPDF, paginate: paginate, config: CFG };
+  global.PagedPDF = { exportPDF: exportPDF, prepare: prepare, renderPDF: renderPDF, woffToSfnt: woffToSfnt, paginate: paginate, config: CFG };
 })(window);
