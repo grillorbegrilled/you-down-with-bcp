@@ -15,6 +15,9 @@
     <script src="properPrefaces.js"></script>
     <script src="scripts.js"></script>
     <script src="kp.js"></script>
+    <script src="pdf-lib.min.js"></script>
+<script src="fontkit.umd.min.js"></script>
+<script src="pdf-export.js"></script>
     <script>
 // Make sure every face the text uses is actually loaded before measuring.
 // document.fonts.ready alone can resolve early: fonts only start loading once
@@ -94,7 +97,6 @@ document.getElementById("canticle").innerHTML = getPsalm(lit, 0);
               <h2 id="hymn-title">A Hymn</h2>
               <div id="hymn"></div>-->
         </div>
-    <script src="pdf-export.js"></script>   <!-- in <head>, after kp.js -->
 <button id="savePdf" type="button">Save PDF</button>   <!-- in <body>, after .content div -->
 </body>
 </html>
