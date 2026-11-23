@@ -147,6 +147,12 @@ p.blackletterHymn {
     vertical-align: middle;
 }
 
+.blankPage {
+    width: 1.75in;
+    height: 3.25in;
+    box-sizing: border-box;
+}
+
 /* Fallback (JS off / not yet typeset): browser drop cap */
 p.dropcap:not(.tl-done)::first-letter {
   font-family: "EBGInit" !important;
