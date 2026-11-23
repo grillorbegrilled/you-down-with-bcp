@@ -140,6 +140,12 @@ p.blackletterHymn {
     line-height: 9pt;
 }
 
+.bigBlue {
+    /* font-family: set this when you find a nice gothic uncial cap */
+    font-size: 10pt;
+    color: mediumblue;
+}
+
 /* Fallback (JS off / not yet typeset): browser drop cap */
 p.dropcap:not(.tl-done)::first-letter {
   font-family: "EBGInit" !important;
