@@ -18,68 +18,89 @@
     <script src="pdf-lib.min.js"></script>
 <script src="fontkit.umd.min.js"></script>
     <script>
-// Make sure every face the text uses is actually loaded before measuring.
-// document.fonts.ready alone can resolve early: fonts only start loading once
-// text using them has been laid out, and content was just injected.
-async function loadTypefaces() {
-    const faces = [
-        '400 1em Garamond',
-        'italic 400 1em Garamond',
-        '700 1em Garamond',
-        'italic 700 1em Garamond',
-        '1em EBGInit'
-    ];
-    try {
-        await Promise.all(faces.map(f => document.fonts.load(f, 'AaBbCc')));
-    } catch (e) {
-        console.warn('font load issue', e);
-    }
-    await document.fonts.ready;
-}
-
-async function typesetText() {
-    await loadTypefaces();
-    KPTypeset.typesetAll();          // Knuth-Plass on every justified <p> in .content
-    KPTypeset.watch('.content');     // re-break on width change
-    // Optional real hyphenation:
-    // KPTypeset.config.hyphenate = word => myHyphenator(word);  // -> ['syl','la','bles']
-}
-        
-        window.onload = function() {
-              let lit = "A1";
-              let week = lit;
-              getProper2(lit).then(async details => {
-    document.getElementById('nameOfTheDay').textContent = `${getDayName(lit)}`;
-
-    const collect = synthCollects(details.c, week);
-    for (let e of document.getElementsByName('c')) e.innerHTML = collect;
-
-    for (let e of document.getElementsByName('e_cit')) e.textContent = `${details.e.cit}`;
-    for (let e of document.getElementsByName('e_txt')) e.textContent = details.e.txt;
-
-    for (let e of document.getElementsByName('g_cit')) e.textContent = `${details.g.cit}`;
-    for (let e of document.getElementsByName('g_txt')) e.textContent = details.g.txt;
-
-document.getElementById("canticle").innerHTML = getPsalm(lit, 0);
-            if (lit === "A3"){
-                document.getElementById("additional-prayers").innerHTML = `<h1>Winter Embertide</h1>
-                ${lxii}${xcii}${li}${ciii}
-                <p class="dropcap">O Almighty God, who hast committed to the hands of men the ministry of reconciliation; We humbly beseech thee, by the inspiration of thy Holy Spirit, to put it into the hearts of many to offer themselves for this ministry; that thereby mankind may be drawn to thy blessed kingdom; through Jesus Christ our Lord. Amen.</p><p>Grant, we most humbly beseech Thee, O heavenly Father, that with holy Simeon and Anna, and all Thy devout servants, who waited for the consolation of Israel, we may at this time  so serve Thee with fasting and prayer, that by the celebration of the advent and birth of our blessed Redeemer, we may with them be filled with true joy and consolation, through the same Jesus Christ our Lord. Amen. <i>—John Cosin</i></p>`;
+        // Make sure every face the text uses is actually loaded before measuring.
+        // document.fonts.ready alone can resolve early: fonts only start loading once
+        // text using them has been laid out, and content was just injected.
+        async function loadTypefaces() {
+            const faces = [
+                '400 1em Garamond',
+                'italic 400 1em Garamond',
+                '700 1em Garamond',
+                'italic 700 1em Garamond',
+                '1em EBGInit'
+            ];
+            try {
+                await Promise.all(faces.map(f => document.fonts.load(f, 'AaBbCc')));
+            } catch (e) {
+                console.warn('font load issue', e);
             }
-                  
-    await typesetText();
+            await document.fonts.ready;
+        }
+        
+        async function typesetText() {
+            await loadTypefaces();
+            KPTypeset.typesetAll();          // Knuth-Plass on every justified <p> in .content
+            KPTypeset.watch('.content');     // re-break on width change
+            // Optional real hyphenation:
+            // KPTypeset.config.hyphenate = word => myHyphenator(word);  // -> ['syl','la','bles']
+        }
+                
+        window.onload = function() {
+            let lit = "A1";
+            let week = "A1";
+            getWeekHtml(lit, week);
+            await typesetText();
+        }
 
-}).catch(async error => {
-    for (let e of document.getElementsByName('e_txt')) {
-        e.innerHTML = makeP(error.message);
-    }
+        function getWeekHtml(lit, week) {
+            getProper2(lit).then(async details => {
+                var retval = `<h1>${getDayName(lit)}</h1>
+                    <div id="canticle">${getPsalm(lit, 0)}</div>
+                    <p name="c" class="dropcap">${synthCollects(details.c, week)}</p>
+                    <h2 name="e_cit">${details.e.cit}</h2>
+                    <p name="e_txt">${details.e.txt}</p>
+                    <h2 name="g_cit">${details.g.cit}</h2>
+                    <p name="g_txt">${details.g.txt}</p>
+                    <h2 hidden>The Preface</h2>
+                    <div id="preface"></div>
+                    <div id="additional-prayers"></div>`;
+        
+                if (lit === "A3"){
+                    retval += `<h1>Winter Embertide</h1>
+                    ${lxii}${xcii}${li}${ciii}
+                    <p class="dropcap">O Almighty God, who hast committed to the hands of men the ministry of reconciliation; We humbly beseech thee, by the inspiration of thy Holy Spirit, to put it into the hearts of many to offer themselves for this ministry; that thereby mankind may be drawn to thy blessed kingdom; through Jesus Christ our Lord. Amen.</p><p>Grant, we most humbly beseech Thee, O heavenly Father, that with holy Simeon and Anna, and all Thy devout servants, who waited for the consolation of Israel, we may at this time  so serve Thee with fasting and prayer, that by the celebration of the advent and birth of our blessed Redeemer, we may with them be filled with true joy and consolation, through the same Jesus Christ our Lord. Amen. <i>—John Cosin</i></p>`;
+                }
 
-    await typesetText();
-});
+                return retval;
+            });
+        }
+
+        function generatePages() {
+            const pages = document.getElementById('pages').split(" ");
+            var html = "";
+
+            pages.forEach(p => {
+                if (p === "mag") html += `<p style="font-family: 'Blackletter'; font-size: 10pt;">My soul doth magnify the Lord, and my spirit hath rejoiced in God my Saviour.<br>
+                    For he hath regarded the lowliness of his handmaiden.<br>
+                    For behold, from henceforth all generations shall call me blessed.<br>
+                    For he that is mighty hath magnified me; and holy is his Name.<br>
+                    And his mercy is on them that fear him throughout all generations.<br>
+                    He hath showed strength with his arm; he hath scattered the proud in the imagination of their hearts.<br>
+                    He hath put down the mighty from their seat, and hath exalted the humble and meek.<br>
+                    He hath filled the hungry with good things; and the rich he hath sent empty away.<br>
+                    He remembering his mercy hath holpen his servant Israel; as he promised to our forefathers, Abraham and his seed, for ever.</p>`;
+                if (p === "blank" html += ""; //blank page, implement later
+                html += getWeekHtml(p, "A1");
+            })
+
+            document.getElementById('content').innerHTML = html;
+            
+            await typesetText();
         }
     </script>
 </head>
 <body>
+    <input type="text" id="pages" value="mag A1"></input><button onclick="generatePages()">Generate Pages</button>
         <div class="content">
               <h1 id="nameOfTheDay"></h1>
               <img id="euchMarg" class="centerMarg">
