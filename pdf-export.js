@@ -480,6 +480,42 @@
     return m ? [m[1] / 255, m[2] / 255, m[3] / 255] : [0, 0, 0];
   }
 
+  // pdf-lib writes a width table only for glyphs reachable through the font's cmap (i.e. that
+  // have a Unicode value). Ligatures and other glyphs substituted by GSUB features (ch, Th,
+  // st, oldstyle figures ...) are missing from it, so viewers advance by a default 1 em after
+  // them. Record the glyphs we really lay out and add them to the width table, and to
+  // ToUnicode so copy/paste of ligatures still gives the original letters.
+  function patchFullEmbed(font) {
+    const emb = font && font.embedder;
+    if (!emb || emb.subset || !emb.font || !emb.glyphCache ||
+        typeof emb.computeWidths !== 'function' || typeof emb.embedUnicodeCmap !== 'function') return font;
+    const baseCache = emb.glyphCache;
+    const seen = new Map();
+    const encode = emb.encodeText.bind(emb);
+    emb.encodeText = function (text) {
+      for (const g of emb.font.layout(text, emb.fontFeatures).glyphs) if (!seen.has(g.id)) seen.set(g.id, g);
+      return encode(text);
+    };
+    const merged = needCodePoints => {
+      const m = new Map();
+      baseCache.access().forEach(g => m.set(g.id, g));
+      seen.forEach((g, id) => {
+        if (!m.has(id) && (!needCodePoints || (g.codePoints && g.codePoints.length))) m.set(id, g);
+      });
+      return Array.from(m.values()).sort((a, b) => a.id - b.id);
+    };
+    const wrap = (name, needCodePoints) => {
+      const orig = emb[name].bind(emb);
+      emb[name] = function (...args) {
+        emb.glyphCache = { access: () => merged(needCodePoints) };
+        try { return orig(...args); } finally { emb.glyphCache = baseCache; }
+      };
+    };
+    wrap('computeWidths', false);
+    wrap('embedUnicodeCmap', true);
+    return font;
+  }
+
   async function renderPDF(root, geom) {
     const L = global.PDFLib;
     if (!L) throw new Error('pdf-lib.min.js is not loaded');
@@ -528,10 +564,10 @@
     async function embedFace(face, feat) {
       try {
         const f = await loadBytes(face);
-        try { return await pdf.embedFont(f.bytes, { subset: !f.full, features: feat }); }
+        try { return patchFullEmbed(await pdf.embedFont(f.bytes, { subset: !f.full, features: feat })); }
         catch (e) {
           warnOnce('embed (subset=' + !f.full + ') failed for ' + face.url + ': ' + e.message);
-          return await pdf.embedFont(f.bytes, { subset: f.full, features: feat });
+          return patchFullEmbed(await pdf.embedFont(f.bytes, { subset: f.full, features: feat }));
         }
       } catch (e) {
         warnOnce('could not embed ' + face.url + ' (' + e.message + ')');
@@ -713,5 +749,5 @@
     if (b) b.addEventListener('click', exportPDF);
   });
 
-  global.PagedPDF = { exportPDF: exportPDF, prepare: prepare, renderPDF: renderPDF, woffToSfnt: woffToSfnt, paginate: paginate, config: CFG };
+  global.PagedPDF = { exportPDF: exportPDF, prepare: prepare, renderPDF: renderPDF, woffToSfnt: woffToSfnt, patchFullEmbed: patchFullEmbed, paginate: paginate, config: CFG };
 })(window);
