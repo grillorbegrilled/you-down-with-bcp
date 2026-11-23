@@ -134,6 +134,12 @@ p {
     line-height: 6.3pt;
 }
 
+p.blackletterHymn {
+    font-family: 'Blackletter'; 
+    font-size: 8pt; 
+    line-height: 9pt;
+}
+
 /* Fallback (JS off / not yet typeset): browser drop cap */
 p.dropcap:not(.tl-done)::first-letter {
   font-family: "EBGInit" !important;
