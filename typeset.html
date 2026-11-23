@@ -61,15 +61,14 @@
                 <p name="e_txt">${details.e.txt}</p>
                 <h2 name="g_cit">${details.g.cit}</h2>
                 <p name="g_txt">${details.g.txt}</p>
-                <h2 hidden>The Preface</h2>
-                <div id="preface"></div>
                 <div id="additional-prayers"></div>`;
+                // Don't forget the proper preface where applicable.
     
-            if (lit === "A3"){
+            if (lit === "A3")
                 retval += `<h1>Winter Embertide</h1>
                 ${lxii}${xcii}${li}${ciii}
-                <p class="dropcap">O Almighty God, who hast committed to the hands of men the ministry of reconciliation; We humbly beseech thee, by the inspiration of thy Holy Spirit, to put it into the hearts of many to offer themselves for this ministry; that thereby mankind may be drawn to thy blessed kingdom; through Jesus Christ our Lord. Amen.</p><p>Grant, we most humbly beseech Thee, O heavenly Father, that with holy Simeon and Anna, and all Thy devout servants, who waited for the consolation of Israel, we may at this time  so serve Thee with fasting and prayer, that by the celebration of the advent and birth of our blessed Redeemer, we may with them be filled with true joy and consolation, through the same Jesus Christ our Lord. Amen. <i>—John Cosin</i></p>`;
-            }
+                <p class="dropcap">O Almighty God, who hast committed to the hands of men the ministry of reconciliation; We humbly beseech thee, by the inspiration of thy Holy Spirit, to put it into the hearts of many to offer themselves for this ministry; that thereby mankind may be drawn to thy blessed kingdom; through Jesus Christ our Lord. Amen.</p>
+                <p>Grant, we most humbly beseech thee, O heavenly Father, that with holy Simeon and Anna, and all thy devout servants, who waited for the consolation of Israel, we may at this time so serve thee with fasting and prayer, that by the celebration of the advent and birth of our blessed Redeemer, we may with them be filled with true joy and consolation, through the same Jesus Christ our Lord. Amen. <i>—John Cosin</i></p>`;
 
             return retval;
         }
@@ -79,15 +78,15 @@
             var html = "";
 
             for (const p of pages) {
-                if (p === "mag") html += `<p style="font-family: 'Blackletter'; font-size: 10pt; line-spacing: 1.5;">
-                    My soul doth magnify the Lord, and my spirit hath rejoiced in God my Saviour.<br>
-                    For he hath regarded the lowliness of his handmaiden.<br>
-                    For behold, from henceforth all generations shall call me blessed.<br>
-                    For he that is mighty hath magnified me; and holy is his Name.<br>
-                    And his mercy is on them that fear him throughout all generations.<br>
-                    He hath showed strength with his arm; he hath scattered the proud in the imagination of their hearts.<br>
-                    He hath put down the mighty from their seat, and hath exalted the humble and meek.<br>
-                    He hath filled the hungry with good things; and the rich he hath sent empty away.<br>
+                if (p === "mag") html += `<p class='blackletterHymn'>
+                    My soul doth magnify the Lord, and my spirit hath rejoiced in God my Saviour.
+                    For he hath regarded the lowliness of his handmaiden.
+                    For behold, from henceforth all generations shall call me blessed.
+                    For he that is mighty hath magnified me; and holy is his Name.
+                    And his mercy is on them that fear him throughout all generations.
+                    He hath showed strength with his arm; he hath scattered the proud in the imagination of their hearts.
+                    He hath put down the mighty from their seat, and hath exalted the humble and meek.
+                    He hath filled the hungry with good things; and the rich he hath sent empty away.
                     He remembering his mercy hath holpen his servant Israel; as he promised to our forefathers, Abraham and his seed, for ever.</p>`;
                 else if (p === "blank") html += ""; //blank page, implement later
                 else html += await getWeekHtml(p, "A1");
