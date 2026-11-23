@@ -144,6 +144,7 @@ p.blackletterHymn {
     /* font-family: set this when you find a nice gothic uncial cap */
     font-size: 12pt;
     color: mediumblue;
+    vertical-align: middle;
 }
 
 /* Fallback (JS off / not yet typeset): browser drop cap */
