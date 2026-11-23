@@ -151,6 +151,9 @@ p.blackletterHymn {
     width: 1.75in;
     height: 3.25in;
     box-sizing: border-box;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    display: inline-block; 
 }
 
 /* Fallback (JS off / not yet typeset): browser drop cap */
