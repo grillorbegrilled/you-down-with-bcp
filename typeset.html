@@ -79,15 +79,15 @@
 
             for (const p of pages) {
                 if (p === "mag") html += `<p class='blackletterHymn'>
-                    My soul doth magnify the Lord, and my spirit hath rejoiced in God my Saviour.
-                    For he hath regarded the lowliness of his handmaiden.
-                    For behold, from henceforth all generations shall call me blessed.
-                    For he that is mighty hath magnified me; and holy is his Name.
-                    And his mercy is on them that fear him throughout all generations.
-                    He hath showed strength with his arm; he hath scattered the proud in the imagination of their hearts.
-                    He hath put down the mighty from their seat, and hath exalted the humble and meek.
-                    He hath filled the hungry with good things; and the rich he hath sent empty away.
-                    He remembering his mercy hath holpen his servant Israel; as he promised to our forefathers, Abraham and his seed, for ever.</p>`;
+                    <span class='bigBlue'>M</span>Y soul doth magnify the Lord, and my spirit hath rejoiced in God my Saviour.
+                    <span class='bigBlue'>F</span>OR he hath regarded the lowliness of his handmaiden.
+                    <span class='bigBlue'>F</span>OR behold, from henceforth all generations shall call me blessed.
+                    <span class='bigBlue'>F</span>OR he that is mighty hath magnified me; and holy is his Name.
+                    <span class='bigBlue'>A</span>ND his mercy is on them that fear him throughout all generations.
+                    <span class='bigBlue'>H</span>E hath showed strength with his arm; he hath scattered the proud in the imagination of their hearts.
+                    <span class='bigBlue'>H</span>E hath put down the mighty from their seat, and hath exalted the humble and meek.
+                    <span class='bigBlue'>H</span>E hath filled the hungry with good things; and the rich he hath sent empty away.
+                    <span class='bigBlue'>H</span>E remembering his mercy hath holpen his servant Israel; as he promised to our forefathers, Abraham and his seed, for ever.</p>`;
                 else if (p === "blank") html += ""; //blank page, implement later
                 else html += await getWeekHtml(p, "A1");
             }
