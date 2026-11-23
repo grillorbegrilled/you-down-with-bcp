@@ -45,37 +45,36 @@
             // KPTypeset.config.hyphenate = word => myHyphenator(word);  // -> ['syl','la','bles']
         }
                 
-        window.onload = function() {
+        window.onload = async () => {
             let lit = "A1";
             let week = "A1";
-            getWeekHtml(lit, week);
+            await getWeekHtml(lit, week);
             await typesetText();
         }
 
-        function getWeekHtml(lit, week) {
-            getProper2(lit).then(async details => {
-                var retval = `<h1>${getDayName(lit)}</h1>
-                    <div id="canticle">${getPsalm(lit, 0)}</div>
-                    <p name="c" class="dropcap">${synthCollects(details.c, week)}</p>
-                    <h2 name="e_cit">${details.e.cit}</h2>
-                    <p name="e_txt">${details.e.txt}</p>
-                    <h2 name="g_cit">${details.g.cit}</h2>
-                    <p name="g_txt">${details.g.txt}</p>
-                    <h2 hidden>The Preface</h2>
-                    <div id="preface"></div>
-                    <div id="additional-prayers"></div>`;
-        
-                if (lit === "A3"){
-                    retval += `<h1>Winter Embertide</h1>
-                    ${lxii}${xcii}${li}${ciii}
-                    <p class="dropcap">O Almighty God, who hast committed to the hands of men the ministry of reconciliation; We humbly beseech thee, by the inspiration of thy Holy Spirit, to put it into the hearts of many to offer themselves for this ministry; that thereby mankind may be drawn to thy blessed kingdom; through Jesus Christ our Lord. Amen.</p><p>Grant, we most humbly beseech Thee, O heavenly Father, that with holy Simeon and Anna, and all Thy devout servants, who waited for the consolation of Israel, we may at this time  so serve Thee with fasting and prayer, that by the celebration of the advent and birth of our blessed Redeemer, we may with them be filled with true joy and consolation, through the same Jesus Christ our Lord. Amen. <i>—John Cosin</i></p>`;
-                }
+        async function getWeekHtml(lit, week) {
+            const details = getProper2(lit);
+            var retval = `<h1>${getDayName(lit)}</h1>
+                <div id="canticle">${getPsalm(lit, 0)}</div>
+                <p name="c" class="dropcap">${synthCollects(details.c, week)}</p>
+                <h2 name="e_cit">${details.e.cit}</h2>
+                <p name="e_txt">${details.e.txt}</p>
+                <h2 name="g_cit">${details.g.cit}</h2>
+                <p name="g_txt">${details.g.txt}</p>
+                <h2 hidden>The Preface</h2>
+                <div id="preface"></div>
+                <div id="additional-prayers"></div>`;
+    
+            if (lit === "A3"){
+                retval += `<h1>Winter Embertide</h1>
+                ${lxii}${xcii}${li}${ciii}
+                <p class="dropcap">O Almighty God, who hast committed to the hands of men the ministry of reconciliation; We humbly beseech thee, by the inspiration of thy Holy Spirit, to put it into the hearts of many to offer themselves for this ministry; that thereby mankind may be drawn to thy blessed kingdom; through Jesus Christ our Lord. Amen.</p><p>Grant, we most humbly beseech Thee, O heavenly Father, that with holy Simeon and Anna, and all Thy devout servants, who waited for the consolation of Israel, we may at this time  so serve Thee with fasting and prayer, that by the celebration of the advent and birth of our blessed Redeemer, we may with them be filled with true joy and consolation, through the same Jesus Christ our Lord. Amen. <i>—John Cosin</i></p>`;
+            }
 
-                return retval;
-            });
+            return retval;
         }
 
-        function generatePages() {
+        async function generatePages() {
             const pages = document.getElementById('pages').split(" ");
             var html = "";
 
@@ -90,7 +89,7 @@
                     He hath filled the hungry with good things; and the rich he hath sent empty away.<br>
                     He remembering his mercy hath holpen his servant Israel; as he promised to our forefathers, Abraham and his seed, for ever.</p>`;
                 if (p === "blank" html += ""; //blank page, implement later
-                html += getWeekHtml(p, "A1");
+                html += await getWeekHtml(p, "A1");
             })
 
             document.getElementById('content').innerHTML = html;
