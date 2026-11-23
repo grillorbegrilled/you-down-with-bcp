@@ -88,7 +88,7 @@
                     <span class='bigBlue'>H</span>E hath put down the mighty from their seat, and hath exalted the humble and meek.
                     <span class='bigBlue'>H</span>E hath filled the hungry with good things; and the rich he hath sent empty away.
                     <span class='bigBlue'>H</span>E remembering his mercy hath holpen his servant Israel; as he promised to our forefathers, Abraham and his seed, for ever.</p>`;
-                else if (p === "blank") html += ""; //blank page, implement later
+                else if (p === "blank") html += "<div class='blankPage'></div>";
                 else html += await getWeekHtml(p, "A1");
             }
 
