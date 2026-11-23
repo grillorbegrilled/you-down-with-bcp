@@ -78,7 +78,7 @@
             const pages = document.getElementById('pages').split(" ");
             var html = "";
 
-            pages.forEach(p => {
+            for (const p of pages) {
                 if (p === "mag") html += `<p style="font-family: 'Blackletter'; font-size: 10pt;">My soul doth magnify the Lord, and my spirit hath rejoiced in God my Saviour.<br>
                     For he hath regarded the lowliness of his handmaiden.<br>
                     For behold, from henceforth all generations shall call me blessed.<br>
@@ -88,9 +88,9 @@
                     He hath put down the mighty from their seat, and hath exalted the humble and meek.<br>
                     He hath filled the hungry with good things; and the rich he hath sent empty away.<br>
                     He remembering his mercy hath holpen his servant Israel; as he promised to our forefathers, Abraham and his seed, for ever.</p>`;
-                if (p === "blank") html += ""; //blank page, implement later
-                html += await getWeekHtml(p, "A1");
-            })
+                else if (p === "blank") html += ""; //blank page, implement later
+                else html += await getWeekHtml(p, "A1");
+            }
 
             document.getElementById('content').innerHTML = html;
             
