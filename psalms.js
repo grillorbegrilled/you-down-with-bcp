@@ -244,16 +244,6 @@ const xcviii = `<h2>Psalm 98</h2>
 9 Let the floods clap their hands, and let the hills be joyful together before the Lᴏʀᴅ; * for he cometh to judge the earth.<br>
 10 With righteousness shall he judge the world, * and the peoples with equity.</p>`;
 
-//evensong
-const ciii = `<h2>Psalm 103</h2>
-<p class="dropcap">Praise the Lord, O my soul; * and all that is within me, praise his holy Name.<br>
-Praise the Lᴏʀᴅ, O my soul, * and forget not all his benefits:<br>
-Who forgiveth all thy sin, * and healeth all thine infirmities;<br>
-Who saveth thy life from destruction, * and crowneth thee with mercy and loving-kindness.<br>
-O praise the Lᴏʀᴅ, ye angels of his, ye that excel in strength; * ye that fulfil his commandment, and hearken unto the voice of his word.<br>
-O praise the Lᴏʀᴅ, all ye his hosts; * ye servants of his that do his pleasure.<br>
-O speak good of the Lᴏʀᴅ, all ye works of his, in all places of his dominion: * praise thou the Lᴏʀᴅ, O my soul.</p>`;
-
 //general
 const xix = `<h2>Psalm 19</h2>
 <p class="dropcap">THE heavens declare the glory of God; * and the firmament showeth his handy-work.<br>
@@ -739,7 +729,7 @@ function getRandomPsalm() {
     }
 
     if (hour >= 15 && hour < 20) {
-        options.push(xcii, xcviii, ciii, magnificat);
+        options.push(xcii, xcviii, magnificat);
     }
 
     if (hour >= 20 || hour < 3) {
@@ -756,14 +746,14 @@ function getPsalm(lit, dow) {
         case "A2": options.push(cxix12, cxix1, lxvii, cxi); break;
         case "A3":
             if (dow === 3 && dow === 5 && dow === 6)
-                options.push(lxii, xcii, li, ciii);
+                options.push(lxii, xcii, li);
             else options.push(cxxx);
             break;
         case "A4": options.push(cii); break;
-        case "JohnBaptist": options.push(ciii, xcviii, xcvi, benedictus); break;
+        case "JohnBaptist": options.push(xcviii, xcvi, benedictus); break;
         case "LXX": options.push(cxxi); break;
         //case "LX":
-        case "L": options.push(ciii, xix, xxiii, cxix5); break;
+        case "L": options.push(xix, xxiii, cxix5); break;
         case "Xmas": 
         case "Stephen":
             options.push(xix, teDeum);
@@ -774,19 +764,19 @@ function getPsalm(lit, dow) {
         case "EasterTue":
             options.push(xcviii, teDeum, paschaNostrum, cxi);
             break;
-        case "EasterMon": options.push(ciii, teDeum, paschaNostrum); break;
+        case "EasterMon": options.push(teDeum, paschaNostrum); break;
         case "Ascension": options.push(xcvi, teDeum); break;
         case "Whitsun":
             if (dow === 3 && dow === 5 && dow === 6)
                 options.push(xix, lxxxiv);
             else options.push(xlvi);
             break;
-        case "Whitmon": options.push(ciii); break;
+        //case "Whitmon": options.push(); break;
         case "WhitTue": options.push(cxlviii); break;
         case "AllSaints": options.push(cxlviii, cl); break;
         //case "Anniversary":
         case "Innocents": options.push(xix); break;
-        case "Circ": options.push(ciii, cxlviii); break;
+        case "Circ": options.push(cxlviii); break;
         case "Andrew": options.push(xcvi, c); break;
         case "Thomas": options.push(xxiii, cxxi); break;
         case "Paul": options.push(xix, lxvii); break;
@@ -798,21 +788,21 @@ function getPsalm(lit, dow) {
         //case "James":
         case "Bartholomew": options.push(xci, xlvi, cii); break;
         case "Matthew": options.push(cxix1, xix); break;
-        case "Luke": options.push(ciii, lxvii, xcvi); break;
+        case "Luke": options.push(lxvii, xcvi); break;
         case "SimonAndJude": options.push(lxii, cxxi); break;
         case "IndependenceDay": options.push(cxxi); break;
         case "JohnEvangelist": options.push(xxiii); break;
         case "X1": options.push(xcviii); break;
         case "X2": options.push(cxxi); break;
         case "Transfiguration": options.push(teDeum); break;
-        case "Ea1": options.push(ciii, cxxi); break;
+        case "Ea1": options.push(cxxi); break;
         case "Ea2": options.push(xxiii, c); break;
         //case "Ea3":
         //case "Ea4":
         case "Ea5": options.push(lxvii); break;
         case "Asc1": options.push(xcvi, xlvi); break;
-        case "SNBA": options.push(xc, ciii); break;
-        case "ThanksgivingDay": options.push(thanksgiving, lxvii, ciii, cxlviii, cl); break;
+        case "SNBA": options.push(xc); break;
+        case "ThanksgivingDay": options.push(thanksgiving, lxvii, cxlviii, cl); break;
         case "Candlemas": options.push(lxxxiv); break;
         case "Annunciation": options.push(teDeum); break;
         case "AW": options.push(xxxii, cxliii, cii, cxxx); break;
@@ -835,30 +825,30 @@ function getPsalm(lit, dow) {
         case "Michael": options.push(cxlviii, cl, xci); break;
         case "E1": options.push(xcii, lxxxiv, xix, lxvii); break;
         case "E2": options.push(lxii); break;
-        case "E3": options.push(xlii, ciii); break;
+        case "E3": options.push(xlii); break;
         //case "E4":
         //case "E5":
         case "E6": options.push(xcviii, xcvi); break;
         case "Trinity": options.push(xcviii, c, cxlviii, cl); break;
         case "T1": options.push(cxix5); break;
         case "T2": options.push(xix); break;
-        case "T3": options.push(xxxii, ciii); break;
+        case "T3": options.push(xxxii); break;
         case "T4": options.push(xci, li); break;
         case "T5": options.push(lxii, lxiii); break;
         case "T6": options.push(cxxx, cxi); break;
         //case "T7":
         case "T8": options.push(cxix5, xcii); break;
-        case "T9": options.push(ciii, cxix3, li); break;
+        case "T9": options.push(cxix3, li); break;
         case "T10": options.push(xlvi, xlii); break;
         case "T11": options.push(c); break;
         //case "T12":
         //case "T13":
         case "T14": options.push(xcii); break;
-        case "T15": options.push(ciii); break;
+        //case "T15": options.push(); break;
         case "T16": options.push(xc, xci); break;
         case "T17": options.push(cxxx); break;
         case "T18": options.push(lxii, lxiii, cxix12); break;
-        case "T19": options.push(ciii); break;
+        //case "T19": options.push(); break;
         case "T20": options.push(lxxxiv); break;
         case "T21": options.push(cxxi); break;
         case "T22": options.push(xxxii, li); break;
@@ -871,4 +861,99 @@ function getPsalm(lit, dow) {
 
     if (options.length > 0) return options[Math.floor(Math.random() * options.length)];
     else return getRandomPsalm();
+}
+
+function getSinglePsalm(lit) {
+    switch (lit) {
+        case "A1": return xlvi;
+        case "A2": return cxix1;
+        case "A3": return cxxx;
+        case "A4": return cii;
+        case "JohnBaptist": return benedictus;
+        case "LXX": return cxxi;
+        //case "LX":
+        case "L": return xxiii;
+        case "Xmas": return teDeum;
+        case "X2": return cxi;
+        case "Epiphany": return c;
+        case "Easter": return paschaNostrum;
+        case "Ascension": return xcvi;
+        case "Whitsun": return xlvi;
+        case "AllSaints": return cl;
+        //case "Anniversary":
+        case "Circ": return cxlviii;
+        case "Andrew": return c;
+        case "Thomas": return cxxi;
+        case "Paul": return xix;
+        //case "Matthias":
+        case "Mark": return cii;
+        case "PhilipAndJames": return cxix5;
+        case "Barnabas": return c;
+        case "Peter": return lxvii;
+        //case "James":
+        case "Bartholomew": return xci; //, xlvi, cii); break;
+        case "Matthew": return cxix1; //, xix); break;
+        case "Luke": return lxvii; //, xcvi); break;
+        case "SimonAndJude": return lxii;
+        case "IndependenceDay": return cxxi;
+        case "Transfiguration": return teDeum;
+        case "Ea1": return cxxi;
+        case "Ea2": return xxiii;
+        //case "Ea3":
+        //case "Ea4":
+        case "Ea5": return lxvii;
+        case "SNBA": return xc); break;
+        case "ThanksgivingDay": return thanksgiving;
+        case "Candlemas": return lxxxiv;
+        case "Annunciation": return magnificat;
+        case "AW": return "<p><center><i>Pss. 32, 143, 102, & 130, q. v.</i></center></p>";
+        case "L1": return "<p><center><i>Psalm 102, q. v.</i></center></p>";
+        case "L2": return "<p><center><i>Psalm 32, q. v.</i></center></p>";
+        case "L3": return "<p><center><i>Psalm 143, q. v.</i></center></p>";
+        case "L4": return xlvi;
+        case "L5": return "<p><center><i>Psalm 51, q. v.</i></center></p>";
+        case "Palm": return "<p><center><i>Psalm 130, q. v.</i></center></p>";
+        case "HW-Mon": return xlii;
+        case "HW-Tue": return "<p><center><i>Psalm 6, q. v.</i></center></p>";
+        //case "HW-Wed":
+        case "HW-Thu": return "<p><center><i>Psalm 143, q. v.</i></center></p>";
+        //case "GF":
+        //case "EE":
+        case "Michael": return xci;
+        case "E1": return xcii;
+        case "E2": return lxii;
+        case "E3": return xlii;
+        //case "E4":
+        //case "E5":
+        case "E6": return xcviii;
+        case "Trinity": return cxlviii;
+        case "T1": return cxix5;
+        case "T2": return xix;
+        case "T3": return xxxii;
+        case "T4": return xci;
+        case "T5": return lxii;
+        case "T6": return cxi;
+        //case "T7":
+        case "T8": return cxix5;
+        case "T9": return cxix3;
+        case "T10": return xlvi;
+        case "T11": return c;
+        //case "T12":
+        //case "T13":
+        case "T14": return xcii;
+        //case "T15": options.push(); break;
+        case "T16": return xc;
+        case "T17": return cxxx;
+        case "T18": return lxiii;
+        //case "T19": options.push(); break;
+        case "T20": return lxxxiv;
+        case "T21": return cxxi;
+        case "T22": return xxxii;
+        case "T23": return xix;
+        //case "T24":
+        //fall emberdays
+            //options.push(lxxxiv, c);
+            //break;
+        default: return "";
+    };
 }
