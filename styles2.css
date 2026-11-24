@@ -148,6 +148,7 @@ p.blackletterHymn {
     font-size: 18pt;
     color: mediumblue;
     margin-top: -20pt;
+    line-height: 9pt;
     /*vertical-align: middle;*/
 }
 
