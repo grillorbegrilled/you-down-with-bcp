@@ -65,7 +65,10 @@
         "titl" 1;
 }
 
-
+@font-face {
+  font-family: 'Uncial';
+  src: url('Gotischemajuskel-eM6n.ttf');
+}
 
 body, html {
     margin: 0;
@@ -141,7 +144,7 @@ p.blackletterHymn {
 }
 
 .bigBlue {
-    /* font-family: set this when you find a nice gothic uncial cap */
+    font-family: 'Uncial';
     font-size: 12pt;
     color: mediumblue;
     vertical-align: middle;
