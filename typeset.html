@@ -55,7 +55,7 @@
         async function getWeekHtml(lit, week) {
             const details = await getProper2(lit);
             var retval = `<h1>${getDayName(lit)}</h1>
-                <div id="canticle">${getPsalm(lit, 0)}</div>
+                <div id="canticle">${getSinglePsalm(lit)}</div>
                 <p name="c" class="dropcap">${synthCollects(details.c, week)}</p>
                 <h2 name="e_cit">${details.e.cit}</h2>
                 <p name="e_txt">${details.e.txt}</p>
