@@ -140,14 +140,14 @@ p {
 p.blackletterHymn {
     font-family: 'Blackletter'; 
     font-size: 8pt; 
-    line-height: 10pt;
+    line-height: 9pt;
 }
 
 .bigBlue {
     font-family: 'Uncial';
-    font-size: 18pt;
+    font-size: 20pt;
     color: mediumblue;
-    margin-top: -6pt;
+    margin-top: -9pt;
     /*vertical-align: middle;*/
 }
 
