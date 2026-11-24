@@ -89,6 +89,7 @@
                     <span class='bigBlue'>H</span>e hath filled the hungry with good things : and the rich he hath sent empty away.
                     <span class='bigBlue'>H</span>e remembering his mercy hath holpen his servant Israel : as he promised to our forefathers, Abraham and his seed, for ever.</p>`;
                 else if (p === "blank") html += "<div class='blankPage'></div>";
+                else if (p === "pb" ) html += "<div class='pb'></div>";
                 else html += await getWeekHtml(p, "A1");
             }
 
