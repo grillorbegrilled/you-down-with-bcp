@@ -167,7 +167,7 @@ p.dropcap:not(.tl-done)::first-letter {
   display: inline-block;
   font-size: 27pt;
   line-height: 1;
-  color: firebrick;
+  color: crimson;
   margin: 0 0 -1.5pt 0; /*top right bottom left*/
 }
 p.dropcap:not(.tl-done)::first-line {
@@ -194,7 +194,7 @@ p.tl-done {
   font-family: "EBGInit";
   font-size: 27pt;          /* 3 lines: 3 x 6.3pt = 18.9pt. Indent line count follows size automatically */
   line-height: 1;
-  color: firebrick;
+  color: crimson;
   margin: -1.5pt 0 0 0;     /* top right bottom left; right margin = gap to text */
   font-style: normal;
   font-weight: normal;
