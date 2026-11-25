@@ -363,7 +363,7 @@ const cxx = `<h2>Psalm 120</h2>
 6 I labour for peace; but when I speak unto them thereof, * they make them ready to battle.</p>`;
 
 const cxix1 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;>I.</p>
+<p style='text-align: center; margin-bottom: 0;'>I.</p>
 <p class="dropcap">BLESSED are those that are undefiled in the way, and walk in the law of the Lᴏʀᴅ.<br>
 2 Blessed are they that keep his testimonies, * and seek him with their whole heart;<br>
 3 Even they who do no wickedness, * and walk in his ways.<br>
