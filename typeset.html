@@ -56,7 +56,7 @@
             const details = await getProper2(lit);
             var retval = `<h1>${getDayName(lit)}</h1>
                 <div id="canticle">${getSinglePsalm(lit)}</div>
-                <p name="c" class="dropcap">${synthCollects(details.c, week)}</p>
+                <p name="c" class="dropcap">${details.c + (lit === "A1") ? "" : "<br>&nbsp;<br>Almighty God, give us grace, &c."}</p>
                 <h2 name="e_cit">${details.e.cit}</h2>
                 <p name="e_txt">${details.e.txt}</p>
                 <h2 name="g_cit">${details.g.cit}</h2>
