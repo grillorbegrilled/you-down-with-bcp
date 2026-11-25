@@ -24,6 +24,7 @@
   const CFG = {
     contentSelector: '.content',
     buttonSelector: '#savePdf',
+    breakSelector: '.pb',   // element that forces a new page (e.g. <div class="pb"></div>)
     orphans: 2,          // min lines of a paragraph left at the bottom of a page
     widows: 2,           // min lines of a paragraph carried to the top of the next page
     eps: 0.05,           // px tolerance for float noise
@@ -78,22 +79,49 @@
     return flow;
   }
 
+  // Forced page break requested by an element? -> 'page' | 'left' | 'right' | null
+  function breakKind(el, cs, side) {
+    if (side === 'before') {
+      if (el.classList.contains('page-break-right')) return 'right';
+      if (el.classList.contains('page-break-left')) return 'left';
+      if (el.classList.contains('page-break')) return 'page';
+    }
+    const v = ((side === 'before' ? (cs.breakBefore || cs.pageBreakBefore)
+                                  : (cs.breakAfter || cs.pageBreakAfter)) || '').trim();
+    if (v === 'page' || v === 'always') return 'page';
+    if (v === 'left' || v === 'verso') return 'left';
+    if (v === 'right' || v === 'recto') return 'right';
+    return null;
+  }
+
   function collect(parent, path, out, ctx) {
     for (const el of parent.children) {
       if (/^(SCRIPT|STYLE|LINK|TEMPLATE|BR)$/.test(el.tagName)) continue;
+      if (el.matches(CFG.breakSelector)) {          // <div class="pb"></div>: forced page break
+        out.push({ marker: true, kind: 'page' });   // (works even if .pb is display:none on screen)
+        continue;
+      }
       const cs = getComputedStyle(el);
       if (cs.display === 'none') continue;
 
-      if (el.classList.contains('tl-done')) { push(el, path, true, out, ctx); continue; }
+      const before = breakKind(el, cs, 'before');
+      if (before) out.push({ marker: true, kind: before });
 
-      const kids = Array.from(el.children).filter(c => getComputedStyle(c).display !== 'none');
-      const blockKids = kids.some(c => BLOCKISH.has(getComputedStyle(c).display));
-      const ownText = Array.from(el.childNodes).some(n => n.nodeType === 3 && n.data.trim());
-      if (BLOCKISH.has(cs.display) && blockKids && !ownText) {
-        collect(el, path.concat(el), out, ctx);   // pure container: descend
+      if (el.classList.contains('tl-done')) {
+        push(el, path, true, out, ctx);
       } else {
-        push(el, path, false, out, ctx);
+        const kids = Array.from(el.children).filter(c => getComputedStyle(c).display !== 'none');
+        const blockKids = kids.some(c => BLOCKISH.has(getComputedStyle(c).display));
+        const ownText = Array.from(el.childNodes).some(n => n.nodeType === 3 && n.data.trim());
+        if (BLOCKISH.has(cs.display) && blockKids && !ownText) {
+          collect(el, path.concat(el), out, ctx);   // pure container: descend
+        } else {
+          push(el, path, false, out, ctx);
+        }
       }
+
+      const after = breakKind(el, cs, 'after');
+      if (after) out.push({ marker: true, kind: after });
     }
   }
 
@@ -159,6 +187,7 @@
     let yy = y;
     for (let j = i; j < atoms.length; j++) {
       const b = atoms[j];
+      if (b.marker) return true;               // forced break follows: nothing to keep with
       const start = yy + b.gap;
       if (b.heading) {
         yy = start + height(b);
@@ -178,6 +207,14 @@
 
     for (let i = 0; i < atoms.length; i++) {
       const a = atoms[i];
+      if (a.marker) {
+        // consecutive breaks collapse, like CSS: a break on an empty page does nothing,
+        // except that left/right breaks may add one blank page to get the parity right
+        if (cur.length) newPage();
+        const next = pages.length + 1;                     // number of the page we start now
+        if ((a.kind === 'right' && next % 2 === 0) || (a.kind === 'left' && next % 2 === 1)) pages.push([]);
+        continue;
+      }
       const n = a.lines ? a.lines.length : 1;
       let from = 0;
 
@@ -347,7 +384,12 @@
     const ctx = { top: flow.getBoundingClientRect().top };
     const atoms = [];
     collect(flow, [], atoms, ctx);
-    atoms.forEach((a, i) => { a.gap = i ? Math.max(0, a.top - atoms[i - 1].bottom) : 0; });
+    let prev = null;
+    atoms.forEach(a => {
+      if (a.marker) { prev = null; return; }
+      a.gap = prev ? Math.max(0, a.top - prev.bottom) : 0;
+      prev = a;
+    });
 
     const plan = paginate(atoms, geom.innerH);
     const root = buildDOM(plan, geom);
