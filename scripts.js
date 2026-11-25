@@ -122,7 +122,7 @@ function synthCollects(cotd, week) {
     var result = cotd;
 
     if (seasonal && cotd !== seasonal)
-        result += ("<br><br>" + seasonal);
+        result += ("<br>&nbsp;<br>" + seasonal);
     
     return result;
 }
