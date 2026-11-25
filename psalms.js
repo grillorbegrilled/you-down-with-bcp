@@ -363,7 +363,7 @@ const cxx = `<h2>Psalm 120</h2>
 6 I labour for peace; but when I speak unto them thereof, * they make them ready to battle.</p>`;
 
 const cxix1 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>א</p>
+<p style='text-align: center; margin-bottom: 0;>I.</p>
 <p class="dropcap">BLESSED are those that are undefiled in the way, and walk in the law of the Lᴏʀᴅ.<br>
 2 Blessed are they that keep his testimonies, * and seek him with their whole heart;<br>
 3 Even they who do no wickedness, * and walk in his ways.<br>
@@ -374,7 +374,7 @@ const cxix1 = `<h2>Psalm 119</h2>
 8 I will keep thy statutes; * O forsake me not utterly.</p>`;
 
 const cxix2 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ב</p>
+<p style='text-align: center; margin-bottom: 0;'>II.</p>
 <p class="dropcap">WHEREWITHAL shall a young man cleanse his way? * even by ruling himself after thy word.<br>
 10 With my whole heart have I sought thee; * O let me not go wrong out of thy commandments.<br>
 11 Thy word have I hid within my heart, * that I should not sin against thee.<br>
@@ -385,7 +385,7 @@ const cxix2 = `<h2>Psalm 119</h2>
 16 My delight shall be in thy statutes, * and I will not forget thy word.</p>`;
 
 const cxix3 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ג</p>
+<p style='text-align: center; margin-bottom: 0;'>III.</p>
 <p class="dropcap">O DO well unto thy servant; * that I may live, and keep thy word.<br>
 18 Open thou mine eyes; * that I may see the wondrous things of thy law.<br>
 19 I am a stranger upon earth; * O hide not thy commandments from me.<br>
@@ -396,7 +396,7 @@ const cxix3 = `<h2>Psalm 119</h2>
 24 For thy testimonies are my delight, * and my counsellors.</p>`;
 
 const cxix4 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ד</p>
+<p style='text-align: center; margin-bottom: 0;'>IV.</p>
 <p class="dropcap">MY soul cleaveth to the dust; * O quicken thou me, according to thy word.<br>
 26 I have acknowledged my ways, and thou heardest me: * O teach me thy statutes.<br>
 27 Make me to understand the way of thy commandments; * and so shall I talk of thy wondrous works.<br>
@@ -407,7 +407,7 @@ const cxix4 = `<h2>Psalm 119</h2>
 32 I will run the way of thy commandments, * when thou hast set my heart at liberty.</p>`;
 
 const cxix5 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ה</p>
+<p style='text-align: center; margin-bottom: 0;'>V.</p>
 <p class="dropcap">TEACH me, O Lord, the way of thy statutes, * and I shall keep it unto the end.<br>
 34 Give me understanding, and I shall keep thy law; * yea, I shall keep it with my whole heart.<br>
 35 Make me to go in the path of thy commandments; * for therein is my desire.<br>
@@ -418,7 +418,7 @@ const cxix5 = `<h2>Psalm 119</h2>
 40 Behold, my delight is in thy commandments; * O quicken me in thy righteousness.</p>`;
 
 const cxix6 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ו</p>
+<p style='text-align: center; margin-bottom: 0;'>VI.</p>
 <p class="dropcap">LET thy loving mercy come also unto me, O Lᴏʀᴅ, * even thy salvation, according unto thy word.<br>
 42 So shall I make answer unto my blasphemers; * for my trust is in thy word.<br>
 43 O take not the word of thy truth utterly out of my mouth; * for my hope is in thy judgments.<br>
@@ -429,7 +429,7 @@ const cxix6 = `<h2>Psalm 119</h2>
 48 My hands also will I lift up unto thy commandments, which I have loved; * and my study shall be in thy statutes.</p>`;
 
 const cxix7 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ז</p>
+<p style='text-align: center; margin-bottom: 0;'>VII.</p>
 <p class="dropcap">O THINK upon thy servant, as concerning thy word, * wherein thou hast caused me to put my trust.<br>
 50 The same is my comfort in my trouble; * for thy word hath quickened me.<br>
 51 The proud have had me exceedingly in derision; * yet have I not shrinked from thy law.<br>
@@ -440,7 +440,7 @@ const cxix7 = `<h2>Psalm 119</h2>
 56 This I had, * because I kept thy commandments.</p>`;
 
 const cxix8 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ח</p>
+<p style='text-align: center; margin-bottom: 0;'>VIII.</p>
 <p class="dropcap">THOU art my portion, O Lᴏʀᴅ; * I have promised to keep thy law.<br>
 58 I made my humble petition in thy presence with my whole heart; * O be merciful unto me, according to thy word.<br>
 59 I called mine own ways to remembrance, * and turned my feet unto thy testimonies.<br>
@@ -451,7 +451,7 @@ const cxix8 = `<h2>Psalm 119</h2>
 64 The earth, O Lᴏʀᴅ, is full of thy mercy: * O teach me thy statutes.</p>`;
 
 const cxix9 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ט</p>
+<p style='text-align: center; margin-bottom: 0;'>IX.</p>
 <p class="dropcap">O LORD, thou hast dealt graciously with thy servant, * according unto thy word.<br>
 66 O teach me true understanding and knowledge; * for I have believed thy commandments.<br>
 67 Before I was troubled, I went wrong; * but now have I kept thy word.<br>
@@ -462,7 +462,7 @@ const cxix9 = `<h2>Psalm 119</h2>
 72 The law of thy mouth is dearer unto me * than thousands of gold and silver.</p>`;
  
 const cxix10 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>י</p>
+<p style='text-align: center; margin-bottom: 0;'>X.</p>
 <p class="dropcap">THY hands have made me and fashioned me: * O give me understanding, that I may learn thy commandments.<br>
 74 They that fear thee will be glad when they see me; * because I have put my trust in thy word.<br>
 75 I know, O Lᴏʀᴅ, that thy judgments are right, * and that thou of very faithfulness hast caused me to be troubled.<br>
@@ -473,7 +473,7 @@ const cxix10 = `<h2>Psalm 119</h2>
 80 O let my heart be sound in thy statutes, * that I be not ashamed.</p>`;
 
 const cxix11 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>כ</p>
+<p style='text-align: center; margin-bottom: 0;'>XI.</p>
 <p class="dropcap">MY soul hath longed for thy salvation, * and I have a good hope because of thy word.<br>
 82 Mine eyes-long sore for thy word; * saying, O when wilt thou comfort me?<br>
 83 For I am become like a bottle in the smoke; * yet do I not forget thy statutes.<br>
@@ -484,7 +484,7 @@ const cxix11 = `<h2>Psalm 119</h2>
 88 O quicken me after thy loving-kindness; * and so shall I keep the testimonies of thy mouth.</p>`;
 
 const cxix12 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ל</p>
+<p style='text-align: center; margin-bottom: 0;'>XII.</p>
 <p class="dropcap">O LORD, thy word * endureth for ever in heaven.<br>
 90 Thy truth also remaineth from one generation to another; * thou hast laid the foundation of the earth, and it abideth.<br>
 91 They continue this day according to thine ordinance; * for all things serve thee.<br>
@@ -495,7 +495,7 @@ const cxix12 = `<h2>Psalm 119</h2>
 96 I see that all things come to an end; * but thy commandment is exceeding broad.</p>`;
 
 const cxix13 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>מ</p>
+<p style='text-align: center; margin-bottom: 0;'>XIII.</p>
 <p class="dropcap">LORD, what love have I unto thy law! * all the day long is my study in it.<br>
 98 Thou, through thy commandments, hast made me wiser than mine enemies; * for they are ever with me.<br>
 99 I have more understanding than my teachers; * for thy testimonies are my study.<br>
@@ -506,7 +506,7 @@ const cxix13 = `<h2>Psalm 119</h2>
 104 Through thy commandments I get understanding: * therefore I hate all evil ways.</p>`;
 
 const cxix14 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>נ</p>
+<p style='text-align: center; margin-bottom: 0;'>XIV.</p>
 <p class="dropcap">THY word is a lantern unto my feet, * and a light unto my paths.<br>
 106 I have sworn, and am stedfastly purposed, * to keep thy righteous judgments.<br>
 107 I am troubled above measure: * quicken me, O Lᴏʀᴅ, according to thy word.<br>
@@ -517,7 +517,7 @@ const cxix14 = `<h2>Psalm 119</h2>
 112 I have applied my heart to fulfil thy statutes alway, * even unto the end.</p>`;
 
 const cxix15 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ס</p>
+<p style='text-align: center; margin-bottom: 0;'>XV.</p>
 <p class="dropcap">I HATE them that imagine evil things; * but thy law do I love.<br>
 114 Thou art my defence and shield; * and my trust is in thy word.<br>
 115 Away from me, ye wicked; * I will keep the commandments of my God.<br>
@@ -528,7 +528,7 @@ const cxix15 = `<h2>Psalm 119</h2>
 120 My flesh trembleth for fear of thee; * and I am afraid of thy judgments.</p>`;
 
 const cxix16 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ע</p>
+<p style='text-align: center; margin-bottom: 0;'>XVI.</p>
 <p class="dropcap">I DEAL with the thing that is lawful and right; * O give me not over unto mine oppressors.<br>
 122 Make thou thy servant to delight in that which is good, * that the proud do me no wrong.<br>
 123 Mine eyes are wasted away with looking for thy health, * and for the word of thy righteousness.<br>
@@ -539,7 +539,7 @@ const cxix16 = `<h2>Psalm 119</h2>
 128 Therefore hold I straight all thy commandments; * and all false ways I utterly abhor.</p>`;
 
 const cxix17 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>פ</p>
+<p style='text-align: center; margin-bottom: 0;'>XVII.</p>
 <p class="dropcap">THY testimonies are wonderful; * therefore doth my soul keep them.<br>
 130 When thy word goeth forth, * it giveth light and understanding unto the simple.<br>
 131 I opened my mouth, and drew in my breath; * for my delight was in thy commandments.<br>
@@ -550,7 +550,7 @@ const cxix17 = `<h2>Psalm 119</h2>
 136 Mine eyes gush out with water, * because men keep not thy law.</p>`;
 
 const cxix18 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>צ</p>
+<p style='text-align: center; margin-bottom: 0;'>XVIII.</p>
 <p class="dropcap">RIGHTEOUS art thou, O Lord; * and true are thy judgments.<br>
 138 The testimonies that thou hast commanded * are exceeding righteous and true.<br>
 139 My zeal hath even consumed me; * because mine enemies have forgotten thy words.<br>
@@ -561,7 +561,7 @@ const cxix18 = `<h2>Psalm 119</h2>
 144 The righteousness of thy testimonies is everlasting: * O grant me understanding, and I shall live.</p>`;
 
 const cxix19 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ק</p>
+<p style='text-align: center; margin-bottom: 0;'>XIX.</p>
 <p class="dropcap">I CALL with my whole heart; * hear me, O Lᴏʀᴅ; I will keep thy statutes.<br>
 146 Yea, even unto thee do I call; * help me, and I shall keep thy testimonies.<br>
 147 Early in the morning do I cry unto thee; * for in thy word is my trust.<br>
@@ -572,7 +572,7 @@ const cxix19 = `<h2>Psalm 119</h2>
 152 As concerning thy testimonies, I have known long since, * that thou hast grounded them for ever.</p>`;
 
 const cxix20 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ר</p>
+<p style='text-align: center; margin-bottom: 0;'>XX.</p>
 <p class="dropcap">O CONSIDER mine adversity, and deliver me, * for I do not forget thy law.<br>
 154 Avenge thou my cause, and deliver me; * quicken me according to thy word.<br>
 155 Health is far from the ungodly; * for they regard not thy statutes.<br>
@@ -583,7 +583,7 @@ const cxix20 = `<h2>Psalm 119</h2>
 160 Thy word is true from everlasting; * all the judgments of thy righteousness endure for evermore.</p>`;
 
 const cxix21 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ש</p>
+<p style='text-align: center; margin-bottom: 0;'>XXI.</p>
 <p class="dropcap">PRINCES have persecuted me without a cause; * but my heart standeth in awe of thy word.<br>
 162 I am as glad of thy word, * as one that findeth great spoils.<br>
 163 As for lies, I hate and abhor them; * but thy law do I love.<br>
@@ -594,7 +594,7 @@ const cxix21 = `<h2>Psalm 119</h2>
 168 I have kept thy commandments and testimonies; * for all my ways are before thee.</p>`;
 
 const cxix22 = `<h2>Psalm 119</h2>
-<p style='text-align: center; margin-bottom: 0;'>ת</p>
+<p style='text-align: center; margin-bottom: 0;'>XXII.</p>
 <p class="dropcap">LET my complaint come before thee, O Lᴏʀᴅ; * give me understanding according to thy word.<br>
 170 Let my supplication come before thee; * deliver me according to thy word.<br>
 171 My lips shall speak of thy praise, * when thou hast taught me thy statutes.<br>
