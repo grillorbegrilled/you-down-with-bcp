@@ -902,7 +902,7 @@ function getSinglePsalm(lit) {
         //case "Ea3":
         //case "Ea4":
         case "Ea5": return lxvii;
-        case "SNBA": return xc); break;
+        case "SNBA": return xc; break;
         case "ThanksgivingDay": return thanksgiving;
         case "Candlemas": return lxxxiv;
         case "Annunciation": return magnificat;
