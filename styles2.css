@@ -146,7 +146,7 @@ p.blackletterHymn {
 .bigBlue {
     font-family: 'Uncial';
     font-size: 18pt;
-    color: mediumblue;
+    color: blue;
     line-height: 0;
     /*vertical-align: middle;*/
 }
