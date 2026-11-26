@@ -89,6 +89,14 @@
                     <span class='bigBlue'>H</span>e remembering his mercy hath holpen his servant Israel; as he promised to our forefathers, Abraham and his seed, for ever.</p>`;
                 else if (p === "blank") html += "<div class='blankPage'></div>";
                 else if (p === "pb" ) html += "<div class='pb'></div>";
+                else if (p === "o") html += `<h1>Sentences</h1>
+                    <p class='dropcap'>Prepare ye the way of the Lord, make straight in the desert a highway for our God.<i>⸺Isaiah 40:3</i><br>
+                    <b><i>Friday.</i></b> Repent ye, for the Kingdom of heaven is at hand. <i>⸺Matt. 3:2</i></p>
+                 
+                    <p>Watch ye, for ye know not when the master of the house cometh, at even, or at midnight, or at the cock-crowing, or in the morning: lest coming suddenly he find you sleeping.<i>⸺Mark 13:35-36</i></p>
+                    <h1>Antiphon</h1>
+                    <p><b><i>Sunday.</i></b> Our King and Saviour draweth nigh * O come, let us adore him.</p>
+                    <div class='pb'></div>`;
                 else html += await getWeekHtml(p, "A1");
             }
 
